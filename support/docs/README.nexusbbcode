@@ -1,0 +1,100 @@
+[size=5][b]Junk In Your (Ship's) Trunk[/b][/size]
+Version: 1.0.0
+
+[size=4][b][u]Table of Contents:[/u][/b][/size]
+- Junk In Your (Ship's) Trunk
+    - Table of Contents
+- Overview
+    - Summary
+    - Cargo Modules
+    - Known Issues
+- Installation
+    - Mod Manager
+    - Manual (NOT RECOMMENDED)
+    - Archive Invalidation
+    - Disabling Mod Loading From My Games
+- License
+- Credits and Acknowledgements
+- Contact
+
+
+[size=5][b]Overview[/b][/size]
+
+[size=4][b][u]Summary:[/u][/b][/size]
+Adds additional rotational positions for cargo modules.
+
+The first cargo module I added was an "aft" version of the Sextant 200CM Ballast Cargo Hold, so Junk In Your (Ship's) Trunk just seemed to fit.
+
+More modules will be coming as I get to them.
+
+[size=4][b][u]Cargo Modules:[/u][/b][/size]
+Here is a list of the cargo modules added:
+- Sextant 200CM Ballast Cargo Hold [fore, aft] (v1.0.0)
+- Sextant 200CM Ballast Shielded Cargo Hold [fore, aft] (v1.0.0)
+
+[size=4][b][u]Known Issues:[/u][/b][/size]
+- Collision isn't exact. We don't have the tools that BGS used to create the models, so collision for the rotated modules isn't going to precisely match their vanilla counterparts. I do try to get close though.
+- Modules are clean. The vanilla ship modules have a number of decals like scorch marks, dirt streaks, etc. applied to them. Due to the method by which they are applied (cells), I can't really apply those until we get access to the CK.
+- Module icons in the Ship Builder are missing. This is another thing that is probably going to have to wait until we get access to the CK to get fixed.
+
+
+[size=5][b]Installation[/b][/size]
+NOTE 1: Modding in Starfield is a bit different by default in that unless you change it, mods are now installed into the "Documents\My Games\Starfield" folder instead of in the game's installation folder.
+NOTE 2: Requires [url=https://www.nexusmods.com/starfield/mods/4157]Plugins.txt Enabler[/url]
+
+[size=4][b][u]Mod Manager:[/u][/b][/size]
+Download and install the archive with either Mod Organizer 2 v2.5.0 Beta 14 or later ([url=https://discord.gg/AKE9wRGpy4]MO2 Discord server[/url], "dev-builds" channel), or [url=https://www.nexusmods.com/site/mods/1]Vortex[/url]. I personally recommend Mod Organizer 2 (with the optional [url=https://kezyma.github.io/?p=rootbuilder]Root Builder[/url] plugin to use with SFSE or any other mod that requires files be put directly in the game's installation folder).
+
+To enable plugins.txt support in Mod Organizer 2, set the "enable_plugin_management" option to "True" in the "Tools" menu -> "Settings" option -> "Plugins" tab -> "Game" section -> "Starfield Support Plugin" plugin.
+
+[size=4][b][u]Manual (NOT RECOMMENDED):[/u][/b][/size]
+If you [u]haven't[/u] disabled Starfield's ability to load mods from the "Documents\My Games\Starfield" folder, extract the archive there.
+
+If you [u]have[/u] disabled Starfield's ability to load mods from the "Documents\My Games\Starfield" folder, extract the archive to your Starfield installation folder (typically something like "C:\Games\SteamLibrary\steamapps\common\Starfield") instead.
+
+[size=4][b][u]Archive Invalidation:[/u][/b][/size]
+Make sure your [font=Courier New][color=#b2b2b2]StarfieldCustom.ini[/color][/font] file in the "Documents\My Games\Starfield" folder (or your profile folder if using a mod manager and profiles) contains the following:
+
+    [font=Courier New][color=#b2b2b2][Archive][/color][/font]
+    [font=Courier New][color=#b2b2b2]bInvalidateOlderFiles=1[/color][/font]
+    [font=Courier New][color=#b2b2b2]sResourceDataDirsFinal=[/color][/font]
+
+[size=4][b][u]Disabling Mod Loading From My Games:[/u][/b][/size]
+NOTE: This is optional. It's also not even necessary with Mod Organizer 2 as it virtualizes everything already.
+
+Make sure your [font=Courier New][color=#b2b2b2]StarfieldCustom.ini[/color][/font] file in the "Documents\My Games\Starfield" folder (or your profile folder if using a mod manager and profiles) contains the following:
+
+    [font=Courier New][color=#b2b2b2][Display][/color][/font]
+    [font=Courier New][color=#b2b2b2]sPhotoModeFolder=Photos[/color][/font]
+
+    [font=Courier New][color=#b2b2b2][General][/color][/font]
+    [font=Courier New][color=#b2b2b2]bEnableMessageOfTheDay=0[/color][/font]
+
+Then move the contents of the "Documents\My Games\Starfield\Data" folder out of said folder. Put your screenshots folder at "Documents\My Games\Starfield\Photos". The end goal is that the "Documents\My Games\Starfield\Data" folder should be empty.
+
+
+[size=5][b]License[/b][/size]
+All nif files are derived from original Starfield assets, so BGS own the copyright and control their usage.
+
+For all other content, the following licenses apply:
+- All code files are copyright 2023 Dan Cassidy, and are licensed under the [url=https://www.gnu.org/licenses/gpl-3.0.en.html]GPL v3.0 or later[/url].
+- All non-code files are copyright 2023 Dan Cassidy, and are licensed under the [url=https://creativecommons.org/licenses/by-nc-sa/4.0/]CC BY-NC-SA 4.0[/url] license.
+
+
+[size=5][b]Credits and Acknowledgements[/b][/size]
+hexabit: For a newer NifSkope release that supports the version of nif files that Starfield uses
+ElminsterAU: For xEdit
+Mod Organizer 2 team: For getting Mod Organizer 2 with Starfield support out the door so quickly
+Nexus Mods: For mod hosting and for the Vortex Mod Manager
+
+This mod's repo contains the following programs, each having their own copyrights and licenses:
+
+- [url=https://www.7-zip.org/]7-Zip 23.01 (2023-06-20) Console Executable by Igor Pavlov[/url]
+
+[size=5][b]Contact[/b][/size]
+If you find a bug or have a question about the mod, please post it on the [url=https://www.nexusmods.com/starfield/mods/5954]mod page at Nexus Mods[/url], or in the [url=https://github.com/rux616/starfield-junk-in-your-ships-trunk]GitHub project[/url].
+
+If you need to contact me personally, I can be reached through one of the following means:
+- [b]Nexus Mods[/b]: [url=https://www.nexusmods.com/users/124191]rux616[/url] (Send a message via the "CONTACT" button.)
+- [b]Email[/b]: rux616-at-pm-dot-me (replace [font=Courier New][color=#b2b2b2]-at-[/color][/font] with [font=Courier New][color=#b2b2b2]@[/color][/font] and [font=Courier New][color=#b2b2b2]-dot-[/color][/font] with [font=Courier New][color=#b2b2b2].[/color][/font])
+- [b]Discord[/b]: rux616 (I am in the [url=https://discord.gg/nexusmods]Nexus Mods[/url], [url=https://discord.gg/pF9U5FmD6w]Collective Modding[/url] ("🔧-chaotic-cognitions" channel), and [url=https://discord.gg/livelymods]Lively's Modding Hub[/url] servers, amongst others. Make sure to "@" me.)
