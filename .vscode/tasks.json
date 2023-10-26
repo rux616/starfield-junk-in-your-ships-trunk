@@ -1,0 +1,56 @@
+{
+	"version": "2.0.0",
+    "options": {
+        "shell": {
+            "executable": "pwsh.exe",
+            "args": [
+                "-ExecutionPolicy",
+                "Bypass",
+                "-Command",
+            ]
+        },
+        "cwd": "${workspaceFolder}",
+    },
+	"tasks": [
+        {
+            "label": "Create Archives",
+            "type": "shell",
+            "command": ". ./.version.ps1; $file='builds/Junk_In_Your_Trunk_v'+$version+'.7z'; if (Test-Path $file) {Remove-Item -Force $file}; ./support/bin/7zip/7zr.exe a -t7z -mx9 $file ./data -x!'data/meta.ini'",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+            "dependsOn": [
+                "Render Markdown to Nexus BBCode"
+            ],
+        },
+        {
+            "label": "Render Markdown to Nexus BBCode",
+            "type": "shell",
+            "command": "./support/scripts/markdown-to-nexusbbcode.ps1",
+            "args": [
+                "./support/docs/README.md",
+            ],
+            "dependsOn": [
+                "Render Markdown to Plaintext"
+            ],
+        },
+        {
+            "label": "Render Markdown to Plaintext",
+            "type": "shell",
+            "command": "./support/scripts/markdown-to-plaintext.ps1",
+            "args": [
+                "./support/docs/README.md",
+                "./support/docs/CHANGELOG.md",
+            ],
+            "dependsOn": [
+                "Update Versions"
+            ],
+        },
+        {
+            "label": "Update Versions",
+            "type": "shell",
+            "command": "./support/scripts/version-updater.ps1",
+        },
+	]
+}
