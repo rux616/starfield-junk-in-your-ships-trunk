@@ -1,3 +1,4 @@
-*.nif filter=lfs diff=lfs merge=lfs -text
-*.png filter=lfs diff=lfs merge=lfs -text
 *.esm filter=lfs diff=lfs merge=lfs -text
+*.exe filter=lfs diff=lfs merge=lfs -text
+*.nif filter=lfs diff=lfs merge=lfs -text
+support/packaging/*.png filter=lfs diff=lfs merge=lfs -text
