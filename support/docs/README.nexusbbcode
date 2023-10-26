@@ -33,7 +33,7 @@ Here is a list of the cargo modules added:
 - Sextant 200CM Ballast Shielded Cargo Hold [fore, aft] (v1.0.0)
 
 [size=4][b][u]Known Issues:[/u][/b][/size]
-- Collision isn't exact. We don't have the tools that BGS used to create the models, so collision for the rotated modules isn't going to precisely match their vanilla counterparts. I do try to get close though.
+- Collision isn't exact. We don't have the tools that BGS used to create the models, so collision for the rotated modules isn't going to precisely match their vanilla counterparts, which means that selecting these isn't going to be exact. It should be reasonably close though.
 - Modules are clean. The vanilla ship modules have a number of decals like scorch marks, dirt streaks, etc. applied to them. Due to the method by which they are applied (cells), I can't really apply those until we get access to the CK.
 - Module icons in the Ship Builder are missing. This is another thing that is probably going to have to wait until we get access to the CK to get fixed.
 
