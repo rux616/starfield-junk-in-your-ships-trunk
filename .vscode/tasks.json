@@ -15,7 +15,10 @@
         {
             "label": "Create Archives",
             "type": "shell",
-            "command": ". ./.version.ps1; $file='builds/Junk_In_Your_Trunk_v'+$version+'.7z'; if (Test-Path $file) {Remove-Item -Force $file}; ./support/bin/7zip/7zr.exe a -t7z -mx9 $file ./data -x!'data/meta.ini'",
+            "command": "./support/scripts/build-archives.ps1",
+            "args": [
+                "Junk In Your Trunk",
+            ],
 			"group": {
 				"kind": "build",
 				"isDefault": true
