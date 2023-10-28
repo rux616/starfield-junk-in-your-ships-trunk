@@ -1,20 +1,19 @@
 Junk In Your (Ship's) Trunk
 ===========================
-Version: 1.0.0
+Version: 1.1.0
 
-Table of Contents
+Table Of Contents
 -----------------
 - [Junk In Your (Ship's) Trunk](#junk-in-your-ships-trunk)
-    - [Table of Contents](#table-of-contents)
+    - [Table Of Contents](#table-of-contents)
 - [Overview](#overview)
     - [Summary](#summary)
-    - [Cargo Modules](#cargo-modules)
+    - [List of Modules](#list-of-modules)
     - [Known Issues](#known-issues)
 - [Installation](#installation)
     - [Mod Manager](#mod-manager)
     - [Manual (NOT RECOMMENDED)](#manual-not-recommended)
     - [Archive Invalidation](#archive-invalidation)
-    - [Disabling Mod Loading From My Games](#disabling-mod-loading-from-my-games)
 - [License](#license)
 - [Credits and Acknowledgements](#credits-and-acknowledgements)
 - [Contact](#contact)
@@ -25,35 +24,42 @@ Overview
 
 Summary
 -------
-Adds additional rotational positions for cargo modules.
+(Adds additional orientations for ship modules.)
 
-The first cargo module I added was an "aft" version of the Sextant 200CM Ballast Cargo Hold, so Junk In Your (Ship's) Trunk just seemed to fit.
+Starfield's ship builder is amazing. While it places a number of reasonable constraints on us as we get the ability to make better and better ships, some of those constraints are just silly, and I want to fix that!
 
-More modules will be coming as I get to them.
+This mod tackles one of those constraints. It will let you mount cargo holds (and in the future, other components) in more positions and in different directions on your ship. Want that item to stick on the back, but it only sticks to the side right now? Come on in.
+
+I've started small, with the Sextant 200CM Cargo Hold (shielded and non-shielded varieties), one of the first cargo components available to players. In vanilla Starfield, this piece only mounts to the sides of ships, now you can mount it on the front, back, top, and bottom as well. In fact, the first cargo module I added was the "aft" version of the Sextant 200CM Ballast Cargo Hold, so Junk In Your (Ship's) Trunk just seemed to fit.
+
+I'll be adding other components in the future, so stay tuned; for now, try this out and let me know what you think!
 
 ([TOC](#table-of-contents))
 
-Cargo Modules
--------------
-Here is a list of the cargo modules added:
-- Sextant 200CM Ballast Cargo Hold [fore, aft] (v1.0.0)
-- Sextant 200CM Ballast Shielded Cargo Hold [fore, aft] (v1.0.0)
+List of Modules
+---------------
+**Cargo:**
+- Sextant 200CM Ballast Cargo Hold
+    - fore, aft (v1.0.0)
+    - top fore-to-aft, top port-to-starboard, bottom fore-to-aft, bottom port-to-starboard (v1.1.0)
+- Sextant 200CM Ballast Shielded Cargo Hold
+    - fore, aft (v1.0.0)
+    - top fore-to-aft, top port-to-starboard, bottom fore-to-aft, bottom port-to-starboard (v1.1.0)
 
 ([TOC](#table-of-contents))
 
 Known Issues
 ------------
-- Collision isn't exact. We don't have the tools that BGS used to create the models, so collision for the rotated modules isn't going to precisely match their vanilla counterparts, which means that selecting these isn't going to be exact. It should be reasonably close though.
-- Modules are clean. The vanilla ship modules have a number of decals like scorch marks, dirt streaks, etc. applied to them. Due to the method by which they are applied (cells), I can't really apply those until we get access to the CK.
-- Module icons in the Ship Builder are missing. This is another thing that is probably going to have to wait until we get access to the CK to get fixed.
+- Collision isn't exact. We don't have the tools that BGS used to create the meshes, so collision for the rotated modules isn't going to precisely match their vanilla counterparts, which means that selecting these isn't going to be exact. It should be reasonably close though.
+- Modules are clean. The vanilla ship modules have a number of decals like scorch marks, dirt streaks, etc. applied to them. Due to the method by which they are applied, I can't reasonably add them until we get access to the CK.
+- Module icons (for the added orientations) in the Ship Builder are missing. This is another thing that is probably going to have to wait until we get access to the CK to get fixed.
 
 ([TOC](#table-of-contents))
 
 
 Installation
 ============
-NOTE 1: Modding in Starfield is a bit different by default in that unless you change it, mods are now installed into the "Documents\My Games\Starfield" folder instead of in the game's installation folder.
-NOTE 2: Requires [Plugins.txt Enabler](https://www.nexusmods.com/starfield/mods/4157)
+NOTE: Requires [Plugins.txt Enabler](https://www.nexusmods.com/starfield/mods/4157)
 
 Mod Manager
 -----------
@@ -65,9 +71,7 @@ To enable plugins.txt support in Mod Organizer 2, set the "enable_plugin_managem
 
 Manual (NOT RECOMMENDED)
 ------------------------
-If you _haven't_ disabled Starfield's ability to load mods from the "Documents\My Games\Starfield" folder, extract the archive there.
-
-If you _have_ disabled Starfield's ability to load mods from the "Documents\My Games\Starfield" folder, extract the archive to your Starfield installation folder (typically something like "C:\Games\SteamLibrary\steamapps\common\Starfield") instead.
+Extract the archive to your Starfield installation folder (typically something like "C:\Games\SteamLibrary\steamapps\common\Starfield").
 
 ([TOC](#table-of-contents))
 
@@ -78,22 +82,6 @@ Make sure your `StarfieldCustom.ini` file in the "Documents\My Games\Starfield" 
     [Archive]
     bInvalidateOlderFiles=1
     sResourceDataDirsFinal=
-
-([TOC](#table-of-contents))
-
-Disabling Mod Loading From My Games
------------------------------------
-NOTE: This is optional. It's also not even necessary with Mod Organizer 2 as it virtualizes everything already.
-
-Make sure your `StarfieldCustom.ini` file in the "Documents\My Games\Starfield" folder (or your profile folder if using a mod manager and profiles) contains the following:
-
-    [Display]
-    sPhotoModeFolder=Photos
-
-    [General]
-    bEnableMessageOfTheDay=0
-
-Then move the contents of the "Documents\My Games\Starfield\Data" folder out of said folder. Put your screenshots folder at "Documents\My Games\Starfield\Photos". The end goal is that the "Documents\My Games\Starfield\Data" folder should be empty.
 
 ([TOC](#table-of-contents))
 
@@ -115,10 +103,13 @@ hexabit: For a newer NifSkope release that supports the version of nif files tha
 ElminsterAU: For xEdit
 Mod Organizer 2 team: For getting Mod Organizer 2 with Starfield support out the door so quickly
 Nexus Mods: For mod hosting and for the Vortex Mod Manager
+Avi: Help writing the summary to make it a bit less dry, and for helping to test this mod
+Lively: For helping to test this mod
 
 This mod's repo contains the following programs, each having their own copyrights and licenses:
 
 - [7-Zip 23.01 (2023-06-20) Console Executable by Igor Pavlov](https://www.7-zip.org/)
+- [BSArch v0.9c (part of xEdit 4.1.4u) by zilav, ElminsterAU, and Sheson](https://github.com/TES5Edit/TES5Edit)
 
 ([TOC](#table-of-contents))
 
