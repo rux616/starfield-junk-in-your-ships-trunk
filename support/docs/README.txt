@@ -1,6 +1,6 @@
 Junk In Your (Ship's) Trunk
 ===========================
-Version: 1.1.0
+Version: 2.0.0
 
 Table Of Contents
 -----------------
@@ -8,9 +8,11 @@ Table Of Contents
     - Table Of Contents
 - Overview
     - Summary
+    - Cargo Expanders
     - List of Modules
     - Known Issues
 - Installation
+    - Upgrading
     - Mod Manager
     - Manual (NOT RECOMMENDED)
     - Archive Invalidation
@@ -34,19 +36,32 @@ I've started small, with the Sextant 200CM Cargo Hold (shielded and non-shielded
 
 I'll be adding other components in the future, so stay tuned; for now, try this out and let me know what you think!
 
+Cargo Expanders
+---------------
+I know that some people use mods that increase the capacity of cargo modules by 3x or even 10x, so I've included a couple additional plugins that can adjust the capacity of the cargo modules touched by JIYT to match.
+
 List of Modules
 ---------------
 Cargo:
 - Sextant 200CM Ballast Cargo Hold
     - fore, aft (v1.0.0)
     - top fore-to-aft, top port-to-starboard, bottom fore-to-aft, bottom port-to-starboard (v1.1.0)
+    - vertical fore, aft, port, and starboard (v2.0.0)
 - Sextant 200CM Ballast Shielded Cargo Hold
     - fore, aft (v1.0.0)
     - top fore-to-aft, top port-to-starboard, bottom fore-to-aft, bottom port-to-starboard (v1.1.0)
+    - vertical fore, aft, port, and starboard (v2.0.0)
+- Sextant 300CM Ballast Cargo Hold
+    - fore, aft (v2.0.0)
+    - top fore-to-aft, top port-to-starboard, bottom fore-to-aft, bottom port-to-starboard (v2.0.0)
+    - vertical fore, aft, port, and starboard (v2.0.0)
+- Sextant 400CM Ballast Cargo Hold
+    - fore, aft (v2.0.0)
+    - top fore-to-aft, top port-to-starboard, bottom fore-to-aft, bottom port-to-starboard (v2.0.0)
+    - vertical fore, aft, port, and starboard (v2.0.0)
 
 Known Issues
 ------------
-- Collision isn't exact. We don't have the tools that BGS used to create the meshes, so collision for the rotated modules isn't going to precisely match their vanilla counterparts, which means that selecting these isn't going to be exact. It should be reasonably close though.
 - Modules are clean. The vanilla ship modules have a number of decals like scorch marks, dirt streaks, etc. applied to them. Due to the method by which they are applied, I can't reasonably add them until we get access to the CK.
 - Module icons (for the added orientations) in the Ship Builder are missing. This is another thing that is probably going to have to wait until we get access to the CK to get fixed.
 
@@ -54,6 +69,20 @@ Known Issues
 Installation
 ============
 NOTE: Requires Plugins.txt Enabler (https://www.nexusmods.com/starfield/mods/4157)
+
+Upgrading
+---------
+When upgrading major versions (for example v1.whatever to v2.whatever), you need to do a clean install:
+- Open the game and load your latest save
+- Remove all added modules from your ship
+- Save your game, then quit
+- Uninstall the previous version of the plugin and all its files
+- Open the game and load your last save
+- You will see a warning about missing the plugin you just uninstalled, choose to continue
+- Save your game again, then quit
+- Install the new version of the plugin
+
+When upgrading non-major versions (for example v2.something to v2.something-else), you don't need to do anything except replace the installed mod files.
 
 Mod Manager
 -----------
@@ -63,7 +92,7 @@ To enable plugins.txt support in Mod Organizer 2, set the "enable_plugin_managem
 
 Manual (NOT RECOMMENDED)
 ------------------------
-Extract the archive to your Starfield installation folder (typically something like "C:\Games\SteamLibrary\steamapps\common\Starfield").
+Extract the archive to your Starfield installation's "Data" folder (typically something like "C:\Games\SteamLibrary\steamapps\common\Starfield\data"). Add the plugin file names to your plugins.txt file if they aren't already there, making sure the ones you want enabled are preceded with "*".
 
 Archive Invalidation
 --------------------

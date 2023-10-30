@@ -1,14 +1,16 @@
 [size=5][b]Junk In Your (Ship's) Trunk[/b][/size]
-Version: 1.1.0
+Version: 2.0.0
 
 [size=4][b][u]Table Of Contents:[/u][/b][/size]
 - Junk In Your (Ship's) Trunk
     - Table Of Contents
 - Overview
     - Summary
+    - Cargo Expanders
     - List of Modules
     - Known Issues
 - Installation
+    - Upgrading
     - Mod Manager
     - Manual (NOT RECOMMENDED)
     - Archive Invalidation
@@ -30,17 +32,29 @@ I've started small, with the Sextant 200CM Cargo Hold (shielded and non-shielded
 
 I'll be adding other components in the future, so stay tuned; for now, try this out and let me know what you think!
 
+[size=4][b][u]Cargo Expanders:[/u][/b][/size]
+I know that some people use mods that increase the capacity of cargo modules by 3x or even 10x, so I've included a couple additional plugins that can adjust the capacity of the cargo modules touched by JIYT to match.
+
 [size=4][b][u]List of Modules:[/u][/b][/size]
 [b]Cargo:[/b]
 - Sextant 200CM Ballast Cargo Hold
     - fore, aft (v1.0.0)
     - top fore-to-aft, top port-to-starboard, bottom fore-to-aft, bottom port-to-starboard (v1.1.0)
+    - vertical fore, aft, port, and starboard (v2.0.0)
 - Sextant 200CM Ballast Shielded Cargo Hold
     - fore, aft (v1.0.0)
     - top fore-to-aft, top port-to-starboard, bottom fore-to-aft, bottom port-to-starboard (v1.1.0)
+    - vertical fore, aft, port, and starboard (v2.0.0)
+- Sextant 300CM Ballast Cargo Hold
+    - fore, aft (v2.0.0)
+    - top fore-to-aft, top port-to-starboard, bottom fore-to-aft, bottom port-to-starboard (v2.0.0)
+    - vertical fore, aft, port, and starboard (v2.0.0)
+- Sextant 400CM Ballast Cargo Hold
+    - fore, aft (v2.0.0)
+    - top fore-to-aft, top port-to-starboard, bottom fore-to-aft, bottom port-to-starboard (v2.0.0)
+    - vertical fore, aft, port, and starboard (v2.0.0)
 
 [size=4][b][u]Known Issues:[/u][/b][/size]
-- Collision isn't exact. We don't have the tools that BGS used to create the meshes, so collision for the rotated modules isn't going to precisely match their vanilla counterparts, which means that selecting these isn't going to be exact. It should be reasonably close though.
 - Modules are clean. The vanilla ship modules have a number of decals like scorch marks, dirt streaks, etc. applied to them. Due to the method by which they are applied, I can't reasonably add them until we get access to the CK.
 - Module icons (for the added orientations) in the Ship Builder are missing. This is another thing that is probably going to have to wait until we get access to the CK to get fixed.
 
@@ -48,13 +62,26 @@ I'll be adding other components in the future, so stay tuned; for now, try this 
 [size=5][b]Installation[/b][/size]
 NOTE: Requires [url=https://www.nexusmods.com/starfield/mods/4157]Plugins.txt Enabler[/url]
 
+[size=4][b][u]Upgrading:[/u][/b][/size]
+When upgrading major versions (for example v1.whatever to v2.whatever), you need to do a clean install:
+- Open the game and load your latest save
+- Remove all added modules from your ship
+- Save your game, then quit
+- Uninstall the previous version of the plugin and all its files
+- Open the game and load your last save
+- You will see a warning about missing the plugin you just uninstalled, choose to continue
+- Save your game again, then quit
+- Install the new version of the plugin
+
+When upgrading non-major versions (for example v2.something to v2.something-else), you don't need to do anything except replace the installed mod files.
+
 [size=4][b][u]Mod Manager:[/u][/b][/size]
 Download and install the archive with either Mod Organizer 2 v2.5.0 Beta 14 or later ([url=https://discord.gg/AKE9wRGpy4]MO2 Discord server[/url], "dev-builds" channel), or [url=https://www.nexusmods.com/site/mods/1]Vortex[/url]. I personally recommend Mod Organizer 2 (with the optional [url=https://kezyma.github.io/?p=rootbuilder]Root Builder[/url] plugin to use with SFSE or any other mod that requires files be put directly in the game's installation folder).
 
 To enable plugins.txt support in Mod Organizer 2, set the "enable_plugin_management" option to "True" in the "Tools" menu -> "Settings" option -> "Plugins" tab -> "Game" section -> "Starfield Support Plugin" plugin.
 
 [size=4][b][u]Manual (NOT RECOMMENDED):[/u][/b][/size]
-Extract the archive to your Starfield installation folder (typically something like "C:\Games\SteamLibrary\steamapps\common\Starfield").
+Extract the archive to your Starfield installation's "Data" folder (typically something like "C:\Games\SteamLibrary\steamapps\common\Starfield\data"). Add the plugin file names to your plugins.txt file if they aren't already there, making sure the ones you want enabled are preceded with "*".
 
 [size=4][b][u]Archive Invalidation:[/u][/b][/size]
 Make sure your [font=Courier New][color=#b2b2b2]StarfieldCustom.ini[/color][/font] file in the "Documents\My Games\Starfield" folder (or your profile folder if using a mod manager and profiles) contains the following:
