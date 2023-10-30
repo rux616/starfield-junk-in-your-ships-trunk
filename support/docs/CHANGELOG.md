@@ -6,12 +6,28 @@ Table of Contents
 - [Junk In Your (Ship's) Trunk](#junk-in-your-ships-trunk)
     - [Table of Contents](#table-of-contents)
 - [Changelog](#changelog)
+    - [v2.0.0](#v200)
     - [v1.1.0](#v110)
     - [v1.0.0](#v100)
 
 
 Changelog
 =========
+
+v2.0.0
+------
+- Adjusted method of variant creation, requires clean install if upgrading from previous versions!
+- Added 3x and 10x Cargo Expander optional plugins
+- Made FOMOD installer
+- Added vertical orientations of fore, aft, port, and starboard shielded and unshielded 200CM Ballast Cargo Holds
+- Added 300CM Ballast Cargo Hold variants:
+    - fore and aft
+    - vertical fore/aft/port/starboard
+    - fore-to-aft and port-to-starboard top and bottom
+- Added 400CM Ballast Cargo Hold variants:
+    - fore and aft
+    - vertical fore/aft/port/starboard
+    - fore-to-aft and port-to-starboard top and bottom
 
 v1.1.0
 ------
