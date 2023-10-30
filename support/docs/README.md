@@ -1,6 +1,6 @@
 Junk In Your (Ship's) Trunk
 ===========================
-Version: 2.0.0
+Version: 2.1.0
 
 Table Of Contents
 -----------------
@@ -26,7 +26,7 @@ Overview
 
 Summary
 -------
-(Adds additional orientations for ship modules.)
+(Adds additional orientations for ship cargo modules.)
 
 Starfield's ship builder is amazing. While it places a number of reasonable constraints on us as we get the ability to make better and better ships, some of those constraints are just silly, and I want to fix that!
 
@@ -47,6 +47,12 @@ I know that some people use mods that increase the capacity of cargo modules by 
 List of Modules
 ---------------
 **Cargo:**
+- Sextant 100CM Ballast Cargo Hold
+    - fore, port, and starboard (v2.1.0)
+    - inverted aft, fore, port, and starboard (v2.1.0)
+- Sextant 100CM Ballast Shielded Cargo Hold
+    - fore, port, and starboard (v2.1.0)
+    - inverted aft, fore, port, and starboard (v2.1.0)
 - Sextant 200CM Ballast Cargo Hold
     - fore, aft (v1.0.0)
     - top fore-to-aft, top port-to-starboard, bottom fore-to-aft, bottom port-to-starboard (v1.1.0)

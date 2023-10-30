@@ -1,11 +1,12 @@
 Junk In Your (Ship's) Trunk
 ===========================
 
-Table of Contents
+Table Of Contents
 -----------------
 - Junk In Your (Ship's) Trunk
-    - Table of Contents
+    - Table Of Contents
 - Changelog
+    - v2.1.0
     - v2.0.0
     - v1.1.0
     - v1.0.0
@@ -14,9 +15,16 @@ Table of Contents
 Changelog
 =========
 
+v2.1.0
+------
+- Added Sextant 100CM Ballast Cargo Hold shielded and unshielded variants:
+    - fore, port, and starboard
+    - inverted aft, fore, port, and starboard
+
 v2.0.0
 ------
 - Adjusted method of variant creation, requires clean install if upgrading from previous versions!
+- Removed meshes as they are no longer needed
 - Added 3x and 10x Cargo Expander optional plugins
 - Made FOMOD installer
 - Added vertical orientations of fore, aft, port, and starboard shielded and unshielded 200CM Ballast Cargo Holds
