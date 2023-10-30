@@ -20,6 +20,8 @@
 # file list:
 #   text files:
 #     .version.ps1
+#     ./support/docs/README.md
+#     ./data/fomod/info.xml
 
 
 # get a hash from a string
@@ -59,21 +61,28 @@ $text_files.Add(@{
         # .version.ps1
         # build_number = ...
         file               = "./.version.ps1"
-        search_and_replace = @(
-            @{
+        search_and_replace = @(@{
                 search  = "(build_number = )\d*"
                 replace = "`${1}" + $version.BuildNumber.ToString()
-            }
-        )
+            })
     })
 $text_files.Add(@{
+        # ./support/docs/README.md
+        # Version: ...
         file               = "./support/docs/README.md"
-        search_and_replace = @(
-            @{
+        search_and_replace = @(@{
                 search  = "(Version: ).*"
                 replace = "`${1}" + $version.ToString()
-            }
-        )
+            })
+    })
+$text_files.Add(@{
+        # ./data/fomod/info.xml
+        # <Version>...</Version>
+        file               = "./data/fomod/info.xml"
+        search_and_replace = @(@{
+                search  = "(<Version>).*(</Version>)"
+                replace = "`${1}" + $version.ToString() + "`$2"
+            })
     })
 
 "------------------------------"
