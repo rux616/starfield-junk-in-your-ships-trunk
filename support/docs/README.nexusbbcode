@@ -1,5 +1,5 @@
 [size=5][b]Junk In Your (Ship's) Trunk[/b][/size]
-Version: 2.1.0
+Version: 2.2.0
 
 [size=4][b][u]Table Of Contents:[/u][/b][/size]
 - Junk In Your (Ship's) Trunk
@@ -37,6 +37,16 @@ I know that some people use mods that increase the capacity of cargo modules by 
 
 [size=4][b][u]List of Modules:[/u][/b][/size]
 [b]Cargo:[/b]
+- Sextant 10T Hauler Cargo Hold:
+    - fore/aft top/bottom/port/starboard rotations (v2.2.0)
+    - port/starboard top/bottom/fore/aft rotations (v2.2.0)
+    - top fore/aft/port/starboard rotations (v2.2.0)
+    - bottom port/starboard rotations (v2.2.0)
+- Sextant 10ST Hauler Shielded Cargo Hold:
+    - fore/aft top/bottom/port/starboard rotations (v2.2.0)
+    - port/starboard top/bottom/fore/aft rotations (v2.2.0)
+    - top fore/aft/port/starboard rotations (v2.2.0)
+    - bottom port/starboard rotations (v2.2.0)
 - Sextant 100CM Ballast Cargo Hold
     - fore, port, and starboard (v2.1.0)
     - inverted aft, fore, port, and starboard (v2.1.0)

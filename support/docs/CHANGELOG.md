@@ -6,6 +6,7 @@ Table Of Contents
 - [Junk In Your (Ship's) Trunk](#junk-in-your-ships-trunk)
     - [Table Of Contents](#table-of-contents)
 - [Changelog](#changelog)
+    - [v2.2.0](#v220)
     - [v2.1.0](#v210)
     - [v2.0.0](#v200)
     - [v1.1.0](#v110)
@@ -14,6 +15,16 @@ Table Of Contents
 
 Changelog
 =========
+
+v2.2.0
+------
+- Added Sextant 10T Hauler Cargo Hold, shielded and unshielded variants:
+    - fore/aft top/bottom/port/starboard rotations
+    - port/starboard top/bottom/fore/aft rotations
+    - top fore/aft/port/starboard rotations
+    - bottom port/starboard rotations
+
+([TOC](#table-of-contents))
 
 v2.1.0
 ------
