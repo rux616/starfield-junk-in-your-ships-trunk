@@ -1,6 +1,6 @@
 Junk In Your (Ship's) Trunk
 ===========================
-Version: 2.2.0
+Version: 2.3.0
 
 Table Of Contents
 -----------------
@@ -9,6 +9,7 @@ Table Of Contents
 - Overview
     - Summary
     - Cargo Expanders
+    - Compatibility
     - List of Modules
     - Known Issues
 - Installation
@@ -40,9 +41,19 @@ Cargo Expanders
 ---------------
 I know that some people use mods that increase the capacity of cargo modules by 3x or even 10x, so I've included a couple additional plugins that can adjust the capacity of the cargo modules touched by JIYT to match.
 
+Compatibility
+-------------
+Better Ship Part Flips (https://www.nexusmods.com/starfield/mods/5953) by Freschu: Compatible with v0.1.0 (checked 2023-11-01)
+Better Ship Part Snaps (https://www.nexusmods.com/starfield/mods/5698) by Freschu: Partial conflict with v0.3.0, put JIYT lower in your load order (checked 2023-11-01)
+Ship Module Snap Expansion (SMSEX) (https://www.nexusmods.com/starfield/mods/6029) by Gilibran: Compatible with v1.0 (checked 2023-11-01)
+
 List of Modules
 ---------------
 Cargo:
+- Sextant 20T Hauler Cargo Hold:
+    - bottom port-to-starboard (v2.3.0)
+    - top fore-to-aft and port-to-starboard (v2.3.0)
+    - fore/aft/port/starboard vertical/horizontal (v2.3.0)
 - Sextant 10T Hauler Cargo Hold:
     - fore/aft top/bottom/port/starboard rotations (v2.2.0)
     - port/starboard top/bottom/fore/aft rotations (v2.2.0)

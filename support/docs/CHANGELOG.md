@@ -6,6 +6,7 @@ Table Of Contents
 - [Junk In Your (Ship's) Trunk](#junk-in-your-ships-trunk)
     - [Table Of Contents](#table-of-contents)
 - [Changelog](#changelog)
+    - [v2.3.0](#v230)
     - [v2.2.0](#v220)
     - [v2.1.0](#v210)
     - [v2.0.0](#v200)
@@ -16,19 +17,29 @@ Table Of Contents
 Changelog
 =========
 
+v2.3.0
+------
+- Added 11 Sextant 20T Hauler Cargo Hold orientations:
+    - bottom port-to-starboard
+    - top fore-to-aft and port-to-starboard
+    - fore/aft/port/starboard vertical/horizontal
+- Added notes in README/mod description about compatibility with a few other similar mods
+
+([TOC](#table-of-contents))
+
 v2.2.0
 ------
-- Added Sextant 10T Hauler Cargo Hold, shielded and unshielded variants:
-    - fore/aft top/bottom/port/starboard rotations
-    - port/starboard top/bottom/fore/aft rotations
-    - top fore/aft/port/starboard rotations
-    - bottom port/starboard rotations
+- Added 22 Sextant 10T/10ST Hauler Cargo Hold (unshielded and shielded, respectively) orientations:
+    - fore/aft top/bottom/port/starboard orientations
+    - port/starboard top/bottom/fore/aft orientations
+    - top fore/aft/port/starboard orientations
+    - bottom port/starboard orientations
 
 ([TOC](#table-of-contents))
 
 v2.1.0
 ------
-- Added Sextant 100CM Ballast Cargo Hold shielded and unshielded variants:
+- Added 7 Sextant 100CM Ballast Cargo Hold shielded and unshielded variants:
     - fore, port, and starboard
     - inverted aft, fore, port, and starboard
 
