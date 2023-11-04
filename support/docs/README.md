@@ -2,7 +2,7 @@ Junk In Your (Ship's) Trunk
 ===========================
 by rux616
 
-Version: 2.4.0
+Version: 2.5.0
 
 Table Of Contents
 -----------------
@@ -58,6 +58,10 @@ Compatibility
 List of Modules
 ---------------
 **Cargo:**
+- Protectorate Caravel V101 Cargo Hold
+    - vertical fore, aft, port, and starboard (v2.5.0)
+    - fore, aft (v2.5.0)
+    - top fore-to-aft, top port-to-starboard, bottom fore-to-aft, bottom port-to-starboard (v2.5.0)
 - Sextant 100CM Ballast Cargo Hold
     - fore, port, and starboard (v2.1.0)
     - inverted aft, fore, port, and starboard (v2.1.0)

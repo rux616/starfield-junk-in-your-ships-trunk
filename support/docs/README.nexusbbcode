@@ -1,7 +1,7 @@
 [size=5][b]Junk In Your (Ship's) Trunk[/b][/size]
 by rux616
 
-Version: 2.4.0
+Version: 2.5.0
 
 [size=4][b][u]Table Of Contents:[/u][/b][/size]
 - Junk In Your (Ship's) Trunk
@@ -45,6 +45,10 @@ I know that some people use mods that increase the capacity of cargo modules by 
 
 [size=4][b][u]List of Modules:[/u][/b][/size]
 [b]Cargo:[/b]
+- Protectorate Caravel V101 Cargo Hold
+    - vertical fore, aft, port, and starboard (v2.5.0)
+    - fore, aft (v2.5.0)
+    - top fore-to-aft, top port-to-starboard, bottom fore-to-aft, bottom port-to-starboard (v2.5.0)
 - Sextant 100CM Ballast Cargo Hold
     - fore, port, and starboard (v2.1.0)
     - inverted aft, fore, port, and starboard (v2.1.0)
