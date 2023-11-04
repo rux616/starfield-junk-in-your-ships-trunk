@@ -7,6 +7,7 @@ unit CloneCell;
 // TODO
 // clone cell to new file
 // determine whether to deal with worldspaces
+// remove "temporary" group if empty when copying persistent records
 
 
 const
