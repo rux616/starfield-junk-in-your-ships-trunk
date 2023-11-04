@@ -1,6 +1,8 @@
 Junk In Your (Ship's) Trunk
 ===========================
-Version: 2.3.0
+by rux616
+
+Version: 2.4.0
 
 Table Of Contents
 -----------------
@@ -50,20 +52,6 @@ Ship Module Snap Expansion (SMSEX) (https://www.nexusmods.com/starfield/mods/602
 List of Modules
 ---------------
 Cargo:
-- Sextant 20T Hauler Cargo Hold:
-    - bottom port-to-starboard (v2.3.0)
-    - top fore-to-aft and port-to-starboard (v2.3.0)
-    - fore/aft/port/starboard vertical/horizontal (v2.3.0)
-- Sextant 10T Hauler Cargo Hold:
-    - fore/aft top/bottom/port/starboard rotations (v2.2.0)
-    - port/starboard top/bottom/fore/aft rotations (v2.2.0)
-    - top fore/aft/port/starboard rotations (v2.2.0)
-    - bottom port/starboard rotations (v2.2.0)
-- Sextant 10ST Hauler Shielded Cargo Hold:
-    - fore/aft top/bottom/port/starboard rotations (v2.2.0)
-    - port/starboard top/bottom/fore/aft rotations (v2.2.0)
-    - top fore/aft/port/starboard rotations (v2.2.0)
-    - bottom port/starboard rotations (v2.2.0)
 - Sextant 100CM Ballast Cargo Hold
     - fore, port, and starboard (v2.1.0)
     - inverted aft, fore, port, and starboard (v2.1.0)
@@ -86,6 +74,28 @@ Cargo:
     - fore, aft (v2.0.0)
     - top fore-to-aft, top port-to-starboard, bottom fore-to-aft, bottom port-to-starboard (v2.0.0)
     - vertical fore, aft, port, and starboard (v2.0.0)
+- Sextant 10T Hauler Cargo Hold:
+    - fore/aft top/bottom/port/starboard rotations (v2.2.0)
+    - port/starboard top/bottom/fore/aft rotations (v2.2.0)
+    - top fore/aft/port/starboard rotations (v2.2.0)
+    - bottom port/starboard rotations (v2.2.0)
+- Sextant 10ST Hauler Shielded Cargo Hold:
+    - fore/aft top/bottom/port/starboard rotations (v2.2.0)
+    - port/starboard top/bottom/fore/aft rotations (v2.2.0)
+    - top fore/aft/port/starboard rotations (v2.2.0)
+    - bottom port/starboard rotations (v2.2.0)
+- Sextant 20T Hauler Cargo Hold:
+    - bottom port-to-starboard (v2.3.0)
+    - top fore-to-aft and port-to-starboard (v2.3.0)
+    - fore/aft/port/starboard vertical/horizontal (v2.3.0)
+- Sextant 30T Hauler Cargo Hold:
+    - bottom/top fore/aft (v2.4.0)
+    - fore/aft top/bottom/port/starboard (v2.4.0)
+    - port/starboard top/bottom/fore/aft (v2.4.0)
+- Sextant 40T Hauler Cargo Hold:
+    - bottom/top fore/aft (v2.4.0)
+    - fore/aft top/bottom/port/starboard (v2.4.0)
+    - port/starboard top/bottom/fore/aft (v2.4.0)
 
 Known Issues
 ------------
@@ -101,7 +111,7 @@ Upgrading
 ---------
 When upgrading major versions (for example v1.whatever to v2.whatever), you need to do a clean install:
 - Open the game and load your latest save
-- Remove all added modules from your ship
+- Remove all JIYT-added modules from your ship
 - Save your game, then quit
 - Uninstall the previous version of the plugin and all its files
 - Open the game and load your last save
@@ -147,6 +157,7 @@ Mod Organizer 2 team: For getting Mod Organizer 2 with Starfield support out the
 Nexus Mods: For mod hosting and for the Vortex Mod Manager
 Avi: Help writing the summary to make it a bit less dry, and for helping to test this mod
 Lively: For helping to test this mod
+TheOGTennessee: For the idea to include 3x and 10x cargo capacity modifiers
 
 This mod's repo contains the following programs, each having their own copyrights and licenses:
 

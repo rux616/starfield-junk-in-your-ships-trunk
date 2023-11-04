@@ -6,6 +6,7 @@ Table Of Contents
 - [Junk In Your (Ship's) Trunk](#junk-in-your-ships-trunk)
     - [Table Of Contents](#table-of-contents)
 - [Changelog](#changelog)
+    - [v2.4.0](#v240)
     - [v2.3.0](#v230)
     - [v2.2.0](#v220)
     - [v2.1.0](#v210)
@@ -16,6 +17,15 @@ Table Of Contents
 
 Changelog
 =========
+
+v2.4.0
+------
+- Added 20 Sextant 30T/40T Hauler Cargo Hold orientations:
+    - bottom/top fore/aft
+    - fore/aft top/bottom/port/starboard
+    - port/starboard top/bottom/fore/aft
+
+([TOC](#table-of-contents))
 
 v2.3.0
 ------
