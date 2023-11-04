@@ -2,7 +2,7 @@ Junk In Your (Ship's) Trunk
 ===========================
 by rux616
 
-Version: 2.5.0
+Version: 2.6.0
 
 Table Of Contents
 -----------------
@@ -62,6 +62,18 @@ List of Modules
     - vertical fore, aft, port, and starboard (v2.5.0)
     - fore, aft (v2.5.0)
     - top fore-to-aft, top port-to-starboard, bottom fore-to-aft, bottom port-to-starboard (v2.5.0)
+- Protectorate Caravel V101 Shielded Cargo Hold
+    - vertical fore, aft, port, and starboard (v2.5.0)
+    - fore, aft (v2.5.0)
+    - top fore-to-aft, top port-to-starboard, bottom fore-to-aft, bottom port-to-starboard (v2.5.0)
+- Protectorate Caravel V102 Cargo Hold
+    - vertical fore, aft, port, and starboard (v2.6.0)
+    - fore, aft (v2.6.0)
+    - top fore-to-aft, top port-to-starboard, bottom fore-to-aft, bottom port-to-starboard (v2.6.0)
+- Protectorate Caravel V102 Shielded Cargo Hold
+    - vertical fore, aft, port, and starboard (v2.6.0)
+    - fore, aft (v2.6.0)
+    - top fore-to-aft, top port-to-starboard, bottom fore-to-aft, bottom port-to-starboard (v2.6.0)
 - Sextant 100CM Ballast Cargo Hold
     - fore, port, and starboard (v2.1.0)
     - inverted aft, fore, port, and starboard (v2.1.0)

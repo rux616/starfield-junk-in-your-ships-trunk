@@ -6,6 +6,7 @@ Table Of Contents
 - Junk In Your (Ship's) Trunk
     - Table Of Contents
 - Changelog
+    - v2.6.0
     - v2.5.0
     - v2.4.0
     - v2.3.0
@@ -18,6 +19,13 @@ Table Of Contents
 
 Changelog
 =========
+
+v2.6.0
+------
+- Added 10 Protectorate Caravel V102 Shielded/Unshielded Cargo Hold orientations:
+    - port/starboard vertical
+    - fore/aft horizontal/vertical
+    - bottom/top fore-to-aft/port-to-starboard
 
 v2.5.0
 ------
