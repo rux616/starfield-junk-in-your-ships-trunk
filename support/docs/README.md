@@ -2,7 +2,7 @@ Junk In Your (Ship's) Trunk
 ===========================
 by rux616
 
-Version: 2.6.0
+Version: 2.7.0
 
 Table Of Contents
 -----------------
@@ -58,28 +58,14 @@ Compatibility
 List of Modules
 ---------------
 **Cargo:**
-- Protectorate Caravel V101 Cargo Hold
-    - vertical fore, aft, port, and starboard (v2.5.0)
-    - fore, aft (v2.5.0)
-    - top fore-to-aft, top port-to-starboard, bottom fore-to-aft, bottom port-to-starboard (v2.5.0)
-- Protectorate Caravel V101 Shielded Cargo Hold
-    - vertical fore, aft, port, and starboard (v2.5.0)
-    - fore, aft (v2.5.0)
-    - top fore-to-aft, top port-to-starboard, bottom fore-to-aft, bottom port-to-starboard (v2.5.0)
-- Protectorate Caravel V102 Cargo Hold
-    - vertical fore, aft, port, and starboard (v2.6.0)
-    - fore, aft (v2.6.0)
-    - top fore-to-aft, top port-to-starboard, bottom fore-to-aft, bottom port-to-starboard (v2.6.0)
-- Protectorate Caravel V102 Shielded Cargo Hold
-    - vertical fore, aft, port, and starboard (v2.6.0)
-    - fore, aft (v2.6.0)
-    - top fore-to-aft, top port-to-starboard, bottom fore-to-aft, bottom port-to-starboard (v2.6.0)
-- Sextant 100CM Ballast Cargo Hold
-    - fore, port, and starboard (v2.1.0)
-    - inverted aft, fore, port, and starboard (v2.1.0)
-- Sextant 100CM Ballast Shielded Cargo Hold
-    - fore, port, and starboard (v2.1.0)
-    - inverted aft, fore, port, and starboard (v2.1.0)
+- Protectorate Caravel V101 Cargo Hold (v2.5.0)
+- Protectorate Caravel V101 Shielded Cargo Hold (v2.5.0)
+- Protectorate Caravel V102 Cargo Hold (v2.6.0)
+- Protectorate Caravel V102 Shielded Cargo Hold (v2.6.0)
+- Protectorate Caravel V103 Cargo Hold (v2.7.0)
+- Protectorate Caravel V104 Cargo Hold (v2.7.0)
+- Sextant 100CM Ballast Cargo Hold (v2.1.0)
+- Sextant 100CM Ballast Shielded Cargo Hold (v2.1.0)
 - Sextant 200CM Ballast Cargo Hold
     - fore, aft (v1.0.0)
     - top fore-to-aft, top port-to-starboard, bottom fore-to-aft, bottom port-to-starboard (v1.1.0)
@@ -88,36 +74,13 @@ List of Modules
     - fore, aft (v1.0.0)
     - top fore-to-aft, top port-to-starboard, bottom fore-to-aft, bottom port-to-starboard (v1.1.0)
     - vertical fore, aft, port, and starboard (v2.0.0)
-- Sextant 300CM Ballast Cargo Hold
-    - fore, aft (v2.0.0)
-    - top fore-to-aft, top port-to-starboard, bottom fore-to-aft, bottom port-to-starboard (v2.0.0)
-    - vertical fore, aft, port, and starboard (v2.0.0)
-- Sextant 400CM Ballast Cargo Hold
-    - fore, aft (v2.0.0)
-    - top fore-to-aft, top port-to-starboard, bottom fore-to-aft, bottom port-to-starboard (v2.0.0)
-    - vertical fore, aft, port, and starboard (v2.0.0)
-- Sextant 10T Hauler Cargo Hold:
-    - fore/aft top/bottom/port/starboard rotations (v2.2.0)
-    - port/starboard top/bottom/fore/aft rotations (v2.2.0)
-    - top fore/aft/port/starboard rotations (v2.2.0)
-    - bottom port/starboard rotations (v2.2.0)
-- Sextant 10ST Hauler Shielded Cargo Hold:
-    - fore/aft top/bottom/port/starboard rotations (v2.2.0)
-    - port/starboard top/bottom/fore/aft rotations (v2.2.0)
-    - top fore/aft/port/starboard rotations (v2.2.0)
-    - bottom port/starboard rotations (v2.2.0)
-- Sextant 20T Hauler Cargo Hold:
-    - bottom port-to-starboard (v2.3.0)
-    - top fore-to-aft and port-to-starboard (v2.3.0)
-    - fore/aft/port/starboard vertical/horizontal (v2.3.0)
-- Sextant 30T Hauler Cargo Hold:
-    - bottom/top fore/aft (v2.4.0)
-    - fore/aft top/bottom/port/starboard (v2.4.0)
-    - port/starboard top/bottom/fore/aft (v2.4.0)
-- Sextant 40T Hauler Cargo Hold:
-    - bottom/top fore/aft (v2.4.0)
-    - fore/aft top/bottom/port/starboard (v2.4.0)
-    - port/starboard top/bottom/fore/aft (v2.4.0)
+- Sextant 300CM Ballast Cargo Hold (v2.0.0)
+- Sextant 400CM Ballast Cargo Hold (v2.0.0)
+- Sextant 10T Hauler Cargo Hold (v2.2.0)
+- Sextant 10ST Hauler Shielded Cargo Hold (v2.2.0)
+- Sextant 20T Hauler Cargo Hold (v2.3.0)
+- Sextant 30T Hauler Cargo Hold (v2.4.0)
+- Sextant 40T Hauler Cargo Hold (v2.4.0)
 
 ([TOC](#table-of-contents))
 

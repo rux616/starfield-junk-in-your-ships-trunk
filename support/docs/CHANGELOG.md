@@ -6,6 +6,7 @@ Table Of Contents
 - [Junk In Your (Ship's) Trunk](#junk-in-your-ships-trunk)
     - [Table Of Contents](#table-of-contents)
 - [Changelog](#changelog)
+    - [v2.7.0](#v270)
     - [v2.6.0](#v260)
     - [v2.5.0](#v250)
     - [v2.4.0](#v240)
@@ -19,6 +20,20 @@ Table Of Contents
 
 Changelog
 =========
+
+v2.7.0
+------
+- Added 10 Protectorate Caravel V103 Cargo Hold orientations:
+    - port/starboard vertical
+    - fore/aft horizontal/vertical
+    - bottom/top fore-to-aft/port-to-starboard
+- Added 10 Protectorate Caravel V104 Cargo Hold orientations:
+    - port/starboard vertical
+    - fore/aft horizontal/vertical
+    - bottom/top fore-to-aft/port-to-starboard
+- Condensed ship module listing in the README a bit
+
+([TOC](#table-of-contents))
 
 v2.6.0
 ------
