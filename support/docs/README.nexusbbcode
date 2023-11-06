@@ -1,7 +1,7 @@
 [size=5][b]Junk In Your (Ship's) Trunk[/b][/size]
 by rux616
 
-Version: 2.7.0
+Version: 2.8.0
 
 [size=4][b][u]Table Of Contents:[/u][/b][/size]
 - Junk In Your (Ship's) Trunk
@@ -39,12 +39,17 @@ I'll be adding other components in the future, so stay tuned; for now, try this 
 I know that some people use mods that increase the capacity of cargo modules by 3x or even 10x, so I've included a couple additional plugins that can adjust the capacity of the cargo modules touched by JIYT to match.
 
 [size=4][b][u]Compatibility:[/u][/b][/size]
-[url=https://www.nexusmods.com/starfield/mods/5953]Better Ship Part Flips[/url] by Freschu: Compatible with v0.1.0 (checked 2023-11-01)
-[url=https://www.nexusmods.com/starfield/mods/5698]Better Ship Part Snaps[/url] by Freschu: Partial conflict with v0.3.0, put JIYT lower in your load order (checked 2023-11-01)
-[url=https://www.nexusmods.com/starfield/mods/6029]Ship Module Snap Expansion (SMSEX)[/url] by Gilibran: Compatible with v1.0 (checked 2023-11-01)
+[url=https://www.nexusmods.com/starfield/mods/5953]Better Ship Part Flips[/url] by Freschu: Compatible with v0.2.0 (checked 2023-11-07)
+[url=https://www.nexusmods.com/starfield/mods/5698]Better Ship Part Snaps[/url] by Freschu: Compatible with v0.3.0 (checked 2023-11-07)
+[url=https://www.nexusmods.com/starfield/mods/6029]Ship Module Snap Expansion (SMSEX)[/url] by Gilibran: Compatible with all released plugins (checked 2023-11-07)
 
 [size=4][b][u]List of Modules:[/u][/b][/size]
 [b]Cargo:[/b]
+- Panoptes da Gama 1000 Cargo Hold (v2.8.0)
+- Panoptes da Gama 1000 Shielded Cargo Hold (v2.8.0)
+- Panoptes da Gama 1010 Cargo Hold (v2.8.0)
+- Panoptes da Gama 1010 Shielded Cargo Hold (v2.8.0)
+- Panoptes da Gama 1020 Cargo Hold (v2.8.0)
 - Protectorate Caravel V101 Cargo Hold (v2.5.0)
 - Protectorate Caravel V101 Shielded Cargo Hold (v2.5.0)
 - Protectorate Caravel V102 Cargo Hold (v2.6.0)

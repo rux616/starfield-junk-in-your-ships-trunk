@@ -6,6 +6,7 @@ Table Of Contents
 - [Junk In Your (Ship's) Trunk](#junk-in-your-ships-trunk)
     - [Table Of Contents](#table-of-contents)
 - [Changelog](#changelog)
+    - [v2.8.0](#v280)
     - [v2.7.0](#v270)
     - [v2.6.0](#v260)
     - [v2.5.0](#v250)
@@ -20,6 +21,19 @@ Table Of Contents
 
 Changelog
 =========
+
+v2.8.0
+------
+- Added 22 Panoptes da Gama 1000/1000 Shielded/1010/1010 Shielded/1020 Cargo Hold orientations:
+    - port/starboard/fore/aft top
+    - port/starboard vertical fore/aft
+    - fore/aft vertical port/starboard
+    - fore/aft bottom
+    - bottom/top fore-to-aft (left)/fore-to-aft (right)/port-to-starboard (fore)/port-to-starboard (aft)
+- Changed Sextant 30T/40T Hauler Cargo Holds so that an icon is shown in the Ship Builder (initially, anyway)
+- Converted all images to JPEG (quality 80) for space savings
+
+([TOC](#table-of-contents))
 
 v2.7.0
 ------
