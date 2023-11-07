@@ -2,7 +2,7 @@ Junk In Your (Ship's) Trunk
 ===========================
 by rux616
 
-Version: 2.8.0
+Version: 2.9.0
 
 Table Of Contents
 -----------------
@@ -69,6 +69,10 @@ List of Modules
 - Protectorate Caravel V102 Shielded Cargo Hold (v2.6.0)
 - Protectorate Caravel V103 Cargo Hold (v2.7.0)
 - Protectorate Caravel V104 Cargo Hold (v2.7.0)
+- Protectorate Galleon S201 Cargo Hold (v2.9.0)
+- Protectorate Galleon S202 Cargo Hold (v2.9.0)
+- Protectorate Galleon S203 Cargo Hold (v2.9.0)
+- Protectorate Galleon S204 Cargo Hold (v2.9.0)
 - Sextant 100CM Ballast Cargo Hold (v2.1.0)
 - Sextant 100CM Ballast Shielded Cargo Hold (v2.1.0)
 - Sextant 200CM Ballast Cargo Hold

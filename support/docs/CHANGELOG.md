@@ -6,6 +6,7 @@ Table Of Contents
 - [Junk In Your (Ship's) Trunk](#junk-in-your-ships-trunk)
     - [Table Of Contents](#table-of-contents)
 - [Changelog](#changelog)
+    - [v2.9.0](#v290)
     - [v2.8.0](#v280)
     - [v2.7.0](#v270)
     - [v2.6.0](#v260)
@@ -21,6 +22,27 @@ Table Of Contents
 
 Changelog
 =========
+
+v2.9.0
+------
+- Added 10 Protectorate Galleon S201 Cargo Hold orientations:
+    - fore/aft
+    - port/starboard/fore/aft vertical
+    - bottom/top fore-to-aft/port-to-starboard
+- Added 20 Protectorate Galleon S202 Cargo Hold orientations:
+    - bottom/top fore/aft
+    - fore/aft top/bottom/port/starboard
+    - port/starboard top/bottom/fore/aft
+- Added 20 Protectorate Galleon S203 Cargo Hold orientations:
+    - bottom/top fore/aft
+    - fore/aft top/bottom/port/starboard
+    - port/starboard top/bottom/fore/aft
+- Added 2 Protectorate Galleon S204 Cargo Hold orientations:
+    - vertical fore-to-aft/port-to-starboard
+- Added some override records and changed CELL EDIDs to avoid duplicates
+- Changed some EDIDs to more closely follow vanilla patterning
+
+([TOC](#table-of-contents))
 
 v2.8.0
 ------
