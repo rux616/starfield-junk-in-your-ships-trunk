@@ -6,6 +6,7 @@ Table Of Contents
 - Junk In Your (Ship's) Trunk
     - Table Of Contents
 - Changelog
+    - v2.10.0
     - v2.9.0
     - v2.8.0
     - v2.7.0
@@ -22,6 +23,17 @@ Table Of Contents
 
 Changelog
 =========
+
+v2.10.0
+------
+- Added 11 Panoptes Polo 2000/2010/2020/2030 Cargo Hold orientations:
+    - bottom port-to-starboard
+    - top fore-to-aft and port-to-starboard
+    - fore/aft/port/starboard vertical/horizontal
+- Added 10 Dogstar StorMax 30/40/50/60 Cargo Hold orientations:
+    - fore/aft
+    - port/starboard/fore/aft vertical
+    - bottom/top fore-to-aft/port-to-starboard
 
 v2.9.0
 ------

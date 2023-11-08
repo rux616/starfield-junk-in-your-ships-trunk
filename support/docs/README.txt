@@ -2,7 +2,7 @@ Junk In Your (Ship's) Trunk
 ===========================
 by rux616
 
-Version: 2.9.0
+Version: 2.10.0
 
 Table Of Contents
 -----------------
@@ -29,15 +29,13 @@ Overview
 
 Summary
 -------
-(Adds additional orientations for ship cargo modules.)
+(You want variety? We got variety. Adds 455 ship cargo hold variants, covering all currently available modules.)
+
+Up? Yes! Down? Also yes! Left? Still yes! Right? I'll give you three guesses, and the first two don't count! You want variety? We got variety. The JIYT Consortium is proud to offer 455 additional ship cargo hold flips/orientations/variants over and above the defaults, with additional ones planned for other module types as well.
 
 Starfield's ship builder is amazing. While it places a number of reasonable constraints on us as we get the ability to make better and better ships, some of those constraints are just silly, and I want to fix that!
 
 This mod tackles one of those constraints. It will let you mount cargo holds (and in the future, other components) in more positions and in different directions on your ship. Want that item to stick on the back, but it only sticks to the side right now? Come on in.
-
-I've started small, with the Sextant 200CM Cargo Hold (shielded and non-shielded varieties), one of the first cargo components available to players. In vanilla Starfield, this piece only mounts to the sides of ships, now you can mount it on the front, back, top, and bottom as well. In fact, the first cargo module I added was the "aft" version of the Sextant 200CM Ballast Cargo Hold, so Junk In Your (Ship's) Trunk just seemed to fit.
-
-I'll be adding other components in the future, so stay tuned; for now, try this out and let me know what you think!
 
 Cargo Expanders
 ---------------
@@ -52,11 +50,19 @@ Ship Module Snap Expansion (SMSEX) (https://www.nexusmods.com/starfield/mods/602
 List of Modules
 ---------------
 Cargo:
+- Dogstar StorMax 30 Cargo Hold (v2.10.0)
+- Dogstar StorMax 40 Cargo Hold (v2.10.0)
+- Dogstar StorMax 50 Cargo Hold (v2.10.0)
+- Dogstar StorMax 60 Cargo Hold (v2.10.0)
 - Panoptes da Gama 1000 Cargo Hold (v2.8.0)
 - Panoptes da Gama 1000 Shielded Cargo Hold (v2.8.0)
 - Panoptes da Gama 1010 Cargo Hold (v2.8.0)
 - Panoptes da Gama 1010 Shielded Cargo Hold (v2.8.0)
 - Panoptes da Gama 1020 Cargo Hold (v2.8.0)
+- Panoptes Polo 2000 Cargo Hold (v2.10.0)
+- Panoptes Polo 2010 Cargo Hold (v2.10.0)
+- Panoptes Polo 2020 Cargo Hold (v2.10.0)
+- Panoptes Polo 2030 Cargo Hold (v2.10.0)
 - Protectorate Caravel V101 Cargo Hold (v2.5.0)
 - Protectorate Caravel V101 Shielded Cargo Hold (v2.5.0)
 - Protectorate Caravel V102 Cargo Hold (v2.6.0)
