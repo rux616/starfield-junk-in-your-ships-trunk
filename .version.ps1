@@ -30,7 +30,7 @@ $is_beta = $false
 $is_alpha = $false
 
 # build info
-$build_number = 42
+$build_number = 43
 $include_build_in_version = $false
 
 
