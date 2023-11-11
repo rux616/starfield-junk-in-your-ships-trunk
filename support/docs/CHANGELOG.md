@@ -6,6 +6,7 @@ Table Of Contents
 - [Junk In Your (Ship's) Trunk](#junk-in-your-ships-trunk)
     - [Table Of Contents](#table-of-contents)
 - [Changelog](#changelog)
+    - [v2.11.0](#v2110)
     - [v2.10.0](#v2100)
     - [v2.9.0](#v290)
     - [v2.8.0](#v280)
@@ -23,6 +24,31 @@ Table Of Contents
 
 Changelog
 =========
+
+v2.11.0
+-------
+- Added additional snap points to fore/aft/port/starboard Protectorate Galleon S202 Cargo Hold variants
+- Added additional snap points to fore/aft/port/starboard Protectorate Galleon S203 Cargo Hold variants
+- Added additional snap points to fore/aft/port/starboard Sextant 10T/10ST Hauler Cargo Hold variants
+- Added additional snap points to fore/aft/port/starboard Sextant 20T Hauler Cargo Hold variants
+- Added additional snap points to fore/aft/port/starboard Sextant 30T/40T Hauler Cargo Hold variants
+- Corrected some EDIDs on records associated with the Sextant 10T/10ST Hauler Cargo Hold
+- Added 9 Dogstar 10S/20S/30S/40S/50S/60S Shield Generator orientations:
+    - fore/aft horizontal/vertical
+    - port/starboard vertical
+    - top port-to-starboard
+    - bottom fore-to-aft/port-to-starboard
+- Added 15 Nautilus Bastille 80S/81S/82S/83S/84S Shield Generator orientations:
+    - fore/aft horizontal/vertical
+    - fore/aft
+    - port/starboard
+    - port/starboard vertical
+    - bottom
+    - top/bottom fore-to-aft/port-to-starboard
+- Added 5 Protectorate Marduk 1010-A/1020-A/1030-A/1040-A Shield Generator orientations:
+    - fore/aft/port/starboard/bottom
+
+([TOC](#table-of-contents))
 
 v2.10.0
 ------

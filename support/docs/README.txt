@@ -2,7 +2,7 @@ Junk In Your (Ship's) Trunk
 ===========================
 by rux616
 
-Version: 2.10.0
+Version: 2.11.0
 
 Table Of Contents
 -----------------
@@ -90,11 +90,16 @@ Cargo:
 - Sextant 20T Hauler Cargo Hold (v2.3.0)
 - Sextant 30T Hauler Cargo Hold (v2.4.0)
 - Sextant 40T Hauler Cargo Hold (v2.4.0)
+Shields:
+- Dogstar 10S/20S/30S/40S/50S/60S Protector Shield Generator (v2.11.0)
+- Nautilus Bastille S80/S81/S82/S83/S84 Shield Generator (v2.11.0)
+- Protectorate Marduk 1010-A/1020-A/1030-A/1040-A Shield Generator (v2.11.0)
 
 Known Issues
 ------------
-- Modules are clean. The vanilla ship modules have a number of decals like scorch marks, dirt streaks, etc. applied to them. Due to the method by which they are applied, I can't reasonably add them until we get access to the CK.
+- Modules are clean. The vanilla ship modules have a number of things like lights and decals (scorch marks, dirt streaks, etc.) applied to them. Due to the method by which they are applied, I can't reasonably add them until we get access to the CK.
 - Module icons (for the added orientations) in the Ship Builder are missing. This is another thing that is probably going to have to wait until we get access to the CK to get fixed.
+- Some modules (shields, for example) don't really attach to other modules in certain orientations well. Bethesda did a really good job designing a modular ship system with one major exception: the visual attachment points. There is one style of attachment points for fore/aft, a different style for port/starboard, and yet another style for top/bottom. Because none of them match, some module variants/orientations just don't look right when attaching to others. I'm not redesigning or redoing all the 3D models for every ship part in the game (yet, at least. lol), so if some modules don't match quite in the way you want them to and it bothers you that much, you're going to either need to not use that particular variant/orientation combination, or find a different combination that _does_ work.
 
 
 Installation
