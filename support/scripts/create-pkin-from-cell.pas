@@ -3,8 +3,80 @@
 }
 unit CreatePKINFromCell;
 
-var
-  mod_type, mod_manufacturer, mod_series, mod_model: string;
+// EDID naming conventions:
+//  GBFM:
+//    non-weapons:
+//      SM<SHIP_CLASS>_<Type_gbfm>_<Manufacturer>_<Model-And-Series>[_<Orientation>][_lvl<#>]
+//    weapons:
+//      SM<SHIP_CLASS>_<Type_gbfm>_<WeaponType>_<Manufacturer>_<Model-And-Series>[_<Orientation>]_lvl<#>
+//  PKIN:
+//    non-hab,non-weapon:
+//      ShipPI_SMOD_<Type_pkin>_Manufacturer_<Model-And-Series>
+//  CELL:
+//    non-weapon:
+//      PackInShipPISMOD<Type_pkin><Manufacturer><ModelAndSeries>[<Orientation>]StorageCell
+
+// types:
+//  Cargo
+//  CargoShielded
+//  Shields (GBFM) / Shield (PKIN)
+//  Reactor
+//  GravDrive (GBFM) / Grav (PKIN)
+//  Weapon
+//  Cockpit
+//  Docker
+//  FuelTank
+//  Hab
+//  Lander
+//  Struct
+//  ScanJammer01
+//  ScanJammer02
+//  ScanJammer03
+//  Bay
+//  CrossBrace
+//  Engine (GBFM) / Eng (PKIN)
+
+// manufacturers:
+//  Panoptes
+//  Reladyne
+//  DeepCore
+//  Dogstar
+//  Slayton
+//  AmunDunn
+//  Xiang
+//  Protectorate
+//  Nautilus
+//  Sextant
+//  Vanguard
+//  Ballistic
+//  Horizon
+//  Shinigami
+//  LightScythe
+//  Nova
+//  Deimos
+//  Taiyo
+//  Stroud
+//  HopeTech
+//  Hope
+
+// orientations:
+//  Port
+//  Stbd / Stb
+//  Btm
+//  Top
+//
+
+var module_type, module_manufacturer, module_series, module_model: string;
+
+function BoolToStr(b: boolean): string;
+begin
+  if b then
+    Result := 'true'
+  else
+    Result := 'false';
+end;
+
+
 
 // Called before processing
 // You can remove it if script doesn't require initialization code
@@ -12,12 +84,13 @@ function Initialize: integer;
 var
   proceed: boolean;
 begin
-  proceed := InputQuery('title', 'type something', mod_type);
-  AddMessage('proceed: ' + IntToStr(proceed) + ', input: ' + mod_type);
-  if not proceed then
-    AddMessage('User cancelled');
-    Result := -1;
-    Exit;
+  // proceed := InputQuery('title', 'type something', module_type);
+  // AddMessage('Result: ' + BoolToStr(proceed) + ', input: ' + module_type);
+  // if not proceed then
+  //   AddMessage('User cancelled');
+  //   Result := -1;
+  //   Exit;
+  Result := 0;
 end;
 
 function Process(e: IInterface): integer;
@@ -25,67 +98,46 @@ var
   i: integer;
   template_pkin, new_pkin, template_pkin_element_record: IInterface;
   to_file: IwbFile;
+  sl: TStringList;
+  regexp: TPerlRegEx;
+  bFound: boolean;
+  editor_id: string;
 begin
   Result := 0;
 
-  // EDID naming conventions:
-  //  GBFM:
-  //    non-weapons:
-  //      SM<SHIP_CLASS>_<Type_gbfm>_<Manufacturer>_<Model-Series-And-Number>[_<Orientation>][_lvl<#>]
-  //    weapons:
-  //      SM<SHIP_CLASS>_<Type_gbfm>_<WeaponType>_<Manufacturer>_<Model-Series-And-Number>[_<Orientation>]_lvl<#>
-  //  PKIN:
-  //    non-hab,non-weapon:
-  //      ShipPI_SMOD_<Type_pkin>_Manufacturer_<Model-Series-And-Number>
-
-  // types:
-  //  Cargo
-  //  CargoShielded
-  //  Shield
-  //  Reactor
-  //  GravDrive (GBFM) / Grav (PKIN)
-  //  Weapon
-  //  Cockpit
-  //  Docker
-  //  FuelTank
-  //  Hab
-  //  Lander
-  //  Struct
-  //  ScanJammer01
-  //  ScanJammer02
-  //  ScanJammer03
-  //  Bay
-  //  CrossBrace
-  //  Engine (GBFM) / Eng (PKIN)
-
-  // manufacturers:
-  //  Panoptes
-  //  Reladyne
-  //  DeepCore
-  //  Dogstar
-  //  Slayton
-  //  AmunDunn
-  //  Xiang
-  //  Protectorate
-  //  Nautilus
-  //  Sextant
-  //  Vanguard
-  //  Ballistic
-  //  Horizon
-  //  Shinigami
-  //  LightScythe
-  //  Nova
-  //  Deimos
-  //  Taiyo
-  //  Stroud
-  //  HopeTech
-  //  Hope
+  if Signature(e) <> 'CELL' then
+    Exit;
 
   to_file := GetFile(e);
   AddMessage('File: ' + GetFileName(to_file) + ', Load Order: ' + IntToStr(GetLoadOrder(to_file)));
   AddMessage('fileformidtoloadorderformid: ' + IntToHex(FileFormIDtoLoadOrderFormID(to_file, $00000AC3), 8));
   template_pkin := RecordByFormID(to_file, StrToInt('$' + IntToStr(GetLoadOrder(to_file)) + '000AC3'), False);
   AddMessage('template: ' + FullPath(template_pkin));
+
+  editor_id := EditorID(e);
+  editor_id := RightStr(editor_id, Length(editor_id) - 16); // trim "PackInShipPISMOD" from beginning of EDID
+  editor_id := LeftStr(editor_id, Length(editor_id) - 11); // trim "StorageCell" from end of EDID
+  AddMessage('edid strmanip: ' + editor_id);
+
+  regexp := TPerlRegEx.Create;
+  try
+    regexp.Subject := editor_id;
+    regexp.RegEx := '([A-Z]+(?![a-z])|[A-Z][a-z]+|[0-9]+|[a-z]+)';
+    i := 0;
+    while regexp.MatchAgain do begin
+      AddMessage('match: ' + regexp.Groups[0]);
+      if i = 0 then
+        module_type := regexp.Groups[0]
+      else if i = 1 then
+        module_manufacturer := regexp.Groups[0];
+      Inc(i);
+    end;
+  finally
+    regexp.Free;
+  end;
+  AddMessage('module type: ' + module_type);
+  AddMessage('module manufacturer: ' + module_manufacturer);
+
   // new_pkin := wbCopyElementToFile(template_pkin, to_file, True, True);
   // AddMessage('new: ' + FullPath(new_pkin));
   // new_pkin := Add(GroupBySignature(to_file, 'PKIN'), 'PKIN', True);
