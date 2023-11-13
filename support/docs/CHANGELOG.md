@@ -6,6 +6,7 @@ Table Of Contents
 - [Junk In Your (Ship's) Trunk](#junk-in-your-ships-trunk)
     - [Table Of Contents](#table-of-contents)
 - [Changelog](#changelog)
+    - [v2.12.0](#v2120)
     - [v2.11.0](#v2110)
     - [v2.10.0](#v2100)
     - [v2.9.0](#v290)
@@ -25,6 +26,38 @@ Table Of Contents
 Changelog
 =========
 
+v2.12.0
+-------
+- Added 22 Sextant Deflector SG-10/SG-20/SG-30/SG-35/SG-40/SG-50/SG-60 Shield Generator orientations:
+    - fore/aft top/bottom/port/starboard
+    - port/starboard top/bottom/fore/aft
+    - top fore/aft/port/starboard
+    - bottom port/starboard
+- Added 4 Dogstar Defender 11T/22T/28T/33T/44T Shield Generator orientations:
+    - fore/aft/top/bottom
+- Added 5 Nautilus Tower N400/N410/N420 Shield Generator orientations:
+    - port/starboard/fore/aft/bottom
+- Added 5 Vanguard Bulwark Shield Generator orientations:
+    - port/starboard/fore/aft/bottom
+- Added 5 Protectorate Osiris 2020-B/2030-B/2040-B Shield Generator orientations:
+    - port/starboard/fore/aft/bottom
+- Added 5 Sextant Warden SG-100/SG-200/SG-300/SG-400 Shield Generator orientations:
+    - port/starboard/fore/aft/bottom
+- Added 4 Dogstar Guardian 101D/102D/103D/104D Shield Generator orientations:
+    - fore/aft/top/bottom
+- Added 5 Nautilus Fortress A1/A2/A3 Shield Generator orientations:
+    - port/starboard/fore/aft/bottom
+- Added 5 Sextant Assurance SG-1000/SG-1800/SG-2000/SG-3000 Shield Generator orientations:
+    - port/starboard/fore/aft/bottom
+- Added 5 Protectorate Odin 3030-C/3040-C/3050-C Shield Generator orientations:
+    - port/starboard/fore/aft/bottom
+- Corrected some positioning on the Nautilus "Bastille" shield generators
+- Changed some editor IDs to follow a more consistent naming pattern
+- Changed some module names from "model_number model_series" to "model_series model_number", e.g. from "100CM Ballast" to "Ballast 100CM" and from "11T Defender" to "Defender 11T"
+- Forwarded relevant changes and fixes made in main plugin to Cargo Expander plugins
+
+([TOC](#table-of-contents))
+
 v2.11.0
 -------
 - Added additional snap points to fore/aft/port/starboard Protectorate Galleon S202 Cargo Hold variants
@@ -33,12 +66,12 @@ v2.11.0
 - Added additional snap points to fore/aft/port/starboard Sextant 20T Hauler Cargo Hold variants
 - Added additional snap points to fore/aft/port/starboard Sextant 30T/40T Hauler Cargo Hold variants
 - Corrected some EDIDs on records associated with the Sextant 10T/10ST Hauler Cargo Hold
-- Added 9 Dogstar 10S/20S/30S/40S/50S/60S Shield Generator orientations:
+- Added 9 Dogstar Protector 10S/20S/30S/40S/50S/60S Shield Generator orientations:
     - fore/aft horizontal/vertical
     - port/starboard vertical
     - top port-to-starboard
     - bottom fore-to-aft/port-to-starboard
-- Added 15 Nautilus Bastille 80S/81S/82S/83S/84S Shield Generator orientations:
+- Added 15 Nautilus Bastille S80/S81/S82/S83/S84 Shield Generator orientations:
     - fore/aft horizontal/vertical
     - fore/aft
     - port/starboard

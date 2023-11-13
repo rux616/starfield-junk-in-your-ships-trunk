@@ -2,7 +2,7 @@ Junk In Your (Ship's) Trunk
 ===========================
 by rux616
 
-Version: 2.11.0
+Version: 2.12.0
 
 Table Of Contents
 -----------------
@@ -29,7 +29,7 @@ Overview
 
 Summary
 -------
-(You want variety? We got variety. Now with shields! Adds 455 ship cargo hold variants, covering all currently available modules.)
+(You want variety? We got variety. Now with shields! Adds 455 cargo hold variants and 444 shield variants, covering all respective vanilla modules.)
 
 Up? Yes! Down? Also yes! Left? Still yes! Right? I'll give you three guesses, and the first two don't count! You want variety? We got variety. The JIYT Consortium is proud to offer 455 additional ship cargo hold flips/orientations/variants over and above the defaults, with additional ones planned for other module types as well.
 
@@ -79,27 +79,70 @@ List of Modules
 - Protectorate Galleon S202 Cargo Hold (v2.9.0)
 - Protectorate Galleon S203 Cargo Hold (v2.9.0)
 - Protectorate Galleon S204 Cargo Hold (v2.9.0)
-- Sextant 100CM Ballast Cargo Hold (v2.1.0)
-- Sextant 100CM Ballast Shielded Cargo Hold (v2.1.0)
-- Sextant 200CM Ballast Cargo Hold
-    - fore, aft (v1.0.0)
-    - top fore-to-aft, top port-to-starboard, bottom fore-to-aft, bottom port-to-starboard (v1.1.0)
-    - vertical fore, aft, port, and starboard (v2.0.0)
-- Sextant 200CM Ballast Shielded Cargo Hold
-    - fore, aft (v1.0.0)
-    - top fore-to-aft, top port-to-starboard, bottom fore-to-aft, bottom port-to-starboard (v1.1.0)
-    - vertical fore, aft, port, and starboard (v2.0.0)
-- Sextant 300CM Ballast Cargo Hold (v2.0.0)
-- Sextant 400CM Ballast Cargo Hold (v2.0.0)
-- Sextant 10T Hauler Cargo Hold (v2.2.0)
-- Sextant 10ST Hauler Shielded Cargo Hold (v2.2.0)
-- Sextant 20T Hauler Cargo Hold (v2.3.0)
-- Sextant 30T Hauler Cargo Hold (v2.4.0)
-- Sextant 40T Hauler Cargo Hold (v2.4.0)
+- Sextant Ballast 100CM Cargo Hold (v2.1.0)
+- Sextant Ballast 100CM Shielded Cargo Hold (v2.1.0)
+- Sextant Ballast 200CM Cargo Hold (v1.0.0, v1.1.0, v2.0.0)
+- Sextant Ballast 200CM Shielded Cargo Hold (v1.0.0, v1.1.0, v2.0.0)
+- Sextant Ballast 300CM Cargo Hold (v2.0.0)
+- Sextant Ballast 400CM Cargo Hold (v2.0.0)
+- Sextant Hauler 10T Cargo Hold (v2.2.0)
+- Sextant Hauler 10ST Shielded Cargo Hold (v2.2.0)
+- Sextant Hauler 20T Cargo Hold (v2.3.0)
+- Sextant Hauler 30T Cargo Hold (v2.4.0)
+- Sextant Hauler 40T Cargo Hold (v2.4.0)
 **Shields:**
-- Dogstar 10S/20S/30S/40S/50S/60S Protector Shield Generator (v2.11.0)
-- Nautilus Bastille S80/S81/S82/S83/S84 Shield Generator (v2.11.0)
-- Protectorate Marduk 1010-A/1020-A/1030-A/1040-A Shield Generator (v2.11.0)
+- Dogstar Defender 11T Shield Generator (v2.12.0)
+- Dogstar Defender 22T Shield Generator (v2.12.0)
+- Dogstar Defender 28T Shield Generator (v2.12.0)
+- Dogstar Defender 33T Shield Generator (v2.12.0)
+- Dogstar Defender 44T Shield Generator (v2.12.0)
+- Dogstar Guardian 101D Shield Generator (v2.12.0)
+- Dogstar Guardian 102D Shield Generator (v2.12.0)
+- Dogstar Guardian 103D Shield Generator (v2.12.0)
+- Dogstar Guardian 104D Shield Generator (v2.12.0)
+- Dogstar Protector 10S Shield Generator (v2.11.0)
+- Dogstar Protector 20S Shield Generator (v2.11.0)
+- Dogstar Protector 30S Shield Generator (v2.11.0)
+- Dogstar Protector 40S Shield Generator (v2.11.0)
+- Dogstar Protector 50S Shield Generator (v2.11.0)
+- Dogstar Protector 60S Shield Generator (v2.11.0)
+- Nautilus Bastille S80 Shield Generator (v2.11.0)
+- Nautilus Bastille S81 Shield Generator (v2.11.0)
+- Nautilus Bastille S82 Shield Generator (v2.11.0)
+- Nautilus Bastille S83 Shield Generator (v2.11.0)
+- Nautilus Bastille S84 Shield Generator (v2.11.0)
+- Nautilus Fortress A1 Shield Generator (v2.12.0)
+- Nautilus Fortress A2 Shield Generator (v2.12.0)
+- Nautilus Fortress A3 Shield Generator (v2.12.0)
+- Nautilus Tower N400 Shield Generator (v2.12.0)
+- Nautilus Tower N410 Shield Generator (v2.12.0)
+- Nautilus Tower N420 Shield Generator (v2.12.0)
+- Protectorate Marduk 1010-A Shield Generator (v2.11.0)
+- Protectorate Marduk 1020-A Shield Generator (v2.11.0)
+- Protectorate Marduk 1030-A Shield Generator (v2.11.0)
+- Protectorate Marduk 1040-A Shield Generator (v2.11.0)
+- Protectorate Odin 3030-C Shield Generator (v2.12.0)
+- Protectorate Odin 3040-C Shield Generator (v2.12.0)
+- Protectorate Odin 3050-C Shield Generator (v2.12.0)
+- Protectorate Osiris 2020-B Shield Generator (v2.12.0)
+- Protectorate Osiris 2030-B Shield Generator (v2.12.0)
+- Protectorate Osiris 2040-B Shield Generator (v2.12.0)
+- Sextant Assurance SG-1000 Shield Generator (v2.12.0)
+- Sextant Assurance SG-1800 Shield Generator (v2.12.0)
+- Sextant Assurance SG-2000 Shield Generator (v2.12.0)
+- Sextant Assurance SG-3000 Shield Generator (v2.12.0)
+- Sextant Deflector SG-10 Shield Generator (v2.12.0)
+- Sextant Deflector SG-20 Shield Generator (v2.12.0)
+- Sextant Deflector SG-30 Shield Generator (v2.12.0)
+- Sextant Deflector SG-35 Shield Generator (v2.12.0)
+- Sextant Deflector SG-40 Shield Generator (v2.12.0)
+- Sextant Deflector SG-50 Shield Generator (v2.12.0)
+- Sextant Deflector SG-60 Shield Generator (v2.12.0)
+- Sextant Warden SG-100 Shield Generator (v2.12.0)
+- Sextant Warden SG-200 Shield Generator (v2.12.0)
+- Sextant Warden SG-300 Shield Generator (v2.12.0)
+- Sextant Warden SG-400 Shield Generator (v2.12.0)
+- Vanguard Bulwark Shield Generator (v2.12.0)
 
 ([TOC](#table-of-contents))
 
@@ -107,7 +150,7 @@ Known Issues
 ------------
 - Modules are clean. The vanilla ship modules have a number of things like lights and decals (scorch marks, dirt streaks, etc.) applied to them. Due to the method by which they are applied, I can't reasonably add them until we get access to the CK.
 - Module icons (for the added orientations) in the Ship Builder are missing. This is another thing that is probably going to have to wait until we get access to the CK to get fixed.
-- Some modules (shields, for example) don't really attach to other modules in certain orientations well. Bethesda did a really good job designing a modular ship system with one major exception: the visual attachment points. There is one style of attachment points for fore/aft, a different style for port/starboard, and yet another style for top/bottom. Because none of them match, some module variants/orientations just don't look right when attaching to others. I'm not redesigning or redoing all the 3D models for every ship part in the game (yet, at least. lol), so if some modules don't match quite in the way you want them to and it bothers you that much, you're going to either need to not use that particular variant/orientation combination, or find a different combination that _does_ work.
+- Some modules (shields, for example) don't really attach to certain other modules in certain orientations well. Bethesda did a really good job designing a modular ship system with one major exception: the visual attachment points. There is one style of attachment points for fore/aft, a different style for port/starboard, and yet another style for top/bottom. Because none of them match, some module variants/orientations just don't look right when attaching to others. I'm not redesigning or redoing all the 3D models for every ship part in the game (yet, at least. lol), so if some modules don't match quite in the way you want them to and it bothers you that much, you're going to either need to not use that particular variant/orientation combination, or find a different combination that _does_ work.
 
 ([TOC](#table-of-contents))
 
