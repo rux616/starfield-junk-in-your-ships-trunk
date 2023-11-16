@@ -6,6 +6,7 @@ Table Of Contents
 - [Junk In Your (Ship's) Trunk](#junk-in-your-ships-trunk)
     - [Table Of Contents](#table-of-contents)
 - [Changelog](#changelog)
+    - [v2.13.0](#v2130)
     - [v2.12.0](#v2120)
     - [v2.11.0](#v2110)
     - [v2.10.0](#v2100)
@@ -25,6 +26,15 @@ Table Of Contents
 
 Changelog
 =========
+
+v2.13.0
+-------
+- Added a "Decoration" category to the Ship Builder with decorative versions of all added modules
+- Added new decorative cargo hold, Dogstar StorMax Empty, with 12 orientations
+- Fixed display name of the Protectorate Caravel V102 Cargo Hold modules
+- Changed up description in README a bit
+
+([TOC](#table-of-contents))
 
 v2.12.0
 -------

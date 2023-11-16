@@ -20,3 +20,4 @@
     - stormax 40
     - stormax 50
     - stormax 60
+- localize plugin

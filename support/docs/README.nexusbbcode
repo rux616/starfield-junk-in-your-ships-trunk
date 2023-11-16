@@ -1,7 +1,7 @@
 [size=5][b]Junk In Your (Ship's) Trunk[/b][/size]
 by rux616
 
-Version: 2.12.0
+Version: 2.13.0
 
 [size=4][b][u]Table Of Contents:[/u][/b][/size]
 - Junk In Your (Ship's) Trunk
@@ -25,13 +25,11 @@ Version: 2.12.0
 [size=5][b]Overview[/b][/size]
 
 [size=4][b][u]Summary:[/u][/b][/size]
-(You want variety? We got variety. Now with shields! Adds 455 cargo hold variants and 444 shield variants, covering all respective vanilla modules.)
+(You want variety? We got variety. Now with decorative modules! Adds 455 cargo hold variants and 444 shield variants, covering all respective vanilla modules.)
 
-Up? Yes! Down? Also yes! Left? Still yes! Right? I'll give you three guesses, and the first two don't count! You want variety? We got variety. The JIYT Consortium is proud to offer 455 additional ship cargo hold flips/orientations/variants over and above the defaults, with additional ones planned for other module types as well.
+Up? Yes! Down? Also yes! Left? Still yes! Right? I'll give you three guesses, and the first two don't count! You want variety? We got variety. The JIYT Consortium is proud to offer 455 additional cargo hold and 444 shield flips/orientations/variants over and above the defaults. Want that module to stick on the back, but it only sticks to the side right now? Come on in.
 
-Starfield's ship builder is amazing. While it places a number of reasonable constraints on us as we get the ability to make better and better ships, some of those constraints are just silly, and I want to fix that!
-
-This mod tackles one of those constraints. It will let you mount cargo holds (and in the future, other components) in more positions and in different directions on your ship. Want that item to stick on the back, but it only sticks to the side right now? Come on in.
+But wait, there's more! As a bonus, you also get additional decorative versions of all of them! That's right! All the looks with none of the cost or weight. Or functionality, but who cares about that? You can find these marvelous new modules in the "Decorative" category in the Ship Builder.
 
 [size=4][b][u]Cargo Expanders:[/u][/b][/size]
 I know that some people use mods that increase the capacity of cargo modules by 3x or even 10x, so I've included a couple additional plugins that can adjust the capacity of the cargo modules touched by JIYT to match.
@@ -130,6 +128,41 @@ I know that some people use mods that increase the capacity of cargo modules by 
 - Sextant Warden SG-300 Shield Generator (v2.12.0)
 - Sextant Warden SG-400 Shield Generator (v2.12.0)
 - Vanguard Bulwark Shield Generator (v2.12.0)
+[b]Decorative:[/b]
+- Decorative Cargo: Dogstar StorMax 30
+- Decorative Cargo: Dogstar StorMax 40
+- Decorative Cargo: Dogstar StorMax 50
+- Decorative Cargo: Dogstar StorMax 60
+- Decorative Cargo: Dogstar StorMax Empty
+- Decorative Cargo: Panoptes da Gama 1000/1010/1020
+- Decorative Cargo: Panoptes Polo 2000/2010/2020/2030
+- Decorative Cargo: Protectorate Caravel V101
+- Decorative Cargo: Protectorate Caravel V102
+- Decorative Cargo: Protectorate Caravel V103
+- Decorative Cargo: Protectorate Caravel V104
+- Decorative Cargo: Protectorate Galleon S201
+- Decorative Cargo: Protectorate Galleon S202
+- Decorative Cargo: Protectorate Galleon S203
+- Decorative Cargo: Protectorate Galleon S204
+- Decorative Cargo: Sextant Ballast 100CM
+- Decorative Cargo: Sextant Ballast 200CM
+- Decorative Cargo: Sextant Ballast 300CM/400CM
+- Decorative Cargo: Sextant Hauler 10T
+- Decorative Cargo: Sextant Hauler 20T
+- Decorative Cargo: Sextant Hauler 30T/40T
+- Decorative Shield: Dogstar Defender
+- Decorative Shield: Dogstar Guardian
+- Decorative Shield: Dogstar Protector
+- Decorative Shield: Nautilus Bastille
+- Decorative Shield: Nautilus Fortress
+- Decorative Shield: Nautilus Tower
+- Decorative Shield: Protectorate Marduk
+- Decorative Shield: Protectorate Odin
+- Decorative Shield: Protectorate Osiris
+- Decorative Shield: Sextant Assurance
+- Decorative Shield: Sextant Deflector
+- Decorative Shield: Sextant Warden
+- Decorative Shield: Vanguard Bulwark
 
 [size=4][b][u]Known Issues:[/u][/b][/size]
 - Modules are clean. The vanilla ship modules have a number of things like lights and decals (scorch marks, dirt streaks, etc.) applied to them. Due to the method by which they are applied, I can't reasonably add them until we get access to the CK.
