@@ -60,26 +60,44 @@ begin
         Result := 1;
         exit;
       end;
-      // TODO add special case where chosen FLST is in main ESM file and has no overrides
+      // TODO add case where chosen FLST is in main ESM file and has no overrides
       //  present file list minus main ESM and ask to pick where override should go, including a new file?
-      //
-      // TODO add special case where chosen FLST has overrides
-      //  present file list plus an additional option for creating a new override IF not all files (minus the main ESM and the originating record ESM) have overrides yet
-      //  user picks one or more file to edit the override in, if new override, possibility of new file exists.
-
-      // TODO check if FLST has an override in the plugin where 'e' resides and use that instead
-      (* ---> IN PROGRESS CODE --->
+      (* ---> WIP CODE --->
       frm := frmFileSelect;
       try
         frm.Caption := 'Which override to use?';
         clb := TCheckListBox(frm.FindComponent('CheckListBox1'));
-      // <--- IN PROGRESS CODE <--- *)
+      finally
+        free frm;
+      end;
+      // <--- WIP CODE <--- *)
+
+      // TODO add case where chosen FLST has overrides
+      //  present file list plus an additional option for creating a new override IF not all files (minus the main ESM and the originating record ESM) have overrides yet
+      //  user picks one or more file to edit the override in, if new override, possibility of new file exists.
+
+      // in the absence of more comprehensive checks as detailed above, this will do
+      // check if FLST has an override in the plugin where 'e' resides and use that instead
+      if OverrideCount(chosen_flst) > 0 then begin
+        AddMessage('debug: chosen_flst: ' + FullPath(chosen_flst));
+        AddMessage('debug: OverrideCount: ' + IntToStr(OverrideCount(chosen_flst)));
+        for i := Pred(OverrideCount(chosen_flst)) to 0 do begin
+          AddMessage('debug: i: ' + IntToStr(i));
+          // possible bug: check if 'getfile' and 'getfilename' return anything for newly-created records
+          if SameText(GetFileName(GetFile(OverrideByIndex(chosen_flst, i))), GetFileName(GetFile(e))) then begin
+            AddMessage('debug: override check: text matches');
+            chosen_flst := OverrideByIndex(chosen_flst, i);
+            AddMessage('debug: override chosel_flst: ' + FullPath(chosen_flst));
+            break;
+          end;
+        end;
+      end;
       AddMessage('Using form list ' + Name(chosen_flst));
     end;
   end;
 
-  // add file of record 'e' as master to plugin holding FLST
-  if GetFileName(GetFile(chosen_flst)) <> GetFileName(GetFile(e)) then
+  // add plugin containing record 'e' as a master to plugin holding FLST, but only if they aren't the same file
+  if not SameText(GetFileName(GetFile(chosen_flst)), GetFileName(GetFile(e))) then
     AddMasterIfMissing(GetFile(chosen_flst), GetFileName(GetFile(e)));
 
   // check to make sure the flst has "FormIDs" array, add if it doesn't
@@ -95,11 +113,12 @@ begin
   end;
 
   // prevent existing FormIDs from being duplicated
-  for i := 0 to Pred(ElementCount(flst_lnams)) do
+  for i := 0 to Pred(ElementCount(flst_lnams)) do begin
     if GetEditValue(ElementByIndex(flst_lnams, i)) = Name(e) then begin
       AddMessage('Skipped: ' + ShortName(e) + ' already exists in ' + ShortName(chosen_flst));
       exit;
     end;
+  end;
 
   // add 'e' to FLST
   ElementAssign(flst_lnams, HighInteger, e, False);
