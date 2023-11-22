@@ -1,23 +1,27 @@
 # TODO
-- add more 100cm ballast variants?
+- add more ballast 100CM variants?
 - add middle snap for vertical variants (not feasible for now - need a way to limit ship builder elevation change to 0.5 per step)
-    - ballast 200cm
-    - ballast 300cm/400cm
-    - hauler 10t/10st
-    - hauler 20t
-    - hauler 30t/40t
-    - caravel v101
-    - caravel v102
-    - caravel v103
-    - caravel v104
-    - da gama 1000/1000 shielded/1010/1010 shielded/1020
-    - galleon s201
-    - galleon s202
-    - galleon s203
-    - galleon s204
-    - polo 2000/2010/2020/2030
-    - stormax 30
-    - stormax 40
-    - stormax 50
-    - stormax 60
+    - Ballast 200CM
+    - Ballast 300CM/400CM
+    - Hauler 10T/10ST
+    - Hauler 20T
+    - Hauler 30T/40T
+    - Caravel V101
+    - Caravel V102
+    - Caravel V103
+    - Caravel V104
+    - da Gama 1000/1000 shielded/1010/1010 shielded/1020
+    - Galleon S201
+    - Galleon S202
+    - Galleon S203
+    - Galleon S204
+    - Polo 2000/2010/2020/2030
+    - StorMax 30
+    - StorMax 40
+    - StorMax 50
+    - StorMax 60
 - localize plugin
+- reactors
+- grav drives
+- engines?
+- weapons?
