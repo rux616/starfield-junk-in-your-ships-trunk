@@ -2,7 +2,7 @@ Junk In Your (Ship's) Trunk
 ===========================
 by rux616
 
-Version: 2.13.0
+Version: 2.14.0
 
 Table Of Contents
 -----------------
@@ -29,11 +29,11 @@ Overview
 
 Summary
 -------
-(You want variety? We got variety. Now with decorative modules! Adds 455 cargo hold variants and 444 shield variants, covering all respective vanilla modules.)
+(Cargo holds, fuel tanks, shields, and more. You want variety? We got variety. Adds new flips/orientations/variants to many different modules.)
 
-Up? Yes! Down? Also yes! Left? Still yes! Right? I'll give you three guesses, and the first two don't count! You want variety? We got variety. The JIYT Consortium is proud to offer 455 additional cargo hold and 444 shield flips/orientations/variants over and above the defaults. Want that module to stick on the back, but it only sticks to the side right now? Come on in.
+Up? Yes! Down? Also yes! Left? Still yes! Right? I'll give you three guesses, and the first two don't count! You want variety? We got variety. The JIYT Consortium is proud to offer 455 additional cargo, 444 shield, and 309 fuel tank flips/orientations/variants over and above the defaults. Want that module to stick on the back, but it only sticks to the side right now? Come on in.
 
-But wait, there's more! As a bonus, you also get additional decorative versions of all of them! That's right! All the looks with none of the cost or weight. Or functionality, but who cares about that? You can find these marvelous new modules in the "Decorative" category in the Ship Builder.
+But wait, there's more! As a bonus, you also get additional decorative versions of all of them! That's right! All the looks with only a fraction of the cost or weight. And none of the functionality, but who cares about that when your ship looks this good, am I right? You can find these marvelous new modules in the "Decorative" category in the Ship Builder.
 
 ([TOC](#table-of-contents))
 
@@ -53,7 +53,7 @@ Compatibility
 
 List of Modules
 ---------------
-**Cargo:**
+**Cargo Holds:**
 - Dogstar StorMax 30 Cargo Hold (v2.10.0)
 - Dogstar StorMax 40 Cargo Hold (v2.10.0)
 - Dogstar StorMax 50 Cargo Hold (v2.10.0)
@@ -88,6 +88,29 @@ List of Modules
 - Sextant Hauler 20T Cargo Hold (v2.3.0)
 - Sextant Hauler 30T Cargo Hold (v2.4.0)
 - Sextant Hauler 40T Cargo Hold (v2.4.0)
+**Fuel Tanks:**
+- Ballistic 100G Fuel Tank (v2.14.0)
+- Ballistic 200G Fuel Tank (v2.14.0)
+- Ballistic 300G Fuel Tank (v2.14.0)
+- Ballistic 400G Fuel Tank (v2.14.0)
+- Ballistic 500T Fuel Tank (v2.14.0)
+- Ballistic 600T Fuel Tank (v2.14.0)
+- Ballistic 700T Fuel Tank (v2.14.0)
+- Ballistic 800T-A Fuel Tank (v2.14.0)
+- Ballistic 800T-B Fuel Tank (v2.14.0)
+- Ballistic 900T Fuel Tank (v2.14.0)
+- Dogstar Ulysses M10 Fuel Tank (v2.14.0)
+- Dogstar Ulysses M20 Fuel Tank (v2.14.0)
+- Dogstar Ulysses M30 Fuel Tank (v2.14.0)
+- Dogstar Ulysses M40 Fuel Tank (v2.14.0)
+- Dogstar Ulysses M50 Fuel Tank (v2.14.0)
+- Dogstar Atlas H10 Fuel Tank (v2.14.0)
+- Dogstar Atlas H20 Fuel Tank (v2.14.0)
+- Dogstar Atlas H30 Fuel Tank (v2.14.0)
+- Dogstar Atlas H40 Fuel Tank (v2.14.0)
+- Nautilus Titan 350 Fuel Tank (v2.14.0)
+- Nautilus Titan 450 Fuel Tank (v2.14.0)
+- Nautilus Titan 550 Fuel Tank (v2.14.0)
 **Shields:**
 - Dogstar Defender 11T Shield Generator (v2.12.0)
 - Dogstar Defender 22T Shield Generator (v2.12.0)
@@ -142,40 +165,54 @@ List of Modules
 - Sextant Warden SG-400 Shield Generator (v2.12.0)
 - Vanguard Bulwark Shield Generator (v2.12.0)
 **Decorative:**
-- Decorative Cargo: Dogstar StorMax 30
-- Decorative Cargo: Dogstar StorMax 40
-- Decorative Cargo: Dogstar StorMax 50
-- Decorative Cargo: Dogstar StorMax 60
-- Decorative Cargo: Dogstar StorMax Empty
-- Decorative Cargo: Panoptes da Gama 1000/1010/1020
-- Decorative Cargo: Panoptes Polo 2000/2010/2020/2030
-- Decorative Cargo: Protectorate Caravel V101
-- Decorative Cargo: Protectorate Caravel V102
-- Decorative Cargo: Protectorate Caravel V103
-- Decorative Cargo: Protectorate Caravel V104
-- Decorative Cargo: Protectorate Galleon S201
-- Decorative Cargo: Protectorate Galleon S202
-- Decorative Cargo: Protectorate Galleon S203
-- Decorative Cargo: Protectorate Galleon S204
-- Decorative Cargo: Sextant Ballast 100CM
-- Decorative Cargo: Sextant Ballast 200CM
-- Decorative Cargo: Sextant Ballast 300CM/400CM
-- Decorative Cargo: Sextant Hauler 10T
-- Decorative Cargo: Sextant Hauler 20T
-- Decorative Cargo: Sextant Hauler 30T/40T
-- Decorative Shield: Dogstar Defender
-- Decorative Shield: Dogstar Guardian
-- Decorative Shield: Dogstar Protector
-- Decorative Shield: Nautilus Bastille
-- Decorative Shield: Nautilus Fortress
-- Decorative Shield: Nautilus Tower
-- Decorative Shield: Protectorate Marduk
-- Decorative Shield: Protectorate Odin
-- Decorative Shield: Protectorate Osiris
-- Decorative Shield: Sextant Assurance
-- Decorative Shield: Sextant Deflector
-- Decorative Shield: Sextant Warden
-- Decorative Shield: Vanguard Bulwark
+- Decorative Cargo: Dogstar StorMax 30 (v2.13.0)
+- Decorative Cargo: Dogstar StorMax 40 (v2.13.0)
+- Decorative Cargo: Dogstar StorMax 50 (v2.13.0)
+- Decorative Cargo: Dogstar StorMax 60 (v2.13.0)
+- Decorative Cargo: Dogstar StorMax Empty (v2.13.0)
+- Decorative Cargo: Panoptes da Gama 1000/1010/1020 (v2.13.0)
+- Decorative Cargo: Panoptes Polo 2000/2010/2020/2030 (v2.13.0)
+- Decorative Cargo: Protectorate Caravel V101 (v2.13.0)
+- Decorative Cargo: Protectorate Caravel V102 (v2.13.0)
+- Decorative Cargo: Protectorate Caravel V103 (v2.13.0)
+- Decorative Cargo: Protectorate Caravel V104 (v2.13.0)
+- Decorative Cargo: Protectorate Galleon S201 (v2.13.0)
+- Decorative Cargo: Protectorate Galleon S202 (v2.13.0)
+- Decorative Cargo: Protectorate Galleon S203 (v2.13.0)
+- Decorative Cargo: Protectorate Galleon S204 (v2.13.0)
+- Decorative Cargo: Sextant Ballast 100CM (v2.13.0)
+- Decorative Cargo: Sextant Ballast 200CM (v2.13.0)
+- Decorative Cargo: Sextant Ballast 300CM/400CM (v2.13.0)
+- Decorative Cargo: Sextant Hauler 10T (v2.13.0)
+- Decorative Cargo: Sextant Hauler 20T (v2.13.0)
+- Decorative Cargo: Sextant Hauler 30T/40T (v2.13.0)
+- Decorative Fuel Tank: Ballistic 100G/200G (v2.14.0)
+- Decorative Fuel Tank: Ballistic 300G/400G (v2.14.0)
+- Decorative Fuel Tank: Ballistic 500T (v2.14.0)
+- Decorative Fuel Tank: Ballistic 600T/700T/900T (v2.14.0)
+- Decorative Fuel Tank: Ballistic 800T-A (v2.14.0)
+- Decorative Fuel Tank: Ballistic 800T-B (v2.14.0)
+- Decorative Fuel Tank: Dogstar Ulysses M10/M20 (v2.14.0)
+- Decorative Fuel Tank: Dogstar Ulysses M30 (v2.14.0)
+- Decorative Fuel Tank: Dogstar Ulysses M40/M50 (v2.14.0)
+- Decorative Fuel Tank: Dogstar Atlas H10 (v2.14.0)
+- Decorative Fuel Tank: Dogstar Atlas H20 (v2.14.0)
+- Decorative Fuel Tank: Dogstar Atlas H30 (v2.14.0)
+- Decorative Fuel Tank: Dogstar Atlas H40 (v2.14.0)
+- Decorative Fuel Tank: Nautilus Titan 350/450/550 (v2.14.0)
+- Decorative Shield: Dogstar Defender (v2.13.0)
+- Decorative Shield: Dogstar Guardian (v2.13.0)
+- Decorative Shield: Dogstar Protector (v2.13.0)
+- Decorative Shield: Nautilus Bastille (v2.13.0)
+- Decorative Shield: Nautilus Fortress (v2.13.0)
+- Decorative Shield: Nautilus Tower (v2.13.0)
+- Decorative Shield: Protectorate Marduk (v2.13.0)
+- Decorative Shield: Protectorate Odin (v2.13.0)
+- Decorative Shield: Protectorate Osiris (v2.13.0)
+- Decorative Shield: Sextant Assurance (v2.13.0)
+- Decorative Shield: Sextant Deflector (v2.13.0)
+- Decorative Shield: Sextant Warden (v2.13.0)
+- Decorative Shield: Vanguard Bulwark (v2.13.0)
 
 ([TOC](#table-of-contents))
 
@@ -253,6 +290,7 @@ Nexus Mods: For mod hosting and for the Vortex Mod Manager
 Avi: Help writing the summary to make it a bit less dry, and for helping to test this mod
 Lively: For helping to test this mod
 TheOGTennessee: For the idea to include 3x and 10x cargo capacity modifiers
+Freschu: For developing a really handy xEdit script that makes my life easier
 
 This mod's repo contains the following programs, each having their own copyrights and licenses:
 

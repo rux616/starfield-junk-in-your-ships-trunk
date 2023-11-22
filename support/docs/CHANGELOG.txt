@@ -6,6 +6,7 @@ Table Of Contents
 - Junk In Your (Ship's) Trunk
     - Table Of Contents
 - Changelog
+    - v2.14.0
     - v2.13.0
     - v2.12.0
     - v2.11.0
@@ -27,9 +28,30 @@ Table Of Contents
 Changelog
 =========
 
+v2.14.0
+-------
+- Added 10 Ballistic 100G/200G Fuel Tank orientations
+- Added 10 Ballistic 300G Fuel Tank orientations
+- Added 11 Ballistic 400G Fuel Tank orientations
+- Added 2 Ballistic 500T Fuel Tank orientations
+- Added 23 Ballistic 600T/700T/900T Fuel Tank orientations
+- Split Ballistic 800T Fuel Tank into 800T-A Fuel Tank and 800T-B Fuel Tank
+- Added 10 Ballistic 800T-A Fuel Tank orientations
+- Added 5 Ballistic 800T-B Fuel Tank orientations
+- Added 23 Dogstar Ulysses M10/M20 Fuel Tank orientations
+- Added 22 Dogstar Ulysses M30 Fuel Tank orientations
+- Added 22 Dogstar Ulysses M40/M50 Fuel Tank orientations
+- Added 10 Dogstar Atlas H10 Fuel Tank orientations
+- Added 10 Dogstar Atlas H20 Fuel Tank orientations
+- Added 10 Dogstar Atlas H30 Fuel Tank orientations
+- Added 10 Dogstar Atlas H40 Fuel Tank orientations
+- Added 10 Nautilus Titan 350/450/550 Fuel Tank orientations
+- Added "Decorative" versions of all Fuel Tanks
+- Fixed typo in the names of the Dogstar decorative cargo modules (Dogstart -> Dogstar)
+
 v2.13.0
 -------
-- Added a "Decoration" category to the Ship Builder with decorative versions of all added modules
+- Added a "Decorative" category to the Ship Builder with decorative versions of all added modules
 - Added new decorative cargo hold, Dogstar StorMax Empty, with 12 orientations
 - Fixed display name of the Protectorate Caravel V102 Cargo Hold modules
 - Changed up description in README a bit
