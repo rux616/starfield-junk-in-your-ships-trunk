@@ -6,6 +6,7 @@ Table Of Contents
 - [Junk In Your (Ship's) Trunk](#junk-in-your-ships-trunk)
     - [Table Of Contents](#table-of-contents)
 - [Changelog](#changelog)
+    - [v2.14.1](#v2141)
     - [v2.14.0](#v2140)
     - [v2.13.0](#v2130)
     - [v2.12.0](#v2120)
@@ -27,6 +28,13 @@ Table Of Contents
 
 Changelog
 =========
+
+v2.14.1
+-------
+- Fixed Dogstar StorMax 60 Cargo Hold "starboard vertical" flip to actually be the starboard vertical flip
+- Fixed Decorative Dogstar StorMax 60 Cargo Hold "starboard vertical" flip to actually be the starboard vertical flip
+
+([TOC](#table-of-contents))
 
 v2.14.0
 -------

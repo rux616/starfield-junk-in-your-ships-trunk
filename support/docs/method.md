@@ -18,4 +18,5 @@ xEdit:
     - set CNAM - Cell to reference newly-created Cell record
     - copy other data from another PKIN, changing as necessary
 - create new Generic Base Form record
-- add GBFM to the appropriate FormID List record (will probably have to copy FLST as override)
+- add GBFM to the appropriate FormID List record (copy FLST as override or create new)
+- update COBJ if necessary
