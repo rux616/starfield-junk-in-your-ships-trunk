@@ -24,4 +24,4 @@
 - reactors
 - grav drives
 - engines?
-- weapons?
+- update "build-archives.ps1" script to handle localization (strings) data for different plugins
