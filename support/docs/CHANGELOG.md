@@ -6,6 +6,7 @@ Table Of Contents
 - [Junk In Your (Ship's) Trunk](#junk-in-your-ships-trunk)
     - [Table Of Contents](#table-of-contents)
 - [Changelog](#changelog)
+    - [v2.15.0](#v2150)
     - [v2.14.1](#v2141)
     - [v2.14.0](#v2140)
     - [v2.13.0](#v2130)
@@ -28,6 +29,17 @@ Table Of Contents
 
 Changelog
 =========
+
+v2.15.0
+-------
+- Added decorative weapons
+- Split "Decorative" Ship Builder category into distinct subcategories for the different module types
+- Trimmed the names of decorative modules to remove the "type"
+- Fixed name of Nautilus Titan 350/450/550 decorative fuel tank
+- Updated EditorIDs of some fuel tanks
+- Added compatibility patch for Ultimate Shipyards Unlocked "USU - Quest Rewards.esm" modular plugin
+
+([TOC](#table-of-contents))
 
 v2.14.1
 -------
