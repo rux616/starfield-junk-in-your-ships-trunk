@@ -1,27 +1,53 @@
 # TODO
-- add more ballast 100CM variants?
-- add middle snap for vertical variants (not feasible for now - need a way to limit ship builder elevation change to 0.5 per step)
-    - Ballast 200CM
-    - Ballast 300CM/400CM
-    - Hauler 10T/10ST
-    - Hauler 20T
-    - Hauler 30T/40T
-    - Caravel V101
-    - Caravel V102
-    - Caravel V103
-    - Caravel V104
-    - da Gama 1000/1000 shielded/1010/1010 shielded/1020
-    - Galleon S201
-    - Galleon S202
-    - Galleon S203
-    - Galleon S204
-    - Polo 2000/2010/2020/2030
-    - StorMax 30
-    - StorMax 40
-    - StorMax 50
-    - StorMax 60
-- localize plugin
-- reactors
-- grav drives
-- engines?
-- update "build-archives.ps1" script to handle localization (strings) data for different plugins
+
+- [ ] add more ballast 100CM variants
+- [ ] add middle snap for vertical variants (not feasible for now - need a way to limit ship builder elevation change to 0.5 per step)
+    - [ ] Ballast 200CM
+    - [ ] Ballast 300CM/400CM
+    - [ ] Hauler 10T/10ST
+    - [ ] Hauler 20T
+    - [ ] Hauler 30T/40T
+    - [ ] Caravel V101
+    - [ ] Caravel V102
+    - [ ] Caravel V103
+    - [ ] Caravel V104
+    - [ ] da Gama 1000/1000 shielded/1010/1010 shielded/1020
+    - [ ] Galleon S201
+    - [ ] Galleon S202
+    - [ ] Galleon S203
+    - [ ] Galleon S204
+    - [ ] Polo 2000/2010/2020/2030
+    - [ ] StorMax 30
+    - [ ] StorMax 40
+    - [ ] StorMax 50
+    - [ ] StorMax 60
+- [ ] localize plugin
+- [ ] grav drives - going to need to figure out how to rotate entire cells first in order to handle the "magnet" parts
+- [ ] reactors
+- [ ] engines?
+- [ ] update "build-archives.ps1" script to handle localization (strings) data for different plugins
+- [ ] add snaps to handle "vertical" modules being right next to one another
+    - [ ] cargo
+        - [x] dogstar
+            - [x] stormax 30
+            - [x] stormax 40
+            - [x] stormax 50
+            - [x] stormax 60
+            - [x] stormax empty
+        - [x] panoptes
+            - [x] da gama 1000
+        - [x] protectorate
+            - [x] caravel v101
+            - [x] caravel v102
+            - [x] caravel v103
+            - [x] caravel v104
+            - [x] galleon s201
+            - [x] galleon s204
+        - [x] sextant
+            - [x] ballast 200cm
+            - [x] ballast 300cm
+        - (add other modules that have vertical-like properties)
+    - [ ] fuel tank
+        - (make list)
+    - [ ] shields
+        - (make list)
