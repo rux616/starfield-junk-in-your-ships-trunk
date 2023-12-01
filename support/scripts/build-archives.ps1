@@ -19,7 +19,8 @@
 
 [CmdletBinding()]
 param (
-    [Parameter(Mandatory)] [string] $ModName
+    [Parameter(Mandatory)] [string] $ModName,
+    [switch] $PutInDataSubdirectory
 )
 
 # https://stackoverflow.com/a/34559554
@@ -96,14 +97,27 @@ try {
 
     # create exclusion file for 7z
     $content = @("meta.ini") + $asset_dirs + $texture_dirs | ForEach-Object {
-        Join-Path "data" $_
+        if ($PutInDataSubdirectory) {
+            Join-Path "data" $_
+        }
+        else {
+            $_
+        }
     }
     $7z_exclude_file = Join-Path $temp_dir_general "7z-exclude.txt"
     Write-Output "7z_exclude_file = $7z_exclude_file"
     Set-Content -Path $7z_exclude_file -Value $content
     # make 7z
     if (Test-Path $7z_file) { Remove-Item -Force $7z_file }
-    ./support/bin/7zip/7zr.exe a -t7z -mx9 $7z_file ./data -x@"$7z_exclude_file"
+    if ($PutInDataSubdirectory) {
+        ./support/bin/7zip/7zr.exe a -t7z -mx9 $7z_file ./data -x@"$7z_exclude_file"
+    }
+    else {
+        $working_dir = Get-Location
+        Set-Location $data_dir
+        &"$working_dir/support/bin/7zip/7zr.exe" a -t7z -mx9 $7z_file . -x@"$7z_exclude_file"
+        Set-Location $working_dir
+    }
 }
 finally {
     Write-Output "temp_dir_general: $temp_dir_general"
