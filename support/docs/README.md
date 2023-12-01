@@ -2,7 +2,7 @@ Junk In Your (Ship's) Trunk
 ===========================
 by rux616
 
-Version: 2.15.0
+Version: 2.16.0
 
 Table Of Contents
 -----------------
@@ -35,6 +35,8 @@ Up? Yes! Down? Also yes! Left? Still yes! Right? I'll give you three guesses, an
 
 But wait, there's more! As a bonus, you also get additional decorative versions of all of them! Plus weapons! That's right! All the looks with only a fraction of the cost or weight. And none of the functionality, but who cares about that when your ship looks this good, am I right? You can find these marvelous new modules in the various "Decorative [...]" categories in the Ship Builder.
 
+There are even some additional snap points added so you can do interesting things like putting certain "vertical" modules next to something else, though only for Cargo Holds at the moment; more modules will be converted in the future. (The JIYT Consortium is not responsible for any cursed creations you make with this feature.)
+
 For a complete listing of all modules in this mod, please see the "[List of Modules](#list-of-modules)" section at the bottom of this document.
 
 ([TOC](#table-of-contents))
@@ -47,10 +49,15 @@ I know that some people use mods that increase the capacity of cargo modules by 
 
 Compatibility
 -------------
-[Better Ship Part Flips](https://www.nexusmods.com/starfield/mods/5953) by Freschu: Fully compatible (checked 2023-11-07, v0.2.0)
-[Better Ship Part Snaps](https://www.nexusmods.com/starfield/mods/5698) by Freschu: Fully compatible, but the flips added by JIYT won't have any particularly enhanced snaps (checked 2023-11-07, v0.3.0)
-[Ship Module Snap Expansion](https://www.nexusmods.com/starfield/mods/6029) by Gilibran: Compatible with all released plugins (checked 2023-11-07)
-[Ultimate Shipyards Unlocked](https://www.nexusmods.com/starfield/mods/4723) by JustAnOrdinaryGuy: Small incompatibility with the "USU - Quest Rewards.esm" modular plugin with regard to the Vanguard Bulwark Shield. Load JIYT below and do the initial Vanguard quest to get access to the module, or use the included compatibility patch. (checked 2023-11-24, v1.2)
+- [All ship parts unlevelled at all vendors (ESM)](https://www.nexusmods.com/starfield/mods/6060) by SKK50: **[Patch required]** Depending on whether JIYT or this mod is set to higher priority, either some parts simply won't show up or will still have level or vendor requirements. (checked 2023-11-30; version 002)
+- [Better Ship Part Flips](https://www.nexusmods.com/starfield/mods/5953) by Freschu: Fully compatible. (checked 2023-12-01; version 0.4.0)
+- [Better Ship Part Snaps](https://www.nexusmods.com/starfield/mods/5698) by Freschu: Fully compatible, but the flips added by JIYT won't have any particularly enhanced snaps (checked 2023-11-07; version 0.3.0)
+- [DerreTech](https://www.nexusmods.com/starfield/mods/5686) by DerekM17x: Fully compatible. (checked 2023-11-30; version 1.4.7f)
+- [Ship Colorize](https://www.nexusmods.com/starfield/mods/7003) by DerekM17x: **[Patch required]** Changes made by Ship Colorize to the Dogstar StorMax 40/60 Cargo Holds won't show up or the flips will be weird, depending on which mod wins the conflict. Use the included compatibility patch. (checked 2023-11-30; version 1.0.6)
+- [Ship Module Snap Expansion](https://www.nexusmods.com/starfield/mods/6029) by Gilibran: Fully compatible with all-in-one plugin; other plugins not checked - use at your own risk. (checked 2023-12-01; version 1.0.0)
+- [Starfield Extended - Shields Rebalanced](https://www.nexusmods.com/starfield/mods/6238) by Gambit77: **[Patch required]** Shields will either be missing flips or not have higher health, depending on which mod wins the conflict. Use the included compatibility patch. (checked 2023-11-29; version 1.0)
+- [TN's Ship Modifications All in One](https://www.nexusmods.com/starfield/mods/6376) by TheOGTennessee: **[Patch required]** Decoratives will conflict, and also some cargo hold capacity will be different, depending on which mod wins the conflicts. Use the compatibility patch available on the TN's Ship Modifications All in One mod page. (checked 2023-12-01; version v2)
+- [Ultimate Shipyards Unlocked](https://www.nexusmods.com/starfield/mods/4723) by JustAnOrdinaryGuy: **[Patch required]** Small incompatibility with the "USU - Quest Rewards.esm" modular plugin with regard to the Vanguard Bulwark Shield. Load JIYT below and do the initial Vanguard quest to get access to the module, or use the included compatibility patch. (checked 2023-11-24; version 1.2)
 
 ([TOC](#table-of-contents))
 
@@ -59,6 +66,7 @@ Known Issues
 - Modules are clean. The vanilla ship modules have a number of things like lights and decals (scorch marks, dirt streaks, etc.) applied to them. Due to the method by which they are applied, I can't reasonably add them until we get access to the CK.
 - Module icons (for the added orientations) in the Ship Builder are missing. This is another thing that is probably going to have to wait until we get access to the CK to get fixed.
 - Some modules (shields, for example) don't really visually attach to certain other modules in certain orientations well. Bethesda did a really good job designing a modular ship system with one major exception: the visual attachment points. There is one style of attachment points for fore/aft, a different style for port/starboard, and yet another style for top/bottom. Because none of them match, some module variants/orientations just don't look right when attaching to others. I'm not redesigning or redoing all the 3D models for every ship part in the game (yet, at least. lol), so if some modules don't match quite in the way you want them to and it bothers you that much, you're going to either need to not use that particular variant/orientation combination, or find a different combination that _does_ work.
+- Protectorate Caravel V101, V102, V103, and V104 Cargo Holds have some snap points slightly misaligned in vertical orientations (and a couple others). The snap points are not actually misaligned, the model is, and will thus need to wait until the CK is released to get fixed.
 
 ([TOC](#table-of-contents))
 
@@ -85,9 +93,7 @@ When upgrading major versions (for example v1.whatever to v2.whatever), you need
 
 Mod Manager
 -----------
-Download and install the archive with either Mod Organizer 2 v2.5.0 Beta 14 or later ([MO2 Discord server](https://discord.gg/AKE9wRGpy4), "dev-builds" channel), or [Vortex](https://www.nexusmods.com/site/mods/1). I personally recommend Mod Organizer 2 (with the optional [Root Builder](https://kezyma.github.io/?p=rootbuilder) plugin to use with SFSE or any other mod that requires files be put directly in the game's installation folder).
-
-To enable plugins.txt support in Mod Organizer 2, set the "enable_plugin_management" option to "True" in the "Tools" menu -> "Settings" option -> "Plugins" tab -> "Game" section -> "Starfield Support Plugin" plugin.
+Download and install the archive with either [Mod Organizer 2](https://github.com/ModOrganizer2/modorganizer/releases) (version 2.5.0 or later) or [Vortex](https://www.nexusmods.com/site/mods/1). I personally recommend Mod Organizer 2 (with the optional [Root Builder](https://kezyma.github.io/?p=rootbuilder) plugin to use with SFSE or any other mod that requires files be put directly in the game's installation folder).
 
 ([TOC](#table-of-contents))
 
@@ -141,7 +147,11 @@ If you find a bug or have a question about the mod, please post it on the [mod p
 If you need to contact me personally, I can be reached through one of the following means:
 - **Nexus Mods**: [rux616](https://www.nexusmods.com/users/124191) (Send a message via the "CONTACT" button.)
 - **Email**: rux616-at-pm-dot-me (replace `-at-` with `@` and `-dot-` with `.`)
-- **Discord**: rux616 (I am in the [Nexus Mods](https://discord.gg/nexusmods), [Collective Modding](https://discord.gg/pF9U5FmD6w) ("🔧-chaotic-cognitions" channel), and [Lively's Modding Hub](https://discord.gg/livelymods) servers, amongst others. Make sure to "@" me.)
+- **Discord**: rux616 (user ID 234489279991119873) - make sure to "@" me
+    - [Lively's Modding Hub](https://discord.gg/livelymods)
+    - [Nexus Mods](https://discord.gg/nexusmods)
+    - [Collective Modding](https://discord.gg/pF9U5FmD6w) ("🔧-chaotic-cognitions" channel)
+    - [Starfield Modding](https://discord.gg/6R4Yq5KjW2)
 
 ([TOC](#table-of-contents))
 
@@ -310,7 +320,24 @@ List of Modules
 - Decorative: Sextant Deflector (v2.13.0)
 - Decorative: Sextant Warden (v2.13.0)
 - Decorative: Vanguard Bulwark (v2.13.0)
-**Decorative Weapons: EM:**
+**Decorative Weapons (Ballistic):**
+- Decorative: Ballistic BLS-A (v2.15.0)
+- Decorative: Ballistic BLS-B (v2.15.0)
+- Decorative: Ballistic BLS-B Turret (v2.15.0)
+- Decorative: Ballistic BLS-C (v2.15.0)
+- Decorative: Ballistic BLS-C Turret (v2.15.0)
+- Decorative: Horizon BLS-A (v2.15.0)
+- Decorative: Horizon BLS-B (v2.15.0)
+- Decorative: Horizon BLS-B Turret (v2.15.0)
+- Decorative: Horizon BLS-C (v2.15.0)
+- Decorative: Horizon BLS-C Turret (v2.15.0)
+- Decorative: Shinigami BLS-A (v2.15.0)
+- Decorative: Shinigami BLS-B (v2.15.0)
+- Decorative: Shinigami BLS-B Turret (v2.15.0)
+- Decorative: Shinigami BLS-C (v2.15.0)
+- Decorative: Shinigami BLS-C Turret (v2.15.0)
+- Decorative: Vanguard BLS-A (v2.15.0)
+**Decorative Weapons (EM):**
 - Decorative: Ballistic LCT-A (v2.15.0)
 - Decorative: Ballistic LCT-B (v2.15.0)
 - Decorative: Ballistic LCT-C (v2.15.0)
@@ -320,7 +347,7 @@ List of Modules
 - Decorative: Shinigami LCT-A (v2.15.0)
 - Decorative: Shinigami LCT-B (v2.15.0)
 - Decorative: Shinigami LCT-C (v2.15.0)
-**Decorative Weapons: Laser:**
+**Decorative Weapons (Laser):**
 - Decorative: Horizon LSR-A (v2.15.0)
 - Decorative: Horizon LSR-B (v2.15.0)
 - Decorative: Horizon LSR-B Turret (v2.15.0)
@@ -338,7 +365,7 @@ List of Modules
 - Decorative: Shinigami LSR-C (v2.15.0)
 - Decorative: Shinigami LSR-C Turret (v2.15.0)
 - Decorative: Vanguard LSR-A (v2.15.0)
-**Decorative Weapons: Missile:**
+**Decorative Weapons (Missile):**
 - Decorative: Ballistic MSL-A (v2.15.0)
 - Decorative: Ballistic MSL-B (v2.15.0)
 - Decorative: Ballistic MSL-C (v2.15.0)
@@ -353,7 +380,7 @@ List of Modules
 - Decorative: Shinigami MSL-B (v2.15.0)
 - Decorative: Shinigami MSL-C (v2.15.0)
 - Decorative: Vanguard MSL-A (v2.15.0)
-**Decorative Weapons: Particle:**
+**Decorative Weapons (Particle):**
 - Decorative: Ballistic PRT-A (v2.15.0)
 - Decorative: Ballistic PRT-B (v2.15.0)
 - Decorative: Ballistic PRT-B Turret (v2.15.0)
@@ -371,22 +398,5 @@ List of Modules
 - Decorative: Light Scythe PRT-C Turret (v2.15.0)
 - Decorative: Vanguard PRT-A (v2.15.0)
 - Decorative: Vanguard PRT-B (v2.15.0)
-**Decorative Weapons: Projectile:**
-- Decorative: Ballistic PRJ-A (v2.15.0)
-- Decorative: Ballistic PRJ-B (v2.15.0)
-- Decorative: Ballistic PRJ-B Turret (v2.15.0)
-- Decorative: Ballistic PRJ-C (v2.15.0)
-- Decorative: Ballistic PRJ-C Turret (v2.15.0)
-- Decorative: Horizon PRJ-A (v2.15.0)
-- Decorative: Horizon PRJ-B (v2.15.0)
-- Decorative: Horizon PRJ-B Turret (v2.15.0)
-- Decorative: Horizon PRJ-C (v2.15.0)
-- Decorative: Horizon PRJ-C Turret (v2.15.0)
-- Decorative: Shinigami PRJ-A (v2.15.0)
-- Decorative: Shinigami PRJ-B (v2.15.0)
-- Decorative: Shinigami PRJ-B Turret (v2.15.0)
-- Decorative: Shinigami PRJ-C (v2.15.0)
-- Decorative: Shinigami PRJ-C Turret (v2.15.0)
-- Decorative: Vanguard PRJ-A (v2.15.0)
 
 ([TOC](#table-of-contents))

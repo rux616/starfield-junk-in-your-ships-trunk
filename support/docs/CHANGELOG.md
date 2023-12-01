@@ -6,6 +6,7 @@ Table Of Contents
 - [Junk In Your (Ship's) Trunk](#junk-in-your-ships-trunk)
     - [Table Of Contents](#table-of-contents)
 - [Changelog](#changelog)
+    - [v2.16.0](#v2160)
     - [v2.15.0](#v2150)
     - [v2.14.1](#v2141)
     - [v2.14.0](#v2140)
@@ -30,6 +31,33 @@ Table Of Contents
 Changelog
 =========
 
+v2.16.0
+-------
+- Added additional snaps for "vertical" type flips on some cargo modules, that allow for putting things side by side:
+    - Dogstar StorMax 30
+    - Dogstar StorMax 40
+    - Dogstar StorMax 50
+    - Dogstar StorMax 60
+    - Dogstar StorMax Empty
+    - Panoptes da Gama 1000
+    - Protectorate Caravel V101
+    - Protectorate Caravel V102
+    - Protectorate Caravel V103
+    - Protectorate Caravel V104
+    - Protectorate Galleon S201
+    - Protectorate Galleon S204
+    - Sextant Ballast 200CM
+    - Sextant Ballast 300CM
+- Added a new required mod: [Ship Builder Categories](https://www.nexusmods.com/starfield/mods/7310)
+- Changed some internal editor IDs to be closer to vanilla patterns
+- Added compatibility patch for [All ship parts unlevelled at all vendors (ESM)](https://www.nexusmods.com/starfield/mods/6060)
+- Added compatibility patch for [Ship Colorize](https://www.nexusmods.com/starfield/mods/7003)
+- Added compatibility patch for [Starfield Extended - Shields Rebalanced](https://www.nexusmods.com/starfield/mods/6238)
+- Changed name of Ultimate Shipyards Unlocked compatibility plugin
+- Updated build script with parameter to control whether to package mod into "data" subdirectory inside archive
+
+([TOC](#table-of-contents))
+
 v2.15.0
 -------
 - Added decorative weapons
@@ -37,7 +65,7 @@ v2.15.0
 - Trimmed the names of decorative modules to remove the "type"
 - Fixed name of Nautilus Titan 350/450/550 decorative fuel tank
 - Updated EditorIDs of some fuel tanks
-- Added compatibility patch for Ultimate Shipyards Unlocked "USU - Quest Rewards.esm" modular plugin
+- Added compatibility patch for [Ultimate Shipyards Unlocked](https://www.nexusmods.com/starfield/mods/4723) "USU - Quest Rewards.esm" modular plugin
 
 ([TOC](#table-of-contents))
 
