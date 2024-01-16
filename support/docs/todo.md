@@ -28,26 +28,28 @@
 - [ ] update "build-archives.ps1" script to handle localization (strings) data for different plugins
 - [ ] add snaps to handle "vertical" modules being right next to one another
     - [ ] cargo
-        - [x] dogstar
-            - [x] stormax 30
-            - [x] stormax 40
-            - [x] stormax 50
-            - [x] stormax 60
-            - [x] stormax empty
-        - [x] panoptes
-            - [x] da gama 1000
-        - [x] protectorate
-            - [x] caravel v101
-            - [x] caravel v102
-            - [x] caravel v103
-            - [x] caravel v104
-            - [x] galleon s201
-            - [x] galleon s204
-        - [x] sextant
-            - [x] ballast 200cm
-            - [x] ballast 300cm
+        - [X] dogstar
+            - [X] stormax 30
+            - [X] stormax 40
+            - [X] stormax 50
+            - [X] stormax 60
+            - [X] stormax empty
+        - [X] panoptes
+            - [X] da gama 1000
+        - [X] protectorate
+            - [X] caravel v101
+            - [X] caravel v102
+            - [X] caravel v103
+            - [X] caravel v104
+            - [X] galleon s201
+            - [X] galleon s204
+        - [X] sextant
+            - [X] ballast 200cm
+            - [X] ballast 300cm
         - (add other modules that have vertical-like properties)
     - [ ] fuel tank
         - (make list)
     - [ ] shields
         - (make list)
+- [X] add JIYTv2NoDecoratives.esm conditional handlers to FOMOD
+- [X] create USU AIO patch
