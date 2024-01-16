@@ -2,7 +2,7 @@ Junk In Your (Ship's) Trunk
 ===========================
 by rux616
 
-Version: 2.16.0
+Version: 2.17.0
 
 Table Of Contents
 -----------------
@@ -14,6 +14,7 @@ Table Of Contents
     - Compatibility
     - Known Issues
 - Installation
+    - Requirements
     - Upgrading
     - Mod Manager
     - Manual (NOT RECOMMENDED)
@@ -31,6 +32,8 @@ Summary
 -------
 (Cargo holds, fuel tanks, shields, weapons. You want variety? We got variety. Adds new flips and decorative versions of many different modules.)
 
+NOTE: Now requires Ship Builder Categories (https://www.nexusmods.com/starfield/mods/7310) - you will get a CTD without it installed and above this mod in your load order!
+
 Up? Yes! Down? Also yes! Left? Still yes! Right? I'll give you three guesses, and the first two don't count! You want variety? We got variety. The JIYT Consortium is proud to offer 455 additional cargo, 444 shield, and 309 fuel tank flips/orientations/variants over and above the defaults. Want that module to stick on the back, but it only sticks to the side right now? Come on in.
 
 But wait, there's more! As a bonus, you also get additional decorative versions of all of them! Plus weapons! That's right! All the looks with only a fraction of the cost or weight. And none of the functionality, but who cares about that when your ship looks this good, am I right? You can find these marvelous new modules in the various "Decorative [...]" categories in the Ship Builder.
@@ -45,19 +48,20 @@ I know that some people use mods that increase the capacity of cargo modules by 
 
 Compatibility
 -------------
-- All ship parts unlevelled at all vendors (ESM) (https://www.nexusmods.com/starfield/mods/6060) by SKK50: [Patch required] Depending on whether JIYT or this mod is set to higher priority, either some parts simply won't show up or will still have level or vendor requirements. (checked 2023-11-30; version 002)
-- Better Ship Part Flips (https://www.nexusmods.com/starfield/mods/5953) by Freschu: Fully compatible. (checked 2023-12-01; version 0.4.0)
+- All ship parts unlevelled at all vendors (ESM) (https://www.nexusmods.com/starfield/mods/6060) by SKK50: [Patch required] Depending on whether JIYT or this mod is set to higher priority, either some parts simply won't show up or will still have level or vendor requirements. Use the included compatibility patch. (checked 2023-11-30; version 002)
+- Avontech Shipyards (https://www.nexusmods.com/starfield/mods/8057) by kaosnyrb: Fully compatible. (checked 2024-01-16; version 1.2.0)
+- Better Ship Part Flips (https://www.nexusmods.com/starfield/mods/5953) by Freschu: Fully compatible. (checked 2024-01-16; version 0.5.0)
 - Better Ship Part Snaps (https://www.nexusmods.com/starfield/mods/5698) by Freschu: Fully compatible, but the flips added by JIYT won't have any particularly enhanced snaps (checked 2023-11-07; version 0.3.0)
-- DerreTech (https://www.nexusmods.com/starfield/mods/5686) by DerekM17x: Fully compatible. (checked 2023-11-30; version 1.4.7f)
+- DerreTech (https://www.nexusmods.com/starfield/mods/5686) by DerekM17x: Fully compatible. (checked 2024-01-16; version 0)
 - Ship Colorize (https://www.nexusmods.com/starfield/mods/7003) by DerekM17x: [Patch required] Changes made by Ship Colorize to the Dogstar StorMax 40/60 Cargo Holds won't show up or the flips will be weird, depending on which mod wins the conflict. Use the included compatibility patch. (checked 2023-11-30; version 1.0.6)
-- Ship Module Snap Expansion (https://www.nexusmods.com/starfield/mods/6029) by Gilibran: Fully compatible with all-in-one plugin; other plugins not checked - use at your own risk. (checked 2023-12-01; version 1.0.0)
+- Ship Module Snap Expansion (https://www.nexusmods.com/starfield/mods/6029) by Gilibran: Fully compatible with all-in-one plugin; other plugins not checked - use at your own risk. (checked 2024-01-16; version 1.0.1)
 - Starfield Extended - Shields Rebalanced (https://www.nexusmods.com/starfield/mods/6238) by Gambit77: [Patch required] Shields will either be missing flips or not have higher health, depending on which mod wins the conflict. Use the included compatibility patch. (checked 2023-11-29; version 1.0)
-- TN's Ship Modifications All in One (https://www.nexusmods.com/starfield/mods/6376) by TheOGTennessee: [Patch required] Decoratives will conflict, and also some cargo hold capacity will be different, depending on which mod wins the conflicts. Use the compatibility patch available on the TN's Ship Modifications All in One mod page. (checked 2023-12-01; version v2)
-- Ultimate Shipyards Unlocked (https://www.nexusmods.com/starfield/mods/4723) by JustAnOrdinaryGuy: [Patch required] Small incompatibility with the "USU - Quest Rewards.esm" modular plugin with regard to the Vanguard Bulwark Shield. Load JIYT below and do the initial Vanguard quest to get access to the module, or use the included compatibility patch. (checked 2023-11-24; version 1.2)
+- TN's Ship Modifications All in One (https://www.nexusmods.com/starfield/mods/6376) by TheOGTennessee: [Patch required] Decoratives will conflict, and also some cargo hold capacity will be different, depending on which mod wins the conflicts. Use the compatibility patch available on the TN's Ship Modifications All in One mod page. (checked 2024-01-16; version v2.0.2)
+- Ultimate Shipyards Unlocked (https://www.nexusmods.com/starfield/mods/4723) by JustAnOrdinaryGuy: [Patch required] Incompatibilities with the All In One plugin, and the "No Level Requirements" and "Quest Rewards" modules from the modular version. Use the included compatibility patch/patches. (checked 2024-01-16; version 1.4)
 
 Known Issues
 ------------
-- Modules are clean. The vanilla ship modules have a number of things like lights and decals (scorch marks, dirt streaks, etc.) applied to them. Due to the method by which they are applied, I can't reasonably add them until we get access to the CK.
+- Modules are clean and have no lights. The vanilla ship modules have a number of things like lights and decals (scorch marks, dirt streaks, etc.) applied to them. Due to the method by which they are applied, I can't reasonably add them until we get access to the CK.
 - Module icons (for the added orientations) in the Ship Builder are missing. This is another thing that is probably going to have to wait until we get access to the CK to get fixed.
 - Some modules (shields, for example) don't really visually attach to certain other modules in certain orientations well. Bethesda did a really good job designing a modular ship system with one major exception: the visual attachment points. There is one style of attachment points for fore/aft, a different style for port/starboard, and yet another style for top/bottom. Because none of them match, some module variants/orientations just don't look right when attaching to others. I'm not redesigning or redoing all the 3D models for every ship part in the game (yet, at least. lol), so if some modules don't match quite in the way you want them to and it bothers you that much, you're going to either need to not use that particular variant/orientation combination, or find a different combination that _does_ work.
 - Protectorate Caravel V101, V102, V103, and V104 Cargo Holds have some snap points slightly misaligned in vertical orientations (and a couple others). The snap points are not actually misaligned, the model is, and will thus need to wait until the CK is released to get fixed.
@@ -65,7 +69,10 @@ Known Issues
 
 Installation
 ============
-NOTE: Requires Plugins.txt Enabler (https://www.nexusmods.com/starfield/mods/4157)
+Requirements
+------------
+- Plugins.txt Enabler (https://www.nexusmods.com/starfield/mods/4157)
+- Ship Builder Categories (https://www.nexusmods.com/starfield/mods/7310)
 
 Upgrading
 ---------
@@ -83,11 +90,11 @@ When upgrading major versions (for example v1.whatever to v2.whatever), you need
 
 Mod Manager
 -----------
-Download and install the archive with either Mod Organizer 2 (https://github.com/ModOrganizer2/modorganizer/releases) (version 2.5.0 or later) or Vortex (https://www.nexusmods.com/site/mods/1). I personally recommend Mod Organizer 2 (with the optional Root Builder (https://kezyma.github.io/?p=rootbuilder) plugin to use with SFSE or any other mod that requires files be put directly in the game's installation folder).
+Download and install both the archive for this mod and for any required mods with either Mod Organizer 2 (https://github.com/ModOrganizer2/modorganizer/releases) (version 2.5.0 or later) or Vortex (https://www.nexusmods.com/site/mods/1). I personally recommend Mod Organizer 2 (with the optional Root Builder (https://kezyma.github.io/?p=rootbuilder) plugin to use with SFSE or any other mod that requires files be put directly in the game's installation folder). Ensure that the plugins of the required mods are ABOVE the plugins from this one in your load order.
 
 Manual (NOT RECOMMENDED)
 ------------------------
-Extract the archive to your Starfield installation's "Data" folder (typically something like "C:\Games\SteamLibrary\steamapps\common\Starfield\data"). Add the plugin file names to your plugins.txt file if they aren't already there, making sure the ones you want enabled are preceded with "*".
+Extract the archive to your Starfield installation's "Data" folder (typically something like "C:\Games\SteamLibrary\steamapps\common\Starfield\data"). Add the plugin file names to your plugins.txt file if they aren't already there, making sure the ones you want enabled are preceded with `*`. Make sure that the plugins from the required mods are ABOVE the plugins from this mod and are also preceded with `*`, or you will get a CTD.
 
 Archive Invalidation
 --------------------

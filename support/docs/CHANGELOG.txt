@@ -6,6 +6,7 @@ Table Of Contents
 - Junk In Your (Ship's) Trunk
     - Table Of Contents
 - Changelog
+    - v2.17.0
     - v2.16.0
     - v2.15.0
     - v2.14.1
@@ -31,6 +32,15 @@ Table Of Contents
 Changelog
 =========
 
+v2.17.0
+-------
+- Added new optional plugin to remove decoratives
+- Removed Mod Organizer 2/Vortex choice in FOMOD
+- Added compatibility patch between JIYT and Ultimate Shipyards Unlocked (https://www.nexusmods.com/starfield/mods/4723) [All In One]
+- Added compatibility patch between JIYT and Ultimate Shipyards Unlocked (https://www.nexusmods.com/starfield/mods/4723) [Modular] "No Level Requirements" module
+- Updated plugin descriptions
+- Added JIYT version to all plugin descriptions
+
 v2.16.0
 -------
 - Added additional snaps for "vertical" type flips on some cargo modules, that allow for putting things side by side:
@@ -47,7 +57,7 @@ v2.16.0
     - Protectorate Galleon S201
     - Protectorate Galleon S204
     - Sextant Ballast 200CM
-    - Sextant Ballast 300CM
+    - Sextant Ballast 300CM/400CM
 - Added a new required mod: Ship Builder Categories (https://www.nexusmods.com/starfield/mods/7310)
 - Changed some internal editor IDs to be closer to vanilla patterns
 - Added compatibility patch for All ship parts unlevelled at all vendors (ESM) (https://www.nexusmods.com/starfield/mods/6060)
