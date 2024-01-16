@@ -22,6 +22,20 @@
 #     .version.ps1
 #     ./support/docs/README.md
 #     ./data/fomod/info.xml
+#   plugin files:
+#     # main plugin
+#     "./data/JunkInYourTrunk_v2.esm"
+#     # optional plugins
+#     "./data/JIYTv2CargoExpanderX10.esm"
+#     "./data/JIYTv2CargoExpanderX3.esm"
+#     "./data/JIYTv2NoDecoratives.esm"
+#     # compatibility patches
+#     "./data/JIYTv2-SKKShipPartsNoLevelAllVendors-Patch.esm"
+#     "./data/JIYTv2-ShipColorize-Patch.esm"
+#     "./data/JIYTv2-StarfieldExtendedShieldsRebalanced-Patch.esm"
+#     "./data/JIYTv2-USU-Patch.esm"
+#     "./data/JIYTv2-USUNoLevelRequirements-Patch.esm"
+#     "./data/JIYTv2-USUQuestRewards-Patch.esm"
 
 
 # get a hash from a string
@@ -106,3 +120,22 @@ $text_files | ForEach-Object {
     if ($updated) { "File updated with new version string$(if ($updated -gt 1) { "s" })." } else { "No file updated needed." }
     "------------------------------"
 }
+
+# plugin files
+[string[]] $plugin_files = @(
+    # main plugin
+    "./data/JunkInYourTrunk_v2.esm"
+    # optional plugins
+    "./data/JIYTv2CargoExpanderX10.esm"
+    "./data/JIYTv2CargoExpanderX3.esm"
+    "./data/JIYTv2NoDecoratives.esm"
+    # compatibility patches
+    "./data/JIYTv2-SKKShipPartsNoLevelAllVendors-Patch.esm"
+    "./data/JIYTv2-ShipColorize-Patch.esm"
+    "./data/JIYTv2-StarfieldExtendedShieldsRebalanced-Patch.esm"
+    "./data/JIYTv2-USU-Patch.esm"
+    "./data/JIYTv2-USUNoLevelRequirements-Patch.esm"
+    "./data/JIYTv2-USUQuestRewards-Patch.esm"
+)
+# python3 needs to be accessible from PATH!
+python3.exe "./support/scripts/plugin-description-version-updater.py" $(if (-not $make_backups) { "-n" }) "$version" $plugin_files
