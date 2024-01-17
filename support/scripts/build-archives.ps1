@@ -20,7 +20,7 @@
 [CmdletBinding()]
 param (
     [Parameter(Mandatory)] [string] $ModName,
-    [Parameter(Mandatory)] [string] $PluginName,
+    [Parameter()] [string] $PluginName,
     [switch] $PutInDataSubdirectory
 )
 
@@ -37,7 +37,7 @@ $ErrorActionPreference = "Stop"
 # source version file
 . "./.version.ps1"
 
-$ba2_base_name = $PluginName
+$ba2_base_name = if ($PluginName) { $PluginName } else { $ModName.Replace(" ", "") }
 $local_dir = Get-Location
 $build_dir = Join-Path $local_dir "/builds"
 $data_dir = Join-Path $local_dir "/data"
