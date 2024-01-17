@@ -17,7 +17,10 @@
             "type": "shell",
             "command": "./support/scripts/build-archives.ps1",
             "args": [
+                // mod name
                 "Junk In Your Trunk",
+                // plugin name
+                "JunkInYourTrunk_v2",
             ],
 			"group": {
 				"kind": "build",
@@ -55,5 +58,21 @@
             "type": "shell",
             "command": "./support/scripts/version-updater.ps1",
         },
+        {
+            "label": "Create xTranslator Batch Processor Script",
+            "type": "shell",
+            "command": "./support/scripts/build-translator-batch-processor-script.ps1",
+            "args": [
+                "JIYTv2-SKKShipPartsNoLevelAllVendors-Patch.esm",
+                "JIYTv2-StarfieldExtendedShieldsRebalanced-Patch.esm",
+                "JIYTv2-USU-Patch.esm",
+                "JIYTv2-USUNoLevelRequirements-Patch.esm",
+                "JIYTv2-USUQuestRewards-Patch.esm",
+                "JIYTv2CargoExpanderX10.esm",
+                "JIYTv2CargoExpanderX3.esm",
+                "JIYTv2NoDecoratives.esm",
+                "JunkInYourTrunk_v2.esm",
+            ]
+        }
 	]
 }
