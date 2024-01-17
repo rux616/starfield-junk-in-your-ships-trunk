@@ -6,6 +6,7 @@ Table Of Contents
 - [Junk In Your (Ship's) Trunk](#junk-in-your-ships-trunk)
     - [Table Of Contents](#table-of-contents)
 - [Changelog](#changelog)
+    - [v2.18.0](#v2180)
     - [v2.17.0](#v2170)
     - [v2.16.0](#v2160)
     - [v2.15.0](#v2150)
@@ -32,9 +33,16 @@ Table Of Contents
 Changelog
 =========
 
+v2.18.0
+-------
+- Localized plugins that needed it (Ship Colorize compatibility patch did not)
+- Fixed logic error in FOMOD installer, installing the "No Decoratives" mod when it shouldn't have been
+
+([TOC](#table-of-contents))
+
 v2.17.0
 -------
-- Added new optional plugin to remove decoratives
+- Added new optional plugin to hide decoratives from the Ship Builder
 - Removed Mod Organizer 2/Vortex choice in FOMOD
 - Added compatibility patch between JIYT and [Ultimate Shipyards Unlocked](https://www.nexusmods.com/starfield/mods/4723) [All In One]
 - Added compatibility patch between JIYT and [Ultimate Shipyards Unlocked](https://www.nexusmods.com/starfield/mods/4723) [Modular] "No Level Requirements" module
