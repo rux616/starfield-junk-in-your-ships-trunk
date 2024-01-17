@@ -2,7 +2,7 @@ Junk In Your (Ship's) Trunk
 ===========================
 by rux616
 
-Version: 2.17.0
+Version: 2.18.0
 
 Table Of Contents
 -----------------
@@ -40,7 +40,9 @@ But wait, there's more! As a bonus, you also get additional decorative versions 
 
 There are even some additional snap points added so you can do interesting things like putting certain "vertical" modules next to something else, though only for Cargo Holds at the moment; more modules will be converted in the future. (The JIYT Consortium is not responsible for any cursed creations you make with this feature.)
 
-For a complete listing of all modules in this mod, please see the "[List of Modules](#list-of-modules)" section at the bottom of this document.
+Translation services powered by Google Translate and xTranslator; the JIYT Consortium apologizes in advance if your mother was accidentally insulted. If that is the case (or you see other errors), please provide feedback and it will be fixed as soon as possible.
+
+For a complete listing of all modules provided, please see the "[List of Modules](#list-of-modules)" section at the bottom of this document.
 
 ([TOC](#table-of-contents))
 
