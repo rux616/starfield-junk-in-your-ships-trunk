@@ -184,7 +184,7 @@ var
   singularity_check: double;           // contains value used for the singularity check
   e: integer;                          // variable representing sign used in angle calculations
   euler_order: array[0..2] of double;  // holds mapping between rotation sequence angles and output angles
-  euler_angle array[0..2] of double;   // output angles
+  euler_angle: array[0..2] of double;  // output angles
 begin
   validate_rotation_sequence(rotation_sequence);
 
