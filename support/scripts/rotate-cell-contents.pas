@@ -2,7 +2,7 @@
   TODO: add GUI
   TODO: add option to clamp to a multiple of 90 degrees
   TODO: add rounding to nearest 0.0001 degree (more precise?)
-  Starfield uses right-hand rule coordinates (https://en.wikipedia.org/wiki/Right-hand_rule#Coordinates) and rotations are clockwise positive, done in a ZYX sequence. Facing the front of a ship:
+  Starfield uses right-hand rule coordinates (https://en.wikipedia.org/wiki/Right-hand_rule#Coordinates) and rotations are clockwise positive (left-hand grip rule - thumb represents positive direction of axis of rotation and the fingers curl in the direction of a positive rotation), done in a ZYX sequence. Facing the front of a ship:
     +x is left (starboard)
     -x is right (port)
     +y is towards you (fore)
@@ -16,6 +16,8 @@ const
   DEBUG = True;
   DRY_RUN = True;
 
+  // possible rotation sequences for Tait-Bryan angles
+  // see https://en.wikipedia.org/wiki/Euler_angles#Chained_rotations_equivalence for more information
   SEQUENCE_XYZ = 0; SEQUENCE_MIN = 0;
   SEQUENCE_XZY = 1;
   SEQUENCE_YXZ = 2;
@@ -41,9 +43,9 @@ end;
 
 // rotate a position via quaternion math
 procedure rotate_position(
-  vx, vy, vz: double;                        // initial position vector (x, y, z coordinates)
-  rx, ry, rz: double;                        // rotation to apply (euler angle)
-  rotation_sequence: integer;                // rotation sequence
+  vx, vy, vz: double;                           // initial position vector (x, y, z coordinates)
+  rx, ry, rz: double;                           // rotation to apply (euler angle)
+  rotation_sequence: integer;                   // see SEQUENCE_* constants and validate_rotation_sequence procedure
   var return_vx, return_vy, return_vz: double;  // final position vector (x, y, z coordinates)
 );
 var
@@ -80,7 +82,7 @@ end;
 procedure rotate_rotation(
   x, y, z: double;                          // initial rotation (euler angle)
   rx, ry, rz: double;                       // rotation to apply (euler angle)
-  rotation_sequence: integer;               // rotation sequence
+  rotation_sequence: integer;               // see SEQUENCE_* constants and validate_rotation_sequence procedure
   var return_x, return_y, return_z: double  // final rotation (euler angle)
 );
 var
@@ -131,7 +133,7 @@ end;
 // (https://github.com/mrdoob/three.js/blob/e29ce31828e85a3ecf533984417911e2304f4320/src/math/Quaternion.js#L201) (MIT license)
 procedure euler_to_quaternion(
   x, y, z: double;                                         // euler angle in degrees
-  rotation_sequence: integer;                              // rotation sequence
+  rotation_sequence: integer;                              // see SEQUENCE_* constants and validate_rotation_sequence procedure
   var return_qw, return_qx, return_qy, return_qz: double;  // quaternion components
 );
 var
@@ -174,7 +176,7 @@ end;
 // https://github.com/rux616/starfield-junk-in-your-ships-trunk/blob/adc55559b38e2fb71c31ee2ca92c7dbced12c35d/support/docs/Quaternions.pdf
 procedure quaternion_to_euler(
   qw, qx, qy, qz: double;                    // input quaternion
-  rotation_sequence: integer;                // rotation sequence
+  rotation_sequence: integer;                // see SEQUENCE_* constants and validate_rotation_sequence procedure
   var return_x, return_y, return_z: double;  // euler angle (in degrees)
 );
 var
@@ -268,21 +270,31 @@ end;
 // return a stringified quaternion
 function quaternion_to_str(w, x, y, z: double): string;
 begin
-  Result := '[w:' + float_to_str(w) + ', x:' + float_to_str(x) + ', y:' + float_to_str(y) + ', z:' + float_to_str(z) + ']';
+  Result := '[w:' + float_to_str(w)
+         + ', x:' + float_to_str(x)
+         + ', y:' + float_to_str(y)
+         + ', z:' + float_to_str(z)
+         + ']';
 end;
 
 
 // return a stringified vector
 function vector_to_str(x, y, z: double): string;
 begin
-  Result := '[x:' + float_to_str(x) + ', y:' + float_to_str(y) + ', z:' + float_to_str(z) + ']';
+  Result := '[x:' + float_to_str(x)
+         + ', y:' + float_to_str(y)
+         + ', z:' + float_to_str(z)
+         + ']';
 end;
 
 
 // return a stringified vector composed of whole numbers
 function vector_whole_to_str(x, y, z: double): string;
 begin
-  Result := '[x:' + IntToStr(Round(x)) + ', y:' + IntToStr(Round(y)) + ', z:' + IntToStr(Round(z)) + ']';
+  Result := '[x:' + IntToStr(Round(x))
+         + ', y:' + IntToStr(Round(y))
+         + ', z:' + IntToStr(Round(z))
+         + ']';
 end;
 
 
@@ -364,18 +376,14 @@ begin
     + ', Z = ' + GetElementEditValues(e,'DATA - Position/Rotation\Position\Z')
   );
   rotate_position(
-    // initial position
-    GetElementNativeValues(e, 'DATA - Position/Rotation\Position\X'),
-    GetElementNativeValues(e, 'DATA - Position/Rotation\Position\Y'),
-    GetElementNativeValues(e, 'DATA - Position/Rotation\Position\Z'),
-    // rotation to apply
-    to_rotate_x, to_rotate_y, to_rotate_z,
-    // rotation sequence
-    ROTATION_SEQUENCE_DEFAULT,
-    // final position
-    x, y, z
+    GetElementNativeValues(e, 'DATA - Position/Rotation\Position\X'),  // initial x position
+    GetElementNativeValues(e, 'DATA - Position/Rotation\Position\Y'),  // initial y position
+    GetElementNativeValues(e, 'DATA - Position/Rotation\Position\Z'),  // initial z position
+    to_rotate_x, to_rotate_y, to_rotate_z,                             // rotation to apply
+    ROTATION_SEQUENCE_DEFAULT,                                         // rotation sequence to use
+    x, y, z                                                            // (output) final position
   );
-  debug_print('rotate_position returned values: X = ' + float_to_str(x) + ', Y = ' + float_to_str(y) + ', Z = ' + float_to_str(z));
+  debug_print('rotate_position returned values: ' + vector_to_str(x, y, z));
 
   if not DRY_RUN then begin
     SetElementNativeValues(e, 'DATA - Position/Rotation\Position\X', x);
@@ -404,18 +412,14 @@ begin
     + ', Z = ' + GetElementEditValues(e, 'DATA - Position/Rotation\Rotation\Z')
   );
   rotate_rotation(
-    // initial rotation
-    GetElementNativeValues(e, 'DATA - Position/Rotation\Rotation\X'),
-    GetElementNativeValues(e, 'DATA - Position/Rotation\Rotation\Y'),
-    GetElementNativeValues(e, 'DATA - Position/Rotation\Rotation\Z'),
-    // rotation to apply
-    to_rotate_x, to_rotate_y, to_rotate_z,
-    // rotation sequence
-    ROTATION_SEQUENCE_DEFAULT,
-    // final rotation
-    x, y, z
+    GetElementNativeValues(e, 'DATA - Position/Rotation\Rotation\X'),  // initial x rotation
+    GetElementNativeValues(e, 'DATA - Position/Rotation\Rotation\Y'),  // initial y rotation
+    GetElementNativeValues(e, 'DATA - Position/Rotation\Rotation\Z'),  // initial z rotation
+    to_rotate_x, to_rotate_y, to_rotate_z,                             // rotation to apply
+    ROTATION_SEQUENCE_DEFAULT,                                         // rotation sequence to use
+    x, y, z                                                            // (output) final rotation
   );
-  debug_print('rotate_rotation returned values: X = ' + float_to_str(x) + ', Y = ' + float_to_str(y) + ', Z = ' + float_to_str(z));
+  debug_print('rotate_rotation returned values: ' + vector_to_str(x, y, z));
 
   if not DRY_RUN then begin
     SetElementNativeValues(e, 'DATA - Position/Rotation\Rotation\X', x);
