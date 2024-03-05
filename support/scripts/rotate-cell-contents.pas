@@ -261,40 +261,40 @@ end;
 procedure validate_rotation_sequence(rotation_sequence: integer);
 begin
   if (rotation_sequence < SEQUENCE_MIN) or (rotation_sequence > SEQUENCE_MAX) then
-    raise Exception.Create('rotation sequence is ' + prt_rotation_sequence(rotation_sequence));
+    raise Exception.Create('rotation sequence is ' + rotation_sequence_to_str(rotation_sequence));
 end;
 
 
 // return a stringified quaternion
-function prt_quaternion(w, x, y, z: double): string;
+function quaternion_to_str(w, x, y, z: double): string;
 begin
-  Result := '[w:' + prt_float(w) + ', x:' + prt_float(x) + ', y:' + prt_float(y) + ', z:' + prt_float(z) + ']';
+  Result := '[w:' + float_to_str(w) + ', x:' + float_to_str(x) + ', y:' + float_to_str(y) + ', z:' + float_to_str(z) + ']';
 end;
 
 
 // return a stringified vector
-function prt_vector(x, y, z: double): string;
+function vector_to_str(x, y, z: double): string;
 begin
-  Result := '[x:' + prt_float(x) + ', y:' + prt_float(y) + ', z:' + prt_float(z) + ']';
+  Result := '[x:' + float_to_str(x) + ', y:' + float_to_str(y) + ', z:' + float_to_str(z) + ']';
 end;
 
 
 // return a stringified vector composed of whole numbers
-function prt_vector_whole(x, y, z: double): string;
+function vector_whole_to_str(x, y, z: double): string;
 begin
   Result := '[x:' + IntToStr(Round(x)) + ', y:' + IntToStr(Round(y)) + ', z:' + IntToStr(Round(z)) + ']';
 end;
 
 
 // return a stringified float to 16 digit precision
-function prt_float(d: double): string;
+function float_to_str(d: double): string;
 begin
   Result := FloatToStrF(d, 2, 9999, 16);
 end;
 
 
 // return the stringified rotation sequence
-function prt_rotation_sequence(rotation_order: integer): string;
+function rotation_sequence_to_str(rotation_order: integer): string;
 begin
   case (rotation_order) of
     SEQUENCE_XYZ: Result := 'XYZ';
@@ -310,7 +310,7 @@ end;
 
 
 // return a stringified boolean
-function prt_bool(b: boolean): string;
+function bool_to_str(b: boolean): string;
 begin
   if b then
     Result := 'true';
@@ -350,7 +350,7 @@ begin
 
   AddMessage(FullPath(e));
 
-  AddMessage('Rotating by: ' + prt_vector(to_rotate_x, to_rotate_y, to_rotate_z));
+  AddMessage('Rotating by: ' + vector_to_str(to_rotate_x, to_rotate_y, to_rotate_z));
 
   // NAME - Base entries that should be ignored
   //  IS "OutpostGroupPackinDummy" [STAT:00015804]
@@ -375,7 +375,7 @@ begin
     // final position
     x, y, z
   );
-  debug_print('rotate_position returned values: X = ' + prt_float(x) + ', Y = ' + prt_float(y) + ', Z = ' + prt_float(z));
+  debug_print('rotate_position returned values: X = ' + float_to_str(x) + ', Y = ' + float_to_str(y) + ', Z = ' + float_to_str(z));
 
   if not DRY_RUN then begin
     SetElementNativeValues(e, 'DATA - Position/Rotation\Position\X', x);
@@ -391,9 +391,9 @@ begin
   else begin
     AddMessage(
       'DRY RUN: Final Position'
-      + ': X = ' + prt_float(x)
-      + ', Y = ' + prt_float(y)
-      + ', Z = ' + prt_float(z)
+      + ': X = ' + float_to_str(x)
+      + ', Y = ' + float_to_str(y)
+      + ', Z = ' + float_to_str(z)
     );
   end;
 
@@ -415,7 +415,7 @@ begin
     // final rotation
     x, y, z
   );
-  debug_print('rotate_rotation returned values: X = ' + prt_float(x) + ', Y = ' + prt_float(y) + ', Z = ' + prt_float(z));
+  debug_print('rotate_rotation returned values: X = ' + float_to_str(x) + ', Y = ' + float_to_str(y) + ', Z = ' + float_to_str(z));
 
   if not DRY_RUN then begin
     SetElementNativeValues(e, 'DATA - Position/Rotation\Rotation\X', x);
@@ -431,9 +431,9 @@ begin
   else begin
     AddMessage(
       'DRY RUN: Final Rotation'
-      + ': X = ' + prt_float(x)
-      + ', Y = ' + prt_float(y)
-      + ', Z = ' + prt_float(z)
+      + ': X = ' + float_to_str(x)
+      + ', Y = ' + float_to_str(y)
+      + ', Z = ' + float_to_str(z)
     );
   end;
 end;
