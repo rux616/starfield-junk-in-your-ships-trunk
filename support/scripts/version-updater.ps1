@@ -124,18 +124,18 @@ $text_files | ForEach-Object {
 # plugin files
 [string[]] $plugin_files = @(
     # main plugin
-    "./data/JunkInYourTrunk_v2.esm"
+    "./data/JunkInYourTrunk_v" + $version.VersionMajor + ".esm"
     # optional plugins
-    "./data/JIYTv2CargoExpanderX10.esm"
-    "./data/JIYTv2CargoExpanderX3.esm"
-    "./data/JIYTv2NoDecoratives.esm"
+    "./data/JIYTv" + $version.VersionMajor + "CargoExpanderX10.esm"
+    "./data/JIYTv" + $version.VersionMajor + "CargoExpanderX3.esm"
+    "./data/JIYTv" + $version.VersionMajor + "NoDecoratives.esm"
     # compatibility patches
-    "./data/JIYTv2-SKKShipPartsNoLevelAllVendors-Patch.esm"
-    "./data/JIYTv2-ShipColorize-Patch.esm"
-    "./data/JIYTv2-StarfieldExtendedShieldsRebalanced-Patch.esm"
-    "./data/JIYTv2-USU-Patch.esm"
-    "./data/JIYTv2-USUNoLevelRequirements-Patch.esm"
-    "./data/JIYTv2-USUQuestRewards-Patch.esm"
+    "./data/JIYTv" + $version.VersionMajor + "-SKKShipPartsNoLevelAllVendors-Patch.esm"
+    "./data/JIYTv" + $version.VersionMajor + "-ShipColorize-Patch.esm"
+    "./data/JIYTv" + $version.VersionMajor + "-StarfieldExtendedShieldsRebalanced-Patch.esm"
+    "./data/JIYTv" + $version.VersionMajor + "-USU-Patch.esm"
+    "./data/JIYTv" + $version.VersionMajor + "-USUNoLevelRequirements-Patch.esm"
+    "./data/JIYTv" + $version.VersionMajor + "-USUQuestRewards-Patch.esm"
 )
 # python3 needs to be accessible from PATH!
 python3.exe "./support/scripts/plugin-description-version-updater.py" $(if (-not $make_backups) { "-n" }) "$version" $plugin_files
