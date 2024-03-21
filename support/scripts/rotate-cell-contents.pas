@@ -874,7 +874,6 @@ end;
 
 // TODO determine better dialog title
 // TODO add hints to all controls
-// TODO change apply_to_rotation and apply_to_position to radio buttons (and add "both" option)
 // TODO add "clamp to multiples of 90" controls
 // TODO add "rounding" controls
 function show_options_dialog(): integer;
@@ -897,7 +896,7 @@ var
 
   apply_to_subpanel: TPanel;
   apply_to_label: TLabel;
-  apply_to_rotation, apply_to_position: TCheckBox;
+  apply_to_both, apply_to_position, apply_to_rotation: TRadioButton;
 
   allow_deny_panel, allow_record_subpanel, deny_record_subpanel, allow_refr_subpanel, deny_refr_subpanel: TPanel;
   allow_record, deny_record, allow_refr, deny_refr: TCheckBox;
@@ -1068,7 +1067,15 @@ begin
     set_margins_layout(apply_to_label, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alLeft);
     apply_to_label.Height := CONTROL_HEIGHT * global_scale_factor;
 
-    apply_to_position := TCheckBox.Create(frm);
+    apply_to_both := TRadioButton.Create(frm);
+    apply_to_both.Parent := apply_to_subpanel;
+    apply_to_both.Alignment := taLeftJustify;
+    apply_to_both.Caption := 'Both';
+    set_margins_layout(apply_to_both, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alRight);
+    apply_to_both.Height := CONTROL_HEIGHT * global_scale_factor;
+    apply_to_both.Width := caption_width(apply_to_both) + (RADIO_FIXED_WIDTH * global_scale_factor);
+
+    apply_to_position := TRadioButton.Create(frm);
     apply_to_position.Parent := apply_to_subpanel;
     apply_to_position.Alignment := taLeftJustify;
     apply_to_position.Caption := 'Position';
@@ -1076,7 +1083,7 @@ begin
     apply_to_position.Height := CONTROL_HEIGHT * global_scale_factor;
     apply_to_position.Width := 65 * global_scale_factor;
 
-    apply_to_rotation := TCheckBox.Create(frm);
+    apply_to_rotation := TRadioButton.Create(frm);
     apply_to_rotation.Parent := apply_to_subpanel;
     apply_to_rotation.Alignment := taLeftJustify;
     apply_to_rotation.Caption := 'Rotation';
@@ -1120,8 +1127,12 @@ begin
     rotation_sequence.Items.Add('ZXY');
     rotation_sequence.Items.Add('ZYX');
     rotation_sequence.ItemIndex := global_rotation_sequence;
-    apply_to_rotation.Checked := global_apply_to_rotation;
-    apply_to_position.Checked := global_apply_to_position;
+    if (global_apply_to_position and global_apply_to_rotation) then begin
+      apply_to_both.Checked := True;
+    end else begin
+      apply_to_position.Checked := global_apply_to_position;
+      apply_to_rotation.Checked := global_apply_to_rotation;
+    end;
     rotation_x.Text := float_to_str(global_rotate_x, DIGITS_ANGLE, false);
     rotation_y.Text := float_to_str(global_rotate_y, DIGITS_ANGLE, false);
     rotation_z.Text := float_to_str(global_rotate_z, DIGITS_ANGLE, false);
@@ -1152,8 +1163,13 @@ begin
     // TODO reorder these lines to match the order of the controls
 
     if (Result = mrOk) then begin
-      global_apply_to_rotation := apply_to_rotation.Checked;
-      global_apply_to_position := apply_to_position.Checked;
+      if (apply_to_both.Checked) then begin
+        global_apply_to_position := True;
+        global_apply_to_rotation := True;
+      end else begin
+        global_apply_to_position := apply_to_position.Checked;
+        global_apply_to_rotation := apply_to_rotation.Checked;
+      end;
       global_rotation_sequence := rotation_sequence.ItemIndex;
       global_rotate_x := StrToFloat(rotation_x.Text);
       global_rotate_y := StrToFloat(rotation_y.Text);
