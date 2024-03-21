@@ -1020,7 +1020,7 @@ begin
     mode_set.Caption := 'Set';
     set_margins_layout(mode_set, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alRight);
     mode_set.Height := CONTROL_HEIGHT * global_scale_factor;
-    mode_set.Width := 40 * global_scale_factor;
+    mode_set.Width := caption_width(mode_set) + (RADIO_FIXED_WIDTH * global_scale_factor);
 
     mode_rotate := TRadioButton.Create(frm);
     mode_rotate.Parent := rotation_mode_subpanel;
@@ -1028,7 +1028,7 @@ begin
     mode_rotate.Caption := 'Rotate';
     set_margins_layout(mode_rotate, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alRight);
     mode_rotate.Height := CONTROL_HEIGHT * global_scale_factor;
-    mode_rotate.Width := 60 * global_scale_factor;
+    mode_rotate.Width := caption_width(mode_rotate) + (RADIO_FIXED_WIDTH * global_scale_factor);
 
     // rotation sequence subpanel
 
@@ -1081,7 +1081,7 @@ begin
     apply_to_position.Caption := 'Position';
     set_margins_layout(apply_to_position, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alRight);
     apply_to_position.Height := CONTROL_HEIGHT * global_scale_factor;
-    apply_to_position.Width := 65 * global_scale_factor;
+    apply_to_position.Width := caption_width(apply_to_position) + (RADIO_FIXED_WIDTH * global_scale_factor);
 
     apply_to_rotation := TRadioButton.Create(frm);
     apply_to_rotation.Parent := apply_to_subpanel;
@@ -1089,7 +1089,7 @@ begin
     apply_to_rotation.Caption := 'Rotation';
     set_margins_layout(apply_to_rotation, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alRight);
     apply_to_rotation.Height := CONTROL_HEIGHT * global_scale_factor;
-    apply_to_rotation.Width := 69 * global_scale_factor;
+    apply_to_rotation.Width := caption_width(apply_to_rotation) + (RADIO_FIXED_WIDTH * global_scale_factor);
 
     // meta panel
 
@@ -1100,14 +1100,16 @@ begin
     dry_run := TCheckBox.Create(frm);
     dry_run.Parent := meta_panel;
     dry_run.Caption := 'Dry Run';
-    dry_run.Height := CONTROL_HEIGHT * global_scale_factor;
     set_margins_layout(dry_run, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alTop);
+    dry_run.Height := CONTROL_HEIGHT * global_scale_factor;
+    dry_run.Width := caption_width(dry_run) + (CHECKBOX_FIXED_WIDTH * global_scale_factor);
 
     use_same_settings_for_all := TCheckBox.Create(frm);
     use_same_settings_for_all.Parent := meta_panel;
     use_same_settings_for_all.Caption := 'Use Same Settings for All';
-    use_same_settings_for_all.Height := CONTROL_HEIGHT * global_scale_factor;
     set_margins_layout(use_same_settings_for_all, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alTop);
+    use_same_settings_for_all.Height := CONTROL_HEIGHT * global_scale_factor;
+    use_same_settings_for_all.Width := caption_width(use_same_settings_for_all) + (CHECKBOX_FIXED_WIDTH * global_scale_factor);
 
     // button panel
 
