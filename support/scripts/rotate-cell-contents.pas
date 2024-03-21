@@ -58,6 +58,20 @@ const
   FILTER_MODE_INCLUDE = True;
   FILTER_MODE_EXCLUDE = False;
 
+  // helper constants for clamp modes
+  CLAMP_MODE_05 = 0;  CLAMP_MODE_MIN = 0;
+  CLAMP_MODE_10 = 1;
+  CLAMP_MODE_15 = 2;
+  CLAMP_MODE_30 = 3;
+  CLAMP_MODE_45 = 4;
+  CLAMP_MODE_90 = 5;  CLAMP_MODE_MAX = 5;
+
+  // helper constants for position/rotation precision
+  PRECISION_POSITION = -6;
+  PRECISION_ROTATION = -4;
+  PRECISION_MIN = 0;
+  PRECISION_MAX = -6;
+
   // global defaults
   GLOBAL_DEBUG_DEFAULT = True;  // TODO set to False
 
@@ -89,14 +103,13 @@ const
   GLOBAL_APPLY_TO_POSITION_DEFAULT = True;
   GLOBAL_APPLY_TO_ROTATION_DEFAULT = True;
 
-  GLOBAL_CLAMP_ANGLES_DEFAULT = False;
-  GLOBAL_ROUND_POSITIONS_DEFAULT = False;
-  GLOBAL_ROUND_POSITIONS_VALUE_DEFAULT = 0.000001;
-  GLOBAL_ROUND_ROTATIONS_DEFAULT = False;
-  GLOBAL_ROUND_ROTATIONS_VALUE_DEFAULT = 0.0001;
+  GLOBAL_CLAMP_USE_DEFAULT = False;
+  GLOBAL_CLAMP_MODE_DEFAULT = CLAMP_MODE_90;
+  GLOBAL_POSITION_PRECISION_DEFAULT = -6;  // precision to nearest 0.000001
+  GLOBAL_ROTATION_PRECISION_DEFAULT = -4;  // precision to nearest 0.0001
 
   GLOBAL_DRY_RUN_DEFAULT = True;
-  GLOBAL_USE_SAME_SETTINGS_FOR_ALL_DEFAULT = true;
+  GLOBAL_USE_SAME_SETTINGS_FOR_ALL_DEFAULT = True;
 
   // UI constants
   MARGIN_TOP = 5;
@@ -107,6 +120,7 @@ const
   CONTROL_HEIGHT = 22;
   CHECKBOX_FIXED_WIDTH = 21;  // TODO determine better name
   RADIO_FIXED_WIDTH = 21;  // TODO determine better name
+  COMBO_FIXED_WIDTH = 24;  // TODO determine better name
 
   // epsilon to use for CompareValue calls
   // between positions and rotations, positions have more significant decimals (6), so this is set
@@ -163,11 +177,10 @@ var
   global_apply_to_position: boolean;
   global_apply_to_rotation: boolean;
 
-  global_clamp_angles: boolean;
-  global_round_positions: boolean;
-  global_round_positions_value: double;
-  global_round_rotations: boolean;
-  global_round_rotations_value: double;
+  global_clamp_use: boolean;
+  global_clamp_mode: integer;
+  global_position_precision: integer;
+  global_rotation_precision: integer;
 
   global_dry_run: boolean;
   global_use_same_settings_for_all: boolean;
@@ -195,18 +208,9 @@ end;
 
 
 // return the width of a control's caption
-// https://stackoverflow.com/a/2548178
 function caption_width(control: TControl): integer;
-var
-  bitmap: TBitmap;
 begin
-  bitmap := TBitmap.Create;
-  try
-    bitmap.Canvas.Font.Assign(control.Font);
-    Result := bitmap.Canvas.TextWidth(control.Caption);
-  finally
-    bitmap.Free;
-  end;
+  Result := string_width(control.Caption, control.Font);
 end;
 
 
@@ -222,6 +226,22 @@ begin
   end else begin
     debug_print('clamp: no clamping needed');
     Result := d;
+  end;
+end;
+
+
+// return the stringified clamp mode
+function clamp_mode_to_str(clamp_mode: integer): string;
+begin
+  case (clamp_mode) of
+    CLAMP_MODE_05: Result := '5 degrees';
+    CLAMP_MODE_10: Result := '10 degrees';
+    CLAMP_MODE_15: Result := '15 degrees';
+    CLAMP_MODE_30: Result := '30 degrees';
+    CLAMP_MODE_45: Result := '45 degrees';
+    CLAMP_MODE_90: Result := '90 degrees';
+  else
+    Result := 'unknown (' + IntToStr(clamp_mode) + ')';
   end;
 end;
 
@@ -273,6 +293,20 @@ begin
 end;
 
 
+// return the max width of a control's Items property
+function max_item_width(control: TControl): integer;
+var
+  i, width: integer;
+begin
+  Result := 0;
+  for i := 0 to control.Items.Count - 1 do begin
+    width := string_width(control.Items[i], control.Font);
+    if (width > Result) then
+      Result := width;
+  end;
+end;
+
+
 // normalize an angle (in degrees) to [0.0, 360.0)
 function normalize_angle(angle: double): double;
 const
@@ -284,6 +318,13 @@ begin
   if (CompareValue(angle, Result, EPSILON) <> EqualsValue) then
     debug_print('normalize_angle: ' + float_to_str(angle, DIGITS_ANGLE, false)
       + ' -> ' + float_to_str(Result, DIGITS_ANGLE, false));
+end;
+
+
+// return the example string for a given precision
+function precision_to_str(precision: integer): string;
+begin
+  Result := float_to_str(Power(10.0, precision), -precision, false);
 end;
 
 
@@ -347,6 +388,22 @@ begin
   control.Margins.Right := margin_right;
   control.AlignWithMargins := true;
   control.Align := align;
+end;
+
+
+// return the width of a string using the given font
+// https://stackoverflow.com/a/2548178
+function string_width(s: string; font: TFont): integer;
+var
+  bitmap: TBitmap;
+begin
+  bitmap := TBitmap.Create;
+  try
+    bitmap.Canvas.Font.Assign(font);
+    Result := bitmap.Canvas.TextWidth(s);
+  finally
+    bitmap.Free;
+  end;
 end;
 
 
@@ -884,31 +941,25 @@ var
   angle_label, rotation_x_label, rotation_y_label, rotation_z_label: TLabel;
   rotation_x, rotation_y, rotation_z: TEdit;
 
-  rotation_options_panel: TPanel;
-
-  rotation_mode_subpanel: TPanel;
-  rotation_mode_label: TLabel;
-  mode_rotate, mode_set: TRadioButton;
-
-  rotation_sequence_subpanel: TPanel;
-  rotation_sequence_label: TLabel;
+  rotation_options_panel, rotation_mode_subpanel, rotation_sequence_subpanel, apply_to_subpanel: TPanel;
+  rotation_mode_label, rotation_sequence_label, apply_to_label: TLabel;
+  mode_rotate, mode_set, apply_to_both, apply_to_position, apply_to_rotation: TRadioButton;
   rotation_sequence: TComboBox;
 
-  apply_to_subpanel: TPanel;
-  apply_to_label: TLabel;
-  apply_to_both, apply_to_position, apply_to_rotation: TRadioButton;
-
-  allow_deny_panel, allow_record_subpanel, deny_record_subpanel, allow_refr_subpanel, deny_refr_subpanel: TPanel;
-  allow_record, deny_record, allow_refr, deny_refr: TCheckBox;
-  allow_record_edit, deny_record_edit, allow_refr_edit, deny_refr_edit: TEdit;
+  secondary_options_panel, clamp_subpanel, position_precision_subpanel, rotation_precision_subpanel: TPanel;
+  clamp_use_checkbox: TCheckBox;
+  clamp_label, position_precision_label, rotation_precision_label: TLabel;
+  clamp_combo, position_precision_combo, rotation_precision_combo: TComboBox;
 
   meta_panel: TPanel;
   dry_run, use_same_settings_for_all: TCheckBox;
 
   debug_checkbox: TCheckBox;
+
+  i: integer;
 begin
+  frm := TForm.Create(nil);
   try
-    frm := TForm.Create(nil);
     frm.Caption := 'Rotate Cell Contents: Options';
     frm.AutoSize := True;
     frm.BorderStyle := bsSingle;
@@ -1004,7 +1055,7 @@ begin
     rotation_mode_subpanel := TPanel.Create(frm);
     rotation_mode_subpanel.Parent := rotation_options_panel;
     do_panel_layout(rotation_mode_subpanel, 0);
-    set_margins_layout(rotation_mode_subpanel, 0, 0, 0, 0, alTop);
+    set_margins_layout(rotation_mode_subpanel, MARGIN_TOP, 0, 0, 0, alTop);
     rotation_mode_subpanel.Height := CONTROL_HEIGHT * global_scale_factor;
 
     rotation_mode_label := TLabel.Create(frm);
@@ -1035,7 +1086,7 @@ begin
     rotation_sequence_subpanel := TPanel.Create(frm);
     rotation_sequence_subpanel.Parent := rotation_options_panel;
     do_panel_layout(rotation_sequence_subpanel, 0);
-    set_margins_layout(rotation_sequence_subpanel, 0, 0, 0, 0, alTop);
+    set_margins_layout(rotation_sequence_subpanel, MARGIN_TOP, 0, 0, 0, alTop);
     rotation_sequence_subpanel.Height := CONTROL_HEIGHT * global_scale_factor;
 
     rotation_sequence_label := TLabel.Create(frm);
@@ -1050,14 +1101,13 @@ begin
     rotation_sequence.Style := csDropDownList;
     set_margins_layout(rotation_sequence, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alRight);
     rotation_sequence.Height := CONTROL_HEIGHT * global_scale_factor;
-    rotation_sequence.Width := 50 * global_scale_factor;
 
     // apply to subpanel
 
     apply_to_subpanel := TPanel.Create(frm);
     apply_to_subpanel.Parent := rotation_options_panel;
     do_panel_layout(apply_to_subpanel, 0);
-    set_margins_layout(apply_to_subpanel, 0, MARGIN_BOTTOM, 0, 0, alTop);
+    set_margins_layout(apply_to_subpanel, MARGIN_TOP, MARGIN_BOTTOM, 0, 0, alTop);
     apply_to_subpanel.Height := CONTROL_HEIGHT * global_scale_factor;
 
     apply_to_label := TLabel.Create(frm);
@@ -1091,7 +1141,91 @@ begin
     apply_to_rotation.Height := CONTROL_HEIGHT * global_scale_factor;
     apply_to_rotation.Width := caption_width(apply_to_rotation) + (RADIO_FIXED_WIDTH * global_scale_factor);
 
+    // secondary options panel
+
+    secondary_options_panel := TPanel.Create(frm);
+    secondary_options_panel.Parent := frm;
+    do_panel_layout(secondary_options_panel, PANEL_BEVEL);
+
+    // clamp subpanel
+
+    clamp_subpanel := TPanel.Create(frm);
+    clamp_subpanel.Parent := secondary_options_panel;
+    do_panel_layout(clamp_subpanel, 0);
+    set_margins_layout(clamp_subpanel, MARGIN_TOP, 0, 0, 0, alTop);
+    clamp_subpanel.Height := CONTROL_HEIGHT * global_scale_factor;
+
+    clamp_label := TLabel.Create(frm);
+    clamp_label.Parent := clamp_subpanel;
+    clamp_label.Layout := tlCenter;
+    clamp_label.Caption := 'Clamp to Multiples of:';
+    set_margins_layout(clamp_label, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alLeft);
+    clamp_label.Height := CONTROL_HEIGHT * global_scale_factor;
+
+    clamp_use_checkbox := TCheckBox.Create(frm);
+    clamp_use_checkbox.Parent := clamp_subpanel;
+    clamp_use_checkbox.Alignment := taLeftJustify;
+    clamp_use_checkbox.Caption := 'Clamp';
+    set_margins_layout(clamp_use_checkbox, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alRight);
+    clamp_use_checkbox.Height := CONTROL_HEIGHT * global_scale_factor;
+    clamp_use_checkbox.Width := caption_width(clamp_use_checkbox) + (CHECKBOX_FIXED_WIDTH * global_scale_factor);
+
+    clamp_combo := TComboBox.Create(frm);
+    clamp_combo.Parent := clamp_subpanel;
+    clamp_combo.Style := csDropDownList;
+    set_margins_layout(clamp_combo, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alRight);
+    clamp_combo.Height := CONTROL_HEIGHT * global_scale_factor;
+
+    // position precision subpanel
+
+    position_precision_subpanel := TPanel.Create(frm);
+    position_precision_subpanel.Parent := secondary_options_panel;
+    do_panel_layout(position_precision_subpanel, 0);
+    set_margins_layout(position_precision_subpanel, MARGIN_TOP, 0, 0, 0, alTop);
+    position_precision_subpanel.Height := CONTROL_HEIGHT * global_scale_factor;
+
+    position_precision_label := TLabel.Create(frm);
+    position_precision_label.Parent := position_precision_subpanel;
+    position_precision_label.Layout := tlCenter;
+    position_precision_label.Caption := 'Position Precision:';
+    set_margins_layout(position_precision_label, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alLeft);
+    position_precision_label.Height := CONTROL_HEIGHT * global_scale_factor;
+
+    position_precision_combo := TComboBox.Create(frm);
+    position_precision_combo.Parent := position_precision_subpanel;
+    position_precision_combo.Style := csDropDownList;
+    position_precision_combo.ShowHint := True;
+    position_precision_combo.Hint := 'The number of decimal places to round positions to. '
+      + 'Defaults to "' + precision_to_str(GLOBAL_POSITION_PRECISION_DEFAULT) + '"';
+    set_margins_layout(position_precision_combo, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alRight);
+    position_precision_combo.Height := CONTROL_HEIGHT * global_scale_factor;
+
+    // rotation precision subpanel
+
+    rotation_precision_subpanel := TPanel.Create(frm);
+    rotation_precision_subpanel.Parent := secondary_options_panel;
+    do_panel_layout(rotation_precision_subpanel, 0);
+    set_margins_layout(rotation_precision_subpanel, MARGIN_TOP, MARGIN_BOTTOM, 0, 0, alTop);
+    rotation_precision_subpanel.Height := CONTROL_HEIGHT * global_scale_factor;
+
+    rotation_precision_label := TLabel.Create(frm);
+    rotation_precision_label.Parent := rotation_precision_subpanel;
+    rotation_precision_label.Layout := tlCenter;
+    rotation_precision_label.Caption := 'Rotation Precision:';
+    set_margins_layout(rotation_precision_label, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alLeft);
+    rotation_precision_label.Height := CONTROL_HEIGHT * global_scale_factor;
+
+    rotation_precision_combo := TComboBox.Create(frm);
+    rotation_precision_combo.Parent := rotation_precision_subpanel;
+    rotation_precision_combo.Style := csDropDownList;
+    rotation_precision_combo.ShowHint := True;
+    rotation_precision_combo.Hint := 'The number of decimal places to round rotations to. '
+      + 'Defaults to "' + precision_to_str(GLOBAL_ROTATION_PRECISION_DEFAULT) + '"';
+    set_margins_layout(rotation_precision_combo, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alRight);
+    rotation_precision_combo.Height := CONTROL_HEIGHT * global_scale_factor;
+
     // meta panel
+    // TODO use anchor left for the checkboxes?
 
     meta_panel := TPanel.Create(frm);
     meta_panel.Parent := frm;
@@ -1116,18 +1250,16 @@ begin
     create_button_panel(frm, frm, debug_checkbox);
 
     // set the values on the various controls
-    // TODO reorder these lines to match the order of the controls
 
+    rotation_x.Text := float_to_str(global_rotate_x, DIGITS_ANGLE, false);
+    rotation_y.Text := float_to_str(global_rotate_y, DIGITS_ANGLE, false);
+    rotation_z.Text := float_to_str(global_rotate_z, DIGITS_ANGLE, false);
     if (global_operation_mode = OPERATION_MODE_SET) then
       mode_set.Checked := True
     else
       mode_rotate.Checked := True;
-    rotation_sequence.Items.Add('XYZ');
-    rotation_sequence.Items.Add('XZY');
-    rotation_sequence.Items.Add('YXZ');
-    rotation_sequence.Items.Add('YZX');
-    rotation_sequence.Items.Add('ZXY');
-    rotation_sequence.Items.Add('ZYX');
+    for i := SEQUENCE_MIN to SEQUENCE_MAX do
+      rotation_sequence.Items.Add(rotation_sequence_to_str(i));
     rotation_sequence.ItemIndex := global_rotation_sequence;
     if (global_apply_to_position and global_apply_to_rotation) then begin
       apply_to_both.Checked := True;
@@ -1135,36 +1267,39 @@ begin
       apply_to_position.Checked := global_apply_to_position;
       apply_to_rotation.Checked := global_apply_to_rotation;
     end;
-    rotation_x.Text := float_to_str(global_rotate_x, DIGITS_ANGLE, false);
-    rotation_y.Text := float_to_str(global_rotate_y, DIGITS_ANGLE, false);
-    rotation_z.Text := float_to_str(global_rotate_z, DIGITS_ANGLE, false);
+    clamp_use_checkbox.Checked := global_clamp_use;
+    for i := CLAMP_MODE_MIN to CLAMP_MODE_MAX do
+      clamp_combo.Items.Add(clamp_mode_to_str(i));
+    clamp_combo.ItemIndex := global_clamp_mode;
+    for i := PRECISION_MIN downto PRECISION_POSITION do
+      position_precision_combo.Items.Add(precision_to_str(i));
+    position_precision_combo.ItemIndex := -global_position_precision;
+    for i := PRECISION_MIN downto PRECISION_ROTATION do
+      rotation_precision_combo.Items.Add(precision_to_str(i));
+    rotation_precision_combo.ItemIndex := -global_rotation_precision;
     dry_run.Checked := global_dry_run;
     use_same_settings_for_all.Checked := global_use_same_settings_for_all;
     debug_checkbox.Checked := global_debug;
 
-    // temporary debug code -->
-    // TODO remove
-    AddMessage('frm H x W: ' + IntToStr(frm.Height) + ' x ' + IntToStr(frm.Width));
-    AddMessage('rotate_x_subpanel H x W: ' + IntToStr(rotation_x_subpanel.Height) + ' x ' + IntToStr(rotation_x_subpanel.Width));
-    AddMessage('rotate_x_label H x W: ' + IntToStr(rotation_x_label.Height) + ' x ' + IntToStr(rotation_x_label.Width));
-    AddMessage('rotate_x_label client H x W: ' + IntToStr(rotation_x_label.ClientHeight) + ' x ' + IntToStr(rotation_x_label.ClientWidth));
-    AddMessage('rotation_x H x W: ' + IntToStr(rotation_x.Height) + ' x ' + IntToStr(rotation_x.Width));
-    AddMessage('mode_rotate H x W: ' + IntToStr(mode_rotate.Height) + ' x ' + IntToStr(mode_rotate.Width));
-    AddMessage('mode_rotate client H x W: ' + IntToStr(mode_rotate.ClientHeight) + ' x ' + IntToStr(mode_rotate.ClientWidth));
-    AddMessage('mode_set H x W: ' + IntToStr(mode_set.Height) + ' x ' + IntToStr(mode_set.Width));
-    AddMessage('mode_set client H x W: ' + IntToStr(mode_set.ClientHeight) + ' x ' + IntToStr(mode_set.ClientWidth));
-    AddMessage('rotation_sequence H x W: ' + IntToStr(rotation_sequence.Height) + ' x ' + IntToStr(rotation_sequence.Width));
-    AddMessage('rotation_sequence client H x W: ' + IntToStr(rotation_sequence.ClientHeight) + ' x ' + IntToStr(rotation_sequence.ClientWidth));
-    // <-- temporary debug code
+    // set the widths of combo boxes to the width of the widest item
+
+    rotation_sequence.Width := max_item_width(rotation_sequence) + (COMBO_FIXED_WIDTH * global_scale_factor);
+    clamp_combo.Width := max_item_width(clamp_combo) + (COMBO_FIXED_WIDTH * global_scale_factor);
+    position_precision_combo.Width := max_item_width(position_precision_combo) + (COMBO_FIXED_WIDTH * global_scale_factor);
+    rotation_precision_combo.Width := max_item_width(rotation_precision_combo) + (COMBO_FIXED_WIDTH * global_scale_factor);
 
     // show the form (duh)
 
     Result := frm.ShowModal;
 
     // get the values from the various controls and store them in their respective global variables
-    // TODO reorder these lines to match the order of the controls
 
     if (Result = mrOk) then begin
+      global_rotate_x := StrToFloat(rotation_x.Text);
+      global_rotate_y := StrToFloat(rotation_y.Text);
+      global_rotate_z := StrToFloat(rotation_z.Text);
+      global_operation_mode := mode_set.Checked;
+      global_rotation_sequence := rotation_sequence.ItemIndex;
       if (apply_to_both.Checked) then begin
         global_apply_to_position := True;
         global_apply_to_rotation := True;
@@ -1172,11 +1307,10 @@ begin
         global_apply_to_position := apply_to_position.Checked;
         global_apply_to_rotation := apply_to_rotation.Checked;
       end;
-      global_rotation_sequence := rotation_sequence.ItemIndex;
-      global_rotate_x := StrToFloat(rotation_x.Text);
-      global_rotate_y := StrToFloat(rotation_y.Text);
-      global_rotate_z := StrToFloat(rotation_z.Text);
-      global_operation_mode := mode_set.Checked;
+      global_clamp_use := clamp_use_checkbox.Checked;
+      global_clamp_mode := clamp_combo.ItemIndex;
+      global_position_precision := -position_precision_combo.ItemIndex;
+      global_rotation_precision := -rotation_precision_combo.ItemIndex;
       global_dry_run := dry_run.Checked;
       global_use_same_settings_for_all := use_same_settings_for_all.Checked;
       global_debug := debug_checkbox.Checked;
@@ -1227,11 +1361,10 @@ begin
   global_apply_to_position := GLOBAL_APPLY_TO_POSITION_DEFAULT;
   global_apply_to_rotation := GLOBAL_APPLY_TO_ROTATION_DEFAULT;
 
-  global_clamp_angles := GLOBAL_CLAMP_ANGLES_DEFAULT;
-  global_round_positions := GLOBAL_ROUND_POSITIONS_DEFAULT;
-  global_round_positions_value := GLOBAL_ROUND_POSITIONS_VALUE_DEFAULT;
-  global_round_rotations := GLOBAL_ROUND_ROTATIONS_DEFAULT;
-  global_round_rotations_value := GLOBAL_ROUND_ROTATIONS_VALUE_DEFAULT;
+  global_clamp_use := GLOBAL_CLAMP_USE_DEFAULT;
+  global_clamp_mode := GLOBAL_CLAMP_MODE_DEFAULT;
+  global_position_precision := GLOBAL_POSITION_PRECISION_DEFAULT;
+  global_rotation_precision := GLOBAL_ROTATION_PRECISION_DEFAULT;
 
   global_dry_run := GLOBAL_DRY_RUN_DEFAULT;
   global_use_same_settings_for_all := GLOBAL_USE_SAME_SETTINGS_FOR_ALL_DEFAULT;
