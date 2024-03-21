@@ -80,7 +80,8 @@ const
   GLOBAL_RECORD_SIGNATURE_LIST_DEFAULT = 'ACHR,REFR';
   GLOBAL_REFR_SIGNATURE_USE_DEFAULT = True;
   GLOBAL_REFR_SIGNATURE_MODE_DEFAULT = FILTER_MODE_INCLUDE;
-  GLOBAL_REFR_SIGNATURE_LIST_DEFAULT = 'ACTI,ALCH,ASPC,BOOK,CONT,DOOR,FURN,IDLM,LIGH,MISC,MSTT,PDCL,PKIN,SOUN,STAT,TERM';
+  GLOBAL_REFR_SIGNATURE_LIST_DEFAULT =
+    'ACTI,ALCH,ASPC,BOOK,CONT,DOOR,FURN,IDLM,LIGH,MISC,MSTT,PDCL,PKIN,SOUN,STAT,TERM';
   GLOBAL_EDID_STARTS_WITH_USE_DEFAULT = True;
   GLOBAL_EDID_STARTS_WITH_MODE_DEFAULT = FILTER_MODE_EXCLUDE;
   GLOBAL_EDID_STARTS_WITH_LIST_DEFAULT = 'SMOD_Snap_';
@@ -204,6 +205,20 @@ begin
     Result := 'true'
   else
     Result := 'false';
+end;
+
+
+// return a string representing whether a boolean would represent a checked box or not
+function bool_to_checked_str(b: boolean): string;
+begin
+  if b then Result := 'checked' else Result := 'unchecked';
+end;
+
+
+// return a string representing whether a boolean would represent a selected radio button or not
+function bool_to_selected_str(b: boolean): string;
+begin
+  if b then Result := 'selected' else Result := 'not selected';
 end;
 
 
@@ -827,12 +842,18 @@ begin
 
     // filter panels
 
-    create_filter_panel(frm, frm, 'Record Signature', SIGNATURE_HINT, record_signature_use, record_signature_mode_include, record_signature_mode_exclude, record_signature_list);
-    create_filter_panel(frm, frm, 'REFR Signature', SIGNATURE_HINT, refr_signature_use, refr_signature_mode_include, refr_signature_mode_exclude, refr_signature_list);
-    create_filter_panel(frm, frm, 'EDID (Starts With)', EDID_HINT_FULL_OR_PARTIAL, edid_starts_with_use, edid_starts_with_mode_include, edid_starts_with_mode_exclude, edid_starts_with_list);
-    create_filter_panel(frm, frm, 'EDID (Ends With)', EDID_HINT_FULL_OR_PARTIAL, edid_ends_with_use, edid_ends_with_mode_include, edid_ends_with_mode_exclude, edid_ends_with_list);
-    create_filter_panel(frm, frm, 'EDID (Contains)', EDID_HINT_FULL_OR_PARTIAL, edid_contains_use, edid_contains_mode_include, edid_contains_mode_exclude, edid_contains_list);
-    create_filter_panel(frm, frm, 'EDID (Equals)', EDID_HINT_FULL, edid_equals_use, edid_equals_mode_include, edid_equals_mode_exclude, edid_equals_list);
+    create_filter_panel(frm, frm, 'Record Signature', SIGNATURE_HINT, record_signature_use,
+      record_signature_mode_include, record_signature_mode_exclude, record_signature_list);
+    create_filter_panel(frm, frm, 'REFR Signature', SIGNATURE_HINT, refr_signature_use,
+      refr_signature_mode_include, refr_signature_mode_exclude, refr_signature_list);
+    create_filter_panel(frm, frm, 'EDID (Starts With)', EDID_HINT_FULL_OR_PARTIAL, edid_starts_with_use,
+      edid_starts_with_mode_include, edid_starts_with_mode_exclude, edid_starts_with_list);
+    create_filter_panel(frm, frm, 'EDID (Ends With)', EDID_HINT_FULL_OR_PARTIAL, edid_ends_with_use,
+      edid_ends_with_mode_include, edid_ends_with_mode_exclude, edid_ends_with_list);
+    create_filter_panel(frm, frm, 'EDID (Contains)', EDID_HINT_FULL_OR_PARTIAL, edid_contains_use,
+      edid_contains_mode_include, edid_contains_mode_exclude, edid_contains_list);
+    create_filter_panel(frm, frm, 'EDID (Equals)', EDID_HINT_FULL, edid_equals_use, edid_equals_mode_include,
+      edid_equals_mode_exclude, edid_equals_list);
 
     // button panel
 
@@ -929,10 +950,7 @@ begin
 end;
 
 
-// TODO determine better dialog title
-// TODO add hints to all controls
-// TODO add "clamp to multiples of 90" controls
-// TODO add "rounding" controls
+// build and display the options dialog
 function show_options_dialog(): integer;
 var
   frm: TForm;
@@ -951,7 +969,7 @@ var
   clamp_label, position_precision_label, rotation_precision_label: TLabel;
   clamp_combo, position_precision_combo, rotation_precision_combo: TComboBox;
 
-  meta_panel: TPanel;
+  meta_panel, dry_run_subpanel, use_same_settings_for_all_subpanel: TPanel;
   dry_run, use_same_settings_for_all: TCheckBox;
 
   debug_checkbox: TCheckBox;
@@ -998,6 +1016,9 @@ begin
     rotation_x := TEdit.Create(frm);
     rotation_x.Parent := rotation_x_subpanel;
     rotation_x.Alignment := taRightJustify;
+    rotation_x.ShowHint := True;
+    rotation_x.Hint := 'The X component of the rotation angle in degrees. Defaults to "'
+      + float_to_str(GLOBAL_ROTATION_X_DEFAULT, DIGITS_ANGLE, false) + '"';
     set_margins_layout(rotation_x, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alRight);
     rotation_x.Height := CONTROL_HEIGHT * global_scale_factor;
     rotation_x.Width := 62 * global_scale_factor;
@@ -1019,6 +1040,9 @@ begin
     rotation_y := TEdit.Create(frm);
     rotation_y.Parent := rotation_y_subpanel;
     rotation_y.Alignment := taRightJustify;
+    rotation_y.ShowHint := True;
+    rotation_y.Hint := 'The Y component of the rotation angle in degrees. Defaults to "'
+      + float_to_str(GLOBAL_ROTATION_Y_DEFAULT, DIGITS_ANGLE, false) + '"';
     set_margins_layout(rotation_y, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alRight);
     rotation_y.Height := CONTROL_HEIGHT * global_scale_factor;
     rotation_y.Width := 62 * global_scale_factor;
@@ -1040,6 +1064,9 @@ begin
     rotation_z := TEdit.Create(frm);
     rotation_z.Parent := rotation_z_subpanel;
     rotation_z.Alignment := taRightJustify;
+    rotation_z.ShowHint := True;
+    rotation_z.Hint := 'The Z component of the rotation angle in degrees. Defaults to "'
+      + float_to_str(GLOBAL_ROTATION_Z_DEFAULT, DIGITS_ANGLE, false) + '"';
     set_margins_layout(rotation_z, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alRight);
     rotation_z.Height := CONTROL_HEIGHT * global_scale_factor;
     rotation_z.Width := 62 * global_scale_factor;
@@ -1069,6 +1096,9 @@ begin
     mode_set.Parent := rotation_mode_subpanel;
     mode_set.Alignment := taLeftJustify;
     mode_set.Caption := 'Set';
+    mode_set.ShowHint := True;
+    mode_set.Hint := 'Rotate the record TO the specified rotation. Defaults to "'
+      + bool_to_selected_str(GLOBAL_OPERATION_MODE_DEFAULT = OPERATION_MODE_SET) + '"';
     set_margins_layout(mode_set, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alRight);
     mode_set.Height := CONTROL_HEIGHT * global_scale_factor;
     mode_set.Width := caption_width(mode_set) + (RADIO_FIXED_WIDTH * global_scale_factor);
@@ -1077,6 +1107,9 @@ begin
     mode_rotate.Parent := rotation_mode_subpanel;
     mode_rotate.Alignment := taLeftJustify;
     mode_rotate.Caption := 'Rotate';
+    mode_rotate.ShowHint := True;
+    mode_rotate.Hint := 'Rotate the record BY the specified rotation. Defaults to "'
+      + bool_to_selected_str(GLOBAL_OPERATION_MODE_DEFAULT = OPERATION_MODE_ROTATE) + '"';
     set_margins_layout(mode_rotate, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alRight);
     mode_rotate.Height := CONTROL_HEIGHT * global_scale_factor;
     mode_rotate.Width := caption_width(mode_rotate) + (RADIO_FIXED_WIDTH * global_scale_factor);
@@ -1099,6 +1132,9 @@ begin
     rotation_sequence := TComboBox.Create(frm);
     rotation_sequence.Parent := rotation_sequence_subpanel;
     rotation_sequence.Style := csDropDownList;
+    rotation_sequence.ShowHint := True;
+    rotation_sequence.Hint := 'The order in which the proposed rotation would be applied. Defaults to "'
+      + rotation_sequence_to_str(GLOBAL_ROTATION_SEQUENCE_DEFAULT) + '"';
     set_margins_layout(rotation_sequence, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alRight);
     rotation_sequence.Height := CONTROL_HEIGHT * global_scale_factor;
 
@@ -1121,6 +1157,10 @@ begin
     apply_to_both.Parent := apply_to_subpanel;
     apply_to_both.Alignment := taLeftJustify;
     apply_to_both.Caption := 'Both';
+    apply_to_both.ShowHint := True;
+    apply_to_both.Hint := 'Apply the proposed rotation to both the record''s position and rotation. '
+      + 'Defaults to "' + bool_to_selected_str(GLOBAL_APPLY_TO_POSITION_DEFAULT and
+      GLOBAL_APPLY_TO_ROTATION_DEFAULT) + '"';
     set_margins_layout(apply_to_both, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alRight);
     apply_to_both.Height := CONTROL_HEIGHT * global_scale_factor;
     apply_to_both.Width := caption_width(apply_to_both) + (RADIO_FIXED_WIDTH * global_scale_factor);
@@ -1129,17 +1169,25 @@ begin
     apply_to_position.Parent := apply_to_subpanel;
     apply_to_position.Alignment := taLeftJustify;
     apply_to_position.Caption := 'Position';
+    apply_to_position.ShowHint := True;
+    apply_to_position.Hint := 'Apply the proposed rotation to the record''s position only. Defaults to "'
+      + bool_to_selected_str(GLOBAL_APPLY_TO_POSITION_DEFAULT and not GLOBAL_APPLY_TO_ROTATION_DEFAULT) + '"';
     set_margins_layout(apply_to_position, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alRight);
     apply_to_position.Height := CONTROL_HEIGHT * global_scale_factor;
-    apply_to_position.Width := caption_width(apply_to_position) + (RADIO_FIXED_WIDTH * global_scale_factor);
+    apply_to_position.Width := caption_width(apply_to_position) + (RADIO_FIXED_WIDTH
+      * global_scale_factor);
 
     apply_to_rotation := TRadioButton.Create(frm);
     apply_to_rotation.Parent := apply_to_subpanel;
     apply_to_rotation.Alignment := taLeftJustify;
     apply_to_rotation.Caption := 'Rotation';
+    apply_to_rotation.ShowHint := True;
+    apply_to_rotation.Hint := 'Apply the proposed rotation to the record''s rotation only. Defaults to "'
+      + bool_to_selected_str(GLOBAL_APPLY_TO_ROTATION_DEFAULT and not GLOBAL_APPLY_TO_POSITION_DEFAULT) + '"';
     set_margins_layout(apply_to_rotation, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alRight);
     apply_to_rotation.Height := CONTROL_HEIGHT * global_scale_factor;
-    apply_to_rotation.Width := caption_width(apply_to_rotation) + (RADIO_FIXED_WIDTH * global_scale_factor);
+    apply_to_rotation.Width := caption_width(apply_to_rotation) + (RADIO_FIXED_WIDTH
+      * global_scale_factor);
 
     // secondary options panel
 
@@ -1166,13 +1214,20 @@ begin
     clamp_use_checkbox.Parent := clamp_subpanel;
     clamp_use_checkbox.Alignment := taLeftJustify;
     clamp_use_checkbox.Caption := 'Clamp';
+    clamp_use_checkbox.ShowHint := True;
+    clamp_use_checkbox.Hint := 'Clamp the rotation to multiples of the specified angle. Defaults to "'
+      + bool_to_checked_str(GLOBAL_CLAMP_USE_DEFAULT) + '"';
     set_margins_layout(clamp_use_checkbox, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alRight);
     clamp_use_checkbox.Height := CONTROL_HEIGHT * global_scale_factor;
-    clamp_use_checkbox.Width := caption_width(clamp_use_checkbox) + (CHECKBOX_FIXED_WIDTH * global_scale_factor);
+    clamp_use_checkbox.Width := caption_width(clamp_use_checkbox)
+      + (CHECKBOX_FIXED_WIDTH * global_scale_factor);
 
     clamp_combo := TComboBox.Create(frm);
     clamp_combo.Parent := clamp_subpanel;
     clamp_combo.Style := csDropDownList;
+    clamp_combo.ShowHint := True;
+    clamp_combo.Hint := 'The angle to clamp to. Defaults to "'
+      + clamp_mode_to_str(GLOBAL_CLAMP_MODE_DEFAULT) + '"';
     set_margins_layout(clamp_combo, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alRight);
     clamp_combo.Height := CONTROL_HEIGHT * global_scale_factor;
 
@@ -1225,25 +1280,43 @@ begin
     rotation_precision_combo.Height := CONTROL_HEIGHT * global_scale_factor;
 
     // meta panel
-    // TODO use anchor left for the checkboxes?
 
     meta_panel := TPanel.Create(frm);
     meta_panel.Parent := frm;
     do_panel_layout(meta_panel, PANEL_BEVEL);
 
+    dry_run_subpanel := TPanel.Create(frm);
+    dry_run_subpanel.Parent := meta_panel;
+    do_panel_layout(dry_run_subpanel, 0);
+    set_margins_layout(dry_run_subpanel, MARGIN_TOP, 0, 0, 0, alTop);
+    dry_run_subpanel.Height := CONTROL_HEIGHT * global_scale_factor;
+
     dry_run := TCheckBox.Create(frm);
-    dry_run.Parent := meta_panel;
+    dry_run.Parent := dry_run_subpanel;
     dry_run.Caption := 'Dry Run';
-    set_margins_layout(dry_run, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alTop);
+    dry_run.ShowHint := True;
+    dry_run.Hint := 'Do not actually perform the rotation, just show what would be done. Defaults to "'
+      + bool_to_checked_str(GLOBAL_DRY_RUN_DEFAULT) + '"';
+    set_margins_layout(dry_run, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alLeft);
     dry_run.Height := CONTROL_HEIGHT * global_scale_factor;
     dry_run.Width := caption_width(dry_run) + (CHECKBOX_FIXED_WIDTH * global_scale_factor);
 
+    use_same_settings_for_all_subpanel := TPanel.Create(frm);
+    use_same_settings_for_all_subpanel.Parent := meta_panel;
+    do_panel_layout(use_same_settings_for_all_subpanel, 0);
+    set_margins_layout(use_same_settings_for_all_subpanel, MARGIN_TOP, MARGIN_BOTTOM, 0, 0, alTop);
+    use_same_settings_for_all_subpanel.Height := CONTROL_HEIGHT * global_scale_factor;
+
     use_same_settings_for_all := TCheckBox.Create(frm);
-    use_same_settings_for_all.Parent := meta_panel;
+    use_same_settings_for_all.Parent := use_same_settings_for_all_subpanel;
     use_same_settings_for_all.Caption := 'Use Same Settings for All';
-    set_margins_layout(use_same_settings_for_all, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alTop);
+    use_same_settings_for_all.ShowHint := True;
+    use_same_settings_for_all.Hint := 'Use the same settings for all records. Defaults to "'
+      + bool_to_checked_str(GLOBAL_USE_SAME_SETTINGS_FOR_ALL_DEFAULT) + '"';
+    set_margins_layout(use_same_settings_for_all, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alLeft);
     use_same_settings_for_all.Height := CONTROL_HEIGHT * global_scale_factor;
-    use_same_settings_for_all.Width := caption_width(use_same_settings_for_all) + (CHECKBOX_FIXED_WIDTH * global_scale_factor);
+    use_same_settings_for_all.Width := caption_width(use_same_settings_for_all) + (CHECKBOX_FIXED_WIDTH
+      * global_scale_factor);
 
     // button panel
 
@@ -1261,12 +1334,9 @@ begin
     for i := SEQUENCE_MIN to SEQUENCE_MAX do
       rotation_sequence.Items.Add(rotation_sequence_to_str(i));
     rotation_sequence.ItemIndex := global_rotation_sequence;
-    if (global_apply_to_position and global_apply_to_rotation) then begin
-      apply_to_both.Checked := True;
-    end else begin
-      apply_to_position.Checked := global_apply_to_position;
-      apply_to_rotation.Checked := global_apply_to_rotation;
-    end;
+    apply_to_both.Checked := global_apply_to_position and global_apply_to_rotation;
+    apply_to_position.Checked := global_apply_to_position and not global_apply_to_rotation;
+    apply_to_rotation.Checked := global_apply_to_rotation and not global_apply_to_position;
     clamp_use_checkbox.Checked := global_clamp_use;
     for i := CLAMP_MODE_MIN to CLAMP_MODE_MAX do
       clamp_combo.Items.Add(clamp_mode_to_str(i));
@@ -1285,8 +1355,10 @@ begin
 
     rotation_sequence.Width := max_item_width(rotation_sequence) + (COMBO_FIXED_WIDTH * global_scale_factor);
     clamp_combo.Width := max_item_width(clamp_combo) + (COMBO_FIXED_WIDTH * global_scale_factor);
-    position_precision_combo.Width := max_item_width(position_precision_combo) + (COMBO_FIXED_WIDTH * global_scale_factor);
-    rotation_precision_combo.Width := max_item_width(rotation_precision_combo) + (COMBO_FIXED_WIDTH * global_scale_factor);
+    position_precision_combo.Width := max_item_width(position_precision_combo) + (COMBO_FIXED_WIDTH
+      * global_scale_factor);
+    rotation_precision_combo.Width := max_item_width(rotation_precision_combo) + (COMBO_FIXED_WIDTH
+      * global_scale_factor);
 
     // show the form (duh)
 
@@ -1300,13 +1372,8 @@ begin
       global_rotate_z := StrToFloat(rotation_z.Text);
       global_operation_mode := mode_set.Checked;
       global_rotation_sequence := rotation_sequence.ItemIndex;
-      if (apply_to_both.Checked) then begin
-        global_apply_to_position := True;
-        global_apply_to_rotation := True;
-      end else begin
-        global_apply_to_position := apply_to_position.Checked;
-        global_apply_to_rotation := apply_to_rotation.Checked;
-      end;
+      global_apply_to_position := apply_to_both.Checked or apply_to_position.Checked;
+      global_apply_to_rotation := apply_to_both.Checked or apply_to_rotation.Checked;
       global_clamp_use := clamp_use_checkbox.Checked;
       global_clamp_mode := clamp_combo.ItemIndex;
       global_position_precision := -position_precision_combo.ItemIndex;
@@ -1376,11 +1443,6 @@ begin
   Result := show_record_filter_dialog();
   debug_print('dialog returned ' + IntToStr(Result) + ' (mrOk = ' + IntToStr(mrOk) + ')' );
   if (Result <> mrOk) then AddMessage('User cancelled the operation') else Result := 0;
-  // temporary debug code -->
-  // TODO remove
-  // Result := show_options_dialog();
-  // Result := 1;
-  // <-- temporary debug code
 end;
 
 
