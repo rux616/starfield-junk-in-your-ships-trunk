@@ -1,5 +1,5 @@
 {
-  Rotates the contents of a CELL record. Can apply to PKINs, CELLs, or CELL contents.
+  Rotates contents of cells. Supports additional filtering by record signature, REFR NAME signature, and EDIDs.
 
   Note: Starfield uses right-hand rule coordinates (https://en.wikipedia.org/wiki/Right-hand_rule#Coordinates)
   and rotations are clockwise positive (left-hand grip rule - thumb represents positive direction
@@ -119,9 +119,10 @@ const
   MARGIN_RIGHT = 5;
   PANEL_BEVEL = 2;
   CONTROL_HEIGHT = 22;
-  CHECKBOX_FIXED_WIDTH = 21;  // TODO determine better name
-  RADIO_FIXED_WIDTH = 21;  // TODO determine better name
-  COMBO_FIXED_WIDTH = 24;  // TODO determine better name
+  CHECKBOX_PADDING = 21;
+  RADIO_PADDING = 21;
+  COMBO_PADDING = 24;
+  BUTTON_PADDING = 20;
 
   // epsilon to use for CompareValue calls
   // between positions and rotations, positions have more significant decimals (6), so this is set
@@ -142,9 +143,20 @@ const
   PRECISION_EXTENDED = 18;
 
   // number of decimal places to use in stringified floats
+  DIGITS_NONE = 0;
   DIGITS_ANGLE = 4;
   DIGITS_POSITION = 6;
   DIGITS_FULL = 15;
+
+  // compared against wbVersionNumber, which is a hex-encoded integer, 0xAABBCCDD, where AA is the
+  // major version, BB is the minor version, CC is the patch, and DD is the revision (shown as an
+  // ASCII character, starting with 'a' at 1, 'b' at 2, etc.)
+  MINIMUM_REQUIRED_XEDIT_VERSION = $04010503;
+  // version 4.1.5c                  │ │ │ │
+  // major:    4 ────────────────────┘ │ │ │
+  // minor:    1 ──────────────────────┘ │ │
+  // patch:    5 ────────────────────────┘ │
+  // revision: 3 ──────────────────────────┘
 
 var
   // global configuration options
@@ -245,19 +257,26 @@ begin
 end;
 
 
+// return the angle of the given clamp mode
+function clamp_mode_to_angle(clamp_mode: integer): double;
+begin
+  case (clamp_mode) of
+    CLAMP_MODE_05: Result := 5.0;
+    CLAMP_MODE_10: Result := 10.0;
+    CLAMP_MODE_15: Result := 15.0;
+    CLAMP_MODE_30: Result := 30.0;
+    CLAMP_MODE_45: Result := 45.0;
+    CLAMP_MODE_90: Result := 90.0;
+  else
+    raise Exception.Create('unknown clamp mode: ' + IntToStr(clamp_mode));
+  end;
+end;
+
+
 // return the stringified clamp mode
 function clamp_mode_to_str(clamp_mode: integer): string;
 begin
-  case (clamp_mode) of
-    CLAMP_MODE_05: Result := '5 degrees';
-    CLAMP_MODE_10: Result := '10 degrees';
-    CLAMP_MODE_15: Result := '15 degrees';
-    CLAMP_MODE_30: Result := '30 degrees';
-    CLAMP_MODE_45: Result := '45 degrees';
-    CLAMP_MODE_90: Result := '90 degrees';
-  else
-    Result := 'unknown (' + IntToStr(clamp_mode) + ')';
-  end;
+  Result := float_to_str(clamp_mode_to_angle(clamp_mode), DIGITS_NONE, false) + Chr($B0);
 end;
 
 
@@ -308,6 +327,22 @@ begin
 end;
 
 
+// returns the decoded and stringified version number
+// based off https://github.com/matortheeternal/TES5EditScripts/blob/abe8a57fd6f73c9ad4e1f734800f0b519f176fd3/Edit%20Scripts/mteFunctions.pas#L164-L184
+function version_number_to_str(v: integer): string;
+var
+  version_major, version_minor, version_patch, version_revision: integer;
+begin
+  version_major := v Shr 24;
+  version_minor := (v Shr 16) and $FF;
+  version_patch := (v Shr 8) and $FF;
+  version_revision := v and $FF;
+  Result := Format('%d.%d.%d', [version_major, version_minor, version_patch]);
+  if (version_revision > 0) then
+    Result := Result + Chr(version_revision + utf_ord('a') - 1);
+end;
+
+
 // return the max width of a control's Items property
 function max_item_width(control: TControl): integer;
 var
@@ -318,6 +353,27 @@ begin
     width := string_width(control.Items[i], control.Font);
     if (width > Result) then
       Result := width;
+  end;
+end;
+
+
+// returns a stringified modal result
+function modal_result_to_str(modal_result: integer): string;
+begin
+  case (modal_result) of
+    mrNone: Result := 'None';
+    mrOk: Result := 'OK';
+    mrCancel: Result := 'Cancel';
+    mrAbort: Result := 'Abort';
+    mrRetry: Result := 'Retry';
+    mrIgnore: Result := 'Ignore';
+    mrYes: Result := 'Yes';
+    mrNo: Result := 'No';
+    mrAll: Result := 'All';
+    mrNoToAll: Result := 'No to All';
+    mrYesToAll: Result := 'Yes to All';
+  else
+    Result := 'unknown (' + IntToStr(modal_result) + ')';
   end;
 end;
 
@@ -419,6 +475,13 @@ begin
   finally
     bitmap.Free;
   end;
+end;
+
+
+// ord function that works in the context of xedit scripts
+function utf_ord(s: string): integer;
+begin
+  Result := Ord(varAsType(s, varString));
 end;
 
 
@@ -701,28 +764,29 @@ end;
 //
 
 
-procedure create_button_panel(owner, parent: TControl; var debug_checkbox: TCheckBox;);
+// create a button panel with ok and cancel buttons, and a debug checkbox
+function create_button_panel(owner, parent: TControl; var debug_checkbox: TCheckBox;): TPanel;
 var
-  button_panel, button_subpanel: TPanel;
+  panel, button_subpanel: TPanel;
   ok_button, cancel_button: TButton;
 begin
     if (parent = nil) then parent := owner;
 
-    button_panel := TPanel.Create(owner);
-    button_panel.Parent := parent;
-    do_panel_layout(button_panel, 0);
-    set_margins_layout(button_panel, 0, 0, 0, 0, alTop);
+    panel := TPanel.Create(owner);
+    panel.Parent := parent;
+    do_panel_layout(panel, 0);
+    set_margins_layout(panel, 0, 0, 0, 0, alTop);
 
     debug_checkbox := TCheckBox.Create(owner);
-    debug_checkbox.Parent := button_panel;
+    debug_checkbox.Parent := panel;
     debug_checkbox.Caption := 'Debug Mode';
     debug_checkbox.Alignment := taLeftJustify;
     set_margins_layout(debug_checkbox, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alRight);
     debug_checkbox.Height := CONTROL_HEIGHT * global_scale_factor;
-    debug_checkbox.Width := caption_width(debug_checkbox) + (CHECKBOX_FIXED_WIDTH * global_scale_factor);
+    debug_checkbox.Width := caption_width(debug_checkbox) + (CHECKBOX_PADDING * global_scale_factor);
 
     button_subpanel := TPanel.Create(owner);
-    button_subpanel.Parent := button_panel;
+    button_subpanel.Parent := panel;
     do_panel_layout(button_subpanel, 0);
     set_margins_layout(button_subpanel, 0, 0, 0, 0, alRight);
 
@@ -739,22 +803,22 @@ begin
     cancel_button.Cancel := True;
     cancel_button.ModalResult := mrCancel;
     set_margins_layout(cancel_button, MARGIN_TOP, MARGIN_BOTTOM, MARGIN_LEFT, MARGIN_RIGHT, alRight);
+
+    Result := panel;
 end;
 
 
-procedure create_filter_panel(
+// create a filter panel with a checkbox, radio buttons, and an edit box
+function create_filter_panel(
   owner, parent: TControl;
   title, edit_hint: string;
   var use_checkbox: TCheckBox;
   var include_radio, exclude_radio: TRadioButton;
   var list_edit: TEdit;
-);
+): TPanel;
 var
   panel: TPanel;
   show_edit_hint: boolean;
-  c: TBitmap;
-  checkbox_caption: string;
-  checkbox_caption_width: integer;
 begin
     if (parent = nil) then parent := owner;
     if (edit_hint = '') then show_edit_hint := False else show_edit_hint := True;
@@ -768,7 +832,7 @@ begin
     use_checkbox.Caption := 'Filter by ' + title;
     set_margins_layout(use_checkbox, MARGIN_TOP, 0, MARGIN_LEFT, MARGIN_RIGHT, alLeft);
     use_checkbox.Height := CONTROL_HEIGHT * global_scale_factor;
-    use_checkbox.Width := caption_width(use_checkbox) + (CHECKBOX_FIXED_WIDTH * global_scale_factor);
+    use_checkbox.Width := caption_width(use_checkbox) + (CHECKBOX_PADDING * global_scale_factor);
 
     include_radio := TRadioButton.Create(owner);
     include_radio.Parent := panel;
@@ -776,7 +840,7 @@ begin
     include_radio.Caption := 'Include';
     set_margins_layout(include_radio, MARGIN_TOP, 0, MARGIN_LEFT, MARGIN_RIGHT, alRight);
     include_radio.Height := CONTROL_HEIGHT * global_scale_factor;
-    include_radio.Width := caption_width(include_radio) + (RADIO_FIXED_WIDTH * global_scale_factor);
+    include_radio.Width := caption_width(include_radio) + (RADIO_PADDING * global_scale_factor);
 
     exclude_radio := TRadioButton.Create(owner);
     exclude_radio.Parent := panel;
@@ -784,7 +848,7 @@ begin
     exclude_radio.Caption := 'Exclude';
     set_margins_layout(exclude_radio, MARGIN_TOP, 0, MARGIN_LEFT, MARGIN_RIGHT, alRight);
     exclude_radio.Height := CONTROL_HEIGHT * global_scale_factor;
-    exclude_radio.Width := caption_width(exclude_radio) + (RADIO_FIXED_WIDTH * global_scale_factor);
+    exclude_radio.Width := caption_width(exclude_radio) + (RADIO_PADDING * global_scale_factor);
 
     list_edit := TEdit.Create(owner);
     list_edit.Parent := panel;
@@ -794,10 +858,12 @@ begin
     list_edit.Height := CONTROL_HEIGHT * global_scale_factor;
 
     panel.Height := full_control_height(use_checkbox) + full_control_height(list_edit);
+
+    Result := panel;
 end;
 
 
-// TODO add "Include All" button left-aligned to the other buttons
+// build and display the dialog used for including/excluding records
 function show_record_filter_dialog(): integer;
 var
   frm: TForm;
@@ -825,6 +891,9 @@ var
   edid_equals_use: TCheckBox;
   edid_equals_mode_include, edid_equals_mode_exclude: TRadioButton;
   edid_equals_list: TEdit;
+
+  button_panel: TPanel;
+  include_all_button: TButton;
 
   debug_checkbox: TCheckBox;
 const
@@ -857,45 +926,42 @@ begin
 
     // button panel
 
-    create_button_panel(frm, frm, debug_checkbox);
+    button_panel := create_button_panel(frm, frm, debug_checkbox);
+
+    include_all_button := TButton.Create(frm);
+    include_all_button.Parent := button_panel;
+    include_all_button.Caption := 'Include All';
+    include_all_button.ModalResult := mrYesToAll;
+    include_all_button.ShowHint := True;
+    include_all_button.Hint := 'Include all records - this will close the dialog and ignore all other settings';
+    set_margins_layout(include_all_button, MARGIN_TOP, MARGIN_BOTTOM, MARGIN_LEFT, MARGIN_RIGHT, alLeft);
+    include_all_button.Width := caption_width(include_all_button) + (BUTTON_PADDING * global_scale_factor);
 
     // set the values on the various controls
 
     record_signature_use.Checked := global_record_signature_use;
-    if (global_record_signature_mode = FILTER_MODE_INCLUDE) then
-      record_signature_mode_include.Checked := true
-    else
-      record_signature_mode_exclude.Checked := true;
+    record_signature_mode_include.Checked := (global_record_signature_mode = FILTER_MODE_INCLUDE);
+    record_signature_mode_exclude.Checked := (global_record_signature_mode = FILTER_MODE_EXCLUDE);
     record_signature_list.Text := global_record_signature_list;
     refr_signature_use.Checked := global_refr_signature_use;
-    if (global_refr_signature_mode = FILTER_MODE_INCLUDE) then
-      refr_signature_mode_include.Checked := true
-    else
-      refr_signature_mode_exclude.Checked := true;
+    refr_signature_mode_include.Checked := (global_refr_signature_mode = FILTER_MODE_INCLUDE);
+    refr_signature_mode_exclude.Checked := (global_refr_signature_mode = FILTER_MODE_EXCLUDE);
     refr_signature_list.Text := global_refr_signature_list;
     edid_starts_with_use.Checked := global_edid_starts_with_use;
-    if (global_edid_starts_with_mode = FILTER_MODE_INCLUDE) then
-      edid_starts_with_mode_include.Checked := true
-    else
-      edid_starts_with_mode_exclude.Checked := true;
+    edid_starts_with_mode_include.Checked := (global_edid_starts_with_mode = FILTER_MODE_INCLUDE);
+    edid_starts_with_mode_exclude.Checked := (global_edid_starts_with_mode = FILTER_MODE_EXCLUDE);
     edid_starts_with_list.Text := global_edid_starts_with_list;
     edid_ends_with_use.Checked := global_edid_ends_with_use;
-    if (global_edid_ends_with_mode = FILTER_MODE_INCLUDE) then
-      edid_ends_with_mode_include.Checked := true
-    else
-      edid_ends_with_mode_exclude.Checked := true;
+    edid_ends_with_mode_include.Checked := (global_edid_ends_with_mode = FILTER_MODE_INCLUDE);
+    edid_ends_with_mode_exclude.Checked := (global_edid_ends_with_mode = FILTER_MODE_EXCLUDE);
     edid_ends_with_list.Text := global_edid_ends_with_list;
     edid_contains_use.Checked := global_edid_contains_use;
-    if (global_edid_contains_mode = FILTER_MODE_INCLUDE) then
-      edid_contains_mode_include.Checked := true
-    else
-      edid_contains_mode_exclude.Checked := true;
+    edid_contains_mode_include.Checked := (global_edid_contains_mode = FILTER_MODE_INCLUDE);
+    edid_contains_mode_exclude.Checked := (global_edid_contains_mode = FILTER_MODE_EXCLUDE);
     edid_contains_list.Text := global_edid_contains_list;
     edid_equals_use.Checked := global_edid_equals_use;
-    if (global_edid_equals_mode = FILTER_MODE_INCLUDE) then
-      edid_equals_mode_include.Checked := true
-    else
-      edid_equals_mode_exclude.Checked := true;
+    edid_equals_mode_include.Checked := (global_edid_equals_mode = FILTER_MODE_INCLUDE);
+    edid_equals_mode_exclude.Checked := (global_edid_equals_mode = FILTER_MODE_EXCLUDE);
     edid_equals_list.Text := global_edid_equals_list;
     debug_checkbox.Checked := global_debug;
 
@@ -905,43 +971,33 @@ begin
 
     // get the values from the various controls
 
-    if (Result = mrOk) then begin
+    if (Result = mrOk) then begin  // ok button
       global_record_signature_use := record_signature_use.Checked;
-      if (record_signature_mode_include.Checked) then
-        global_record_signature_mode := FILTER_MODE_INCLUDE
-      else
-        global_record_signature_mode := FILTER_MODE_EXCLUDE;
+      global_record_signature_mode := record_signature_mode_include.Checked;
       global_record_signature_list := UpperCase(record_signature_list.Text);
       global_refr_signature_use := refr_signature_use.Checked;
-      if (refr_signature_mode_include.Checked) then
-        global_refr_signature_mode := FILTER_MODE_INCLUDE
-      else
-        global_refr_signature_mode := FILTER_MODE_EXCLUDE;
+      global_refr_signature_mode := refr_signature_mode_include.Checked;
       global_refr_signature_list := UpperCase(refr_signature_list.Text);
       global_edid_starts_with_use := edid_starts_with_use.Checked;
-      if (edid_starts_with_mode_include.Checked) then
-        global_edid_starts_with_mode := FILTER_MODE_INCLUDE
-      else
-        global_edid_starts_with_mode := FILTER_MODE_EXCLUDE;
+      global_edid_starts_with_mode := edid_starts_with_mode_include.Checked;
       global_edid_starts_with_list := edid_starts_with_list.Text;
       global_edid_ends_with_use := edid_ends_with_use.Checked;
-      if (edid_ends_with_mode_include.Checked) then
-        global_edid_ends_with_mode := FILTER_MODE_INCLUDE
-      else
-        global_edid_ends_with_mode := FILTER_MODE_EXCLUDE;
+      global_edid_ends_with_mode := edid_ends_with_mode_include.Checked;
       global_edid_ends_with_list := edid_ends_with_list.Text;
       global_edid_contains_use := edid_contains_use.Checked;
-      if (edid_contains_mode_include.Checked) then
-        global_edid_contains_mode := FILTER_MODE_INCLUDE
-      else
-        global_edid_contains_mode := FILTER_MODE_EXCLUDE;
+      global_edid_contains_mode := edid_contains_mode_include.Checked;
       global_edid_contains_list := edid_contains_list.Text;
       global_edid_equals_use := edid_equals_use.Checked;
-      if (edid_equals_mode_include.Checked) then
-        global_edid_equals_mode := FILTER_MODE_INCLUDE
-      else
-        global_edid_equals_mode := FILTER_MODE_EXCLUDE;
+      global_edid_equals_mode := edid_equals_mode_include.Checked;
       global_edid_equals_list := edid_equals_list.Text;
+      global_debug := debug_checkbox.Checked;
+    end else if (Result = mrYesToAll) then begin  // include all button
+      global_record_signature_use := False;
+      global_refr_signature_use := False;
+      global_edid_starts_with_use := False;
+      global_edid_ends_with_use := False;
+      global_edid_contains_use := False;
+      global_edid_equals_use := False;
       global_debug := debug_checkbox.Checked;
     end;
   finally
@@ -950,7 +1006,7 @@ begin
 end;
 
 
-// build and display the options dialog
+// build and display the dialog used to set the rotation options
 function show_options_dialog(): integer;
 var
   frm: TForm;
@@ -1101,7 +1157,7 @@ begin
       + bool_to_selected_str(GLOBAL_OPERATION_MODE_DEFAULT = OPERATION_MODE_SET) + '"';
     set_margins_layout(mode_set, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alRight);
     mode_set.Height := CONTROL_HEIGHT * global_scale_factor;
-    mode_set.Width := caption_width(mode_set) + (RADIO_FIXED_WIDTH * global_scale_factor);
+    mode_set.Width := caption_width(mode_set) + (RADIO_PADDING * global_scale_factor);
 
     mode_rotate := TRadioButton.Create(frm);
     mode_rotate.Parent := rotation_mode_subpanel;
@@ -1112,7 +1168,7 @@ begin
       + bool_to_selected_str(GLOBAL_OPERATION_MODE_DEFAULT = OPERATION_MODE_ROTATE) + '"';
     set_margins_layout(mode_rotate, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alRight);
     mode_rotate.Height := CONTROL_HEIGHT * global_scale_factor;
-    mode_rotate.Width := caption_width(mode_rotate) + (RADIO_FIXED_WIDTH * global_scale_factor);
+    mode_rotate.Width := caption_width(mode_rotate) + (RADIO_PADDING * global_scale_factor);
 
     // rotation sequence subpanel
 
@@ -1163,7 +1219,7 @@ begin
       GLOBAL_APPLY_TO_ROTATION_DEFAULT) + '"';
     set_margins_layout(apply_to_both, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alRight);
     apply_to_both.Height := CONTROL_HEIGHT * global_scale_factor;
-    apply_to_both.Width := caption_width(apply_to_both) + (RADIO_FIXED_WIDTH * global_scale_factor);
+    apply_to_both.Width := caption_width(apply_to_both) + (RADIO_PADDING * global_scale_factor);
 
     apply_to_position := TRadioButton.Create(frm);
     apply_to_position.Parent := apply_to_subpanel;
@@ -1174,8 +1230,7 @@ begin
       + bool_to_selected_str(GLOBAL_APPLY_TO_POSITION_DEFAULT and not GLOBAL_APPLY_TO_ROTATION_DEFAULT) + '"';
     set_margins_layout(apply_to_position, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alRight);
     apply_to_position.Height := CONTROL_HEIGHT * global_scale_factor;
-    apply_to_position.Width := caption_width(apply_to_position) + (RADIO_FIXED_WIDTH
-      * global_scale_factor);
+    apply_to_position.Width := caption_width(apply_to_position) + (RADIO_PADDING * global_scale_factor);
 
     apply_to_rotation := TRadioButton.Create(frm);
     apply_to_rotation.Parent := apply_to_subpanel;
@@ -1186,8 +1241,7 @@ begin
       + bool_to_selected_str(GLOBAL_APPLY_TO_ROTATION_DEFAULT and not GLOBAL_APPLY_TO_POSITION_DEFAULT) + '"';
     set_margins_layout(apply_to_rotation, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alRight);
     apply_to_rotation.Height := CONTROL_HEIGHT * global_scale_factor;
-    apply_to_rotation.Width := caption_width(apply_to_rotation) + (RADIO_FIXED_WIDTH
-      * global_scale_factor);
+    apply_to_rotation.Width := caption_width(apply_to_rotation) + (RADIO_PADDING * global_scale_factor);
 
     // secondary options panel
 
@@ -1219,14 +1273,13 @@ begin
       + bool_to_checked_str(GLOBAL_CLAMP_USE_DEFAULT) + '"';
     set_margins_layout(clamp_use_checkbox, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alRight);
     clamp_use_checkbox.Height := CONTROL_HEIGHT * global_scale_factor;
-    clamp_use_checkbox.Width := caption_width(clamp_use_checkbox)
-      + (CHECKBOX_FIXED_WIDTH * global_scale_factor);
+    clamp_use_checkbox.Width := caption_width(clamp_use_checkbox) + (CHECKBOX_PADDING * global_scale_factor);
 
     clamp_combo := TComboBox.Create(frm);
     clamp_combo.Parent := clamp_subpanel;
     clamp_combo.Style := csDropDownList;
     clamp_combo.ShowHint := True;
-    clamp_combo.Hint := 'The angle to clamp to. Defaults to "'
+    clamp_combo.Hint := 'The angle to clamp to multiples of. Defaults to "'
       + clamp_mode_to_str(GLOBAL_CLAMP_MODE_DEFAULT) + '"';
     set_margins_layout(clamp_combo, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alRight);
     clamp_combo.Height := CONTROL_HEIGHT * global_scale_factor;
@@ -1299,7 +1352,7 @@ begin
       + bool_to_checked_str(GLOBAL_DRY_RUN_DEFAULT) + '"';
     set_margins_layout(dry_run, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alLeft);
     dry_run.Height := CONTROL_HEIGHT * global_scale_factor;
-    dry_run.Width := caption_width(dry_run) + (CHECKBOX_FIXED_WIDTH * global_scale_factor);
+    dry_run.Width := caption_width(dry_run) + (CHECKBOX_PADDING * global_scale_factor);
 
     use_same_settings_for_all_subpanel := TPanel.Create(frm);
     use_same_settings_for_all_subpanel.Parent := meta_panel;
@@ -1315,7 +1368,7 @@ begin
       + bool_to_checked_str(GLOBAL_USE_SAME_SETTINGS_FOR_ALL_DEFAULT) + '"';
     set_margins_layout(use_same_settings_for_all, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alLeft);
     use_same_settings_for_all.Height := CONTROL_HEIGHT * global_scale_factor;
-    use_same_settings_for_all.Width := caption_width(use_same_settings_for_all) + (CHECKBOX_FIXED_WIDTH
+    use_same_settings_for_all.Width := caption_width(use_same_settings_for_all) + (CHECKBOX_PADDING
       * global_scale_factor);
 
     // button panel
@@ -1327,10 +1380,8 @@ begin
     rotation_x.Text := float_to_str(global_rotate_x, DIGITS_ANGLE, false);
     rotation_y.Text := float_to_str(global_rotate_y, DIGITS_ANGLE, false);
     rotation_z.Text := float_to_str(global_rotate_z, DIGITS_ANGLE, false);
-    if (global_operation_mode = OPERATION_MODE_SET) then
-      mode_set.Checked := True
-    else
-      mode_rotate.Checked := True;
+    mode_set.Checked := (global_operation_mode = OPERATION_MODE_SET);
+    mode_rotate.Checked := (global_operation_mode = OPERATION_MODE_ROTATE);
     for i := SEQUENCE_MIN to SEQUENCE_MAX do
       rotation_sequence.Items.Add(rotation_sequence_to_str(i));
     rotation_sequence.ItemIndex := global_rotation_sequence;
@@ -1351,13 +1402,13 @@ begin
     use_same_settings_for_all.Checked := global_use_same_settings_for_all;
     debug_checkbox.Checked := global_debug;
 
-    // set the widths of combo boxes to the width of the widest item
+    // set the widths of combo boxes to the width of their widest item
 
-    rotation_sequence.Width := max_item_width(rotation_sequence) + (COMBO_FIXED_WIDTH * global_scale_factor);
-    clamp_combo.Width := max_item_width(clamp_combo) + (COMBO_FIXED_WIDTH * global_scale_factor);
-    position_precision_combo.Width := max_item_width(position_precision_combo) + (COMBO_FIXED_WIDTH
+    rotation_sequence.Width := max_item_width(rotation_sequence) + (COMBO_PADDING * global_scale_factor);
+    clamp_combo.Width := max_item_width(clamp_combo) + (COMBO_PADDING * global_scale_factor);
+    position_precision_combo.Width := max_item_width(position_precision_combo) + (COMBO_PADDING
       * global_scale_factor);
-    rotation_precision_combo.Width := max_item_width(rotation_precision_combo) + (COMBO_FIXED_WIDTH
+    rotation_precision_combo.Width := max_item_width(rotation_precision_combo) + (COMBO_PADDING
       * global_scale_factor);
 
     // show the form (duh)
@@ -1393,10 +1444,18 @@ end;
 //
 
 
+// initialize the script (ran once at the beginning)
 function Initialize(): integer;
 // var
 // const
 begin
+  if (wbVersionNumber < MINIMUM_REQUIRED_XEDIT_VERSION) then begin
+    AddMessage('You need to update xEdit to version ' + version_number_to_str(MINIMUM_REQUIRED_XEDIT_VERSION)
+      + ' or higher to use this script');
+    Result := 1;
+    exit;
+  end;
+
   // initialize global variables
   global_debug := GLOBAL_DEBUG_DEFAULT;
 
@@ -1441,26 +1500,33 @@ begin
 
   // allow the user to make a choice about which records will be processed
   Result := show_record_filter_dialog();
-  debug_print('dialog returned ' + IntToStr(Result) + ' (mrOk = ' + IntToStr(mrOk) + ')' );
-  if (Result <> mrOk) then AddMessage('User cancelled the operation') else Result := 0;
+  debug_print('dialog returned ' + IntToStr(Result) + ': ' + modal_result_to_str(Result));
+  if (Result = mrOk) or (Result = mrYesToAll) then begin
+    Result := 0;
+  end else begin
+    AddMessage('User cancelled the operation');
+    exit;
+  end;
 end;
 
 
+// process record (ran for each record)
 function Process(e: IInterface): integer;
 var
   x, y, z: double;
   operation_mode_text, dry_run_text: string;
-  e2: IInterface;
 begin
+  // show the rotation options if they haven't been shown yet or if the user has chosen to not use
+  // the same settings for all records
   if (not global_use_same_settings_for_all) or (not global_options_dialog_shown) then begin
     Result := show_options_dialog();
-    debug_print('Process: show_options_dialog returned ' + IntToStr(Result) + ' (mrOk = ' + IntToStr(mrOk) + ')' );
+    debug_print('dialog returned ' + IntToStr(Result) + ': ' + modal_result_to_str(Result));
     global_options_dialog_shown := True;
-    if (Result <> mrOk) then begin
+    if (Result = mrOk) then begin
+      Result := 0;
+    end else begin
       AddMessage('User cancelled the operation');
       exit;
-    end else begin
-      Result := 0;
     end;
   end;
 
@@ -1480,11 +1546,6 @@ begin
     global_rotate_z, false, false, false, ' = ', '', DIGITS_ANGLE) + ' using rotation sequence '
     + rotation_sequence_to_str(global_rotation_sequence));
 
-  // NAME - Base entries that should be ignored
-  //  IS "OutpostGroupPackinDummy" [STAT:00015804]
-  //  IS "PrefabPackinPivotDummy" [STAT:0003F808]
-  //  STARTS WITH "SMOD_Snap" -> make this a string to be asked for?
-  //  others?
   if (global_apply_to_position) then begin
     x := GetElementEditValues(e,'DATA - Position/Rotation\Position\X');
     y := GetElementEditValues(e,'DATA - Position/Rotation\Position\Y');
@@ -1540,11 +1601,13 @@ begin
   end;
 end;
 
-function Finalize(): integer;
+
+// clean up the script (ran once at the end)
+// function Finalize(): integer;
 // var
 // const
-begin
-AddMessage('Finalize');
-end;
+// begin
+// end;
+
 
 end.
