@@ -1,5 +1,6 @@
 {
-  Rotates contents of cells. Supports additional filtering by record signature, REFR NAME signature, and EDIDs.
+  Rotates contents of cells. Supports additional filtering by record signature, REFR NAME signature,
+  and REFR NAME EDIDs.
 
   Note: Starfield uses right-hand rule coordinates (https://en.wikipedia.org/wiki/Right-hand_rule#Coordinates)
   and rotations are clockwise positive (left-hand grip rule - thumb represents positive direction
@@ -58,6 +59,14 @@ const
   FILTER_MODE_INCLUDE = True;
   FILTER_MODE_EXCLUDE = False;
 
+  // helper constants for filter types
+  FILTER_TYPE_RECORD_SIGNATURE = 0;
+  FILTER_TYPE_REFR_NAME_SIGNATURE = 1;
+  FILTER_TYPE_EDID_STARTS_WITH = 2;
+  FILTER_TYPE_EDID_ENDS_WITH = 3;
+  FILTER_TYPE_EDID_CONTAINS = 4;
+  FILTER_TYPE_EDID_EQUALS = 5;
+
   // helper constants for clamp modes
   CLAMP_MODE_05 = 0;  CLAMP_MODE_MIN = 0;
   CLAMP_MODE_10 = 1;
@@ -73,14 +82,14 @@ const
   PRECISION_MAX = -6;
 
   // global defaults
-  GLOBAL_DEBUG_DEFAULT = True;  // TODO set to False
+  GLOBAL_DEBUG_DEFAULT = True;  // TODO set to False for release
 
   GLOBAL_RECORD_SIGNATURE_USE_DEFAULT = True;
   GLOBAL_RECORD_SIGNATURE_MODE_DEFAULT = FILTER_MODE_INCLUDE;
   GLOBAL_RECORD_SIGNATURE_LIST_DEFAULT = 'ACHR,REFR';
-  GLOBAL_REFR_SIGNATURE_USE_DEFAULT = True;
-  GLOBAL_REFR_SIGNATURE_MODE_DEFAULT = FILTER_MODE_INCLUDE;
-  GLOBAL_REFR_SIGNATURE_LIST_DEFAULT =
+  GLOBAL_REFR_NAME_SIGNATURE_USE_DEFAULT = True;
+  GLOBAL_REFR_NAME_SIGNATURE_MODE_DEFAULT = FILTER_MODE_INCLUDE;
+  GLOBAL_REFR_NAME_SIGNATURE_LIST_DEFAULT =
     'ACTI,ALCH,ASPC,BOOK,CONT,DOOR,FURN,IDLM,LIGH,MISC,MSTT,PDCL,PKIN,SOUN,STAT,TERM';
   GLOBAL_EDID_STARTS_WITH_USE_DEFAULT = True;
   GLOBAL_EDID_STARTS_WITH_MODE_DEFAULT = FILTER_MODE_EXCLUDE;
@@ -156,29 +165,29 @@ const
   // major:    4 ────────────────────┘ │ │ │
   // minor:    1 ──────────────────────┘ │ │
   // patch:    5 ────────────────────────┘ │
-  // revision: 3 ──────────────────────────┘
+  // revision: c (3) ──────────────────────┘
 
 var
   // global configuration options
   global_debug: boolean;
 
   global_record_signature_use: boolean;
-  global_record_signature_mode: boolean;  // true = include, false = exclude
+  global_record_signature_mode: boolean;     // true = include, false = exclude
   global_record_signature_list: string;
-  global_refr_signature_use: boolean;
-  global_refr_signature_mode: boolean;    // true = include, false = exclude
-  global_refr_signature_list: string;
+  global_refr_name_signature_use: boolean;
+  global_refr_name_signature_mode: boolean;  // true = include, false = exclude
+  global_refr_name_signature_list: string;
   global_edid_starts_with_use: boolean;
-  global_edid_starts_with_mode: boolean;  // true = include, false = exclude
+  global_edid_starts_with_mode: boolean;     // true = include, false = exclude
   global_edid_starts_with_list: string;
   global_edid_ends_with_use: boolean;
-  global_edid_ends_with_mode: boolean;    // true = include, false = exclude
+  global_edid_ends_with_mode: boolean;       // true = include, false = exclude
   global_edid_ends_with_list: string;
   global_edid_contains_use: boolean;
-  global_edid_contains_mode: boolean;     // true = include, false = exclude
+  global_edid_contains_mode: boolean;        // true = include, false = exclude
   global_edid_contains_list: string;
   global_edid_equals_use: boolean;
-  global_edid_equals_mode: boolean;       // true = include, false = exclude
+  global_edid_equals_mode: boolean;          // true = include, false = exclude
   global_edid_equals_list: string;
 
   global_rotate_x: double;
@@ -276,7 +285,7 @@ end;
 // return the stringified clamp mode
 function clamp_mode_to_str(clamp_mode: integer): string;
 begin
-  Result := float_to_str(clamp_mode_to_angle(clamp_mode), DIGITS_NONE, false) + Chr($B0);
+  Result := float_to_str(clamp_mode_to_angle(clamp_mode), DIGITS_NONE, false) + Chr($B0) {degree symbol};
 end;
 
 
@@ -293,6 +302,108 @@ begin
   panel.AutoSize := true;
   panel.BevelOuter := bevel;  // BevelOuter defaults to 2
   if (bevel = 2) then set_margins_layout(panel, 5, 5, 5, 5, alTop);
+end;
+
+
+// check if a given record should be filtered out, returning True if it should be kept
+// rule evaluation order, first to last:
+// record signature, REFR NAME signature, EDID starts with, EDID ends with, EDID contains, EDID equals
+function filter_record(r: IInterface): boolean;
+begin
+  debug_print('filter_record: filtering record ' + ShortName(r));
+
+  // special case: if no filters are active, return true
+  if (not global_record_signature_use) and (not global_refr_name_signature_use) and
+    (not global_edid_starts_with_use) and (not global_edid_ends_with_use) and
+    (not global_edid_contains_use) and (not global_edid_equals_use) then begin
+    debug_print('filter_record: no filters active, returning true');
+    Result := True;
+    exit;
+  end;
+
+  // apply filters, with short circuiting if a filter returns false (Result is False by default)
+  if not check_filter(r, FILTER_TYPE_RECORD_SIGNATURE, 'record signature', global_record_signature_use,
+    global_record_signature_mode, global_record_signature_list) then exit;
+  if not check_filter(r, FILTER_TYPE_REFR_NAME_SIGNATURE, 'refr name signature', global_refr_name_signature_use,
+    global_refr_name_signature_mode, global_refr_name_signature_list) then exit;
+  if not check_filter(r, FILTER_TYPE_EDID_STARTS_WITH, 'edid starts with', global_edid_starts_with_use,
+    global_edid_starts_with_mode, global_edid_starts_with_list) then exit;
+  if not check_filter(r, FILTER_TYPE_EDID_ENDS_WITH, 'edid ends with', global_edid_ends_with_use,
+    global_edid_ends_with_mode, global_edid_ends_with_list) then exit;
+  if not check_filter(r, FILTER_TYPE_EDID_CONTAINS, 'edid contains', global_edid_contains_use,
+    global_edid_contains_mode, global_edid_contains_list) then exit;
+  if not check_filter(r, FILTER_TYPE_EDID_EQUALS, 'edid equals', global_edid_equals_use,
+    global_edid_equals_mode, global_edid_equals_list) then exit;
+
+  // if all filters pass, return true
+  Result := True;
+end;
+
+
+// check a record against a given filter, returning True if the record passes the filter
+function check_filter(
+  r: IInterface;
+  filter_type: integer;
+  filter_type_text: string;
+  filter_use, filter_mode: boolean;
+  filter_list: string;
+): boolean;
+var
+  str_to_test, match_text: string;
+  list: TStringDynArray;
+  i: integer;
+  match: boolean;
+begin
+  if (not filter_use) then begin
+    debug_print('filter_record: ' + filter_type_text + ': filter not active');
+    Result := True;
+  end else begin
+    // TODO need to verify the file that LinksTo returns a record from
+    case (filter_type) of
+      FILTER_TYPE_RECORD_SIGNATURE:
+        str_to_test := Signature(r);
+      FILTER_TYPE_REFR_NAME_SIGNATURE:
+        str_to_test := Signature(LinksTo(ElementBySignature(r, 'NAME')));
+      FILTER_TYPE_EDID_STARTS_WITH, FILTER_TYPE_EDID_ENDS_WITH, FILTER_TYPE_EDID_CONTAINS, FILTER_TYPE_EDID_EQUALS:
+        str_to_test := EditorID(LinksTo(ElementBySignature(r, 'NAME')));
+    else
+      raise Exception.Create('unknown filter type: ' + filter_type_text);
+    end;
+
+    if (str_to_test = '') then begin
+      debug_print('filter_record: ' + filter_type_text + ': string to test is empty');
+    end else begin
+      debug_print('filter_record: ' + filter_type_text + ': string to test is "' + str_to_test + '"');
+      list := SplitString(filter_list, ',');
+      debug_print('filter_record: ' + filter_type_text + ': list length: ' + IntToStr(Length(list)));
+      debug_print('filter_record: ' + filter_type_text + ': list: [' + concat_string_array(list, '", "', '"') + ']');
+
+      for i := 0 to Pred(Length(list)) do begin
+        case (filter_type) of
+          FILTER_TYPE_RECORD_SIGNATURE, FILTER_TYPE_REFR_NAME_SIGNATURE, FILTER_TYPE_EDID_EQUALS:
+            match := (str_to_test = list[i]);
+          FILTER_TYPE_EDID_STARTS_WITH:
+            match := (Pos(list[i], str_to_test) = 1);
+          FILTER_TYPE_EDID_ENDS_WITH:
+            match := (Pos(list[i], str_to_test) = Length(str_to_test) - Length(list[i]) + 1);
+          FILTER_TYPE_EDID_CONTAINS:
+            match := (Pos(list[i], str_to_test) <> 0);
+        end;
+        if (match) then match_text := 'match' else match_text := 'no match';
+        debug_print('filter_record: ' + filter_type_text + ': checking "' + str_to_test + '" against "' + list[i]
+          + '": ' + match_text);
+        if (match) then break;
+      end;
+      if (match) then match_text := '' else match_text := ' not';
+      debug_print('filter_record: ' + filter_type_text + ': "' + str_to_test + '"' + match_text + ' in list');
+    end;
+
+    if (filter_mode = FILTER_MODE_INCLUDE) then
+      Result := match
+    else if (filter_mode = FILTER_MODE_EXCLUDE) then
+      Result := not match;
+  end;
+  debug_print('filter_record: ' + filter_type_text + ': include: ' + bool_to_str(Result));
 end;
 
 
@@ -327,19 +438,18 @@ begin
 end;
 
 
-// returns the decoded and stringified version number
-// based off https://github.com/matortheeternal/TES5EditScripts/blob/abe8a57fd6f73c9ad4e1f734800f0b519f176fd3/Edit%20Scripts/mteFunctions.pas#L164-L184
-function version_number_to_str(v: integer): string;
+// concatenate an array of strings into a single string, with a delimiter between each element and
+// an end cap on both sides
+function concat_string_array(arr: TStringDynArray; delimiter, end_cap: string): string;
 var
-  version_major, version_minor, version_patch, version_revision: integer;
+  i: integer;
 begin
-  version_major := v Shr 24;
-  version_minor := (v Shr 16) and $FF;
-  version_patch := (v Shr 8) and $FF;
-  version_revision := v and $FF;
-  Result := Format('%d.%d.%d', [version_major, version_minor, version_patch]);
-  if (version_revision > 0) then
-    Result := Result + Chr(version_revision + utf_ord('a') - 1);
+  for i := 0 to Pred(Length(arr)) do begin
+    Result := Result + arr[i];
+    if (i < Pred(Length(arr))) then Result := Result + delimiter;
+  end;
+  // if the concatenation is not empty, add the end cap string on both sides
+  if (Result <> '') then Result := end_cap + Result + end_cap;
 end;
 
 
@@ -497,6 +607,22 @@ end;
 function vector_to_str(vx, vy, vz: double; pad: boolean; digits: integer): string;
 begin
   Result := qv_to_str(0, vx, vy, vz, false, pad, true, '', '', digits);
+end;
+
+
+// returns the decoded and stringified version number
+// based off https://github.com/matortheeternal/TES5EditScripts/blob/abe8a57fd6f73c9ad4e1f734800f0b519f176fd3/Edit%20Scripts/mteFunctions.pas#L164-L184
+function version_number_to_str(v: integer): string;
+var
+  version_major, version_minor, version_patch, version_revision: integer;
+begin
+  version_major := v Shr 24;
+  version_minor := (v Shr 16) and $FF;
+  version_patch := (v Shr 8) and $FF;
+  version_revision := v and $FF;
+  Result := Format('%d.%d.%d', [version_major, version_minor, version_patch]);
+  if (version_revision > 0) then
+    Result := Result + Chr(version_revision + utf_ord('a') - 1);
 end;
 
 
@@ -872,9 +998,9 @@ var
   record_signature_mode_include, record_signature_mode_exclude: TRadioButton;
   record_signature_list: TEdit;
 
-  refr_signature_use: TCheckBox;
-  refr_signature_mode_include, refr_signature_mode_exclude: TRadioButton;
-  refr_signature_list: TEdit;
+  refr_name_signature_use: TCheckBox;
+  refr_name_signature_mode_include, refr_name_signature_mode_exclude: TRadioButton;
+  refr_name_signature_list: TEdit;
 
   edid_starts_with_use: TCheckBox;
   edid_starts_with_mode_include, edid_starts_with_mode_exclude: TRadioButton;
@@ -913,16 +1039,16 @@ begin
 
     create_filter_panel(frm, frm, 'Record Signature', SIGNATURE_HINT, record_signature_use,
       record_signature_mode_include, record_signature_mode_exclude, record_signature_list);
-    create_filter_panel(frm, frm, 'REFR Signature', SIGNATURE_HINT, refr_signature_use,
-      refr_signature_mode_include, refr_signature_mode_exclude, refr_signature_list);
-    create_filter_panel(frm, frm, 'EDID (Starts With)', EDID_HINT_FULL_OR_PARTIAL, edid_starts_with_use,
+    create_filter_panel(frm, frm, 'REFR NAME Signature', SIGNATURE_HINT, refr_name_signature_use,
+      refr_name_signature_mode_include, refr_name_signature_mode_exclude, refr_name_signature_list);
+    create_filter_panel(frm, frm, 'EDID of REFR NAME (Starts With)', EDID_HINT_FULL_OR_PARTIAL, edid_starts_with_use,
       edid_starts_with_mode_include, edid_starts_with_mode_exclude, edid_starts_with_list);
-    create_filter_panel(frm, frm, 'EDID (Ends With)', EDID_HINT_FULL_OR_PARTIAL, edid_ends_with_use,
+    create_filter_panel(frm, frm, 'EDID of REFR NAME (Ends With)', EDID_HINT_FULL_OR_PARTIAL, edid_ends_with_use,
       edid_ends_with_mode_include, edid_ends_with_mode_exclude, edid_ends_with_list);
-    create_filter_panel(frm, frm, 'EDID (Contains)', EDID_HINT_FULL_OR_PARTIAL, edid_contains_use,
+    create_filter_panel(frm, frm, 'EDID of REFR NAME (Contains)', EDID_HINT_FULL_OR_PARTIAL, edid_contains_use,
       edid_contains_mode_include, edid_contains_mode_exclude, edid_contains_list);
-    create_filter_panel(frm, frm, 'EDID (Equals)', EDID_HINT_FULL, edid_equals_use, edid_equals_mode_include,
-      edid_equals_mode_exclude, edid_equals_list);
+    create_filter_panel(frm, frm, 'EDID of REFR NAME (Equals)', EDID_HINT_FULL, edid_equals_use,
+      edid_equals_mode_include, edid_equals_mode_exclude, edid_equals_list);
 
     // button panel
 
@@ -943,10 +1069,10 @@ begin
     record_signature_mode_include.Checked := (global_record_signature_mode = FILTER_MODE_INCLUDE);
     record_signature_mode_exclude.Checked := (global_record_signature_mode = FILTER_MODE_EXCLUDE);
     record_signature_list.Text := global_record_signature_list;
-    refr_signature_use.Checked := global_refr_signature_use;
-    refr_signature_mode_include.Checked := (global_refr_signature_mode = FILTER_MODE_INCLUDE);
-    refr_signature_mode_exclude.Checked := (global_refr_signature_mode = FILTER_MODE_EXCLUDE);
-    refr_signature_list.Text := global_refr_signature_list;
+    refr_name_signature_use.Checked := global_refr_name_signature_use;
+    refr_name_signature_mode_include.Checked := (global_refr_name_signature_mode = FILTER_MODE_INCLUDE);
+    refr_name_signature_mode_exclude.Checked := (global_refr_name_signature_mode = FILTER_MODE_EXCLUDE);
+    refr_name_signature_list.Text := global_refr_name_signature_list;
     edid_starts_with_use.Checked := global_edid_starts_with_use;
     edid_starts_with_mode_include.Checked := (global_edid_starts_with_mode = FILTER_MODE_INCLUDE);
     edid_starts_with_mode_exclude.Checked := (global_edid_starts_with_mode = FILTER_MODE_EXCLUDE);
@@ -975,9 +1101,9 @@ begin
       global_record_signature_use := record_signature_use.Checked;
       global_record_signature_mode := record_signature_mode_include.Checked;
       global_record_signature_list := UpperCase(record_signature_list.Text);
-      global_refr_signature_use := refr_signature_use.Checked;
-      global_refr_signature_mode := refr_signature_mode_include.Checked;
-      global_refr_signature_list := UpperCase(refr_signature_list.Text);
+      global_refr_name_signature_use := refr_name_signature_use.Checked;
+      global_refr_name_signature_mode := refr_name_signature_mode_include.Checked;
+      global_refr_name_signature_list := UpperCase(refr_name_signature_list.Text);
       global_edid_starts_with_use := edid_starts_with_use.Checked;
       global_edid_starts_with_mode := edid_starts_with_mode_include.Checked;
       global_edid_starts_with_list := edid_starts_with_list.Text;
@@ -993,7 +1119,7 @@ begin
       global_debug := debug_checkbox.Checked;
     end else if (Result = mrYesToAll) then begin  // include all button
       global_record_signature_use := False;
-      global_refr_signature_use := False;
+      global_refr_name_signature_use := False;
       global_edid_starts_with_use := False;
       global_edid_ends_with_use := False;
       global_edid_contains_use := False;
@@ -1462,9 +1588,9 @@ begin
   global_record_signature_use := GLOBAL_RECORD_SIGNATURE_USE_DEFAULT;
   global_record_signature_mode := GLOBAL_RECORD_SIGNATURE_MODE_DEFAULT;
   global_record_signature_list := GLOBAL_RECORD_SIGNATURE_LIST_DEFAULT;
-  global_refr_signature_use := GLOBAL_REFR_SIGNATURE_USE_DEFAULT;
-  global_refr_signature_mode := GLOBAL_REFR_SIGNATURE_MODE_DEFAULT;
-  global_refr_signature_list := GLOBAL_REFR_SIGNATURE_LIST_DEFAULT;
+  global_refr_name_signature_use := GLOBAL_REFR_NAME_SIGNATURE_USE_DEFAULT;
+  global_refr_name_signature_mode := GLOBAL_REFR_NAME_SIGNATURE_MODE_DEFAULT;
+  global_refr_name_signature_list := GLOBAL_REFR_NAME_SIGNATURE_LIST_DEFAULT;
   global_edid_starts_with_use := GLOBAL_EDID_STARTS_WITH_USE_DEFAULT;
   global_edid_starts_with_mode := GLOBAL_EDID_STARTS_WITH_MODE_DEFAULT;
   global_edid_starts_with_list := GLOBAL_EDID_STARTS_WITH_LIST_DEFAULT;
@@ -1500,7 +1626,7 @@ begin
 
   // allow the user to make a choice about which records will be processed
   Result := show_record_filter_dialog();
-  debug_print('dialog returned ' + IntToStr(Result) + ': ' + modal_result_to_str(Result));
+  debug_print('Initialize: dialog returned ' + IntToStr(Result) + ': ' + modal_result_to_str(Result));
   if (Result = mrOk) or (Result = mrYesToAll) then begin
     Result := 0;
   end else begin
@@ -1520,7 +1646,7 @@ begin
   // the same settings for all records
   if (not global_use_same_settings_for_all) or (not global_options_dialog_shown) then begin
     Result := show_options_dialog();
-    debug_print('dialog returned ' + IntToStr(Result) + ': ' + modal_result_to_str(Result));
+    debug_print('Process: dialog returned ' + IntToStr(Result) + ': ' + modal_result_to_str(Result));
     global_options_dialog_shown := True;
     if (Result = mrOk) then begin
       Result := 0;
@@ -1530,7 +1656,10 @@ begin
     end;
   end;
 
-  if (Signature(e) <> 'REFR') then exit;
+  if (not filter_record(e)) then begin
+    debug_print('Process: filter_record returned false, skipping record ' + ShortName(e));
+    exit;
+  end;
 
   AddMessage(FullPath(e));
 
