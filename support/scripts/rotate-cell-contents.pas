@@ -372,6 +372,21 @@ begin
 end;
 
 
+// concatenate an array of strings into a single string, with a delimiter between each element and
+// an end cap on both sides
+function concat_string_array(arr: TStringDynArray; delimiter, end_cap_left, end_cap_right: string): string;
+var
+  i: integer;
+begin
+  for i := 0 to Pred(Length(arr)) do begin
+    Result := Result + arr[i];
+    if (i < Pred(Length(arr))) then Result := Result + delimiter;
+  end;
+  // if the concatenation is not empty, add the end cap string on both sides
+  if (Result <> '') then Result := end_cap_left + Result + end_cap_right;
+end;
+
+
 // print a message to the xEdit log if debug mode is active
 procedure debug_print(message: string);
 begin
@@ -451,21 +466,6 @@ end;
 function full_control_width(control: TControl): integer;
 begin
   Result := control.Width + control.Margins.Left + control.Margins.Right;
-end;
-
-
-// concatenate an array of strings into a single string, with a delimiter between each element and
-// an end cap on both sides
-function concat_string_array(arr: TStringDynArray; delimiter, end_cap_left, end_cap_right: string): string;
-var
-  i: integer;
-begin
-  for i := 0 to Pred(Length(arr)) do begin
-    Result := Result + arr[i];
-    if (i < Pred(Length(arr))) then Result := Result + delimiter;
-  end;
-  // if the concatenation is not empty, add the end cap string on both sides
-  if (Result <> '') then Result := end_cap_left + Result + end_cap_right;
 end;
 
 
