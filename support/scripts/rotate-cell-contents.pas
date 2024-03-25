@@ -288,7 +288,7 @@ begin
       debug_print('filter_record: ' + filter_type_text + ': string to test is "' + str_to_test + '"');
       list := SplitString(filter_list, ',');
       debug_print('filter_record: ' + filter_type_text + ': list length: ' + IntToStr(Length(list)));
-      debug_print('filter_record: ' + filter_type_text + ': list: [' + concat_string_array(list, '", "', '"') + ']');
+      debug_print('filter_record: ' + filter_type_text + ': list: [' + concat_string_array(list, '", "', '"', '"') + ']');
 
       for i := 0 to Pred(Length(list)) do begin
         case (filter_type) of
@@ -397,8 +397,8 @@ begin
 
   // special case: if no filters are active, return True
   if (not global_record_signature_use) and (not global_refr_name_signature_use) and
-    (not global_edid_starts_with_use) and (not global_edid_ends_with_use) and
-    (not global_edid_contains_use) and (not global_edid_equals_use) then begin
+     (not global_edid_starts_with_use) and (not global_edid_ends_with_use)      and
+     (not global_edid_contains_use)    and (not global_edid_equals_use)         then begin
     debug_print('filter_record: no filters active, returning True');
     Result := True;
     exit;
@@ -456,7 +456,7 @@ end;
 
 // concatenate an array of strings into a single string, with a delimiter between each element and
 // an end cap on both sides
-function concat_string_array(arr: TStringDynArray; delimiter, end_cap: string): string;
+function concat_string_array(arr: TStringDynArray; delimiter, end_cap_left, end_cap_right: string): string;
 var
   i: integer;
 begin
@@ -465,7 +465,7 @@ begin
     if (i < Pred(Length(arr))) then Result := Result + delimiter;
   end;
   // if the concatenation is not empty, add the end cap string on both sides
-  if (Result <> '') then Result := end_cap + Result + end_cap;
+  if (Result <> '') then Result := end_cap_left + Result + end_cap_right;
 end;
 
 
@@ -1740,13 +1740,13 @@ end;
 // TODO select file
 function Process(e: IInterface): integer;
 var
-  x, y, z, raw_x, raw_y, raw_z: double;
+  raw_x, raw_y, raw_z: double;
   initial_rotation_x, initial_rotation_y, initial_rotation_z: double;
   final_rotation_x, final_rotation_y, final_rotation_z: double;
+  default_final_rotation_x, default_final_rotation_y, default_final_rotation_z: double;
   initial_position_x, initial_position_y, initial_position_z: double;
   final_position_x, final_position_y, final_position_z: double;
-  default_final_rotation_x, default_final_rotation_y, default_final_rotation_z: double;
-  operation_mode_text, dry_run_text, clamping_text: string;
+  operation_mode_text, dry_run_text, additional_final_text: string;
 begin
   // show the rotation options if they haven't been shown yet or if the user has chosen to not use
   // the same settings for all records
@@ -1809,13 +1809,15 @@ begin
   final_rotation_z := SimpleRoundTo(raw_z, global_rotation_precision);
   debug_print('Process: rotation after chosen rounding (nearest ' + precision_to_str(global_rotation_precision)
     + '): ' + vector_to_str(final_rotation_x, final_rotation_y, final_rotation_z, False, True, DIGITS_ANGLE));
+  if (global_rotation_precision <> GLOBAL_ROTATION_PRECISION_DEFAULT) then
+    additional_final_text := ' (rounded to nearest ' + precision_to_str(global_rotation_precision) + ')';
 
   // clamp the rotation if the user has chosen to do so
   if (global_clamp_use) then begin
     final_rotation_x := clamp_angle(final_rotation_x, global_clamp_mode);
     final_rotation_y := clamp_angle(final_rotation_y, global_clamp_mode);
     final_rotation_z := clamp_angle(final_rotation_z, global_clamp_mode);
-    clamping_text := ' (clamped to nearest multiple of ' + clamp_mode_to_str(global_clamp_mode) + ')';
+    additional_final_text := ' (clamped to nearest multiple of ' + clamp_mode_to_str(global_clamp_mode) + ')';
     debug_print('Process: clamped rotation: ' + vector_to_str(final_rotation_x, final_rotation_y,
       final_rotation_z, False, True, DIGITS_ANGLE));
   end;
@@ -1832,12 +1834,14 @@ begin
     end;
 
     AddMessage(dry_run_text + 'Final rotation:   ' + vector_to_str(final_rotation_x, final_rotation_y,
-      final_rotation_z, True, True, DIGITS_ANGLE) + clamping_text);
-    // TODO add "rounded to" text to end of final rotation message
+      final_rotation_z, True, True, DIGITS_ANGLE) + additional_final_text);
   end;
 
   // apply the rotation to the position part of the record
   if (global_apply_to_position) then begin
+    // reset additional_final_text since it's also used for rotation
+    additional_final_text := '';
+
     // the following lines having to do with the default_final_rotation_* and comparing the value
     // don't need to be done unless the rotation is being applied to the position, so this chunk of
     // code is placed behind the global_apply_to_position check
@@ -1893,6 +1897,10 @@ begin
     final_position_x := SimpleRoundTo(raw_x, global_position_precision);
     final_position_y := SimpleRoundTo(raw_y, global_position_precision);
     final_position_z := SimpleRoundTo(raw_z, global_position_precision);
+    debug_print('Process: position after chosen rounding (nearest ' + precision_to_str(global_position_precision)
+      + '): ' + vector_to_str(final_position_x, final_position_y, final_position_z, False, False, DIGITS_POSITION));
+    if (global_position_precision <> GLOBAL_POSITION_PRECISION_DEFAULT) then
+      additional_final_text := ' (rounded to nearest ' + precision_to_str(global_position_precision) + ')';
 
     // apply the position to the record
     if (not global_dry_run) then begin
@@ -1902,8 +1910,7 @@ begin
     end;
 
     AddMessage(dry_run_text + 'Final position:   ' + vector_to_str(final_position_x, final_position_y,
-      final_position_z, True, False, DIGITS_POSITION));
-    // TODO add "rounded to" text to end of final position message
+      final_position_z, True, False, DIGITS_POSITION) + additional_final_text);
   end;
 end;
 
