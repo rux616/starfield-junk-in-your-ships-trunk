@@ -89,12 +89,12 @@ var
 begin
   // create new subrecords for persistent subrecords
   old_cell_group := FindChildGroup(ChildGroup(old_cell), GROUP_TYPE_CELL_PERSISTENT_CHILDREN, old_cell);
-  // AddMessage('# persistent children: ' + IntToStr(ElementCount(old_cell_group)));
+  AddMessage('    # persistent children: ' + IntToStr(ElementCount(old_cell_group)));
   CloneCellGroup(old_cell_group, new_cell);
 
   // create new subrecords for temporary subrecords
   old_cell_group := FindChildGroup(ChildGroup(old_cell), GROUP_TYPE_CELL_TEMPORARY_CHILDREN, old_cell);
-  // AddMessage('# temporary children: ' + IntToStr(ElementCount(old_cell_group)));
+  AddMessage('    # temporary children: ' + IntToStr(ElementCount(old_cell_group)));
   CloneCellGroup(old_cell_group, new_cell);
 end;
 
@@ -189,6 +189,7 @@ begin
   if Assigned(new_cell) then begin
     AddMessage('Cloned to ' + ShortName(new_cell));
     Result := 0;
+  end
   else begin
     Result := 1;
   end;
