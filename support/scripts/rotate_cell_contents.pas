@@ -36,7 +36,7 @@ unit rotate_cell_contents;
 
 
 (*
-  Rotate Cell Contents v1.0.0
+  Rotate Cell Contents v1.0.1
 
   I've done my best to organize this code into logical sections, but it's still just a lot of code.
 
@@ -2313,6 +2313,7 @@ end;
 function Process(current_record: IInterface): integer;
 var
   raw_x, raw_y, raw_z: double;
+  local_rotate_x, local_rotate_y, local_rotate_z: double;
   initial_rotation_x, initial_rotation_y, initial_rotation_z: double;
   final_rotation_x, final_rotation_y, final_rotation_z: double;
   default_final_rotation_x, default_final_rotation_y, default_final_rotation_z: double;
@@ -2423,11 +2424,17 @@ begin
     operation_mode_text := 'Rotating by ';
   if (global_dry_run) then dry_run_text := '[DRY RUN] ';
 
+  // save local copies of the global rotation variables so that they can be modified without affecting
+  // subsequent records
+  local_rotate_x := global_rotate_x;
+  local_rotate_y := global_rotate_y;
+  local_rotate_z := global_rotate_z;
+
   // show initial messaging, including the full name of the record being processed and the rotation
   // that will be applied
   AddMessage(FullPath(current_record));
-  AddMessage(dry_run_text + operation_mode_text + qv_to_str(0, global_rotate_x, global_rotate_y,
-    global_rotate_z, False, False, False, True, ' = ', '', DIGITS_ANGLE) + ' using rotation sequence '
+  AddMessage(dry_run_text + operation_mode_text + qv_to_str(0, local_rotate_x, local_rotate_y,
+    local_rotate_z, False, False, False, True, ' = ', '', DIGITS_ANGLE) + ' using rotation sequence '
     + rotation_sequence_to_str(global_rotation_sequence));
 
   // get initial rotation
@@ -2441,7 +2448,7 @@ begin
   // not being applied to the rotation
   rotate_rotation(
     initial_rotation_x, initial_rotation_y, initial_rotation_z,  // initial rotation
-    global_rotate_x, global_rotate_y, global_rotate_z,           // rotation to apply
+    local_rotate_x, local_rotate_y, local_rotate_z,              // rotation to apply
     global_rotation_sequence,                                    // rotation sequence to use
     raw_x, raw_y, raw_z                                          // (output) raw rotation
   );
@@ -2502,23 +2509,23 @@ begin
       False, True, DIGITS_ANGLE));
 
     // if there are any differences between the different final rotation values, either the angle
-    // was clamped or rounding happened. either way, the rotation is altered and the global_rotate_*
+    // was clamped or rounding happened. either way, the rotation is altered and the local_rotate_*
     // variables need to be updated to the new rotation. to do so, need to compare initial rotation
     // and final rotation, which is done via the rotation_difference procedure
     if (CompareValue(final_rotation_x, default_final_rotation_x, EPSILON_ROTATION) <> EqualsValue) or
        (CompareValue(final_rotation_y, default_final_rotation_y, EPSILON_ROTATION) <> EqualsValue) or
        (CompareValue(final_rotation_z, default_final_rotation_z, EPSILON_ROTATION) <> EqualsValue) then begin
       debug_print('Process: rotation was clamped or rounded, updating rotation variables');
-      debug_print('Process: original rotation to be applied: ' + vector_to_str(global_rotate_x,
-        global_rotate_y, global_rotate_z, False, True, DIGITS_FULL));
+      debug_print('Process: original rotation to be applied: ' + vector_to_str(local_rotate_x,
+        local_rotate_y, local_rotate_z, False, True, DIGITS_FULL));
       rotation_difference(
         initial_rotation_x, initial_rotation_y, initial_rotation_z,
         final_rotation_x, final_rotation_y, final_rotation_z,
         global_rotation_sequence,
-        global_rotate_x, global_rotate_y, global_rotate_z
+        local_rotate_x, local_rotate_y, local_rotate_z
       );
-      debug_print('Process: new rotation to be applied: ' + vector_to_str(global_rotate_x,
-        global_rotate_y, global_rotate_z, False, True, DIGITS_FULL));
+      debug_print('Process: new rotation to be applied: ' + vector_to_str(local_rotate_x,
+        local_rotate_y, local_rotate_z, False, True, DIGITS_FULL));
     end;
 
     // get the initial position
@@ -2531,7 +2538,7 @@ begin
     // calculate the position with the rotation applied
     rotate_position(
       initial_position_x, initial_position_y, initial_position_z,  // initial position
-      global_rotate_x, global_rotate_y, global_rotate_z,           // rotation to apply
+      local_rotate_x, local_rotate_y, local_rotate_z,              // rotation to apply
       global_rotation_sequence,                                    // rotation sequence to use
       raw_x, raw_y, raw_z                                          // (output) raw final position
     );
