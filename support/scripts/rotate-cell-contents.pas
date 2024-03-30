@@ -34,6 +34,40 @@
 }
 unit rotate_cell_contents;
 
+
+(*
+  Rotate Cell Contents v1.0.0
+
+  I've done my best to organize this code into logical sections, but it's still just a lot of code.
+
+  Section listing:
+  - constants
+  - globals
+  - utility functions
+  - event handlers
+  - rotation and position functions
+  - ui functions
+  - xedit script functions
+
+  Each section has a header that looks like this:
+
+  //************************************************************************************************//
+  //                                                                                                //
+  // SECTION NAME                                                                                   //
+  //                                                                                                //
+  //************************************************************************************************//
+
+  and can be searched for with the regex "^//\**//\n//.*//\n//.*\n//.*\n//\**//"
+*)
+
+
+//************************************************************************************************//
+//                                                                                                //
+// CONSTANTS                                                                                      //
+//                                                                                                //
+//************************************************************************************************//
+
+
 const
   // possible rotation sequences for Tait-Bryan angles
   // see https://en.wikipedia.org/wiki/Euler_angles#Chained_rotations_equivalence for more information
@@ -82,7 +116,7 @@ const
   PRECISION_MAX = -6;
 
   // global defaults
-  GLOBAL_DEBUG_DEFAULT = True;  // TODO set to False for release
+  GLOBAL_DEBUG_DEFAULT = False;
 
   GLOBAL_RECORD_SIGNATURE_USE_DEFAULT = True;
   GLOBAL_RECORD_SIGNATURE_MODE_DEFAULT = FILTER_MODE_INCLUDE;
@@ -119,6 +153,7 @@ const
   GLOBAL_ROTATION_PRECISION_DEFAULT = -4;  // precision to nearest 0.0001
 
   GLOBAL_DRY_RUN_DEFAULT = True;
+  GLOBAL_SAVE_TO_SAME_FILE_DEFAULT = True;
   GLOBAL_USE_SAME_SETTINGS_FOR_ALL_DEFAULT = True;
 
   // UI constants
@@ -128,10 +163,16 @@ const
   MARGIN_RIGHT = 5;
   PANEL_BEVEL = 2;
   CONTROL_HEIGHT = 22;
+
   CHECKBOX_PADDING = 21;
   RADIO_PADDING = 21;
   COMBO_PADDING = 24;
+  SCROLLBAR_PADDING = 24;
   BUTTON_PADDING = 20;
+
+  OK_BUTTON_NAME = 'ok_button';
+  FILE_LIST_FILTER_NAME = 'file_list_filter';
+  FILE_LIST_CONTROL_NAME = 'file_list_control';
 
   // epsilon to use for CompareValue calls
   // between positions and rotations, positions have more significant decimals (6), so this is set
@@ -168,6 +209,22 @@ const
   // minor:    1 ──────────────────────┘ │ │
   // patch:    5 ────────────────────────┘ │
   // revision: c (3) ──────────────────────┘
+
+  // constants for new file creation
+  NEW_FILE_ESP = 0;
+  NEW_FILE_ESP_MASTER = 1;
+  NEW_FILE_ESP_LIGHT = 2;
+  NEW_FILE_ESP_MASTER_LIGHT = 3;
+  NEW_FILE_ESM = 4;
+  NEW_FILE_ESL = 5;
+
+
+//************************************************************************************************//
+//                                                                                                //
+// GLOBALS                                                                                        //
+//                                                                                                //
+//************************************************************************************************//
+
 
 var
   // global configuration options
@@ -207,6 +264,7 @@ var
   global_rotation_precision: integer;  // 0 to -4
 
   global_dry_run: boolean;
+  global_save_to_same_file: boolean;
   global_use_same_settings_for_all: boolean;
 
   // global scale factor for GUI elements
@@ -215,19 +273,25 @@ var
   // whether the options dialog has been shown before
   global_options_dialog_shown: boolean;
 
+  // holds the file list used when filtering the file list control in the file dialog
+  temp_file_list: TStringList;
+  temp_currently_selected: string;
 
-//
-// UTILITY FUNCTIONS
-//
+  // files that changes are made to, if not the record's file
+  global_target_file_list: TStringList;
+
+
+//************************************************************************************************//
+//                                                                                                //
+// UTILITY FUNCTIONS                                                                              //
+//                                                                                                //
+//************************************************************************************************//
 
 
 // return a stringified boolean
 function bool_to_str(b: boolean): string;
 begin
-  if b then
-    Result := 'True'
-  else
-    Result := 'False';
+  if b then Result := 'True' else Result := 'False';
 end;
 
 
@@ -235,6 +299,13 @@ end;
 function bool_to_checked_str(b: boolean): string;
 begin
   if b then Result := 'checked' else Result := 'unchecked';
+end;
+
+
+// return a string representing whether a boolean would represent an enabled control/mode/etc or not
+function bool_to_enabled_str(b: boolean): string;
+begin
+  if b then Result := 'enabled' else Result := 'disabled';
 end;
 
 
@@ -248,13 +319,13 @@ end;
 // return the width of a control's caption
 function caption_width(control: TControl): integer;
 begin
-  Result := string_width(control.Caption, control.Font);
+  Result := string_width(control.Caption, control.Font, nil);
 end;
 
 
 // check a record against a given filter, returning True if the record passes the filter
 function check_filter(
-  r: IInterface;
+  record_to_check: IInterface;
   filter_type: integer;
   filter_type_text: string;
   filter_use, filter_mode: boolean;
@@ -262,52 +333,62 @@ function check_filter(
 ): boolean;
 var
   str_to_test, match_text: string;
-  list: TStringDynArray;
+  list: TStringList;
   i: integer;
   match: boolean;
+  linked_element: IInterface;
 begin
   if (not filter_use) then begin
-    debug_print('filter_record: ' + filter_type_text + ': filter not active');
+    debug_print('check_filter: ' + filter_type_text + ': filter not active');
     Result := True;
   end else begin
-    // TODO need to verify the file that LinksTo returns a record from
     case (filter_type) of
       FILTER_TYPE_RECORD_SIGNATURE:
-        str_to_test := Signature(r);
-      FILTER_TYPE_REFR_NAME_SIGNATURE:
-        str_to_test := Signature(LinksTo(ElementBySignature(r, 'NAME')));
-      FILTER_TYPE_EDID_STARTS_WITH, FILTER_TYPE_EDID_ENDS_WITH, FILTER_TYPE_EDID_CONTAINS, FILTER_TYPE_EDID_EQUALS:
-        str_to_test := EditorID(LinksTo(ElementBySignature(r, 'NAME')));
+        str_to_test := Signature(record_to_check);
+      FILTER_TYPE_REFR_NAME_SIGNATURE: begin
+        linked_element := LinksTo(ElementBySignature(record_to_check, 'NAME'));
+        str_to_test := Signature(linked_element);
+        debug_print('check_filter: linked element file: ' + GetFileName(GetFile(linked_element)));
+        debug_print('check_filter: linked element EDID: ' + EditorID(linked_element));
+        debug_print('check_filter: linked element signature: ' + str_to_test);
+      end;
+      FILTER_TYPE_EDID_STARTS_WITH, FILTER_TYPE_EDID_ENDS_WITH, FILTER_TYPE_EDID_CONTAINS, FILTER_TYPE_EDID_EQUALS: begin
+        linked_element := LinksTo(ElementBySignature(record_to_check, 'NAME'));
+        str_to_test := EditorID(linked_element);
+        debug_print('check_filter: linked element file: ' + GetFileName(GetFile(linked_element)));
+        debug_print('check_filter: linked element EDID: ' + str_to_test);
+        debug_print('check_filter: linked element signature: ' + Signature(linked_element));
+      end;
     else
       raise Exception.Create('unknown filter type: ' + filter_type_text);
     end;
 
     if (str_to_test = '') then begin
-      debug_print('filter_record: ' + filter_type_text + ': string to test is empty');
+      debug_print('check_filter: ' + filter_type_text + ': string to test is empty');
     end else begin
-      debug_print('filter_record: ' + filter_type_text + ': string to test is "' + str_to_test + '"');
-      list := SplitString(filter_list, ',');
-      debug_print('filter_record: ' + filter_type_text + ': list length: ' + IntToStr(Length(list)));
-      debug_print('filter_record: ' + filter_type_text + ': list: [' + concat_string_array(list, '", "', '"', '"') + ']');
+      debug_print('check_filter: ' + filter_type_text + ': string to test is "' + str_to_test + '"');
+      list := string_array_to_string_list(SplitString(filter_list, ','));
+      debug_print('check_filter: ' + filter_type_text + ': list length: ' + IntToStr(list.Count));
+      debug_print('check_filter: ' + filter_type_text + ': list: [' + concat_string_list(list, '", "', '"', '"') + ']');
 
-      for i := 0 to Pred(Length(list)) do begin
+      for i := 0 to Pred(list.Count) do begin
         case (filter_type) of
           FILTER_TYPE_RECORD_SIGNATURE, FILTER_TYPE_REFR_NAME_SIGNATURE, FILTER_TYPE_EDID_EQUALS:
-            match := (str_to_test = list[i]);
+            match := SameText(str_to_test, list[i]);
           FILTER_TYPE_EDID_STARTS_WITH:
-            match := (Pos(list[i], str_to_test) = 1);
+            match := SameText(LeftStr(str_to_test, Length(list[i])), list[i]);
           FILTER_TYPE_EDID_ENDS_WITH:
-            match := (Pos(list[i], str_to_test) = Length(str_to_test) - Length(list[i]) + 1);
+            match := SameText(RightStr(str_to_test, Length(list[i])), list[i]);
           FILTER_TYPE_EDID_CONTAINS:
-            match := (Pos(list[i], str_to_test) <> 0);
+            match := ContainsText(str_to_test, list[i]);
         end;
         if (match) then match_text := 'match' else match_text := 'no match';
-        debug_print('filter_record: ' + filter_type_text + ': checking "' + str_to_test + '" against "' + list[i]
+        debug_print('check_filter: ' + filter_type_text + ': checking "' + str_to_test + '" against "' + list[i]
           + '": ' + match_text);
         if (match) then break;
       end;
       if (match) then match_text := '' else match_text := ' not';
-      debug_print('filter_record: ' + filter_type_text + ': "' + str_to_test + '"' + match_text + ' in list');
+      debug_print('check_filter: ' + filter_type_text + ': "' + str_to_test + '"' + match_text + ' in list');
     end;
 
     if (filter_mode = FILTER_MODE_INCLUDE) then
@@ -315,7 +396,7 @@ begin
     else if (filter_mode = FILTER_MODE_EXCLUDE) then
       Result := not match;
   end;
-  debug_print('filter_record: ' + filter_type_text + ': include: ' + bool_to_str(Result));
+  debug_print('check_filter: ' + filter_type_text + ': include: ' + bool_to_str(Result));
 end;
 
 
@@ -372,15 +453,15 @@ begin
 end;
 
 
-// concatenate an array of strings into a single string, with a delimiter between each element and
-// an end cap on both sides
-function concat_string_array(arr: TStringDynArray; delimiter, end_cap_left, end_cap_right: string): string;
+// concatenate the contents of a TStringList into a single string, with a specified delimiter between
+// each element and individually specified end caps on either side
+function concat_string_list(list: TStringList; delimiter, end_cap_left, end_cap_right: string): string;
 var
   i: integer;
 begin
-  for i := 0 to Pred(Length(arr)) do begin
-    Result := Result + arr[i];
-    if (i < Pred(Length(arr))) then Result := Result + delimiter;
+  for i := 0 to Pred(list.Count) do begin
+    Result := Result + list[i];
+    if (i < Pred(list.Count)) then Result := Result + delimiter;
   end;
   // if the concatenation is not empty, add the end cap string on both sides
   if (Result <> '') then Result := end_cap_left + Result + end_cap_right;
@@ -388,12 +469,13 @@ end;
 
 
 // print a message to the xEdit log if debug mode is active
-procedure debug_print(message: string);
+procedure debug_print(debug_message: string);
 begin
-  if global_debug then AddMessage('    debug: ' + message);
+  if global_debug then AddMessage('    debug: ' + debug_message);
 end;
 
 
+// set some common options on a panel
 // borrowed from https://github.com/fre-sch/starfield-toolbox/blob/13de7c6e1d1b13a859ad1675df68ccbae0988eb1/xedit-scripts/Create%20new%20part.pas#L462-L474
 procedure do_panel_layout(panel: TPanel; bevel: integer);
 begin
@@ -406,9 +488,30 @@ end;
 // check if a given record should be filtered out, returning True if it should be kept
 // rule evaluation order, first to last:
 // record signature, REFR NAME signature, EDID starts with, EDID ends with, EDID contains, EDID equals
-function filter_record(r: IInterface): boolean;
+function filter_record(to_check: IInterface): boolean;
+var
+  subrecord, position, rotation: IInterface;
 begin
-  debug_print('filter_record: filtering record ' + ShortName(r));
+  debug_print('filter_record: filtering record ' + ShortName(to_check));
+
+  // initial filter for checking if a record has a "DATA" subrecord with Position and Rotation elements
+  subrecord := ElementBySignature(to_check, 'DATA');
+  if (not Assigned(subrecord)) then begin
+    debug_print('filter_record: record does not have "DATA" subrecord');
+    Result := False;
+    exit;
+  end else begin
+    debug_print('filter_record: record has "DATA" subrecord');
+    position := ElementByPath(subrecord, 'Position');
+    rotation := ElementByPath(subrecord, 'Rotation');
+    if (not Assigned(position)) or (not Assigned(rotation)) then begin
+      debug_print('filter_record: record does not have Position and Rotation elements in "DATA" subrecord');
+      Result := False;
+      exit;
+    end else begin
+      debug_print('filter_record: record has Position and Rotation elements in "DATA" subrecord');
+    end;
+  end;
 
   // special case: if no filters are active, return True
   if (not global_record_signature_use) and (not global_refr_name_signature_use) and
@@ -420,17 +523,17 @@ begin
   end;
 
   // apply filters, with short circuiting if a filter returns False (Result is False by default)
-  if not check_filter(r, FILTER_TYPE_RECORD_SIGNATURE, 'record signature', global_record_signature_use,
+  if not check_filter(to_check, FILTER_TYPE_RECORD_SIGNATURE, 'record signature', global_record_signature_use,
     global_record_signature_mode, global_record_signature_list) then exit;
-  if not check_filter(r, FILTER_TYPE_REFR_NAME_SIGNATURE, 'refr name signature', global_refr_name_signature_use,
+  if not check_filter(to_check, FILTER_TYPE_REFR_NAME_SIGNATURE, 'refr name signature', global_refr_name_signature_use,
     global_refr_name_signature_mode, global_refr_name_signature_list) then exit;
-  if not check_filter(r, FILTER_TYPE_EDID_STARTS_WITH, 'edid starts with', global_edid_starts_with_use,
+  if not check_filter(to_check, FILTER_TYPE_EDID_STARTS_WITH, 'edid starts with', global_edid_starts_with_use,
     global_edid_starts_with_mode, global_edid_starts_with_list) then exit;
-  if not check_filter(r, FILTER_TYPE_EDID_ENDS_WITH, 'edid ends with', global_edid_ends_with_use,
+  if not check_filter(to_check, FILTER_TYPE_EDID_ENDS_WITH, 'edid ends with', global_edid_ends_with_use,
     global_edid_ends_with_mode, global_edid_ends_with_list) then exit;
-  if not check_filter(r, FILTER_TYPE_EDID_CONTAINS, 'edid contains', global_edid_contains_use,
+  if not check_filter(to_check, FILTER_TYPE_EDID_CONTAINS, 'edid contains', global_edid_contains_use,
     global_edid_contains_mode, global_edid_contains_list) then exit;
-  if not check_filter(r, FILTER_TYPE_EDID_EQUALS, 'edid equals', global_edid_equals_use,
+  if not check_filter(to_check, FILTER_TYPE_EDID_EQUALS, 'edid equals', global_edid_equals_use,
     global_edid_equals_mode, global_edid_equals_list) then exit;
 
   // if all filters pass, return True
@@ -469,16 +572,35 @@ begin
 end;
 
 
+// get the parent form of a control or raise an exception if the control has no parent form
+function get_parent_form(control: TControl): TForm;
+begin
+  while (control.ClassType <> TForm) and (control.Parent <> nil) do
+    control := control.Parent;
+  if (control.ClassType <> TForm) then
+    raise Exception.Create('control has no parent form');
+  Result := TForm(control);
+end;
+
+
 // return the max width of a control's Items property
 function max_item_width(control: TControl): integer;
 var
+  bitmap: TBitmap;
   i, width: integer;
 begin
-  Result := 0;
-  for i := 0 to control.Items.Count - 1 do begin
-    width := string_width(control.Items[i], control.Font);
-    if (width > Result) then
-      Result := width;
+  // because this is going to be used on multiple items, create a bitmap once and reuse it
+  bitmap := TBitmap.Create();
+  try
+    bitmap.Canvas.Font.Assign(control.Font);
+    for i := 0 to Pred(control.Items.Count) do begin
+      // pass the bitmap in to avoid creating a new one each time
+      width := string_width(control.Items[i], nil, bitmap);
+      if (width > Result) then
+        Result := width;
+    end;
+  finally
+    bitmap.Free();
   end;
 end;
 
@@ -593,6 +715,7 @@ begin
 end;
 
 
+// set the margins and alignment of a control
 // borrowed from https://github.com/fre-sch/starfield-toolbox/blob/13de7c6e1d1b13a859ad1675df68ccbae0988eb1/xedit-scripts/Create%20new%20part.pas#L448-L459
 procedure set_margins_layout(
   control: TControl;
@@ -610,18 +733,35 @@ end;
 
 
 // return the width of a string using the given font
+// if given an optional bitmap, use that instead of creating a new one
 // https://stackoverflow.com/a/2548178
-function string_width(s: string; font: TFont): integer;
-var
-  bitmap: TBitmap;
+function string_width(s: string; font: TFont; bitmap: TBitmap): integer;
 begin
-  bitmap := TBitmap.Create;
-  try
-    bitmap.Canvas.Font.Assign(font);
+  if (bitmap = nil) then begin
+    // create a bitmap to use for measuring the text width
+    bitmap := TBitmap.Create();
+    try
+      // assign a font to the bitmap's canvas to make sure the text width is calculated correctly
+      bitmap.Canvas.Font.Assign(font);
+      // actually calculate the text width
+      Result := bitmap.Canvas.TextWidth(s);
+    finally
+      bitmap.Free();
+    end;
+  end else begin
     Result := bitmap.Canvas.TextWidth(s);
-  finally
-    bitmap.Free;
   end;
+end;
+
+
+// return a string list from a string array
+function string_array_to_string_list(arr: TStringDynArray): TStringsList;
+var
+  i: integer;
+begin
+  Result := TStringList.Create();
+  for i := 0 to Pred(Length(arr)) do
+    Result.Add(arr[i]);
 end;
 
 
@@ -653,19 +793,142 @@ function version_number_to_str(v: integer): string;
 var
   version_major, version_minor, version_patch, version_revision: integer;
 begin
+  // the version number is a 32-bit signed integer and each version component uses 8 bits. the first
+  // 8 bits are the major version, followed by the minor version, then the patch version, and finally
+  // the revision version. to extract these, we shift the bits to the right by 24, 16, 8, and 0 bits,
+  // respectively, and then mask each result with 0xFF
+
+  // extract the version number components
   version_major := v Shr 24;
   version_minor := (v Shr 16) and $FF;
   version_patch := (v Shr 8) and $FF;
   version_revision := v and $FF;
+
+  // build the version number string
   Result := Format('%d.%d.%d', [version_major, version_minor, version_patch]);
   if (version_revision > 0) then
     Result := Result + Chr(version_revision + unicode_ord('a') - 1);
 end;
 
 
-//
-// ROTATION AND POSITION FUNCTIONS
-//
+//************************************************************************************************//
+//                                                                                                //
+// EVENT HANDLERS                                                                                 //
+//                                                                                                //
+//************************************************************************************************//
+
+
+// handles the "OnClick" event for the debug checkbox
+// immediately toggles debug mode
+procedure debug_checkbox_click_handler(sender: TObject);
+begin
+  global_debug := TCheckBox(sender).Checked;
+  AddMessage('Debug mode ' + bool_to_enabled_str(global_debug));
+end;
+
+
+// handles the "OnClick" event for the file list control in the file dialog
+// enables the ok button if an item is selected
+procedure file_list_click_handler(sender: TObject);
+var
+  file_list: TListBox;
+  ok_button: TButton;
+begin
+  debug_print('file_list_click_handler: click detected');
+  file_list := TListBox(sender);
+  debug_print('file_list_click_handler: item index: ' + IntToStr(file_list.ItemIndex));
+  if (file_list.ItemIndex >= 0) then begin
+    temp_currently_selected := file_list.Items[file_list.ItemIndex];
+    ok_button := TButton(get_parent_form(file_list).FindComponent(OK_BUTTON_NAME));
+    ok_button.Enabled := True;
+  end;
+end;
+
+
+// handles the "OnDblClick" event for the file list control in the file dialog
+// "clicks" the ok button if an item is selected
+procedure file_list_double_click_handler(sender: TObject);
+var
+  file_list: TListBox;
+  ok_button: TButton;
+begin
+  debug_print('file_list_double_click_handler: double click detected');
+  file_list := TListBox(sender);
+  debug_print('file_list_double_click_handler: item index: ' + IntToStr(file_list.ItemIndex));
+  if (file_list.ItemIndex >= 0) then begin
+    debug_print('file_list_double_click_handler: item is valid, "clicking" OK button');
+    ok_button := TButton(get_parent_form(file_list).FindComponent(OK_BUTTON_NAME));
+    ok_button.Click();
+  end;
+end;
+
+
+// handles the "OnChange" event for the file list filter in the file dialog
+// filters the file list control as the user types
+// modified from https://stackoverflow.com/a/35751126
+procedure file_list_filter_change_handler(sender: TObject);
+var
+  file_list_filter: TEdit;
+  file_list_control: TListBox;
+  filter: string;
+  i: integer;
+  parent_control: TControl;
+begin
+  file_list_filter := TEdit(sender);
+  file_list_control := TListBox(get_parent_form(file_list_filter).FindComponent(FILE_LIST_CONTROL_NAME));
+
+  file_list_control.Items.BeginUpdate();
+  try
+    // clear the file list control and disable the OK button (because the selection is no longer valid)
+    file_list_control.Clear();
+    TButton(get_parent_form(file_list_filter).FindComponent(OK_BUTTON_NAME)).Enabled := False;
+
+    if (file_list_filter.GetTextLen() > 0) then begin
+      filter := file_list_filter.Text;
+      debug_print('file_list_filter_change_handler: filtering for "' + filter + '"');
+      for i := 0 to Pred(temp_file_list.Count) do begin
+        // if the filter text is found in the filename, add it and its object to the file list control
+        if ContainsText(temp_file_list[i], filter) then begin
+          file_list_control.Items.AddObject(temp_file_list[i], temp_file_list.Objects[i]);
+          // if a re-added item was previously selected, select it again and trigger the click handler
+          if (temp_file_list[i] = temp_currently_selected) then begin
+            file_list_control.ItemIndex := file_list_control.Items.Count - 1;
+            file_list_click_handler(file_list_control);
+          end;
+        end;
+      end;
+    end else begin
+      // if the filter is empty, add all items from the temp_file_list to the file list control
+      file_list_control.Items.Assign(temp_file_list);
+      // if an item was previously selected, select it again and trigger the click handler
+      if (temp_currently_selected <> '') then begin
+        file_list_control.ItemIndex := file_list_control.Items.IndexOf(temp_currently_selected);
+        file_list_click_handler(file_list_control);
+      end;
+    end;
+  finally
+    file_list_control.Items.EndUpdate();
+  end;
+end;
+
+
+// handles the "OnClick" event for the filter clear button
+// clears the filter text box and sets focus to it
+procedure filter_clear_button_click_handler(sender: TObject);
+var
+  filter_edit: TEdit;
+begin
+  filter_edit := TEdit(get_parent_form(TButton(sender)).FindComponent(FILE_LIST_FILTER_NAME));
+  filter_edit.Text := '';
+  filter_edit.SetFocus();
+end;
+
+
+//************************************************************************************************//
+//                                                                                                //
+// ROTATION AND POSITION FUNCTIONS                                                                //
+//                                                                                                //
+//************************************************************************************************//
 
 
 // takes an euler angle and converts it to a quaternion
@@ -984,15 +1247,18 @@ begin
 end;
 
 
-//
-// UI FUNCTIONS
-//
+//************************************************************************************************//
+//                                                                                                //
+// UI FUNCTIONS                                                                                   //
+//                                                                                                //
+//************************************************************************************************//
 
 
 // create a button panel with ok and cancel buttons, and a debug checkbox
-function create_button_panel(owner, parent: TControl; var debug_checkbox: TCheckBox;): TPanel;
+function create_button_panel(owner, parent: TControl): TPanel;
 var
   panel, button_subpanel: TPanel;
+  debug_checkbox: TCheckBox;
   ok_button, cancel_button: TButton;
 begin
   if (parent = nil) then parent := owner;
@@ -1004,11 +1270,14 @@ begin
 
   debug_checkbox := TCheckBox.Create(owner);
   debug_checkbox.Parent := panel;
-  debug_checkbox.Caption := 'Debug Mode';
+  debug_checkbox.Caption := '&Debug Mode';
   debug_checkbox.Alignment := taLeftJustify;
   set_margins_layout(debug_checkbox, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alRight);
   debug_checkbox.Height := CONTROL_HEIGHT * global_scale_factor;
   debug_checkbox.Width := caption_width(debug_checkbox) + (CHECKBOX_PADDING * global_scale_factor);
+  debug_checkbox.Checked := global_debug;
+  // event handlers
+  debug_checkbox.OnClick := debug_checkbox_click_handler;  // immediately toggle debug mode
 
   button_subpanel := TPanel.Create(owner);
   button_subpanel.Parent := panel;
@@ -1016,6 +1285,7 @@ begin
   set_margins_layout(button_subpanel, 0, 0, 0, 0, alRight);
 
   ok_button := TButton.Create(owner);
+  ok_button.Name := OK_BUTTON_NAME;
   ok_button.Parent := button_subpanel;
   ok_button.Caption := 'OK';
   ok_button.Default := True;
@@ -1088,6 +1358,286 @@ begin
 end;
 
 
+// build and display the dialog used to select a plugin file to save into
+function show_file_dialog(record_file: IwbFile; var target_file: IwbFile): integer;
+var
+  frm: TForm;
+
+  description_label: TLabel;
+
+  filter_panel: TPanel;
+  filter_label: TLabel;
+  file_list_filter: TEdit;
+  filter_clear_button: TButton;
+
+  file_list_control: TListBox;
+
+  plugin_file: IwbFile;
+
+  i, target_file_index: integer;
+  plugin_filename, target_filename, new_plugin_filename, invalid_filename_characters, flag_text, dry_run_text: string;
+  new_plugin_is_light, new_plugin_is_master: boolean;
+  regexp: TPerlRegEx;
+begin
+  if (target_file <> nil) then target_filename := GetFileName(target_file);
+  target_file_index := -1;
+
+  frm := TForm.Create(nil);
+  temp_file_list := TStringList.Create();
+  try
+    frm.Caption := 'Rotate Cell Contents: Plugin Selection';
+    // frm.BorderStyle := bsSingle;
+    frm.BorderIcons := [biSystemMenu];
+    frm.Position := poScreenCenter;
+    frm.Width := 350 * global_scale_factor;
+    frm.Height := 400 * global_scale_factor;
+    frm.Constraints.MinWidth := 300 * global_scale_factor;
+    frm.Constraints.MinHeight := 300 * global_scale_factor;
+
+    description_label := TLabel.Create(frm);
+    description_label.Parent := frm;
+    // description_label.Caption := 'Select a plugin file to save the rotated cell contents into:';
+    description_label.Caption := 'For records from "' + GetFileName(record_file) + '":';
+    description_label.Layout := tlCenter;
+    description_label.WordWrap := True;
+    set_margins_layout(description_label, MARGIN_TOP, MARGIN_BOTTOM, MARGIN_LEFT, MARGIN_RIGHT, alTop);
+
+    // dynamic form width
+    frm.Width := max(frm.Width, caption_width(description_label) + (MARGIN_LEFT + MARGIN_RIGHT));
+
+    filter_panel := TPanel.Create(frm);
+    filter_panel.Parent := frm;
+    do_panel_layout(filter_panel, 0);
+    set_margins_layout(filter_panel, MARGIN_TOP, 0, MARGIN_LEFT, MARGIN_RIGHT, alTop);
+    filter_panel.Height := CONTROL_HEIGHT * global_scale_factor;
+
+    filter_label := TLabel.Create(frm);
+    filter_label.Parent := filter_panel;
+    filter_label.Caption := 'Filter:';
+    filter_label.Layout := tlCenter;
+    set_margins_layout(filter_label, 0, 0, 0, 0, alLeft);
+
+    file_list_filter := TEdit.Create(frm);
+    file_list_filter.Name := FILE_LIST_FILTER_NAME;
+    file_list_filter.Parent := filter_panel;
+    file_list_filter.Text := '';
+    file_list_filter.Hint := 'Type to filter the list';
+    file_list_filter.ShowHint := True;
+    set_margins_layout(file_list_filter, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alClient);
+    // event handlers
+    file_list_filter.OnChange := file_list_filter_change_handler;  // filter the list as the user types
+
+    filter_clear_button := TButton.Create(frm);
+    filter_clear_button.Parent := filter_panel;
+    filter_clear_button.Caption := 'Clear';
+    set_margins_layout(filter_clear_button, 0, 0, 0, 0, alRight);
+    filter_clear_button.Width := caption_width(filter_clear_button) + (BUTTON_PADDING * global_scale_factor);
+    // event handlers
+    filter_clear_button.OnClick := filter_clear_button_click_handler;  // clear the filter text
+
+    file_list_control := TListBox.Create(frm);
+    file_list_control.Name := FILE_LIST_CONTROL_NAME;
+    file_list_control.Parent := frm;
+    file_list_control.MultiSelect := False;
+    file_list_control.Hint := 'Click to select a file';
+    file_list_control.ShowHint := True;
+    set_margins_layout(file_list_control, MARGIN_TOP, MARGIN_BOTTOM, MARGIN_LEFT, MARGIN_RIGHT, alClient);
+    // event handlers
+    file_list_control.OnClick := file_list_click_handler;  // enable OK button when item is selected
+    file_list_control.OnDblClick := file_list_double_click_handler;  // "click" OK when item is double-clicked
+
+    create_button_panel(frm, frm).Align := alBottom;
+    TButton(frm.FindComponent(OK_BUTTON_NAME)).Enabled := False;  // disable the OK button by default
+
+    // populate the file list with the names of all files that can be edited
+    for i := 0 to Pred(FileCount) do begin
+      plugin_file := FileByIndex(i);
+      plugin_filename := GetFileName(plugin_file);
+      // check if file is editable, is not a master of the file of the currently-selected record,
+      // and is not the same file as the given record unless the global_save_to_same_file flag is set.
+      // arranged this way because boolean short-circuiting isn't done in xEdit scripts; functionally
+      // equivalent to `IsEditable() and (not HasMaster()) and (not SameText() or global_save_to_same_file)`
+      if IsEditable(plugin_file) then begin
+        if (not HasMaster(record_file, plugin_filename)) then begin
+          if (not SameText(plugin_filename, GetFileName(record_file))) or
+             (global_save_to_same_file) then begin
+            temp_file_list.AddObject(plugin_filename, plugin_file);
+            // if the filenames are the same (target_filename will be set if target_file is not nil),
+            // set the target_file_index to the index of the file in the list so it can be selected
+            // after the file list control is populated
+            if SameText(plugin_filename, target_filename) then
+              target_file_index := temp_file_list.Count - 1;
+          end;
+        end;
+      end;
+    end;
+
+    // add a new file options to the list, but restricted based on the game
+    // Morrowind (gmTES3) support might happen some day, so it's left in but commented out
+    // Starfield (gmSF1) is also mostly commented out because modding for it is still in its infancy (2024-03-28)
+    new_plugin_filename := ' + <new file>.';
+    case (wbGameMode) of
+      {gmTES3, }gmTES4, gmFO3, gmFNV, gmTES5, gmEnderal, gmFO4, gmSSE, gmEnderalSE, gmTES5VR, gmFO4VR, gmFO76{, gmSF1}:
+        temp_file_list.AddObject(new_plugin_filename + 'esp', NEW_FILE_ESP);
+    end;
+    case (wbGameMode) of
+      {gmTES3, }gmTES4, gmFO3, gmFNV, gmTES5, gmEnderal, gmFO4, gmSSE, gmEnderalSE, gmTES5VR, gmFO4VR, gmFO76{, gmSF1}:
+        temp_file_list.AddObject(new_plugin_filename + 'esp [master]', NEW_FILE_ESP_MASTER);
+    end;
+    case (wbGameMode) of
+      gmFO4, gmSSE, gmEnderalSE{, gmSF1}:
+        temp_file_list.AddObject(new_plugin_filename + 'esp [light]', NEW_FILE_ESP_LIGHT);
+    end;
+    case (wbGameMode) of
+      gmFO4, gmSSE, gmEnderalSE{, gmSF1}:
+        temp_file_list.AddObject(new_plugin_filename + 'esp [master, light]', NEW_FILE_ESP_MASTER_LIGHT);
+    end;
+    case (wbGameMode) of
+      {gmTES3, }gmTES4, gmFO3, gmFNV, gmTES5, gmEnderal, gmFO4, gmSSE, gmEnderalSE, gmTES5VR, gmFO4VR, gmFO76, gmSF1:
+        temp_file_list.AddObject(new_plugin_filename + 'esm', NEW_FILE_ESM);
+    end;
+    case (wbGameMode) of
+      gmFO4, gmSSE, gmEnderalSE{, gmSF1}:
+        temp_file_list.AddObject(new_plugin_filename + 'esl', NEW_FILE_ESL);
+    end;
+
+    // copy the list of files to the file list control and select the previously-selected file
+    file_list_control.Items.Assign(temp_file_list);
+    if (target_file_index >= 0) then begin
+      file_list_control.ItemIndex := target_file_index;
+      file_list_click_handler(file_list_control);
+    end;
+
+    // adjust form and control width to accommodate the longest item
+    file_list_control.ScrollWidth := max_item_width(file_list_control) + (MARGIN_LEFT + MARGIN_RIGHT);
+    frm.Width := Max(
+      file_list_control.ScrollWidth + (SCROLLBAR_PADDING + MARGIN_LEFT + MARGIN_RIGHT + 2) * global_scale_factor,
+      frm.Width
+    );
+    frm.Constraints.MinWidth := frm.Width;
+
+    // show the form as a modal dialog and exit if the OK button is not clicked
+    Result := frm.ShowModal;
+    if (Result <> mrOk) then exit;
+
+    // shouldn't ever happen, but just in case
+    if (file_list_control.ItemIndex < 0) then begin
+      AddMessage('No file selected');
+      Result := mrAbort;
+      exit;
+    end;
+    debug_print('show_file_dialog: item selected: (' + IntToStr(file_list_control.ItemIndex) + ') '
+      + file_list_control.Items[file_list_control.ItemIndex]);
+
+    // check if the selected file is a new file or an existing file
+    if (not ContainsText(file_list_control.Items[file_list_control.ItemIndex], new_plugin_filename)) then begin
+      // existing file selected
+
+      // pull out the IwbFile object from the file list control
+      target_file := ObjectToElement(file_list_control.Items.Objects[file_list_control.ItemIndex]);
+
+      // make sure the target file is actually set
+      if not Assigned(target_file) then begin
+        AddMessage('Error setting target file');
+        Result := mrAbort;
+        exit;
+      end;
+      debug_print('show_file_dialog: selected plugin file: ' + GetFileName(target_file));
+    end else begin
+      // new file selected
+
+      // get the new plugin filename from the user
+      new_plugin_filename := InputBox('New Plugin File', 'Filename without extension:', '');
+      debug_print('show_file_dialog: filename as entered: ' + new_plugin_filename);
+
+      // sanitize new_plugin_filename - characters <>:"/\|?* are not allowed
+      invalid_filename_characters := '<>:"/\|?*';
+      for i := 0 to Length(invalid_filename_characters) do begin
+        new_plugin_filename :=
+          StringReplace(new_plugin_filename, invalid_filename_characters[i], '', [rfReplaceAll]);
+      end;
+      debug_print('show_file_dialog: sanitized filename: ' + new_plugin_filename);
+
+      // remove trailing .esp, .esm, .esl
+      regexp := TPerlRegEx.Create();
+      try
+        regexp.Subject := new_plugin_filename;
+        regexp.RegEx := '\.esp$|\.esm$|\.esl$';
+        regexp.Replacement := '';
+        regexp.Options := [preCaseLess];
+        while regexp.Match() do regexp.Replace();
+        new_plugin_filename := regexp.Subject;
+      finally
+        regexp.Free();
+      end;
+      debug_print('show_file_dialog: filename after removing plugin file extensions: ' + new_plugin_filename);
+
+      // if new_plugin_filename ends up being empty after preprocessing, cancel the operation
+      if (new_plugin_filename = '') then begin
+        Result := mrCancel;
+        exit;
+      end;
+
+      // add the appropriate extension and set flags based on the selected new file option
+      case Integer(file_list_control.Items.Objects[file_list_control.ItemIndex]) of
+        NEW_FILE_ESP: begin
+          new_plugin_filename := new_plugin_filename + '.esp';
+          new_plugin_is_master := False; new_plugin_is_light := False; flag_text := 'none';
+        end;
+        NEW_FILE_ESP_MASTER: begin
+          new_plugin_filename := new_plugin_filename + '.esp';
+          new_plugin_is_master := True; new_plugin_is_light := False; flag_text := 'master';
+        end;
+        NEW_FILE_ESP_LIGHT: begin
+          new_plugin_filename := new_plugin_filename + '.esp';
+          new_plugin_is_master := False; new_plugin_is_light := True; flag_text := 'light';
+        end;
+        NEW_FILE_ESP_MASTER_LIGHT: begin
+          new_plugin_filename := new_plugin_filename + '.esp';
+          new_plugin_is_master := True; new_plugin_is_light := True; flag_text := 'master, light';
+        end;
+        NEW_FILE_ESM: begin
+          new_plugin_filename := new_plugin_filename + '.esm';
+          new_plugin_is_master := True; new_plugin_is_light := False; flag_text := 'master';
+        end;
+        NEW_FILE_ESL: begin
+          new_plugin_filename := new_plugin_filename + '.esl';
+          new_plugin_is_master := True; new_plugin_is_light := True; flag_text := 'master, light';
+        end;
+      end;
+
+      // actually create the new plugin file
+      if (global_dry_run) then dry_run_text := '[DRY RUN] ' else dry_run_text := '';
+      AddMessage(dry_run_text + 'Creating new plugin file: "' + new_plugin_filename + '" [flags: ' + flag_text + ']');
+      if (not global_dry_run) then begin
+        target_file := AddNewFileName(new_plugin_filename, new_plugin_is_light);
+
+        // make sure the new plugin file is created before attempting to make it a master
+        if (not Assigned(target_file)) then begin
+          AddMessage('Error creating new plugin file');
+          Result := mrAbort;
+          exit;
+        end;
+        debug_print('show_file_dialog: new plugin file created: ' + GetFileName(target_file));
+
+        // set the master flag on the new plugin file if necessary
+        SetIsESM(target_file, new_plugin_is_master);
+        debug_print('show_file_dialog: new plugin file has master flag: '
+          + bool_to_str(GetIsESM(target_file)));
+      end else begin
+        // if this is a try run, use the original record file as the target file
+        target_file := record_file;
+        debug_print('show_file_dialog: dry run: using original record file as target file');
+      end;
+    end;
+  finally
+    debug_print('show_file_dialog: cleaning up');
+    temp_file_list.Free();
+    frm.Free();
+  end;
+end;
+
+
 // build and display the dialog used to set the rotation options
 function show_options_dialog(): integer;
 var
@@ -1107,10 +1657,8 @@ var
   clamp_label, position_precision_label, rotation_precision_label: TLabel;
   clamp_combo, position_precision_combo, rotation_precision_combo: TComboBox;
 
-  meta_panel, dry_run_subpanel, use_same_settings_for_all_subpanel: TPanel;
-  dry_run, use_same_settings_for_all: TCheckBox;
-
-  debug_checkbox: TCheckBox;
+  meta_panel, dry_run_subpanel, save_same_file_subpanel, use_same_settings_for_all_subpanel: TPanel;
+  dry_run, save_same_file, use_same_settings_for_all: TCheckBox;
 
   i: integer;
 begin
@@ -1120,6 +1668,7 @@ begin
     frm.AutoSize := True;
     frm.BorderStyle := bsSingle;
     frm.BorderIcons := [biSystemMenu];
+    frm.Position := poScreenCenter;
     frm.Width := 425 * global_scale_factor;
 
     // angle panel
@@ -1438,6 +1987,22 @@ begin
     dry_run.Height := CONTROL_HEIGHT * global_scale_factor;
     dry_run.Width := caption_width(dry_run) + (CHECKBOX_PADDING * global_scale_factor);
 
+    save_same_file_subpanel := TPanel.Create(frm);
+    save_same_file_subpanel.Parent := meta_panel;
+    do_panel_layout(save_same_file_subpanel, 0);
+    set_margins_layout(save_same_file_subpanel, MARGIN_TOP, 0, 0, 0, alTop);
+    save_same_file_subpanel.Height := CONTROL_HEIGHT * global_scale_factor;
+
+    save_same_file := TCheckBox.Create(frm);
+    save_same_file.Parent := save_same_file_subpanel;
+    save_same_file.Caption := 'Save to Same File if Possible';
+    save_same_file.ShowHint := True;
+    save_same_file.Hint := 'Save the record to the same file if possible. Defaults to "'
+      + bool_to_checked_str(GLOBAL_SAVE_TO_SAME_FILE_DEFAULT) + '"';
+    set_margins_layout(save_same_file, 0, 0, MARGIN_LEFT, MARGIN_RIGHT, alLeft);
+    save_same_file.Height := CONTROL_HEIGHT * global_scale_factor;
+    save_same_file.Width := caption_width(save_same_file) + (CHECKBOX_PADDING * global_scale_factor);
+
     use_same_settings_for_all_subpanel := TPanel.Create(frm);
     use_same_settings_for_all_subpanel.Parent := meta_panel;
     do_panel_layout(use_same_settings_for_all_subpanel, 0);
@@ -1457,7 +2022,7 @@ begin
 
     // button panel
 
-    create_button_panel(frm, frm, debug_checkbox);
+    create_button_panel(frm, frm);
 
     // set the values on the various controls
 
@@ -1483,8 +2048,8 @@ begin
       rotation_precision_combo.Items.Add(precision_to_str(i));
     rotation_precision_combo.ItemIndex := -global_rotation_precision;
     dry_run.Checked := global_dry_run;
+    save_same_file.Checked := global_save_to_same_file;
     use_same_settings_for_all.Checked := global_use_same_settings_for_all;
-    debug_checkbox.Checked := global_debug;
 
     // set the widths of combo boxes to the width of their widest item
 
@@ -1514,11 +2079,11 @@ begin
       global_position_precision := -position_precision_combo.ItemIndex;
       global_rotation_precision := -rotation_precision_combo.ItemIndex;
       global_dry_run := dry_run.Checked;
+      global_save_to_same_file := save_same_file.Checked;
       global_use_same_settings_for_all := use_same_settings_for_all.Checked;
-      global_debug := debug_checkbox.Checked;
     end;
   finally
-    frm.Free;
+    frm.Free();
   end;
 end;
 
@@ -1554,8 +2119,6 @@ var
 
   button_panel: TPanel;
   include_all_button: TButton;
-
-  debug_checkbox: TCheckBox;
 const
   SIGNATURE_HINT = 'Comma-separated list of record signatures, e.g. "ACHR,REFR"';
   EDID_HINT_FULL = 'Comma-separated list of full editor IDs';
@@ -1567,6 +2130,7 @@ begin
     frm.AutoSize := True;
     frm.BorderStyle := bsSingle;
     frm.BorderIcons := [biSystemMenu];
+    frm.Position := poScreenCenter;
     frm.Width := 600 * global_scale_factor;
 
     // filter panels
@@ -1586,7 +2150,7 @@ begin
 
     // button panel
 
-    button_panel := create_button_panel(frm, frm, debug_checkbox);
+    button_panel := create_button_panel(frm, frm);
 
     include_all_button := TButton.Create(frm);
     include_all_button.Parent := button_panel;
@@ -1623,7 +2187,6 @@ begin
     edid_equals_mode_include.Checked := (global_edid_equals_mode = FILTER_MODE_INCLUDE);
     edid_equals_mode_exclude.Checked := (global_edid_equals_mode = FILTER_MODE_EXCLUDE);
     edid_equals_list.Text := global_edid_equals_list;
-    debug_checkbox.Checked := global_debug;
 
     // show the form (duh)
 
@@ -1650,7 +2213,6 @@ begin
       global_edid_equals_use := edid_equals_use.Checked;
       global_edid_equals_mode := edid_equals_mode_include.Checked;
       global_edid_equals_list := edid_equals_list.Text;
-      global_debug := debug_checkbox.Checked;
     end else if (Result = mrYesToAll) then begin  // include all button
       global_record_signature_use := False;
       global_refr_name_signature_use := False;
@@ -1658,17 +2220,18 @@ begin
       global_edid_ends_with_use := False;
       global_edid_contains_use := False;
       global_edid_equals_use := False;
-      global_debug := debug_checkbox.Checked;
     end;
   finally
-    frm.Free;
+    frm.Free();
   end;
 end;
 
 
-//
-// XEDIT SCRIPT FUNCTIONS
-//
+//************************************************************************************************//
+//                                                                                                //
+// XEDIT SCRIPT FUNCTIONS                                                                         //
+//                                                                                                //
+//************************************************************************************************//
 
 
 // initialize the script (ran once at the beginning)
@@ -1676,8 +2239,9 @@ function Initialize(): integer;
 begin
   // check xEdit version
   if (wbVersionNumber < MINIMUM_REQUIRED_XEDIT_VERSION) then begin
-    AddMessage('You need to update xEdit to version ' + version_number_to_str(MINIMUM_REQUIRED_XEDIT_VERSION)
-      + ' or higher to use this script');
+    AddMessage('This script uses functions only available in xEdit version '
+      + version_number_to_str(MINIMUM_REQUIRED_XEDIT_VERSION)
+      + ' or higher; please update to use this script');
     Result := 1;
     exit;
   end;
@@ -1719,14 +2283,23 @@ begin
   global_rotation_precision := GLOBAL_ROTATION_PRECISION_DEFAULT;
 
   global_dry_run := GLOBAL_DRY_RUN_DEFAULT;
+  global_save_to_same_file := GLOBAL_SAVE_TO_SAME_FILE_DEFAULT;
   global_use_same_settings_for_all := GLOBAL_USE_SAME_SETTINGS_FOR_ALL_DEFAULT;
 
   // calculate the global scale factor to ensure that the UI looks good on all systems
   global_scale_factor := Screen.PixelsPerInch / 96.0;
+  debug_print('Initialize: global_scale_factor = ' + float_to_str(global_scale_factor, 4, False));
+
+  // initialize the target file variables
+  global_target_file_list := TStringList.Create();
+  global_target_file_list.Sorted := True;
+  global_target_file_list.CaseSensitive := False;
+  global_target_file_list.Duplicates := dupIgnore;
 
   // allow the user to make a choice about which records will be processed
   Result := show_record_filter_dialog();
-  debug_print('Initialize: dialog returned ' + IntToStr(Result) + ': ' + modal_result_to_str(Result));
+  debug_print('Initialize: show_record_filter_dialog returned ' + IntToStr(Result) + ': '
+    + modal_result_to_str(Result));
   if (Result = mrOk) or (Result = mrYesToAll) then begin
     Result := 0;
   end else begin
@@ -1737,8 +2310,7 @@ end;
 
 
 // process record (ran for each record)
-// TODO select file
-function Process(e: IInterface): integer;
+function Process(current_record: IInterface): integer;
 var
   raw_x, raw_y, raw_z: double;
   initial_rotation_x, initial_rotation_y, initial_rotation_z: double;
@@ -1747,12 +2319,23 @@ var
   initial_position_x, initial_position_y, initial_position_z: double;
   final_position_x, final_position_y, final_position_z: double;
   operation_mode_text, dry_run_text, additional_final_text: string;
+  file_list_index: integer;
+  original_record: IInterface;
+  current_file, target_file: IwbFile;
 begin
+  // put the record through the filter to see if it should be processed, but don't fail the entire
+  // run if the record doesn't pass the filter, just skip it via early exit
+  if (not filter_record(current_record)) then begin
+    debug_print('Process: filter_record returned False, skipping record ' + ShortName(current_record));
+    exit;
+  end;
+
   // show the rotation options if they haven't been shown yet or if the user has chosen to not use
   // the same settings for all records
   if (not global_use_same_settings_for_all) or (not global_options_dialog_shown) then begin
     Result := show_options_dialog();
-    debug_print('Process: dialog returned ' + IntToStr(Result) + ': ' + modal_result_to_str(Result));
+    debug_print('Process: show_options_dialog returned ' + IntToStr(Result) + ': '
+      + modal_result_to_str(Result));
     global_options_dialog_shown := True;
     if (Result = mrOk) then begin
       Result := 0;
@@ -1762,12 +2345,74 @@ begin
     end;
   end;
 
-  // TODO show a file dialog somewhere around here
+  current_file := GetFile(current_record);
 
-  // run the record through the filter to see if it should be processed, but don't fail the entire
-  // script if the record doesn't pass the filter, just skip it via early exit
-  if (not filter_record(e)) then begin
-    debug_print('Process: filter_record returned False, skipping record ' + ShortName(e));
+  // if the file is editable and global_save_to_same_file has been set, other options can be ignored
+  // and the record can be saved to the same file
+  if IsEditable(current_file) and global_save_to_same_file then begin
+    target_file := current_file;
+    debug_print('Process: editable file, saving to same file');
+
+  // otherwise the user will be prompted to select a target file at least once for each separate file
+  // that they have selected records from. after that, depending on how the options are set, the user
+  // may be prompted to select a target file for each record, or the same target file will be used
+  // for all records from a given file
+  end else begin
+    // determine if the current record's file has been processed before and if so, retrieve the file
+    // otherwise set target_file to nil
+    if global_target_file_list.Find(GetFileName(current_file), file_list_index) then begin
+      target_file := ObjectToElement(global_target_file_list.Objects[file_list_index]);
+      debug_print('Process: existing target file found for ' + GetFileName(current_file) + ': '
+        + GetFileName(target_file));
+    end else begin
+      target_file := nil;
+      debug_print('Process: no existing target file found for ' + GetFileName(current_file));
+    end;
+
+    // target_file is unassigned if the current record's file has not been processed before and so a
+    // target file must be selected, regardless of whether the global_use_same_settings_for_all has
+    // been set or not
+    if (not Assigned(target_file)) or (not global_use_same_settings_for_all) then begin
+      // show the file dialog to get the target file
+      Result := show_file_dialog(current_file, target_file);
+      debug_print('Process: show_file_dialog returned ' + IntToStr(Result) + ': '
+        + modal_result_to_str(Result));
+
+      // handle the result of the file dialog by either adding target_file to the global list of
+      // target files, or by exiting the script
+      if (Result = mrOk) then begin
+        Result := 0;
+        global_target_file_list.AddObject(GetFileName(current_file), target_file);
+        debug_print('Process: added target file ' + GetFileName(target_file) + ' for '
+          + GetFileName(current_file));
+      end else if (Result = mrCancel) then begin
+        AddMessage('User cancelled the operation');
+        exit;
+      end else begin
+        exit;
+      end;
+    end;
+  end;
+
+  // double check that target_file is assigned, since it should be at this point. then proceed to add
+  // the required masters and copy the record to the target file, unless this is a dry run
+  if Assigned(target_file) then begin
+    debug_print('Process: target_file is assigned, adding masters and copying record');
+    // save a reference to the current record before the variable is overwritten by the copy. this
+    // is done because while the script operates on the copy, the original record is where the
+    // initial position/rotation are pulled from
+    original_record := current_record;
+    if (not global_dry_run) then begin
+      AddRequiredElementMasters(current_record, target_file, True);
+      current_record := wbCopyElementToFile(current_record, target_file, False, True);
+    end else begin
+      debug_print('Process: dry run, not actually adding masters and copying record to target file');
+    end;
+    debug_print('Process: file of new record: ' + GetFileName(GetFile((current_record))));
+  end else begin
+    // this branch shouldn't ever get triggered, but putting it here as an escape hatch just in case
+    AddMessage('No target file found for ' + GetFileName(current_file));
+    Result := mrAbort;
     exit;
   end;
 
@@ -1780,15 +2425,15 @@ begin
 
   // show initial messaging, including the full name of the record being processed and the rotation
   // that will be applied
-  AddMessage(FullPath(e));
+  AddMessage(FullPath(current_record));
   AddMessage(dry_run_text + operation_mode_text + qv_to_str(0, global_rotate_x, global_rotate_y,
     global_rotate_z, False, False, False, True, ' = ', '', DIGITS_ANGLE) + ' using rotation sequence '
     + rotation_sequence_to_str(global_rotation_sequence));
 
   // get initial rotation
-  initial_rotation_x := GetElementNativeValues(e, 'DATA - Position/Rotation\Rotation\X');
-  initial_rotation_y := GetElementNativeValues(e, 'DATA - Position/Rotation\Rotation\Y');
-  initial_rotation_z := GetElementNativeValues(e, 'DATA - Position/Rotation\Rotation\Z');
+  initial_rotation_x := GetElementNativeValues(original_record, 'DATA - Position/Rotation\Rotation\X');
+  initial_rotation_y := GetElementNativeValues(original_record, 'DATA - Position/Rotation\Rotation\Y');
+  initial_rotation_z := GetElementNativeValues(original_record, 'DATA - Position/Rotation\Rotation\Z');
   debug_print('Process: initial rotation: ' + vector_to_str(initial_rotation_x, initial_rotation_y,
     initial_rotation_z, False, True, DIGITS_ANGLE));
 
@@ -1828,9 +2473,9 @@ begin
       initial_rotation_y, initial_rotation_z, True, True, DIGITS_ANGLE));
 
     if (not global_dry_run) then begin
-      SetElementNativeValues(e, 'DATA - Position/Rotation\Rotation\X', final_rotation_x);
-      SetElementNativeValues(e, 'DATA - Position/Rotation\Rotation\Y', final_rotation_y);
-      SetElementNativeValues(e, 'DATA - Position/Rotation\Rotation\Z', final_rotation_z);
+      SetElementNativeValues(current_record, 'DATA - Position/Rotation\Rotation\X', final_rotation_x);
+      SetElementNativeValues(current_record, 'DATA - Position/Rotation\Rotation\Y', final_rotation_y);
+      SetElementNativeValues(current_record, 'DATA - Position/Rotation\Rotation\Z', final_rotation_z);
     end;
 
     AddMessage(dry_run_text + 'Final rotation:   ' + vector_to_str(final_rotation_x, final_rotation_y,
@@ -1877,9 +2522,9 @@ begin
     end;
 
     // get the initial position
-    initial_position_x := GetElementEditValues(e, 'DATA - Position/Rotation\Position\X');
-    initial_position_y := GetElementEditValues(e, 'DATA - Position/Rotation\Position\Y');
-    initial_position_z := GetElementEditValues(e, 'DATA - Position/Rotation\Position\Z');
+    initial_position_x := GetElementEditValues(original_record, 'DATA - Position/Rotation\Position\X');
+    initial_position_y := GetElementEditValues(original_record, 'DATA - Position/Rotation\Position\Y');
+    initial_position_z := GetElementEditValues(original_record, 'DATA - Position/Rotation\Position\Z');
     AddMessage(dry_run_text + 'Initial position: ' + vector_to_str(initial_position_x,
       initial_position_y, initial_position_z, True, False, DIGITS_POSITION));
 
@@ -1904,9 +2549,9 @@ begin
 
     // apply the position to the record
     if (not global_dry_run) then begin
-      SetElementNativeValues(e, 'DATA - Position/Rotation\Position\X', final_position_x);
-      SetElementNativeValues(e, 'DATA - Position/Rotation\Position\Y', final_position_y);
-      SetElementNativeValues(e, 'DATA - Position/Rotation\Position\Z', final_position_z);
+      SetElementNativeValues(current_record, 'DATA - Position/Rotation\Position\X', final_position_x);
+      SetElementNativeValues(current_record, 'DATA - Position/Rotation\Position\Y', final_position_y);
+      SetElementNativeValues(current_record, 'DATA - Position/Rotation\Position\Z', final_position_z);
     end;
 
     AddMessage(dry_run_text + 'Final position:   ' + vector_to_str(final_position_x, final_position_y,
@@ -1916,11 +2561,10 @@ end;
 
 
 // clean up the script (ran once at the end)
-// function Finalize(): integer;
-// var
-// const
-// begin
-// end;
+function Finalize(): integer;
+begin
+  global_target_file_list.Free();
+end;
 
 
 end.
