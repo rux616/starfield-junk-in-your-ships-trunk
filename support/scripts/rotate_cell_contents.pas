@@ -36,7 +36,7 @@ unit rotate_cell_contents;
 
 
 (*
-  Rotate Cell Contents v1.0.1
+  Rotate Cell Contents v1.1.0
 
   I've done my best to organize this code into logical sections, but it's still just a lot of code.
 
@@ -319,7 +319,7 @@ end;
 // return the width of a control's caption
 function caption_width(control: TControl): integer;
 begin
-  Result := string_width(control.Caption, control.Font, nil);
+  Result := string_width(StringReplace(control.Caption, '&', '', [rfReplaceAll]), control.Font, nil);
 end;
 
 
@@ -1147,7 +1147,7 @@ begin
   // everything i've read says this should be (q * v * q'), but only (q' * (v * q)) gives the correct
   // results ¯\_(ツ)_/¯
   quaternion_multiply(  // calculate (v * q)
-    0, vx, vy, vz,
+    0.0, vx, vy, vz,
     qw, qx, qy, qz,
     qwv, qxv, qyv, qzv
   );
@@ -1287,14 +1287,14 @@ begin
   ok_button := TButton.Create(owner);
   ok_button.Name := OK_BUTTON_NAME;
   ok_button.Parent := button_subpanel;
-  ok_button.Caption := 'OK';
+  ok_button.Caption := '&OK';
   ok_button.Default := True;
   ok_button.ModalResult := mrOk;
   set_margins_layout(ok_button, MARGIN_TOP, MARGIN_BOTTOM, MARGIN_LEFT, MARGIN_RIGHT, alRight);
 
   cancel_button := TButton.Create(owner);
   cancel_button.Parent := button_subpanel;
-  cancel_button.Caption := 'Cancel';
+  cancel_button.Caption := 'Ca&ncel';
   cancel_button.Cancel := True;
   cancel_button.ModalResult := mrCancel;
   set_margins_layout(cancel_button, MARGIN_TOP, MARGIN_BOTTOM, MARGIN_LEFT, MARGIN_RIGHT, alRight);
@@ -1396,10 +1396,8 @@ begin
 
     description_label := TLabel.Create(frm);
     description_label.Parent := frm;
-    // description_label.Caption := 'Select a plugin file to save the rotated cell contents into:';
     description_label.Caption := 'For records from "' + GetFileName(record_file) + '":';
     description_label.Layout := tlCenter;
-    description_label.WordWrap := True;
     set_margins_layout(description_label, MARGIN_TOP, MARGIN_BOTTOM, MARGIN_LEFT, MARGIN_RIGHT, alTop);
 
     // dynamic form width
@@ -1429,7 +1427,7 @@ begin
 
     filter_clear_button := TButton.Create(frm);
     filter_clear_button.Parent := filter_panel;
-    filter_clear_button.Caption := 'Clear';
+    filter_clear_button.Caption := '&Clear';
     set_margins_layout(filter_clear_button, 0, 0, 0, 0, alRight);
     filter_clear_button.Width := caption_width(filter_clear_button) + (BUTTON_PADDING * global_scale_factor);
     // event handlers
@@ -1898,7 +1896,7 @@ begin
     clamp_use_checkbox := TCheckBox.Create(frm);
     clamp_use_checkbox.Parent := clamp_subpanel;
     clamp_use_checkbox.Alignment := taLeftJustify;
-    clamp_use_checkbox.Caption := 'Clamp';
+    clamp_use_checkbox.Caption := '&Clamp';
     clamp_use_checkbox.ShowHint := True;
     clamp_use_checkbox.Hint := 'Clamp the rotation to multiples of the specified angle. Defaults to "'
       + bool_to_checked_str(GLOBAL_CLAMP_USE_DEFAULT) + '"';
@@ -1979,7 +1977,7 @@ begin
 
     dry_run := TCheckBox.Create(frm);
     dry_run.Parent := dry_run_subpanel;
-    dry_run.Caption := 'Dry Run';
+    dry_run.Caption := 'Dry &Run';
     dry_run.ShowHint := True;
     dry_run.Hint := 'Do not actually perform the rotation, just show what would be done. Defaults to "'
       + bool_to_checked_str(GLOBAL_DRY_RUN_DEFAULT) + '"';
@@ -1995,7 +1993,7 @@ begin
 
     save_same_file := TCheckBox.Create(frm);
     save_same_file.Parent := save_same_file_subpanel;
-    save_same_file.Caption := 'Save to Same File if Possible';
+    save_same_file.Caption := '&Save to Same File if Possible';
     save_same_file.ShowHint := True;
     save_same_file.Hint := 'Save the record to the same file if possible. Defaults to "'
       + bool_to_checked_str(GLOBAL_SAVE_TO_SAME_FILE_DEFAULT) + '"';
@@ -2011,7 +2009,7 @@ begin
 
     use_same_settings_for_all := TCheckBox.Create(frm);
     use_same_settings_for_all.Parent := use_same_settings_for_all_subpanel;
-    use_same_settings_for_all.Caption := 'Use Same Settings for All';
+    use_same_settings_for_all.Caption := 'Use Same Settings for &All';
     use_same_settings_for_all.ShowHint := True;
     use_same_settings_for_all.Hint := 'Use the same settings for all records. Defaults to "'
       + bool_to_checked_str(GLOBAL_USE_SAME_SETTINGS_FOR_ALL_DEFAULT) + '"';
@@ -2154,7 +2152,7 @@ begin
 
     include_all_button := TButton.Create(frm);
     include_all_button.Parent := button_panel;
-    include_all_button.Caption := 'Include All';
+    include_all_button.Caption := 'Include &All';
     include_all_button.ModalResult := mrYesToAll;
     include_all_button.ShowHint := True;
     include_all_button.Hint := 'Include all records - this will close the dialog and ignore all other settings';
