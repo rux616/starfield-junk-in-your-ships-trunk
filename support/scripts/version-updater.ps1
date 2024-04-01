@@ -53,8 +53,8 @@ function Get-StringHash([string] $content) {
 # stop the script if an uncaught error happens
 $ErrorActionPreference = "Stop"
 
-# source version file
-. "./.version.ps1"
+# source version class
+. "./support/scripts/version-class.ps1"
 
 # update build number
 $version.IncrementBuild()

@@ -34,8 +34,8 @@ function New-TemporaryDirectory {
 # stop the script if an uncaught error happens
 $ErrorActionPreference = "Stop"
 
-# source version file
-. "./.version.ps1"
+# source version class
+. "./support/scripts/version-class.ps1"
 
 $ba2_base_name = if ($PluginName) { $PluginName } else { $ModName.Replace(" ", "") }
 $local_dir = Get-Location

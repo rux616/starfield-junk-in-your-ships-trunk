@@ -18,8 +18,8 @@
 
 
 # version info
-$version_major = 2
-$version_minor = 18
+$version_major = 3
+$version_minor = 0
 $version_patch = 0
 
 # prerelease info
@@ -30,76 +30,5 @@ $is_beta = $false
 $is_alpha = $false
 
 # build info
-$build_number = 88
+$build_number = 99
 $include_build_in_version = $false
-
-
-
-class Version {
-    ### PROPERTIES
-    # version info
-    [int] $VersionMajor = $version_major
-    [int] $VersionMinor = $version_minor
-    [int] $VersionPatch = $version_patch
-
-    # prerelease info
-    [int] $VersionPrerelease = $version_prerelease
-    [bool] $IsPrerelease = $is_pre
-    [bool] $IsReleaseCandidate = $is_rc
-    [bool] $IsBeta = $is_beta
-    [bool] $IsAlpha = $is_alpha
-
-    # build info
-    [int] $BuildNumber = $build_number
-    [bool] $IncludeBuildInVersionDefault = $include_build_in_version
-
-
-    ### METHODS
-    [void] IncrementBuild() {
-        $this.BuildNumber += 1
-    }
-
-    [string] ToString() {
-        return $this.ToString($this.IncludeBuildInVersionDefault)
-    }
-
-    [string] ToString([bool] $WithBuild) {
-        # check to see if this is a pre-release
-        if ($this.IsPrerelease) {
-            [string] $prerelease_classification = "pre"
-        }
-        elseif ($this.IsReleaseCandidate) {
-            [string] $prerelease_classification = "rc"
-        }
-        elseif ($this.IsBeta) {
-            [string] $prerelease_classification = "beta"
-        }
-        elseif ($this.IsAlpha) {
-            [string] $prerelease_classification = "alpha"
-        }
-        else {
-            [string] $prerelease_classification = ""
-        }
-
-        # build the version strings
-        [string] $version = (
-            $this.VersionMajor.ToString() + "." +
-            $this.VersionMinor.ToString() + "." +
-            $this.VersionPatch.ToString()
-        )
-        if ($prerelease_classification) {
-            $version += "-$prerelease_classification"
-            if ($this.VersionPrerelease) {
-                $version += "." + $this.VersionPrerelease.ToString()
-            }
-        }
-        if ($WithBuild) {
-            return $version + "+" + $this.BuildNumber.ToString()
-        }
-        else {
-            return $version
-        }
-    }
-}
-
-$version = [Version]::new()
