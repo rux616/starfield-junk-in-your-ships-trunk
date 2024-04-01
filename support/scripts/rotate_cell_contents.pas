@@ -5,7 +5,7 @@
   Note: Starfield uses right-hand rule coordinates (https://en.wikipedia.org/wiki/Right-hand_rule#Coordinates)
   and rotations are clockwise positive (left-hand grip rule - thumb represents positive direction
   of axis of rotation and the fingers curl in the direction of a positive rotation), done in a ZYX
-  sequence. Facing the front of a ship:
+  sequence. Looking at the front of a ship that's facing you:
     +x is left (starboard)
     -x is right (port)
     +y is towards you (fore)
@@ -14,7 +14,11 @@
     -z is down
   --------------------
   Hotkey: Ctrl+Shift+R
-  --------------------
+}
+unit rotate_cell_contents;
+
+
+(*
   Copyright 2024 Dan Cassidy
 
   This program is free software: you can redistribute it and/or modify
@@ -31,12 +35,8 @@
   along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
   SPDX-License-Identifier: GPL-3.0-or-later
-}
-unit rotate_cell_contents;
-
-
-(*
-  Rotate Cell Contents v1.1.0
+  --------------------------------------------------------------------------------------------------
+  Rotate Cell Contents v1.2.0
 
   I've done my best to organize this code into logical sections, but it's still just a lot of code.
 
