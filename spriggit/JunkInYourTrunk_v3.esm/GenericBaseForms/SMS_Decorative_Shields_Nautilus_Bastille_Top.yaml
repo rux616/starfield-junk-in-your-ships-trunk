@@ -1,0 +1,45 @@
+FormKey: 001532:JunkInYourTrunk_v3.esm
+EditorID: SMS_Decorative_Shields_Nautilus_Bastille_Top
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 00ACDB:Starfield.esm
+    Value: 3
+  - ActorValue: 27BACE:Starfield.esm
+    Value: 10
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: 17ABF0:Starfield.esm
+- MutagenObjectType: DestructibleObjectComponent
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 27BABF:Starfield.esm
+  - 1462CB:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: 'Dekorativ: Nautilus Bastille'
+    - Language: English
+      String: 'Decorative: Nautilus Bastille'
+    - Language: Spanish
+      String: 'Decorativo: Nautilus Bastille'
+    - Language: French
+      String: ' Décoratif : Nautilus Bastille'
+    - Language: Italian
+      String: 'Decorativo: Nautilus Bastille'
+    - Language: Japanese
+      String: '装飾: ノーチラス バスティーユ'
+    - Language: Polish
+      String: 'Dekoracyjne: Nautilus Bastille'
+    - Language: Portuguese_Brazil
+      String: 'Decorativo: Nautilus Bastille'
+    - Language: ChineseSimplified
+      String: 装饰：鹦鹉螺巴士底狱
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component

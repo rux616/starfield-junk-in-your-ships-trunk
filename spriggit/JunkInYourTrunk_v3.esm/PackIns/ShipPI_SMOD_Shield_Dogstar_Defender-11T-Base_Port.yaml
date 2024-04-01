@@ -1,0 +1,19 @@
+FormKey: 002396:JunkInYourTrunk_v3.esm
+MajorRecordFlagsRaw: 512
+EditorID: ShipPI_SMOD_Shield_Dogstar_Defender-11T-Base_Port
+FormVersion: 558
+StarfieldMajorRecordFlags:
+- 0x200
+ObjectBounds:
+  First: 0.7441406, -1.5097656, -1.5097656
+  Second: 4, 1.5097656, 1.5097656
+ODTY: 0
+Transforms:
+  Ship: 050F92:Starfield.esm
+Filter: '\Ships\Modules\Exterior\Shield\Dogstar\'
+Cell: 002397:JunkInYourTrunk_v3.esm
+Version: 0
+FNAM: 0x0E000000
+MaterialSwaps: []
+MajorFlags:
+- Prefab

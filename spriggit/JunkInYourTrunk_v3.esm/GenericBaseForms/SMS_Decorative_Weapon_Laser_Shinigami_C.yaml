@@ -1,0 +1,45 @@
+FormKey: 001E5A:JunkInYourTrunk_v3.esm
+EditorID: SMS_Decorative_Weapon_Laser_Shinigami_C
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 00ACDB:Starfield.esm
+    Value: 1
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: 20255E:Starfield.esm
+- MutagenObjectType: DestructibleObjectComponent
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 0B8537:Starfield.esm
+  - 1462C9:Starfield.esm
+  - 27BAC5:Starfield.esm
+  - 1219CA:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: 'Dekorativ: Shinigami LSR-C'
+    - Language: English
+      String: 'Decorative: Shinigami LSR-C'
+    - Language: Spanish
+      String: 'Decorativo: Shinigami LSR-C'
+    - Language: French
+      String: 'Décoratif : Shinigami LSR-C'
+    - Language: Italian
+      String: 'Decorativo: Shinigami LSR-C '
+    - Language: Japanese
+      String: 装飾:死神 LSR-C
+    - Language: Polish
+      String: 'Dekoracyjny: Shinigami LSR-C'
+    - Language: Portuguese_Brazil
+      String: 'Decorativo: Shinigami LSR-C'
+    - Language: ChineseSimplified
+      String: 装饰：Shinigami LSR-C
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component

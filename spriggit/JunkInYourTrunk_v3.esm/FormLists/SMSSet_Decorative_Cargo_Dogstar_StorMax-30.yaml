@@ -1,0 +1,36 @@
+FormKey: 0016C0:JunkInYourTrunk_v3.esm
+EditorID: SMSSet_Decorative_Cargo_Dogstar_StorMax-30
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: 'Dekorativ: Dogstar StorMax 30-Set'
+  - Language: English
+    String: Decorative Dogstar StorMax 30 Set
+  - Language: Spanish
+    String: Juego decorativo Dogstar StorMax 30
+  - Language: French
+    String: Ensemble décoratif Dogstar StorMax 30
+  - Language: Italian
+    String: Set decorativo Dogstar StorMax 30
+  - Language: Japanese
+    String: 装飾品 ドッグスターStorMax 30 セット
+  - Language: Polish
+    String: Zestaw dekoracyjny Dogstar StorMax 30
+  - Language: Portuguese_Brazil
+    String: Conjunto Decorativo Dogstar StorMax 30
+  - Language: ChineseSimplified
+    String: 装饰性 Dogstar StorMax 30 套装
+Items:
+- 0015A1:JunkInYourTrunk_v3.esm
+- 0015A2:JunkInYourTrunk_v3.esm
+- 0015A3:JunkInYourTrunk_v3.esm
+- 0015A4:JunkInYourTrunk_v3.esm
+- 0015A5:JunkInYourTrunk_v3.esm
+- 0015A6:JunkInYourTrunk_v3.esm
+- 0015A7:JunkInYourTrunk_v3.esm
+- 0015A8:JunkInYourTrunk_v3.esm
+- 0015A9:JunkInYourTrunk_v3.esm
+- 0015AA:JunkInYourTrunk_v3.esm
+- 0015AB:JunkInYourTrunk_v3.esm
+- 0015AC:JunkInYourTrunk_v3.esm

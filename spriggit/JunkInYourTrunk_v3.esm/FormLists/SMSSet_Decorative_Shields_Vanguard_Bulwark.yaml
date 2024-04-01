@@ -1,0 +1,30 @@
+FormKey: 001599:JunkInYourTrunk_v3.esm
+EditorID: SMSSet_Decorative_Shields_Vanguard_Bulwark
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Dekoratives Vangard-Bollwerk-Set
+  - Language: English
+    String: Decorative Vangard Bulwark Set
+  - Language: Spanish
+    String: Conjunto de baluarte Vangard decorativo
+  - Language: French
+    String: Décoratif Ensemble de rempart Vangard
+  - Language: Italian
+    String: Set decorativo Vangard Bulwark
+  - Language: Japanese
+    String: 装飾ヴァンガードブルワーク セット
+  - Language: Polish
+    String: Dekoracyjny zestaw obronny Vangard
+  - Language: Portuguese_Brazil
+    String: Conjunto decorativo de baluarte Vangard
+  - Language: ChineseSimplified
+    String: 装饰先锋堡垒套装
+Items:
+- 00156B:JunkInYourTrunk_v3.esm
+- 00156C:JunkInYourTrunk_v3.esm
+- 00156D:JunkInYourTrunk_v3.esm
+- 00156E:JunkInYourTrunk_v3.esm
+- 00156F:JunkInYourTrunk_v3.esm
+- 001570:JunkInYourTrunk_v3.esm

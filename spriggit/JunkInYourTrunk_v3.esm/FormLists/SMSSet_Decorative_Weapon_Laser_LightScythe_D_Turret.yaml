@@ -1,0 +1,28 @@
+FormKey: 001E77:JunkInYourTrunk_v3.esm
+EditorID: SMSSet_Decorative_Weapon_Laser_LightScythe_D_Turret
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Dekoratives Light Scythe LSR-D Turret Set
+  - Language: English
+    String: Decorative Light Scythe LSR-D Turret Set
+  - Language: Spanish
+    String: Juego de torreta LSR-D con guadaña luminosa decorativa
+  - Language: French
+    String: Ensemble de tourelle décorative Light Scythe LSR-D
+  - Language: Italian
+    String: ' Set torretta LSR-D con falce leggera decorativa'
+  - Language: Japanese
+    String: 装飾ライトサイズ LSR-D タレットセット
+  - Language: Polish
+    String: Zestaw dekoracyjnych wież Light Scythe LSR-D
+  - Language: Portuguese_Brazil
+    String: Conjunto de torre decorativa Light Scythe LSR-D
+  - Language: ChineseSimplified
+    String: 装饰光镰 LSR-D 炮塔套件
+Items:
+- 001E56:JunkInYourTrunk_v3.esm
+- 001E57:JunkInYourTrunk_v3.esm
+- 001E58:JunkInYourTrunk_v3.esm
+- 001E59:JunkInYourTrunk_v3.esm

@@ -1,0 +1,48 @@
+FormKey: 2258DA:Starfield.esm
+EditorID: SMSSet_Cargo_Panoptes_daGama-1000
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Panoptes da Gama 1000 Set
+  - Language: English
+    String: Panoptes da Gama 1000 Set
+  - Language: Spanish
+    String: Conjunto Panoptes da Gama 1000
+  - Language: French
+    String: Panoptes da Ensemble Gama 1000
+  - Language: Italian
+    String: Set Panoptes da Gama 1000
+  - Language: Japanese
+    String: パノプテスダ ガマ 1000 セット
+  - Language: Polish
+    String: Zestaw Panoptes da Gama 1000
+  - Language: Portuguese_Brazil
+    String: Conjunto Panoptes da Gama 1000
+  - Language: ChineseSimplified
+    String: Panoptes da Gama 1000 套装
+Items:
+- 270474:Starfield.esm
+- 2258DB:Starfield.esm
+- 000C58:JunkInYourTrunk_v3.esm
+- 000C55:JunkInYourTrunk_v3.esm
+- 000CF3:JunkInYourTrunk_v3.esm
+- 000CF4:JunkInYourTrunk_v3.esm
+- 000CF5:JunkInYourTrunk_v3.esm
+- 000CF6:JunkInYourTrunk_v3.esm
+- 000CF7:JunkInYourTrunk_v3.esm
+- 000CF8:JunkInYourTrunk_v3.esm
+- 000C56:JunkInYourTrunk_v3.esm
+- 000C57:JunkInYourTrunk_v3.esm
+- 000CF9:JunkInYourTrunk_v3.esm
+- 000CFA:JunkInYourTrunk_v3.esm
+- 000C59:JunkInYourTrunk_v3.esm
+- 000CFB:JunkInYourTrunk_v3.esm
+- 000CFC:JunkInYourTrunk_v3.esm
+- 000C5A:JunkInYourTrunk_v3.esm
+- 000CFD:JunkInYourTrunk_v3.esm
+- 000CFE:JunkInYourTrunk_v3.esm
+- 000CFF:JunkInYourTrunk_v3.esm
+- 000D00:JunkInYourTrunk_v3.esm
+- 000D01:JunkInYourTrunk_v3.esm
+- 000D02:JunkInYourTrunk_v3.esm

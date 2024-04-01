@@ -1,0 +1,48 @@
+FormKey: 000A98:JunkInYourTrunk_v3.esm
+EditorID: AAA_JIYT_TEMPLATE_Aft_Top
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 0002D4:Starfield.esm
+    Value: 5
+  - ActorValue: 0002DC:Starfield.esm
+  - ActorValue: 00ACDB:Starfield.esm
+  - ActorValue: 27BACE:Starfield.esm
+    Value: 60
+  - ActorValue: 02B344:Starfield.esm
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: Null
+- MutagenObjectType: DestructibleObjectComponent
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 27BABE:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: Achtern oben
+    - Language: English
+      String: Aft Top
+    - Language: Spanish
+      String: Parte superior de popa
+    - Language: French
+      String: Aft Top
+    - Language: Italian
+      String: Top di poppa
+    - Language: Japanese
+      String: 後部トップ
+    - Language: Polish
+      String: Góra rufowa
+    - Language: Portuguese_Brazil
+      String: Top traseiro
+    - Language: ChineseSimplified
+      String: 船尾顶部
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component
+- Spaceship_InstanceData

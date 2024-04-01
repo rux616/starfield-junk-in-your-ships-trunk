@@ -1,0 +1,36 @@
+FormKey: 16AE4F:Starfield.esm
+EditorID: SMSSet_Cargo_Sextant_Ballast-200CM
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Sextant Ballast 200CM Set
+  - Language: English
+    String: Sextant Ballast 200CM Set
+  - Language: Spanish
+    String: Juego Sextant Ballast 200CM
+  - Language: French
+    String: Ensemble de ballast sextant 200 CM
+  - Language: Italian
+    String: 'Set zavorra sestante 200CM '
+  - Language: Japanese
+    String: 六分儀バラスト 200CM セット
+  - Language: Polish
+    String: Zestaw balastowy sekstantu 200CM
+  - Language: Portuguese_Brazil
+    String: Sextante Lastro 200CM Conjunto
+  - Language: ChineseSimplified
+    String: 六分仪镇流器 200CM 套件
+Items:
+- 00ACD8:Starfield.esm
+- 17AB4F:Starfield.esm
+- 00080E:JunkInYourTrunk_v3.esm
+- 000806:JunkInYourTrunk_v3.esm
+- 000816:JunkInYourTrunk_v3.esm
+- 00081E:JunkInYourTrunk_v3.esm
+- 000826:JunkInYourTrunk_v3.esm
+- 00082E:JunkInYourTrunk_v3.esm
+- 00086A:JunkInYourTrunk_v3.esm
+- 00086B:JunkInYourTrunk_v3.esm
+- 000850:JunkInYourTrunk_v3.esm
+- 000851:JunkInYourTrunk_v3.esm

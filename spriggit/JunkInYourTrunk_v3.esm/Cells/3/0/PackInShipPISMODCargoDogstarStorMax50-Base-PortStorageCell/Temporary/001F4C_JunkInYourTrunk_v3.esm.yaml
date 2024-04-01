@@ -1,0 +1,6 @@
+MutagenObjectType: PlacedObject
+FormKey: 001F4C:JunkInYourTrunk_v3.esm
+Base: 003316:Starfield.esm
+ConstrainedDecal: 6, 1, 0.5
+Position: -0.19482286, -3.7499995, -0.09036561
+Rotation: 1.5707964, 1.192093E-07, 3.1292447E-07

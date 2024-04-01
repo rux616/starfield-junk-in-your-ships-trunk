@@ -1,0 +1,19 @@
+FormKey: 002180:JunkInYourTrunk_v3.esm
+MajorRecordFlagsRaw: 512
+EditorID: ShipPI_SMOD_Cargo_Sextant_Ballast-200CM-Base_Port
+FormVersion: 558
+StarfieldMajorRecordFlags:
+- 0x200
+ObjectBounds:
+  First: 1.5791016, -3.2246094, -1.2880859
+  Second: 4, 3.2226562, 1.2880859
+ODTY: 0
+Transforms:
+  Ship: 050FCE:Starfield.esm
+Filter: '\Ships\Modules\Exterior\Cargo\Sextant\'
+Cell: 002181:JunkInYourTrunk_v3.esm
+Version: 0
+FNAM: 0x0E000000
+MaterialSwaps: []
+MajorFlags:
+- Prefab

@@ -1,0 +1,30 @@
+FormKey: 001598:JunkInYourTrunk_v3.esm
+EditorID: SMSSet_Decorative_Shields_Sextant_Warden
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Dekoratives Sextant Warden Set
+  - Language: English
+    String: Decorative Sextant Warden Set
+  - Language: Spanish
+    String: Juego decorativo Sextant Warden
+  - Language: French
+    String: Ensemble décoratif Sextant Warden
+  - Language: Italian
+    String: Set guardiano sestante decorativo
+  - Language: Japanese
+    String: 装飾用六分儀ウォーデン セット
+  - Language: Polish
+    String: Zestaw dekoracyjnego sekstantu Warden
+  - Language: Portuguese_Brazil
+    String: Conjunto Decorativo Sextant Warden
+  - Language: ChineseSimplified
+    String: 装饰性六分仪守望者套装
+Items:
+- 001565:JunkInYourTrunk_v3.esm
+- 001566:JunkInYourTrunk_v3.esm
+- 001567:JunkInYourTrunk_v3.esm
+- 001568:JunkInYourTrunk_v3.esm
+- 001569:JunkInYourTrunk_v3.esm
+- 00156A:JunkInYourTrunk_v3.esm

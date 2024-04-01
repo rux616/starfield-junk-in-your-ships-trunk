@@ -1,0 +1,15 @@
+FormKey: 000AB8:JunkInYourTrunk_v3.esm
+MajorRecordFlagsRaw: 512
+EditorID: AAA_JIYT_TEMPLATE_ShipPI_SMOD_Port_Btm
+StarfieldMajorRecordFlags:
+- 0x200
+ODTY: 0
+Transforms:
+  Ship: 050FBE:Starfield.esm
+Filter: '\Ships\Modules\Exterior\REPLACE\ME\'
+Cell: Null
+Version: 0
+FNAM: 0x0E000000
+MaterialSwaps: []
+MajorFlags:
+- Prefab

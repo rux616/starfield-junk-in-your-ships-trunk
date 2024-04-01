@@ -1,0 +1,30 @@
+FormKey: 171211:Starfield.esm
+EditorID: SMCSet_Shields_Dogstar_Guardian-103D
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Dogstar Guardian 103D-Set
+  - Language: English
+    String: Dogstar Guardian 103D Set
+  - Language: Spanish
+    String: Conjunto Dogstar Guardian 103D
+  - Language: French
+    String: Ensemble Dogstar Guardian 103D
+  - Language: Italian
+    String: Set Dogstar Guardian 103D
+  - Language: Japanese
+    String: ドッグスター ガーディアン 103D セット
+  - Language: Polish
+    String: Zestaw Dogstar Guardian 103D
+  - Language: Portuguese_Brazil
+    String: Conjunto Dogstar Guardian 103D
+  - Language: ChineseSimplified
+    String: Dogstar Guardian 103D 套装
+Items:
+- 26F982:Starfield.esm
+- 17AB3E:Starfield.esm
+- 0014E7:JunkInYourTrunk_v3.esm
+- 0014E8:JunkInYourTrunk_v3.esm
+- 0014E9:JunkInYourTrunk_v3.esm
+- 0014EA:JunkInYourTrunk_v3.esm

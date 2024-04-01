@@ -1,0 +1,35 @@
+FormKey: 27045A:Starfield.esm
+EditorID: co_SMS_Cargo_Panoptes_Polo-2030
+Description:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Frachtmodule für Raumschiffe erhöhen den verfügbaren Platz deines Schiffsinventars.
+  - Language: English
+    String: Spaceship Cargo Modules increase your ship's inventory space.
+  - Language: Spanish
+    String: Los módulos de carga aumentan el espacio de inventario de la nave.
+  - Language: French
+    String: Les modules de soute augmentent l'espace d'inventaire de votre vaisseau.
+  - Language: Italian
+    String: I moduli di carico incrementano la capacità dell’inventario della nave.
+  - Language: Japanese
+    String: 宇宙船の貨物モジュールは艦船の所持品スペースを拡大する
+  - Language: Polish
+    String: Moduły ładowni zwiększają dostępne na twoim statku miejsce na przedmioty.
+  - Language: Portuguese_Brazil
+    String: Módulos de carga de nave aumentam o espaço de inventário da sua nave.
+  - Language: ChineseSimplified
+    String: 太空船货舱模块可提高你飞船物品栏空间。
+WorkbenchKeyword: 29C480:Starfield.esm
+RequiredPerks:
+- Perk: 2C59DC:Starfield.esm
+  Rank: 3
+CreatedObject: 000EF5:JunkInYourTrunk_v3.esm
+AmountProduced: 1
+MenuSortOrder: 8.906078
+LearnMethod: DefaultOrConditions
+Value: 7150
+Categories:
+- 2C155D:Starfield.esm
+RECF: 0

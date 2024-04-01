@@ -1,0 +1,48 @@
+FormKey: 000A97:JunkInYourTrunk_v3.esm
+EditorID: AAA_JIYT_TEMPLATE_Aft_Stbd
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 0002D4:Starfield.esm
+    Value: 5
+  - ActorValue: 0002DC:Starfield.esm
+  - ActorValue: 00ACDB:Starfield.esm
+  - ActorValue: 27BACE:Starfield.esm
+    Value: 60
+  - ActorValue: 02B344:Starfield.esm
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: Null
+- MutagenObjectType: DestructibleObjectComponent
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 27BAC2:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: Aft Stbd
+    - Language: English
+      String: Aft Stbd
+    - Language: Spanish
+      String: Aft Stbd
+    - Language: French
+      String: Aft Stbd
+    - Language: Italian
+      String: Aft Stbd
+    - Language: Japanese
+      String: 後部 Stbd
+    - Language: Polish
+      String: Rufa Stbd
+    - Language: Portuguese_Brazil
+      String: Aft Stbd
+    - Language: ChineseSimplified
+      String: 后支架
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component
+- Spaceship_InstanceData

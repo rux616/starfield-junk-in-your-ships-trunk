@@ -1,0 +1,48 @@
+FormKey: 001A34:JunkInYourTrunk_v3.esm
+EditorID: SMSSet_FuelTank_Dogstar_Ulysses-M20
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Dogstar Ulysses M20 Set
+  - Language: English
+    String: Dogstar Ulysses M20 Set
+  - Language: Spanish
+    String: Dogstar Ulysses M20 Set
+  - Language: French
+    String: Ensemble Dogstar Ulysses M20
+  - Language: Italian
+    String: Set Dogstar Ulysses M20
+  - Language: Japanese
+    String: ドッグスター ユリシーズ M20セット
+  - Language: Polish
+    String: Zestaw Dogstar Ulysses M20
+  - Language: Portuguese_Brazil
+    String: Conjunto Dogstar Ulysses M20
+  - Language: ChineseSimplified
+    String: Dogstar Ulysses M20 套装
+Items:
+- 001A1D:JunkInYourTrunk_v3.esm
+- 001A1E:JunkInYourTrunk_v3.esm
+- 001A1F:JunkInYourTrunk_v3.esm
+- 001A20:JunkInYourTrunk_v3.esm
+- 001A21:JunkInYourTrunk_v3.esm
+- 001A22:JunkInYourTrunk_v3.esm
+- 001A23:JunkInYourTrunk_v3.esm
+- 001A24:JunkInYourTrunk_v3.esm
+- 001A25:JunkInYourTrunk_v3.esm
+- 001A26:JunkInYourTrunk_v3.esm
+- 001A27:JunkInYourTrunk_v3.esm
+- 001A28:JunkInYourTrunk_v3.esm
+- 001A29:JunkInYourTrunk_v3.esm
+- 001A2A:JunkInYourTrunk_v3.esm
+- 001A2B:JunkInYourTrunk_v3.esm
+- 001A2C:JunkInYourTrunk_v3.esm
+- 001A2D:JunkInYourTrunk_v3.esm
+- 001A2E:JunkInYourTrunk_v3.esm
+- 001A2F:JunkInYourTrunk_v3.esm
+- 001A30:JunkInYourTrunk_v3.esm
+- 001A31:JunkInYourTrunk_v3.esm
+- 059EFA:Starfield.esm
+- 001A32:JunkInYourTrunk_v3.esm
+- 001A33:JunkInYourTrunk_v3.esm

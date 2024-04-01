@@ -1,0 +1,48 @@
+FormKey: 16E07F:Starfield.esm
+EditorID: SMSSet_Cargo_Sextant_Hauler-10T
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: 'Sextant: Hauler 10T-Set'
+  - Language: English
+    String: Sextant 10T Hauler Set
+  - Language: Spanish
+    String: Equipo de carguero Sextant 10T
+  - Language: French
+    String: Kit soute de transporteur Sextant 10T
+  - Language: Italian
+    String: Set trasportatore Sextant 10T
+  - Language: Japanese
+    String: セクスタント10Tホーラーセット
+  - Language: Polish
+    String: Sextant - zestaw Hauler 10 t
+  - Language: Portuguese_Brazil
+    String: 'Conj. Cargueiras Sextant 10T '
+  - Language: ChineseSimplified
+    String: 六分仪探测公司10T运输船套组
+Items:
+- 17AB1A:Starfield.esm
+- 17AB19:Starfield.esm
+- 00090C:JunkInYourTrunk_v3.esm
+- 00090D:JunkInYourTrunk_v3.esm
+- 00090E:JunkInYourTrunk_v3.esm
+- 00090F:JunkInYourTrunk_v3.esm
+- 0008FA:JunkInYourTrunk_v3.esm
+- 0008FB:JunkInYourTrunk_v3.esm
+- 000908:JunkInYourTrunk_v3.esm
+- 00090A:JunkInYourTrunk_v3.esm
+- 00090B:JunkInYourTrunk_v3.esm
+- 000909:JunkInYourTrunk_v3.esm
+- 000900:JunkInYourTrunk_v3.esm
+- 000903:JunkInYourTrunk_v3.esm
+- 000901:JunkInYourTrunk_v3.esm
+- 000902:JunkInYourTrunk_v3.esm
+- 000904:JunkInYourTrunk_v3.esm
+- 000905:JunkInYourTrunk_v3.esm
+- 000906:JunkInYourTrunk_v3.esm
+- 000907:JunkInYourTrunk_v3.esm
+- 0008FC:JunkInYourTrunk_v3.esm
+- 0008FD:JunkInYourTrunk_v3.esm
+- 0008FE:JunkInYourTrunk_v3.esm
+- 0008FF:JunkInYourTrunk_v3.esm

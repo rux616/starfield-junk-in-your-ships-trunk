@@ -1,0 +1,30 @@
+FormKey: 001397:JunkInYourTrunk_v3.esm
+EditorID: SMBSet_Shields_Protectorate_Osiris-2030-B
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Protectorate Osiris 2030-B-Set
+  - Language: English
+    String: Protectorate Osiris 2030-B Set
+  - Language: Spanish
+    String: Conjunto Protectorate Osiris 2030-B
+  - Language: French
+    String: Protectorate Osiris 2030-B Set
+  - Language: Italian
+    String: Set protettorato Osiride 2030-B
+  - Language: Japanese
+    String: Protectorate Osiris 2030-B セット
+  - Language: Polish
+    String: Zestaw Protectorate Osiris 2030-B
+  - Language: Portuguese_Brazil
+    String: Conjunto Protetorado Osiris 2030-B
+  - Language: ChineseSimplified
+    String: Protectorate Osiris 2030-B Set
+Items:
+- 0014CA:JunkInYourTrunk_v3.esm
+- 0014CB:JunkInYourTrunk_v3.esm
+- 0014CC:JunkInYourTrunk_v3.esm
+- 0014CD:JunkInYourTrunk_v3.esm
+- 0014CE:JunkInYourTrunk_v3.esm
+- 26F132:Starfield.esm

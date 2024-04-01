@@ -1,0 +1,52 @@
+FormKey: 001DAD:JunkInYourTrunk_v3.esm
+EditorID: SMS_Decorative_FuelTank_Dogstar_Ulysses-M40-M50_Btm_FA_Port
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 00ACDB:Starfield.esm
+    Value: 5
+  - ActorValue: 27BACE:Starfield.esm
+    Value: 50
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: 001AEE:JunkInYourTrunk_v3.esm
+- MutagenObjectType: DestructibleObjectComponent
+  Destructible:
+    Data:
+      Health: 1
+      DESTCount: 1
+    Stages:
+    - Explosion: 054057:Starfield.esm
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 27BABF:Starfield.esm
+  - 00D580:Starfield.esm
+  - 1462CD:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: 'Dekorativ: Dogstar Ulysses M40/M50'
+    - Language: English
+      String: 'Decorative: Dogstar Ulysses M40/M50'
+    - Language: Spanish
+      String: 'Decorativo: Dogstar Ulysses M40/M50'
+    - Language: French
+      String: 'Décoratif : Dogstar Ulysses M40/M50'
+    - Language: Italian
+      String: 'Decorativo: Dogstar Ulysses M40/M50'
+    - Language: Japanese
+      String: '装飾品: ドッグスター ユリシーズ M40/M50'
+    - Language: Polish
+      String: 'Dekoracyjny: Dogstar Ulysses M40/M50'
+    - Language: Portuguese_Brazil
+      String: 'Decorativo: Dogstar Ulysses M40/M50'
+    - Language: ChineseSimplified
+      String: 装饰：Dogstar Ulysses M40/M50
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component

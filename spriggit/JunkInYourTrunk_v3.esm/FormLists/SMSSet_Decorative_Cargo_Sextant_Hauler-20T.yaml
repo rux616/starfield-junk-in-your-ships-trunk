@@ -1,0 +1,36 @@
+FormKey: 0016D2:JunkInYourTrunk_v3.esm
+EditorID: SMSSet_Decorative_Cargo_Sextant_Hauler-20T
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Decorative Sextant Hauler 20T Set
+  - Language: English
+    String: Decorative Sextant Hauler 20T Set
+  - Language: Spanish
+    String: Conjunto Sextant Hauler 20T decorativo
+  - Language: French
+    String: Ensemble décoratif Sextant Hauler 20T
+  - Language: Italian
+    String: Set decorativo sestante trasportatore 20T
+  - Language: Japanese
+    String: 装飾六分儀運搬車 20T セット
+  - Language: Polish
+    String: Zestaw dekoracyjny Sextant Hauler 20T
+  - Language: Portuguese_Brazil
+    String: Conjunto Sextante Decorativo Hauler 20T
+  - Language: ChineseSimplified
+    String: 装饰六分仪搬运器 20T 套装
+Items:
+- 00169B:JunkInYourTrunk_v3.esm
+- 00169C:JunkInYourTrunk_v3.esm
+- 00169D:JunkInYourTrunk_v3.esm
+- 00169E:JunkInYourTrunk_v3.esm
+- 00169F:JunkInYourTrunk_v3.esm
+- 0016A0:JunkInYourTrunk_v3.esm
+- 0016A1:JunkInYourTrunk_v3.esm
+- 0016A2:JunkInYourTrunk_v3.esm
+- 0016A3:JunkInYourTrunk_v3.esm
+- 0016A4:JunkInYourTrunk_v3.esm
+- 0016A5:JunkInYourTrunk_v3.esm
+- 0016A6:JunkInYourTrunk_v3.esm

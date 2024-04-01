@@ -1,0 +1,28 @@
+FormKey: 001E74:JunkInYourTrunk_v3.esm
+EditorID: SMSSet_Decorative_Weapon_Laser_Horizon_B_Turret
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Dekorativer Horizon LSR-B-Turmsatz
+  - Language: English
+    String: Decorative Horizon LSR-B Turret Set
+  - Language: Spanish
+    String: Conjunto de torreta Horizon LSR-B decorativo
+  - Language: French
+    String: Ensemble de tourelle Horizon décoratif LSR-B
+  - Language: Italian
+    String: Set torretta decorativa Horizon LSR-B
+  - Language: Japanese
+    String: 装飾用ホライゾン LSR-B タレット セット
+  - Language: Polish
+    String: Dekoracyjny zestaw wież Horizon LSR-B
+  - Language: Portuguese_Brazil
+    String: Conjunto decorativo de torre Horizon LSR-B
+  - Language: ChineseSimplified
+    String: 装饰地平线LSR-B炮塔套装
+Items:
+- 001E20:JunkInYourTrunk_v3.esm
+- 001E21:JunkInYourTrunk_v3.esm
+- 001E22:JunkInYourTrunk_v3.esm
+- 001E23:JunkInYourTrunk_v3.esm

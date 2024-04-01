@@ -1,0 +1,45 @@
+FormKey: 00167C:JunkInYourTrunk_v3.esm
+EditorID: SMS_Decorative_Cargo_Sextant_Ballast-300CM-400CM_Fore
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 00ACDB:Starfield.esm
+    Value: 5
+  - ActorValue: 27BACE:Starfield.esm
+    Value: 30
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: 00088A:JunkInYourTrunk_v3.esm
+- MutagenObjectType: DestructibleObjectComponent
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 1462C5:Starfield.esm
+  - 27BABF:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: 'Dekorativ: Sextant Ballast 300CM/400CM'
+    - Language: English
+      String: 'Decorative: Sextant Ballast 300CM/400CM'
+    - Language: Spanish
+      String: 'Decorativo: Lastre Sextante 300CM/400CM'
+    - Language: French
+      String: 'Décoratif : Ballast Sextant 300CM/400CM'
+    - Language: Italian
+      String: 'Decorativo: zavorra sestante 300CM/400CM'
+    - Language: Japanese
+      String: '装飾: 六分儀バラスト 300CM/400CM'
+    - Language: Polish
+      String: 'Dekoracyjny: Sextant Balast 300CM/400CM'
+    - Language: Portuguese_Brazil
+      String: 'Decorativo: Lastro Sextante 300CM/400CM'
+    - Language: ChineseSimplified
+      String: 装饰：六分仪镇流器 300CM/400CM
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component

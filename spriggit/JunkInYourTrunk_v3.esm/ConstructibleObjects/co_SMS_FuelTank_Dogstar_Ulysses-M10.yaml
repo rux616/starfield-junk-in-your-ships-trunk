@@ -1,0 +1,49 @@
+FormKey: 270492:Starfield.esm
+EditorID: co_SMS_FuelTank_Dogstar_Ulysses-M10
+Description:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Treibstofftanks enthalten Helium-3 für Grav-Sprünge. Mit verbesserten Treibstofftanks schaffst du längere Reisen ohne Unterbrechungen.
+  - Language: English
+    String: Spaceship Fuel Tanks store Helium-3, which is used by the Grav Drive to perform a jump. Upgraded Fuel Tanks allow you to plot longer courses, to travel farther without stopping.
+  - Language: Spanish
+    String: Los tanques de combustible contienen helio-3, usado para realizar los saltos. Los tanques de combustible mejorados permiten viajes más largos sin necesidad de parar.
+  - Language: French
+    String: Les réservoirs contiennent de l'hélium 3, consommé lors des astroportations. Les réservoirs améliorés permettent des trajets plus longs, sans arrêts.
+  - Language: Italian
+    String: I serbatoi contengono elio-3, usato dal gravimotore per effettuare salti. Aggiornare i serbatoi consentirà rotte più lunghe e con meno soste.
+  - Language: Japanese
+    String: 宇宙船の燃料タンクは、グラヴ・ドライブがジャンプに使用するヘリウム3を貯蔵する。より良い燃料タンクがあれば、より長い進路を止まらずに移動できる
+  - Language: Polish
+    String: Baki na statku magazynują hel-3 wykorzystywany do skoków grawitonowych. Ulepszone baki pozwalają przemieszczać się na większe odległości bez postojów.
+  - Language: Portuguese_Brazil
+    String: Os tanques de combustível da nave armazenam hélio-3, usado pelo Motor Grav para realizar dobras. Tanques que recebem melhorias permitem trajetos mais longos e viagens sem paradas.
+  - Language: ChineseSimplified
+    String: 飞船燃料箱中存储着氦-3，供重力推动器进行跃迁。升级燃料箱可以让你规划更远的航线，不用停歇就飞得更远。
+WorkbenchKeyword: 29C480:Starfield.esm
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x000000
+  Unknown2: 17620
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    FirstParameter: 1453AE:Starfield.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Unknown1: 0x000000
+  Unknown2: 17620
+  Data:
+    MutagenObjectType: GetLevelConditionData
+    RunOnType: Reference
+    Reference: 000014:Starfield.esm
+  ComparisonValue: 1
+CreatedObject: 001A0C:JunkInYourTrunk_v3.esm
+AmountProduced: 1
+MenuSortOrder: 0.9531
+LearnMethod: DefaultOrConditions
+Value: 1250
+Categories:
+- 29C478:Starfield.esm
+RECF: 0

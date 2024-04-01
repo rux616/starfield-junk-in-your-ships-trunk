@@ -1,0 +1,45 @@
+FormKey: 001544:JunkInYourTrunk_v3.esm
+EditorID: SMS_Decorative_Shields_Sextant_Deflector_Fore_Port
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 00ACDB:Starfield.esm
+    Value: 3
+  - ActorValue: 27BACE:Starfield.esm
+    Value: 40
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: 0012BC:JunkInYourTrunk_v3.esm
+- MutagenObjectType: DestructibleObjectComponent
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 1462C5:Starfield.esm
+  - 27BABE:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: 'Dekorativ: Sextant-Deflektor'
+    - Language: English
+      String: 'Decorative: Sextant Deflector'
+    - Language: Spanish
+      String: 'Decorativo: Deflector Sextante'
+    - Language: French
+      String: 'Décoratif : Déflecteur de sextant'
+    - Language: Italian
+      String: 'Decorativo: deflettore sestante'
+    - Language: Japanese
+      String: '装飾: 六分儀ディフレクター'
+    - Language: Polish
+      String: 'Dekoracyjny: Deflektor sekstansowy'
+    - Language: Portuguese_Brazil
+      String: 'Decorativo: Defletor Sextante'
+    - Language: ChineseSimplified
+      String: 装饰：六分仪偏转器
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component

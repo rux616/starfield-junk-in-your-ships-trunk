@@ -1,0 +1,36 @@
+FormKey: 16AE46:Starfield.esm
+EditorID: SMSSet_CargoShielded_Protectorate_Caravel-V102
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: 'Protectorate: Abgeschirmt-Set Caravel V102'
+  - Language: English
+    String: Protectorate Caravel V102 Shielded Set
+  - Language: Spanish
+    String: Equipo oculto Protectorate Carabela V102
+  - Language: French
+    String: Kit soute blindée Caravel Protectorate V102
+  - Language: Italian
+    String: Set schermato Protectorate Caravel V102
+  - Language: Japanese
+    String: プロテクトレート・キャラベルV102シールドセット
+  - Language: Polish
+    String: Protectorate - zestaw osłaniany Caravel V102
+  - Language: Portuguese_Brazil
+    String: Conj. Reforçado Protectorate Caravel V102
+  - Language: ChineseSimplified
+    String: 保护国卡拉维尔V102隐秘货舱套组
+Items:
+- 26512C:Starfield.esm
+- 16AE38:Starfield.esm
+- 000B98:JunkInYourTrunk_v3.esm
+- 000B99:JunkInYourTrunk_v3.esm
+- 000B9A:JunkInYourTrunk_v3.esm
+- 000B9B:JunkInYourTrunk_v3.esm
+- 000B9C:JunkInYourTrunk_v3.esm
+- 000B9D:JunkInYourTrunk_v3.esm
+- 000B9E:JunkInYourTrunk_v3.esm
+- 000B9F:JunkInYourTrunk_v3.esm
+- 000BA0:JunkInYourTrunk_v3.esm
+- 000BA1:JunkInYourTrunk_v3.esm

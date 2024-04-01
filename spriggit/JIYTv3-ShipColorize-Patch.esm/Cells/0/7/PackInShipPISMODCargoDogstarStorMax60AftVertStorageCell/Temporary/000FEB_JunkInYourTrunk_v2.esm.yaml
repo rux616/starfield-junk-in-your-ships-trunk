@@ -1,0 +1,10 @@
+MutagenObjectType: PlacedObject
+FormKey: 000FEB:JunkInYourTrunk_v2.esm
+Components:
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 140158:Starfield.esm
+Base: 000803:ShipColorize.esm
+LayeredMaterialSwaps:
+- 0D68CA:Starfield.esm
+Rotation: 1.5707963, 0, 3.1415925

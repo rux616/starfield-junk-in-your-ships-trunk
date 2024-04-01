@@ -1,0 +1,28 @@
+FormKey: 001E7A:JunkInYourTrunk_v3.esm
+EditorID: SMSSet_Decorative_Weapon_Particle_Ballistic_B_Turret
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Dekoratives ballistisches PRT-B-Turm-Set
+  - Language: English
+    String: Decorative Ballistic PRT-B Turret Set
+  - Language: Spanish
+    String: Conjunto de torreta PRT-B balístico decorativo
+  - Language: French
+    String: Ensemble de tourelles balistiques décoratives PRT-B
+  - Language: Italian
+    String: Set torretta balistica decorativa PRT-B
+  - Language: Japanese
+    String: 装飾弾道 PRT-B タレット セット
+  - Language: Polish
+    String: Dekoracyjny Zestaw wieżyczek balistycznych PRT-B
+  - Language: Portuguese_Brazil
+    String: Conjunto de torre balística decorativa PRT-B
+  - Language: ChineseSimplified
+    String: 装饰弹道PRT-B炮塔套装
+Items:
+- 001E33:JunkInYourTrunk_v3.esm
+- 001E34:JunkInYourTrunk_v3.esm
+- 001E35:JunkInYourTrunk_v3.esm
+- 001E36:JunkInYourTrunk_v3.esm

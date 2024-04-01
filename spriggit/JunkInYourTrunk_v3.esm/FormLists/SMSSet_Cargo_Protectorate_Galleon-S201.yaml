@@ -1,0 +1,36 @@
+FormKey: 18CBF9:Starfield.esm
+EditorID: SMSSet_Cargo_Protectorate_Galleon-S201
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: 'Protectorate: Frachtraum-Set Galleon S201'
+  - Language: English
+    String: Protectorate Galleon S201 Set
+  - Language: Spanish
+    String: Equipo Protectorate Galleon S201
+  - Language: French
+    String: Kit Galleon S201 Protectorate
+  - Language: Italian
+    String: Set Protectorate Galleon S201
+  - Language: Japanese
+    String: プロテクトレート・ガレオンS201セット
+  - Language: Polish
+    String: Protectorate - zestaw Galleon S201
+  - Language: Portuguese_Brazil
+    String: Conj. Protectorate Galleon S201
+  - Language: ChineseSimplified
+    String: 保护国大帆船S202套组
+Items:
+- 270478:Starfield.esm
+- 18CBF7:Starfield.esm
+- 000D60:JunkInYourTrunk_v3.esm
+- 000D61:JunkInYourTrunk_v3.esm
+- 000D62:JunkInYourTrunk_v3.esm
+- 000D63:JunkInYourTrunk_v3.esm
+- 000D64:JunkInYourTrunk_v3.esm
+- 000D65:JunkInYourTrunk_v3.esm
+- 000D66:JunkInYourTrunk_v3.esm
+- 000D67:JunkInYourTrunk_v3.esm
+- 000D68:JunkInYourTrunk_v3.esm
+- 000D69:JunkInYourTrunk_v3.esm

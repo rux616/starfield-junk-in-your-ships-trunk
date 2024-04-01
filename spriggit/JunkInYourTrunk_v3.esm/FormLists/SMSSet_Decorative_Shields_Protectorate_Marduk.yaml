@@ -1,0 +1,30 @@
+FormKey: 001593:JunkInYourTrunk_v3.esm
+EditorID: SMSSet_Decorative_Shields_Protectorate_Marduk
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Dekoratives Protectorate Marduk-Set
+  - Language: English
+    String: Decorative Protectorate Marduk Set
+  - Language: Spanish
+    String: Conjunto decorativo Protectorate Marduk
+  - Language: French
+    String: Ensemble décoratif Protectorate Marduk
+  - Language: Italian
+    String: Set decorativo Protettorato Marduk
+  - Language: Japanese
+    String: 装飾保護領マルドゥック セット
+  - Language: Polish
+    String: Dekoracyjny zestaw Marduka Protektoratu
+  - Language: Portuguese_Brazil
+    String: Decorative Protectorate Marduk Set
+  - Language: ChineseSimplified
+    String: 装饰保护国 Marduk 套装
+Items:
+- 001535:JunkInYourTrunk_v3.esm
+- 001536:JunkInYourTrunk_v3.esm
+- 001537:JunkInYourTrunk_v3.esm
+- 001538:JunkInYourTrunk_v3.esm
+- 001539:JunkInYourTrunk_v3.esm
+- 00153A:JunkInYourTrunk_v3.esm

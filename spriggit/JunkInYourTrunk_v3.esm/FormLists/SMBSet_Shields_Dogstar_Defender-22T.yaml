@@ -1,0 +1,30 @@
+FormKey: 17120F:Starfield.esm
+EditorID: SMBSet_Shields_Dogstar_Defender-22T
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Dogstar Defender 22T-Set
+  - Language: English
+    String: Dogstar Defender 22T Set
+  - Language: Spanish
+    String: 'Conjunto Dogstar Defender 22T '
+  - Language: French
+    String: Ensemble Dogstar Defender 22T
+  - Language: Italian
+    String: Dogstar Set Defender 22T
+  - Language: Japanese
+    String: ドッグスター ディフェンダー 22T セット
+  - Language: Polish
+    String: Zestaw Dogstar Defender 22T
+  - Language: Portuguese_Brazil
+    String: Conjunto Dogstar Defender 22T
+  - Language: ChineseSimplified
+    String: Dogstar Defender 22T 套装
+Items:
+- 26F987:Starfield.esm
+- 17AB3C:Starfield.esm
+- 00138E:JunkInYourTrunk_v3.esm
+- 00138F:JunkInYourTrunk_v3.esm
+- 001390:JunkInYourTrunk_v3.esm
+- 001391:JunkInYourTrunk_v3.esm

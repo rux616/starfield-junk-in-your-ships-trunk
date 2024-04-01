@@ -1,0 +1,45 @@
+FormKey: 001E0E:JunkInYourTrunk_v3.esm
+EditorID: SMS_Decorative_Weapon_Particle_Vanguard_A
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 00ACDB:Starfield.esm
+    Value: 1
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: 15521D:Starfield.esm
+- MutagenObjectType: DestructibleObjectComponent
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 0B8537:Starfield.esm
+  - 1670BE:Starfield.esm
+  - 27BAC5:Starfield.esm
+  - 1219CA:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: 'Dekorativ: Vanguard PRT-A'
+    - Language: English
+      String: 'Decorative: Vanguard PRT-A'
+    - Language: Spanish
+      String: 'Decorativo: Vanguard PRT-A'
+    - Language: French
+      String: 'Décoratif : Vanguard PRT-A'
+    - Language: Italian
+      String: 'Decorativo: Vanguard PRT-A'
+    - Language: Japanese
+      String: '装飾: ヴァンガード PRT-A'
+    - Language: Polish
+      String: 'Dekoracja: Vanguard PRT-A'
+    - Language: Portuguese_Brazil
+      String: 'Decorativo: Vanguard PRT-A'
+    - Language: ChineseSimplified
+      String: 装饰：Vanguard PRT-A
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component

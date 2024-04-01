@@ -1,0 +1,48 @@
+FormKey: 0301D4:Starfield.esm
+EditorID: SMSSet_FuelTank_Dogstar_Ulysses-M50
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Dogstar Ulysses M40 Set
+  - Language: English
+    String: Dogstar Ulysses M40 Set
+  - Language: Spanish
+    String: Dogstar Ulysses M40 Set
+  - Language: French
+    String: Ensemble Dogstar Ulysses M40
+  - Language: Italian
+    String: Set Dogstar Ulysses M40
+  - Language: Japanese
+    String: ドッグスター ユリシーズ M40セット
+  - Language: Polish
+    String: Zestaw Dogstar Ulysses M40
+  - Language: Portuguese_Brazil
+    String: Conjunto Dogstar Ulysses M40
+  - Language: ChineseSimplified
+    String: Dogstar Ulysses M40 套装
+Items:
+- 0301D1:Starfield.esm
+- 0301D2:Starfield.esm
+- 001B6B:JunkInYourTrunk_v3.esm
+- 001B6C:JunkInYourTrunk_v3.esm
+- 001B6D:JunkInYourTrunk_v3.esm
+- 001B6E:JunkInYourTrunk_v3.esm
+- 001B6F:JunkInYourTrunk_v3.esm
+- 001B70:JunkInYourTrunk_v3.esm
+- 001B71:JunkInYourTrunk_v3.esm
+- 001B72:JunkInYourTrunk_v3.esm
+- 001B73:JunkInYourTrunk_v3.esm
+- 001B74:JunkInYourTrunk_v3.esm
+- 001B75:JunkInYourTrunk_v3.esm
+- 001B76:JunkInYourTrunk_v3.esm
+- 001B77:JunkInYourTrunk_v3.esm
+- 001B78:JunkInYourTrunk_v3.esm
+- 001B79:JunkInYourTrunk_v3.esm
+- 001B7A:JunkInYourTrunk_v3.esm
+- 001B7B:JunkInYourTrunk_v3.esm
+- 001B7C:JunkInYourTrunk_v3.esm
+- 001B7D:JunkInYourTrunk_v3.esm
+- 001B7E:JunkInYourTrunk_v3.esm
+- 001B7F:JunkInYourTrunk_v3.esm
+- 001B80:JunkInYourTrunk_v3.esm

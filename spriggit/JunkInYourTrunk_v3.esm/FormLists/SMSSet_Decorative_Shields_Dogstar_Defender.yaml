@@ -1,0 +1,30 @@
+FormKey: 001589:JunkInYourTrunk_v3.esm
+EditorID: SMSSet_Decorative_Shields_Dogstar_Defender
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Dekoratives Dogstar Defender-Set
+  - Language: English
+    String: Decorative Dogstar Defender Set
+  - Language: Spanish
+    String: 'Conjunto decorativo Dogstar Defender '
+  - Language: French
+    String: Ensemble décoratif Dogstar Defender
+  - Language: Italian
+    String: Set decorativo Dogstar Defender
+  - Language: Japanese
+    String: 装飾ドッグスター ディフェンダー セット
+  - Language: Polish
+    String: Ozdobny zestaw obrońcy Dogstar
+  - Language: Portuguese_Brazil
+    String: Conjunto Decorativo Dogstar Defender
+  - Language: ChineseSimplified
+    String: 装饰性 Dogstar Defender 套装
+Items:
+- 001553:JunkInYourTrunk_v3.esm
+- 001554:JunkInYourTrunk_v3.esm
+- 001555:JunkInYourTrunk_v3.esm
+- 001556:JunkInYourTrunk_v3.esm
+- 001557:JunkInYourTrunk_v3.esm
+- 001558:JunkInYourTrunk_v3.esm

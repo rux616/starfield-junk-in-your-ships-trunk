@@ -1,0 +1,50 @@
+FormKey: 0008ED:JunkInYourTrunk_v3.esm
+EditorID: SMS_Cargo_Sextant_Ballast-100CM_Fore_Btm
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 0002D4:Starfield.esm
+    Value: 5
+  - ActorValue: 0002DC:Starfield.esm
+    Value: 630
+  - ActorValue: 00ACDB:Starfield.esm
+    Value: 44
+  - ActorValue: 27BACE:Starfield.esm
+    Value: 20
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: 0008E6:JunkInYourTrunk_v3.esm
+- MutagenObjectType: DestructibleObjectComponent
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 1462C5:Starfield.esm
+  - 27BABF:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: Ballast 100CM Frachtraum
+    - Language: English
+      String: Ballast 100CM Cargo Hold
+    - Language: Spanish
+      String: Soporte de carga blindado Ballast 100CM
+    - Language: French
+      String: Ballast 100CM Cale
+    - Language: Italian
+      String: Stiva di carico zavorra 100CM
+    - Language: Japanese
+      String: バラスト 100CM 貨物倉
+    - Language: Polish
+      String: Balast 100CM z osłoniętą ładownią
+    - Language: Portuguese_Brazil
+      String: Suporte de carga blindado de lastro 100CM
+    - Language: ChineseSimplified
+      String: 镇流器 100CM 货舱
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component
+- Spaceship_InstanceData

@@ -1,0 +1,30 @@
+FormKey: 001395:JunkInYourTrunk_v3.esm
+EditorID: SMBSet_Shields_Vanguard_Bulwark
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: 'Vanguard Bollwerk-Set '
+  - Language: English
+    String: Vanguard Bulwark Set
+  - Language: Spanish
+    String: Conjunto de Baluarte Vanguard
+  - Language: French
+    String: Vanguard Bulwark Set
+  - Language: Italian
+    String: Set baluardo dell'avanguardia
+  - Language: Japanese
+    String: 前衛防壁セット
+  - Language: Polish
+    String: Zestaw osłony przedniej
+  - Language: Portuguese_Brazil
+    String: Conjunto Baluarte Vanguarda
+  - Language: ChineseSimplified
+    String: 先锋堡垒套装
+Items:
+- 0014B7:JunkInYourTrunk_v3.esm
+- 0014B8:JunkInYourTrunk_v3.esm
+- 0014B9:JunkInYourTrunk_v3.esm
+- 0014BA:JunkInYourTrunk_v3.esm
+- 0014BB:JunkInYourTrunk_v3.esm
+- 004246:Starfield.esm

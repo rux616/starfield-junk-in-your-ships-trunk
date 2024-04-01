@@ -1,0 +1,22 @@
+SpriggitSource:
+  PackageName: Spriggit.Yaml.Starfield
+  Version: 0.18.0
+ModKey: JIYTv3NoDecoratives.esm
+GameRelease: Starfield
+ModHeader:
+  Flags:
+  - Master
+  - Localized
+  Stats:
+    NumRecords: 122
+    NextFormID: 2048
+  Author: rux616
+  Description: >-
+    Hides all decorative ship modules from Junk In Your Trunk.
+
+
+    Version: 3.0.0
+  MasterReferences:
+  - Master: Starfield.esm
+  - Master: BlueprintShips-Starfield.esm
+  - Master: JunkInYourTrunk_v3.esm

@@ -1,0 +1,43 @@
+FormKey: 001574:JunkInYourTrunk_v3.esm
+EditorID: SMS_Decorative_Shields_Dogstar_Guardian_Port
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 00ACDB:Starfield.esm
+    Value: 3
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: 17AC08:Starfield.esm
+- MutagenObjectType: DestructibleObjectComponent
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 27BABF:Starfield.esm
+  - 1462CD:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: 'Dekorativ: Dogstar Guardian'
+    - Language: English
+      String: 'Decorative: Dogstar Guardian'
+    - Language: Spanish
+      String: ' Decorativo: Dogstar Guardian'
+    - Language: French
+      String: 'Décoratif : Dogstar Guardian'
+    - Language: Italian
+      String: 'Decorativo: Dogstar Guardian'
+    - Language: Japanese
+      String: '装飾: Dogstar Guardian'
+    - Language: Polish
+      String: 'Dekoracyjny: Strażnik Psiej Gwiazdy'
+    - Language: Portuguese_Brazil
+      String: 'Decorativo: Dogstar Guardian'
+    - Language: ChineseSimplified
+      String: 装饰：Dogstar Guardian
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component

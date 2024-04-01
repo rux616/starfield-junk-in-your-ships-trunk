@@ -1,0 +1,43 @@
+FormKey: 00157F:JunkInYourTrunk_v3.esm
+EditorID: SMS_Decorative_Shields_Protectorate_Odin_Fore
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 00ACDB:Starfield.esm
+    Value: 3
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: 0013CE:JunkInYourTrunk_v3.esm
+- MutagenObjectType: DestructibleObjectComponent
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 1462CC:Starfield.esm
+  - 27BABC:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: 'Dekorativ: Protektorat Odin'
+    - Language: English
+      String: 'Decorative: Protectorate Odin'
+    - Language: Spanish
+      String: 'Decorativo: Protectorado Odín'
+    - Language: French
+      String: 'Décoratif : Protectorat Odin'
+    - Language: Italian
+      String: 'Decorativo: protettorato di Odino'
+    - Language: Japanese
+      String: '装飾: 保護領オーディン'
+    - Language: Polish
+      String: 'Dekoracyjny: Protektorat Odin'
+    - Language: Portuguese_Brazil
+      String: 'Decorativo: Protetorado Odin'
+    - Language: ChineseSimplified
+      String: 装饰：奥丁保护国
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component

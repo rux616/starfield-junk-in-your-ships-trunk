@@ -1,0 +1,17 @@
+FormKey: 000800:JIYTv3-ShipColorize-Patch.esm
+EditorID: aSMOD_Cargo_Dogstar_StorMax-40_Port_NoSnap
+ObjectBounds:
+  First: 0.34057617, -4, -1.7509766
+  Second: 4.0078125, 4, 1.7509766
+ODTY: 0
+Model:
+  File: modded\SMOD_Cargo_Dogstar_StorMax-40_Port.nif
+  MaterialSwaps:
+  - 00B811:Starfield.esm
+  - 08DF58:Starfield.esm
+  FLLD: 0x01000000
+  XFLG: 0x02
+Keywords:
+- 1BB401:Starfield.esm
+- 207960:Starfield.esm
+DATA: 4

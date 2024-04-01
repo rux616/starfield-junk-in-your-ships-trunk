@@ -1,0 +1,32 @@
+FormKey: 0008B1:JunkInYourTrunk_v3.esm
+EditorID: SMSSet_Cargo_Sextant_Ballast-100CM
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Sextant Ballast 100CM Set
+  - Language: English
+    String: Sextant Ballast 100CM Set
+  - Language: Spanish
+    String: Juego Sextant Ballast 100CM
+  - Language: French
+    String: Ensemble de ballast sextant 100 CM
+  - Language: Italian
+    String: 'Set zavorra sestante 100CM '
+  - Language: Japanese
+    String: 六分儀バラスト 100CM セット
+  - Language: Polish
+    String: Zestaw balastowy sekstantu 100CM
+  - Language: Portuguese_Brazil
+    String: Sextante Lastro 100CM Conjunto
+  - Language: ChineseSimplified
+    String: 六分仪镇流器 100CM 套件
+Items:
+- 03059B:Starfield.esm
+- 0008EC:JunkInYourTrunk_v3.esm
+- 0008ED:JunkInYourTrunk_v3.esm
+- 0008F0:JunkInYourTrunk_v3.esm
+- 0008EE:JunkInYourTrunk_v3.esm
+- 0008F1:JunkInYourTrunk_v3.esm
+- 0008EF:JunkInYourTrunk_v3.esm
+- 0008F2:JunkInYourTrunk_v3.esm

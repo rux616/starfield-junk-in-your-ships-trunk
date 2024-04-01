@@ -1,0 +1,45 @@
+FormKey: 001616:JunkInYourTrunk_v3.esm
+EditorID: SMS_Decorative_Cargo_Protectorate_Caravel-V103_Stbd_Vert
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 00ACDB:Starfield.esm
+    Value: 5
+  - ActorValue: 27BACE:Starfield.esm
+    Value: 20
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: 000BDC:JunkInYourTrunk_v3.esm
+- MutagenObjectType: DestructibleObjectComponent
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 1462CC:Starfield.esm
+  - 27BABE:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: 'Dekorativ: Protectorate Caravel V103'
+    - Language: English
+      String: 'Decorative: Protectorate Caravel V103'
+    - Language: Spanish
+      String: 'Decorativo: Protectorate Caravel V103'
+    - Language: French
+      String: 'Décoratif : Protectorate Caravel V103'
+    - Language: Italian
+      String: 'Decorativo: Caravella del Protettorato V103'
+    - Language: Japanese
+      String: '装飾: 保護国キャラベル V103'
+    - Language: Polish
+      String: 'Dekoracyjny: Protektorat Caravel V103'
+    - Language: Portuguese_Brazil
+      String: 'Decorativo: Protetorado Caravela V103'
+    - Language: ChineseSimplified
+      String: 装饰：保护国卡拉维尔 V103
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component

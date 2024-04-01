@@ -1,0 +1,45 @@
+FormKey: 001E0B:JunkInYourTrunk_v3.esm
+EditorID: SMS_Decorative_Weapon_Particle_Ballistic_A
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 00ACDB:Starfield.esm
+    Value: 1
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: 202588:Starfield.esm
+- MutagenObjectType: DestructibleObjectComponent
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 0B8537:Starfield.esm
+  - 1462C7:Starfield.esm
+  - 27BAC5:Starfield.esm
+  - 1219CA:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: 'Dekorativ: Ballistic PRT-A'
+    - Language: English
+      String: 'Decorative: Ballistic PRT-A'
+    - Language: Spanish
+      String: 'Decorativo: Ballistic PRT-A'
+    - Language: French
+      String: Décoratif : Balistique PRT-A
+    - Language: Italian
+      String: 'Decorativo: Ballistico PRT-A'
+    - Language: Japanese
+      String: '装飾: バリスティック PRT-A'
+    - Language: Polish
+      String: 'Dekoracyjny: Balistyczny PRT-A'
+    - Language: Portuguese_Brazil
+      String: 'Decorativo: Balístico PRT-A'
+    - Language: ChineseSimplified
+      String: 装饰：弹道 PRT-A
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component

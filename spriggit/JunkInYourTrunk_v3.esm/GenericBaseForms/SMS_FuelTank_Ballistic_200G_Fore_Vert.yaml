@@ -1,0 +1,56 @@
+FormKey: 001792:JunkInYourTrunk_v3.esm
+EditorID: SMS_FuelTank_Ballistic_200G_Fore_Vert
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 0002D4:Starfield.esm
+    Value: 5
+  - ActorValue: 00854F:Starfield.esm
+    Value: 70
+  - ActorValue: 00ACDB:Starfield.esm
+    Value: 12
+  - ActorValue: 27BACE:Starfield.esm
+    Value: 30
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: 001780:JunkInYourTrunk_v3.esm
+- MutagenObjectType: DestructibleObjectComponent
+  Destructible:
+    Data:
+      Health: 1
+      DESTCount: 1
+    Stages:
+    - Explosion: 054057:Starfield.esm
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 00D580:Starfield.esm
+  - 1462C7:Starfield.esm
+  - 27BABE:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: He3-Tank 200G
+    - Language: English
+      String: 200G He3 Tank
+    - Language: Spanish
+      String: Tanque de helio-3 200G
+    - Language: French
+      String: Réservoir d'3He 200G
+    - Language: Italian
+      String: Serbatoio He3 200G
+    - Language: Japanese
+      String: 200G・He3タンク
+    - Language: Polish
+      String: Bak helu-3 200G
+    - Language: Portuguese_Brazil
+      String: Tanque de He3 200G
+    - Language: ChineseSimplified
+      String: 200G氦-3储罐
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component

@@ -1,0 +1,36 @@
+FormKey: 16556D:Starfield.esm
+EditorID: SMSSet_Cargo_Dogstar_StorMax-60
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: 'Dogstar: StorMax-Set 60'
+  - Language: English
+    String: Dogstar StorMax 60 Set
+  - Language: Spanish
+    String: Equipo Dogstar StorMax 60
+  - Language: French
+    String: Kit StorMax 60 Dogstar
+  - Language: Italian
+    String: Set Dogstar StorMax 60
+  - Language: Japanese
+    String: ドッグスター・ストーマックス60セット
+  - Language: Polish
+    String: Dogstar - zestaw StorMax 60
+  - Language: Portuguese_Brazil
+    String: Conj. Dogstar StorMax 60
+  - Language: ChineseSimplified
+    String: 犬星斯托麦克斯60套组
+Items:
+- 21FDD6:Starfield.esm
+- 165563:Starfield.esm
+- 00104E:JunkInYourTrunk_v3.esm
+- 00104F:JunkInYourTrunk_v3.esm
+- 001050:JunkInYourTrunk_v3.esm
+- 001051:JunkInYourTrunk_v3.esm
+- 001052:JunkInYourTrunk_v3.esm
+- 001053:JunkInYourTrunk_v3.esm
+- 001054:JunkInYourTrunk_v3.esm
+- 001055:JunkInYourTrunk_v3.esm
+- 001056:JunkInYourTrunk_v3.esm
+- 001057:JunkInYourTrunk_v3.esm

@@ -1,0 +1,48 @@
+FormKey: 2C2C57:Starfield.esm
+EditorID: co_SMS_Cargo_Sextant_Ballast-100CM
+Description:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Frachtmodule für Raumschiffe erhöhen den verfügbaren Platz deines Schiffsinventars.
+  - Language: English
+    String: Spaceship Cargo Modules increase your ship's inventory space.
+  - Language: Spanish
+    String: Los módulos de carga aumentan el espacio de inventario de la nave.
+  - Language: French
+    String: Les modules de soute augmentent l'espace d'inventaire de votre vaisseau.
+  - Language: Italian
+    String: I moduli di carico incrementano la capacità dell’inventario della nave.
+  - Language: Japanese
+    String: 宇宙船の貨物モジュールは艦船の所持品スペースを拡大する
+  - Language: Polish
+    String: Moduły ładowni zwiększają dostępne na twoim statku miejsce na przedmioty.
+  - Language: Portuguese_Brazil
+    String: Módulos de carga de nave aumentam o espaço de inventário da sua nave.
+  - Language: ChineseSimplified
+    String: 太空船货舱模块可提高你飞船物品栏空间。
+WorkbenchKeyword: 29C480:Starfield.esm
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x000000
+  Unknown2: 17620
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    FirstParameter: 1453A2:Starfield.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Unknown1: 0x000000
+  Unknown2: 17620
+  Data:
+    MutagenObjectType: GetLevelConditionData
+    RunOnType: Reference
+    Reference: 000014:Starfield.esm
+  ComparisonValue: 1
+CreatedObject: 0008B1:JunkInYourTrunk_v3.esm
+AmountProduced: 1
+LearnMethod: DefaultOrConditions
+Value: 750
+Categories:
+- 2C155D:Starfield.esm
+RECF: 0

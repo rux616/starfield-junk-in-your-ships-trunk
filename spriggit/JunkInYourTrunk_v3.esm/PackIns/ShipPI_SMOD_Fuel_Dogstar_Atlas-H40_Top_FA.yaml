@@ -1,0 +1,10 @@
+FormKey: 001C4A:JunkInYourTrunk_v3.esm
+EditorID: ShipPI_SMOD_Fuel_Dogstar_Atlas-H40_Top_FA
+ODTY: 0
+Transforms:
+  Ship: 050FBE:Starfield.esm
+Filter: '\Ships\Modules\Exterior\Fuel\Dogstar\'
+Cell: 001C4B:JunkInYourTrunk_v3.esm
+Version: 0
+FNAM: 0x0E000000
+MaterialSwaps: []

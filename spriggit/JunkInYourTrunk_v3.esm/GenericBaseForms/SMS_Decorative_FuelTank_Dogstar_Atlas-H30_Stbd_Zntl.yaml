@@ -1,0 +1,52 @@
+FormKey: 001D6A:JunkInYourTrunk_v3.esm
+EditorID: SMS_Decorative_FuelTank_Dogstar_Atlas-H30_Stbd_Zntl
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 00ACDB:Starfield.esm
+    Value: 5
+  - ActorValue: 27BACE:Starfield.esm
+    Value: 20
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: 17AC62:Starfield.esm
+- MutagenObjectType: DestructibleObjectComponent
+  Destructible:
+    Data:
+      Health: 1
+      DESTCount: 1
+    Stages:
+    - Explosion: 054057:Starfield.esm
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 00D580:Starfield.esm
+  - 1462CD:Starfield.esm
+  - 27BABF:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: 'Dekorativ: Dogstar Atlas H30'
+    - Language: English
+      String: 'Decorative: Dogstar Atlas H30'
+    - Language: Spanish
+      String: 'Decorativo: Dogstar Atlas H30'
+    - Language: French
+      String: 'Décoratif : Dogstar Atlas H30'
+    - Language: Italian
+      String: 'Decorativo: Dogstar Atlas H30'
+    - Language: Japanese
+      String: '装飾: ドッグスター アトラス H30'
+    - Language: Polish
+      String: 'Dekoracyjny: Dogstar Atlas H30'
+    - Language: Portuguese_Brazil
+      String: 'Decorativo: Dogstar Atlas H30'
+    - Language: ChineseSimplified
+      String: 装饰：Dogstar Atlas H30
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component

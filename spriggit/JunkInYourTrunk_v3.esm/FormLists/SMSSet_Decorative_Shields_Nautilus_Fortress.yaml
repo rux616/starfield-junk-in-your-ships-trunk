@@ -1,0 +1,30 @@
+FormKey: 00158C:JunkInYourTrunk_v3.esm
+EditorID: SMSSet_Decorative_Shields_Nautilus_Fortress
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Dekoratives Nautilus-Festungsset
+  - Language: English
+    String: Decorative Nautilus Fortress Set
+  - Language: Spanish
+    String: Conjunto de fortaleza Nautilus decorativo
+  - Language: French
+    String: Ensemble de forteresse décoratif Nautilus
+  - Language: Italian
+    String: Set decorativo Fortezza Nautilus
+  - Language: Japanese
+    String: 装飾品ノーチラス要塞セット
+  - Language: Polish
+    String: Dekoracyjny zestaw Twierdza Nautilus
+  - Language: Portuguese_Brazil
+    String: Conjunto Decorativo Nautilus Fortress
+  - Language: ChineseSimplified
+    String: 装饰鹦鹉螺堡垒套装
+Items:
+- 001577:JunkInYourTrunk_v3.esm
+- 001578:JunkInYourTrunk_v3.esm
+- 001579:JunkInYourTrunk_v3.esm
+- 00157A:JunkInYourTrunk_v3.esm
+- 00157B:JunkInYourTrunk_v3.esm
+- 00157C:JunkInYourTrunk_v3.esm

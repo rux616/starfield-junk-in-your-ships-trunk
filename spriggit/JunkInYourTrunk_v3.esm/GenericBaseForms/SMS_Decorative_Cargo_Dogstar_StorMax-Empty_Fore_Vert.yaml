@@ -1,0 +1,45 @@
+FormKey: 00173F:JunkInYourTrunk_v3.esm
+EditorID: SMS_Decorative_Cargo_Dogstar_StorMax-Empty_Fore_Vert
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 00ACDB:Starfield.esm
+    Value: 5
+  - ActorValue: 27BACE:Starfield.esm
+    Value: 40
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: 001733:JunkInYourTrunk_v3.esm
+- MutagenObjectType: DestructibleObjectComponent
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 27BABE:Starfield.esm
+  - 1462CD:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: 'Dekorativ: Dogstar StorMax Empty'
+    - Language: English
+      String: 'Decorative: Dogstar StorMax Empty'
+    - Language: Spanish
+      String: 'Decorativo: Dogstar StorMax Vacuum'
+    - Language: French
+      String: 'Décoratif : Dogstar StorMax Empty'
+    - Language: Italian
+      String: 'Decorativo: Dogstar StorMax vuoto'
+    - Language: Japanese
+      String: '装飾: ドッグスター StorMax 空'
+    - Language: Polish
+      String: 'Dekoracyjny: Dogstar StorMax pusty'
+    - Language: Portuguese_Brazil
+      String: 'Decorativo: Dogstar StorMax Vazio'
+    - Language: ChineseSimplified
+      String: 装饰：Dogstar StorMax Empty
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component
