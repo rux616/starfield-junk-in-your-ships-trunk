@@ -2,3 +2,5 @@
 meta.ini
 # exclude log files
 *.log
+# exclude GTMEMP.pas
+.vscode/GTEMP.pas
