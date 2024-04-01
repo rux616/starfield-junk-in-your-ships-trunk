@@ -26,8 +26,12 @@
 				"kind": "build",
 				"isDefault": true
 			},
+            "dependsOrder": "sequence",
             "dependsOn": [
-                "Render Markdown to Nexus BBCode"
+                "Serialize plugins",
+                "Render Markdown to Nexus BBCode",
+                "Render Markdown to Plaintext",
+                "Update Versions",
             ],
         },
         {
@@ -36,9 +40,6 @@
             "command": "./support/scripts/markdown-to-nexusbbcode.ps1",
             "args": [
                 "./support/docs/README.md",
-            ],
-            "dependsOn": [
-                "Render Markdown to Plaintext"
             ],
         },
         {
@@ -49,14 +50,16 @@
                 "./support/docs/README.md",
                 "./support/docs/CHANGELOG.md",
             ],
-            "dependsOn": [
-                "Update Versions"
-            ],
         },
         {
             "label": "Update Versions",
             "type": "shell",
             "command": "./support/scripts/version-updater.ps1",
+        },
+        {
+            "label": "Serialize plugins",
+            "type": "shell",
+            "command": "Get-Item .\\data\\*.es* | Where-Object -Property Name -match '\\.es[lmp]$' | ForEach-Object { .\\support\\bin\\SpriggitCLI\\Spriggit.CLI.exe serialize --InputPath \".\\data\\$($_.Name)\" --OutputPath \".\\spriggit\\$($_.Name)\" --GameRelease Starfield --PackageName Spriggit.Yaml }",
         },
         {
             "label": "Create xTranslator Batch Processor Script",
@@ -73,6 +76,6 @@
                 "JIYTv3NoDecoratives.esm",
                 "JunkInYourTrunk_v3.esm",
             ]
-        }
+        },
 	]
 }
