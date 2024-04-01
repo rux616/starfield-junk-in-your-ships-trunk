@@ -62,7 +62,7 @@ $version.IncrementBuild()
 "version with build: " + $version.ToString($true)
 
 # backup options
-[bool] $make_backups = $false
+[bool] $make_backups = $true
 [string] $backup_suffix = ".$((Get-Date).ToUniversalTime().ToString("yyyyMMddTHHmmss\Z")).backup"
 
 
@@ -105,13 +105,13 @@ $text_files | ForEach-Object {
     "Version Updater: Examining '$($_.file)'"
     $updated = 0
     $encoding = if ($_.encoding) { $_.encoding } else { "UTF8NoBOM" }
-    if ($make_backups) { Copy-Item -LiteralPath $file "$file$backup_suffix" }
     $_.search_and_replace | ForEach-Object {
         $content = Get-Content -LiteralPath $file -Encoding $encoding -Raw
         $original_hash = Get-StringHash $content
         $content = $content -replace $_.search, $_.replace
         $new_hash = Get-StringHash $content
         if ($new_hash -ne $original_hash) {
+            if ($make_backups) { Copy-Item -LiteralPath $file "$file$backup_suffix" }
             $content | Set-Content -LiteralPath $file -Encoding $encoding -NoNewline
             $updated += 1
         }
