@@ -36,7 +36,7 @@ unit rotate_cell_contents;
 
   SPDX-License-Identifier: GPL-3.0-or-later
   --------------------------------------------------------------------------------------------------
-  Rotate Cell Contents v1.2.0
+  Rotate Cell Contents v1.2.1
 
   I've done my best to organize this code into logical sections, but it's still just a lot of code.
 
@@ -2471,6 +2471,12 @@ begin
     debug_print('Process: clamped rotation: ' + vector_to_str(final_rotation_x, final_rotation_y,
       final_rotation_z, False, True, DIGITS_ANGLE));
   end;
+
+  // rounding or clamping may have caused the rotation to fall outside the desired range of angles,
+  // so normalize them
+  final_rotation_x := normalize_angle(final_rotation_x);
+  final_rotation_y := normalize_angle(final_rotation_y);
+  final_rotation_z := normalize_angle(final_rotation_z);
 
   // apply previously-computed rotation to the record
   if (global_apply_to_rotation) then begin
