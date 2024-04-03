@@ -1,0 +1,7 @@
+MutagenObjectType: PlacedObject
+FormKey: 002414:JunkInYourTrunk_v3.esm
+MajorRecordFlagsRaw: 2048
+StarfieldMajorRecordFlags:
+- InitiallyDisabled
+Base: 2194FB:Starfield.esm
+Position: 0, -2, -1.5
