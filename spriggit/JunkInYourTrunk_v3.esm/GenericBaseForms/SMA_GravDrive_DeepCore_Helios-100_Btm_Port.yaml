@@ -12,7 +12,7 @@ Components:
   - ActorValue: 00ACDB:Starfield.esm
     Value: 26
   - ActorValue: 27BACE:Starfield.esm
-    Value: 10
+    Value: 20
   - ActorValue: 2BFAFD:Starfield.esm
     Value: 16
   - ActorValue: 1EF0CB:Starfield.esm
@@ -42,7 +42,7 @@ Components:
 - MutagenObjectType: FullNameComponent
   Name:
     TargetLanguage: English
-    Value: Btm Port
+    Value: Helios 100 Grav Drive
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

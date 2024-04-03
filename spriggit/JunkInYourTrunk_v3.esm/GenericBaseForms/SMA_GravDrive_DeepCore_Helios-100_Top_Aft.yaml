@@ -27,7 +27,7 @@ Components:
   - ActorValue: 1EF0C1:Starfield.esm
     Value: 52
   - ActorValue: 27BACE:Starfield.esm
-    Value: 20
+    Value: 10
 - MutagenObjectType: FormLinkDataComponent
   Links:
   - Keyword: 00662F:Starfield.esm

@@ -42,7 +42,7 @@ Components:
 - MutagenObjectType: FullNameComponent
   Name:
     TargetLanguage: English
-    Value: Port Btm
+    Value: Helios 100 Grav Drive
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component
