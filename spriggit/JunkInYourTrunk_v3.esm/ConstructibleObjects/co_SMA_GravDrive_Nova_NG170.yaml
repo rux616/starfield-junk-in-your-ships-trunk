@@ -1,4 +1,4 @@
-FormKey: 0026E8:JunkInYourTrunk_v3.esm
+FormKey: 26AE00:Starfield.esm
 EditorID: co_SMA_GravDrive_Nova_NG170
 FormVersion: 558
 Description:
@@ -8,7 +8,7 @@ WorkbenchKeyword: 29C480:Starfield.esm
 Conditions:
 - MutagenObjectType: ConditionFloat
   Unknown1: 0x000000
-  Unknown2: 17631
+  Unknown2: 17630
   Data:
     MutagenObjectType: HasKeywordConditionData
     FirstParameter: 1453B7:Starfield.esm
@@ -16,7 +16,7 @@ Conditions:
 - MutagenObjectType: ConditionFloat
   CompareOperator: GreaterThanOrEqualTo
   Unknown1: 0x000000
-  Unknown2: 17631
+  Unknown2: 17630
   Data:
     MutagenObjectType: GetLevelConditionData
     RunOnType: Reference
@@ -24,9 +24,9 @@ Conditions:
   ComparisonValue: 1
 CreatedObject: 0026E9:JunkInYourTrunk_v3.esm
 AmountProduced: 1
-MenuSortOrder: 0.6211
+MenuSortOrder: 0.75
 LearnMethod: DefaultOrConditions
-Value: 5000
+Value: 5900
 Categories:
 - 29C474:Starfield.esm
 RECF: 0
