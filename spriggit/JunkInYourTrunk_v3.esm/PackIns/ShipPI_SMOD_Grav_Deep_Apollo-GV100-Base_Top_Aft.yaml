@@ -1,17 +1,17 @@
-FormKey: 0023DF:JunkInYourTrunk_v3.esm
+FormKey: 002CAF:JunkInYourTrunk_v3.esm
 MajorRecordFlagsRaw: 512
-EditorID: ShipPI_SMOD_Grav_Deep_Helios-100-Base_Top_Aft
+EditorID: ShipPI_SMOD_Grav_Deep_Apollo-GV100-Base_Top_Aft
 FormVersion: 558
 StarfieldMajorRecordFlags:
 - 0x200
 ObjectBounds:
-  First: -4, -4, -1.75
-  Second: 4, 4, 1.75
+  First: -4, -4, -3.1816406
+  Second: 4, 4, 3.1816406
 ODTY: 0
 Transforms:
-  Ship: 39EC83:Starfield.esm
+  Ship: 15E824:Starfield.esm
 Filter: '\Ships\Modules\Exterior\Grav\DeepCore\'
-Cell: 0023E0:JunkInYourTrunk_v3.esm
+Cell: 002CB0:JunkInYourTrunk_v3.esm
 Version: 0
 FNAM: 0x0E000000
 MaterialSwaps: []
