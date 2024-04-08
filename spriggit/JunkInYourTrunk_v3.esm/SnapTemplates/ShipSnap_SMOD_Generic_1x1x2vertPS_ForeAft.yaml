@@ -1,0 +1,18 @@
+FormKey: 002852:JunkInYourTrunk_v3.esm
+EditorID: ShipSnap_SMOD_Generic_1x1x2vertPS_ForeAft
+Nodes:
+- Node: 04AB6F:Starfield.esm
+  Offset: 0, 1.75, 1.75
+- NodeID: 1
+  Node: 04AB6F:Starfield.esm
+  Offset: 0, 1.75, -1.75
+- NodeID: 2
+  Node: 04AB70:Starfield.esm
+  Offset: 0, -1.75, 1.75
+  Rotation: 0, 0, 180
+- NodeID: 3
+  Node: 04AB70:Starfield.esm
+  Offset: 0, -1.75, -1.75
+  Rotation: 0, 0, 180
+NextNodeID: 4
+STPT: 0

@@ -26,6 +26,8 @@ Components:
     Value: 40
   - ActorValue: 1EF0C1:Starfield.esm
     Value: 80
+  - ActorValue: 27BACE:Starfield.esm
+    Value: 10
 - MutagenObjectType: FormLinkDataComponent
   Links:
   - Keyword: 00662F:Starfield.esm
@@ -34,10 +36,10 @@ Components:
 - MutagenObjectType: KeywordFormComponent
   Keywords:
   - 142595:Starfield.esm
-  - 27BAC5:Starfield.esm
   - 26FE57:Starfield.esm
   - 1462CA:Starfield.esm
   - 2BCFBA:Starfield.esm
+  - 27BABF:Starfield.esm
 - MutagenObjectType: FullNameComponent
   Name:
     TargetLanguage: English
@@ -45,3 +47,4 @@ Components:
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component
+- Spaceship_InstanceData

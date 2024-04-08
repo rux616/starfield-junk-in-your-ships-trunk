@@ -1,0 +1,52 @@
+FormKey: 001EE8:JunkInYourTrunk_v3.esm
+EditorID: ShipSnap_SMOD_Generic_1x1x2vertPS_PortStbd
+Nodes:
+- Node: 04AB73:Starfield.esm
+  Offset: -4, 1.75, 1.75
+  Rotation: 0, 0, 270
+- NodeID: 1
+  Node: 04AB73:Starfield.esm
+  Offset: -4, 1.75, -1.75
+  Rotation: 0, 0, 270
+- NodeID: 2
+  Node: 04AB73:Starfield.esm
+  Offset: -4, 0, 1.75
+  Rotation: 0, 0, -90
+- NodeID: 3
+  Node: 04AB73:Starfield.esm
+  Offset: -4, 0, -1.75
+  Rotation: 0, 0, -90
+- NodeID: 4
+  Node: 04AB73:Starfield.esm
+  Offset: -4, -1.75, 1.75
+  Rotation: 0, 0, 270
+- NodeID: 5
+  Node: 04AB73:Starfield.esm
+  Offset: -4, -1.75, -1.75
+  Rotation: 0, 0, 270
+- NodeID: 6
+  Node: 04AB74:Starfield.esm
+  Offset: 4, 1.75, 1.75
+  Rotation: 0, 0, 90
+- NodeID: 7
+  Node: 04AB74:Starfield.esm
+  Offset: 4, 1.75, -1.75
+  Rotation: 0, 0, 90
+- NodeID: 8
+  Node: 04AB74:Starfield.esm
+  Offset: 4, 0, 1.75
+  Rotation: 0, 0, 90
+- NodeID: 9
+  Node: 04AB74:Starfield.esm
+  Offset: 4, 0, -1.75
+  Rotation: 0, 0, 90
+- NodeID: 10
+  Node: 04AB74:Starfield.esm
+  Offset: 4, -1.75, 1.75
+  Rotation: 0, 0, 90
+- NodeID: 11
+  Node: 04AB74:Starfield.esm
+  Offset: 4, -1.75, -1.75
+  Rotation: 0, 0, 90
+NextNodeID: 12
+STPT: 0

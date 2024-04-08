@@ -8,8 +8,8 @@ ModHeader:
   - Master
   - Localized
   Stats:
-    NumRecords: 9696
-    NextFormID: 10269
+    NumRecords: 10239
+    NextFormID: 11408
   Author: rux616
   Description: >-
     Adds new flips and decorative versions of many different modules.
