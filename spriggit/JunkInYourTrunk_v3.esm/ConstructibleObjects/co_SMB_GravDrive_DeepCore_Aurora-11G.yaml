@@ -22,7 +22,7 @@ Conditions:
     RunOnType: Reference
     Reference: 000014:Starfield.esm
   ComparisonValue: 20
-CreatedObject: 26AE9B:Starfield.esm
+CreatedObject: 002DC4:JunkInYourTrunk_v3.esm
 AmountProduced: 1
 MenuSortOrder: 6
 LearnMethod: DefaultOrConditions
