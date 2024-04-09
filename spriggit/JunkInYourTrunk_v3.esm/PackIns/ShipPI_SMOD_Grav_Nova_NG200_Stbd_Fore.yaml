@@ -1,0 +1,15 @@
+FormKey: 002F44:JunkInYourTrunk_v3.esm
+MajorRecordFlagsRaw: 512
+EditorID: ShipPI_SMOD_Grav_Nova_NG200_Stbd_Fore
+StarfieldMajorRecordFlags:
+- 0x200
+ODTY: 0
+Transforms:
+  Ship: 39EC83:Starfield.esm
+Filter: '\Ships\Modules\Exterior\Grav\Nova\'
+Cell: 002F45:JunkInYourTrunk_v3.esm
+Version: 0
+FNAM: 0x0E000000
+MaterialSwaps: []
+MajorFlags:
+- Prefab

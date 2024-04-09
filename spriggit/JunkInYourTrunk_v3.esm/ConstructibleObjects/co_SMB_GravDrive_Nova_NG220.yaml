@@ -25,7 +25,7 @@ Conditions:
 RequiredPerks:
 - Perk: 2C59DC:Starfield.esm
   Rank: 2
-CreatedObject: 26AEA2:Starfield.esm
+CreatedObject: 002FB2:JunkInYourTrunk_v3.esm
 AmountProduced: 1
 MenuSortOrder: 8.4375
 LearnMethod: DefaultOrConditions

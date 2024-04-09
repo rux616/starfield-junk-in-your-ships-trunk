@@ -6,7 +6,7 @@ StarfieldMajorRecordFlags:
 ODTY: 0
 Transforms:
   Ship: 39EC83:Starfield.esm
-Filter: '\Ships\Modules\Exterior\Grav\Nova\'
+Filter: '\Ships\Modules\Exterior\Grav\Vanguard\'
 Cell: 002C11:JunkInYourTrunk_v3.esm
 Version: 0
 FNAM: 0x0E000000
