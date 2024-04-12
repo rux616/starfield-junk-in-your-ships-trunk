@@ -1,0 +1,15 @@
+FormKey: 0033F3:JunkInYourTrunk_v3.esm
+MajorRecordFlagsRaw: 512
+EditorID: ShipPI_SMOD_Grav_Deep_Apollo-GV100_Btm_Fore
+StarfieldMajorRecordFlags:
+- 0x200
+ODTY: 0
+Transforms:
+  Ship: 39EC83:Starfield.esm
+Filter: '\Ships\Modules\Exterior\Grav\DeepCore\'
+Cell: 0033F4:JunkInYourTrunk_v3.esm
+Version: 0
+FNAM: 0x0E000000
+MaterialSwaps: []
+MajorFlags:
+- Prefab

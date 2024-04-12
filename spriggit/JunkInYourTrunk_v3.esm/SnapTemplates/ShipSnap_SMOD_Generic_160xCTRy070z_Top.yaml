@@ -1,0 +1,12 @@
+FormKey: 00192E:JunkInYourTrunk_v3.esm
+EditorID: ShipSnap_SMOD_Generic_160xCTRy070z_Top
+Nodes:
+- Node: 04AB77:Starfield.esm
+  Offset: -4, 0, 3.5
+  Rotation: 270, 0, 0
+- NodeID: 1
+  Node: 04AB77:Starfield.esm
+  Offset: 4, 0, 3.5
+  Rotation: 270, 0, 0
+NextNodeID: 2
+STPT: 0
