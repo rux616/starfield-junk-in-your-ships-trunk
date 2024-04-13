@@ -1,0 +1,7 @@
+MutagenObjectType: PlacedObject
+FormKey: 0036DC:JunkInYourTrunk_v3.esm
+Components:
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 140158:Starfield.esm
+Base: 002432:JunkInYourTrunk_v3.esm

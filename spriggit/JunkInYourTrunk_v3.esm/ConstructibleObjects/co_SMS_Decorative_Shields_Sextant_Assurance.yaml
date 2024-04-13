@@ -24,7 +24,7 @@ Description:
 WorkbenchKeyword: 29C480:Starfield.esm
 CreatedObject: 001596:JunkInYourTrunk_v3.esm
 AmountProduced: 1
-MenuSortOrder: 45
+MenuSortOrder: 10
 LearnMethod: DefaultOrConditions
 Value: 1000
 Categories:

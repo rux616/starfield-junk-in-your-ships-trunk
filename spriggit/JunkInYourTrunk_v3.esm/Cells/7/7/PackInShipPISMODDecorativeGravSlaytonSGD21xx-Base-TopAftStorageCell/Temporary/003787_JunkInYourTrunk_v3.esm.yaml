@@ -1,0 +1,16 @@
+MutagenObjectType: PlacedObject
+FormKey: 003787:JunkInYourTrunk_v3.esm
+Base: 1F5634:Starfield.esm
+ProjectedDecal:
+  WidthScale: 1
+  HeightScale: 1
+  UnknownFloat: 0.4
+  UnknownInt: 2880154369
+ProjectedDecalReferences:
+- 1684BF:Starfield.esm
+- 0F23D4:Starfield.esm
+- 0F23D3:Starfield.esm
+- 0F23D2:Starfield.esm
+ConstrainedDecal: 5.1100016, 6.750006, 2.6423848
+Position: 3.2077453, -2.8398936, -0.22547388
+Rotation: -1.5720246, 1.5677276, 1.5987718
