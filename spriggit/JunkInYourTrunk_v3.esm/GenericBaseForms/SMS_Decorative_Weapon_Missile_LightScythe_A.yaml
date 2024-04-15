@@ -23,23 +23,23 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: 'Dekorativ: Light Scythe MSL-A'
+      String: 'Dekorativ: Lichtsense MSL-A'
     - Language: English
       String: 'Decorative: Light Scythe MSL-A'
     - Language: Spanish
-      String: 'Decorativo: Light Scythe MSL-A'
+      String: 'Decorativo: Guadaña ligera MSL-A'
     - Language: French
-      String: 'Décoratif : faux léger MSL-A'
+      String: 'Décoratif : Faux lumineux MSL-A'
     - Language: Italian
-      String: 'Decorativo: Light Scythe MSL- A'
+      String: 'Decorativo: Falce leggera MSL-A'
     - Language: Japanese
-      String: '装飾品: ライト サイズ MSL-A'
+      String: 装飾品：ライトサイズMSL-A
     - Language: Polish
       String: 'Dekoracyjny: Light Scythe MSL-A'
     - Language: Portuguese_Brazil
-      String: 'Decorativo: Light Scythe MSL-A'
+      String: 'Decorativo: Foice Leve MSL-A'
     - Language: ChineseSimplified
-      String: 装饰：轻型镰刀 MSL-A
+      String: 装饰：光镰MSL-A
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

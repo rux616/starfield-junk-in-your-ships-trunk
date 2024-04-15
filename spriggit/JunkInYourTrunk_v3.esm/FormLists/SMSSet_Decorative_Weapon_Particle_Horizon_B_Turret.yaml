@@ -4,21 +4,21 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Dekoratives Horizon PRT-B-Geschützturm-Set
+    String: Dekoratives Horizon PRT-B Turmset
   - Language: English
     String: Decorative Horizon PRT-B Turret Set
   - Language: Spanish
-    String: Conjunto de torreta Horizon PRT-B decorativo
+    String: Conjunto de torreta decorativa Horizon PRT-B
   - Language: French
-    String: Ensemble de tourelle Horizon décoratif PRT-B
+    String: Ensemble de tourelles décoratives Horizon PRT-B
   - Language: Italian
-    String: Set torretta Horizon PRT-B decorativo
+    String: Set torretta decorativa Horizon PRT-B
   - Language: Japanese
-    String: 装飾用ホライゾン PRT-B タレット セット
+    String: デコラティブホライズン PRT-B タレットセット
   - Language: Polish
-    String: Zestaw dekoracyjnych wież Horizon PRT-B
+    String: Dekoracyjny zestaw wieżyczek Horizon PRT-B
   - Language: Portuguese_Brazil
-    String: Conjunto Decorativo Horizon PRT-B Torre
+    String: Conjunto de torre decorativa Horizon PRT-B
   - Language: ChineseSimplified
     String: 装饰地平线 PRT-B 炮塔套装
 Items:

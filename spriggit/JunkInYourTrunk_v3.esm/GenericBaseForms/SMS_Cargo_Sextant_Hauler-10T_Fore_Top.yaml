@@ -27,23 +27,23 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: Hauler 10T Frachtraum
+      String: Frachtraum des Hauler 10T
     - Language: English
       String: Hauler 10T Cargo Hold
     - Language: Spanish
-      String: Contenedor de carga Hauler 10T
+      String: Bodega de carga Hauler 10T
     - Language: French
-      String: Hauler 10T Cargo Hold
+      String: Cale de chargement Hauler 10T
     - Language: Italian
-      String: Hauler 10T Cargo Tieni
+      String: Stiva di carico del trasportatore 10T
     - Language: Japanese
-      String: ホーラー 10T カーゴ ホールド
+      String: ホーラー 10T 貨物倉
     - Language: Polish
-      String: Hauler 10T Ładownia
+      String: Wozidło 10T Ładownia
     - Language: Portuguese_Brazil
-      String: Hauler 10T Cargo Hold
+      String: Porão de carga do caminhão 10T
     - Language: ChineseSimplified
-      String: 牵引车 10T 货舱
+      String: 卡车 10T 货舱
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

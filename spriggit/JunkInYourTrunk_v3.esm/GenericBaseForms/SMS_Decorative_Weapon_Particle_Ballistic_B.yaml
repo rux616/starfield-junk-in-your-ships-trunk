@@ -23,23 +23,23 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: 'Dekorativ: Ballistic PRT-B'
+      String: 'Dekorativ: Ballistisches PRT-B'
     - Language: English
       String: 'Decorative: Ballistic PRT-B'
     - Language: Spanish
       String: 'Decorativo: PRT-B balístico'
     - Language: French
-      String: 'Décoratif : Balistique PRT-B'
+      String: 'Décoratif : balistique PRT-B'
     - Language: Italian
-      String: 'Decorativo: Ballistic PRT-B'
+      String: 'Decorativo: balistico PRT-B'
     - Language: Japanese
-      String: '装飾品: バリスティック PRT-B'
+      String: '装飾: バリスティック PRT-B'
     - Language: Polish
-      String: 'Dekoracyjny: Balistyczny PRT-B'
+      String: 'Dekoracyjny: balistyczny PRT-B'
     - Language: Portuguese_Brazil
       String: 'Decorativo: Balístico PRT-B'
     - Language: ChineseSimplified
-      String: 装饰：Ballistic PRT-B
+      String: 装饰：弹道 PRT-B
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

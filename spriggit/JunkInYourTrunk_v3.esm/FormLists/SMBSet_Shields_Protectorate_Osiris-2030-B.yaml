@@ -4,23 +4,23 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Protectorate Osiris 2030-B-Set
+    String: Protektorat Osiris 2030-B-Set
   - Language: English
     String: Protectorate Osiris 2030-B Set
   - Language: Spanish
-    String: Conjunto Protectorate Osiris 2030-B
+    String: Conjunto Protectorado Osiris 2030-B
   - Language: French
-    String: Protectorate Osiris 2030-B Set
+    String: Ensemble Protectorat Osiris 2030-B
   - Language: Italian
-    String: Set protettorato Osiride 2030-B
+    String: Set Protettorato Osiride 2030-B
   - Language: Japanese
-    String: Protectorate Osiris 2030-B セット
+    String: オシリス保護領 2030-B セット
   - Language: Polish
-    String: Zestaw Protectorate Osiris 2030-B
+    String: Zestaw Protektoratu Ozyrysa 2030-B
   - Language: Portuguese_Brazil
-    String: Conjunto Protetorado Osiris 2030-B
+    String: Conjunto Protetorado Osíris 2030-B
   - Language: ChineseSimplified
-    String: Protectorate Osiris 2030-B Set
+    String: 保护国奥西里斯 2030-B 套装
 Items:
 - 0014CA:JunkInYourTrunk_v3.esm
 - 0014CB:JunkInYourTrunk_v3.esm

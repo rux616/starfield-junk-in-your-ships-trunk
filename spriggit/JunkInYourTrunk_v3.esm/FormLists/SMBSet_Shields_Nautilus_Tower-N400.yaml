@@ -4,21 +4,21 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Nautilus Tower N400-Set
+    String: Nautilus-Turm N400-Set
   - Language: English
     String: Nautilus Tower N400 Set
   - Language: Spanish
-    String: Nautilus Tower N400 Set
+    String: Conjunto Torre Nautilus N400
   - Language: French
-    String: Ensemble Nautilus Tower N400
+    String: Ensemble Tour Nautilus N400
   - Language: Italian
-    String: Set torretta Nautilus N400
+    String: Set Torre Nautilus N400
   - Language: Japanese
-    String: ノーチラス タワー N400 セット
+    String: ノーチラスタワー N400 セット
   - Language: Polish
     String: Zestaw Nautilus Tower N400
   - Language: Portuguese_Brazil
-    String: Conjunto Nautilus Tower N400
+    String: Conjunto Torre Nautilus N400
   - Language: ChineseSimplified
     String: 鹦鹉螺塔 N400 套装
 Items:

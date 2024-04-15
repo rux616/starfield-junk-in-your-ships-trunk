@@ -23,23 +23,23 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: 'Dekorativ: Horizon LSR -C'
+      String: 'Dekorativ: Horizon LSR-C'
     - Language: English
       String: 'Decorative: Horizon LSR-C'
     - Language: Spanish
-      String: 'Decorativo: Horizon LSR-C'
+      String: 'Decorativo: Horizonte LSR-C'
     - Language: French
       String: 'Décoratif : Horizon LSR-C'
     - Language: Italian
-      String: 'Decorativo: Horizon LSR -C'
-    - Language: Japanese
-      String: '装飾: ホライゾンLSR-C'
-    - Language: Polish
-      String: 'Ozdoba: Horizon LSR-C'
-    - Language: Portuguese_Brazil
       String: 'Decorativo: Horizon LSR-C'
+    - Language: Japanese
+      String: '装飾: ホライゾン LSR-C'
+    - Language: Polish
+      String: 'Dekoracyjny: Horizon LSR-C'
+    - Language: Portuguese_Brazil
+      String: 'Decorativo: Horizonte LSR-C'
     - Language: ChineseSimplified
-      String: 装饰：地平线LSR-C
+      String: 装饰：Horizo​​n LSR-C
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

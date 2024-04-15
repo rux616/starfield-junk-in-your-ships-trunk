@@ -27,13 +27,13 @@ Components:
     - Language: Spanish
       String: 'Decorativo: Protectorado Odín'
     - Language: French
-      String: 'Décoratif : Protectorat Odin'
+      String: "Décoratif : Protectorat d'Odin"
     - Language: Italian
-      String: 'Decorativo: protettorato di Odino'
+      String: 'Decorativo: Protettorato Odino'
     - Language: Japanese
-      String: '装飾: 保護領オーディン'
+      String: '装飾品: 保護領オーディン'
     - Language: Polish
-      String: 'Dekoracyjny: Protektorat Odin'
+      String: 'Dekoracyjny: Protektorat Odyn'
     - Language: Portuguese_Brazil
       String: 'Decorativo: Protetorado Odin'
     - Language: ChineseSimplified

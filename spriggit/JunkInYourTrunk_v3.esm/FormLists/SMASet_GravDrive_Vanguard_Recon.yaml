@@ -2,7 +2,25 @@ FormKey: 002BC4:JunkInYourTrunk_v3.esm
 EditorID: SMASet_GravDrive_Vanguard_Recon
 Name:
   TargetLanguage: English
-  Value: Vanguard Recon Set
+  Values:
+  - Language: German
+    String: Vanguard Recon-Set
+  - Language: English
+    String: Vanguard Recon Set
+  - Language: Spanish
+    String: Conjunto de reconocimiento de vanguardia
+  - Language: French
+    String: Ensemble de reconnaissance de l'Avant-garde
+  - Language: Italian
+    String: Set da ricognizione dell'Avanguardia
+  - Language: Japanese
+    String: ヴァンガード偵察セット
+  - Language: Polish
+    String: Zestaw rozpoznawczy Straży Przedniej
+  - Language: Portuguese_Brazil
+    String: Conjunto de reconhecimento de vanguarda
+  - Language: ChineseSimplified
+    String: 先锋侦察套装
 Items:
 - 002BC5:JunkInYourTrunk_v3.esm
 - 002BCC:JunkInYourTrunk_v3.esm

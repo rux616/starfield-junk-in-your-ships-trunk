@@ -29,17 +29,17 @@ Components:
     - Language: Spanish
       String: 'Decorativo: Panoptes Polo 2000/2010/2020/2030'
     - Language: French
-      String: 'Décoratif : Panoptes Polo 2000/2010/2020/2030'
+      String: 'Décoratif : Panoptes Polo 2000/2010/2020/2030'
     - Language: Italian
       String: 'Decorativo: Panoptes Polo 2000/2010/2020/2030'
     - Language: Japanese
       String: '装飾: パノプテス ポロ 2000/2010/2020/2030'
     - Language: Polish
-      String: 'Ozdoba: Panoptes Polo 2000/2010 /2020/2030'
+      String: 'Dekoracyjne: Panoptes Polo 2000/2010/2020/2030'
     - Language: Portuguese_Brazil
       String: 'Decorativo: Panoptes Polo 2000/2010/2020/2030'
     - Language: ChineseSimplified
-      String: 装饰：Panoptes Polo 2000/2010/2020 /2030
+      String: 装饰：Panoptes Polo 2000/2010/2020/2030
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

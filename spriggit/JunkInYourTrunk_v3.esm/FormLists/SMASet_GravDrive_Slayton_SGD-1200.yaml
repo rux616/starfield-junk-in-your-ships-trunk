@@ -2,7 +2,25 @@ FormKey: 002960:JunkInYourTrunk_v3.esm
 EditorID: SMASet_GravDrive_Slayton_SGD-1200
 Name:
   TargetLanguage: English
-  Value: Slayton SGD 1200 Set
+  Values:
+  - Language: German
+    String: Slayton SGD 1200-Set
+  - Language: English
+    String: Slayton SGD 1200 Set
+  - Language: Spanish
+    String: Slayton SGD 1200 Juego
+  - Language: French
+    String: Slayton SGD 1200 Ensemble
+  - Language: Italian
+    String: Set Slayton SGD 1200
+  - Language: Japanese
+    String: スレイトン SGD 1200 セット
+  - Language: Polish
+    String: Zestaw Slaytona za 1200 SGD
+  - Language: Portuguese_Brazil
+    String: Conjunto Slayton SGD 1200
+  - Language: ChineseSimplified
+    String: 斯莱顿 1200 新元套装
 Items:
 - 002961:JunkInYourTrunk_v3.esm
 - 002968:JunkInYourTrunk_v3.esm

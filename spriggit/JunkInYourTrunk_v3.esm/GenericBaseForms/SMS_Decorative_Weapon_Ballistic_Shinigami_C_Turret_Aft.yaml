@@ -23,7 +23,7 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: 'Dekorativ: Shinigami BLS-C-Turm'
+      String: 'Dekorativ: Shinigami BLS-C Turm'
     - Language: English
       String: 'Decorative: Shinigami BLS-C Turret'
     - Language: Spanish
@@ -31,15 +31,15 @@ Components:
     - Language: French
       String: 'Décoratif : Tourelle Shinigami BLS-C'
     - Language: Italian
-      String: 'Decorativo : Torretta Shinigami BLS-C'
+      String: 'Decorativo: torretta Shinigami BLS-C'
     - Language: Japanese
-      String: '装飾品: 死神 BLS-C タレット'
+      String: '装飾: 死神 BLS-C タレット'
     - Language: Polish
-      String: 'Ozdoba: Wieża Shinigami BLS-C'
+      String: 'Dekoracyjna: Wieża Shinigami BLS-C'
     - Language: Portuguese_Brazil
-      String: 'Decorativo: Shinigami BLS- Torre C'
+      String: 'Decorativo: Torre Shinigami BLS-C'
     - Language: ChineseSimplified
-      String: 装饰：Shinigami BLS-C 炮塔
+      String: 装饰：死神 BLS-C 炮塔
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

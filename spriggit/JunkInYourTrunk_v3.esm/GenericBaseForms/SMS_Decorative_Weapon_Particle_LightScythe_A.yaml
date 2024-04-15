@@ -23,19 +23,19 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: ' Dekorativ: Light Scythe PRT-A'
+      String: 'Dekorativ: Lichtsense PRT-A'
     - Language: English
       String: 'Decorative: Light Scythe PRT-A'
     - Language: Spanish
       String: 'Decorativo: Guadaña ligera PRT-A'
     - Language: French
-      String: 'Décoratif : Light Scythe PRT-A'
+      String: 'Décoratif : Faux lumineux PRT-A'
     - Language: Italian
-      String: 'Decorativa: falce leggera PRT-A'
+      String: 'Decorativo: Falce leggera PRT-A'
     - Language: Japanese
-      String: '装飾: ライトサイス PRT-A '
+      String: 装飾品：ライトサイスPRT-A
     - Language: Polish
-      String: 'Dekoracyjny: Lekka Kosa PRT-A'
+      String: 'Dekoracyjna: Lekka Kosa PRT-A'
     - Language: Portuguese_Brazil
       String: 'Decorativo: Foice Leve PRT-A'
     - Language: ChineseSimplified

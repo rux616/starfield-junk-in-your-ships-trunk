@@ -4,21 +4,21 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Nautilus Tower N420-Set
+    String: Nautilus-Turm N420-Set
   - Language: English
     String: Nautilus Tower N420 Set
   - Language: Spanish
-    String: Nautilus Tower N420 Set
+    String: Conjunto Torre Nautilus N420
   - Language: French
-    String: Ensemble Nautilus Tower N420
+    String: Ensemble Tour Nautilus N420
   - Language: Italian
-    String: Set torretta Nautilus N420
+    String: Set Torre Nautilus N420
   - Language: Japanese
-    String: ノーチラス タワー N420 セット
+    String: ノーチラスタワー N420 セット
   - Language: Polish
     String: Zestaw Nautilus Tower N420
   - Language: Portuguese_Brazil
-    String: Conjunto Nautilus Tower N420
+    String: Conjunto Torre Nautilus N420
   - Language: ChineseSimplified
     String: 鹦鹉螺塔 N420 套装
 Items:

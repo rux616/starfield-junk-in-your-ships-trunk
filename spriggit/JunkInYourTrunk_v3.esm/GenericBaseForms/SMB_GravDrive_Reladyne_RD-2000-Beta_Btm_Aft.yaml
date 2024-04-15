@@ -42,7 +42,25 @@ Components:
 - MutagenObjectType: FullNameComponent
   Name:
     TargetLanguage: English
-    Value: RD-2000 Beta Grav Drive
+    Values:
+    - Language: German
+      String: Grav-Antrieb RD-2000 Beta
+    - Language: English
+      String: RD-2000 Beta Grav Drive
+    - Language: Spanish
+      String: Motor gravitacional beta RD-2000
+    - Language: French
+      String: Astromoteur Bêta RD-2000
+    - Language: Italian
+      String: Gravimotore Beta RD-2000
+    - Language: Japanese
+      String: RD-2000ベータグラヴ・ドライブ
+    - Language: Polish
+      String: Napęd grawitonowy RD-2000 Beta
+    - Language: Portuguese_Brazil
+      String: Motor Grav RD-2000 Beta
+    - Language: ChineseSimplified
+      String: RD-2000贝塔重力推动器
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

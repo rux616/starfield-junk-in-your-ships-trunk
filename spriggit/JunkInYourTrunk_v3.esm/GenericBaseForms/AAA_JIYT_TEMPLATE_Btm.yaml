@@ -29,19 +29,19 @@ Components:
     - Language: English
       String: Btm
     - Language: Spanish
-      String: Btm
+      String: btm
     - Language: French
       String: Btm
     - Language: Italian
-      String: Btm
+      String: Bmt
     - Language: Japanese
-      String: Btm
+      String: ＢＴＭ
     - Language: Polish
       String: Btm
     - Language: Portuguese_Brazil
       String: Btm
     - Language: ChineseSimplified
-      String: Btm
+      String: 乙二胺
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

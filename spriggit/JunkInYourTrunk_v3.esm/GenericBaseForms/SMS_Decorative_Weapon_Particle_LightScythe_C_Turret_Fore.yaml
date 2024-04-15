@@ -23,23 +23,23 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: 'Dekorativ: Light Scythe PRT-C Turm'
+      String: 'Dekorativ: Light Scythe PRT-C Turret'
     - Language: English
       String: 'Decorative: Light Scythe PRT-C Turret'
     - Language: Spanish
-      String: 'Decorativo: Torreta PRT-C de guadaña ligera'
+      String: 'Decorativo: Torreta Light Scythe PRT-C'
     - Language: French
       String: 'Décoratif : Tourelle Light Scythe PRT-C'
     - Language: Italian
       String: 'Decorativo: torretta PRT-C con falce leggera'
     - Language: Japanese
-      String: '装飾: ライトサイズ PRT-C タレット'
+      String: '装飾: ライトサイス PRT-C タレット'
     - Language: Polish
-      String: 'Ozdobny: Wieżyczka Light Scythe PRT-C'
+      String: 'Dekoracyjna: Wieżyczka Light Scythe PRT-C'
     - Language: Portuguese_Brazil
-      String: 'Decorativo: Light Scythe PRT-C Turret'
+      String: 'Decorativo: Torre Light Scythe PRT-C'
     - Language: ChineseSimplified
-      String: 装饰：光镰刀PRT-C 炮塔
+      String: 装饰：光镰 PRT-C 炮塔
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

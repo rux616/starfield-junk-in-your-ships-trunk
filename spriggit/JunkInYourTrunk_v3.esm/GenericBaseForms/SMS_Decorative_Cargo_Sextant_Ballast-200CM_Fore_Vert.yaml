@@ -23,21 +23,21 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: 'Dekorativ: Sextant Ballast 200CM'
+      String: 'Dekorativ: Sextant-Vorschaltgerät 200 cm'
     - Language: English
       String: 'Decorative: Sextant Ballast 200CM'
     - Language: Spanish
-      String: 'Decorativo: Sextante Lastre 200CM'
+      String: 'Decorativo: Lastre Sextante 200CM'
     - Language: French
-      String: 'Décoratif : Sextant Ballast 200CM'
+      String: 'Décoratif : Ballast Sextant 200CM'
     - Language: Italian
-      String: 'Decorativo: Zavorra sestante 200CM'
+      String: 'Decorativo: Zavorra Sestante 200CM'
     - Language: Japanese
       String: '装飾: 六分儀バラスト 200CM'
     - Language: Polish
-      String: 'Dekoracyjny: Sextant Balast 200CM'
+      String: 'Dekoracyjny: balast sekstantowy 200CM'
     - Language: Portuguese_Brazil
-      String: 'Decorativo: Sextante Lastro 200CM'
+      String: 'Decorativo: Lastro Sextante 200CM'
     - Language: ChineseSimplified
       String: 装饰：六分仪镇流器200CM
 Template: 03058E:Starfield.esm

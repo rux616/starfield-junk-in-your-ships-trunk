@@ -4,23 +4,23 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Sextant Hauler 40T Set
+    String: Set Sextantschlepper 40T
   - Language: English
     String: Sextant Hauler 40T Set
   - Language: Spanish
-    String: Conjunto Sextant Hauler 40T
+    String: Juego de transporte sextante 40T
   - Language: French
-    String: Sextant Hauler 40T Set
+    String: Ensemble Sextant Hauler 40T
   - Language: Italian
-    String: Set sestante trasportatore 40T
+    String: Set trasportatore di sestanti 40T
   - Language: Japanese
-    String: 六分儀運搬人 40T セット
+    String: 六分儀運び屋 40T セット
   - Language: Polish
     String: Zestaw sekstantu 40T
   - Language: Portuguese_Brazil
-    String: Sextant Hauler 40T Set
+    String: Conjunto Sextante Hauler 40T
   - Language: ChineseSimplified
-    String: 六分仪搬运车 40T 套件
+    String: 六分仪搬运车 40T 套装
 Items:
 - 270479:Starfield.esm
 - 16E06F:Starfield.esm

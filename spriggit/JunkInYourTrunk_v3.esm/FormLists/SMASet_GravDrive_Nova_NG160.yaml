@@ -2,7 +2,25 @@ FormKey: 0026CF:JunkInYourTrunk_v3.esm
 EditorID: SMASet_GravDrive_Nova_NG160
 Name:
   TargetLanguage: English
-  Value: Nova NG160 Set
+  Values:
+  - Language: German
+    String: Nova NG160-Set
+  - Language: English
+    String: Nova NG160 Set
+  - Language: Spanish
+    String: Conjunto Nova NG160
+  - Language: French
+    String: Ensemble Nova NG160
+  - Language: Italian
+    String: Set Nova NG160
+  - Language: Japanese
+    String: ノヴァ NG160 セット
+  - Language: Polish
+    String: Zestaw Nova NG160
+  - Language: Portuguese_Brazil
+    String: Conjunto Nova NG160
+  - Language: ChineseSimplified
+    String: Nova NG160套装
 Items:
 - 0026D0:JunkInYourTrunk_v3.esm
 - 0026D1:JunkInYourTrunk_v3.esm

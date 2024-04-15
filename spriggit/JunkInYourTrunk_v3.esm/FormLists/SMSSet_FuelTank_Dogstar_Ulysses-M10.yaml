@@ -8,19 +8,19 @@ Name:
   - Language: English
     String: Dogstar Ulysses M10 Set
   - Language: Spanish
-    String: Dogstar Ulysses M10 Set
+    String: Conjunto Dogstar Ulises M10
   - Language: French
     String: Ensemble Dogstar Ulysses M10
   - Language: Italian
     String: Set Dogstar Ulysses M10
   - Language: Japanese
-    String: ドッグスター ユリシーズ M10セット
+    String: ドッグスター ユリシーズ M10 セット
   - Language: Polish
     String: Zestaw Dogstar Ulysses M10
   - Language: Portuguese_Brazil
-    String: Conjunto Dogstar Ulysses M10
+    String: Conjunto Dogstar Ulisses M10
   - Language: ChineseSimplified
-    String: Dogstar Ulysses M10 套装
+    String: Dogstar 尤利西斯 M10 套装
 Items:
 - 0019F5:JunkInYourTrunk_v3.esm
 - 0019F6:JunkInYourTrunk_v3.esm

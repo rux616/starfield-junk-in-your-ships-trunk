@@ -23,7 +23,7 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: 'Dekorativ: Shinigami MSL- A'
+      String: 'Dekorativ: Shinigami MSL-A'
     - Language: English
       String: 'Decorative: Shinigami MSL-A'
     - Language: Spanish
@@ -33,9 +33,9 @@ Components:
     - Language: Italian
       String: 'Decorativo: Shinigami MSL-A'
     - Language: Japanese
-      String: 装飾:死神 MSL-A
+      String: 装飾品：死神MSL-A
     - Language: Polish
-      String: 'Dekoracyjny: Shinigami MSL-A'
+      String: 'Ozdoba: Shinigami MSL-A'
     - Language: Portuguese_Brazil
       String: 'Decorativo: Shinigami MSL-A'
     - Language: ChineseSimplified

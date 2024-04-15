@@ -32,19 +32,19 @@ Components:
     - Language: English
       String: 'Decorative: Ballistic 500T'
     - Language: Spanish
-      String: 'Decorativo: Balístico 500T '
+      String: 'Decorativo: Balístico 500T'
     - Language: French
-      String: 'Décoratif : Ballistic 500T'
+      String: 'Décoratif : Balistique 500T'
     - Language: Italian
       String: 'Decorativo: balistico 500T'
     - Language: Japanese
       String: '装飾: バリスティック 500T'
     - Language: Polish
-      String: 'Dekoracyjny: Ballistic 500T'
+      String: 'Dekoracyjny: balistyczny 500T'
     - Language: Portuguese_Brazil
       String: 'Decorativo: Balístico 500T'
     - Language: ChineseSimplified
-      String: 装饰：Ballistic 500T
+      String: 装饰：弹道 500T
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

@@ -42,7 +42,25 @@ Components:
 - MutagenObjectType: FullNameComponent
   Name:
     TargetLanguage: English
-    Value: Helios 400 Grav Drive
+    Values:
+    - Language: German
+      String: Grav-Antrieb Helios 400
+    - Language: English
+      String: Helios 400 Grav Drive
+    - Language: Spanish
+      String: Motor gravitacional Helios 400
+    - Language: French
+      String: Astromoteur Helios 400
+    - Language: Italian
+      String: Gravimotore Helios 400
+    - Language: Japanese
+      String: ヘリオス400グラヴ・ドライブ
+    - Language: Polish
+      String: Napęd grawitonowy Helios 400
+    - Language: Portuguese_Brazil
+      String: Motor Grav Hélio 400
+    - Language: ChineseSimplified
+      String: 赫利俄斯400重力推动器
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

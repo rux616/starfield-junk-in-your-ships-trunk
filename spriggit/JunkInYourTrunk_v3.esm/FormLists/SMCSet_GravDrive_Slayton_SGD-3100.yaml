@@ -2,7 +2,25 @@ FormKey: 0031CF:JunkInYourTrunk_v3.esm
 EditorID: SMCSet_GravDrive_Slayton_SGD-3100
 Name:
   TargetLanguage: English
-  Value: Slayton SGD 3100 Set
+  Values:
+  - Language: German
+    String: Slayton SGD 3100-Set
+  - Language: English
+    String: Slayton SGD 3100 Set
+  - Language: Spanish
+    String: Slayton SGD 3100 Juego
+  - Language: French
+    String: Slayton SGD 3100 Ensemble
+  - Language: Italian
+    String: Set Slayton SGD 3100
+  - Language: Japanese
+    String: スレイトン SGD 3100 セット
+  - Language: Polish
+    String: Zestaw Slaytona za 3100 SGD
+  - Language: Portuguese_Brazil
+    String: Conjunto Slayton SGD 3100
+  - Language: ChineseSimplified
+    String: 斯莱顿 3100 新元套装
 Items:
 - 0031D0:JunkInYourTrunk_v3.esm
 - 0031D7:JunkInYourTrunk_v3.esm

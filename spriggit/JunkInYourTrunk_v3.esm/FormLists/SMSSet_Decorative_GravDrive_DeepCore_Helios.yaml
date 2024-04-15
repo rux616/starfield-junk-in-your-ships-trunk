@@ -2,7 +2,25 @@ FormKey: 0037CA:JunkInYourTrunk_v3.esm
 EditorID: SMSSet_Decorative_GravDrive_DeepCore_Helios
 Name:
   TargetLanguage: English
-  Value: Decorative DeepCore Helios Set
+  Values:
+  - Language: German
+    String: Dekoratives DeepCore Helios-Set
+  - Language: English
+    String: Decorative DeepCore Helios Set
+  - Language: Spanish
+    String: Set decorativo DeepCore Helios
+  - Language: French
+    String: Ensemble décoratif DeepCore Helios
+  - Language: Italian
+    String: Set decorativo DeepCore Helios
+  - Language: Japanese
+    String: 装飾用 DeepCore Helios セット
+  - Language: Polish
+    String: Dekoracyjny zestaw DeepCore Helios
+  - Language: Portuguese_Brazil
+    String: Conjunto Decorativo DeepCore Helios
+  - Language: ChineseSimplified
+    String: 装饰 DeepCore Helios 套装
 Items:
 - 0037CB:JunkInYourTrunk_v3.esm
 - 0037D2:JunkInYourTrunk_v3.esm

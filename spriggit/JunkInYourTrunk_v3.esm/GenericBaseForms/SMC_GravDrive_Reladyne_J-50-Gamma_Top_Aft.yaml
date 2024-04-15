@@ -43,7 +43,25 @@ Components:
 - MutagenObjectType: FullNameComponent
   Name:
     TargetLanguage: English
-    Value: J-50 Gamma Grav Drive
+    Values:
+    - Language: German
+      String: Grav-Antrieb J-50 Gamma
+    - Language: English
+      String: J-50 Gamma Grav Drive
+    - Language: Spanish
+      String: Motor gravitacional gamma J-50
+    - Language: French
+      String: Astromoteur Gamma J-50
+    - Language: Italian
+      String: Gravimotore Gamma J-50
+    - Language: Japanese
+      String: J-50ガンマグラヴ・ドライブ
+    - Language: Polish
+      String: Napęd grawitonowy J-50 Gamma
+    - Language: Portuguese_Brazil
+      String: Motor Grav J-50 Gama
+    - Language: ChineseSimplified
+      String: J-50伽马重力推动器
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

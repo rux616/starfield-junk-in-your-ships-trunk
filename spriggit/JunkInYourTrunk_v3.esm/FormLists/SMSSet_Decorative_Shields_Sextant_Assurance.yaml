@@ -4,21 +4,21 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Dekoratives Sextant Assurance Set
+    String: Dekoratives Sextanten-Sicherheitsset
   - Language: English
     String: Decorative Sextant Assurance Set
   - Language: Spanish
-    String: Decorativo Sextant Assurance Set
+    String: Set de aseguramiento de sextante decorativo
   - Language: French
-    String: Décoratif Sextant Assurance Ensemble
+    String: Ensemble d'assurance sextant décoratif
   - Language: Italian
-    String: Set decorativo sestante assicurazione
+    String: Set decorativo di garanzia del sestante
   - Language: Japanese
-    String: 装飾六分儀保証セット
+    String: 飾り六分儀保証セット
   - Language: Polish
-    String: Dekoracyjny zestaw sekstansowy
+    String: Dekoracyjny zestaw zapewniający sekstans
   - Language: Portuguese_Brazil
-    String: Conjunto Decorativo Sextante Assurance
+    String: Conjunto Decorativo de Garantia Sextante
   - Language: ChineseSimplified
     String: 装饰六分仪保证套装
 Items:

@@ -4,21 +4,21 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: 'Dekoratives Protectorate-Osiris-Set '
+    String: Dekoratives Protektorat-Osiris-Set
   - Language: English
     String: Decorative Protectorate Osiris Set
   - Language: Spanish
-    String: Conjunto decorativo Protectorate Osiris
+    String: Set Protectorado Decorativo Osiris
   - Language: French
-    String: Ensemble décoratif Protectorat Osiris
+    String: Ensemble Osiris du protectorat décoratif
   - Language: Italian
-    String: Set Protettorato decorativo Osiris
+    String: Set Osiride del protettorato decorativo
   - Language: Japanese
-    String: 装飾用保護領オシリス セット
+    String: 装飾保護領オシリスセット
   - Language: Polish
-    String: Zestaw dekoracyjny Ozyrysa
+    String: Zestaw dekoracyjny Protektoratu Ozyrysa
   - Language: Portuguese_Brazil
-    String: Conjunto Decorativo Protetorado Osiris
+    String: Conjunto Protetorado Osíris Decorativo
   - Language: ChineseSimplified
     String: 装饰保护国奥西里斯套装
 Items:

@@ -8,19 +8,19 @@ Name:
   - Language: English
     String: Decorative Ballistic BLS-C Turret Set
   - Language: Spanish
-    String: Conjunto de torreta balística BLS-C decorativa
+    String: Conjunto de torreta balística decorativa BLS-C
   - Language: French
-    String: 'Ensemble de tourelle balistique décorative BLS-C '
+    String: Ensemble de tourelles balistiques décoratives BLS-C
   - Language: Italian
-    String: Decorativo BLS balistico Set torretta -C
+    String: Set torretta balistica decorativa BLS-C
   - Language: Japanese
-    String: 装飾弾道 BLS-C タレット セット
+    String: 装飾弾道BLS-C砲塔セット
   - Language: Polish
-    String: Dekoracyjny zestaw wieżyczek balistycznych BLS-C
+    String: Zestaw dekoracyjnych wieżyczek balistycznych BLS-C
   - Language: Portuguese_Brazil
     String: Conjunto de torre balística decorativa BLS-C
   - Language: ChineseSimplified
-    String: 装饰性弹道 BLS-C 炮塔套件
+    String: 装饰弹道 BLS-C 炮塔套装
 Items:
 - 001E42:JunkInYourTrunk_v3.esm
 - 001E43:JunkInYourTrunk_v3.esm

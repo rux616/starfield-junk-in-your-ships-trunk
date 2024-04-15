@@ -29,19 +29,19 @@ Components:
     - Language: English
       String: Port Btm
     - Language: Spanish
-      String: Port Btm
+      String: Puerto Btm
     - Language: French
-      String: Port Btm
+      String: Port BTM
     - Language: Italian
-      String: Porta Btm
+      String: Porto BTM
     - Language: Japanese
-      String: ポート BTM
+      String: ポートBTM
     - Language: Polish
       String: Port Btm
     - Language: Portuguese_Brazil
-      String: Port Btm
+      String: Porto Btm
     - Language: ChineseSimplified
-      String: Port Btm
+      String: Btm 港
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

@@ -2,7 +2,25 @@ FormKey: 003FD9:JunkInYourTrunk_v3.esm
 EditorID: SMSSet_Decorative_GravDrive_Nova_NG3xx
 Name:
   TargetLanguage: English
-  Value: Decorative Nova NG3xx Set
+  Values:
+  - Language: German
+    String: Dekoratives Nova NG3xx-Set
+  - Language: English
+    String: Decorative Nova NG3xx Set
+  - Language: Spanish
+    String: Set decorativo Nova NG3xx
+  - Language: French
+    String: Ensemble décoratif Nova NG3xx
+  - Language: Italian
+    String: Set decorativo Nova NG3xx
+  - Language: Japanese
+    String: デコラティブ ノヴァ NG3xx セット
+  - Language: Polish
+    String: Zestaw dekoracyjny Nova NG3xx
+  - Language: Portuguese_Brazil
+    String: Conjunto Decorativo Nova NG3xx
+  - Language: ChineseSimplified
+    String: 装饰 Nova NG3xx 套装
 Items:
 - 003FDA:JunkInYourTrunk_v3.esm
 - 003FE1:JunkInYourTrunk_v3.esm

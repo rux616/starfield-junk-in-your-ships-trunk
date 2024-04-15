@@ -2,7 +2,25 @@ FormKey: 0030A8:JunkInYourTrunk_v3.esm
 EditorID: SMBSet_GravDrive_Reladyne_RD-3000-Beta
 Name:
   TargetLanguage: English
-  Value: Reladyne RD-3000 Beta Set
+  Values:
+  - Language: German
+    String: Reladyne RD-3000 Beta-Set
+  - Language: English
+    String: Reladyne RD-3000 Beta Set
+  - Language: Spanish
+    String: Juego Beta Reladyne RD-3000
+  - Language: French
+    String: Ensemble bêta Reladyne RD-3000
+  - Language: Italian
+    String: Set Reladyne RD-3000 Beta
+  - Language: Japanese
+    String: Reladyne RD-3000 ベータ セット
+  - Language: Polish
+    String: Zestaw Reladyne RD-3000 Beta
+  - Language: Portuguese_Brazil
+    String: Conjunto Beta Reladyne RD-3000
+  - Language: ChineseSimplified
+    String: Reladyne RD-3000 测试版套装
 Items:
 - 0030A9:JunkInYourTrunk_v3.esm
 - 0030AA:JunkInYourTrunk_v3.esm

@@ -25,19 +25,19 @@ Components:
     - Language: English
       String: 'Decorative: Dogstar Guardian'
     - Language: Spanish
-      String: ' Decorativo: Dogstar Guardian'
+      String: 'Decorativo: Guardián Dogstar'
     - Language: French
       String: 'Décoratif : Dogstar Guardian'
     - Language: Italian
       String: 'Decorativo: Dogstar Guardian'
     - Language: Japanese
-      String: '装飾: Dogstar Guardian'
+      String: '装飾: ドッグスター ガーディアン'
     - Language: Polish
-      String: 'Dekoracyjny: Strażnik Psiej Gwiazdy'
+      String: 'Ozdoba: Strażnik Psiej Gwiazdy'
     - Language: Portuguese_Brazil
       String: 'Decorativo: Dogstar Guardian'
     - Language: ChineseSimplified
-      String: 装饰：Dogstar Guardian
+      String: 装饰：狗星守护者
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

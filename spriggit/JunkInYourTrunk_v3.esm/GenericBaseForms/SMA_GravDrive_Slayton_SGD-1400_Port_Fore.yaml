@@ -42,7 +42,25 @@ Components:
 - MutagenObjectType: FullNameComponent
   Name:
     TargetLanguage: English
-    Value: SGD 1400 Grav Drive
+    Values:
+    - Language: German
+      String: Grav-Antrieb SGD 1400
+    - Language: English
+      String: SGD 1400 Grav Drive
+    - Language: Spanish
+      String: Motor gravitacional SGD 1400
+    - Language: French
+      String: Astromoteur SGD 1400
+    - Language: Italian
+      String: Gravimotore SGD 1400
+    - Language: Japanese
+      String: SGD1400グラヴ・ドライブ
+    - Language: Polish
+      String: Napęd grawitonowy SGD 1400
+    - Language: Portuguese_Brazil
+      String: Motor Grav SGD 1400
+    - Language: ChineseSimplified
+      String: SGD 1400重力推动器
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

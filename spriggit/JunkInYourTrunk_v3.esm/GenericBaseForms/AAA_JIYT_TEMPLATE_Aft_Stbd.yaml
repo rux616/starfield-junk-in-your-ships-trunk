@@ -25,23 +25,23 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: Aft Stbd
+      String: Achtern Stbd
     - Language: English
       String: Aft Stbd
     - Language: Spanish
-      String: Aft Stbd
+      String: popa estb
     - Language: French
-      String: Aft Stbd
+      String: Arrière tribord
     - Language: Italian
-      String: Aft Stbd
+      String: Stbd a poppa
     - Language: Japanese
-      String: 後部 Stbd
+      String: 後部Stbd
     - Language: Polish
-      String: Rufa Stbd
+      String: Stbd rufowy
     - Language: Portuguese_Brazil
-      String: Aft Stbd
+      String: Popa estibordo
     - Language: ChineseSimplified
-      String: 后支架
+      String: 船尾标准
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

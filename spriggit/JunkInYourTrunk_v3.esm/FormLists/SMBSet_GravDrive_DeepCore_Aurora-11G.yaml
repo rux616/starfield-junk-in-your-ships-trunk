@@ -2,7 +2,25 @@ FormKey: 002DC4:JunkInYourTrunk_v3.esm
 EditorID: SMBSet_GravDrive_DeepCore_Aurora-11G
 Name:
   TargetLanguage: English
-  Value: DeepCore Aurora 11G Set
+  Values:
+  - Language: German
+    String: DeepCore Aurora 11G-Set
+  - Language: English
+    String: DeepCore Aurora 11G Set
+  - Language: Spanish
+    String: Conjunto DeepCore Aurora 11G
+  - Language: French
+    String: Ensemble DeepCore Aurora 11G
+  - Language: Italian
+    String: Set DeepCore Aurora 11G
+  - Language: Japanese
+    String: DeepCore Aurora 11G セット
+  - Language: Polish
+    String: Zestaw DeepCore Aurora 11G
+  - Language: Portuguese_Brazil
+    String: Conjunto DeepCore Aurora 11G
+  - Language: ChineseSimplified
+    String: DeepCore Aurora 11G 套装
 Items:
 - 002DC5:JunkInYourTrunk_v3.esm
 - 002DCC:JunkInYourTrunk_v3.esm

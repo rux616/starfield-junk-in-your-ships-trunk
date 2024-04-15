@@ -31,15 +31,15 @@ Components:
     - Language: French
       String: 'Décoratif : Shinigami LCT-C'
     - Language: Italian
-      String: 'Decorativo: Shinigami LCT-C '
+      String: 'Decorativo: Shinigami LCT-C'
     - Language: Japanese
-      String: '装飾: 死神LCT-C'
+      String: 装飾品：死神LCT-C
     - Language: Polish
-      String: ' Dekoracyjne: Shinigami LCT-C'
+      String: 'Dekoracyjne: Shinigami LCT-C'
     - Language: Portuguese_Brazil
       String: 'Decorativo: Shinigami LCT-C'
     - Language: ChineseSimplified
-      String: 装饰：Shinigami LCT-C
+      String: 装饰：死神LCT-C
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

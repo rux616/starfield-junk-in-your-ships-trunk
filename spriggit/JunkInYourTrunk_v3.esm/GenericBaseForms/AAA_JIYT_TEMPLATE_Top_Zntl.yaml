@@ -29,17 +29,17 @@ Components:
     - Language: English
       String: Top Zntl
     - Language: Spanish
-      String: Top Zntl
+      String: Zntl superior
     - Language: French
-      String: Top Zntl
+      String: Haut Zntl
     - Language: Italian
-      String: Zntl superiore
+      String: Top Zntl
     - Language: Japanese
-      String: トップ Zntl
+      String: トップZNTL
     - Language: Polish
       String: Top Zntl
     - Language: Portuguese_Brazil
-      String: Top Zntl
+      String: Zntl superior
     - Language: ChineseSimplified
       String: 顶部 Zntl
 Template: 03058E:Starfield.esm

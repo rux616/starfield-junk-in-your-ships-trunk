@@ -31,7 +31,7 @@ Components:
     - Language: Spanish
       String: Stbd Zntl
     - Language: French
-      String: Stbd Zntl
+      String: Tribd Zntl
     - Language: Italian
       String: Stbd Zntl
     - Language: Japanese
@@ -41,7 +41,7 @@ Components:
     - Language: Portuguese_Brazil
       String: Stbd Zntl
     - Language: ChineseSimplified
-      String: Stbd Zntl
+      String: 稳定状态
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

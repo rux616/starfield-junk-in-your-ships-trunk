@@ -27,19 +27,19 @@ Components:
     - Language: English
       String: 'Decorative: Horizon LSR-C Turret'
     - Language: Spanish
-      String: ' Decorativo: Torreta Horizon LSR-C'
+      String: 'Decorativo: Torreta Horizon LSR-C'
     - Language: French
       String: 'Décoratif : Tourelle Horizon LSR-C'
     - Language: Italian
-      String: 'Decorativo: Torretta Horizon LSR-C'
+      String: 'Decorativo: torretta Horizon LSR-C'
     - Language: Japanese
-      String: '装飾: Horizo​​n LSR- C タレット'
+      String: '装飾: Horizo​​n LSR-C タレット'
     - Language: Polish
-      String: 'Ozdobny: Wieża Horizon LSR-C'
+      String: 'Dekoracja: Wieża Horizon LSR-C'
     - Language: Portuguese_Brazil
       String: 'Decorativo: Torre Horizon LSR-C'
     - Language: ChineseSimplified
-      String: 装饰：Horizo​​n LSR-C炮塔
+      String: 装饰：Horizo​​n LSR-C 炮塔
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

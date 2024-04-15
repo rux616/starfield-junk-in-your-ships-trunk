@@ -31,17 +31,17 @@ Components:
     - Language: Spanish
       String: Fore Zntl
     - Language: French
-      String: Fore Zntl
+      String: Avant Zntl
     - Language: Italian
       String: Fore Zntl
     - Language: Japanese
-      String: フォア Zntl
+      String: 前方Zntl
     - Language: Polish
-      String: Przedni Zntl
+      String: Przed Zntl
     - Language: Portuguese_Brazil
-      String: Fore Zntl
+      String: Frente Zntl
     - Language: ChineseSimplified
-      String: 前 Zntl
+      String: 前锌特尔
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

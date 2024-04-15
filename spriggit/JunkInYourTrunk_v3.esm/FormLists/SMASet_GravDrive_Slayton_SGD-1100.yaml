@@ -2,7 +2,25 @@ FormKey: 002888:JunkInYourTrunk_v3.esm
 EditorID: SMASet_GravDrive_Slayton_SGD-1100
 Name:
   TargetLanguage: English
-  Value: Slayton SGD 1100 Set
+  Values:
+  - Language: German
+    String: Slayton SGD 1100-Set
+  - Language: English
+    String: Slayton SGD 1100 Set
+  - Language: Spanish
+    String: Slayton SGD 1100 Juego
+  - Language: French
+    String: Slayton SGD 1100 Ensemble
+  - Language: Italian
+    String: Set Slayton SGD 1100
+  - Language: Japanese
+    String: スレイトン SGD 1100 セット
+  - Language: Polish
+    String: Zestaw Slaytona za 1100 SGD
+  - Language: Portuguese_Brazil
+    String: Conjunto Slayton SGD 1100
+  - Language: ChineseSimplified
+    String: 斯莱顿 1100 新元套装
 Items:
 - 002889:JunkInYourTrunk_v3.esm
 - 002890:JunkInYourTrunk_v3.esm

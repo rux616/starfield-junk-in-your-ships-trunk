@@ -25,23 +25,23 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: ' Stbd Btm'
+      String: Stbd Btm
     - Language: English
       String: Stbd Btm
     - Language: Spanish
-      String: Stbd Btm
+      String: STBD BTM
     - Language: French
-      String: Stbd Btm
+      String: Tribd Btm
     - Language: Italian
-      String: Stbd Btm
+      String: StbdBtm
     - Language: Japanese
-      String: Stbd Btm
+      String: 標準BTM
     - Language: Polish
       String: Stbd Btm
     - Language: Portuguese_Brazil
-      String: Stbd Btm
+      String: Estip Btm
     - Language: ChineseSimplified
-      String: Stbd Btm
+      String: 稳定Btm
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

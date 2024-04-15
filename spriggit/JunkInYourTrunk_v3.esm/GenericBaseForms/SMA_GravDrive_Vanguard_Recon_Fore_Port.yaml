@@ -42,7 +42,25 @@ Components:
 - MutagenObjectType: FullNameComponent
   Name:
     TargetLanguage: English
-    Value: Vanguard Recon Grav Drive
+    Values:
+    - Language: German
+      String: 'Vanguard: Aufklärungs-Grav-Antrieb'
+    - Language: English
+      String: Vanguard Recon Grav Drive
+    - Language: Spanish
+      String: Motor grav. de recon. de la Vanguardia
+    - Language: French
+      String: Astromoteur de reconnaissance de l'Avant-garde
+    - Language: Italian
+      String: Gravimotore Recon Avanguardia
+    - Language: Japanese
+      String: バンガード・リコン・グラヴ・ドライブ
+    - Language: Polish
+      String: Recon Gwardii - napęd grawitonowy
+    - Language: Portuguese_Brazil
+      String: Motor Grav de Reconhecimento Vanguarda
+    - Language: ChineseSimplified
+      String: 先锋队侦察重力推动器
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

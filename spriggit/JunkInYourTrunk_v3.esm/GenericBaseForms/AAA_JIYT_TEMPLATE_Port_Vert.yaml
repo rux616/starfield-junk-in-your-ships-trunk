@@ -29,19 +29,19 @@ Components:
     - Language: English
       String: Port Vert
     - Language: Spanish
-      String: Port Vert
+      String: Puerto Verde
     - Language: French
-      String: Port Vert
+      String: Port-Vert
     - Language: Italian
-      String: Porta verticale
+      String: Porto Verde
     - Language: Japanese
-      String: ポート ヴェール
+      String: ポールヴェール
     - Language: Polish
-      String: Port Vert
+      String: Port pionowy
     - Language: Portuguese_Brazil
-      String: Port Vert
+      String: Porto Verde
     - Language: ChineseSimplified
-      String: Port Vert
+      String: 维特港
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

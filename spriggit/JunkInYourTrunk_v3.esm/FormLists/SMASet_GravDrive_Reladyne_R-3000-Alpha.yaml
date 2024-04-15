@@ -2,7 +2,25 @@ FormKey: 0027EA:JunkInYourTrunk_v3.esm
 EditorID: SMASet_GravDrive_Reladyne_R-3000-Alpha
 Name:
   TargetLanguage: English
-  Value: Reladyne R-3000 Alpha Set
+  Values:
+  - Language: German
+    String: Reladyne R-3000 Alpha-Set
+  - Language: English
+    String: Reladyne R-3000 Alpha Set
+  - Language: Spanish
+    String: Juego Alfa Reladyne R-3000
+  - Language: French
+    String: Ensemble Alpha Reladyne R-3000
+  - Language: Italian
+    String: Set RELADYNE R-3000 ALFA
+  - Language: Japanese
+    String: リラダイン R-3000 アルファセット
+  - Language: Polish
+    String: Zestaw alfa Reladyne R-3000
+  - Language: Portuguese_Brazil
+    String: Conjunto Alfa Reladyne R-3000
+  - Language: ChineseSimplified
+    String: Reladyne R-3000 Alpha 套装
 Items:
 - 0027EB:JunkInYourTrunk_v3.esm
 - 0027EC:JunkInYourTrunk_v3.esm

@@ -4,23 +4,23 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Dekoratives Light Scythe PRT-B-Geschützturm-Set
+    String: Dekoratives Lichtsense-PRT-B-Turm-Set
   - Language: English
     String: Decorative Light Scythe PRT-B Turret Set
   - Language: Spanish
-    String: Decorativo Light Scythe PRT-B Turret Set
+    String: Juego de torreta decorativa Light Scythe PRT-B
   - Language: French
-    String: Ensemble de tourelle décorative PRT-B avec faux lumineuse
+    String: Ensemble de tourelles décoratives Scythe PRT-B
   - Language: Italian
-    String: Set torretta PRT-B con falce leggera decorativa
+    String: Set torretta decorativa per falce luminosa PRT-B
   - Language: Japanese
-    String: 装飾用ライトサイス PRT-B タレットセット
+    String: 装飾ライトサイズ PRT-B タレットセット
   - Language: Polish
-    String: Zestaw dekoracyjnych wież świetlnych PRT-B
+    String: Zestaw wieżyczek dekoracyjnych Light Scythe PRT-B
   - Language: Portuguese_Brazil
-    String: Conjunto de Torreta Decorativa Light Scythe PRT-B
+    String: Conjunto de torre de luz decorativa Scythe PRT-B
   - Language: ChineseSimplified
-    String: 装饰光镰刀 PRT-B 炮塔套件
+    String: 装饰光镰刀 PRT-B 炮塔套装
 Items:
 - 001E3D:JunkInYourTrunk_v3.esm
 - 001E3E:JunkInYourTrunk_v3.esm

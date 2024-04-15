@@ -43,7 +43,25 @@ Components:
 - MutagenObjectType: FullNameComponent
   Name:
     TargetLanguage: English
-    Value: SGD 3200 Grav Drive
+    Values:
+    - Language: German
+      String: Grav-Antrieb SGD 3200
+    - Language: English
+      String: SGD 3200 Grav Drive
+    - Language: Spanish
+      String: Motor gravitacional SGD 3200
+    - Language: French
+      String: Astromoteur SGD 3200
+    - Language: Italian
+      String: Gravimotore SGD 3200
+    - Language: Japanese
+      String: SGD3200グラヴ・ドライブ
+    - Language: Polish
+      String: Napęd grawitonowy SGD 3200
+    - Language: Portuguese_Brazil
+      String: Motor Grav SGD 3200
+    - Language: ChineseSimplified
+      String: SGD 3200重力推动器
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

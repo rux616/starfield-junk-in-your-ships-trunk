@@ -25,21 +25,21 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: Aft Vert
+      String: Achtern Vert
     - Language: English
       String: Aft Vert
     - Language: Spanish
-      String: Aft Vert
+      String: Vertical de popa
     - Language: French
-      String: Aft Vert
+      String: Verte arrière
     - Language: Italian
-      String: Verticale di poppa
+      String: Poppa verticale
     - Language: Japanese
-      String: 後部バート
+      String: アフト・ヴェール
     - Language: Polish
       String: Pion rufowy
     - Language: Portuguese_Brazil
-      String: Aft Vert
+      String: Popa Verde
     - Language: ChineseSimplified
       String: 后垂直
 Template: 03058E:Starfield.esm

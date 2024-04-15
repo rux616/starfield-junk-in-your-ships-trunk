@@ -25,23 +25,23 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: Btm Port
+      String: Btm-Port
     - Language: English
       String: Btm Port
     - Language: Spanish
-      String: Puerto Btm
+      String: Puerto BTM
     - Language: French
-      String: Port Btm
+      String: Port BTM
     - Language: Italian
-      String: Porta Btm
+      String: Porto BTM
     - Language: Japanese
-      String: Btm ポート
+      String: BTMポート
     - Language: Polish
-      String: Port Btm
+      String: Port BTM
     - Language: Portuguese_Brazil
       String: Porto Btm
     - Language: ChineseSimplified
-      String: Btm 端口
+      String: 巴士港
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

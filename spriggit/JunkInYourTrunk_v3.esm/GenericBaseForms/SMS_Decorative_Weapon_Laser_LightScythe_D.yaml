@@ -23,23 +23,23 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: 'Dekorativ: Light Scythe LSR-D'
+      String: 'Dekorativ: Lichtsense LSR-D'
     - Language: English
       String: 'Decorative: Light Scythe LSR-D'
     - Language: Spanish
       String: 'Decorativo: Guadaña ligera LSR-D'
     - Language: French
-      String: 'Décoratif : Light Scythe LSR-D'
+      String: 'Décoratif : Faux lumineux LSR-D'
     - Language: Italian
-      String: 'Decorativo: falce leggera LSR- D'
+      String: 'Decorativo: Falce leggera LSR-D'
     - Language: Japanese
-      String: '装飾: ライトサイス LSR-D'
+      String: 装飾品：ライトサイスLSR-D
     - Language: Polish
-      String: 'Dekoracyjny: Light Scythe LSR-D'
+      String: 'Dekoracyjna: Lekka Kosa LSR-D'
     - Language: Portuguese_Brazil
-      String: 'Decorativo: Light Scythe LSR-D'
+      String: 'Decorativo: Foice Leve LSR-D'
     - Language: ChineseSimplified
-      String: '装饰：光镰LSR-D '
+      String: 装饰：光镰LSR-D
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

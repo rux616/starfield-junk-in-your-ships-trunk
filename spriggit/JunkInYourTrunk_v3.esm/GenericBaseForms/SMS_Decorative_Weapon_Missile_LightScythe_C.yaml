@@ -23,19 +23,19 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: 'Dekorativ: Light Scythe MSL-C'
+      String: 'Dekorativ: Lichtsense MSL-C'
     - Language: English
       String: 'Decorative: Light Scythe MSL-C'
     - Language: Spanish
-      String: 'Decorativo: Light Scythe MSL- C'
+      String: 'Decorativo: Guadaña ligera MSL-C'
     - Language: French
-      String: 'Décoratif : faux léger MSL-C'
+      String: 'Décoratif : Faux lumineux MSL-C'
     - Language: Italian
-      String: 'Decorativo: falce leggera MSL-C'
+      String: 'Decorativo: Falce leggera MSL-C'
     - Language: Japanese
-      String: '装飾: ライトサイス MSL-C'
+      String: 装飾品：ライトサイスMSL-C
     - Language: Polish
-      String: 'Dekoracyjny: Lekka Kosa MSL-C'
+      String: 'Dekoracyjny: Light Scythe MSL-C'
     - Language: Portuguese_Brazil
       String: 'Decorativo: Foice Leve MSL-C'
     - Language: ChineseSimplified

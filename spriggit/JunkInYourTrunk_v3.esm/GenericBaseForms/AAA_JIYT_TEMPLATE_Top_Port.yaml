@@ -25,21 +25,21 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: Oberer Port
+      String: Oberer Hafen
     - Language: English
       String: Top Port
     - Language: Spanish
-      String: Top Port
+      String: Puerto superior
     - Language: French
       String: Port supérieur
     - Language: Italian
-      String: Porta superiore
+      String: Porto superiore
     - Language: Japanese
-      String: Top Port
+      String: トップポート
     - Language: Polish
       String: Górny port
     - Language: Portuguese_Brazil
-      String: Top Porto
+      String: Porta superior
     - Language: ChineseSimplified
       String: 顶部端口
 Template: 03058E:Starfield.esm

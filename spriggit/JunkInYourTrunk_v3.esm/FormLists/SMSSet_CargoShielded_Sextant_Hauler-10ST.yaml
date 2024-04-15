@@ -4,23 +4,23 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Sextant Hauler 10ST Shielded Set
+    String: Sextant Hauler 10ST abgeschirmtes Set
   - Language: English
     String: Sextant Hauler 10ST Shielded Set
   - Language: Spanish
-    String: Sextant Hauler 10ST Blinded Set
+    String: Sextante Hauler 10ST Juego blindado
   - Language: French
     String: Ensemble blindé Sextant Hauler 10ST
   - Language: Italian
-    String: Set schermato sestante Hauler 10ST
+    String: Set schermato per sestante trasportatore 10ST
   - Language: Japanese
-    String: 六分儀運搬人 10ST シールド セット
+    String: 六分儀運び屋 10ST シールドセット
   - Language: Polish
-    String: Sextant Hauler 10ST Zestaw z ekranem
+    String: Zestaw ekranowany Sextant Hauler 10ST
   - Language: Portuguese_Brazil
-    String: Conjunto blindado Sextante Hauler 10ST
+    String: Conjunto blindado Sextant Hauler 10ST
   - Language: ChineseSimplified
-    String: 六分仪拖车 10ST 屏蔽套装
+    String: 六分仪搬运器 10ST 屏蔽套件
 Items:
 - 115959:Starfield.esm
 - 11595A:Starfield.esm

@@ -33,13 +33,13 @@ Components:
     - Language: Italian
       String: 'Decorativo: Dogstar StorMax 60'
     - Language: Japanese
-      String: '装飾: Dogstar StorMax 60 '
+      String: '装飾: Dogstar StorMax 60'
     - Language: Polish
-      String: 'Dekoracyjny: Dogstar StorMax 60'
+      String: 'Ozdoba: Dogstar StorMax 60'
     - Language: Portuguese_Brazil
       String: 'Decorativo: Dogstar StorMax 60'
     - Language: ChineseSimplified
-      String: '装饰：Dogstar StorMax 60 '
+      String: 装饰：Dogstar StorMax 60
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

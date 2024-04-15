@@ -21,19 +21,19 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: 'Dekorativ: Protectorate Osiris'
+      String: 'Dekorativ: Protektorat Osiris'
     - Language: English
       String: 'Decorative: Protectorate Osiris'
     - Language: Spanish
       String: 'Decorativo: Protectorado Osiris'
     - Language: French
-      String: ' Décoratif : Protectorat Osiris'
+      String: "Décoratif : Protectorat d'Osiris"
     - Language: Italian
-      String: 'Decorativa: protettorato Osiride'
+      String: 'Decorativo: Protettorato Osiride'
     - Language: Japanese
-      String: '装飾: オシリス保護領'
+      String: '装飾品: オシリス保護領'
     - Language: Polish
-      String: 'Dekoracyjny: Protektorat Ozyrys'
+      String: 'Dekoracyjny: Protektorat Ozyrysa'
     - Language: Portuguese_Brazil
       String: 'Decorativo: Protetorado Osíris'
     - Language: ChineseSimplified

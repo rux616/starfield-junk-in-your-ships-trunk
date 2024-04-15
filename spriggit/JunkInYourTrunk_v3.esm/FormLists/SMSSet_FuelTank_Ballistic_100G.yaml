@@ -4,21 +4,21 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Ballistischer 100G-Satz
+    String: Ballistisches 100G-Set
   - Language: English
     String: Ballistic 100G Set
   - Language: Spanish
-    String: Ballistic 100G Set
+    String: Conjunto balístico 100G
   - Language: French
     String: Ensemble balistique 100G
   - Language: Italian
     String: Set balistico 100G
   - Language: Japanese
-    String: バリスティック 100G セット
+    String: バリスティック100Gセット
   - Language: Polish
     String: Zestaw balistyczny 100G
   - Language: Portuguese_Brazil
-    String: Balístico 100G Conjunto
+    String: Conjunto balístico 100G
   - Language: ChineseSimplified
     String: 弹道 100G 套装
 Items:

@@ -4,23 +4,23 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Dekoratives Nautilus Bastille-Set
+    String: Dekoratives Nautilus-Bastille-Set
   - Language: English
     String: Decorative Nautilus Bastille Set
   - Language: Spanish
-    String: Decorativo Nautilus Bastille Set
+    String: Conjunto decorativo Nautilus Bastilla
   - Language: French
     String: Ensemble décoratif Nautilus Bastille
   - Language: Italian
     String: Set decorativo Nautilus Bastille
   - Language: Japanese
-    String: 装飾品ノーチラスバスティーユセット
+    String: 装飾オウムガイバスティーユセット
   - Language: Polish
-    String: Zestaw dekoracyjnych wież Nautilus Bastille
+    String: Dekoracyjny zestaw Nautilus Bastille
   - Language: Portuguese_Brazil
     String: Conjunto decorativo Nautilus Bastille
   - Language: ChineseSimplified
-    String: 装饰 Nautilus Bastille套装
+    String: 装饰鹦鹉螺巴士底狱套装
 Items:
 - 001523:JunkInYourTrunk_v3.esm
 - 001524:JunkInYourTrunk_v3.esm

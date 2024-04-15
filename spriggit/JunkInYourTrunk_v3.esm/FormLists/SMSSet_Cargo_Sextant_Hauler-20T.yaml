@@ -4,23 +4,23 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Sextant Hauler 20T Set
+    String: Set Sextantschlepper 20T
   - Language: English
     String: Sextant Hauler 20T Set
   - Language: Spanish
-    String: Conjunto Sextant Hauler 20T
+    String: Juego de transporte sextante 20T
   - Language: French
-    String: Sextant Hauler 20T Set
+    String: Ensemble Sextant Hauler 20T
   - Language: Italian
-    String: Set sestante trasportatore 20T
+    String: Set trasportatore di sestanti 20T
   - Language: Japanese
-    String: 六分儀運搬人 20T セット
+    String: 六分儀運び屋 20T セット
   - Language: Polish
     String: Zestaw sekstantu 20T
   - Language: Portuguese_Brazil
-    String: Sextant Hauler 20T Set
+    String: Conjunto Sextante Hauler 20T
   - Language: ChineseSimplified
-    String: 六分仪搬运车 20T 套件
+    String: 六分仪搬运车 20T 套装
 Items:
 - 27047A:Starfield.esm
 - 0009F7:JunkInYourTrunk_v3.esm

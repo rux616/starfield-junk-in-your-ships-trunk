@@ -2,7 +2,25 @@ FormKey: 002AF8:JunkInYourTrunk_v3.esm
 EditorID: SMASet_GravDrive_Slayton_SGD-1400
 Name:
   TargetLanguage: English
-  Value: Slayton SGD 1400 Set
+  Values:
+  - Language: German
+    String: Slayton SGD 1400-Set
+  - Language: English
+    String: Slayton SGD 1400 Set
+  - Language: Spanish
+    String: Slayton SGD 1400 Juego
+  - Language: French
+    String: Slayton SGD 1400 Ensemble
+  - Language: Italian
+    String: Set Slayton SGD 1400
+  - Language: Japanese
+    String: スレイトン SGD 1400 セット
+  - Language: Polish
+    String: Zestaw Slaytona za 1400 SGD
+  - Language: Portuguese_Brazil
+    String: Conjunto Slayton SGD 1400
+  - Language: ChineseSimplified
+    String: 斯莱顿 1400 新元套装
 Items:
 - 002AF9:JunkInYourTrunk_v3.esm
 - 002B00:JunkInYourTrunk_v3.esm

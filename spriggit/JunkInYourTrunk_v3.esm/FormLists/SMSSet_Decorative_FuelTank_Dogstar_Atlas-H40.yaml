@@ -4,11 +4,11 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Dekoratives Dogstar Atlas H40-Set
+    String: Dekoratives Set Dogstar Atlas H40
   - Language: English
     String: Decorative Dogstar Atlas H40 Set
   - Language: Spanish
-    String: Conjunto Dogstar Atlas H40 decorativo
+    String: Set decorativo Dogstar Atlas H40
   - Language: French
     String: Ensemble décoratif Dogstar Atlas H40
   - Language: Italian
@@ -16,9 +16,9 @@ Name:
   - Language: Japanese
     String: 装飾用ドッグスター アトラス H40 セット
   - Language: Polish
-    String: Dekoracyjny zestaw Dogstar Atlas H40
+    String: Zestaw dekoracyjny Dogstar Atlas H40
   - Language: Portuguese_Brazil
-    String: Conjunto decorativo Dogstar Atlas H40
+    String: Conjunto Decorativo Dogstar Atlas H40
   - Language: ChineseSimplified
     String: 装饰 Dogstar Atlas H40 套装
 Items:

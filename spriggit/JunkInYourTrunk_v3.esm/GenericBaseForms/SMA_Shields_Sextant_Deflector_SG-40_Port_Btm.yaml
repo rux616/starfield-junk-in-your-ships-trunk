@@ -54,7 +54,7 @@ Components:
     - Language: Spanish
       String: Generador de escudos Deflector SG-40
     - Language: French
-      String: Générateur de bouclier Deflector SG-40
+      String: Déflecteur SG-40 Générateur de Bouclier
     - Language: Italian
       String: Generatore di scudo Deflector SG-40
     - Language: Japanese
@@ -62,7 +62,7 @@ Components:
     - Language: Polish
       String: Generator osłon Deflector SG-40
     - Language: Portuguese_Brazil
-      String: Gerador de Escudo Deflector SG-40
+      String: Gerador de escudo defletor SG-40
     - Language: ChineseSimplified
       String: 导流板SG-40护盾生成器
 Template: 03058E:Starfield.esm

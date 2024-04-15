@@ -2,7 +2,25 @@ FormKey: 003BD7:JunkInYourTrunk_v3.esm
 EditorID: SMSSet_Decorative_GravDrive_DeepCore_Aurora
 Name:
   TargetLanguage: English
-  Value: Decorative DeepCore Aurora Set
+  Values:
+  - Language: German
+    String: Dekoratives DeepCore Aurora-Set
+  - Language: English
+    String: Decorative DeepCore Aurora Set
+  - Language: Spanish
+    String: Conjunto decorativo DeepCore Aurora
+  - Language: French
+    String: Ensemble décoratif DeepCore Aurora
+  - Language: Italian
+    String: Set decorativo DeepCore Aurora
+  - Language: Japanese
+    String: 装飾用ディープコア オーロラ セット
+  - Language: Polish
+    String: Dekoracyjny zestaw DeepCore Aurora
+  - Language: Portuguese_Brazil
+    String: Conjunto Decorativo DeepCore Aurora
+  - Language: ChineseSimplified
+    String: 装饰 DeepCore 极光套装
 Items:
 - 003BD8:JunkInYourTrunk_v3.esm
 - 003BDF:JunkInYourTrunk_v3.esm

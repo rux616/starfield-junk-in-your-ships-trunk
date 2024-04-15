@@ -42,7 +42,25 @@ Components:
 - MutagenObjectType: FullNameComponent
   Name:
     TargetLanguage: English
-    Value: Apollo GV100 Grav Drive
+    Values:
+    - Language: German
+      String: Grav-Antrieb Apollo GV100
+    - Language: English
+      String: Apollo GV100 Grav Drive
+    - Language: Spanish
+      String: Motor gravitacional Apolo GV100
+    - Language: French
+      String: Astromoteur Apollo GV100
+    - Language: Italian
+      String: Gravimotore Apollo GV100
+    - Language: Japanese
+      String: アポロGV100グラヴ・ドライブ
+    - Language: Polish
+      String: Napęd grawitonowy Apollo GV100
+    - Language: Portuguese_Brazil
+      String: Motor Grav Apollo GV100
+    - Language: ChineseSimplified
+      String: 阿波罗GV100重力推动器
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

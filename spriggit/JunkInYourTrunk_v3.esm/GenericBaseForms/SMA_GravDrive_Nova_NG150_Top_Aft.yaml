@@ -43,7 +43,25 @@ Components:
 - MutagenObjectType: FullNameComponent
   Name:
     TargetLanguage: English
-    Value: NG150 Grav Drive
+    Values:
+    - Language: German
+      String: Grav-Antrieb NG150
+    - Language: English
+      String: NG150 Grav Drive
+    - Language: Spanish
+      String: Motor gravitacional NG150
+    - Language: French
+      String: Astromoteur NG150
+    - Language: Italian
+      String: Gravimotore NG150
+    - Language: Japanese
+      String: NG150グラヴ・ドライブ
+    - Language: Polish
+      String: Napęd grawitonowy NG150
+    - Language: Portuguese_Brazil
+      String: Motor Grav NG150
+    - Language: ChineseSimplified
+      String: NG150重力推动器
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

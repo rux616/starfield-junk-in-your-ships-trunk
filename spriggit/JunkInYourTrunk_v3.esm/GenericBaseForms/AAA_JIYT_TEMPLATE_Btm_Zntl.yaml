@@ -33,15 +33,15 @@ Components:
     - Language: French
       String: Btm Zntl
     - Language: Italian
-      String: Btm Zntl
+      String: BTM Zntl
     - Language: Japanese
-      String: Btm Zntl
+      String: BTM ZNTL
     - Language: Polish
       String: Btm Zntl
     - Language: Portuguese_Brazil
       String: Btm Zntl
     - Language: ChineseSimplified
-      String: Btm Zntl
+      String: Btm锌特尔
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

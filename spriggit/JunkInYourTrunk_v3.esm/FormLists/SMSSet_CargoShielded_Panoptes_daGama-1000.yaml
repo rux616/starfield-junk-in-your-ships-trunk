@@ -4,11 +4,11 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Panoptes da Gama 1000 Shielded Set
+    String: Panoptes da Gama 1000 Abgeschirmtes Set
   - Language: English
     String: Panoptes da Gama 1000 Shielded Set
   - Language: Spanish
-    String: Conjunto blindado Panoptes da Gama 1000
+    String: Panoptes da Gama 1000 Conjunto Blindado
   - Language: French
     String: Ensemble blindé Panoptes da Gama 1000
   - Language: Italian
@@ -20,7 +20,7 @@ Name:
   - Language: Portuguese_Brazil
     String: Conjunto Blindado Panoptes da Gama 1000
   - Language: ChineseSimplified
-    String: Panoptes da Gama 1000 Shielded Set
+    String: Panoptes da Gama 1000 屏蔽套装
 Items:
 - 26512B:Starfield.esm
 - 16AE36:Starfield.esm

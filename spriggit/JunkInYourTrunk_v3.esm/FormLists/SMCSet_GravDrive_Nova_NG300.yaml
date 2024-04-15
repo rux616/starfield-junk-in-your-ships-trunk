@@ -2,7 +2,25 @@ FormKey: 0034DC:JunkInYourTrunk_v3.esm
 EditorID: SMCSet_GravDrive_Nova_NG300
 Name:
   TargetLanguage: English
-  Value: Nova NG300 Set
+  Values:
+  - Language: German
+    String: Nova NG300-Set
+  - Language: English
+    String: Nova NG300 Set
+  - Language: Spanish
+    String: Conjunto Nova NG300
+  - Language: French
+    String: Ensemble Nova NG300
+  - Language: Italian
+    String: Set Nova NG300
+  - Language: Japanese
+    String: ノヴァ NG300 セット
+  - Language: Polish
+    String: Zestaw Nova NG300
+  - Language: Portuguese_Brazil
+    String: Conjunto Nova NG300
+  - Language: ChineseSimplified
+    String: Nova NG300套装
 Items:
 - 0034DD:JunkInYourTrunk_v3.esm
 - 0034E4:JunkInYourTrunk_v3.esm

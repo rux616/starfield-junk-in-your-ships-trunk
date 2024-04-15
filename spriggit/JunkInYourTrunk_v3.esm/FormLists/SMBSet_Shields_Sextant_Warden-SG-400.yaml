@@ -4,21 +4,21 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Sextant Warden SG-400-Set
+    String: Set Sextant Warden SG-400
   - Language: English
     String: Sextant Warden SG-400 Set
   - Language: Spanish
-    String: Sextant Warden SG-400 Set
+    String: Set Sextante Guardián SG-400
   - Language: French
-    String: Ensemble de gardien de sextant SG-400
+    String: Ensemble Sextant Gardien SG-400
   - Language: Italian
-    String: Set guardia sestante SG-400
+    String: Set Guardiano del sestante SG-400
   - Language: Japanese
-    String: 六分儀監視員 SG-400 セット
+    String: 六分儀番人 SG-400 セット
   - Language: Polish
     String: Zestaw Sextant Warden SG-400
   - Language: Portuguese_Brazil
-    String: Conjunto Sextante Warden SG-400
+    String: Conjunto Sextante Diretor SG-400
   - Language: ChineseSimplified
     String: 六分仪守望者 SG-400 套装
 Items:

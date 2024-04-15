@@ -42,7 +42,25 @@ Components:
 - MutagenObjectType: FullNameComponent
   Name:
     TargetLanguage: English
-    Value: Aurora 11G Grav Drive
+    Values:
+    - Language: German
+      String: Grav-Antrieb Aurora 11G
+    - Language: English
+      String: Aurora 11G Grav Drive
+    - Language: Spanish
+      String: Motor gravitacional Aurora 11G
+    - Language: French
+      String: Astromoteur Aurora 11G
+    - Language: Italian
+      String: Gravimotore Aurora 11G
+    - Language: Japanese
+      String: オーロラ11Gグラヴ・ドライブ
+    - Language: Polish
+      String: Napęd grawitonowy Aurora 11G
+    - Language: Portuguese_Brazil
+      String: Motor Grav Aurora 11G
+    - Language: ChineseSimplified
+      String: 极光11G重力推动器
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

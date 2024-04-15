@@ -42,7 +42,25 @@ Components:
 - MutagenObjectType: FullNameComponent
   Name:
     TargetLanguage: English
-    Value: NG340 Grav Drive
+    Values:
+    - Language: German
+      String: Grav-Antrieb NG340
+    - Language: English
+      String: NG340 Grav Drive
+    - Language: Spanish
+      String: Motor gravitacional NG340
+    - Language: French
+      String: Astromoteur NG340
+    - Language: Italian
+      String: Gravimotore NG340
+    - Language: Japanese
+      String: NG340グラヴ・ドライブ
+    - Language: Polish
+      String: Napęd grawitonowy NG340
+    - Language: Portuguese_Brazil
+      String: Motor Grav NG340
+    - Language: ChineseSimplified
+      String: NG340重力推动器
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

@@ -48,23 +48,23 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: Protektor 10S Schildgenerator
+      String: Protector 10S Schildgenerator
     - Language: English
       String: Protector 10S Shield Generator
     - Language: Spanish
-      String: Protector 10S Shield Generator
+      String: Generador de escudo Protector 10S
     - Language: French
-      String: Protector 10S Shield Generator
+      String: Générateur de bouclier Protector 10S
     - Language: Italian
       String: Generatore di scudi Protector 10S
     - Language: Japanese
-      String: プロテクター 10S シールド ジェネレーター
+      String: プロテクター10S シールドジェネレーター
     - Language: Polish
-      String: Generator osłony Protector 10S
+      String: Generator osłon Protector 10S
     - Language: Portuguese_Brazil
-      String: Protector 10S Shield Generator
+      String: Gerador de escudo protetor 10S
     - Language: ChineseSimplified
-      String: 保护器 10S 护盾发生器
+      String: 保护者 10S 护盾发生器
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

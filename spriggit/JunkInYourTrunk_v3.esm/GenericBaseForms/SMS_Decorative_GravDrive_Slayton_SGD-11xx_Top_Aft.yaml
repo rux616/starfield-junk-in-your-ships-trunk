@@ -22,7 +22,25 @@ Components:
 - MutagenObjectType: FullNameComponent
   Name:
     TargetLanguage: English
-    Value: 'Decorative: Slayton SGD 11xx'
+    Values:
+    - Language: German
+      String: 'Dekorativ: Slayton SGD 11xx'
+    - Language: English
+      String: 'Decorative: Slayton SGD 11xx'
+    - Language: Spanish
+      String: 'Decorativo: Slayton SGD 11xx'
+    - Language: French
+      String: Décoratif : Slayton SGD 11xx
+    - Language: Italian
+      String: 'Decorativo: Slayton SGD 11xx'
+    - Language: Japanese
+      String: '装飾: スレイトン SGD 11xx'
+    - Language: Polish
+      String: 'Dekoracyjne: Slayton SGD 11xx'
+    - Language: Portuguese_Brazil
+      String: 'Decorativo: Slayton SGD 11xx'
+    - Language: ChineseSimplified
+      String: 装饰：Slayton SGD 11xx
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

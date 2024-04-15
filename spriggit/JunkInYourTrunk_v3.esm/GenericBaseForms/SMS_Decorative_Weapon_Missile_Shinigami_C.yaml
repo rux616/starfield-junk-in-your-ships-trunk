@@ -33,13 +33,13 @@ Components:
     - Language: Italian
       String: 'Decorativo: Shinigami MSL-C'
     - Language: Japanese
-      String: '装飾: 死神 MSL-C'
+      String: 装飾品：死神 MSL-C
     - Language: Polish
-      String: 'Dekoracyjny: Shinigami MSL-C'
+      String: 'Dekoracyjne: Shinigami MSL-C'
     - Language: Portuguese_Brazil
       String: 'Decorativo: Shinigami MSL-C'
     - Language: ChineseSimplified
-      String: 装饰：Shinigami MSL-C
+      String: 装饰：死神 MSL-C
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

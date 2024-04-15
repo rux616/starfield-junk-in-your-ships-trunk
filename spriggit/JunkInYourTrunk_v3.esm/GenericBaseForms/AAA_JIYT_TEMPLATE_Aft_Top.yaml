@@ -31,15 +31,15 @@ Components:
     - Language: Spanish
       String: Parte superior de popa
     - Language: French
-      String: Aft Top
+      String: Haut arrière
     - Language: Italian
-      String: Top di poppa
+      String: A poppa superiore
     - Language: Japanese
-      String: 後部トップ
+      String: 船尾上部
     - Language: Polish
-      String: Góra rufowa
+      String: Górna część rufy
     - Language: Portuguese_Brazil
-      String: Top traseiro
+      String: Topo de popa
     - Language: ChineseSimplified
       String: 船尾顶部
 Template: 03058E:Starfield.esm

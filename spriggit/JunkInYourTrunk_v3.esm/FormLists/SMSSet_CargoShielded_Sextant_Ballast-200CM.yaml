@@ -4,23 +4,23 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Sextant Ballast 200CM Abgeschirmtes Set
+    String: Sextant-Vorschaltgerät 200 cm, abgeschirmtes Set
   - Language: English
     String: Sextant Ballast 200CM Shielded Set
   - Language: Spanish
-    String: Sextante Lastre 200CM Conjunto blindado
+    String: Set Lastre Sextante 200CM Blindado
   - Language: French
-    String: Sextant Ballast 200CM Ensemble blindé
+    String: Ballast Sextant 200CM Ensemble Blindé
   - Language: Italian
-    String: Set protetto sestante zavorra 200CM
+    String: Set schermato sestante zavorra 200 cm
   - Language: Japanese
-    String: 六分儀バラスト 200CM シールド セット
+    String: 六分儀バラスト 200CM シールドセット
   - Language: Polish
-    String: Sekstantowy balast 200CM Zestaw ekranowany
+    String: Zestaw balastowy Sextant 200CM z ekranem
   - Language: Portuguese_Brazil
-    String: Sextant Ballast 200CM Shielded Set
+    String: Conjunto Blindado de Lastro Sextante 200CM
   - Language: ChineseSimplified
-    String: 六分仪镇流器 200CM 屏蔽套件
+    String: 六分仪镇流器200CM屏蔽套装
 Items:
 - 26512E:Starfield.esm
 - 171208:Starfield.esm

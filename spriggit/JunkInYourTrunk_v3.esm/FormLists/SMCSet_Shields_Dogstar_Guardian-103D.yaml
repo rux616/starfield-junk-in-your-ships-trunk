@@ -8,19 +8,19 @@ Name:
   - Language: English
     String: Dogstar Guardian 103D Set
   - Language: Spanish
-    String: Conjunto Dogstar Guardian 103D
+    String: Conjunto Dogstar Guardián 103D
   - Language: French
     String: Ensemble Dogstar Guardian 103D
   - Language: Italian
-    String: Set Dogstar Guardian 103D
+    String: Set Dogstar Guardiano 103D
   - Language: Japanese
     String: ドッグスター ガーディアン 103D セット
   - Language: Polish
     String: Zestaw Dogstar Guardian 103D
   - Language: Portuguese_Brazil
-    String: Conjunto Dogstar Guardian 103D
+    String: Conjunto Dogstar Guardião 103D
   - Language: ChineseSimplified
-    String: Dogstar Guardian 103D 套装
+    String: Dogstar 守护者 103D 套装
 Items:
 - 26F982:Starfield.esm
 - 17AB3E:Starfield.esm

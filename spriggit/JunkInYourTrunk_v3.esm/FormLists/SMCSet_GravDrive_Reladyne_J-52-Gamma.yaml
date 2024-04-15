@@ -2,7 +2,25 @@ FormKey: 0033B4:JunkInYourTrunk_v3.esm
 EditorID: SMCSet_GravDrive_Reladyne_J-52-Gamma
 Name:
   TargetLanguage: English
-  Value: Reladyne J-52 Gamma Set
+  Values:
+  - Language: German
+    String: Reladyne J-52 Gamma-Set
+  - Language: English
+    String: Reladyne J-52 Gamma Set
+  - Language: Spanish
+    String: Juego Reladyne J-52 Gamma
+  - Language: French
+    String: Ensemble gamma Reladyne J-52
+  - Language: Italian
+    String: Set Gamma Relaydyne J-52
+  - Language: Japanese
+    String: Reladyne J-52 ガンマセット
+  - Language: Polish
+    String: Zestaw Reladyne J-52 Gamma
+  - Language: Portuguese_Brazil
+    String: Conjunto Gama Reladyne J-52
+  - Language: ChineseSimplified
+    String: Reladyne J-52 伽玛套装
 Items:
 - 0033B5:JunkInYourTrunk_v3.esm
 - 0033B6:JunkInYourTrunk_v3.esm

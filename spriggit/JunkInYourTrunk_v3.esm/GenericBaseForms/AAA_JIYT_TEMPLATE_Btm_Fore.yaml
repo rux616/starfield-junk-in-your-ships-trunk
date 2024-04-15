@@ -25,23 +25,23 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: Btm vorne
+      String: Btm Fore
     - Language: English
       String: Btm Fore
     - Language: Spanish
-      String: Btm Fore
+      String: Btm adelante
     - Language: French
-      String: Btm Fore
+      String: Btm Avant
     - Language: Italian
-      String: Btm Fore
+      String: BTM Fore
     - Language: Japanese
-      String: 前部前部
+      String: BTMフォア
     - Language: Polish
-      String: Przód Btm
-    - Language: Portuguese_Brazil
       String: Btm Fore
+    - Language: Portuguese_Brazil
+      String: Btm Frente
     - Language: ChineseSimplified
-      String: Btm 前
+      String: Btm福尔
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

@@ -27,23 +27,23 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: Hauler 20T Frachtraum
+      String: Frachtraum des Hauler 20T
     - Language: English
       String: Hauler 20T Cargo Hold
     - Language: Spanish
-      String: Contenedor de carga Hauler 20T
+      String: Bodega de carga Hauler 20T
     - Language: French
-      String: Hauler 20T Cargo Hold
+      String: Cale de chargement Hauler 20T
     - Language: Italian
-      String: Hauler 20T Cargo Tieni
+      String: Stiva di carico del trasportatore 20T
     - Language: Japanese
-      String: ホーラー 20T カーゴ ホールド
+      String: ホーラー 20T 貨物倉
     - Language: Polish
-      String: Hauler 20T Ładownia
+      String: Wozidło 20T Ładownia
     - Language: Portuguese_Brazil
-      String: Hauler 20T Cargo Hold
+      String: Porão de carga do caminhão 20T
     - Language: ChineseSimplified
-      String: 牵引车 20T 货舱
+      String: 卡车 20T 货舱
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

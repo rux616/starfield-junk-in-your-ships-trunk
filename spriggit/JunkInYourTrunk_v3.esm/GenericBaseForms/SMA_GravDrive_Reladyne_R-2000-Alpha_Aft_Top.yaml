@@ -42,7 +42,25 @@ Components:
 - MutagenObjectType: FullNameComponent
   Name:
     TargetLanguage: English
-    Value: R-2000 Alpha Grav Drive
+    Values:
+    - Language: German
+      String: Grav-Antrieb R-2000 Alpha
+    - Language: English
+      String: R-2000 Alpha Grav Drive
+    - Language: Spanish
+      String: Motor gravitacional alfa R-2000
+    - Language: French
+      String: Astromoteur Alpha R-2000
+    - Language: Italian
+      String: Gravimotore Alfa R-2000
+    - Language: Japanese
+      String: R-2000アルファグラヴ・ドライブ
+    - Language: Polish
+      String: Napęd grawitonowy R-2000 Alfa
+    - Language: Portuguese_Brazil
+      String: Motor Grav R-2000 Alfa
+    - Language: ChineseSimplified
+      String: R-2000阿尔法重力推动器
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

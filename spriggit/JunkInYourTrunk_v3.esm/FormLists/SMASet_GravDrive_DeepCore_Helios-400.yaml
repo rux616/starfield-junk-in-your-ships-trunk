@@ -2,7 +2,25 @@ FormKey: 0025D5:JunkInYourTrunk_v3.esm
 EditorID: SMASet_GravDrive_DeepCore_Helios-400
 Name:
   TargetLanguage: English
-  Value: DeepCore Helios 400 Set
+  Values:
+  - Language: German
+    String: DeepCore Helios 400-Set
+  - Language: English
+    String: DeepCore Helios 400 Set
+  - Language: Spanish
+    String: Conjunto DeepCore Helios 400
+  - Language: French
+    String: Ensemble DeepCore Hélios 400
+  - Language: Italian
+    String: Set DeepCore Helios 400
+  - Language: Japanese
+    String: DeepCore Helios 400 セット
+  - Language: Polish
+    String: Zestaw DeepCore Helios 400
+  - Language: Portuguese_Brazil
+    String: Conjunto DeepCore Helios 400
+  - Language: ChineseSimplified
+    String: DeepCore Helios 400 套装
 Items:
 - 0025D6:JunkInYourTrunk_v3.esm
 - 0025D7:JunkInYourTrunk_v3.esm

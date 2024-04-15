@@ -4,23 +4,23 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Sextant Hauler 30T Set
+    String: Set Sextantschlepper 30T
   - Language: English
     String: Sextant Hauler 30T Set
   - Language: Spanish
-    String: Conjunto Sextant Hauler 30T
+    String: Juego de transporte sextante 30T
   - Language: French
-    String: Sextant Hauler 30T Set
+    String: Ensemble Sextant Hauler 30T
   - Language: Italian
-    String: Set sestante trasportatore 30T
+    String: Set trasportatore di sestanti 30T
   - Language: Japanese
-    String: 六分儀運搬人 30T セット
+    String: 六分儀運び屋 30T セット
   - Language: Polish
     String: Zestaw sekstantu 30T
   - Language: Portuguese_Brazil
-    String: Sextant Hauler 30T Set
+    String: Conjunto Sextante Hauler 30T
   - Language: ChineseSimplified
-    String: 六分仪搬运车 30T 套件
+    String: 六分仪搬运车 30T 套装
 Items:
 - 27047B:Starfield.esm
 - 2258D5:Starfield.esm

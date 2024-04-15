@@ -23,19 +23,19 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: 'Dekorativ: Light Scythe LSR-C Turm'
+      String: 'Dekorativ: Light Scythe LSR-C Turret'
     - Language: English
       String: 'Decorative: Light Scythe LSR-C Turret'
     - Language: Spanish
-      String: 'Decorativo: Light Scythe LSR-C Torreta'
+      String: 'Decorativo: Torreta Light Scythe LSR-C'
     - Language: French
       String: 'Décoratif : Tourelle Light Scythe LSR-C'
     - Language: Italian
-      String: 'Decorativa: torretta LSR-C con falce leggera'
+      String: 'Decorativo: torretta LSR-C con falce leggera'
     - Language: Japanese
-      String: '装飾: ライト サイズ LSR-C 砲塔'
+      String: '装飾: ライトサイス LSR-C タレット'
     - Language: Polish
-      String: 'Dekoracyjny: Wieżyczka Light Scythe LSR-C'
+      String: 'Dekoracyjna: Wieżyczka Light Scythe LSR-C'
     - Language: Portuguese_Brazil
       String: 'Decorativo: Torreta Light Scythe LSR-C'
     - Language: ChineseSimplified

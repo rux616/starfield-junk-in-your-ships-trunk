@@ -25,23 +25,23 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: Port-Vorderseite
+      String: Hafenvorland
     - Language: English
       String: Port Fore
     - Language: Spanish
-      String: Port Fore
+      String: Puerto delantero
     - Language: French
-      String: Port Fore
+      String: Port Avant
     - Language: Italian
-      String: Porta di prua
+      String: Porto avanti
     - Language: Japanese
-      String: ポート フォア
+      String: ポートフォア
     - Language: Polish
-      String: Port Przedni
-    - Language: Portuguese_Brazil
       String: Port Fore
+    - Language: Portuguese_Brazil
+      String: Porto Fore
     - Language: ChineseSimplified
-      String: 前端口
+      String: 福尔港
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

@@ -23,21 +23,21 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: 'Dekorativ: ballistischer BLS-B-Turm'
+      String: 'Dekorativ: Ballistischer BLS-B-Turm'
     - Language: English
       String: 'Decorative: Ballistic BLS-B Turret'
     - Language: Spanish
       String: 'Decorativo: Torreta balística BLS-B'
     - Language: French
-      String: 'Décoratif : Tourelle balistique BLS-B'
+      String: 'Décoratif : tourelle balistique BLS-B'
     - Language: Italian
       String: 'Decorativo: torretta balistica BLS-B'
     - Language: Japanese
-      String: '装飾: 弾道 BLS-B 砲塔'
+      String: '装飾: 弾道 BLS-B タレット'
     - Language: Polish
-      String: 'Dekoracyjny: Balistyczny BLS-B Wieża'
+      String: 'Dekoracyjna: Wieża balistyczna BLS-B'
     - Language: Portuguese_Brazil
-      String: 'Decorativo: Torre balística BLS-B'
+      String: 'Decorativo: Torre Balística BLS-B'
     - Language: ChineseSimplified
       String: 装饰：弹道 BLS-B 炮塔
 Template: 03058E:Starfield.esm

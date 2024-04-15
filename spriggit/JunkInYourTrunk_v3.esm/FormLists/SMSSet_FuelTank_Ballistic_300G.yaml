@@ -4,21 +4,21 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Ballistischer 300G-Satz
+    String: Ballistisches 300G-Set
   - Language: English
     String: Ballistic 300G Set
   - Language: Spanish
-    String: Ballistic 300G Set
+    String: Conjunto balístico 300G
   - Language: French
     String: Ensemble balistique 300G
   - Language: Italian
     String: Set balistico 300G
   - Language: Japanese
-    String: バリスティック 300G セット
+    String: バリスティック300Gセット
   - Language: Polish
     String: Zestaw balistyczny 300G
   - Language: Portuguese_Brazil
-    String: Balístico 300G Conjunto
+    String: Conjunto balístico 300G
   - Language: ChineseSimplified
     String: 弹道 300G 套装
 Items:

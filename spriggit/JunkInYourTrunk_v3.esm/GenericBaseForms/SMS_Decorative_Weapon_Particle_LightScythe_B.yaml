@@ -23,21 +23,21 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: 'Dekorativ: Light Scythe PRT-B'
+      String: 'Dekorativ: Lichtsense PRT-B'
     - Language: English
       String: 'Decorative: Light Scythe PRT-B'
     - Language: Spanish
       String: 'Decorativo: Guadaña ligera PRT-B'
     - Language: French
-      String: 'Décoratif : Light Scythe PRT-B'
+      String: 'Décoratif : Faux lumineux PRT-B'
     - Language: Italian
-      String: 'Decorativo: falce leggera PRT-B'
+      String: 'Decorativo: Falce leggera PRT-B'
     - Language: Japanese
-      String: '装飾品: ライトサイズ PRT-B '
+      String: 装飾品：ライトサイスPRT-B
     - Language: Polish
-      String: 'Dekoracyjny: Lekka Kosa PRT-B'
+      String: 'Dekoracyjna: Lekka Kosa PRT-B'
     - Language: Portuguese_Brazil
-      String: 'Decorativo: Light Scythe PRT-B'
+      String: 'Decorativo: Foice Leve PRT-B'
     - Language: ChineseSimplified
       String: 装饰：光镰 PRT-B
 Template: 03058E:Starfield.esm

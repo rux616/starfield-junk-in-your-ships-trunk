@@ -4,23 +4,23 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Sextant Deflector SG- 35-Set
+    String: Sextant Deflektor SG-35 Set
   - Language: English
     String: Sextant Deflector SG-35 Set
   - Language: Spanish
-    String: Juego de deflector de sextante SG-35
+    String: Set Deflector Sextante SG-35
   - Language: French
-    String: Ensemble de déflecteur sextant SG-35
+    String: Ensemble de déflecteurs de sextant SG-35
   - Language: Italian
     String: Set deflettore sestante SG-35
   - Language: Japanese
-    String: 六分儀ディフレクターSG-35セット
+    String: 六分儀偏向器 SG-35セット
   - Language: Polish
     String: Zestaw deflektora sekstantu SG-35
   - Language: Portuguese_Brazil
-    String: Conjunto de defletor sextante SG-35
+    String: Conjunto Defletor Sextante SG-35
   - Language: ChineseSimplified
-    String: 六分仪偏转器 SG-35套装
+    String: 六分仪偏转器 SG-35 套装
 Items:
 - 229C67:Starfield.esm
 - 229C66:Starfield.esm

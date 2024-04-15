@@ -27,17 +27,17 @@ Components:
     - Language: English
       String: 'Decorative: Shinigami BLS-B Turret'
     - Language: Spanish
-      String: 'Decorativo: Shinigami BLS -B Torreta'
+      String: 'Decorativo: Torreta Shinigami BLS-B'
     - Language: French
       String: 'Décoratif : Tourelle Shinigami BLS-B'
     - Language: Italian
       String: 'Decorativo: torretta Shinigami BLS-B'
     - Language: Japanese
-      String: '装飾: 死神 BLS- B タレット'
+      String: 装飾品：死神BLS-Bタレット
     - Language: Polish
-      String: 'Dekoracyjny: Wieżyczka Shinigami BLS-B'
+      String: 'Dekoracyjna: Wieża Shinigami BLS-B'
     - Language: Portuguese_Brazil
-      String: 'Decorativo : Torreta Shinigami BLS-B'
+      String: 'Decorativo: Torre Shinigami BLS-B'
     - Language: ChineseSimplified
       String: 装饰：死神 BLS-B 炮塔
 Template: 03058E:Starfield.esm

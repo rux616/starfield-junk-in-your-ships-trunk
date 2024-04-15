@@ -8,19 +8,19 @@ Name:
   - Language: English
     String: Decorative Vangard Bulwark Set
   - Language: Spanish
-    String: Conjunto de baluarte Vangard decorativo
+    String: Conjunto Baluarte Vanguard Decorativo
   - Language: French
-    String: Décoratif Ensemble de rempart Vangard
+    String: Ensemble de rempart décoratif Vangard
   - Language: Italian
-    String: Set decorativo Vangard Bulwark
+    String: Set decorativo Vangard Baluardo
   - Language: Japanese
-    String: 装飾ヴァンガードブルワーク セット
+    String: 装飾用ヴァンガード防波堤セット
   - Language: Polish
-    String: Dekoracyjny zestaw obronny Vangard
+    String: Zestaw dekoracyjny Vangard Bastion
   - Language: Portuguese_Brazil
-    String: Conjunto decorativo de baluarte Vangard
+    String: Conjunto Baluarte Decorativo Vangard
   - Language: ChineseSimplified
-    String: 装饰先锋堡垒套装
+    String: 装饰先锋壁垒套装
 Items:
 - 00156B:JunkInYourTrunk_v3.esm
 - 00156C:JunkInYourTrunk_v3.esm

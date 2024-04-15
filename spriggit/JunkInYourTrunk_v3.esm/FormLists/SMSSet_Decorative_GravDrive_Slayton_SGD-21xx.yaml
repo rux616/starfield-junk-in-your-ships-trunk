@@ -2,7 +2,25 @@ FormKey: 003E48:JunkInYourTrunk_v3.esm
 EditorID: SMSSet_Decorative_GravDrive_Slayton_SGD-21xx
 Name:
   TargetLanguage: English
-  Value: Decorative Slayton SGD 21xx Set
+  Values:
+  - Language: German
+    String: Dekoratives Slayton SGD 21xx Set
+  - Language: English
+    String: Decorative Slayton SGD 21xx Set
+  - Language: Spanish
+    String: Set decorativo Slayton SGD 21xx
+  - Language: French
+    String: Ensemble décoratif Slayton CHF 21xx
+  - Language: Italian
+    String: Set decorativo Slayton SGD 21xx
+  - Language: Japanese
+    String: 装飾スレイトン SGD 21xx セット
+  - Language: Polish
+    String: Zestaw dekoracyjny Slayton SGD 21xx
+  - Language: Portuguese_Brazil
+    String: Conjunto Decorativo Slayton SGD 21xx
+  - Language: ChineseSimplified
+    String: 装饰 Slayton SGD 21xx 套装
 Items:
 - 003E49:JunkInYourTrunk_v3.esm
 - 003E50:JunkInYourTrunk_v3.esm

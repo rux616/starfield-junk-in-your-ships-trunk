@@ -4,23 +4,23 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Protectorate Galleon S204 Set
+    String: Protektorat-Galeone S204-Set
   - Language: English
     String: Protectorate Galleon S204 Set
   - Language: Spanish
-    String: Protectorate Galleon S204 Set
+    String: Protectorado Galeón S204 Set
   - Language: French
-    String: Galion Protectorate S204 Définir
+    String: Ensemble Galion du Protectorat S204
   - Language: Italian
-    String: Set galeone protettorato S204
+    String: Set Galeone del Protettorato S204
   - Language: Japanese
-    String: 保護ガレオン S204 セット
+    String: 保護領ガレオン船 S204 セット
   - Language: Polish
-    String: Zestaw Protektorate Galleon S204
+    String: Zestaw Galeonów Protektoratu S204
   - Language: Portuguese_Brazil
     String: Conjunto Protetorado Galeão S204
   - Language: ChineseSimplified
-    String: Protectorate Galleon S204 Set
+    String: 保护国帆船 S204 套装
 Items:
 - 000E91:JunkInYourTrunk_v3.esm
 - 000E92:JunkInYourTrunk_v3.esm

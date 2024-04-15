@@ -2,7 +2,25 @@ FormKey: 0040A4:JunkInYourTrunk_v3.esm
 EditorID: SMSSet_Decorative_GravDrive_Reladyne_Gamma
 Name:
   TargetLanguage: English
-  Value: Deocrative Reladyne Gamma Set
+  Values:
+  - Language: German
+    String: Dekoratives Reladyne Gamma-Set
+  - Language: English
+    String: Decorative Reladyne Gamma Set
+  - Language: Spanish
+    String: Conjunto decorativo Reladyne Gamma
+  - Language: French
+    String: Ensemble décoratif Gamma Reladyne
+  - Language: Italian
+    String: Set decorativo Reladyne Gamma
+  - Language: Japanese
+    String: 装飾リラダイン ガンマ セット
+  - Language: Polish
+    String: Dekoracyjny zestaw Reladyne Gamma
+  - Language: Portuguese_Brazil
+    String: Conjunto decorativo Reladyne Gamma
+  - Language: ChineseSimplified
+    String: 装饰 Reladyne 伽玛套装
 Items:
 - 0040A5:JunkInYourTrunk_v3.esm
 - 0040AC:JunkInYourTrunk_v3.esm

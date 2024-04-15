@@ -4,21 +4,21 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Dekoratives Horizon BLS-B-Turmset
+    String: Dekoratives Horizon BLS-B Turmset
   - Language: English
     String: Decorative Horizon BLS-B Turret Set
   - Language: Spanish
-    String: Juego de torreta Horizon BLS-B decorativo
+    String: Juego de torreta decorativa Horizon BLS-B
   - Language: French
-    String: Ensemble de tourelle Horizon BLS-B décoratif
+    String: Ensemble de tourelles décoratives Horizon BLS-B
   - Language: Italian
-    String: Set torretta Horizon BLS-B decorativo
+    String: Set torretta decorativa Horizon BLS-B
   - Language: Japanese
-    String: 装飾ホライゾン BLS-B 砲塔セット
+    String: デコラティブ ホライゾン BLS-B タレット セット
   - Language: Polish
-    String: Zestaw wieżyczek dekoracyjnych Horizon BLS-B
+    String: Zestaw dekoracyjnych wieżyczek Horizon BLS-B
   - Language: Portuguese_Brazil
-    String: 'Conjunto decorativo de torre Horizon BLS-B '
+    String: Conjunto de torre decorativa Horizon BLS-B
   - Language: ChineseSimplified
     String: 装饰地平线 BLS-B 炮塔套装
 Items:

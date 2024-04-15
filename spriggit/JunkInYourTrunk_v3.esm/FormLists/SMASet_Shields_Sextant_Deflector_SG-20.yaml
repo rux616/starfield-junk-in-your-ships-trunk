@@ -4,23 +4,23 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Sextant Deflector SG- 20-Set
+    String: Sextant Deflektor SG-20 Set
   - Language: English
     String: Sextant Deflector SG-20 Set
   - Language: Spanish
-    String: Juego de deflector de sextante SG-20
+    String: Set Deflector Sextante SG-20
   - Language: French
-    String: Ensemble de déflecteur sextant SG-20
+    String: Ensemble de déflecteurs de sextant SG-20
   - Language: Italian
     String: Set deflettore sestante SG-20
   - Language: Japanese
-    String: 六分儀ディフレクターSG-20セット
+    String: 六分儀偏向器 SG-20セット
   - Language: Polish
     String: Zestaw deflektora sekstantu SG-20
   - Language: Portuguese_Brazil
-    String: Conjunto de defletor sextante SG-20
+    String: Conjunto Defletor Sextante SG-20
   - Language: ChineseSimplified
-    String: 六分仪偏转器 SG-20套装
+    String: 六分仪偏转器 SG-20 套装
 Items:
 - 26F126:Starfield.esm
 - 16E075:Starfield.esm

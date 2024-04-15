@@ -23,23 +23,23 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: 'Dekorativ: Dogstar Protector'
+      String: 'Dekorativ: Dogstar-Beschützer'
     - Language: English
       String: 'Decorative: Dogstar Protector'
     - Language: Spanish
       String: 'Decorativo: Protector Dogstar'
     - Language: French
-      String: 'Décoratif : Dogstar Protector'
+      String: 'Décoratif : Protecteur Dogstar'
     - Language: Italian
-      String: 'Decorativo: Protettore Dogstar'
+      String: 'Decorativo: protettore Dogstar'
     - Language: Japanese
-      String: '装飾: ドッグスター プロテクター'
+      String: '装飾: ドッグスタープロテクター'
     - Language: Polish
-      String: 'Dekoracyjne: Osłona Dogstar'
+      String: 'Dekoracyjny: Ochraniacz Dogstar'
     - Language: Portuguese_Brazil
       String: 'Decorativo: Protetor Dogstar'
     - Language: ChineseSimplified
-      String: 装饰：Dogstar 保护者
+      String: 装饰：狗星保护器
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

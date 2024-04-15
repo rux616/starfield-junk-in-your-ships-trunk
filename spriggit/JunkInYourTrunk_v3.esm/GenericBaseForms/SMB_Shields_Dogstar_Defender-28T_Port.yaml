@@ -51,19 +51,19 @@ Components:
     - Language: English
       String: Defender 28T Shield Generator
     - Language: Spanish
-      String: Defender 28T Generador de escudo
+      String: Generador de escudo Defender 28T
     - Language: French
-      String: Defender 28T Générateur de bouclier
+      String: Générateur de bouclier Defender 28T
     - Language: Italian
-      String: Generatore scudo Defender 28T
+      String: Generatore di scudi Defender 28T
     - Language: Japanese
-      String: ディフェンダー 28T シールド ジェネレーター
+      String: ディフェンダー 28T シールドジェネレーター
     - Language: Polish
       String: Generator tarczy Defender 28T
     - Language: Portuguese_Brazil
       String: Gerador de escudo Defender 28T
     - Language: ChineseSimplified
-      String: 防御者 28T 护盾发生器
+      String: Defender 28T 护盾发生器
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

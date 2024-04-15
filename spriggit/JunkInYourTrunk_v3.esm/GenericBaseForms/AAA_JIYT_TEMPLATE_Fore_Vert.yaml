@@ -25,23 +25,23 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: Fore Vert
+      String: Vordere Vert
     - Language: English
       String: Fore Vert
     - Language: Spanish
-      String: Fore Vert
+      String: Delantero vertical
     - Language: French
-      String: Fore Vert
+      String: Avant Vert
     - Language: Italian
-      String: Fore Vert
+      String: Fronte Vert
     - Language: Japanese
-      String: フォア ヴェール
+      String: フォアヴェール
     - Language: Polish
-      String: Fore Vert
+      String: Pion przedni
     - Language: Portuguese_Brazil
-      String: Fore Vert
+      String: Frente Verde
     - Language: ChineseSimplified
-      String: 前垂直
+      String: 前绿
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

@@ -4,23 +4,23 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Protectorate Marduk 1020-A-Set
+    String: Protektorat Marduk 1020-A-Set
   - Language: English
     String: Protectorate Marduk 1020-A Set
   - Language: Spanish
-    String: Conjunto Protectorate Marduk 1020-A
+    String: Conjunto Protectorado Marduk 1020-A
   - Language: French
-    String: Ensemble Protectorate Marduk 1020-A
+    String: Ensemble Protectorat Marduk 1020-A
   - Language: Italian
-    String: Set protettorato Marduk 1020-A
+    String: Set Protettorato Marduk 1020-A
   - Language: Japanese
-    String: 保護用マルドゥック 1020-A セット
+    String: 保護領マルドゥック 1020-A セット
   - Language: Polish
-    String: Zestaw Protektorat Marduk 1020-A
+    String: Zestaw Protektoratu Marduk 1020-A
   - Language: Portuguese_Brazil
     String: Conjunto Protetorado Marduk 1020-A
   - Language: ChineseSimplified
-    String: 保护国马杜克1020-A套装
+    String: 马杜克保护国 1020-A 套装
 Items:
 - 00122E:JunkInYourTrunk_v3.esm
 - 00122F:JunkInYourTrunk_v3.esm

@@ -29,17 +29,17 @@ Components:
     - Language: Spanish
       String: 'Decorativo: Shinigami BLS-B'
     - Language: French
-      String: 'Décorative : Shinigami BLS-B'
+      String: 'Décoratif : Shinigami BLS-B'
     - Language: Italian
       String: 'Decorativo: Shinigami BLS-B'
     - Language: Japanese
-      String: '装飾品: 死神 BLS-B'
+      String: 装飾品：死神BLS-B
     - Language: Polish
-      String: 'Ozdoba: Shinigami BLS-B'
+      String: 'Dekoracyjny: Shinigami BLS-B'
     - Language: Portuguese_Brazil
       String: 'Decorativo: Shinigami BLS-B'
     - Language: ChineseSimplified
-      String: 装饰：死神BLS-B
+      String: 装饰：死神 BLS-B
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

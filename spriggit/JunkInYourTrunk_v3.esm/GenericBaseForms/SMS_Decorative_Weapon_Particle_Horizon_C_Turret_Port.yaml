@@ -35,11 +35,11 @@ Components:
     - Language: Japanese
       String: '装飾: Horizo​​n PRT-C タレット'
     - Language: Polish
-      String: 'Dekoracyjny: Wieżyczka Horizon PRT-C'
+      String: 'Dekoracja: Wieżyczka Horizon PRT-C'
     - Language: Portuguese_Brazil
       String: 'Decorativo: Torre Horizon PRT-C'
     - Language: ChineseSimplified
-      String: 装饰：Horizo​​n PRT-C炮塔
+      String: 装饰：Horizo​​n PRT-C 炮塔
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

@@ -4,22 +4,22 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: TEMPLATE-Set
+    String: VORLAGEN-Set
   - Language: English
     String: TEMPLATE Set
   - Language: Spanish
-    String: Conjunto DE PLANTILLA
+    String: Conjunto de PLANTILLA
   - Language: French
-    String: ' Ensemble de MODÈLES'
+    String: Ensemble de modèles
   - Language: Italian
-    String: Set TEMPLATE
+    String: MODELLO Impostato
   - Language: Japanese
-    String: テンプレート セット
+    String: テンプレートセット
   - Language: Polish
-    String: 'Zestaw szablonów '
+    String: SZABLON Zestaw
   - Language: Portuguese_Brazil
-    String: Conjunto MODELO
+    String: Conjunto de MODELO
   - Language: ChineseSimplified
-    String: 模板套装
+    String: 模板集
 Items:
 - Null

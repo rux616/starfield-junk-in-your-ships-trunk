@@ -29,17 +29,17 @@ Components:
     - Language: English
       String: Port Top
     - Language: Spanish
-      String: Port Top
+      String: Puerto superior
     - Language: French
-      String: Port Top
+      String: Haut de port
     - Language: Italian
-      String: Port Top
+      String: Porta in alto
     - Language: Japanese
-      String: ポート トップ
+      String: ポートトップ
     - Language: Polish
-      String: Port Top
+      String: Portowy szczyt
     - Language: Portuguese_Brazil
-      String: Port Top
+      String: Porto Superior
     - Language: ChineseSimplified
       String: 端口顶部
 Template: 03058E:Starfield.esm

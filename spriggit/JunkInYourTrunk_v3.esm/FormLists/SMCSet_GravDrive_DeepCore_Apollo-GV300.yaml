@@ -2,7 +2,25 @@ FormKey: 0034C2:JunkInYourTrunk_v3.esm
 EditorID: SMCSet_GravDrive_DeepCore_Apollo-GV300
 Name:
   TargetLanguage: English
-  Value: DeepCore Apollo GV300 Set
+  Values:
+  - Language: German
+    String: DeepCore Apollo GV300-Set
+  - Language: English
+    String: DeepCore Apollo GV300 Set
+  - Language: Spanish
+    String: Conjunto DeepCore Apollo GV300
+  - Language: French
+    String: Ensemble DeepCore Apollo GV300
+  - Language: Italian
+    String: Set DeepCore Apollo GV300
+  - Language: Japanese
+    String: DeepCore Apollo GV300 セット
+  - Language: Polish
+    String: Zestaw DeepCore Apollo GV300
+  - Language: Portuguese_Brazil
+    String: Conjunto DeepCore Apollo GV300
+  - Language: ChineseSimplified
+    String: DeepCore Apollo GV300 套装
 Items:
 - 0034C3:JunkInYourTrunk_v3.esm
 - 0034C4:JunkInYourTrunk_v3.esm

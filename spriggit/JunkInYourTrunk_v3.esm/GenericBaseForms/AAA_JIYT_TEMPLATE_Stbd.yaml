@@ -29,19 +29,19 @@ Components:
     - Language: English
       String: Stbd
     - Language: Spanish
-      String: Stbd
+      String: estbd
     - Language: French
-      String: Stbd
+      String: tribord
     - Language: Italian
       String: Stbd
     - Language: Japanese
-      String: Stbd
+      String: 標準
     - Language: Polish
       String: Stbd
     - Language: Portuguese_Brazil
-      String: Stbd
+      String: Estipado
     - Language: ChineseSimplified
-      String: Stbd
+      String: 稳定值
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

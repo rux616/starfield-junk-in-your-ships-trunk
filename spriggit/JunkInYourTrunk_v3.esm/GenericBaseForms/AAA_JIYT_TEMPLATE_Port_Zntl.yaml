@@ -25,7 +25,7 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: Backbord Zntl
+      String: Port Zntl
     - Language: English
       String: Port Zntl
     - Language: Spanish
@@ -33,15 +33,15 @@ Components:
     - Language: French
       String: Port Zntl
     - Language: Italian
-      String: Port Zntl
+      String: Porto Zntl
     - Language: Japanese
-      String: ポート Zntl
+      String: 港湾
     - Language: Polish
       String: Port Zntl
     - Language: Portuguese_Brazil
-      String: Port Zntl
+      String: Porto Zntl
     - Language: ChineseSimplified
-      String: Port Zntl
+      String: 津特尔港
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

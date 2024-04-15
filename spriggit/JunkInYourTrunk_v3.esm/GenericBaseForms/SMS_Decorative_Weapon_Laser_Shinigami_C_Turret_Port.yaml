@@ -23,19 +23,19 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: 'Dekorativ: Shinigami LSR-C-Turm'
+      String: 'Dekorativ: Shinigami LSR-C Turm'
     - Language: English
       String: 'Decorative: Shinigami LSR-C Turret'
     - Language: Spanish
       String: 'Decorativo: Torreta Shinigami LSR-C'
     - Language: French
-      String: 'Décoratif : tourelle Shinigami LSR-C'
+      String: 'Décoratif : Tourelle Shinigami LSR-C'
     - Language: Italian
       String: 'Decorativo: torretta Shinigami LSR-C'
     - Language: Japanese
-      String: '装飾品: 死神 LSR-C タレット'
+      String: '装飾: 死神 LSR-C タレット'
     - Language: Polish
-      String: 'Dekoracyjny: Shinigami LSR-C Wieżyczka'
+      String: 'Dekoracyjna: Wieża Shinigami LSR-C'
     - Language: Portuguese_Brazil
       String: 'Decorativo: Torre Shinigami LSR-C'
     - Language: ChineseSimplified

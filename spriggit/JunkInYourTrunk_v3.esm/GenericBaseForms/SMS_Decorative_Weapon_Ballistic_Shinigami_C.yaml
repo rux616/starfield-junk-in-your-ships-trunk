@@ -27,19 +27,19 @@ Components:
     - Language: English
       String: 'Decorative: Shinigami BLS-C'
     - Language: Spanish
-      String: 'Decorativo: Shinigami BLS-C '
+      String: 'Decorativo: Shinigami BLS-C'
     - Language: French
       String: 'Décoratif : Shinigami BLS-C'
     - Language: Italian
       String: 'Decorativo: Shinigami BLS-C'
     - Language: Japanese
-      String: '装飾: 死神 BLS-C'
+      String: 装飾品：死神BLS-C
     - Language: Polish
-      String: 'Ozdoba: Shinigami BLS-C'
+      String: 'Dekoracyjny: Shinigami BLS-C'
     - Language: Portuguese_Brazil
       String: 'Decorativo: Shinigami BLS-C'
     - Language: ChineseSimplified
-      String: 装饰：Shinigami BLS-C
+      String: 装饰：死神 BLS-C
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

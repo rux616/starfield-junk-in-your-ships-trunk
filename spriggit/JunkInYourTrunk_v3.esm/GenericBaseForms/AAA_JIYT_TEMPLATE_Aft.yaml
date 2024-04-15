@@ -25,21 +25,21 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: Aft
+      String: Achtern
     - Language: English
       String: Aft
     - Language: Spanish
-      String: Popa
+      String: En popa
     - Language: French
-      String: Aft
+      String: À l'arrière
     - Language: Italian
-      String: Poppa
+      String: A poppa
     - Language: Japanese
       String: 船尾
     - Language: Polish
-      String: Rufa
+      String: Na rufie
     - Language: Portuguese_Brazil
-      String: A popa
+      String: À popa
     - Language: ChineseSimplified
       String: 船尾
 Template: 03058E:Starfield.esm

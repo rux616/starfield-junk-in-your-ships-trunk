@@ -50,19 +50,19 @@ Components:
     - Language: English
       String: Defender 11T Shield Generator
     - Language: Spanish
-      String: Defender 11T Generador de escudo
+      String: Generador de escudo Defender 11T
     - Language: French
-      String: Defender 11T Générateur de bouclier
+      String: Générateur de bouclier Defender 11T
     - Language: Italian
-      String: Generatore scudo Defender 11T
+      String: Generatore di scudi Defender 11T
     - Language: Japanese
-      String: ディフェンダー 11T シールド ジェネレーター
+      String: ディフェンダー 11T シールドジェネレーター
     - Language: Polish
       String: Generator tarczy Defender 11T
     - Language: Portuguese_Brazil
       String: Gerador de escudo Defender 11T
     - Language: ChineseSimplified
-      String: 防御者 11T 护盾发生器
+      String: Defender 11T 护盾发生器
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

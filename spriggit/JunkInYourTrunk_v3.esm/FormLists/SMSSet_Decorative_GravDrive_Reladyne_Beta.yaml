@@ -2,7 +2,25 @@ FormKey: 003D63:JunkInYourTrunk_v3.esm
 EditorID: SMSSet_Decorative_GravDrive_Reladyne_Beta
 Name:
   TargetLanguage: English
-  Value: Decorative Reladyne Beta Set
+  Values:
+  - Language: German
+    String: Dekoratives Reladyne Beta-Set
+  - Language: English
+    String: Decorative Reladyne Beta Set
+  - Language: Spanish
+    String: Set decorativo Reladyne Beta
+  - Language: French
+    String: Ensemble bêta décoratif Reladyne
+  - Language: Italian
+    String: Set decorativo Reladyne Beta
+  - Language: Japanese
+    String: 装飾 Reladyne ベータ セット
+  - Language: Polish
+    String: Dekoracyjny zestaw Reladyne Beta
+  - Language: Portuguese_Brazil
+    String: Conjunto Decorativo Reladyne Beta
+  - Language: ChineseSimplified
+    String: Reladyne Beta 装饰套装
 Items:
 - 003D64:JunkInYourTrunk_v3.esm
 - 003D6C:JunkInYourTrunk_v3.esm

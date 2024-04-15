@@ -27,19 +27,19 @@ Components:
     - Language: English
       String: 'Decorative: Shinigami LSR-A'
     - Language: Spanish
-      String: 'Decorativo: Shinigami LSR- A'
+      String: 'Decorativo: Shinigami LSR-A'
     - Language: French
-      String: 'Décoratif : Shinigami LSR-A'
+      String: 'Décoratif : Shinigami LSR-A'
     - Language: Italian
       String: 'Decorativo: Shinigami LSR-A'
     - Language: Japanese
-      String: '装飾: 死神 LSR-A'
+      String: 装飾品：死神LSR-A
     - Language: Polish
       String: 'Dekoracyjny: Shinigami LSR-A'
     - Language: Portuguese_Brazil
       String: 'Decorativo: Shinigami LSR-A'
     - Language: ChineseSimplified
-      String: 装饰：Shinigami LSR-A
+      String: 装饰：死神LSR-A
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

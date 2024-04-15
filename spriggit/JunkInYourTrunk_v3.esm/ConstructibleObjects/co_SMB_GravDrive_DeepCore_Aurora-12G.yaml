@@ -3,7 +3,25 @@ EditorID: co_SMB_GravDrive_DeepCore_Aurora-12G
 FormVersion: 558
 Description:
   TargetLanguage: English
-  Value: A Graviton Loop Array, or Grav Drive, allows your ship to jump to other star systems. Upgrade to increase your jump range.
+  Values:
+  - Language: German
+    String: Mit dem Graviton-Loop-Array (oder Grav-Antrieb), kann dein Schiff in andere Sternsysteme springen. Verbesserungen erhöhen die Sprungreichweite.
+  - Language: English
+    String: A Graviton Loop Array, or Grav Drive, allows your ship to jump to other star systems. Upgrade to increase your jump range.
+  - Language: Spanish
+    String: El conjunto de bucles gravitacionales, o motor gravitacional, permite que la nave salte a otros sistemas estelares. Mejóralo para aumentar su capacidad de salto.
+  - Language: French
+    String: Le centrifugeur à gravitons, ou astromoteur, permet à votre vaisseau de sauter vers d'autres systèmes. Améliorez-le pour augmenter votre portée de saut.
+  - Language: Italian
+    String: Il sistema a loop di gravitoni, o gravimotore, consente alla tua nave di saltare verso altri sistemi. Aggiornalo per aumentare la portata del salto.
+  - Language: Japanese
+    String: グラヴィトン・ループ・アレイ、またはグラヴ・ドライブによって他の星系へのジャンプが可能となる。アップグレードすればジャンプの範囲が拡大する
+  - Language: Polish
+    String: Układ pętli grawitonowej, czyli napęd grawitacyjny, umożliwia Twojemu statkowi przeskakiwanie do innych systemów gwiezdnych. Uaktualnij, aby zwiększyć zasięg skoku.
+  - Language: Portuguese_Brazil
+    String: A Matriz Cíclica de Grávitons, ou Motor Grav, permite que você chegue a outros sistemas estelares. Faça uma melhoria para aumentar o alcance de dobra.
+  - Language: ChineseSimplified
+    String: 重力环阵列或重力驱动器可以让你的飞船跳转到其他恒星系统。升级以增加你的跳跃范围。
 WorkbenchKeyword: 29C480:Starfield.esm
 Conditions:
 - MutagenObjectType: ConditionFloat

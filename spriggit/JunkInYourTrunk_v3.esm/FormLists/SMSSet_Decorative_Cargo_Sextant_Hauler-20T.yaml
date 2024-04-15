@@ -4,23 +4,23 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Decorative Sextant Hauler 20T Set
+    String: Dekoratives Sextantschlepper-20T-Set
   - Language: English
     String: Decorative Sextant Hauler 20T Set
   - Language: Spanish
-    String: Conjunto Sextant Hauler 20T decorativo
+    String: Set Sextante Transportador Decorativo 20T
   - Language: French
-    String: Ensemble décoratif Sextant Hauler 20T
+    String: Ensemble Sextant Hauler décoratif 20T
   - Language: Italian
     String: Set decorativo sestante trasportatore 20T
   - Language: Japanese
-    String: 装飾六分儀運搬車 20T セット
+    String: 装飾六分儀運び屋 20T セット
   - Language: Polish
-    String: Zestaw dekoracyjny Sextant Hauler 20T
+    String: Zestaw ozdobny sekstantu 20T
   - Language: Portuguese_Brazil
-    String: Conjunto Sextante Decorativo Hauler 20T
+    String: Conjunto Decorativo Sextante Hauler 20T
   - Language: ChineseSimplified
-    String: 装饰六分仪搬运器 20T 套装
+    String: 装饰六分仪牵引器 20T 套装
 Items:
 - 00169B:JunkInYourTrunk_v3.esm
 - 00169C:JunkInYourTrunk_v3.esm

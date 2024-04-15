@@ -50,19 +50,19 @@ Components:
     - Language: English
       String: Defender 33T Shield Generator
     - Language: Spanish
-      String: Defender 33T Generador de escudo
+      String: Generador de escudo Defender 33T
     - Language: French
-      String: Defender 33T Générateur de bouclier
+      String: Générateur de bouclier Defender 33T
     - Language: Italian
-      String: Generatore scudo Defender 33T
+      String: Generatore di scudi Defender 33T
     - Language: Japanese
-      String: ディフェンダー 33T シールド ジェネレーター
+      String: ディフェンダー 33T シールドジェネレーター
     - Language: Polish
       String: Generator tarczy Defender 33T
     - Language: Portuguese_Brazil
       String: Gerador de escudo Defender 33T
     - Language: ChineseSimplified
-      String: 防御者 33T 护盾发生器
+      String: Defender 33T 护盾发生器
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component
