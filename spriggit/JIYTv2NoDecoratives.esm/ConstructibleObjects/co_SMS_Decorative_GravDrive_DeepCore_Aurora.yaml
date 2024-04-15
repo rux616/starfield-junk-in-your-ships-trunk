@@ -1,5 +1,6 @@
-FormKey: 001DE1:JunkInYourTrunk_v2.esm
-EditorID: co_SMS_Decorative_FuelTank_Ballistic_800T-A
+FormKey: 003BD6:JunkInYourTrunk_v2.esm
+EditorID: co_SMS_Decorative_GravDrive_DeepCore_Aurora
+FormVersion: 558
 Description:
   TargetLanguage: English
   Values:
@@ -22,9 +23,9 @@ Description:
   - Language: ChineseSimplified
     String: 装饰性船舶模块允许您添加模仿其他类型模块外观的模块，但没有它们附带的功能或限制。
 WorkbenchKeyword: 29C480:Starfield.esm
-CreatedObject: 001DD2:JunkInYourTrunk_v2.esm
+CreatedObject: 003BD7:JunkInYourTrunk_v2.esm
 AmountProduced: 1
-MenuSortOrder: 5
+MenuSortOrder: 6
 LearnMethod: DefaultOrConditions
 Value: 1000
 Categories:
