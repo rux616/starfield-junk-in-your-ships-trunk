@@ -1,0 +1,48 @@
+FormKey: 002BC4:JunkInYourTrunk_v2.esm
+EditorID: SMASet_GravDrive_Vanguard_Recon
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Vanguard Recon-Set
+  - Language: English
+    String: Vanguard Recon Set
+  - Language: Spanish
+    String: Conjunto de reconocimiento de vanguardia
+  - Language: French
+    String: Ensemble de reconnaissance de l'Avant-garde
+  - Language: Italian
+    String: Set da ricognizione dell'Avanguardia
+  - Language: Japanese
+    String: ヴァンガード偵察セット
+  - Language: Polish
+    String: Zestaw rozpoznawczy Straży Przedniej
+  - Language: Portuguese_Brazil
+    String: Conjunto de reconhecimento de vanguarda
+  - Language: ChineseSimplified
+    String: 先锋侦察套装
+Items:
+- 002BC5:JunkInYourTrunk_v2.esm
+- 002BCC:JunkInYourTrunk_v2.esm
+- 002BD3:JunkInYourTrunk_v2.esm
+- 002BDA:JunkInYourTrunk_v2.esm
+- 002BE1:JunkInYourTrunk_v2.esm
+- 002BE9:JunkInYourTrunk_v2.esm
+- 002BF1:JunkInYourTrunk_v2.esm
+- 002BF9:JunkInYourTrunk_v2.esm
+- 002C01:JunkInYourTrunk_v2.esm
+- 002C08:JunkInYourTrunk_v2.esm
+- 002C0F:JunkInYourTrunk_v2.esm
+- 002C16:JunkInYourTrunk_v2.esm
+- 002C1D:JunkInYourTrunk_v2.esm
+- 002C24:JunkInYourTrunk_v2.esm
+- 002C2B:JunkInYourTrunk_v2.esm
+- 002C32:JunkInYourTrunk_v2.esm
+- 002C39:JunkInYourTrunk_v2.esm
+- 002C40:JunkInYourTrunk_v2.esm
+- 002C47:JunkInYourTrunk_v2.esm
+- 002C4E:JunkInYourTrunk_v2.esm
+- 004242:Starfield.esm
+- 002C78:JunkInYourTrunk_v2.esm
+- 002C80:JunkInYourTrunk_v2.esm
+- 002C88:JunkInYourTrunk_v2.esm

@@ -1,0 +1,68 @@
+FormKey: 0014B6:JunkInYourTrunk_v2.esm
+EditorID: SMB_Shields_Sextant_Warden-SG-100_Stbd
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+  Slots:
+  - 24A05E:Starfield.esm
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 0002D4:Starfield.esm
+    Value: 5
+  - ActorValue: 0090A9:Starfield.esm
+    Value: 0.2
+  - ActorValue: 00ACDB:Starfield.esm
+    Value: 46
+  - ActorValue: 01158A:Starfield.esm
+    Value: 1
+  - ActorValue: 019080:Starfield.esm
+    Value: 0.5
+  - ActorValue: 01ECCD:Starfield.esm
+    Value: 5
+  - ActorValue: 05BFA7:Starfield.esm
+    Value: 0.08
+  - ActorValue: 05BFA8:Starfield.esm
+    Value: 525
+  - ActorValue: 05C74B:Starfield.esm
+  - ActorValue: 1EE8C9:Starfield.esm
+    Value: 264
+  - ActorValue: 1EF0CC:Starfield.esm
+    Value: 264
+  - ActorValue: 24A05F:Starfield.esm
+    Value: 525
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: 0013BD:JunkInYourTrunk_v2.esm
+- MutagenObjectType: DestructibleObjectComponent
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 27BAC2:Starfield.esm
+  - 2BCFDB:Starfield.esm
+  - 1462C5:Starfield.esm
+  - 26FE56:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: Schildgenerator Warden SG-100
+    - Language: English
+      String: Warden SG-100 Shield Generator
+    - Language: Spanish
+      String: Generador de escudos Alcaide SG-100
+    - Language: French
+      String: Générateur de bouclier Warden SG-100
+    - Language: Italian
+      String: Generatore di scudo Warden SG-100
+    - Language: Japanese
+      String: ウォーデンSG-100シールドジェネレーター
+    - Language: Polish
+      String: Generator osłon Warden SG-100
+    - Language: Portuguese_Brazil
+      String: Gerador de Escudo Guardião SG-100
+    - Language: ChineseSimplified
+      String: 守卫长SG-100护盾生成器
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component

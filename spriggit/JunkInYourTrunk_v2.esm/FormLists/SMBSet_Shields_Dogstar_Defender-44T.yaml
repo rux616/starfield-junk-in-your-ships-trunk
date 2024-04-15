@@ -1,0 +1,30 @@
+FormKey: 17120D:Starfield.esm
+EditorID: SMBSet_Shields_Dogstar_Defender-44T
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Dogstar Defender 44T-Set
+  - Language: English
+    String: Dogstar Defender 44T Set
+  - Language: Spanish
+    String: Juego Dogstar Defender 44T
+  - Language: French
+    String: Ensemble Dogstar Defender 44T
+  - Language: Italian
+    String: Set Dogstar Defender 44T
+  - Language: Japanese
+    String: ドッグスター ディフェンダー 44T セット
+  - Language: Polish
+    String: Zestaw Dogstar Defender 44T
+  - Language: Portuguese_Brazil
+    String: Conjunto Dogstar Defender 44T
+  - Language: ChineseSimplified
+    String: Dogstar Defender 44T 套装
+Items:
+- 26F985:Starfield.esm
+- 17AB3A:Starfield.esm
+- 001382:JunkInYourTrunk_v2.esm
+- 001383:JunkInYourTrunk_v2.esm
+- 001384:JunkInYourTrunk_v2.esm
+- 001385:JunkInYourTrunk_v2.esm

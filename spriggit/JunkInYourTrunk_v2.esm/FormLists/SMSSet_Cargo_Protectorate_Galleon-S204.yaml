@@ -1,0 +1,27 @@
+FormKey: 000E93:JunkInYourTrunk_v2.esm
+EditorID: SMSSet_Cargo_Protectorate_Galleon-S204
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Protektorat-Galeone S204-Set
+  - Language: English
+    String: Protectorate Galleon S204 Set
+  - Language: Spanish
+    String: Protectorado Galeón S204 Set
+  - Language: French
+    String: Ensemble Galion du Protectorat S204
+  - Language: Italian
+    String: Set Galeone del Protettorato S204
+  - Language: Japanese
+    String: 保護領ガレオン船 S204 セット
+  - Language: Polish
+    String: Zestaw Galeonów Protektoratu S204
+  - Language: Portuguese_Brazil
+    String: Conjunto Protetorado Galeão S204
+  - Language: ChineseSimplified
+    String: 保护国帆船 S204 套装
+Items:
+- 000E91:JunkInYourTrunk_v2.esm
+- 000E92:JunkInYourTrunk_v2.esm
+- 270475:Starfield.esm

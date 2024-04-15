@@ -1,0 +1,50 @@
+FormKey: 000B50:JunkInYourTrunk_v2.esm
+EditorID: SMS_CargoShielded_Protectorate_Caravel-V101_Top_Zntl
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 0002D4:Starfield.esm
+    Value: 5
+  - ActorValue: 00ACDB:Starfield.esm
+    Value: 52
+  - ActorValue: 27BACE:Starfield.esm
+    Value: 60
+  - ActorValue: 02B344:Starfield.esm
+    Value: 1700
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: 000B3D:JunkInYourTrunk_v2.esm
+- MutagenObjectType: DestructibleObjectComponent
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 1462CC:Starfield.esm
+  - 27BABE:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: Abgeschirmter Frachtraum Caravel V101
+    - Language: English
+      String: Caravel V101 Shielded Cargo Hold
+    - Language: Spanish
+      String: Bodega oculta Carabela V101
+    - Language: French
+      String: Soute blindée Caravel V101
+    - Language: Italian
+      String: Stiva schermata Caravel V101
+    - Language: Japanese
+      String: キャラベルV101シールド貨物倉
+    - Language: Polish
+      String: Osłaniana ładownia Caravel V101
+    - Language: Portuguese_Brazil
+      String: Compartimento de Carga Oculto Caravel V101
+    - Language: ChineseSimplified
+      String: 卡拉维尔V101隐秘货舱
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component
+- Spaceship_InstanceData

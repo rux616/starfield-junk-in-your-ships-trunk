@@ -1,0 +1,36 @@
+FormKey: 001DD2:JunkInYourTrunk_v2.esm
+EditorID: SMSSet_Decorative_FuelTank_Ballistic_800T-A
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Dekoratives ballistisches 800T-A-Set
+  - Language: English
+    String: Decorative Ballistic 800T-A Set
+  - Language: Spanish
+    String: Set Balístico Decorativo 800T-A
+  - Language: French
+    String: Ensemble balistique décoratif 800T-A
+  - Language: Italian
+    String: Set balistico decorativo 800T-A
+  - Language: Japanese
+    String: 装飾弾道 800T-A セット
+  - Language: Polish
+    String: Dekoracyjny zestaw balistyczny 800T-A
+  - Language: Portuguese_Brazil
+    String: Conjunto balístico decorativo 800T-A
+  - Language: ChineseSimplified
+    String: 装饰弹道 800T-A 套装
+Items:
+- 001D37:JunkInYourTrunk_v2.esm
+- 001D38:JunkInYourTrunk_v2.esm
+- 001D39:JunkInYourTrunk_v2.esm
+- 001D3A:JunkInYourTrunk_v2.esm
+- 001D3B:JunkInYourTrunk_v2.esm
+- 001D3C:JunkInYourTrunk_v2.esm
+- 001D3D:JunkInYourTrunk_v2.esm
+- 001D3E:JunkInYourTrunk_v2.esm
+- 001D3F:JunkInYourTrunk_v2.esm
+- 001D40:JunkInYourTrunk_v2.esm
+- 001D41:JunkInYourTrunk_v2.esm
+- 001D42:JunkInYourTrunk_v2.esm

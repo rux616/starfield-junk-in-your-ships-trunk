@@ -1,0 +1,52 @@
+FormKey: 001D46:JunkInYourTrunk_v2.esm
+EditorID: SMS_Decorative_FuelTank_Ballistic_800T-B_PortStbd_Zntl
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 00ACDB:Starfield.esm
+    Value: 5
+  - ActorValue: 27BACE:Starfield.esm
+    Value: 10
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: 23282B:Starfield.esm
+- MutagenObjectType: DestructibleObjectComponent
+  Destructible:
+    Data:
+      Health: 1
+      DESTCount: 1
+    Stages:
+    - Explosion: 054057:Starfield.esm
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 00D580:Starfield.esm
+  - 27BABF:Starfield.esm
+  - 1462C7:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: 'Dekorativ: Ballistic 800T-B'
+    - Language: English
+      String: 'Decorative: Ballistic 800T-B'
+    - Language: Spanish
+      String: 'Decorativo: Balístico 800T-B'
+    - Language: French
+      String: 'Décoratif : balistique 800T-B'
+    - Language: Italian
+      String: 'Decorativo: balistico 800T-B'
+    - Language: Japanese
+      String: '装飾: バリスティック 800T-B'
+    - Language: Polish
+      String: 'Dekoracyjny: balistyczny 800T-B'
+    - Language: Portuguese_Brazil
+      String: 'Decorativo: Balístico 800T-B'
+    - Language: ChineseSimplified
+      String: 装饰：弹道 800T-B
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component

@@ -1,0 +1,48 @@
+FormKey: 0030A8:JunkInYourTrunk_v2.esm
+EditorID: SMBSet_GravDrive_Reladyne_RD-3000-Beta
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Reladyne RD-3000 Beta-Set
+  - Language: English
+    String: Reladyne RD-3000 Beta Set
+  - Language: Spanish
+    String: Juego Beta Reladyne RD-3000
+  - Language: French
+    String: Ensemble bêta Reladyne RD-3000
+  - Language: Italian
+    String: Set Reladyne RD-3000 Beta
+  - Language: Japanese
+    String: Reladyne RD-3000 ベータ セット
+  - Language: Polish
+    String: Zestaw Reladyne RD-3000 Beta
+  - Language: Portuguese_Brazil
+    String: Conjunto Beta Reladyne RD-3000
+  - Language: ChineseSimplified
+    String: Reladyne RD-3000 测试版套装
+Items:
+- 0030A9:JunkInYourTrunk_v2.esm
+- 0030AA:JunkInYourTrunk_v2.esm
+- 0030AB:JunkInYourTrunk_v2.esm
+- 0030AC:JunkInYourTrunk_v2.esm
+- 0030AD:JunkInYourTrunk_v2.esm
+- 0030AE:JunkInYourTrunk_v2.esm
+- 0030AF:JunkInYourTrunk_v2.esm
+- 0030B0:JunkInYourTrunk_v2.esm
+- 0030B1:JunkInYourTrunk_v2.esm
+- 0030B2:JunkInYourTrunk_v2.esm
+- 0030B3:JunkInYourTrunk_v2.esm
+- 0030B4:JunkInYourTrunk_v2.esm
+- 0030B5:JunkInYourTrunk_v2.esm
+- 0030B6:JunkInYourTrunk_v2.esm
+- 0030B7:JunkInYourTrunk_v2.esm
+- 0030B8:JunkInYourTrunk_v2.esm
+- 0030B9:JunkInYourTrunk_v2.esm
+- 0030BA:JunkInYourTrunk_v2.esm
+- 0030BB:JunkInYourTrunk_v2.esm
+- 0030BC:JunkInYourTrunk_v2.esm
+- 26AE53:Starfield.esm
+- 0030BE:JunkInYourTrunk_v2.esm
+- 0030BF:JunkInYourTrunk_v2.esm
+- 0030C0:JunkInYourTrunk_v2.esm

@@ -1,0 +1,36 @@
+FormKey: 0016C5:JunkInYourTrunk_v2.esm
+EditorID: SMSSet_Decorative_Cargo_Panoptes_Polo-2000-2010-2020-2030
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Dekoratives Panoptes Polo 2000/2010/2020/2030 Set
+  - Language: English
+    String: Decorative Panoptes Polo 2000/2010/2020/2030 Set
+  - Language: Spanish
+    String: Conjunto Panoptes Decorativos Polo 2000/2010/2020/2030
+  - Language: French
+    String: Ensemble décoratif Panoptes Polo 2000/2010/2020/2030
+  - Language: Italian
+    String: Set decorativo Panoptes Polo 2000/2010/2020/2030
+  - Language: Japanese
+    String: 装飾パノプテス ポロ 2000/2010/2020/2030 セット
+  - Language: Polish
+    String: Zestaw dekoracyjny Panoptes Polo 2000/2010/2020/2030
+  - Language: Portuguese_Brazil
+    String: Conjunto Decorativo Panoptes Polo 2000/2010/2020/2030
+  - Language: ChineseSimplified
+    String: 装饰 Panoptes Polo 2000/2010/2020/2030 套装
+Items:
+- 0015E9:JunkInYourTrunk_v2.esm
+- 0015EA:JunkInYourTrunk_v2.esm
+- 0015EB:JunkInYourTrunk_v2.esm
+- 0015EC:JunkInYourTrunk_v2.esm
+- 0015ED:JunkInYourTrunk_v2.esm
+- 0015EE:JunkInYourTrunk_v2.esm
+- 0015EF:JunkInYourTrunk_v2.esm
+- 0015F0:JunkInYourTrunk_v2.esm
+- 0015F1:JunkInYourTrunk_v2.esm
+- 0015F2:JunkInYourTrunk_v2.esm
+- 0015F3:JunkInYourTrunk_v2.esm
+- 0015F4:JunkInYourTrunk_v2.esm

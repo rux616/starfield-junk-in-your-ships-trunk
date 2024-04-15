@@ -1,0 +1,30 @@
+FormKey: 001392:JunkInYourTrunk_v2.esm
+EditorID: SMBSet_Shields_Nautilus_Tower-N400
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Nautilus-Turm N400-Set
+  - Language: English
+    String: Nautilus Tower N400 Set
+  - Language: Spanish
+    String: Conjunto Torre Nautilus N400
+  - Language: French
+    String: Ensemble Tour Nautilus N400
+  - Language: Italian
+    String: Set Torre Nautilus N400
+  - Language: Japanese
+    String: ノーチラスタワー N400 セット
+  - Language: Polish
+    String: Zestaw Nautilus Tower N400
+  - Language: Portuguese_Brazil
+    String: Conjunto Torre Nautilus N400
+  - Language: ChineseSimplified
+    String: 鹦鹉螺塔 N400 套装
+Items:
+- 001499:JunkInYourTrunk_v2.esm
+- 00149A:JunkInYourTrunk_v2.esm
+- 00149B:JunkInYourTrunk_v2.esm
+- 00149C:JunkInYourTrunk_v2.esm
+- 00149D:JunkInYourTrunk_v2.esm
+- 26F96A:Starfield.esm

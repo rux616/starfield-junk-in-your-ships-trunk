@@ -1,0 +1,52 @@
+FormKey: 001CFD:JunkInYourTrunk_v2.esm
+EditorID: SMS_Decorative_FuelTank_Ballistic_100G-200G_Fore_Vert
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 00ACDB:Starfield.esm
+    Value: 5
+  - ActorValue: 27BACE:Starfield.esm
+    Value: 30
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: 001780:JunkInYourTrunk_v2.esm
+- MutagenObjectType: DestructibleObjectComponent
+  Destructible:
+    Data:
+      Health: 1
+      DESTCount: 1
+    Stages:
+    - Explosion: 054057:Starfield.esm
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 27BABE:Starfield.esm
+  - 00D580:Starfield.esm
+  - 1462C7:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: 'Dekorativ: Ballistisch 100G/200G'
+    - Language: English
+      String: 'Decorative: Ballistic 100G/200G'
+    - Language: Spanish
+      String: 'Decorativo: Balístico 100G/200G'
+    - Language: French
+      String: 'Décoratif : balistique 100G/200G'
+    - Language: Italian
+      String: 'Decorativo: balistico 100G/200G'
+    - Language: Japanese
+      String: '装飾: バリスティック 100G/200G'
+    - Language: Polish
+      String: 'Dekoracyjny: balistyczny 100G/200G'
+    - Language: Portuguese_Brazil
+      String: 'Decorativo: Balístico 100G/200G'
+    - Language: ChineseSimplified
+      String: 装饰：弹道100G/200G
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component

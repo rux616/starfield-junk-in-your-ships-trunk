@@ -1,0 +1,13 @@
+FormKey: 00137D:JunkInYourTrunk_v2.esm
+EditorID: ShipPI_SMOD_Shield_Dogstar_Defender-11T_Top
+ObjectBounds:
+  First: -1.21875, -1.2177734, -1.7490234
+  Second: 1.21875, 1.2177734, 0.5449219
+ODTY: 0
+Transforms:
+  Ship: 050FA1:Starfield.esm
+Filter: '\Ships\Modules\Exterior\Shield\Dogstar\'
+Cell: 001375:JunkInYourTrunk_v2.esm
+Version: 0
+FNAM: 0x0E000000
+MaterialSwaps: []

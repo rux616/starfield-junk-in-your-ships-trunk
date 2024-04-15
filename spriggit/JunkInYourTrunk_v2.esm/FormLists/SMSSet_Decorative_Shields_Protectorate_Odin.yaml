@@ -1,0 +1,30 @@
+FormKey: 001594:JunkInYourTrunk_v2.esm
+EditorID: SMSSet_Decorative_Shields_Protectorate_Odin
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Dekoratives Protektorat-Odin-Set
+  - Language: English
+    String: Decorative Protectorate Odin Set
+  - Language: Spanish
+    String: Set Protectorado Decorativo Odin
+  - Language: French
+    String: Ensemble Odin du Protectorat décoratif
+  - Language: Italian
+    String: Set Odino protettorato decorativo
+  - Language: Japanese
+    String: 装飾保護領オーディンセット
+  - Language: Polish
+    String: Dekoracyjny zestaw Protektoratu Odina
+  - Language: Portuguese_Brazil
+    String: Conjunto Protetorado Decorativo Odin
+  - Language: ChineseSimplified
+    String: 装饰保护国奥丁套装
+Items:
+- 00157D:JunkInYourTrunk_v2.esm
+- 00157E:JunkInYourTrunk_v2.esm
+- 00157F:JunkInYourTrunk_v2.esm
+- 001580:JunkInYourTrunk_v2.esm
+- 001581:JunkInYourTrunk_v2.esm
+- 001582:JunkInYourTrunk_v2.esm

@@ -1,0 +1,27 @@
+FormKey: 001DD0:JunkInYourTrunk_v2.esm
+EditorID: SMSSet_Decorative_FuelTank_Ballistic_500T
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Dekoratives ballistisches 500T-Set
+  - Language: English
+    String: Decorative Ballistic 500T Set
+  - Language: Spanish
+    String: Conjunto balístico decorativo 500T
+  - Language: French
+    String: Ensemble balistique décoratif 500T
+  - Language: Italian
+    String: Set balistico decorativo 500T
+  - Language: Japanese
+    String: 装飾弾道 500T セット
+  - Language: Polish
+    String: Dekoracyjny zestaw balistyczny 500T
+  - Language: Portuguese_Brazil
+    String: Conjunto balístico decorativo 500T
+  - Language: ChineseSimplified
+    String: 装饰弹道 500T 套装
+Items:
+- 001D1C:JunkInYourTrunk_v2.esm
+- 001D1D:JunkInYourTrunk_v2.esm
+- 001D1E:JunkInYourTrunk_v2.esm

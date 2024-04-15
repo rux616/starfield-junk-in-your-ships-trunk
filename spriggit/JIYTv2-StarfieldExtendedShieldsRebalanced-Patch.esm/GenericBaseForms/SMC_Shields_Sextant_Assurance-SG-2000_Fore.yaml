@@ -1,0 +1,68 @@
+FormKey: 00150A:JunkInYourTrunk_v2.esm
+EditorID: SMC_Shields_Sextant_Assurance-SG-2000_Fore
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+  Slots:
+  - 24A05E:Starfield.esm
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 0002D4:Starfield.esm
+    Value: 5
+  - ActorValue: 0090A9:Starfield.esm
+    Value: 0.15
+  - ActorValue: 00ACDB:Starfield.esm
+    Value: 109
+  - ActorValue: 01158A:Starfield.esm
+    Value: 1
+  - ActorValue: 019080:Starfield.esm
+    Value: 0.5
+  - ActorValue: 01ECCD:Starfield.esm
+    Value: 10
+  - ActorValue: 05BFA7:Starfield.esm
+    Value: 0.05
+  - ActorValue: 05BFA8:Starfield.esm
+    Value: 3900
+  - ActorValue: 05C74B:Starfield.esm
+  - ActorValue: 1EE8C9:Starfield.esm
+    Value: 580
+  - ActorValue: 1EF0CC:Starfield.esm
+    Value: 580
+  - ActorValue: 24A05F:Starfield.esm
+    Value: 3900
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: 0013C9:JunkInYourTrunk_v2.esm
+- MutagenObjectType: DestructibleObjectComponent
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 1462C5:Starfield.esm
+  - 26FE55:Starfield.esm
+  - 2BCFDF:Starfield.esm
+  - 27BABC:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: Schildgenerator Assurance SG-2000
+    - Language: English
+      String: Assurance SG-2000 Shield Generator
+    - Language: Spanish
+      String: Generador de escudos Seguridad SG-2000
+    - Language: French
+      String: Générateur de bouclier Assurance SG-2000
+    - Language: Italian
+      String: Generatore di scudo Assurance SG-2000
+    - Language: Japanese
+      String: アシュアランスSG-2000シールドジェネレーター
+    - Language: Polish
+      String: Generator osłon Assurance SG-2000
+    - Language: Portuguese_Brazil
+      String: Gerador de Escudo Confiança SG-2000
+    - Language: ChineseSimplified
+      String: 铁壁SG-2000护盾生成器
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component

@@ -1,0 +1,30 @@
+FormKey: 00139B:JunkInYourTrunk_v2.esm
+EditorID: SMBSet_Shields_Sextant_Warden-SG-300
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Set Sextant Warden SG-300
+  - Language: English
+    String: Sextant Warden SG-300 Set
+  - Language: Spanish
+    String: Set Sextante Guardián SG-300
+  - Language: French
+    String: Ensemble Sextant Gardien SG-300
+  - Language: Italian
+    String: Set Guardiano del sestante SG-300
+  - Language: Japanese
+    String: 六分儀番人 SG-300 セット
+  - Language: Polish
+    String: Zestaw Sextant Warden SG-300
+  - Language: Portuguese_Brazil
+    String: Conjunto Sextante Diretor SG-300
+  - Language: ChineseSimplified
+    String: 六分仪守望者 SG-300 套装
+Items:
+- 0014D9:JunkInYourTrunk_v2.esm
+- 0014DA:JunkInYourTrunk_v2.esm
+- 0014DB:JunkInYourTrunk_v2.esm
+- 0014DC:JunkInYourTrunk_v2.esm
+- 0014DD:JunkInYourTrunk_v2.esm
+- 26F11F:Starfield.esm

@@ -1,0 +1,48 @@
+FormKey: 0016CC:JunkInYourTrunk_v2.esm
+EditorID: SMSSet_Decorative_Cargo_Protectorate_Galleon-S203
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Dekoratives Protektorat-Galeone S203-Set
+  - Language: English
+    String: Decorative Protectorate Galleon S203 Set
+  - Language: Spanish
+    String: Conjunto Galeón Protectorado Decorativo S203
+  - Language: French
+    String: Ensemble Galion du Protectorat Décoratif S203
+  - Language: Italian
+    String: Set galeone decorativo del protettorato S203
+  - Language: Japanese
+    String: 装飾保護ガレオン船 S203 セット
+  - Language: Polish
+    String: Zestaw dekoracyjny Galeon Protektoratu S203
+  - Language: Portuguese_Brazil
+    String: Conjunto Protetorado Decorativo Galeão S203
+  - Language: ChineseSimplified
+    String: 装饰保护国帆船 S203 套装
+Items:
+- 001649:JunkInYourTrunk_v2.esm
+- 00164A:JunkInYourTrunk_v2.esm
+- 00164B:JunkInYourTrunk_v2.esm
+- 00164C:JunkInYourTrunk_v2.esm
+- 00164D:JunkInYourTrunk_v2.esm
+- 00164E:JunkInYourTrunk_v2.esm
+- 00164F:JunkInYourTrunk_v2.esm
+- 001650:JunkInYourTrunk_v2.esm
+- 001651:JunkInYourTrunk_v2.esm
+- 001652:JunkInYourTrunk_v2.esm
+- 001653:JunkInYourTrunk_v2.esm
+- 001654:JunkInYourTrunk_v2.esm
+- 001655:JunkInYourTrunk_v2.esm
+- 001656:JunkInYourTrunk_v2.esm
+- 001657:JunkInYourTrunk_v2.esm
+- 001658:JunkInYourTrunk_v2.esm
+- 001659:JunkInYourTrunk_v2.esm
+- 00165A:JunkInYourTrunk_v2.esm
+- 00165B:JunkInYourTrunk_v2.esm
+- 00165C:JunkInYourTrunk_v2.esm
+- 00165D:JunkInYourTrunk_v2.esm
+- 00165E:JunkInYourTrunk_v2.esm
+- 00165F:JunkInYourTrunk_v2.esm
+- 001660:JunkInYourTrunk_v2.esm

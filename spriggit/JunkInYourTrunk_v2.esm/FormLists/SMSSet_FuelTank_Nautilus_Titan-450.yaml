@@ -1,0 +1,36 @@
+FormKey: 2258CA:Starfield.esm
+EditorID: SMSSet_FuelTank_Nautilus_Titan-450
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: 'Nautilus: Titan 450-Set'
+  - Language: English
+    String: Nautilus Titan 450 Set
+  - Language: Spanish
+    String: Equipo Titan 450 Nautilus
+  - Language: French
+    String: Kit Nautilus Titan 450
+  - Language: Italian
+    String: Set Nautilus Titan 450
+  - Language: Japanese
+    String: ノーチラス・タイタン450セット
+  - Language: Polish
+    String: Nautilus - zestaw Titan 450
+  - Language: Portuguese_Brazil
+    String: Conj. Nautilus Titã 450
+  - Language: ChineseSimplified
+    String: 鹦鹉螺土卫六450套组
+Items:
+- 2258CB:Starfield.esm
+- 27049B:Starfield.esm
+- 001CE4:JunkInYourTrunk_v2.esm
+- 001CE5:JunkInYourTrunk_v2.esm
+- 001CE6:JunkInYourTrunk_v2.esm
+- 001CE7:JunkInYourTrunk_v2.esm
+- 001CE8:JunkInYourTrunk_v2.esm
+- 001CE9:JunkInYourTrunk_v2.esm
+- 001CEA:JunkInYourTrunk_v2.esm
+- 001CEB:JunkInYourTrunk_v2.esm
+- 001CEC:JunkInYourTrunk_v2.esm
+- 001CED:JunkInYourTrunk_v2.esm

@@ -1,0 +1,10 @@
+FormKey: 0013CD:JunkInYourTrunk_v2.esm
+EditorID: ShipPI_SMOD_Shield_Protectorate_Odin-3030-C_Btm
+ODTY: 0
+Transforms:
+  Ship: 050FA1:Starfield.esm
+Filter: '\Ships\Modules\Exterior\Shield\Protectorate\'
+Cell: 001471:JunkInYourTrunk_v2.esm
+Version: 0
+FNAM: 0x0E000000
+MaterialSwaps: []

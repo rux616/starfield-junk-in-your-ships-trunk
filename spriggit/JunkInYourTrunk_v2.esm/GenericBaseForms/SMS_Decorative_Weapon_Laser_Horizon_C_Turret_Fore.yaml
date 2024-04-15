@@ -1,0 +1,45 @@
+FormKey: 001E52:JunkInYourTrunk_v2.esm
+EditorID: SMS_Decorative_Weapon_Laser_Horizon_C_Turret_Fore
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 00ACDB:Starfield.esm
+    Value: 1
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: 0B2D6A:Starfield.esm
+- MutagenObjectType: DestructibleObjectComponent
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 0B8537:Starfield.esm
+  - 1462C6:Starfield.esm
+  - 1219CA:Starfield.esm
+  - 27BABF:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: 'Dekorativ: Horizon LSR-C Turm'
+    - Language: English
+      String: 'Decorative: Horizon LSR-C Turret'
+    - Language: Spanish
+      String: 'Decorativo: Torreta Horizon LSR-C'
+    - Language: French
+      String: 'Décoratif : Tourelle Horizon LSR-C'
+    - Language: Italian
+      String: 'Decorativo: torretta Horizon LSR-C'
+    - Language: Japanese
+      String: '装飾: Horizo​​n LSR-C タレット'
+    - Language: Polish
+      String: 'Dekoracja: Wieża Horizon LSR-C'
+    - Language: Portuguese_Brazil
+      String: 'Decorativo: Torre Horizon LSR-C'
+    - Language: ChineseSimplified
+      String: 装饰：Horizo​​n LSR-C 炮塔
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component

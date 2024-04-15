@@ -1,0 +1,43 @@
+FormKey: 00156A:JunkInYourTrunk_v2.esm
+EditorID: SMS_Decorative_Shields_Sextant_Warden_Top
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 00ACDB:Starfield.esm
+    Value: 3
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: 23290C:Starfield.esm
+- MutagenObjectType: DestructibleObjectComponent
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 1462C5:Starfield.esm
+  - 27BABF:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: 'Dekorativ: Sextant-Wächter'
+    - Language: English
+      String: 'Decorative: Sextant Warden'
+    - Language: Spanish
+      String: 'Decorativo: Sextante Guardián'
+    - Language: French
+      String: Décoratif : Gardien sextant
+    - Language: Italian
+      String: 'Decorativo: Guardiano del Sestante'
+    - Language: Japanese
+      String: '装飾: 六分儀の監視者'
+    - Language: Polish
+      String: 'Ozdoba: Strażnik Sekstantu'
+    - Language: Portuguese_Brazil
+      String: 'Decorativo: Sextante Diretor'
+    - Language: ChineseSimplified
+      String: 装饰：六分仪守望者
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component

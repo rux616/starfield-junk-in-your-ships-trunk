@@ -1,0 +1,28 @@
+FormKey: 001E7C:JunkInYourTrunk_v2.esm
+EditorID: SMSSet_Decorative_Weapon_Particle_Horizon_B_Turret
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Dekoratives Horizon PRT-B Turmset
+  - Language: English
+    String: Decorative Horizon PRT-B Turret Set
+  - Language: Spanish
+    String: Conjunto de torreta decorativa Horizon PRT-B
+  - Language: French
+    String: Ensemble de tourelles décoratives Horizon PRT-B
+  - Language: Italian
+    String: Set torretta decorativa Horizon PRT-B
+  - Language: Japanese
+    String: デコラティブホライズン PRT-B タレットセット
+  - Language: Polish
+    String: Dekoracyjny zestaw wieżyczek Horizon PRT-B
+  - Language: Portuguese_Brazil
+    String: Conjunto de torre decorativa Horizon PRT-B
+  - Language: ChineseSimplified
+    String: 装饰地平线 PRT-B 炮塔套装
+Items:
+- 001E38:JunkInYourTrunk_v2.esm
+- 001E39:JunkInYourTrunk_v2.esm
+- 001E3A:JunkInYourTrunk_v2.esm
+- 001E3B:JunkInYourTrunk_v2.esm

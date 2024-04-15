@@ -1,0 +1,50 @@
+FormKey: 000AF9:JunkInYourTrunk_v2.esm
+EditorID: SMS_Cargo_Sextant_Hauler-40T_Port_Top
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 0002D4:Starfield.esm
+    Value: 5
+  - ActorValue: 0002DC:Starfield.esm
+    Value: 1270
+  - ActorValue: 00ACDB:Starfield.esm
+    Value: 268
+  - ActorValue: 27BACE:Starfield.esm
+    Value: 30
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: 000A78:JunkInYourTrunk_v2.esm
+- MutagenObjectType: DestructibleObjectComponent
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 1462C5:Starfield.esm
+  - 27BAC2:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: Frachtraum des Hauler 40T
+    - Language: English
+      String: Hauler 40T Cargo Hold
+    - Language: Spanish
+      String: Bodega de carga Hauler 40T
+    - Language: French
+      String: Cale de chargement Hauler 40T
+    - Language: Italian
+      String: Stiva di carico del trasportatore 40T
+    - Language: Japanese
+      String: ホーラー 40T 貨物倉
+    - Language: Polish
+      String: Wozidło 40T Ładownia
+    - Language: Portuguese_Brazil
+      String: Porão de carga do caminhão 40T
+    - Language: ChineseSimplified
+      String: 卡车 40T 货舱
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component
+- Spaceship_InstanceData

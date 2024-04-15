@@ -1,0 +1,50 @@
+FormKey: 0009F5:JunkInYourTrunk_v2.esm
+EditorID: SMS_Cargo_Sextant_Hauler-20T_Top
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 0002D4:Starfield.esm
+    Value: 5
+  - ActorValue: 0002DC:Starfield.esm
+    Value: 7600
+  - ActorValue: 00ACDB:Starfield.esm
+    Value: 160
+  - ActorValue: 27BACE:Starfield.esm
+    Value: 20
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: 0009F0:JunkInYourTrunk_v2.esm
+- MutagenObjectType: DestructibleObjectComponent
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 1462C5:Starfield.esm
+  - 27BABF:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: Hauler 20T Frachtraum
+    - Language: English
+      String: Hauler 20T Cargo Hold
+    - Language: Spanish
+      String: Soporte de carga Hauler 20T
+    - Language: French
+      String: Hauler 20T Cale
+    - Language: Italian
+      String: Stiva di carico Hauler 20T
+    - Language: Japanese
+      String: ハウラー 20T 貨物倉
+    - Language: Polish
+      String: Wozidło 20T ładownia ładunkowa
+    - Language: Portuguese_Brazil
+      String: Retentor de carga blindado do reator 20T
+    - Language: ChineseSimplified
+      String: 牵引车 20T 货舱
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component
+- Spaceship_InstanceData

@@ -1,0 +1,36 @@
+FormKey: 000EF4:JunkInYourTrunk_v2.esm
+EditorID: SMSSet_Cargo_Panoptes_Polo-2020
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Panoptes Polo 2020 Set
+  - Language: English
+    String: Panoptes Polo 2020 Set
+  - Language: Spanish
+    String: Conjunto Panoptes Polo 2020
+  - Language: French
+    String: Ensemble Panoptes Polo 2020
+  - Language: Italian
+    String: Set Panoptes Polo 2020
+  - Language: Japanese
+    String: パノプテス ポロ 2020 セット
+  - Language: Polish
+    String: Zestaw Polo 2020 Panoptes
+  - Language: Portuguese_Brazil
+    String: Conjunto Panoptes Polo 2020
+  - Language: ChineseSimplified
+    String: Panoptes Polo 2020 套装
+Items:
+- 000F01:JunkInYourTrunk_v2.esm
+- 000F02:JunkInYourTrunk_v2.esm
+- 27046F:Starfield.esm
+- 000F03:JunkInYourTrunk_v2.esm
+- 000F04:JunkInYourTrunk_v2.esm
+- 000F05:JunkInYourTrunk_v2.esm
+- 000F06:JunkInYourTrunk_v2.esm
+- 000F07:JunkInYourTrunk_v2.esm
+- 000F08:JunkInYourTrunk_v2.esm
+- 000F09:JunkInYourTrunk_v2.esm
+- 000F0A:JunkInYourTrunk_v2.esm
+- 000F0B:JunkInYourTrunk_v2.esm

@@ -1,0 +1,30 @@
+FormKey: 001595:JunkInYourTrunk_v2.esm
+EditorID: SMSSet_Decorative_Shields_Protectorate_Osiris
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Dekoratives Protektorat-Osiris-Set
+  - Language: English
+    String: Decorative Protectorate Osiris Set
+  - Language: Spanish
+    String: Set Protectorado Decorativo Osiris
+  - Language: French
+    String: Ensemble Osiris du protectorat décoratif
+  - Language: Italian
+    String: Set Osiride del protettorato decorativo
+  - Language: Japanese
+    String: 装飾保護領オシリスセット
+  - Language: Polish
+    String: Zestaw dekoracyjny Protektoratu Ozyrysa
+  - Language: Portuguese_Brazil
+    String: Conjunto Protetorado Osíris Decorativo
+  - Language: ChineseSimplified
+    String: 装饰保护国奥西里斯套装
+Items:
+- 00155F:JunkInYourTrunk_v2.esm
+- 001560:JunkInYourTrunk_v2.esm
+- 001561:JunkInYourTrunk_v2.esm
+- 001562:JunkInYourTrunk_v2.esm
+- 001563:JunkInYourTrunk_v2.esm
+- 001564:JunkInYourTrunk_v2.esm

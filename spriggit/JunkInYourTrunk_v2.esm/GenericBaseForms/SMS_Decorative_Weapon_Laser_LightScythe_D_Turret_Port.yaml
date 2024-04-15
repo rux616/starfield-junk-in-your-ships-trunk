@@ -1,0 +1,45 @@
+FormKey: 001E58:JunkInYourTrunk_v2.esm
+EditorID: SMS_Decorative_Weapon_Laser_LightScythe_D_Turret_Port
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 00ACDB:Starfield.esm
+    Value: 1
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: 0BDBB0:Starfield.esm
+- MutagenObjectType: DestructibleObjectComponent
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 0B8537:Starfield.esm
+  - 1462C8:Starfield.esm
+  - 1219CA:Starfield.esm
+  - 27BAC2:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: 'Dekorativ: Light Scythe LSR-D Turret'
+    - Language: English
+      String: 'Decorative: Light Scythe LSR-D Turret'
+    - Language: Spanish
+      String: 'Decorativo: Torreta Light Scythe LSR-D'
+    - Language: French
+      String: 'Décoratif : Tourelle Light Scythe LSR-D'
+    - Language: Italian
+      String: 'Decorativo: torretta LSR-D con falce leggera'
+    - Language: Japanese
+      String: '装飾: ライトサイス LSR-D タレット'
+    - Language: Polish
+      String: 'Dekoracyjna: Wieżyczka Light Scythe LSR-D'
+    - Language: Portuguese_Brazil
+      String: 'Decorativo: Torreta Light Scythe LSR-D'
+    - Language: ChineseSimplified
+      String: 装饰：光镰LSR-D炮塔
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component

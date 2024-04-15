@@ -1,0 +1,36 @@
+FormKey: 0016CF:JunkInYourTrunk_v2.esm
+EditorID: SMSSet_Decorative_Cargo_Sextant_Ballast-200CM
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Set mit dekorativem Sextanten-Vorschaltgerät, 200 cm
+  - Language: English
+    String: Decorative Sextant Ballast 200CM Set
+  - Language: Spanish
+    String: Set Lastre Sextante Decorativo 200CM
+  - Language: French
+    String: Ensemble Ballast Sextant Décoratif 200CM
+  - Language: Italian
+    String: Set di zavorra sestante decorativa da 200 cm
+  - Language: Japanese
+    String: 装飾六分儀バラスト 200CM セット
+  - Language: Polish
+    String: Zestaw dekoracyjnego statecznika sekstantowego 200CM
+  - Language: Portuguese_Brazil
+    String: Conjunto de lastro sextante decorativo 200CM
+  - Language: ChineseSimplified
+    String: 装饰六分仪镇流器200CM套装
+Items:
+- 00166C:JunkInYourTrunk_v2.esm
+- 00166D:JunkInYourTrunk_v2.esm
+- 00166E:JunkInYourTrunk_v2.esm
+- 00166F:JunkInYourTrunk_v2.esm
+- 001670:JunkInYourTrunk_v2.esm
+- 001671:JunkInYourTrunk_v2.esm
+- 001672:JunkInYourTrunk_v2.esm
+- 001673:JunkInYourTrunk_v2.esm
+- 001674:JunkInYourTrunk_v2.esm
+- 001675:JunkInYourTrunk_v2.esm
+- 001676:JunkInYourTrunk_v2.esm
+- 001677:JunkInYourTrunk_v2.esm

@@ -1,0 +1,49 @@
+FormKey: 265125:Starfield.esm
+EditorID: co_SMS_CargoShielded_Sextant_Ballast-100CM
+Description:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Frachtmodule für Raumschiffe erhöhen den verfügbaren Platz deines Schiffsinventars. Frachtraumschilde verbergen Schmuggelware vor den Behörden.
+  - Language: English
+    String: Spaceship Cargo Modules increase your ship's inventory space. Shielded Cargo will hide contraband from the authorities.
+  - Language: Spanish
+    String: Los módulos de carga aumentan el espacio de inventario de la nave.La carga oculta pasará inadvertida ante las autoridades.
+  - Language: French
+    String: Les modules de soute augmentent l'espace d'inventaire de votre vaisseau. Une soute blindée cachera la contrebande aux yeux des autorités.
+  - Language: Italian
+    String: I moduli di carico incrementano la capacità dell’inventario della nave. Il Carico schermato occulterà le merci di contrabbando alle autorità.
+  - Language: Japanese
+    String: 宇宙船の貨物モジュールは艦船の所持品スペースを拡大する。シールド貨物倉は禁輸品を当局から隠すことができる
+  - Language: Polish
+    String: Moduły ładowni zwiększają dostępne na twoim statku miejsce na przedmioty. Osłaniane ładownie pozwalają ukryć kontrabandę podczas skanowania.
+  - Language: Portuguese_Brazil
+    String: Módulos de carga aumentam o espaço de inventário na sua nave. Espaços de carga ocultos escondem contrabando das autoridades.
+  - Language: ChineseSimplified
+    String: 太空船货舱模块可增加你飞船的物品栏空间。隐秘货舱能够隐藏违禁品，躲避管理局的审查。
+WorkbenchKeyword: 29C480:Starfield.esm
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x000000
+  Unknown2: 17620
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    FirstParameter: 143CA0:Starfield.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Unknown1: 0x000000
+  Unknown2: 17620
+  Data:
+    MutagenObjectType: GetLevelConditionData
+    RunOnType: Reference
+    Reference: 000014:Starfield.esm
+  ComparisonValue: 1
+CreatedObject: 0008B2:JunkInYourTrunk_v2.esm
+AmountProduced: 1
+MenuSortOrder: 0.5
+LearnMethod: DefaultOrConditions
+Value: 1500
+Categories:
+- 2C155D:Starfield.esm
+RECF: 0

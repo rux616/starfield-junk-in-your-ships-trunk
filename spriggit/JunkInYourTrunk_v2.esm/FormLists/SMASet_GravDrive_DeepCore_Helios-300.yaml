@@ -1,0 +1,48 @@
+FormKey: 0025BB:JunkInYourTrunk_v2.esm
+EditorID: SMASet_GravDrive_DeepCore_Helios-300
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: DeepCore Helios 300-Set
+  - Language: English
+    String: DeepCore Helios 300 Set
+  - Language: Spanish
+    String: Conjunto DeepCore Helios 300
+  - Language: French
+    String: Ensemble DeepCore Hélios 300
+  - Language: Italian
+    String: Set DeepCore Helios 300
+  - Language: Japanese
+    String: DeepCore Helios 300 セット
+  - Language: Polish
+    String: Zestaw DeepCore Helios 300
+  - Language: Portuguese_Brazil
+    String: Conjunto DeepCore Helios 300
+  - Language: ChineseSimplified
+    String: DeepCore Helios 300 套装
+Items:
+- 0025BC:JunkInYourTrunk_v2.esm
+- 0025BD:JunkInYourTrunk_v2.esm
+- 0025BE:JunkInYourTrunk_v2.esm
+- 0025BF:JunkInYourTrunk_v2.esm
+- 0025C0:JunkInYourTrunk_v2.esm
+- 0025C1:JunkInYourTrunk_v2.esm
+- 0025C2:JunkInYourTrunk_v2.esm
+- 0025C3:JunkInYourTrunk_v2.esm
+- 0025C4:JunkInYourTrunk_v2.esm
+- 0025C5:JunkInYourTrunk_v2.esm
+- 0025C6:JunkInYourTrunk_v2.esm
+- 0025C7:JunkInYourTrunk_v2.esm
+- 0025C8:JunkInYourTrunk_v2.esm
+- 0025C9:JunkInYourTrunk_v2.esm
+- 0025CA:JunkInYourTrunk_v2.esm
+- 0025CB:JunkInYourTrunk_v2.esm
+- 0025CC:JunkInYourTrunk_v2.esm
+- 0025CD:JunkInYourTrunk_v2.esm
+- 0025CE:JunkInYourTrunk_v2.esm
+- 0025CF:JunkInYourTrunk_v2.esm
+- 26AE9D:Starfield.esm
+- 0025D1:JunkInYourTrunk_v2.esm
+- 0025D2:JunkInYourTrunk_v2.esm
+- 0025D3:JunkInYourTrunk_v2.esm

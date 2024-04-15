@@ -1,8 +1,0 @@
-FormKey: 001097:JunkInYourTrunk_v3.esm
-EditorID: ShipSnap_SMOD_Generic_CTRxCTRy080z_Btm
-Nodes:
-- Node: 04AB78:Starfield.esm
-  Offset: 0, 0, -4
-  Rotation: 90, 0, 180
-NextNodeID: 1
-STPT: 0

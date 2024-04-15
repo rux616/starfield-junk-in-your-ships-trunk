@@ -1,0 +1,36 @@
+FormKey: 0016C8:JunkInYourTrunk_v2.esm
+EditorID: SMSSet_Decorative_Cargo_Protectorate_Caravel-V103
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Dekoratives Protektorat-Karavelle V103-Set
+  - Language: English
+    String: Decorative Protectorate Caravel V103 Set
+  - Language: Spanish
+    String: Set Carabela Protectorado Decorativo V103
+  - Language: French
+    String: Ensemble de caravelle décorative du protectorat V103
+  - Language: Italian
+    String: Set Caravella decorativa del Protettorato V103
+  - Language: Japanese
+    String: 装飾保護領キャラベル V103 セット
+  - Language: Polish
+    String: Zestaw ozdobnych karaweli Protektoratu V103
+  - Language: Portuguese_Brazil
+    String: Conjunto Protetorado Decorativo Caravela V103
+  - Language: ChineseSimplified
+    String: 装饰保护国 Caravel V103 套装
+Items:
+- 00160D:JunkInYourTrunk_v2.esm
+- 00160E:JunkInYourTrunk_v2.esm
+- 00160F:JunkInYourTrunk_v2.esm
+- 001610:JunkInYourTrunk_v2.esm
+- 001611:JunkInYourTrunk_v2.esm
+- 001612:JunkInYourTrunk_v2.esm
+- 001613:JunkInYourTrunk_v2.esm
+- 001614:JunkInYourTrunk_v2.esm
+- 001615:JunkInYourTrunk_v2.esm
+- 001616:JunkInYourTrunk_v2.esm
+- 001617:JunkInYourTrunk_v2.esm
+- 001618:JunkInYourTrunk_v2.esm

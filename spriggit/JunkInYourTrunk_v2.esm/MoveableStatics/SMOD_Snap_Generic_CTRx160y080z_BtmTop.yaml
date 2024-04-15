@@ -1,0 +1,12 @@
+FormKey: 001941:JunkInYourTrunk_v2.esm
+EditorID: SMOD_Snap_Generic_CTRx160y080z_BtmTop
+ODTY: 0
+SnapTemplate: 001939:JunkInYourTrunk_v2.esm
+Model:
+  File: effects\fxemptynode.nif
+  FLLD: 0x01000000
+  XFLG: 0x02
+Keywords:
+- 1BB401:Starfield.esm
+- 207960:Starfield.esm
+DATA: 4

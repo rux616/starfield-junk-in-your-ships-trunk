@@ -1,0 +1,48 @@
+FormKey: 003D63:JunkInYourTrunk_v2.esm
+EditorID: SMSSet_Decorative_GravDrive_Reladyne_Beta
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Dekoratives Reladyne Beta-Set
+  - Language: English
+    String: Decorative Reladyne Beta Set
+  - Language: Spanish
+    String: Set decorativo Reladyne Beta
+  - Language: French
+    String: Ensemble bêta décoratif Reladyne
+  - Language: Italian
+    String: Set decorativo Reladyne Beta
+  - Language: Japanese
+    String: 装飾 Reladyne ベータ セット
+  - Language: Polish
+    String: Dekoracyjny zestaw Reladyne Beta
+  - Language: Portuguese_Brazil
+    String: Conjunto Decorativo Reladyne Beta
+  - Language: ChineseSimplified
+    String: Reladyne Beta 装饰套装
+Items:
+- 003D64:JunkInYourTrunk_v2.esm
+- 003D6C:JunkInYourTrunk_v2.esm
+- 003D74:JunkInYourTrunk_v2.esm
+- 003D7C:JunkInYourTrunk_v2.esm
+- 003D84:JunkInYourTrunk_v2.esm
+- 003D8C:JunkInYourTrunk_v2.esm
+- 003D94:JunkInYourTrunk_v2.esm
+- 003D9C:JunkInYourTrunk_v2.esm
+- 003DA4:JunkInYourTrunk_v2.esm
+- 003DAC:JunkInYourTrunk_v2.esm
+- 003DB4:JunkInYourTrunk_v2.esm
+- 003DBC:JunkInYourTrunk_v2.esm
+- 003DC4:JunkInYourTrunk_v2.esm
+- 003DCC:JunkInYourTrunk_v2.esm
+- 003DD4:JunkInYourTrunk_v2.esm
+- 003DDC:JunkInYourTrunk_v2.esm
+- 003DE4:JunkInYourTrunk_v2.esm
+- 003DEC:JunkInYourTrunk_v2.esm
+- 003DF4:JunkInYourTrunk_v2.esm
+- 003DFC:JunkInYourTrunk_v2.esm
+- 003E04:JunkInYourTrunk_v2.esm
+- 003E2F:JunkInYourTrunk_v2.esm
+- 003E37:JunkInYourTrunk_v2.esm
+- 003E3F:JunkInYourTrunk_v2.esm

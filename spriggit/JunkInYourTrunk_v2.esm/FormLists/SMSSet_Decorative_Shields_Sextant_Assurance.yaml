@@ -1,0 +1,30 @@
+FormKey: 001596:JunkInYourTrunk_v2.esm
+EditorID: SMSSet_Decorative_Shields_Sextant_Assurance
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Dekoratives Sextanten-Sicherheitsset
+  - Language: English
+    String: Decorative Sextant Assurance Set
+  - Language: Spanish
+    String: Set de aseguramiento de sextante decorativo
+  - Language: French
+    String: Ensemble d'assurance sextant décoratif
+  - Language: Italian
+    String: Set decorativo di garanzia del sestante
+  - Language: Japanese
+    String: 飾り六分儀保証セット
+  - Language: Polish
+    String: Dekoracyjny zestaw zapewniający sekstans
+  - Language: Portuguese_Brazil
+    String: Conjunto Decorativo de Garantia Sextante
+  - Language: ChineseSimplified
+    String: 装饰六分仪保证套装
+Items:
+- 001583:JunkInYourTrunk_v2.esm
+- 001584:JunkInYourTrunk_v2.esm
+- 001585:JunkInYourTrunk_v2.esm
+- 001586:JunkInYourTrunk_v2.esm
+- 001587:JunkInYourTrunk_v2.esm
+- 001588:JunkInYourTrunk_v2.esm

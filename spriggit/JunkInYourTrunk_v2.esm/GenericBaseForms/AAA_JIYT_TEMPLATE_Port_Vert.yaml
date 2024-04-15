@@ -1,0 +1,48 @@
+FormKey: 000AE6:JunkInYourTrunk_v2.esm
+EditorID: AAA_JIYT_TEMPLATE_Port_Vert
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 0002D4:Starfield.esm
+    Value: 5
+  - ActorValue: 0002DC:Starfield.esm
+  - ActorValue: 00ACDB:Starfield.esm
+  - ActorValue: 27BACE:Starfield.esm
+    Value: 30
+  - ActorValue: 02B344:Starfield.esm
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: Null
+- MutagenObjectType: DestructibleObjectComponent
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 27BAC5:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: Port Vert
+    - Language: English
+      String: Port Vert
+    - Language: Spanish
+      String: Puerto Verde
+    - Language: French
+      String: Port-Vert
+    - Language: Italian
+      String: Porto Verde
+    - Language: Japanese
+      String: ポールヴェール
+    - Language: Polish
+      String: Port pionowy
+    - Language: Portuguese_Brazil
+      String: Porto Verde
+    - Language: ChineseSimplified
+      String: 维特港
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component
+- Spaceship_InstanceData

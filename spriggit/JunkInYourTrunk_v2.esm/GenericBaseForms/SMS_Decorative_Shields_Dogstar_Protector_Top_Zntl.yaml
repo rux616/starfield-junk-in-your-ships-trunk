@@ -1,0 +1,45 @@
+FormKey: 00151F:JunkInYourTrunk_v2.esm
+EditorID: SMS_Decorative_Shields_Dogstar_Protector_Top_Zntl
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 00ACDB:Starfield.esm
+    Value: 3
+  - ActorValue: 27BACE:Starfield.esm
+    Value: 10
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: 001120:JunkInYourTrunk_v2.esm
+- MutagenObjectType: DestructibleObjectComponent
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 1462CD:Starfield.esm
+  - 27BABE:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: 'Dekorativ: Dogstar-Beschützer'
+    - Language: English
+      String: 'Decorative: Dogstar Protector'
+    - Language: Spanish
+      String: 'Decorativo: Protector Dogstar'
+    - Language: French
+      String: 'Décoratif : Protecteur Dogstar'
+    - Language: Italian
+      String: 'Decorativo: protettore Dogstar'
+    - Language: Japanese
+      String: '装飾: ドッグスタープロテクター'
+    - Language: Polish
+      String: 'Dekoracyjny: Ochraniacz Dogstar'
+    - Language: Portuguese_Brazil
+      String: 'Decorativo: Protetor Dogstar'
+    - Language: ChineseSimplified
+      String: 装饰：狗星保护器
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component

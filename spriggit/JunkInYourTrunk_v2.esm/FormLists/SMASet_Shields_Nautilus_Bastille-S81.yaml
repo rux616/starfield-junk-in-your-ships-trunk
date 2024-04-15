@@ -1,0 +1,42 @@
+FormKey: 16E091:Starfield.esm
+EditorID: SMASet_Shields_Nautilus_Bastille-S81
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Nautilus Bastille S81 Set
+  - Language: English
+    String: Nautilus Bastille S81 Set
+  - Language: Spanish
+    String: Conjunto Nautilus Bastilla S81
+  - Language: French
+    String: Coffret Nautilus Bastille S81
+  - Language: Italian
+    String: Set Nautilus Bastille S81
+  - Language: Japanese
+    String: ノーチラス バスティーユ S81 セット
+  - Language: Polish
+    String: Zestaw Nautilusa Bastille S81
+  - Language: Portuguese_Brazil
+    String: Conjunto Nautilus Bastille S81
+  - Language: ChineseSimplified
+    String: 鹦鹉螺巴士底狱 S81 套装
+Items:
+- 26F96E:Starfield.esm
+- 16E07D:Starfield.esm
+- 16E079:Starfield.esm
+- 0011C2:JunkInYourTrunk_v2.esm
+- 0011C3:JunkInYourTrunk_v2.esm
+- 0011C4:JunkInYourTrunk_v2.esm
+- 0011C5:JunkInYourTrunk_v2.esm
+- 0011C6:JunkInYourTrunk_v2.esm
+- 0011C7:JunkInYourTrunk_v2.esm
+- 0011C8:JunkInYourTrunk_v2.esm
+- 0011C9:JunkInYourTrunk_v2.esm
+- 0011CA:JunkInYourTrunk_v2.esm
+- 0011CB:JunkInYourTrunk_v2.esm
+- 0011CC:JunkInYourTrunk_v2.esm
+- 0011CD:JunkInYourTrunk_v2.esm
+- 0011CE:JunkInYourTrunk_v2.esm
+- 0011CF:JunkInYourTrunk_v2.esm
+- 0011D0:JunkInYourTrunk_v2.esm

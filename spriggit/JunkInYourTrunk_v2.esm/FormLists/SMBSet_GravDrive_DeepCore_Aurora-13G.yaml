@@ -1,0 +1,48 @@
+FormKey: 002EAA:JunkInYourTrunk_v2.esm
+EditorID: SMBSet_GravDrive_DeepCore_Aurora-13G
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: DeepCore Aurora 13G-Set
+  - Language: English
+    String: DeepCore Aurora 13G Set
+  - Language: Spanish
+    String: Conjunto DeepCore Aurora 13G
+  - Language: French
+    String: Ensemble DeepCore Aurora 13G
+  - Language: Italian
+    String: Set DeepCore Aurora 13G
+  - Language: Japanese
+    String: DeepCore Aurora 13G セット
+  - Language: Polish
+    String: Zestaw DeepCore Aurora 13G
+  - Language: Portuguese_Brazil
+    String: Conjunto DeepCore Aurora 13G
+  - Language: ChineseSimplified
+    String: DeepCore Aurora 13G 套装
+Items:
+- 002EAB:JunkInYourTrunk_v2.esm
+- 002EAC:JunkInYourTrunk_v2.esm
+- 002EAD:JunkInYourTrunk_v2.esm
+- 002EAE:JunkInYourTrunk_v2.esm
+- 002EAF:JunkInYourTrunk_v2.esm
+- 002EB0:JunkInYourTrunk_v2.esm
+- 002EB1:JunkInYourTrunk_v2.esm
+- 002EB2:JunkInYourTrunk_v2.esm
+- 002EB3:JunkInYourTrunk_v2.esm
+- 002EB4:JunkInYourTrunk_v2.esm
+- 002EB5:JunkInYourTrunk_v2.esm
+- 002EB6:JunkInYourTrunk_v2.esm
+- 002EB7:JunkInYourTrunk_v2.esm
+- 002EB8:JunkInYourTrunk_v2.esm
+- 002EB9:JunkInYourTrunk_v2.esm
+- 002EBA:JunkInYourTrunk_v2.esm
+- 002EBB:JunkInYourTrunk_v2.esm
+- 002EBC:JunkInYourTrunk_v2.esm
+- 002EBD:JunkInYourTrunk_v2.esm
+- 002EBE:JunkInYourTrunk_v2.esm
+- 26AE99:Starfield.esm
+- 002EC0:JunkInYourTrunk_v2.esm
+- 002EC1:JunkInYourTrunk_v2.esm
+- 002EC2:JunkInYourTrunk_v2.esm

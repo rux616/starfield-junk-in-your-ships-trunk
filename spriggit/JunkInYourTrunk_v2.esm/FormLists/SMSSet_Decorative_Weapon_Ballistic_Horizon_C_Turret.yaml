@@ -1,0 +1,28 @@
+FormKey: 001E83:JunkInYourTrunk_v2.esm
+EditorID: SMSSet_Decorative_Weapon_Ballistic_Horizon_C_Turret
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Dekoratives Horizon BLS-C Turmset
+  - Language: English
+    String: Decorative Horizon BLS-C Turret Set
+  - Language: Spanish
+    String: Juego de torreta decorativa Horizon BLS-C
+  - Language: French
+    String: Ensemble de tourelles décoratives Horizon BLS-C
+  - Language: Italian
+    String: Set torretta decorativa Horizon BLS-C
+  - Language: Japanese
+    String: デコラティブホライズン BLS-C タレットセット
+  - Language: Polish
+    String: Zestaw dekoracyjnych wieżyczek Horizon BLS-C
+  - Language: Portuguese_Brazil
+    String: Conjunto de torre decorativa Horizon BLS-C
+  - Language: ChineseSimplified
+    String: 装饰地平线 BLS-C 炮塔套装
+Items:
+- 001E47:JunkInYourTrunk_v2.esm
+- 001E48:JunkInYourTrunk_v2.esm
+- 001E49:JunkInYourTrunk_v2.esm
+- 001E4A:JunkInYourTrunk_v2.esm

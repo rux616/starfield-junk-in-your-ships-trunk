@@ -1,0 +1,48 @@
+FormKey: 0031B5:JunkInYourTrunk_v2.esm
+EditorID: SMBSet_GravDrive_Slayton_SGD-2300
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Slayton SGD 2300-Set
+  - Language: English
+    String: Slayton SGD 2300 Set
+  - Language: Spanish
+    String: Slayton SGD 2300 Juego
+  - Language: French
+    String: Slayton SGD 2300 Ensemble
+  - Language: Italian
+    String: Set Slayton SGD 2300
+  - Language: Japanese
+    String: スレイトン SGD 2300 セット
+  - Language: Polish
+    String: Zestaw Slaytona za 2300 SGD
+  - Language: Portuguese_Brazil
+    String: Conjunto Slayton SGD 2300
+  - Language: ChineseSimplified
+    String: 斯莱顿 2300 新元套装
+Items:
+- 0031B6:JunkInYourTrunk_v2.esm
+- 0031B7:JunkInYourTrunk_v2.esm
+- 0031B8:JunkInYourTrunk_v2.esm
+- 0031B9:JunkInYourTrunk_v2.esm
+- 0031BA:JunkInYourTrunk_v2.esm
+- 0031BB:JunkInYourTrunk_v2.esm
+- 0031BC:JunkInYourTrunk_v2.esm
+- 0031BD:JunkInYourTrunk_v2.esm
+- 0031BE:JunkInYourTrunk_v2.esm
+- 0031BF:JunkInYourTrunk_v2.esm
+- 0031C0:JunkInYourTrunk_v2.esm
+- 0031C1:JunkInYourTrunk_v2.esm
+- 0031C2:JunkInYourTrunk_v2.esm
+- 0031C3:JunkInYourTrunk_v2.esm
+- 0031C4:JunkInYourTrunk_v2.esm
+- 0031C5:JunkInYourTrunk_v2.esm
+- 0031C6:JunkInYourTrunk_v2.esm
+- 0031C7:JunkInYourTrunk_v2.esm
+- 0031C8:JunkInYourTrunk_v2.esm
+- 0031C9:JunkInYourTrunk_v2.esm
+- 26AE32:Starfield.esm
+- 0031CB:JunkInYourTrunk_v2.esm
+- 0031CC:JunkInYourTrunk_v2.esm
+- 0031CD:JunkInYourTrunk_v2.esm

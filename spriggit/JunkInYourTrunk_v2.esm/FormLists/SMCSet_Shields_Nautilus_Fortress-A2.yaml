@@ -1,0 +1,30 @@
+FormKey: 00139E:JunkInYourTrunk_v2.esm
+EditorID: SMCSet_Shields_Nautilus_Fortress-A2
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Nautilus-Festung A2-Set
+  - Language: English
+    String: Nautilus Fortress A2 Set
+  - Language: Spanish
+    String: Conjunto Fortaleza Nautilus A2
+  - Language: French
+    String: Ensemble Forteresse Nautilus A2
+  - Language: Italian
+    String: Set Fortezza Nautilus A2
+  - Language: Japanese
+    String: ノーチラス フォートレス A2 セット
+  - Language: Polish
+    String: Zestaw Twierdzy Nautilus A2
+  - Language: Portuguese_Brazil
+    String: Conjunto Fortaleza Nautilus A2
+  - Language: ChineseSimplified
+    String: 鹦鹉螺堡垒 A2 套装
+Items:
+- 0014EF:JunkInYourTrunk_v2.esm
+- 0014F0:JunkInYourTrunk_v2.esm
+- 0014F1:JunkInYourTrunk_v2.esm
+- 0014F2:JunkInYourTrunk_v2.esm
+- 0014F3:JunkInYourTrunk_v2.esm
+- 26F965:Starfield.esm
