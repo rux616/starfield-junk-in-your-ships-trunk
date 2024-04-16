@@ -7,7 +7,7 @@ ModHeader:
   Flags:
   - Master
   Stats:
-    NumRecords: 119
+    NumRecords: 17
     NextFormID: 2049
   Author: rux616
   Description: >-
@@ -21,33 +21,5 @@ ModHeader:
   - Master: JunkInYourTrunk_v2.esm
   - Master: ShipColorize.esm
   OverriddenForms:
-  - 000F6D:JunkInYourTrunk_v2.esm
-  - 000F73:JunkInYourTrunk_v2.esm
-  - 000F79:JunkInYourTrunk_v2.esm
-  - 000F7F:JunkInYourTrunk_v2.esm
-  - 000F85:JunkInYourTrunk_v2.esm
-  - 000F8B:JunkInYourTrunk_v2.esm
-  - 000F91:JunkInYourTrunk_v2.esm
-  - 000F97:JunkInYourTrunk_v2.esm
-  - 000F9D:JunkInYourTrunk_v2.esm
-  - 000FA3:JunkInYourTrunk_v2.esm
-  - 000FE4:JunkInYourTrunk_v2.esm
-  - 000FE5:JunkInYourTrunk_v2.esm
-  - 000FEA:JunkInYourTrunk_v2.esm
-  - 000FEB:JunkInYourTrunk_v2.esm
-  - 000FF0:JunkInYourTrunk_v2.esm
-  - 000FF1:JunkInYourTrunk_v2.esm
-  - 000FF6:JunkInYourTrunk_v2.esm
-  - 000FF7:JunkInYourTrunk_v2.esm
-  - 000FFC:JunkInYourTrunk_v2.esm
-  - 000FFD:JunkInYourTrunk_v2.esm
-  - 001002:JunkInYourTrunk_v2.esm
-  - 001003:JunkInYourTrunk_v2.esm
-  - 001008:JunkInYourTrunk_v2.esm
-  - 001009:JunkInYourTrunk_v2.esm
-  - 00100E:JunkInYourTrunk_v2.esm
-  - 00100F:JunkInYourTrunk_v2.esm
-  - 001014:JunkInYourTrunk_v2.esm
-  - 001015:JunkInYourTrunk_v2.esm
-  - 00101A:JunkInYourTrunk_v2.esm
-  - 00101B:JunkInYourTrunk_v2.esm
+  - 001F2D:JunkInYourTrunk_v2.esm
+  - 001F5C:JunkInYourTrunk_v2.esm
