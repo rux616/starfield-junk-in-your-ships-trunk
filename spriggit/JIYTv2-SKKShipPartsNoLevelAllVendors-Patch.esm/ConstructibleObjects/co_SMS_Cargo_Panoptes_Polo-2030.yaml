@@ -20,7 +20,7 @@ Description:
   - Language: Portuguese_Brazil
     String: Módulos de carga de nave aumentam o espaço de inventário da sua nave.
   - Language: ChineseSimplified
-    String: 太空船货舱模块可提高你飞船物品栏空间。
+    String: 宇宙飞船货运模块可以增加飞船的库存空间。
 WorkbenchKeyword: 29C480:Starfield.esm
 RequiredPerks:
 - Perk: 2C59DC:Starfield.esm
