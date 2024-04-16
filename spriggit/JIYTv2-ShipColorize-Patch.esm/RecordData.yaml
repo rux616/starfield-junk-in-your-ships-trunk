@@ -6,6 +6,7 @@ GameRelease: Starfield
 ModHeader:
   Flags:
   - Master
+  - Localized
   Stats:
     NumRecords: 17
     NextFormID: 2049
