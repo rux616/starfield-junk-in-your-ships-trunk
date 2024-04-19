@@ -8,8 +8,8 @@ ModHeader:
   - Master
   - Localized
   Stats:
-    NumRecords: 17
-    NextFormID: 2049
+    NumRecords: 254
+    NextFormID: 2226
   Author: rux616
   Description: >-
     Compatibility patch between the "Junk In Your (Ship's) Trunk" mod by rux616 (JunkInYourTrunk_v2.esm) and the "Ship Colorize" mod by DerekM17x (ShipColorize.esm).
@@ -22,5 +22,7 @@ ModHeader:
   - Master: JunkInYourTrunk_v2.esm
   - Master: ShipColorize.esm
   OverriddenForms:
+  - 001F00:JunkInYourTrunk_v2.esm
   - 001F2D:JunkInYourTrunk_v2.esm
+  - 001F47:JunkInYourTrunk_v2.esm
   - 001F5C:JunkInYourTrunk_v2.esm

@@ -1,6 +1,4 @@
 MutagenObjectType: PlacedObject
 FormKey: 001F5C:JunkInYourTrunk_v2.esm
-Base: 000803:ShipColorize.esm
-LayeredMaterialSwaps:
-- 0D68CA:Starfield.esm
+Base: 000802:JIYTv2-ShipColorize-Patch.esm
 Rotation: 3.1415927, -1.5707964, 3.1415927
