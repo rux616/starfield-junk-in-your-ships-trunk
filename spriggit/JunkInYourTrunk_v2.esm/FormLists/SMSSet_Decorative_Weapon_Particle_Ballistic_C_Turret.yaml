@@ -4,21 +4,21 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Dekoratives ballistisches PRT-C-Turm-Set
+    String: 'Dekorativ: Ballistisches PRT-C-Turm-Set'
   - Language: English
     String: Decorative Ballistic PRT-C Turret Set
   - Language: Spanish
-    String: Conjunto de torreta balística decorativa PRT-C
+    String: Juego de torreta balística PRT-C decorativa
   - Language: French
     String: Ensemble de tourelles balistiques décoratives PRT-C
   - Language: Italian
-    String: Set torretta balistica decorativa PRT-C
+    String: Set torretta PRT-C balistica decorativa
   - Language: Japanese
-    String: 装飾用弾道 PRT-C 砲塔セット
+    String: 装飾弾道 PRT-C 砲塔セット
   - Language: Polish
-    String: Zestaw dekoracyjnych wieżyczek balistycznych PRT-C
+    String: Zestaw dekoracyjnych balistycznych wieżyczek PRT-C
   - Language: Portuguese_Brazil
-    String: Conjunto de torre balística decorativa PRT-C
+    String: ' Conjunto de torre balística PRT-C decorativa '
   - Language: ChineseSimplified
     String: 装饰弹道 PRT-C 炮塔套装
 Items:

@@ -23,7 +23,7 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: 'Dekorativ: Shinigami LSR-B Turm'
+      String: 'Dekorativ: Shinigami LSR-B-Geschützturm'
     - Language: English
       String: 'Decorative: Shinigami LSR-B Turret'
     - Language: Spanish
@@ -33,11 +33,11 @@ Components:
     - Language: Italian
       String: 'Decorativo: torretta Shinigami LSR-B'
     - Language: Japanese
-      String: '装飾: 死神 LSR-B タレット'
+      String: '装飾: 死神 LSR-B 砲塔'
     - Language: Polish
-      String: 'Dekoracyjna: Wieża Shinigami LSR-B'
+      String: 'Dekoracyjny: Wieża Shinigami LSR-B'
     - Language: Portuguese_Brazil
-      String: 'Decorativo: Torre Shinigami LSR-B'
+      String: 'Decorativo: Torreta Shinigami LSR-B'
     - Language: ChineseSimplified
       String: 装饰：死神LSR-B炮塔
 Template: 03058E:Starfield.esm

@@ -25,23 +25,23 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: Achtern Zntl
+      String: Aft Zntl
     - Language: English
       String: Aft Zntl
     - Language: Spanish
-      String: Popa Zntl
+      String: Aft Zntl
     - Language: French
-      String: Zntl arrière
+      String: Aft Zntl
     - Language: Italian
-      String: A poppa Zntl
+      String: Zntl di poppa
     - Language: Japanese
-      String: 中央後部
+      String: 後部 Zntl
     - Language: Polish
       String: Rufowy Zntl
     - Language: Portuguese_Brazil
-      String: Zntl à popa
+      String: Poa Zntl
     - Language: ChineseSimplified
-      String: 船尾锌特尔
+      String: 船尾 Zntl
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

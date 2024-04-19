@@ -4,21 +4,21 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Ballistisches 200G-Set
+    String: Ballistischer 200G-Satz
   - Language: English
     String: Ballistic 200G Set
   - Language: Spanish
-    String: Conjunto balístico 200G
+    String: Ballistic 200G Set
   - Language: French
     String: Ensemble balistique 200G
   - Language: Italian
     String: Set balistico 200G
   - Language: Japanese
-    String: バリスティック200Gセット
+    String: バリスティック 200G セット
   - Language: Polish
     String: Zestaw balistyczny 200G
   - Language: Portuguese_Brazil
-    String: Conjunto balístico 200G
+    String: Balístico 200G Conjunto
   - Language: ChineseSimplified
     String: 弹道 200G 套装
 Items:

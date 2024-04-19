@@ -25,23 +25,23 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: Vordergrund
+      String: Fore
     - Language: English
       String: Fore
     - Language: Spanish
-      String: Delantero
+      String: Fore
     - Language: French
       String: Avant
     - Language: Italian
-      String: Prua, testa
+      String: Primaera
     - Language: Japanese
       String: フォア
     - Language: Polish
-      String: Dziobowy
+      String: Przednie
     - Language: Portuguese_Brazil
-      String: Frente
+      String: Fora
     - Language: ChineseSimplified
-      String: 前面
+      String: 前部
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

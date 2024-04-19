@@ -40,13 +40,13 @@ Components:
     - Language: Italian
       String: 'Decorativo: Dogstar Ulysses M10/M20'
     - Language: Japanese
-      String: '装飾: ドッグスター ユリシーズ M10/M20'
+      String: '装飾品: ドッグスター ユリシーズ M10/M20'
     - Language: Polish
-      String: 'Ozdoba: Dogstar Ulysses M10/M20'
+      String: 'Dekoracyjny: Dogstar Ulysses M10/M20'
     - Language: Portuguese_Brazil
       String: 'Decorativo: Dogstar Ulysses M10/M20'
     - Language: ChineseSimplified
-      String: 装饰：Dogstar尤利西斯M10/M20
+      String: 装饰：Dogstar Ulysses M10/M20
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

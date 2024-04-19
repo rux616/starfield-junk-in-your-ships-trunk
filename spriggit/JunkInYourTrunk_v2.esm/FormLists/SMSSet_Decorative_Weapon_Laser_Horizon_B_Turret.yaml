@@ -4,23 +4,23 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Dekoratives Horizon LSR-B Turmset
+    String: Dekorativer Horizon LSR-B-Turmsatz
   - Language: English
     String: Decorative Horizon LSR-B Turret Set
   - Language: Spanish
-    String: Conjunto de torreta decorativa Horizon LSR-B
+    String: Conjunto de torreta Horizon LSR-B decorativo
   - Language: French
-    String: Ensemble de tourelles décoratives Horizon LSR-B
+    String: Ensemble de tourelle Horizon décoratif LSR-B
   - Language: Italian
     String: Set torretta decorativa Horizon LSR-B
   - Language: Japanese
-    String: デコラティブホライズン LSR-B タレットセット
+    String: 装飾用ホライゾン LSR-B タレット セット
   - Language: Polish
-    String: Dekoracyjny zestaw wieżyczek Horizon LSR-B
+    String: Dekoracyjny zestaw wież Horizon LSR-B
   - Language: Portuguese_Brazil
-    String: Conjunto de torre decorativa Horizon LSR-B
+    String: Conjunto decorativo de torre Horizon LSR-B
   - Language: ChineseSimplified
-    String: 装饰地平线 LSR-B 炮塔套装
+    String: 装饰地平线LSR-B炮塔套装
 Items:
 - 001E20:JunkInYourTrunk_v2.esm
 - 001E21:JunkInYourTrunk_v2.esm

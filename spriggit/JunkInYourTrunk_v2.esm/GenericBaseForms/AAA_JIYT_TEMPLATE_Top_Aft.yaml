@@ -25,21 +25,21 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: Oben achtern
+      String: Top Aft
     - Language: English
       String: Top Aft
     - Language: Spanish
-      String: Parte superior de popa
+      String: Arriba en popa
     - Language: French
-      String: Haut à l'arrière
+      String: Top Aft
     - Language: Italian
-      String: In alto a poppa
+      String: Top a poppa
     - Language: Japanese
-      String: 船尾上部
+      String: 上部後方
     - Language: Polish
-      String: Górna część rufy
+      String: Górna rufa
     - Language: Portuguese_Brazil
-      String: Parte superior traseira
+      String: Top Aft
     - Language: ChineseSimplified
       String: 顶部船尾
 Template: 03058E:Starfield.esm

@@ -27,21 +27,21 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: Ballast 100CM, abgeschirmter Frachtraum
+      String: Ballast 100CM Abgeschirmter Frachtraum
     - Language: English
       String: Ballast 100CM Shielded Cargo Hold
     - Language: Spanish
-      String: Bodega de carga blindada Ballast 100CM
+      String: Lastre 100CM Bodega de carga blindada
     - Language: French
       String: Ballast 100CM soute blindée
     - Language: Italian
-      String: Stiva di carico schermata Zavorra da 100 cm
+      String: Stivale di carico schermato Zavorra 100CM
     - Language: Japanese
-      String: バラスト 100CM シールド付き貨物倉
+      String: バラスト 100CM シールドカーゴホールド
     - Language: Polish
-      String: Balast 100CM Ekranowana ładownia
+      String: Balast 100CM z ekranowaną ładownią
     - Language: Portuguese_Brazil
-      String: Porão de carga blindado de lastro 100CM
+      String: Reator 100CM Blindado Cargo Hold
     - Language: ChineseSimplified
       String: 镇流器 100CM 屏蔽货舱
 Template: 03058E:Starfield.esm

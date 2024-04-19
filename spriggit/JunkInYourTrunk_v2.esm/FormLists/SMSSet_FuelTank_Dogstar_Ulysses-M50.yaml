@@ -8,19 +8,19 @@ Name:
   - Language: English
     String: Dogstar Ulysses M40 Set
   - Language: Spanish
-    String: Conjunto Dogstar Ulises M40
+    String: Dogstar Ulysses M40 Set
   - Language: French
     String: Ensemble Dogstar Ulysses M40
   - Language: Italian
     String: Set Dogstar Ulysses M40
   - Language: Japanese
-    String: ドッグスター ユリシーズ M40 セット
+    String: ドッグスター ユリシーズ M40セット
   - Language: Polish
     String: Zestaw Dogstar Ulysses M40
   - Language: Portuguese_Brazil
-    String: Conjunto Dogstar Ulisses M40
+    String: Conjunto Dogstar Ulysses M40
   - Language: ChineseSimplified
-    String: Dogstar 尤利西斯 M40 套装
+    String: Dogstar Ulysses M40 套装
 Items:
 - 0301D1:Starfield.esm
 - 0301D2:Starfield.esm

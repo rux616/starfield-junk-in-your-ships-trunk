@@ -33,13 +33,13 @@ Components:
     - Language: Italian
       String: 'Decorativo: Shinigami LCT-A'
     - Language: Japanese
-      String: 装飾品：死神LCT-A
+      String: '装飾用: 死神 LCT-A'
     - Language: Polish
-      String: 'Dekoracyjny: Shinigami LCT-A'
+      String: 'Dekoracyjne: Shinigami LCT-A'
     - Language: Portuguese_Brazil
       String: 'Decorativo: Shinigami LCT-A'
     - Language: ChineseSimplified
-      String: 装饰：死神LCT-A
+      String: 装饰：死神 LCT-A
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

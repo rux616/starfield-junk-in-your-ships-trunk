@@ -29,17 +29,17 @@ Components:
     - Language: Spanish
       String: 'Decorativo: Guadaña ligera MSL-B'
     - Language: French
-      String: 'Décoratif : Faux lumineux MSL-B'
+      String: 'Décoratif : Light Scythe MSL-B'
     - Language: Italian
       String: 'Decorativo: Falce leggera MSL-B'
     - Language: Japanese
-      String: 装飾品：ライトサイズMSL-B
+      String: '装飾品: ライトサイス MSL-B'
     - Language: Polish
-      String: 'Dekoracyjny: Lekka kosa MSL-B'
+      String: 'Dekoracyjny: Light Scythe MSL-B'
     - Language: Portuguese_Brazil
-      String: 'Decorativo: Foice Leve MSL-B'
+      String: 'Decorativo: Light Scythe MSL-B'
     - Language: ChineseSimplified
-      String: 装饰：光镰MSL-B
+      String: 装饰：Light Scythe MSL-B
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

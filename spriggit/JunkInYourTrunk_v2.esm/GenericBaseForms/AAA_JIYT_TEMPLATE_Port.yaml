@@ -39,7 +39,7 @@ Components:
     - Language: Polish
       String: Port
     - Language: Portuguese_Brazil
-      String: Porta
+      String: Port
     - Language: ChineseSimplified
       String: 港口
 Template: 03058E:Starfield.esm

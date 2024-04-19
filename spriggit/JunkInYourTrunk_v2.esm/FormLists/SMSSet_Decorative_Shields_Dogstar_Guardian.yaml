@@ -4,23 +4,23 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Dekoratives Dogstar-Wächter-Set
+    String: 'Dekorativ: Dogstar Guardian Set'
   - Language: English
     String: Decorative Dogstar Guardian Set
   - Language: Spanish
-    String: Set decorativo de guardián Dogstar
+    String: Conjunto Decorativo Dogstar Guardian
   - Language: French
     String: Ensemble décoratif Dogstar Guardian
   - Language: Italian
     String: Set decorativo Dogstar Guardian
   - Language: Japanese
-    String: 装飾用ドッグスターガーディアンセット
+    String: 装飾用ドッグスター ガーディアン セット
   - Language: Polish
-    String: Dekoracyjny zestaw Strażnika Psiej Gwiazdy
+    String: Dekoracyjny zestaw Strażnika Dogstar
   - Language: Portuguese_Brazil
-    String: Conjunto Decorativo Dogstar Guardian
+    String: Conjunto decorativo Dogstar Guardian
   - Language: ChineseSimplified
-    String: 装饰性 Dogstar 守护者套装
+    String: 装饰 Dogstar Guardian 套装
 Items:
 - 001571:JunkInYourTrunk_v2.esm
 - 001572:JunkInYourTrunk_v2.esm

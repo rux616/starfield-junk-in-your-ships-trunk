@@ -4,23 +4,23 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Dekoratives Dogstar StorMax Leerset
+    String: Dekoratives leeres Dogstar StorMax-Set
   - Language: English
     String: Decorative Dogstar StorMax Empty Set
   - Language: Spanish
-    String: Set vacío decorativo Dogstar StorMax
+    String: Set decorativo Dogstar StorMax vacío
   - Language: French
     String: Ensemble vide décoratif Dogstar StorMax
   - Language: Italian
     String: Set vuoto decorativo Dogstar StorMax
   - Language: Japanese
-    String: 装飾用 Dogstar StorMax 空セット
+    String: 装飾品 ドッグスター StorMax 空セット
   - Language: Polish
-    String: Dekoracyjny pusty zestaw Dogstar StorMax
+    String: Dekoracyjny zestaw pusty Dogstar StorMax
   - Language: Portuguese_Brazil
     String: Conjunto vazio decorativo Dogstar StorMax
   - Language: ChineseSimplified
-    String: 装饰性 Dogstar StorMax 空套装
+    String: 装饰 Dogstar StorMax 空套装
 Items:
 - 00173A:JunkInYourTrunk_v2.esm
 - 00173B:JunkInYourTrunk_v2.esm

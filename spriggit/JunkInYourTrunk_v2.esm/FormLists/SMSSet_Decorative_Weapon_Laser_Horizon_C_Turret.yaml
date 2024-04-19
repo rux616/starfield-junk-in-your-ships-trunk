@@ -4,23 +4,23 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Dekoratives Horison LSR-C Turmset
+    String: Dekorativer Horison LSR-C-Turmsatz
   - Language: English
     String: Decorative Horison LSR-C Turret Set
   - Language: Spanish
     String: Conjunto de torreta decorativa Horison LSR-C
   - Language: French
-    String: Ensemble de tourelles décoratives Horison LSR-C
+    String: ' Ensemble de tourelles décoratives Horison LSR-C'
   - Language: Italian
-    String: Set torretta decorativa Horison LSR-C
+    String: Decorativa Horison LSR Set torretta -C
   - Language: Japanese
-    String: Horison LSR-C 装飾タレットセット
+    String: '装飾品: ホライゾン LSR-C 砲塔セット'
   - Language: Polish
-    String: Dekoracyjny zestaw wieżyczek Horison LSR-C
+    String: Zestaw dekoracyjnych wież Horison LSR-C
   - Language: Portuguese_Brazil
-    String: Conjunto de torre decorativa Horison LSR-C
+    String: Decorativo Horison LSR-C Torre Conjunto
   - Language: ChineseSimplified
-    String: 装饰 Horison LSR-C 炮塔套装
+    String: 装饰地平线 LSR-C 炮塔套装
 Items:
 - 001E51:JunkInYourTrunk_v2.esm
 - 001E52:JunkInYourTrunk_v2.esm

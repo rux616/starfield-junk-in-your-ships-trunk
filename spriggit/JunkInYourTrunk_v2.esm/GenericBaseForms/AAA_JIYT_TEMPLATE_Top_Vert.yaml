@@ -25,21 +25,21 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: Oben Vert
+      String: Top Vert
     - Language: English
       String: Top Vert
     - Language: Spanish
-      String: vertical superior
+      String: Top Vert
     - Language: French
-      String: Haut Vert
+      String: Top Vert
     - Language: Italian
-      String: Vert. superiore
+      String: Top Vert
     - Language: Japanese
-      String: トップヴェール
+      String: トップバート
     - Language: Polish
-      String: Górna pion
+      String: Górny pion
     - Language: Portuguese_Brazil
-      String: Vert superior
+      String: Top Vert
     - Language: ChineseSimplified
       String: 顶部垂直
 Template: 03058E:Starfield.esm

@@ -31,19 +31,19 @@ Components:
     - Language: English
       String: Ballast 300CM Cargo Hold
     - Language: Spanish
-      String: Bodega de carga de lastre 300CM
+      String: Lastre 300CM Cargo Hold
     - Language: French
-      String: Ballast 300CM soute
+      String: Ballast 300CM Prise de chargement
     - Language: Italian
-      String: Zavorra da 300 cm di stiva
+      String: Zvoratrice 300CM stiva di carico
     - Language: Japanese
       String: バラスト 300CM 貨物倉
     - Language: Polish
       String: Balast 300CM Ładownia
     - Language: Portuguese_Brazil
-      String: Porão de carga do lastro 300CM
+      String: Reator 300CM Cargo Hold
     - Language: ChineseSimplified
-      String: 压舱物300CM货舱
+      String: 镇流器 300CM 货舱
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

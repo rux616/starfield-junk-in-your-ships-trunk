@@ -25,23 +25,23 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: Standard-Top
+      String: Stbd-Oberseite
     - Language: English
       String: Stbd Top
     - Language: Spanish
-      String: STBD superior
+      String: Stbd Top
     - Language: French
-      String: Haut tribord
+      String: Stbd Top
     - Language: Italian
-      String: Stbd superiore
+      String: Stbd Top
     - Language: Japanese
-      String: 標準トップ
+      String: Stbd Top
     - Language: Polish
       String: Stbd Top
     - Language: Portuguese_Brazil
-      String: Topo esticado
+      String: Stbd Top
     - Language: ChineseSimplified
-      String: 稳定顶部
+      String: Stbd 顶部
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

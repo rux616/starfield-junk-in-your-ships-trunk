@@ -4,13 +4,13 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Dekoratives ballistisches 800T-A-Set
+    String: 'Dekorativ: Ballistisches 800T-A-Set'
   - Language: English
     String: Decorative Ballistic 800T-A Set
   - Language: Spanish
-    String: Set Balístico Decorativo 800T-A
+    String: Conjunto Balístico Decorativo 800T-A
   - Language: French
-    String: Ensemble balistique décoratif 800T-A
+    String: Ensemble décoratif balistique 800T-A
   - Language: Italian
     String: Set balistico decorativo 800T-A
   - Language: Japanese
@@ -18,9 +18,9 @@ Name:
   - Language: Polish
     String: Dekoracyjny zestaw balistyczny 800T-A
   - Language: Portuguese_Brazil
-    String: Conjunto balístico decorativo 800T-A
+    String: Conjunto Balístico Decorativo 800T-A
   - Language: ChineseSimplified
-    String: 装饰弹道 800T-A 套装
+    String: 装饰弹道800T-A套装
 Items:
 - 001D37:JunkInYourTrunk_v2.esm
 - 001D38:JunkInYourTrunk_v2.esm

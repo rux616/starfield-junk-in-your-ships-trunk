@@ -23,23 +23,23 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: 'Dekorativ: Horizon PRT-C'
+      String: 'Dekorativ : Horizon PRT-C'
     - Language: English
       String: 'Decorative: Horizon PRT-C'
     - Language: Spanish
-      String: 'Decorativo: Horizonte PRT-C'
+      String: 'Decorativo: Horizon PRT-C'
     - Language: French
       String: 'Décoratif : Horizon PRT-C'
     - Language: Italian
-      String: 'Decorativo: Orizzonte PRT-C'
+      String: 'Decorativa: Horizon PRT-C'
     - Language: Japanese
-      String: '装飾: ホライズン PRT-C'
+      String: '装飾: ホライゾン PRT-C'
     - Language: Polish
-      String: 'Dekoracyjny: Horizon PRT-C'
+      String: 'Dekoracyjny: Horyzont PRT-C '
     - Language: Portuguese_Brazil
-      String: 'Decorativo: Horizonte PRT-C'
+      String: 'Decorativo: Horizon PRT-C'
     - Language: ChineseSimplified
-      String: 装饰： Horizo​​n PRT-C
+      String: 装饰：地平线 PRT-C
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

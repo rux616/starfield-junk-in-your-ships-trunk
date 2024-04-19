@@ -4,21 +4,21 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Vorhut-Bollwerk-Set
+    String: 'Vanguard Bollwerk-Set '
   - Language: English
     String: Vanguard Bulwark Set
   - Language: Spanish
-    String: Conjunto de baluarte de vanguardia
+    String: Conjunto de Baluarte Vanguard
   - Language: French
-    String: Ensemble de rempart d'avant-garde
+    String: Vanguard Bulwark Set
   - Language: Italian
-    String: Set Baluardo dell'Avanguardia
+    String: Set baluardo dell'avanguardia
   - Language: Japanese
-    String: ヴァンガードブルワークセット
+    String: 前衛防壁セット
   - Language: Polish
-    String: Zestaw Obrony Straży Przedniej
+    String: Zestaw osłony przedniej
   - Language: Portuguese_Brazil
-    String: Conjunto Baluarte da Vanguarda
+    String: Conjunto Baluarte Vanguarda
   - Language: ChineseSimplified
     String: 先锋堡垒套装
 Items:

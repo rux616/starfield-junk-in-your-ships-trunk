@@ -23,11 +23,11 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: 'Dekorativ: Vanguard MSL-A'
+      String: 'Decorative: Vanguard MSL-A'
     - Language: English
       String: 'Decorative: Vanguard MSL-A'
     - Language: Spanish
-      String: 'Decorativo: Vanguardia MSL-A'
+      String: 'Decorativo: Vanguard MSL-A'
     - Language: French
       String: 'Décoratif : Vanguard MSL-A'
     - Language: Italian

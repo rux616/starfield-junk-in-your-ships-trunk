@@ -34,23 +34,23 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: 800T-B He3 Panzer
+      String: 800T -B He3 Tank
     - Language: English
       String: 800T-B He3 Tank
     - Language: Spanish
-      String: Tanque 800T-B He3
+      String: 800T-B He3 Tank
     - Language: French
-      String: Char 800T-B He3
+      String: Réservoir 800T-B He3
     - Language: Italian
-      String: Carro armato 800T-B He3
+      String: 'Carro armato He800 3T-B '
     - Language: Japanese
       String: 800T-B He3 タンク
     - Language: Polish
-      String: Czołg 800T-B He3
+      String: 800T-B Czołg He3
     - Language: Portuguese_Brazil
-      String: Tanque 800T-B He3
+      String: 800T-B He3 Tank
     - Language: ChineseSimplified
-      String: 800T-B He3坦克
+      String: ' 800T-B He3 坦克'
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

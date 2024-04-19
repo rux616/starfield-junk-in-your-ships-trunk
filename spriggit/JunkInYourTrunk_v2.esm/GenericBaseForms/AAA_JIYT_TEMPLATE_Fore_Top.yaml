@@ -25,23 +25,23 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: Vorderes Oberteil
+      String: Vorderseite
     - Language: English
       String: Fore Top
     - Language: Spanish
-      String: Parte superior delantera
+      String: Parte delantera
     - Language: French
-      String: Avant-Haut
+      String: 'Dessus avant '
     - Language: Italian
-      String: Parte superiore anteriore
+      String: Prima di prua
     - Language: Japanese
       String: フォアトップ
     - Language: Polish
-      String: Przód Góra
+      String: Przód
     - Language: Portuguese_Brazil
-      String: Parte superior dianteira
+      String: Fore Top
     - Language: ChineseSimplified
-      String: 前顶
+      String: 前顶部
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

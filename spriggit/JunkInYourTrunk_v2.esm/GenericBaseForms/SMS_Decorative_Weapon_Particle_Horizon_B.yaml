@@ -31,15 +31,15 @@ Components:
     - Language: French
       String: 'Décoratif : Horizon PRT-B'
     - Language: Italian
-      String: 'Decorativo: Orizzonte PRT-B'
+      String: 'Decorativo: Horizon PRT-B'
     - Language: Japanese
-      String: '装飾: ホライズン PRT-B'
+      String: '装飾: ホライゾン PRT-B'
     - Language: Polish
       String: 'Dekoracyjny: Horizon PRT-B'
     - Language: Portuguese_Brazil
-      String: 'Decorativo: Horizonte PRT-B'
+      String: 'Decorativo: Horizon PRT-B'
     - Language: ChineseSimplified
-      String: 装饰： Horizo​​n PRT-B
+      String: 装饰：地平线 PRT-B
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

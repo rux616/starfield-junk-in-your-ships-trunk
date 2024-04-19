@@ -4,23 +4,23 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Dekoratives Shinigami LSR-C Turmset
+    String: Dekoratives Shinigami LSR-C-Turm-Set
   - Language: English
     String: Decorative Shinigami LSR-C Turret Set
   - Language: Spanish
-    String: Conjunto de torreta decorativa Shinigami LSR-C
+    String: Conjunto de torreta Shinigami LSR-C decorativa
   - Language: French
     String: Ensemble de tourelle décorative Shinigami LSR-C
   - Language: Italian
-    String: Set torretta decorativa Shinigami LSR-C
+    String: Set torretta Shinigami LSR-C decorativo
   - Language: Japanese
-    String: 装飾死神LSR-Cタレットセット
+    String: 装飾死神 LSR-C タレット セット
   - Language: Polish
-    String: Zestaw dekoracyjnych wieżyczek Shinigami LSR-C
+    String: Zestaw dekoracyjnych wież Shinigami LSR-C
   - Language: Portuguese_Brazil
     String: Conjunto de torre decorativa Shinigami LSR-C
   - Language: ChineseSimplified
-    String: 装饰死神 LSR-C 炮塔套装
+    String: 装饰死神LSR-C炮塔套装
 Items:
 - 001E5B:JunkInYourTrunk_v2.esm
 - 001E5C:JunkInYourTrunk_v2.esm

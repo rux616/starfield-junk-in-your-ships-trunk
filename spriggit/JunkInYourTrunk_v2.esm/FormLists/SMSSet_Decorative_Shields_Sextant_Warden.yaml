@@ -4,23 +4,23 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Dekoratives Sextant-Wächter-Set
+    String: Dekoratives Sextant Warden Set
   - Language: English
     String: Decorative Sextant Warden Set
   - Language: Spanish
-    String: Set de guardián sextante decorativo
+    String: Juego decorativo Sextant Warden
   - Language: French
-    String: Ensemble de gardien de sextant décoratif
+    String: Ensemble décoratif Sextant Warden
   - Language: Italian
-    String: Set decorativo sestante da guardia
+    String: Set guardiano sestante decorativo
   - Language: Japanese
-    String: 装飾六分儀監視員セット
+    String: 装飾用六分儀ウォーデン セット
   - Language: Polish
-    String: Dekoracyjny zestaw Strażnika Sekstantu
+    String: Zestaw dekoracyjnego sekstantu Warden
   - Language: Portuguese_Brazil
-    String: Conjunto decorativo de guarda sextante
+    String: Conjunto Decorativo Sextant Warden
   - Language: ChineseSimplified
-    String: 装饰六分仪典狱长套装
+    String: 装饰性六分仪守望者套装
 Items:
 - 001565:JunkInYourTrunk_v2.esm
 - 001566:JunkInYourTrunk_v2.esm

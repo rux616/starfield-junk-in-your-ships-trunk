@@ -29,17 +29,17 @@ Components:
     - Language: Spanish
       String: 'Decorativo: Guadaña ligera PRT-C'
     - Language: French
-      String: 'Décoratif : Faux lumineux PRT-C'
+      String: 'Décoratif : Faux léger PRT-C'
     - Language: Italian
       String: 'Decorativo: Falce leggera PRT-C'
     - Language: Japanese
-      String: 装飾品：ライトサイスPRT-C
+      String: 装飾:ライトサイス PRT-C
     - Language: Polish
-      String: 'Dekoracyjna: Lekka Kosa PRT-C'
+      String: 'Ozdoba: Kosa Lekka PRT-C'
     - Language: Portuguese_Brazil
-      String: 'Decorativo: Foice Leve PRT-C'
+      String: 'Decorativo: Light Scythe PRT-C'
     - Language: ChineseSimplified
-      String: 装饰：光镰 PRT-C
+      String: 装饰：光镰PRT-C
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

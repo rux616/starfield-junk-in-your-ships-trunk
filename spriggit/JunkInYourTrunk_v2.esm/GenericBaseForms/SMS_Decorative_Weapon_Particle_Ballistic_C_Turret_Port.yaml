@@ -23,21 +23,21 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: 'Dekorativ: Ballistischer PRT-C-Turm'
+      String: 'Dekorativer: Ballistischer PRT-C-Turm'
     - Language: English
       String: 'Decorative: Ballistic PRT-C Turret'
     - Language: Spanish
-      String: 'Decorativo: Torreta balística PRT-C'
+      String: 'Decorativo: Torreta PRT-C balística'
     - Language: French
-      String: 'Décoratif : tourelle balistique PRT-C'
+      String: 'Décoratif : Tourelle balistique PRT-C'
     - Language: Italian
       String: 'Decorativo: torretta balistica PRT-C'
     - Language: Japanese
-      String: '装飾: 弾道 PRT-C タレット'
+      String: '装飾: 弾道 PRT-C 砲塔'
     - Language: Polish
-      String: 'Dekoracyjna: Wieża balistyczna PRT-C'
+      String: 'Dekoracyjny: Balistyczna wieża PRT-C'
     - Language: Portuguese_Brazil
-      String: 'Decorativo: Torre Balística PRT-C'
+      String: 'Decorativo: Torre balística PRT-C'
     - Language: ChineseSimplified
       String: 装饰：弹道 PRT-C 炮塔
 Template: 03058E:Starfield.esm

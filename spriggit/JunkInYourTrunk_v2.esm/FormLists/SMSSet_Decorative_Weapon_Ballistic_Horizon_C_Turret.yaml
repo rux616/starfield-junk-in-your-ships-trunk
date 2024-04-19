@@ -8,19 +8,19 @@ Name:
   - Language: English
     String: Decorative Horizon BLS-C Turret Set
   - Language: Spanish
-    String: Juego de torreta decorativa Horizon BLS-C
+    String: Conjunto de torreta Horizon BLS-C decorativo
   - Language: French
     String: Ensemble de tourelles décoratives Horizon BLS-C
   - Language: Italian
-    String: Set torretta decorativa Horizon BLS-C
+    String: Set torretta Horizon BLS-C decorativo
   - Language: Japanese
-    String: デコラティブホライズン BLS-C タレットセット
+    String: 装飾用ホライゾン BLS-C タレット セット
   - Language: Polish
-    String: Zestaw dekoracyjnych wieżyczek Horizon BLS-C
+    String: Dekoracyjny zestaw wieżyczek Horizon BLS-C
   - Language: Portuguese_Brazil
-    String: Conjunto de torre decorativa Horizon BLS-C
+    String: Conjunto decorativo de torre Horizon BLS-C
   - Language: ChineseSimplified
-    String: 装饰地平线 BLS-C 炮塔套装
+    String: 装饰地平线BLS-C炮塔套装
 Items:
 - 001E47:JunkInYourTrunk_v2.esm
 - 001E48:JunkInYourTrunk_v2.esm

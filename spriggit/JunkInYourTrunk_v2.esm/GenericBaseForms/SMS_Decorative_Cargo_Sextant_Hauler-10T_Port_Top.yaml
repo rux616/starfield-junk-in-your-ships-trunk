@@ -27,19 +27,19 @@ Components:
     - Language: English
       String: 'Decorative: Sextant Hauler 10T'
     - Language: Spanish
-      String: 'Decorativo: Sextante Hauler 10T'
+      String: 'Decorativo: Sextant Hauler 10T'
     - Language: French
-      String: 'Décoratif : Sextant Hauler 10T'
+      String: 'Décoratif : Sextant Hauler 10T'
     - Language: Italian
-      String: 'Decorativo: Trasportatore di sestanti 10T'
+      String: 'Decorativo: Sextant Hauler 10T'
     - Language: Japanese
-      String: '装飾: セクスタントホーラー 10T'
+      String: '装飾: 六分儀運搬機 10T'
     - Language: Polish
-      String: 'Dekoracyjny: Sextant Hauler 10T'
+      String: 'Dekoracyjny: Transporter sekstantu 10T'
     - Language: Portuguese_Brazil
-      String: 'Decorativo: Sextante Hauler 10T'
+      String: 'Decorativo: Sextant Hauler 10T'
     - Language: ChineseSimplified
-      String: 装饰：六分仪运输机 10T
+      String: 装饰：六分仪搬运器 10T
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

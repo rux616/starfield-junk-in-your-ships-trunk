@@ -46,7 +46,7 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: Guardian 104D Schildgenerator
+      String: Guardian 104D-Schildgenerator
     - Language: English
       String: Guardian 104D Shield Generator
     - Language: Spanish
@@ -58,11 +58,11 @@ Components:
     - Language: Japanese
       String: ガーディアン 104D シールドジェネレーター
     - Language: Polish
-      String: Generator osłon Guardian 104D
+      String: Generator tarczy Guardian 104D
     - Language: Portuguese_Brazil
-      String: Gerador de escudo Guardian 104D
+      String: Escudo Guardião 104D Gerador
     - Language: ChineseSimplified
-      String: Guardian 104D 护盾发生器
+      String: 守护者 104D 护盾发生器
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

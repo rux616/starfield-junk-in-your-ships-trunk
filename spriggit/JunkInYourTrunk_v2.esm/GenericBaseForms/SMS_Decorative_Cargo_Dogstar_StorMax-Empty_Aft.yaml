@@ -27,19 +27,19 @@ Components:
     - Language: English
       String: 'Decorative: Dogstar StorMax Empty'
     - Language: Spanish
-      String: 'Decorativo: Dogstar StorMax Vacío'
+      String: 'Decorativo: Dogstar StorMax Vacuum'
     - Language: French
-      String: 'Décoratif : Dogstar StorMax vide'
+      String: 'Décoratif : Dogstar StorMax Empty'
     - Language: Italian
-      String: 'Decorativo: Dogstar StorMax Vuoto'
+      String: 'Decorativo: Dogstar StorMax vuoto'
     - Language: Japanese
-      String: '装飾: Dogstar StorMax 空'
+      String: '装飾: ドッグスター StorMax 空'
     - Language: Polish
-      String: 'Dekoracyjny: Pusty Dogstar StorMax'
+      String: 'Dekoracyjny: Dogstar StorMax pusty'
     - Language: Portuguese_Brazil
       String: 'Decorativo: Dogstar StorMax Vazio'
     - Language: ChineseSimplified
-      String: 装饰：Dogstar StorMax 空
+      String: 装饰：Dogstar StorMax Empty
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

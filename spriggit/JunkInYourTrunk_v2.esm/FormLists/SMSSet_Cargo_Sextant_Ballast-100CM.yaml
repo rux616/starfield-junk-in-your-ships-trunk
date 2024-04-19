@@ -8,19 +8,19 @@ Name:
   - Language: English
     String: Sextant Ballast 100CM Set
   - Language: Spanish
-    String: Set Lastre Sextante 100CM
+    String: Juego Sextant Ballast 100CM
   - Language: French
-    String: Ensemble Ballast Sextant 100CM
+    String: Ensemble de ballast sextant 100 CM
   - Language: Italian
-    String: Set zavorra sestante 100 cm
+    String: 'Set zavorra sestante 100CM '
   - Language: Japanese
     String: 六分儀バラスト 100CM セット
   - Language: Polish
     String: Zestaw balastowy sekstantu 100CM
   - Language: Portuguese_Brazil
-    String: Conjunto de lastro sextante 100CM
+    String: Sextante Lastro 100CM Conjunto
   - Language: ChineseSimplified
-    String: 六分仪镇流器100CM套装
+    String: 六分仪镇流器 100CM 套件
 Items:
 - 03059B:Starfield.esm
 - 0008EC:JunkInYourTrunk_v2.esm

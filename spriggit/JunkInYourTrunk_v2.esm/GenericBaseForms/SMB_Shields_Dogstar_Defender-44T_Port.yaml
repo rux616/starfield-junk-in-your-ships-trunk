@@ -50,19 +50,19 @@ Components:
     - Language: English
       String: Defender 44T Shield Generator
     - Language: Spanish
-      String: Generador de escudo Defender 44T
+      String: Defender 44T Generador de escudo
     - Language: French
-      String: Générateur de bouclier Defender 44T
+      String: Defender 44T Générateur de bouclier
     - Language: Italian
-      String: Generatore di scudi Defender 44T
+      String: Generatore scudo Defender 44T
     - Language: Japanese
-      String: ディフェンダー 44T シールドジェネレーター
+      String: ディフェンダー 44T シールド ジェネレーター
     - Language: Polish
       String: Generator tarczy Defender 44T
     - Language: Portuguese_Brazil
       String: Gerador de escudo Defender 44T
     - Language: ChineseSimplified
-      String: Defender 44T 护盾发生器
+      String: 防御者 44T 护盾发生器
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

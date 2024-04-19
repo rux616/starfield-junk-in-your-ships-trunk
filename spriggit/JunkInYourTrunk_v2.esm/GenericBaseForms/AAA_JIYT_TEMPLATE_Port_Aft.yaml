@@ -33,15 +33,15 @@ Components:
     - Language: French
       String: Bâbord arrière
     - Language: Italian
-      String: Porto a poppa
+      String: Porta di poppa
     - Language: Japanese
       String: 左舷後部
     - Language: Polish
-      String: Port na rufie
+      String: Port rufowy
     - Language: Portuguese_Brazil
-      String: Bombordo à popa
+      String: Porta popa
     - Language: ChineseSimplified
-      String: 船尾港
+      String: 船尾端口
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

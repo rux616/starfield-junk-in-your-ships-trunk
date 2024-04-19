@@ -4,23 +4,23 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Dekoratives ballistisches 600T/700T/900T-Set
+    String: 'Dekorativ: Ballistic 600T/700T/900T Set'
   - Language: English
     String: Decorative Ballistic 600T/700T/900T Set
   - Language: Spanish
-    String: Set Balístico Decorativo 600T/700T/900T
+    String: Decorative Ballistic 600T/700T/900T Set
   - Language: French
     String: Ensemble balistique décoratif 600T/700T/900T
   - Language: Italian
     String: Set balistico decorativo 600T/700T/900T
   - Language: Japanese
-    String: デコラティブバリスティック 600T/700T/900T セット
+    String: 装飾用弾道 600T/700T/900T セット
   - Language: Polish
     String: Dekoracyjny zestaw balistyczny 600T/700T/900T
   - Language: Portuguese_Brazil
     String: Conjunto Balístico Decorativo 600T/700T/900T
   - Language: ChineseSimplified
-    String: 装饰弹道600T/700T/900T套装
+    String: 装饰性弹道 600T/700T/900T 套装
 Items:
 - 001D1F:JunkInYourTrunk_v2.esm
 - 001D20:JunkInYourTrunk_v2.esm

@@ -4,23 +4,23 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Protektorat Osiris 2020-B-Set
+    String: Protectorate Osiris 2020-B-Set
   - Language: English
     String: Protectorate Osiris 2020-B Set
   - Language: Spanish
-    String: Conjunto Protectorado Osiris 2020-B
+    String: Conjunto Protectorate Osiris 2020-B
   - Language: French
-    String: Ensemble Protectorat Osiris 2020-B
+    String: Protectorate Osiris 2020-B Set
   - Language: Italian
-    String: Set Protettorato Osiride 2020-B
+    String: Set protettorato Osiride 2020-B
   - Language: Japanese
-    String: オシリス保護領 2020-B セット
+    String: Protectorate Osiris 2020-B セット
   - Language: Polish
-    String: Zestaw Protektoratu Ozyrysa 2020-B
+    String: Zestaw Protectorate Osiris 2020-B
   - Language: Portuguese_Brazil
-    String: Conjunto Protetorado Osíris 2020-B
+    String: Conjunto Protetorado Osiris 2020-B
   - Language: ChineseSimplified
-    String: 保护国奥西里斯 2020-B 套装
+    String: Protectorate Osiris 2020-B Set
 Items:
 - 0014AD:JunkInYourTrunk_v2.esm
 - 0014AE:JunkInYourTrunk_v2.esm

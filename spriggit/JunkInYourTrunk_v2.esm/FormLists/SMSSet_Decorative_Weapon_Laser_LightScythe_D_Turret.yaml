@@ -4,23 +4,23 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Dekoratives Lichtsense LSR-D Turmset
+    String: Dekoratives Light Scythe LSR-D Turret Set
   - Language: English
     String: Decorative Light Scythe LSR-D Turret Set
   - Language: Spanish
-    String: Juego de torreta decorativa Light Scythe LSR-D
+    String: Juego de torreta LSR-D con guadaña luminosa decorativa
   - Language: French
-    String: Ensemble de tourelle LSR-D pour faux lumineux décoratif
+    String: Ensemble de tourelle décorative Light Scythe LSR-D
   - Language: Italian
-    String: Set torretta decorativa per falce leggera LSR-D
+    String: ' Set torretta LSR-D con falce leggera decorativa'
   - Language: Japanese
-    String: 装飾ライトサイズLSR-Dタレットセット
+    String: 装飾ライトサイズ LSR-D タレットセット
   - Language: Polish
-    String: Zestaw wieżyczek dekoracyjnych Light Scythe LSR-D
+    String: Zestaw dekoracyjnych wież Light Scythe LSR-D
   - Language: Portuguese_Brazil
-    String: Conjunto de torre de foice de luz decorativa LSR-D
+    String: Conjunto de torre decorativa Light Scythe LSR-D
   - Language: ChineseSimplified
-    String: 装饰光镰 LSR-D 炮塔套装
+    String: 装饰光镰 LSR-D 炮塔套件
 Items:
 - 001E56:JunkInYourTrunk_v2.esm
 - 001E57:JunkInYourTrunk_v2.esm

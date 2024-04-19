@@ -23,19 +23,19 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: 'Dekorativ: Ballistisches PRT-A'
+      String: 'Dekorativ: Ballistic PRT-A'
     - Language: English
       String: 'Decorative: Ballistic PRT-A'
     - Language: Spanish
-      String: 'Decorativo: PRT-A balístico'
+      String: 'Decorativo: Ballistic PRT-A'
     - Language: French
-      String: 'Décoratif : balistique PRT-A'
+      String: Décoratif : Balistique PRT-A
     - Language: Italian
-      String: 'Decorativo: balistico PRT-A'
+      String: 'Decorativo: Ballistico PRT-A'
     - Language: Japanese
       String: '装飾: バリスティック PRT-A'
     - Language: Polish
-      String: 'Dekoracyjny: balistyczny PRT-A'
+      String: 'Dekoracyjny: Balistyczny PRT-A'
     - Language: Portuguese_Brazil
       String: 'Decorativo: Balístico PRT-A'
     - Language: ChineseSimplified

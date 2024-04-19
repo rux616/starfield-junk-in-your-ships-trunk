@@ -27,19 +27,19 @@ Components:
     - Language: English
       String: 'Decorative: Horizon BLS-C'
     - Language: Spanish
-      String: 'Decorativo: Horizonte BLS-C'
+      String: 'Decorativo: Horizon BLS-C'
     - Language: French
       String: 'Décoratif : Horizon BLS-C'
     - Language: Italian
-      String: 'Decorativo: Orizzonte BLS-C'
+      String: 'Decorativo: Horizon BLS-C'
     - Language: Japanese
-      String: '装飾: ホライゾン BLS-C'
+      String: '装飾品: ホライズン BLS-C'
     - Language: Polish
-      String: 'Dekoracyjny: Horizon BLS-C'
+      String: 'Dekoracyjny: Horizon BLS-C '
     - Language: Portuguese_Brazil
-      String: 'Decorativo: Horizonte BLS-C'
+      String: 'Decorativo: Horizon BLS-C'
     - Language: ChineseSimplified
-      String: 装饰：Horizo​​n BLS-C
+      String: 装饰：地平线 BLS-C
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

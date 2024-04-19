@@ -4,7 +4,7 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Panoptes Polo 2000 Set
+    String: Panoptes Polo 2000-Set
   - Language: English
     String: Panoptes Polo 2000 Set
   - Language: Spanish
@@ -16,7 +16,7 @@ Name:
   - Language: Japanese
     String: パノプテス ポロ 2000 セット
   - Language: Polish
-    String: Zestaw Polo 2000 Panoptes
+    String: Zestaw Panoptes Polo 2000
   - Language: Portuguese_Brazil
     String: Conjunto Panoptes Polo 2000
   - Language: ChineseSimplified

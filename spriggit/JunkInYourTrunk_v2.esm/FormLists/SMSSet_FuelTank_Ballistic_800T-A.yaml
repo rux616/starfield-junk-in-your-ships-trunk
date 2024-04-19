@@ -4,13 +4,13 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Ballistisches 800T-A-Set
+    String: Ballistic 800T-A Set
   - Language: English
     String: Ballistic 800T-A Set
   - Language: Spanish
-    String: Conjunto balístico 800T-A
+    String: ' Conjunto Ballistic 800T-A'
   - Language: French
-    String: Ensemble balistique 800T-A
+    String: Ballistic 800T-A Set
   - Language: Italian
     String: Set balistico 800T-A
   - Language: Japanese
@@ -20,7 +20,7 @@ Name:
   - Language: Portuguese_Brazil
     String: Conjunto balístico 800T-A
   - Language: ChineseSimplified
-    String: 弹道 800T-A 套装
+    String: 弹道 800T-A 套件
 Items:
 - 226597:Starfield.esm
 - 226596:Starfield.esm

@@ -28,23 +28,23 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: Abgeschirmter Frachtraum des Hauler 10ST
+      String: Hauler 10ST Shielded Cargo Hold
     - Language: English
       String: Hauler 10ST Shielded Cargo Hold
     - Language: Spanish
-      String: Bodega de carga blindada Hauler 10ST
+      String: Contenedor de carga blindado Hauler 10ST
     - Language: French
-      String: Cale de chargement blindée Hauler 10ST
+      String: Hauler 10ST Support de chargement blindé
     - Language: Italian
-      String: Stiva di carico schermata Hauler 10ST
+      String: Stiva cargo protetta Hauler 10ST
     - Language: Japanese
-      String: Hauler 10ST シールド付き貨物倉
+      String: ハウラー 10ST シールド貨物倉
     - Language: Polish
-      String: Wozidło 10ST z osłoniętą ładownią
+      String: Hauler 10ST Osłonięta Ładownia
     - Language: Portuguese_Brazil
-      String: Porão de carga blindado Hauler 10ST
+      String: Hauler 10ST Blindado Cargo Hold
     - Language: ChineseSimplified
-      String: Hauler 10ST 屏蔽货舱
+      String: 牵引车 10ST 屏蔽货舱
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

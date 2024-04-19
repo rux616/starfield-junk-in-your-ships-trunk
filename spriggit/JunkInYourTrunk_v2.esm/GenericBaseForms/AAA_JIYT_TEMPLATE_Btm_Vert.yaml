@@ -29,19 +29,19 @@ Components:
     - Language: English
       String: Btm Vert
     - Language: Spanish
-      String: Btm Verde
+      String: Btm Vert
     - Language: French
       String: Btm Vert
     - Language: Italian
-      String: BTM Vert
+      String: Btm Vert
     - Language: Japanese
-      String: BTM ヴェール
+      String: Btm Vert
     - Language: Polish
-      String: Btm pion
+      String: Btm pionowy
     - Language: Portuguese_Brazil
-      String: Btm Verde
+      String: Btm Vert
     - Language: ChineseSimplified
-      String: Btm 垂直
+      String: Btm Vert
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

@@ -21,17 +21,17 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: 'Dekorativ: Protektorat Marduk'
+      String: 'Dekorativ : Protektorat Marduk'
     - Language: English
       String: 'Decorative: Protectorate Marduk'
     - Language: Spanish
-      String: 'Decorativo: Protectorado Marduk'
+      String: 'Decorativo : Protectorate Marduk'
     - Language: French
-      String: 'Décoratif : Protectorat de Marduk'
+      String: 'Décoratif : Protectorat Marduk'
     - Language: Italian
-      String: 'Decorativo: Protettorato Marduk'
+      String: 'Decorativo: protettorato Marduk'
     - Language: Japanese
-      String: '装飾: マルドゥク保護領'
+      String: '装飾品: マルドゥク保護領'
     - Language: Polish
       String: 'Dekoracyjny: Protektorat Marduk'
     - Language: Portuguese_Brazil

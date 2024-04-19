@@ -33,15 +33,15 @@ Components:
     - Language: French
       String: Btm Stbd
     - Language: Italian
-      String: BTM Stbd
+      String: 'Btm Stbd '
     - Language: Japanese
-      String: BTM標準規格
+      String: Btm Stbd
     - Language: Polish
       String: Btm Stbd
     - Language: Portuguese_Brazil
-      String: Btm esticado
+      String: Btm Stbd
     - Language: ChineseSimplified
-      String: Btm标准
+      String: Btm Stbd
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

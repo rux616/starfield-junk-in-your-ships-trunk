@@ -21,21 +21,21 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: 'Dekorativ: Sextant-Wächter'
+      String: 'Dekorativ: Sextant Wärter'
     - Language: English
       String: 'Decorative: Sextant Warden'
     - Language: Spanish
       String: 'Decorativo: Sextante Guardián'
     - Language: French
-      String: Décoratif : Gardien sextant
+      String: 'Décoratif : Sextant Warden'
     - Language: Italian
-      String: 'Decorativo: Guardiano del Sestante'
+      String: 'Decorativo : Guardiano del sestante'
     - Language: Japanese
-      String: '装飾: 六分儀の監視者'
+      String: 装飾:六分儀監視官
     - Language: Polish
-      String: 'Ozdoba: Strażnik Sekstantu'
+      String: 'Dekoracyjny: Sekstantowy Strażnik'
     - Language: Portuguese_Brazil
-      String: 'Decorativo: Sextante Diretor'
+      String: 'Decorativo: Sextant Warden'
     - Language: ChineseSimplified
       String: 装饰：六分仪守望者
 Template: 03058E:Starfield.esm

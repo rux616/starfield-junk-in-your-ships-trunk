@@ -4,23 +4,23 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Dekoratives Horizon PRT-C Turmset
+    String: Dekoratives Horizon PRT-C-Turm-Set
   - Language: English
     String: Decorative Horizon PRT-C Turret Set
   - Language: Spanish
-    String: Conjunto de torreta decorativa Horizon PRT-C
+    String: Conjunto de Torreta Horizon PRT-C Decorativo
   - Language: French
     String: Ensemble de tourelles décoratives Horizon PRT-C
   - Language: Italian
-    String: Set torretta decorativa Horizon PRT-C
+    String: Set torretta decorativo Horizon PRT-C
   - Language: Japanese
-    String: デコラティブホライズン PRT-C タレットセット
+    String: 装飾用ホライズン PRT-C タレット セット
   - Language: Polish
     String: Dekoracyjny zestaw wieżyczek Horizon PRT-C
   - Language: Portuguese_Brazil
     String: Conjunto de torre decorativa Horizon PRT-C
   - Language: ChineseSimplified
-    String: 装饰地平线 PRT-C 炮塔套装
+    String: 装饰地平线 PRT-C 炮塔套件
 Items:
 - 001E6B:JunkInYourTrunk_v2.esm
 - 001E6C:JunkInYourTrunk_v2.esm

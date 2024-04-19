@@ -23,11 +23,11 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: 'Dekorativ: Ballistisches MSL-A'
+      String: 'Dekorativ : Ballistic MSL-A'
     - Language: English
       String: 'Decorative: Ballistic MSL-A'
     - Language: Spanish
-      String: 'Decorativo: Balístico MSL-A'
+      String: 'Decorativo: Ballistic MSL-A'
     - Language: French
       String: 'Décoratif : Balistique MSL-A'
     - Language: Italian
@@ -35,7 +35,7 @@ Components:
     - Language: Japanese
       String: '装飾: バリスティック MSL-A'
     - Language: Polish
-      String: 'Dekoracyjny: balistyczny MSL-A'
+      String: 'Dekoracyjny: Balistyczny MSL-A'
     - Language: Portuguese_Brazil
       String: 'Decorativo: Balístico MSL-A'
     - Language: ChineseSimplified

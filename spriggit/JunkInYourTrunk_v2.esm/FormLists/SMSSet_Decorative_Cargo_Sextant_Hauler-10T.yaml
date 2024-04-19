@@ -4,23 +4,23 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Dekoratives Sextant 10T Schlepper-Set
+    String: Dekoratives Sextant 10T Hauler Set
   - Language: English
     String: Decorative Sextant 10T Hauler Set
   - Language: Spanish
-    String: Juego de transportador Sextante decorativo 10T
+    String: Juego de transporte de sextante 10T decorativo
   - Language: French
-    String: Ensemble de transport Sextant décoratif 10T
+    String: Ensemble décoratif Sextant 10T Hauler
   - Language: Italian
-    String: Set decorativo sestante 10T
+    String: Set sestante decorativo 10T Hauler
   - Language: Japanese
-    String: 装飾六分儀 10T ホーラーセット
+    String: 装飾六分儀 10T 運搬車セット
   - Language: Polish
-    String: Zestaw ozdobnych wozideł Sextant 10T
+    String: Dekoracyjny sekstans Zestaw wozidła 10T
   - Language: Portuguese_Brazil
-    String: Conjunto de transportador sextante decorativo 10T
+    String: Conjunto Decorativo Sextante 10T Hauler
   - Language: ChineseSimplified
-    String: 装饰六分仪 10T 拖车套装
+    String: 装饰六分仪 10T 牵引器套装
 Items:
 - 001683:JunkInYourTrunk_v2.esm
 - 001684:JunkInYourTrunk_v2.esm

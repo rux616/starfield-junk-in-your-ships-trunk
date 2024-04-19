@@ -25,17 +25,17 @@ Components:
     - Language: English
       String: 'Decorative: Sextant Assurance'
     - Language: Spanish
-      String: 'Decorativo: Sextante de Seguridad'
+      String: 'Decorativo: Sextant Assurance'
     - Language: French
       String: 'Décoratif : Sextant Assurance'
     - Language: Italian
-      String: 'Decorativo: Garanzia del sestante'
+      String: 'Decorativo: Garanzia Sestante'
     - Language: Japanese
-      String: '装飾: 六分儀保証'
+      String: '装飾品: 六分儀保証'
     - Language: Polish
-      String: 'Dekoracyjny: Gwarancja sekstantu'
+      String: 'Dekoracyjny: Sextant Assurance'
     - Language: Portuguese_Brazil
-      String: 'Decorativo: Sextante Garantia'
+      String: 'Decorativo: Sextant Assurance'
     - Language: ChineseSimplified
       String: 装饰：六分仪保证
 Template: 03058E:Starfield.esm

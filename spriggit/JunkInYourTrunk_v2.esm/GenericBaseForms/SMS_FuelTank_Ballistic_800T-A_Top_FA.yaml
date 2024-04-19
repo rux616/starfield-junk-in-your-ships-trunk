@@ -38,19 +38,19 @@ Components:
     - Language: English
       String: 800T-A He3 Tank
     - Language: Spanish
-      String: Tanque 800T-A He3
+      String: Tanque He800 3T-A
     - Language: French
-      String: Char 800T-A He3
+      String: Réservoir 800T-A He3
     - Language: Italian
-      String: Carro armato 800T-A He3
+      String: Carro armato He800 3T-A
     - Language: Japanese
       String: 800T-A He3 戦車
     - Language: Polish
-      String: Czołg 800T-A He3
+      String: 800T-A Czołg He3
     - Language: Portuguese_Brazil
-      String: Tanque 800T-A He3
+      String: ' 800T-A Tanque He3'
     - Language: ChineseSimplified
-      String: 800T-A He3坦克
+      String: 800T-A He3 坦克
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

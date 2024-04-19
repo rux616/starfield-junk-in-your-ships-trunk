@@ -4,23 +4,23 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Dekoratives Shinigami BLS-B Turmset
+    String: Dekoratives Shinigami BLS-B-Turm-Set
   - Language: English
     String: Decorative Shinigami BLS-B Turret Set
   - Language: Spanish
-    String: Set de torreta decorativa Shinigami BLS-B
+    String: Juego de torreta Shinigami BLS-B decorativo
   - Language: French
-    String: Ensemble de tourelle décorative Shinigami BLS-B
+    String: Ensemble décoratif de tourelle Shinigami BLS-B
   - Language: Italian
-    String: Set torretta decorativa Shinigami BLS-B
+    String: Set torretta Shinigami BLS-B decorativo
   - Language: Japanese
-    String: 装飾死神 BLS-B タレットセット
+    String: 装飾用死神 BLS-B タレット セット
   - Language: Polish
     String: Zestaw dekoracyjnych wieżyczek Shinigami BLS-B
   - Language: Portuguese_Brazil
-    String: Conjunto de torre decorativa Shinigami BLS-B
+    String: Shinigami Decorativo BLS- Conjunto de torre B
   - Language: ChineseSimplified
-    String: 装饰死神 BLS-B 炮塔套装
+    String: 装饰死神BLS-B炮塔套装
 Items:
 - 001E1B:JunkInYourTrunk_v2.esm
 - 001E1C:JunkInYourTrunk_v2.esm

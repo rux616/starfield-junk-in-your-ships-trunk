@@ -8,19 +8,19 @@ Name:
   - Language: English
     String: Dogstar Guardian 101D Set
   - Language: Spanish
-    String: Conjunto Dogstar Guardián 101D
+    String: Conjunto Dogstar Guardian 101D
   - Language: French
     String: Ensemble Dogstar Guardian 101D
   - Language: Italian
-    String: Set Dogstar Guardiano 101D
+    String: Set Dogstar Guardian 101D
   - Language: Japanese
     String: ドッグスター ガーディアン 101D セット
   - Language: Polish
     String: Zestaw Dogstar Guardian 101D
   - Language: Portuguese_Brazil
-    String: Conjunto Dogstar Guardião 101D
+    String: Conjunto Dogstar Guardian 101D
   - Language: ChineseSimplified
-    String: Dogstar 守护者 101D 套装
+    String: Dogstar Guardian 101D 套装
 Items:
 - 26F984:Starfield.esm
 - 17AB40:Starfield.esm

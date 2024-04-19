@@ -4,23 +4,23 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Dekoratives Sextantenschlepper-Set 30T/40T
+    String: Dekorativer Sextantschlepper 30T/40T-Satz
   - Language: English
     String: Decorative Sextant Hauler 30T/40T Set
   - Language: Spanish
-    String: Juego de transportador de sextante decorativo 30T/40T
+    String: Juego decorativo Sextante Hauler 30T/40T
   - Language: French
-    String: Ensemble Sextant Hauler décoratif 30T/40T
+    String: Ensemble de transport de sextant décoratif 30T/40T
   - Language: Italian
-    String: Set decorativo sestante trasportatore 30T/40T
+    String: Set torretta sestante trasportatore 30T/40T decorativo
   - Language: Japanese
-    String: 装飾六分儀運び屋 30T/40T セット
+    String: 装飾用六分儀ハウラー 30T/40T セット
   - Language: Polish
-    String: Zestaw dekoracyjnych wozideł sekstantowych 30T/40T
+    String: Dekoracyjny zestaw Sextant Hauler 30T/40T
   - Language: Portuguese_Brazil
-    String: Conjunto transportador sextante decorativo 30T/40T
+    String: Conjunto Decorativo Sextant Hauler 30T/40T
   - Language: ChineseSimplified
-    String: 装饰六分仪牵引器 30T/40T 套装
+    String: 装饰六分仪搬运器 30T/40T 套装
 Items:
 - 0016A7:JunkInYourTrunk_v2.esm
 - 0016A8:JunkInYourTrunk_v2.esm

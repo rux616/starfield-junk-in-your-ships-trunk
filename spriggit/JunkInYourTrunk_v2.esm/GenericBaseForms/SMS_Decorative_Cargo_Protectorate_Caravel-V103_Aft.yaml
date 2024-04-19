@@ -23,19 +23,19 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: 'Dekorativ: Protektoratskaravelle V103'
+      String: 'Dekorativ: Protectorate Caravel V103'
     - Language: English
       String: 'Decorative: Protectorate Caravel V103'
     - Language: Spanish
-      String: 'Decorativo: Carabela Protectorada V103'
+      String: 'Decorativo: Protectorate Caravel V103'
     - Language: French
-      String: 'Décoratif : Caravelle du Protectorat V103'
+      String: 'Décoratif : Protectorate Caravel V103'
     - Language: Italian
       String: 'Decorativo: Caravella del Protettorato V103'
     - Language: Japanese
-      String: '装飾品: 保護領キャラベル V103'
+      String: '装飾: 保護国キャラベル V103'
     - Language: Polish
-      String: 'Dekoracyjny: Karawela Protektoratu V103'
+      String: 'Dekoracyjny: Protektorat Caravel V103'
     - Language: Portuguese_Brazil
       String: 'Decorativo: Protetorado Caravela V103'
     - Language: ChineseSimplified

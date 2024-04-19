@@ -4,23 +4,23 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Sextant Deflektor SG-30 Set
+    String: Sextant Deflector SG- 30-Set
   - Language: English
     String: Sextant Deflector SG-30 Set
   - Language: Spanish
-    String: Set Deflector Sextante SG-30
+    String: Juego de deflector de sextante SG-30
   - Language: French
-    String: Ensemble de déflecteurs de sextant SG-30
+    String: Ensemble de déflecteur sextant SG-30
   - Language: Italian
     String: Set deflettore sestante SG-30
   - Language: Japanese
-    String: 六分儀偏向器 SG-30セット
+    String: 六分儀ディフレクターSG-30セット
   - Language: Polish
     String: Zestaw deflektora sekstantu SG-30
   - Language: Portuguese_Brazil
-    String: Conjunto Defletor Sextante SG-30
+    String: Conjunto de defletor sextante SG-30
   - Language: ChineseSimplified
-    String: 六分仪偏转器 SG-30 套装
+    String: 六分仪偏转器 SG-30套装
 Items:
 - 26F125:Starfield.esm
 - 16E074:Starfield.esm

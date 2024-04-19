@@ -25,7 +25,7 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: Spitze
+      String: Top
     - Language: English
       String: Top
     - Language: Spanish
@@ -33,13 +33,13 @@ Components:
     - Language: French
       String: Haut
     - Language: Italian
-      String: Superiore
+      String: In alto
     - Language: Japanese
-      String: 上
+      String: 上部
     - Language: Polish
-      String: Szczyt
+      String: Góra
     - Language: Portuguese_Brazil
-      String: Principal
+      String: Top
     - Language: ChineseSimplified
       String: 顶部
 Template: 03058E:Starfield.esm

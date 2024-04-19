@@ -23,23 +23,23 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: 'Dekorativ: Ballistisches LCT-A'
+      String: 'Dekorativ: Ballistischer LCT-A'
     - Language: English
       String: 'Decorative: Ballistic LCT-A'
     - Language: Spanish
-      String: 'Decorativo: Balístico LCT-A'
+      String: 'Decorativo: Ballistic LCT-A'
     - Language: French
-      String: Décoratif : balistique LCT-A
+      String: 'Décoratif : Balistique LCT-A'
     - Language: Italian
-      String: 'Decorativo: balistico LCT-A'
+      String: 'Decorativo: Ballistic LCT-A'
     - Language: Japanese
-      String: '装飾: バリスティック LCT-A'
+      String: '装飾品: バリスティック LCT-A'
     - Language: Polish
-      String: 'Dekoracyjny: balistyczny LCT-A'
+      String: 'Dekoracyjny: Balistyczny LCT-A'
     - Language: Portuguese_Brazil
       String: 'Decorativo: Balístico LCT-A'
     - Language: ChineseSimplified
-      String: 装饰：弹道 LCT-A
+      String: 装饰：弹道LCT-A
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

@@ -4,23 +4,23 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Set mit dekorativem Sextanten-Vorschaltgerät, 200 cm
+    String: Decorative Sextant Ballast 200CM Set
   - Language: English
     String: Decorative Sextant Ballast 200CM Set
   - Language: Spanish
-    String: Set Lastre Sextante Decorativo 200CM
+    String: Conjunto de lastre sextante decorativo 200CM
   - Language: French
-    String: Ensemble Ballast Sextant Décoratif 200CM
+    String: Balast Sextant décoratif 200CM Set
   - Language: Italian
-    String: Set di zavorra sestante decorativa da 200 cm
+    String: Set decorativo sestante zavorra 200 cm
   - Language: Japanese
     String: 装飾六分儀バラスト 200CM セット
   - Language: Polish
-    String: Zestaw dekoracyjnego statecznika sekstantowego 200CM
+    String: Dekoracyjny balast sekstantowy Zestaw 200CM
   - Language: Portuguese_Brazil
-    String: Conjunto de lastro sextante decorativo 200CM
+    String: Conjunto Sextante Decorativo Lastro 200CM
   - Language: ChineseSimplified
-    String: 装饰六分仪镇流器200CM套装
+    String: 装饰六分仪镇流器 200CM 套装
 Items:
 - 00166C:JunkInYourTrunk_v2.esm
 - 00166D:JunkInYourTrunk_v2.esm

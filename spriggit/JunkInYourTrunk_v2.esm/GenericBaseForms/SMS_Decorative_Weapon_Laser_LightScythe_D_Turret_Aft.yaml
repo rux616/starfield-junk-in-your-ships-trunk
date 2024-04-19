@@ -23,21 +23,21 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: 'Dekorativ: Light Scythe LSR-D Turret'
+      String: 'Dekorativ: Light Scythe LSR-D-Turm'
     - Language: English
       String: 'Decorative: Light Scythe LSR-D Turret'
     - Language: Spanish
-      String: 'Decorativo: Torreta Light Scythe LSR-D'
+      String: 'Decorativo: Ligero Torreta Scythe LSR-D'
     - Language: French
       String: 'Décoratif : Tourelle Light Scythe LSR-D'
     - Language: Italian
-      String: 'Decorativo: torretta LSR-D con falce leggera'
+      String: 'Decorativo: torretta Light Scythe LSR-D'
     - Language: Japanese
-      String: '装飾: ライトサイス LSR-D タレット'
+      String: '装飾: ライトサイズ LSR-D タレット'
     - Language: Polish
-      String: 'Dekoracyjna: Wieżyczka Light Scythe LSR-D'
+      String: 'Dekoracja: Wieża Light Scythe LSR-D'
     - Language: Portuguese_Brazil
-      String: 'Decorativo: Torreta Light Scythe LSR-D'
+      String: 'Decorativo: Torreta LSR-D de foice leve'
     - Language: ChineseSimplified
       String: 装饰：光镰LSR-D炮塔
 Template: 03058E:Starfield.esm

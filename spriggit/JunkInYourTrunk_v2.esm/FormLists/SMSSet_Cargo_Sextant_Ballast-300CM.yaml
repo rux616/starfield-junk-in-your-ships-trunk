@@ -8,19 +8,19 @@ Name:
   - Language: English
     String: Sextant Ballast 300CM Set
   - Language: Spanish
-    String: Set Lastre Sextante 300CM
+    String: Juego Sextant Ballast 300CM
   - Language: French
-    String: Ensemble Ballast Sextant 300CM
+    String: Ensemble de ballast sextant 300 CM
   - Language: Italian
-    String: Set zavorra sestante 300 cm
+    String: 'Set zavorra sestante 300CM '
   - Language: Japanese
     String: 六分儀バラスト 300CM セット
   - Language: Polish
     String: Zestaw balastowy sekstantu 300CM
   - Language: Portuguese_Brazil
-    String: Conjunto de lastro sextante 300CM
+    String: Sextante Lastro 300CM Conjunto
   - Language: ChineseSimplified
-    String: 六分仪镇流器300CM套装
+    String: 六分仪镇流器 300CM 套件
 Items:
 - 270480:Starfield.esm
 - 17AB4E:Starfield.esm

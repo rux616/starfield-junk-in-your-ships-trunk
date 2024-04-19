@@ -21,19 +21,19 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: 'Dekorativ: Nautilusturm'
+      String: 'Dekorativ: Nautilus Tower'
     - Language: English
       String: 'Decorative: Nautilus Tower'
     - Language: Spanish
-      String: 'Decorativo: Torre Nautilus'
+      String: 'Decorativo: Nautilus Tower'
     - Language: French
-      String: 'Décoratif : Tour Nautilus'
+      String: 'Décoratif : tour Nautilus'
     - Language: Italian
       String: 'Decorativo: Torre Nautilus'
     - Language: Japanese
-      String: '装飾: ノーチラスタワー'
+      String: '装飾品: ノーチラスタワー'
     - Language: Polish
-      String: 'Dekoracyjne: Wieża Nautilusa'
+      String: 'Dekoracyjny: Wieża Nautilusa'
     - Language: Portuguese_Brazil
       String: 'Decorativo: Torre Nautilus'
     - Language: ChineseSimplified

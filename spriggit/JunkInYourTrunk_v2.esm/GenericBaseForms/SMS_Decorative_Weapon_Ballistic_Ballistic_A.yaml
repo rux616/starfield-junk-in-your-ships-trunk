@@ -23,15 +23,15 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: 'Dekorativ: Ballistisches BLS-A'
+      String: 'Dekorativ: Ballistic BLS-A'
     - Language: English
       String: 'Decorative: Ballistic BLS-A'
     - Language: Spanish
-      String: 'Decorativo: Balístico BLS-A'
+      String: 'Decorativo: Ballistic BLS-A'
     - Language: French
-      String: 'Décoratif : balistique BLS-A'
+      String: 'Décoratif : Balistique BLS-A'
     - Language: Italian
-      String: 'Decorativo: balistico BLS-A'
+      String: 'Decorativo: Ballistic BLS-A'
     - Language: Japanese
       String: '装飾: バリスティック BLS-A'
     - Language: Polish

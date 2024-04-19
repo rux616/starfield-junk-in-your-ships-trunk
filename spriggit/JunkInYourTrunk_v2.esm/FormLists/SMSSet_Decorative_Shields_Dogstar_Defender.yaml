@@ -4,23 +4,23 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Dekoratives Dogstar-Verteidiger-Set
+    String: Dekoratives Dogstar Defender-Set
   - Language: English
     String: Decorative Dogstar Defender Set
   - Language: Spanish
-    String: Set decorativo de defensores Dogstar
+    String: 'Conjunto decorativo Dogstar Defender '
   - Language: French
     String: Ensemble décoratif Dogstar Defender
   - Language: Italian
     String: Set decorativo Dogstar Defender
   - Language: Japanese
-    String: 装飾用ドッグスターディフェンダーセット
+    String: 装飾ドッグスター ディフェンダー セット
   - Language: Polish
-    String: Dekoracyjny zestaw obrońcy Dogstar
+    String: Ozdobny zestaw obrońcy Dogstar
   - Language: Portuguese_Brazil
     String: Conjunto Decorativo Dogstar Defender
   - Language: ChineseSimplified
-    String: 装饰性 Dogstar 防御者套装
+    String: 装饰性 Dogstar Defender 套装
 Items:
 - 001553:JunkInYourTrunk_v2.esm
 - 001554:JunkInYourTrunk_v2.esm

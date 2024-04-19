@@ -23,19 +23,19 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: 'Dekorativ: Protektoratsgaleone S201'
+      String: 'Dekorativ: Protectorate Galleon S201'
     - Language: English
       String: 'Decorative: Protectorate Galleon S201'
     - Language: Spanish
-      String: 'Decorativo: Galeón Protectorado S201'
+      String: 'Decorativo: Protectorate Galleon S201'
     - Language: French
       String: 'Décoratif : Galion du Protectorat S201'
     - Language: Italian
-      String: 'Decorativo: Galeone del Protettorato S201'
+      String: 'Decorativo: galeone del protettorato S201'
     - Language: Japanese
-      String: '装飾: 保護領ガレオン船 S201'
+      String: '装飾: 保護ガレオン S201'
     - Language: Polish
-      String: 'Dekoracyjny: Galeon Protektoratu S201'
+      String: 'Ozdobny: Galeon Protektoratu S201'
     - Language: Portuguese_Brazil
       String: 'Decorativo: Protetorado Galeão S201'
     - Language: ChineseSimplified

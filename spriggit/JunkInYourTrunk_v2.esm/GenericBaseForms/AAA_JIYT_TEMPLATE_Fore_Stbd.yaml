@@ -25,23 +25,23 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: Vorderstbd
+      String: Fore Stbd
     - Language: English
       String: Fore Stbd
     - Language: Spanish
-      String: Delantero estbd
+      String: Fore Stbd
     - Language: French
-      String: Avant tribord
+      String: Stbd avant
     - Language: Italian
-      String: Stbd anteriore
+      String: Fore Stbd
     - Language: Japanese
-      String: フォア標準規格
+      String: フォア スタンダード
     - Language: Polish
-      String: Przednie Stbd
+      String: Dziób Stbd
     - Language: Portuguese_Brazil
-      String: Frente Stbd
+      String: Fore Stbd
     - Language: ChineseSimplified
-      String: 前级标准
+      String: 前支架
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

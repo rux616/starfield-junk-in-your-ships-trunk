@@ -25,23 +25,23 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: Btm Achtern
+      String: Btm Aft
     - Language: English
       String: Btm Aft
     - Language: Spanish
-      String: Btm en popa
+      String: Btm Aft
     - Language: French
-      String: Btm arrière
+      String: Btm Aft
     - Language: Italian
-      String: BTM a poppa
+      String: Btm Aft
     - Language: Japanese
-      String: 後方後方
+      String: 後部後方
     - Language: Polish
       String: Btm na rufie
     - Language: Portuguese_Brazil
-      String: Btm à popa
+      String: Btm Aft
     - Language: ChineseSimplified
-      String: Btm 船尾
+      String: Btm Aft
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

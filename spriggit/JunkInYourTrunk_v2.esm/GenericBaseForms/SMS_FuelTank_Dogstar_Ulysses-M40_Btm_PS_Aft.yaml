@@ -34,21 +34,21 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: Panzer Ulysses M40 He3
+      String: Ulysses M40 He3 Tank
     - Language: English
       String: Ulysses M40 He3 Tank
     - Language: Spanish
-      String: Tanque Ulises M40 He3
+      String: Tanque Ulysses M40 He3
     - Language: French
-      String: Char Ulysse M40 He3
+      String: ' Réservoir Ulysses M40 He3'
     - Language: Italian
-      String: Carro armato Ulisse M40 He3
+      String: Carro armato Ulysses M40 He3
     - Language: Japanese
-      String: ユリシーズ M40 He3 戦車
+      String: ユリシーズ M40 He3 タンク
     - Language: Polish
       String: Czołg Ulysses M40 He3
     - Language: Portuguese_Brazil
-      String: Tanque Ulisses M40 He3
+      String: Tanque Ulysses M40 He3
     - Language: ChineseSimplified
       String: 尤利西斯 M40 He3 坦克
 Template: 03058E:Starfield.esm

@@ -36,17 +36,17 @@ Components:
     - Language: Spanish
       String: 'Decorativo: Balístico 800T-B'
     - Language: French
-      String: 'Décoratif : balistique 800T-B'
+      String: 'Décoratif : Ballistic 800T-B'
     - Language: Italian
-      String: 'Decorativo: balistico 800T-B'
+      String: 'Decorativa: balistico 800T-B'
     - Language: Japanese
-      String: '装飾: バリスティック 800T-B'
+      String: '装飾品: バリスティック 800T-B'
     - Language: Polish
-      String: 'Dekoracyjny: balistyczny 800T-B'
+      String: 'Dekoracyjny: Ballistic 800T-B'
     - Language: Portuguese_Brazil
       String: 'Decorativo: Balístico 800T-B'
     - Language: ChineseSimplified
-      String: 装饰：弹道 800T-B
+      String: 装饰：弹道800T-B
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

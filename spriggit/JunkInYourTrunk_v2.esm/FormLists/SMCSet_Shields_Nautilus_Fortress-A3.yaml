@@ -4,23 +4,23 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Nautilus-Festung A3-Set
+    String: Nautilus Fortress A3-Set
   - Language: English
     String: Nautilus Fortress A3 Set
   - Language: Spanish
-    String: Conjunto Fortaleza Nautilus A3
+    String: Juego Nautilus Fortress A3
   - Language: French
-    String: Ensemble Forteresse Nautilus A3
+    String: Ensemble Nautilus Fortress A3
   - Language: Italian
-    String: Set Fortezza Nautilus A3
+    String: Set Nautilus Fortress A3
   - Language: Japanese
-    String: ノーチラス フォートレス A3 セット
+    String: ノーチラス要塞 A3 セット
   - Language: Polish
-    String: Zestaw Twierdzy Nautilus A3
+    String: Twierdza Nautilus Zestaw A3
   - Language: Portuguese_Brazil
-    String: Conjunto Fortaleza Nautilus A3
+    String: Conjunto Nautilus Fortress A3
   - Language: ChineseSimplified
-    String: 鹦鹉螺堡垒 A3 套装
+    String: Nautilus Fortress A3 套装
 Items:
 - 0014F4:JunkInYourTrunk_v2.esm
 - 0014F5:JunkInYourTrunk_v2.esm

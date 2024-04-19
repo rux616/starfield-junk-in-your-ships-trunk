@@ -4,21 +4,21 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Ballistisches 400G-Set
+    String: Ballistischer 400G-Satz
   - Language: English
     String: Ballistic 400G Set
   - Language: Spanish
-    String: Conjunto balístico 400G
+    String: Ballistic 400G Set
   - Language: French
     String: Ensemble balistique 400G
   - Language: Italian
     String: Set balistico 400G
   - Language: Japanese
-    String: バリスティック400Gセット
+    String: バリスティック 400G セット
   - Language: Polish
     String: Zestaw balistyczny 400G
   - Language: Portuguese_Brazil
-    String: Conjunto balístico 400G
+    String: Balístico 400G Conjunto
   - Language: ChineseSimplified
     String: 弹道 400G 套装
 Items:

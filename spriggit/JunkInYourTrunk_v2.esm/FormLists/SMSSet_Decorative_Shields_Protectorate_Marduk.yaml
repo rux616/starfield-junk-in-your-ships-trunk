@@ -4,23 +4,23 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Dekoratives Protektorat-Marduk-Set
+    String: Dekoratives Protectorate Marduk-Set
   - Language: English
     String: Decorative Protectorate Marduk Set
   - Language: Spanish
-    String: Conjunto Protectorado Decorativo Marduk
+    String: Conjunto decorativo Protectorate Marduk
   - Language: French
-    String: Ensemble Marduk du protectorat décoratif
+    String: Ensemble décoratif Protectorate Marduk
   - Language: Italian
-    String: Set Marduk del protettorato decorativo
+    String: Set decorativo Protettorato Marduk
   - Language: Japanese
-    String: 装飾保護領マルドゥクセット
+    String: 装飾保護領マルドゥック セット
   - Language: Polish
     String: Dekoracyjny zestaw Marduka Protektoratu
   - Language: Portuguese_Brazil
-    String: Conjunto Decorativo Protetorado Marduk
+    String: Decorative Protectorate Marduk Set
   - Language: ChineseSimplified
-    String: 装饰保护国马杜克套装
+    String: 装饰保护国 Marduk 套装
 Items:
 - 001535:JunkInYourTrunk_v2.esm
 - 001536:JunkInYourTrunk_v2.esm

@@ -50,19 +50,19 @@ Components:
     - Language: English
       String: Defender 22T Shield Generator
     - Language: Spanish
-      String: Generador de escudo Defender 22T
+      String: Defender 22T Generador de escudo
     - Language: French
-      String: Générateur de bouclier Defender 22T
+      String: Defender 22T Générateur de bouclier
     - Language: Italian
-      String: Generatore di scudi Defender 22T
+      String: Generatore scudo Defender 22T
     - Language: Japanese
-      String: ディフェンダー 22T シールドジェネレーター
+      String: ディフェンダー 22T シールド ジェネレーター
     - Language: Polish
       String: Generator tarczy Defender 22T
     - Language: Portuguese_Brazil
       String: Gerador de escudo Defender 22T
     - Language: ChineseSimplified
-      String: Defender 22T 护盾发生器
+      String: 防御者 22T 护盾发生器
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

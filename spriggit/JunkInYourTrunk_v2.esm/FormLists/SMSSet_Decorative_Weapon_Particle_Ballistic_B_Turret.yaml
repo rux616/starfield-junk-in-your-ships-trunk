@@ -8,19 +8,19 @@ Name:
   - Language: English
     String: Decorative Ballistic PRT-B Turret Set
   - Language: Spanish
-    String: Conjunto de torreta balística decorativa PRT-B
+    String: Conjunto de torreta PRT-B balístico decorativo
   - Language: French
     String: Ensemble de tourelles balistiques décoratives PRT-B
   - Language: Italian
     String: Set torretta balistica decorativa PRT-B
   - Language: Japanese
-    String: 装飾用弾道 PRT-B 砲塔セット
+    String: 装飾弾道 PRT-B タレット セット
   - Language: Polish
-    String: Zestaw dekoracyjnych wieżyczek balistycznych PRT-B
+    String: Dekoracyjny Zestaw wieżyczek balistycznych PRT-B
   - Language: Portuguese_Brazil
     String: Conjunto de torre balística decorativa PRT-B
   - Language: ChineseSimplified
-    String: 装饰弹道 PRT-B 炮塔套装
+    String: 装饰弹道PRT-B炮塔套装
 Items:
 - 001E33:JunkInYourTrunk_v2.esm
 - 001E34:JunkInYourTrunk_v2.esm

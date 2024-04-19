@@ -25,23 +25,23 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: Oben vorne
+      String: Obere Vorderseite
     - Language: English
       String: Top Fore
     - Language: Spanish
-      String: Arriba adelante
+      String: Top Fore
     - Language: French
-      String: Premier plan
+      String: Top Fore
     - Language: Italian
-      String: In alto in avanti
+      String: Parte superiore
     - Language: Japanese
       String: トップフォア
     - Language: Polish
       String: Górny przód
     - Language: Portuguese_Brazil
-      String: Frente superior
+      String: Top Fore
     - Language: ChineseSimplified
-      String: 顶级前锋
+      String: 顶部前部
 Template: 03058E:Starfield.esm
 STRVs:
 - BGSMod_Template_Component

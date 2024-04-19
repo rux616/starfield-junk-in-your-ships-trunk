@@ -4,21 +4,21 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Dekoratives Protektorat-Odin-Set
+    String: Dekoratives Protectorate Odin Set
   - Language: English
     String: Decorative Protectorate Odin Set
   - Language: Spanish
-    String: Set Protectorado Decorativo Odin
+    String: Decorativo Protectorate Odin Set
   - Language: French
-    String: Ensemble Odin du Protectorat décoratif
+    String: Ensemble décoratif Odin du protectorat
   - Language: Italian
-    String: Set Odino protettorato decorativo
+    String: Set decorativo protettorato Odino
   - Language: Japanese
-    String: 装飾保護領オーディンセット
+    String: 装飾的保護国オーディン セット
   - Language: Polish
-    String: Dekoracyjny zestaw Protektoratu Odina
+    String: Dekoracyjny zestaw Protektoratu Odin
   - Language: Portuguese_Brazil
-    String: Conjunto Protetorado Decorativo Odin
+    String: Conjunto decorativo Protetorado Odin
   - Language: ChineseSimplified
     String: 装饰保护国奥丁套装
 Items:

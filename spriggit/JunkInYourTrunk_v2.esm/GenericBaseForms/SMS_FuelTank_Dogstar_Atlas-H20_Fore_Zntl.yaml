@@ -34,15 +34,15 @@ Components:
     TargetLanguage: English
     Values:
     - Language: German
-      String: Atlas H20 He3 Panzer
+      String: Atlas H20 He3 Tank
     - Language: English
       String: Atlas H20 He3 Tank
     - Language: Spanish
       String: Tanque Atlas H20 He3
     - Language: French
-      String: Réservoir Atlas H20 He3
+      String: Atlas H20 He3 Tank
     - Language: Italian
-      String: Carro armato Atlas H20 He3
+      String: Atlas H20 Carro armato He3
     - Language: Japanese
       String: アトラス H20 He3 タンク
     - Language: Polish

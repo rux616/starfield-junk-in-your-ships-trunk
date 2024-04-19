@@ -4,11 +4,11 @@ Name:
   TargetLanguage: English
   Values:
   - Language: German
-    String: Ballistisches 800T-B-Set
+    String: Ballistic 800T-B Set
   - Language: English
     String: Ballistic 800T-B Set
   - Language: Spanish
-    String: Conjunto balístico 800T-B
+    String: Ballistic 800T-B Set
   - Language: French
     String: Ensemble balistique 800T-B
   - Language: Italian
@@ -16,11 +16,11 @@ Name:
   - Language: Japanese
     String: バリスティック 800T-B セット
   - Language: Polish
-    String: Zestaw balistyczny 800T-B
+    String: 'Zestaw balistyczny 800T-B '
   - Language: Portuguese_Brazil
     String: Conjunto balístico 800T-B
   - Language: ChineseSimplified
-    String: 弹道 800T-B 套装
+    String: Ballistic 800T-B Set
 Items:
 - 27049D:Starfield.esm
 - 001964:JunkInYourTrunk_v2.esm
