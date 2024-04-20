@@ -21,11 +21,9 @@
     - [ ] StorMax 40
     - [ ] StorMax 50
     - [ ] StorMax 60
-- [ ] localize plugin
-- [ ] grav drives - going to need to figure out how to rotate entire cells first in order to handle the "magnet" parts
-- [ ] reactors
-- [ ] engines?
-- [ ] update "build-archives.ps1" script to handle localization (strings) data for different plugins
+- [X] localize plugin
+- [-] update "build-archives.ps1" script to handle localization (strings) data for different plugins
+    - strings load fine even if they're all in the main mod archive
 - [ ] add snaps to handle "vertical" modules being right next to one another
     - [ ] cargo
         - [X] dogstar
@@ -53,3 +51,128 @@
         - (make list)
 - [X] add JIYTv2NoDecoratives.esm conditional handlers to FOMOD
 - [X] create USU AIO patch
+- [X] wait for inverse trig functions to be exposed in xEdit
+- [X] convert to new PKIN method for v2.19 (clone vanilla PKIN, replace MSTT with non-SNTP version, reference PKIN in cell)
+    - [X] cargo
+        - [X] panoptes
+            - [X] da gama 1000/1000-shielded/1010/1010-shielded/1020
+            - [X] polo 2000/2010/2020/2030
+        - [X] protectorate
+            - [X] caravel v101/v101-shielded
+            - [X] caravel v102/v102-shielded
+            - [X] caravel v103
+            - [X] caravel v104
+            - [X] galleon s201
+            - [X] galleon s202
+            - [X] galleon s203
+            - [X] galleon s204
+        - [X] dogstar
+            - [X] stormax 30
+            - [X] stormax 40
+            - [X] stormax 50
+            - [X] stormax 60
+            - [X] stormax empty
+                - [X] check decals
+        - [X] sextant
+            - [X] ballast 100cm/100cm-shielded
+            - [X] ballast 200cm/200cm-shielded
+            - [X] ballast 300cm/400cm
+            - [X] hauler 10t/10st
+            - [X] hauler 20t
+            - [X] hauler 30t/40t
+    - [X] fuel
+        - [X] ballistic
+            - [X] 100g/200g
+            - [X] 300g
+            - [X] 400g
+            - [X] 500t
+            - [X] 600t/700t/900t
+            - [X] 800t(a)
+            - [X] 800t(b)
+        - [X] dogstar
+            - [X] ulysses m10/m20
+            - [X] ulysses m30
+            - [X] ulysses m40/m50
+            - [X] atlas h10
+            - [X] atlas h20
+            - [X] atlas h30
+            - [X] atlas h40
+        - [X] nautilus
+            - [X] titan 350/450/550
+    - [X] shields
+        - [X] dogstar
+            - [X] protector 10s/20s/30s/40s/50s/60s
+            - [X] defender 11t/22t/28t/33t/44t
+            - [X] guardian 101d/102d/103d/104d
+        - [X] nautilus
+            - [X] bastille s80/s81/s82/s83/s84
+- [ ] add
+    - [ ] reactors
+    - [ ] reactor decoratives
+    - [X] grav drives
+        - [X] deep core
+            - [X] helios 100/200/300/400
+                - [X] 100
+                - [X] 200
+                - [X] 300
+                - [X] 400
+            - [X] aurora 11g/12g/13g
+                - [X] 11g
+                - [X] 12g
+                - [X] 13g
+            - [X] apollo gv100/gv200/gv300
+                - [X] gv100
+                - [X] gv200
+                - [X] gv300
+        - [X] nova
+            - [X] ng150/ng160/ng170
+                - [X] ng150
+                - [X] ng160
+                - [X] ng170
+            - [X] ng200/ng210/ng220
+                - [X] ng200
+                - [X] ng210
+                - [X] ng220
+            - [X] ng300/ng320/ng340
+                - [X] ng300
+                - [X] ng320
+                - [X] ng340
+        - [X] reladyne
+            - [X] alpha r-1000/r-2000/r-3000/r-4000
+                - [X] r-1000
+                - [X] r-2000
+                - [X] r-3000
+                - [X] r-4000
+            - [X] beta rd-1000/rd-2000/rd-3000
+                - [X] rd-1000
+                - [X] rd-2000
+                - [X] rd-3000
+            - [X] gamma j-50/j-51/j-52
+                - [X] j-50
+                - [X] j-51
+                - [X] j-52
+        - [X] slayton
+            - [X] sgd 1100/sgd 1200/sdg 1300/sdg 1400
+                - [X] sgd 1100
+                - [X] sgd 1200
+                - [X] sgd 1300
+                - [X] sgd 1400
+            - [X] sgd 2100/sgd 2200/sgd 2300
+                - [X] sgd 2100
+                - [X] sgd 2200
+                - [X] sgd 2300
+            - [X] sgd 3100/sgd 3200/sgd 3300
+                - [X] sgd 3100
+                - [X] sgd 3200
+                - [X] sgd 3300
+        - [X] vanguard
+            - [X] recon
+    - [X] grav drive decoratives
+    - [X] grav drive pictures
+    - [ ] engines?
+    - [ ] engine decoratives?
+    - [ ] landing gear?
+    - [ ] bays?
+    - [ ] dockers?
+- [X] grav drive testing
+- [X] update ship colorize patch with new PKIN method
