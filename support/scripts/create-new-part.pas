@@ -9,10 +9,10 @@ unit createnewpart;
 Const
   CELL_PERSISTENT_CHILDREN = 8;
   CELL_TEMPORARY_CHILDREN = 9;
-  START_SIGNATURES = 'COBJ,FLST,GBFM,CELL,REFR';
+  START_SIGNATURES = 'COBJ,FLST,GBFM,CELL,REFR,PKIN';
   DEFAULT_SKIP_EDIDS = 'PrefabPackinPivotDummy,OutpostGroupPackinDummy,LP_,PostEffectVolume';
   EXCLUDE_FILES_MASTERS = 'Starfield.esm,Starfield.exe,BlueprintShips-Starfield.esm,OldMars.esm,Constellation.esm';
-  DEFAULT_EDID_SUFFIX = '_COPY';
+  DEFAULT_EDID_SUFFIX = '-Base';
   DEFAULT_EDID_PREFIX = '';
   DEFAULT_STMP_PREFIX = 'ShipSnap_';
 
@@ -32,6 +32,8 @@ var
   global_stmp_copy: boolean;
   global_all_the_same: boolean;
   global_skip_edids: string;
+
+  global_options_dialog_shown: boolean;
 
 
 function IsPrefixed(prefixes: string; str: string): bool;
@@ -162,6 +164,10 @@ begin
     new_cell_subrecord := Add(new_cell, Signature(old_cell_subrecord), True);
     CloneRecordElements(old_cell_subrecord, new_cell_subrecord);
     SetIsPersistent(new_cell_subrecord, GetIsPersistent(old_cell_subrecord));
+    if Signature(LinksTo(ElementBySignature(old_cell_subrecord, 'NAME'))) = 'PKIN' then begin
+      AddMessage('    skipping, PKIN as REFR');
+      continue;
+    end;
     ProcessElement(new_cell_subrecord);
   end;
 end;
@@ -604,12 +610,14 @@ begin
     button_ok.Parent := button_panel;
     button_ok.Caption := 'OK';
     button_ok.ModalResult := mrOk;
+    button_ok.Default := True;
     SetMarginsLayout(button_ok, 0, 0, 4, 0, alRight);
 
     button_cancel := TButton.Create(frm);
     button_cancel.Parent := button_panel;
     button_cancel.Caption := 'Cancel';
     button_cancel.ModalResult := mrCancel;
+    button_cancel.Cancel := True;
     SetMarginsLayout(button_cancel, 0, 0, 4, 0, alRight);
 
     Result := frm.ShowModal;
@@ -643,12 +651,12 @@ begin
   Result := 0;
   global_cobj_copy := False;
   global_flst_copy := False;
-  global_mstt_copy := True;
-  global_stat_copy := True;
+  global_mstt_copy := False;
+  global_stat_copy := False;
   global_pkin_copy := True;
   global_cell_copy := True;
-  global_stmp_copy := True;
-  global_all_the_same := false;
+  global_stmp_copy := False;
+  global_all_the_same := True;
   global_prefix_edid := DEFAULT_EDID_PREFIX;
   global_suffix_edid := DEFAULT_EDID_SUFFIX;
   global_skip_edids := DEFAULT_SKIP_EDIDS;
@@ -665,13 +673,14 @@ begin
     Exit;
   end;
 
-  if not global_all_the_same then
+  if not global_all_the_same or not global_options_dialog_shown then
   begin
     Result := FileDialog(element, global_target_file);
     if Result <> 0 then
       Exit;
 
     Result := OptionsDialog('Script Options');
+    global_options_dialog_shown := True;
     if Result <> mrOk then
       Exit;
   end
