@@ -20,7 +20,7 @@
                 // mod name
                 "Junk In Your Trunk",
                 // plugin name
-                "JunkInYourTrunk_v3",
+                "JunkInYourTrunk_v2",
             ],
 			"group": {
 				"kind": "build",
@@ -28,10 +28,10 @@
 			},
             "dependsOrder": "sequence",
             "dependsOn": [
+                "Update Versions",
                 "Serialize plugins",
                 "Render Markdown to Nexus BBCode",
                 "Render Markdown to Plaintext",
-                "Update Versions",
             ],
         },
         {
@@ -66,15 +66,19 @@
             "type": "shell",
             "command": "./support/scripts/build-translator-batch-processor-script.ps1",
             "args": [
-                "JIYTv3-SKKShipPartsNoLevelAllVendors-Patch.esm",
-                "JIYTv3-StarfieldExtendedShieldsRebalanced-Patch.esm",
-                "JIYTv3-USU-Patch.esm",
-                "JIYTv3-USUNoLevelRequirements-Patch.esm",
-                "JIYTv3-USUQuestRewards-Patch.esm",
-                "JIYTv3CargoExpanderX10.esm",
-                "JIYTv3CargoExpanderX3.esm",
-                "JIYTv3NoDecoratives.esm",
-                "JunkInYourTrunk_v3.esm",
+                "JIYTv2-ShipColorize-BetterShipPartSnaps-Patch.esm",
+                "JIYTv2-ShipColorize-CargoExpanderX3-Patch.esm",
+                "JIYTv2-ShipColorize-CargoExpanderX10-Patch.esm",
+                "JIYTv2-ShipColorize-Patch.esm",
+                "JIYTv2-SKKShipPartsNoLevelAllVendors-Patch.esm",
+                "JIYTv2-StarfieldExtendedShieldsRebalanced-Patch.esm",
+                "JIYTv2-USU-Patch.esm",
+                "JIYTv2-USUNoLevelRequirements-Patch.esm",
+                "JIYTv2-USUQuestRewards-Patch.esm",
+                "JIYTv2CargoExpanderX10.esm",
+                "JIYTv2CargoExpanderX3.esm",
+                "JIYTv2NoDecoratives.esm",
+                "JunkInYourTrunk_v2.esm",
             ]
         },
 	]
