@@ -126,12 +126,15 @@ $text_files | ForEach-Object {
     # main plugin
     "./data/JunkInYourTrunk_v" + $version.VersionMajor + ".esm"
     # optional plugins
-    "./data/JIYTv" + $version.VersionMajor + "CargoExpanderX10.esm"
     "./data/JIYTv" + $version.VersionMajor + "CargoExpanderX3.esm"
+    "./data/JIYTv" + $version.VersionMajor + "CargoExpanderX10.esm"
     "./data/JIYTv" + $version.VersionMajor + "NoDecoratives.esm"
     # compatibility patches
-    "./data/JIYTv" + $version.VersionMajor + "-SKKShipPartsNoLevelAllVendors-Patch.esm"
     "./data/JIYTv" + $version.VersionMajor + "-ShipColorize-Patch.esm"
+    "./data/JIYTv" + $version.VersionMajor + "-ShipColorize-BetterShipPartSnaps-Patch.esm"
+    "./data/JIYTv" + $version.VersionMajor + "-ShipColorize-CargoExpanderX3-Patch.esm"
+    "./data/JIYTv" + $version.VersionMajor + "-ShipColorize-CargoExpanderX10-Patch.esm"
+    "./data/JIYTv" + $version.VersionMajor + "-SKKShipPartsNoLevelAllVendors-Patch.esm"
     "./data/JIYTv" + $version.VersionMajor + "-StarfieldExtendedShieldsRebalanced-Patch.esm"
     "./data/JIYTv" + $version.VersionMajor + "-USU-Patch.esm"
     "./data/JIYTv" + $version.VersionMajor + "-USUNoLevelRequirements-Patch.esm"
