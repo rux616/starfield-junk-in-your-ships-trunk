@@ -1,0 +1,67 @@
+FormKey: 002FBB:JunkInYourTrunk_v2.esm
+EditorID: SMB_GravDrive_Nova_NG220_Fore_Btm
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+  Slots:
+  - 008226:Starfield.esm
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 0002D4:Starfield.esm
+    Value: 5
+  - ActorValue: 00ACDB:Starfield.esm
+    Value: 59
+  - ActorValue: 27BACE:Starfield.esm
+    Value: 50
+  - ActorValue: 2BFAFD:Starfield.esm
+    Value: 25
+  - ActorValue: 1EF0CB:Starfield.esm
+    Value: 118
+  - ActorValue: 1EF0C1:Starfield.esm
+    Value: 118
+  - ActorValue: 01158B:Starfield.esm
+    Value: 1
+  - ActorValue: 00855E:Starfield.esm
+    Value: 155
+  - ActorValue: 00854E:Starfield.esm
+    Value: 1
+  - ActorValue: 008223:Starfield.esm
+    Value: 10
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: 002EFE:JunkInYourTrunk_v2.esm
+- MutagenObjectType: DestructibleObjectComponent
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 26FE56:Starfield.esm
+  - 27BABF:Starfield.esm
+  - 2BCFC0:Starfield.esm
+  - 1462C2:Starfield.esm
+  - 142597:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: Grav-Antrieb NG220
+    - Language: English
+      String: NG220 Grav Drive
+    - Language: Spanish
+      String: Motor gravitacional NG220
+    - Language: French
+      String: Astromoteur NG220
+    - Language: Italian
+      String: Gravimotore NG220
+    - Language: Japanese
+      String: NG220グラヴ・ドライブ
+    - Language: Polish
+      String: Napęd grawitonowy NG220
+    - Language: Portuguese_Brazil
+      String: Motor Grav NG220
+    - Language: ChineseSimplified
+      String: NG220重力推动器
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component
+- Spaceship_InstanceData

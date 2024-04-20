@@ -1,0 +1,19 @@
+FormKey: 0023A9:JunkInYourTrunk_v2.esm
+MajorRecordFlagsRaw: 512
+EditorID: ShipPI_SMOD_Shield_Nautilus_Bastille-S80-Base_Top
+FormVersion: 558
+StarfieldMajorRecordFlags:
+- 0x200
+ObjectBounds:
+  First: -2.0683594, -2.0527344, -1.7490234
+  Second: 2.0683594, 2.0761719, 0.43847656
+ODTY: 0
+Transforms:
+  Ship: 050FA1:Starfield.esm
+Filter: '\Ships\Modules\Exterior\Shield\Nautilus\'
+Cell: 0023AA:JunkInYourTrunk_v2.esm
+Version: 0
+FNAM: 0x0E000000
+MaterialSwaps: []
+MajorFlags:
+- Prefab

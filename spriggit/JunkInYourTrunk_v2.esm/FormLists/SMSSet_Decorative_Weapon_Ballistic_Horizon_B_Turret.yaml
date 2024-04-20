@@ -1,0 +1,28 @@
+FormKey: 001E82:JunkInYourTrunk_v2.esm
+EditorID: SMSSet_Decorative_Weapon_Ballistic_Horizon_B_Turret
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Dekoratives Horizon BLS-B-Turmset
+  - Language: English
+    String: Decorative Horizon BLS-B Turret Set
+  - Language: Spanish
+    String: Juego de torreta Horizon BLS-B decorativo
+  - Language: French
+    String: Ensemble de tourelle Horizon BLS-B décoratif
+  - Language: Italian
+    String: Set torretta Horizon BLS-B decorativo
+  - Language: Japanese
+    String: 装飾ホライゾン BLS-B 砲塔セット
+  - Language: Polish
+    String: Zestaw wieżyczek dekoracyjnych Horizon BLS-B
+  - Language: Portuguese_Brazil
+    String: 'Conjunto decorativo de torre Horizon BLS-B '
+  - Language: ChineseSimplified
+    String: 装饰地平线 BLS-B 炮塔套装
+Items:
+- 001E16:JunkInYourTrunk_v2.esm
+- 001E17:JunkInYourTrunk_v2.esm
+- 001E18:JunkInYourTrunk_v2.esm
+- 001E19:JunkInYourTrunk_v2.esm

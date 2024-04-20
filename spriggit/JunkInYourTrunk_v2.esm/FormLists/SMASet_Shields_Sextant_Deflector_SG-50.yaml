@@ -1,0 +1,48 @@
+FormKey: 16E08A:Starfield.esm
+EditorID: SMASet_Shields_Sextant_Deflector_SG-50
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Sextant Deflector SG- 50-Set
+  - Language: English
+    String: Sextant Deflector SG-50 Set
+  - Language: Spanish
+    String: Juego de deflector de sextante SG-50
+  - Language: French
+    String: Ensemble de déflecteur sextant SG-50
+  - Language: Italian
+    String: Set deflettore sestante SG-50
+  - Language: Japanese
+    String: 六分儀ディフレクターSG-50セット
+  - Language: Polish
+    String: Zestaw deflektora sekstantu SG-50
+  - Language: Portuguese_Brazil
+    String: Conjunto de defletor sextante SG-50
+  - Language: ChineseSimplified
+    String: 六分仪偏转器 SG-50套装
+Items:
+- 26F123:Starfield.esm
+- 16E072:Starfield.esm
+- 0012F7:JunkInYourTrunk_v2.esm
+- 0012F8:JunkInYourTrunk_v2.esm
+- 0012F9:JunkInYourTrunk_v2.esm
+- 0012FA:JunkInYourTrunk_v2.esm
+- 0012FB:JunkInYourTrunk_v2.esm
+- 0012FC:JunkInYourTrunk_v2.esm
+- 0012FD:JunkInYourTrunk_v2.esm
+- 0012FE:JunkInYourTrunk_v2.esm
+- 0012FF:JunkInYourTrunk_v2.esm
+- 001300:JunkInYourTrunk_v2.esm
+- 001301:JunkInYourTrunk_v2.esm
+- 001302:JunkInYourTrunk_v2.esm
+- 001303:JunkInYourTrunk_v2.esm
+- 001304:JunkInYourTrunk_v2.esm
+- 001305:JunkInYourTrunk_v2.esm
+- 001306:JunkInYourTrunk_v2.esm
+- 001307:JunkInYourTrunk_v2.esm
+- 001308:JunkInYourTrunk_v2.esm
+- 001309:JunkInYourTrunk_v2.esm
+- 00130A:JunkInYourTrunk_v2.esm
+- 00130B:JunkInYourTrunk_v2.esm
+- 00130C:JunkInYourTrunk_v2.esm

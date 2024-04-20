@@ -1,0 +1,45 @@
+FormKey: 001E4F:JunkInYourTrunk_v2.esm
+EditorID: SMS_Decorative_Weapon_Ballistic_Shinigami_C_Turret_Stbd
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 00ACDB:Starfield.esm
+    Value: 1
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: 0BDC40:Starfield.esm
+- MutagenObjectType: DestructibleObjectComponent
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 0B8537:Starfield.esm
+  - 1462C9:Starfield.esm
+  - 1219CA:Starfield.esm
+  - 27BAC5:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: 'Dekorativ: Shinigami BLS-C-Turm'
+    - Language: English
+      String: 'Decorative: Shinigami BLS-C Turret'
+    - Language: Spanish
+      String: 'Decorativo: Torreta Shinigami BLS-C'
+    - Language: French
+      String: 'Décoratif : Tourelle Shinigami BLS-C'
+    - Language: Italian
+      String: 'Decorativo : Torretta Shinigami BLS-C'
+    - Language: Japanese
+      String: '装飾品: 死神 BLS-C タレット'
+    - Language: Polish
+      String: 'Ozdoba: Wieża Shinigami BLS-C'
+    - Language: Portuguese_Brazil
+      String: 'Decorativo: Shinigami BLS- Torre C'
+    - Language: ChineseSimplified
+      String: 装饰：Shinigami BLS-C 炮塔
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component

@@ -1,0 +1,48 @@
+FormKey: 18CBF8:Starfield.esm
+EditorID: SMSSet_Cargo_Protectorate_Galleon-S202
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: 'Protectorate: Frachtraum-Set Galleon S202'
+  - Language: English
+    String: Protectorate Galleon S202 Set
+  - Language: Spanish
+    String: Equipo Protectorate Galleon S202
+  - Language: French
+    String: Kit Galleon S202 Protectorate
+  - Language: Italian
+    String: Set Protectorate Galleon S202
+  - Language: Japanese
+    String: プロテクトレート・ガレオンS202セット
+  - Language: Polish
+    String: Protectorate - zestaw Galleon S202
+  - Language: Portuguese_Brazil
+    String: Conj. Protectorate Galleon S202
+  - Language: ChineseSimplified
+    String: 保护国大帆船S202套组
+Items:
+- 270477:Starfield.esm
+- 18CBF6:Starfield.esm
+- 18CBF5:Starfield.esm
+- 18CBF4:Starfield.esm
+- 000DE3:JunkInYourTrunk_v2.esm
+- 000DE4:JunkInYourTrunk_v2.esm
+- 000DE5:JunkInYourTrunk_v2.esm
+- 000DE6:JunkInYourTrunk_v2.esm
+- 000DE7:JunkInYourTrunk_v2.esm
+- 000DE8:JunkInYourTrunk_v2.esm
+- 000DE9:JunkInYourTrunk_v2.esm
+- 000DEA:JunkInYourTrunk_v2.esm
+- 000DEB:JunkInYourTrunk_v2.esm
+- 000DEC:JunkInYourTrunk_v2.esm
+- 000DED:JunkInYourTrunk_v2.esm
+- 000DEE:JunkInYourTrunk_v2.esm
+- 000DEF:JunkInYourTrunk_v2.esm
+- 000DF0:JunkInYourTrunk_v2.esm
+- 000DF1:JunkInYourTrunk_v2.esm
+- 000DF2:JunkInYourTrunk_v2.esm
+- 000DF3:JunkInYourTrunk_v2.esm
+- 000DF4:JunkInYourTrunk_v2.esm
+- 000DF5:JunkInYourTrunk_v2.esm
+- 000DF6:JunkInYourTrunk_v2.esm

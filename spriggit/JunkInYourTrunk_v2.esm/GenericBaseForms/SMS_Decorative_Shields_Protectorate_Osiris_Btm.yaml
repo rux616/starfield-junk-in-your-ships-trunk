@@ -1,0 +1,43 @@
+FormKey: 001560:JunkInYourTrunk_v2.esm
+EditorID: SMS_Decorative_Shields_Protectorate_Osiris_Btm
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 00ACDB:Starfield.esm
+    Value: 3
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: 0013B5:JunkInYourTrunk_v2.esm
+- MutagenObjectType: DestructibleObjectComponent
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 1462CC:Starfield.esm
+  - 27BAC5:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: 'Dekorativ: Protectorate Osiris'
+    - Language: English
+      String: 'Decorative: Protectorate Osiris'
+    - Language: Spanish
+      String: 'Decorativo: Protectorado Osiris'
+    - Language: French
+      String: ' Décoratif : Protectorat Osiris'
+    - Language: Italian
+      String: 'Decorativa: protettorato Osiride'
+    - Language: Japanese
+      String: '装飾: オシリス保護領'
+    - Language: Polish
+      String: 'Dekoracyjny: Protektorat Ozyrys'
+    - Language: Portuguese_Brazil
+      String: 'Decorativo: Protetorado Osíris'
+    - Language: ChineseSimplified
+      String: 装饰：奥西里斯保护国
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component

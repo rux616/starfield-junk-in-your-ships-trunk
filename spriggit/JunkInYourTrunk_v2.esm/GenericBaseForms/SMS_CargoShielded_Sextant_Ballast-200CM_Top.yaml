@@ -1,0 +1,50 @@
+FormKey: 000817:JunkInYourTrunk_v2.esm
+EditorID: SMS_CargoShielded_Sextant_Ballast-200CM_Top
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 0002D4:Starfield.esm
+    Value: 5
+  - ActorValue: 00ACDB:Starfield.esm
+    Value: 56
+  - ActorValue: 02B344:Starfield.esm
+    Value: 190
+  - ActorValue: 27BACE:Starfield.esm
+    Value: 50
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: 000815:JunkInYourTrunk_v2.esm
+- MutagenObjectType: DestructibleObjectComponent
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 1462C5:Starfield.esm
+  - 27BABF:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: Ballast 200CM Abgeschirmter Frachtraum
+    - Language: English
+      String: Ballast 200CM Shielded Cargo Hold
+    - Language: Spanish
+      String: Lastre 200CM Bodega de carga blindada
+    - Language: French
+      String: Ballast 200CM soute blindée
+    - Language: Italian
+      String: Stivale di carico schermato Zavorra 200CM
+    - Language: Japanese
+      String: バラスト 200CM シールドカーゴホールド
+    - Language: Polish
+      String: Balast 200CM z ekranowaną ładownią
+    - Language: Portuguese_Brazil
+      String: Reator 200CM Blindado Cargo Hold
+    - Language: ChineseSimplified
+      String: 镇流器 200CM 屏蔽货舱
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component
+- Spaceship_InstanceData

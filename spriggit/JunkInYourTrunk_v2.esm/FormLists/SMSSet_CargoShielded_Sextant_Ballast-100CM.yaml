@@ -1,0 +1,32 @@
+FormKey: 0008B2:JunkInYourTrunk_v2.esm
+EditorID: SMSSet_CargoShielded_Sextant_Ballast-100CM
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Sextant Ballast 100CM Abgeschirmtes Set
+  - Language: English
+    String: Sextant Ballast 100CM Shielded Set
+  - Language: Spanish
+    String: Sextante Lastre 100CM Conjunto blindado
+  - Language: French
+    String: Sextant Ballast 100CM Ensemble blindé
+  - Language: Italian
+    String: Set protetto sestante zavorra 100CM
+  - Language: Japanese
+    String: 六分儀バラスト 100CM シールド セット
+  - Language: Polish
+    String: Sekstantowy balast 100CM Zestaw ekranowany
+  - Language: Portuguese_Brazil
+    String: Sextant Ballast 100CM Shielded Set
+  - Language: ChineseSimplified
+    String: 六分仪镇流器 100CM 屏蔽套件
+Items:
+- 26512F:Starfield.esm
+- 0008F3:JunkInYourTrunk_v2.esm
+- 0008F4:JunkInYourTrunk_v2.esm
+- 0008F5:JunkInYourTrunk_v2.esm
+- 0008F6:JunkInYourTrunk_v2.esm
+- 0008F7:JunkInYourTrunk_v2.esm
+- 0008F8:JunkInYourTrunk_v2.esm
+- 0008F9:JunkInYourTrunk_v2.esm

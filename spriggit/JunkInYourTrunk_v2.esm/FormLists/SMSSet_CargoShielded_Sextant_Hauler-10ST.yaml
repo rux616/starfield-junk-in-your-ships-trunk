@@ -1,0 +1,48 @@
+FormKey: 1BE9D3:Starfield.esm
+EditorID: SMSSet_CargoShielded_Sextant_Hauler-10ST
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Sextant Hauler 10ST Shielded Set
+  - Language: English
+    String: Sextant Hauler 10ST Shielded Set
+  - Language: Spanish
+    String: Sextant Hauler 10ST Blinded Set
+  - Language: French
+    String: Ensemble blindé Sextant Hauler 10ST
+  - Language: Italian
+    String: Set schermato sestante Hauler 10ST
+  - Language: Japanese
+    String: 六分儀運搬人 10ST シールド セット
+  - Language: Polish
+    String: Sextant Hauler 10ST Zestaw z ekranem
+  - Language: Portuguese_Brazil
+    String: Conjunto blindado Sextante Hauler 10ST
+  - Language: ChineseSimplified
+    String: 六分仪拖车 10ST 屏蔽套装
+Items:
+- 115959:Starfield.esm
+- 11595A:Starfield.esm
+- 000995:JunkInYourTrunk_v2.esm
+- 000996:JunkInYourTrunk_v2.esm
+- 000997:JunkInYourTrunk_v2.esm
+- 000998:JunkInYourTrunk_v2.esm
+- 000999:JunkInYourTrunk_v2.esm
+- 00099A:JunkInYourTrunk_v2.esm
+- 00099B:JunkInYourTrunk_v2.esm
+- 00099C:JunkInYourTrunk_v2.esm
+- 00099D:JunkInYourTrunk_v2.esm
+- 00099E:JunkInYourTrunk_v2.esm
+- 00099F:JunkInYourTrunk_v2.esm
+- 0009A0:JunkInYourTrunk_v2.esm
+- 0009A1:JunkInYourTrunk_v2.esm
+- 0009A2:JunkInYourTrunk_v2.esm
+- 0009A3:JunkInYourTrunk_v2.esm
+- 0009A4:JunkInYourTrunk_v2.esm
+- 0009A5:JunkInYourTrunk_v2.esm
+- 0009A6:JunkInYourTrunk_v2.esm
+- 0009A7:JunkInYourTrunk_v2.esm
+- 0009A8:JunkInYourTrunk_v2.esm
+- 0009A9:JunkInYourTrunk_v2.esm
+- 0009AA:JunkInYourTrunk_v2.esm

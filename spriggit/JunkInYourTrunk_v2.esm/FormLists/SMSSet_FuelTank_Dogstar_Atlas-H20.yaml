@@ -1,0 +1,36 @@
+FormKey: 171218:Starfield.esm
+EditorID: SMSSet_FuelTank_Dogstar_Atlas-H20
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Dogstar Atlas H20 Set
+  - Language: English
+    String: Dogstar Atlas H20 Set
+  - Language: Spanish
+    String: Dogstar Atlas H20 Set
+  - Language: French
+    String: Ensemble Dogstar Atlas H20
+  - Language: Italian
+    String: Set Dogstar Atlas H20
+  - Language: Japanese
+    String: ドッグスター アトラス H20 セット
+  - Language: Polish
+    String: Zestaw Dogstar Atlas H20
+  - Language: Portuguese_Brazil
+    String: Conjunto Dogstar Atlas H20
+  - Language: ChineseSimplified
+    String: Dogstar Atlas H20 套装
+Items:
+- 2704A9:Starfield.esm
+- 17AB4B:Starfield.esm
+- 001C57:JunkInYourTrunk_v2.esm
+- 001C5E:JunkInYourTrunk_v2.esm
+- 001C65:JunkInYourTrunk_v2.esm
+- 001C6C:JunkInYourTrunk_v2.esm
+- 001C73:JunkInYourTrunk_v2.esm
+- 001C7A:JunkInYourTrunk_v2.esm
+- 001C81:JunkInYourTrunk_v2.esm
+- 001C88:JunkInYourTrunk_v2.esm
+- 001C8F:JunkInYourTrunk_v2.esm
+- 001C96:JunkInYourTrunk_v2.esm

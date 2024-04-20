@@ -1,0 +1,22 @@
+SpriggitSource:
+  PackageName: Spriggit.Yaml.Starfield
+  Version: 0.18.0
+ModKey: JIYTv2CargoExpanderX10.esm
+GameRelease: Starfield
+ModHeader:
+  Flags:
+  - Master
+  - Localized
+  Stats:
+    NumRecords: 524
+    NextFormID: 2048
+  Author: rux616
+  Description: >-
+    Expands all cargo hold capacity to 10x the original value.
+
+
+    Version: 2.19.0
+  MasterReferences:
+  - Master: Starfield.esm
+  - Master: BlueprintShips-Starfield.esm
+  - Master: JunkInYourTrunk_v2.esm

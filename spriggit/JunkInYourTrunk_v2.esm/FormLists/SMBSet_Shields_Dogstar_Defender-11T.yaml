@@ -1,0 +1,30 @@
+FormKey: 171210:Starfield.esm
+EditorID: SMBSet_Shields_Dogstar_Defender-11T
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Dogstar Defender 11T-Set
+  - Language: English
+    String: Dogstar Defender 11T Set
+  - Language: Spanish
+    String: 'Conjunto Dogstar Defender 11T '
+  - Language: French
+    String: Ensemble Dogstar Defender 11T
+  - Language: Italian
+    String: Dogstar Set Defender 11T
+  - Language: Japanese
+    String: ドッグスター ディフェンダー 11T セット
+  - Language: Polish
+    String: Zestaw Dogstar Defender 11T
+  - Language: Portuguese_Brazil
+    String: Conjunto Dogstar Defender 11T
+  - Language: ChineseSimplified
+    String: Dogstar Defender 11T 套装
+Items:
+- 26F988:Starfield.esm
+- 17AB3D:Starfield.esm
+- 00137E:JunkInYourTrunk_v2.esm
+- 00137F:JunkInYourTrunk_v2.esm
+- 001380:JunkInYourTrunk_v2.esm
+- 001381:JunkInYourTrunk_v2.esm

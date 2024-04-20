@@ -1,0 +1,48 @@
+FormKey: 003B0A:JunkInYourTrunk_v2.esm
+EditorID: SMSSet_Decorative_GravDrive_Vanguard_Recon
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Dekoratives Vanguard-Aufklärungsset
+  - Language: English
+    String: Decorative Vanguard Recon Set
+  - Language: Spanish
+    String: Set de reconocimiento Vanguard decorativo
+  - Language: French
+    String: Ensemble décoratif de reconnaissance de l'avant-garde
+  - Language: Italian
+    String: Set da ricognizione decorativo dell'Avanguardia
+  - Language: Japanese
+    String: 装飾用ヴァンガード偵察セット
+  - Language: Polish
+    String: Dekoracyjny zestaw rozpoznawczy Straży Przedniej
+  - Language: Portuguese_Brazil
+    String: Conjunto Decorativo Vanguard Recon
+  - Language: ChineseSimplified
+    String: 装饰先锋侦察套装
+Items:
+- 003B0B:JunkInYourTrunk_v2.esm
+- 003B12:JunkInYourTrunk_v2.esm
+- 003B19:JunkInYourTrunk_v2.esm
+- 003B20:JunkInYourTrunk_v2.esm
+- 003B27:JunkInYourTrunk_v2.esm
+- 003B2F:JunkInYourTrunk_v2.esm
+- 003B37:JunkInYourTrunk_v2.esm
+- 003B3F:JunkInYourTrunk_v2.esm
+- 003B47:JunkInYourTrunk_v2.esm
+- 003B4E:JunkInYourTrunk_v2.esm
+- 003B55:JunkInYourTrunk_v2.esm
+- 003B5C:JunkInYourTrunk_v2.esm
+- 003B63:JunkInYourTrunk_v2.esm
+- 003B6A:JunkInYourTrunk_v2.esm
+- 003B71:JunkInYourTrunk_v2.esm
+- 003B78:JunkInYourTrunk_v2.esm
+- 003B7F:JunkInYourTrunk_v2.esm
+- 003B86:JunkInYourTrunk_v2.esm
+- 003B8D:JunkInYourTrunk_v2.esm
+- 003B94:JunkInYourTrunk_v2.esm
+- 003B9B:JunkInYourTrunk_v2.esm
+- 003BBE:JunkInYourTrunk_v2.esm
+- 003BC6:JunkInYourTrunk_v2.esm
+- 003BCE:JunkInYourTrunk_v2.esm

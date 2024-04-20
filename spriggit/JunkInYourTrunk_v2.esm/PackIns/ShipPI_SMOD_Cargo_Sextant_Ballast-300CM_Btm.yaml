@@ -1,0 +1,10 @@
+FormKey: 00088D:JunkInYourTrunk_v2.esm
+EditorID: ShipPI_SMOD_Cargo_Sextant_Ballast-300CM_Btm
+ODTY: 0
+Transforms:
+  Ship: 050FBE:Starfield.esm
+Filter: '\Ships\Modules\Exterior\Cargo\Sextant\'
+Cell: 000894:JunkInYourTrunk_v2.esm
+Version: 0
+FNAM: 0x0E000000
+MaterialSwaps: []

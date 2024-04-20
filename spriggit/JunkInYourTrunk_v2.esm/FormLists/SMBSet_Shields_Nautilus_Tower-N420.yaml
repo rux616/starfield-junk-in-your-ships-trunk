@@ -1,0 +1,30 @@
+FormKey: 001394:JunkInYourTrunk_v2.esm
+EditorID: SMBSet_Shields_Nautilus_Tower-N420
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Nautilus Tower N420-Set
+  - Language: English
+    String: Nautilus Tower N420 Set
+  - Language: Spanish
+    String: Nautilus Tower N420 Set
+  - Language: French
+    String: Ensemble Nautilus Tower N420
+  - Language: Italian
+    String: Set torretta Nautilus N420
+  - Language: Japanese
+    String: ノーチラス タワー N420 セット
+  - Language: Polish
+    String: Zestaw Nautilus Tower N420
+  - Language: Portuguese_Brazil
+    String: Conjunto Nautilus Tower N420
+  - Language: ChineseSimplified
+    String: 鹦鹉螺塔 N420 套装
+Items:
+- 0014C5:JunkInYourTrunk_v2.esm
+- 0014C6:JunkInYourTrunk_v2.esm
+- 0014C7:JunkInYourTrunk_v2.esm
+- 0014C8:JunkInYourTrunk_v2.esm
+- 0014C9:JunkInYourTrunk_v2.esm
+- 26F968:Starfield.esm

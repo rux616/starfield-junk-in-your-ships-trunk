@@ -1,0 +1,5 @@
+MutagenObjectType: PlacedObject
+FormKey: 000ED1:JunkInYourTrunk_v2.esm
+Base: 001FAB:JunkInYourTrunk_v2.esm
+Position: -2.25, 0, 0
+Rotation: 0, 1.5707963, 0

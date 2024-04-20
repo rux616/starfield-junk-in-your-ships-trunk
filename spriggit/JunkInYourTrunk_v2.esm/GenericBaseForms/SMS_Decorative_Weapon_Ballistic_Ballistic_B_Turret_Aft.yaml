@@ -1,0 +1,45 @@
+FormKey: 001E11:JunkInYourTrunk_v2.esm
+EditorID: SMS_Decorative_Weapon_Ballistic_Ballistic_B_Turret_Aft
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 00ACDB:Starfield.esm
+    Value: 1
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: 0BDC2D:Starfield.esm
+- MutagenObjectType: DestructibleObjectComponent
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 0B8537:Starfield.esm
+  - 1462C7:Starfield.esm
+  - 1219CA:Starfield.esm
+  - 27BABE:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: 'Dekorativ: ballistischer BLS-B-Turm'
+    - Language: English
+      String: 'Decorative: Ballistic BLS-B Turret'
+    - Language: Spanish
+      String: 'Decorativo: Torreta balística BLS-B'
+    - Language: French
+      String: 'Décoratif : Tourelle balistique BLS-B'
+    - Language: Italian
+      String: 'Decorativo: torretta balistica BLS-B'
+    - Language: Japanese
+      String: '装飾: 弾道 BLS-B 砲塔'
+    - Language: Polish
+      String: 'Dekoracyjny: Balistyczny BLS-B Wieża'
+    - Language: Portuguese_Brazil
+      String: 'Decorativo: Torre balística BLS-B'
+    - Language: ChineseSimplified
+      String: 装饰：弹道 BLS-B 炮塔
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component

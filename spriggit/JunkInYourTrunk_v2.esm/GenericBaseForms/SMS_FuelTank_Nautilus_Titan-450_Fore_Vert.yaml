@@ -1,0 +1,56 @@
+FormKey: 001CE8:JunkInYourTrunk_v2.esm
+EditorID: SMS_FuelTank_Nautilus_Titan-450_Fore_Vert
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 0002D4:Starfield.esm
+    Value: 5
+  - ActorValue: 00ACDB:Starfield.esm
+    Value: 16
+  - ActorValue: 27BACE:Starfield.esm
+    Value: 40
+  - ActorValue: 00854F:Starfield.esm
+    Value: 110
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: 001CBB:JunkInYourTrunk_v2.esm
+- MutagenObjectType: DestructibleObjectComponent
+  Destructible:
+    Data:
+      Health: 1
+      DESTCount: 1
+    Stages:
+    - Explosion: 054057:Starfield.esm
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 00D580:Starfield.esm
+  - 27BAC5:Starfield.esm
+  - 1462CB:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: He3-Tank Titan 450
+    - Language: English
+      String: Titan 450 He3 Tank
+    - Language: Spanish
+      String: Tanque de helio-3 Titan 450
+    - Language: French
+      String: Char Titan 450 He3
+    - Language: Italian
+      String: Serbatoio He3 Titan 450
+    - Language: Japanese
+      String: タイタン450He3タンク
+    - Language: Polish
+      String: Czołg Titan 450 He3
+    - Language: Portuguese_Brazil
+      String: Tanque de He3 Titã 450
+    - Language: ChineseSimplified
+      String: 土卫六450氦-3储罐
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component

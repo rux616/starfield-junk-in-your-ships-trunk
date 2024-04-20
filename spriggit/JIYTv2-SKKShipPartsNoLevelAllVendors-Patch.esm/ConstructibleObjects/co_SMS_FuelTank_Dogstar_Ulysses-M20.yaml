@@ -1,0 +1,32 @@
+FormKey: 2C2C4B:Starfield.esm
+EditorID: co_SMS_FuelTank_Dogstar_Ulysses-M20
+Description:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Treibstofftanks enthalten Helium-3 für Grav-Sprünge. Mit verbesserten Treibstofftanks schaffst du längere Reisen ohne Unterbrechungen.
+  - Language: English
+    String: Spaceship Fuel Tanks store Helium-3, which is used by the Grav Drive to perform a jump. Upgraded Fuel Tanks allow you to plot longer courses, to travel farther without stopping.
+  - Language: Spanish
+    String: Los tanques de combustible contienen helio-3, usado para realizar los saltos. Los tanques de combustible mejorados permiten viajes más largos sin necesidad de parar.
+  - Language: French
+    String: Les réservoirs contiennent de l'hélium 3, consommé lors des astroportations. Les réservoirs améliorés permettent des trajets plus longs, sans arrêts.
+  - Language: Italian
+    String: I serbatoi contengono elio-3, usato dal gravimotore per effettuare salti. Aggiornare i serbatoi consentirà rotte più lunghe e con meno soste.
+  - Language: Japanese
+    String: 宇宙船の燃料タンクは、グラヴ・ドライブがジャンプに使用するヘリウム3を貯蔵する。より良い燃料タンクがあれば、より長い進路を止まらずに移動できる
+  - Language: Polish
+    String: Baki na statku magazynują hel-3 wykorzystywany do skoków grawitonowych. Ulepszone baki pozwalają przemieszczać się na większe odległości bez postojów.
+  - Language: Portuguese_Brazil
+    String: Os tanques de combustível da nave armazenam hélio-3, usado pelo Motor Grav para realizar dobras. Tanques que recebem melhorias permitem trajetos mais longos e viagens sem paradas.
+  - Language: ChineseSimplified
+    String: 宇宙飞船燃料箱储存 Helium-3，重力驱动器使用它来执行跳跃。升级后的油箱可让您绘制更长的路线，无需停留即可行驶更远的距离。
+WorkbenchKeyword: 29C480:Starfield.esm
+CreatedObject: 001A34:JunkInYourTrunk_v2.esm
+AmountProduced: 1
+MenuSortOrder: 0.9688
+LearnMethod: DefaultOrConditions
+Value: 1650
+Categories:
+- 29C478:Starfield.esm
+RECF: 0

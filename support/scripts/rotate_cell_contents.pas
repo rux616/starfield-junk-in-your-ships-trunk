@@ -5,7 +5,7 @@
   Note: Starfield uses right-hand rule coordinates (https://en.wikipedia.org/wiki/Right-hand_rule#Coordinates)
   and rotations are clockwise positive (left-hand grip rule - thumb represents positive direction
   of axis of rotation and the fingers curl in the direction of a positive rotation), done in a ZYX
-  sequence. Facing the front of a ship:
+  sequence. Looking at the front of a ship that's facing you:
     +x is left (starboard)
     -x is right (port)
     +y is towards you (fore)
@@ -14,7 +14,11 @@
     -z is down
   --------------------
   Hotkey: Ctrl+Shift+R
-  --------------------
+}
+unit rotate_cell_contents;
+
+
+(*
   Copyright 2024 Dan Cassidy
 
   This program is free software: you can redistribute it and/or modify
@@ -31,12 +35,8 @@
   along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
   SPDX-License-Identifier: GPL-3.0-or-later
-}
-unit rotate_cell_contents;
-
-
-(*
-  Rotate Cell Contents v1.1.0
+  --------------------------------------------------------------------------------------------------
+  Rotate Cell Contents v1.3.0
 
   I've done my best to organize this code into logical sections, but it's still just a lot of code.
 
@@ -147,12 +147,12 @@ const
   GLOBAL_APPLY_TO_POSITION_DEFAULT = True;
   GLOBAL_APPLY_TO_ROTATION_DEFAULT = True;
 
-  GLOBAL_CLAMP_USE_DEFAULT = False;
+  GLOBAL_CLAMP_USE_DEFAULT = True;
   GLOBAL_CLAMP_MODE_DEFAULT = CLAMP_MODE_90;
   GLOBAL_POSITION_PRECISION_DEFAULT = -6;  // precision to nearest 0.000001
   GLOBAL_ROTATION_PRECISION_DEFAULT = -4;  // precision to nearest 0.0001
 
-  GLOBAL_DRY_RUN_DEFAULT = True;
+  GLOBAL_DRY_RUN_DEFAULT = False;
   GLOBAL_SAVE_TO_SAME_FILE_DEFAULT = True;
   GLOBAL_USE_SAME_SETTINGS_FOR_ALL_DEFAULT = True;
 
@@ -2422,17 +2422,12 @@ begin
     operation_mode_text := 'Rotating by ';
   if (global_dry_run) then dry_run_text := '[DRY RUN] ';
 
-  // save local copies of the global rotation variables so that they can be modified without affecting
-  // subsequent records
-  local_rotate_x := global_rotate_x;
-  local_rotate_y := global_rotate_y;
-  local_rotate_z := global_rotate_z;
-
   // show initial messaging, including the full name of the record being processed and the rotation
   // that will be applied
   AddMessage(FullPath(current_record));
-  AddMessage(dry_run_text + operation_mode_text + qv_to_str(0, local_rotate_x, local_rotate_y,
-    local_rotate_z, False, False, False, True, ' = ', '', DIGITS_ANGLE) + ' using rotation sequence '
+  AddMessage(ShortName(current_record));
+  AddMessage(dry_run_text + operation_mode_text + qv_to_str(0, global_rotate_x, global_rotate_y,
+    global_rotate_z, False, False, False, True, ' = ', '', DIGITS_ANGLE) + ' using rotation sequence '
     + rotation_sequence_to_str(global_rotation_sequence));
 
   // get initial rotation
@@ -2441,6 +2436,27 @@ begin
   initial_rotation_z := GetElementNativeValues(original_record, 'DATA - Position/Rotation\Rotation\Z');
   debug_print('Process: initial rotation: ' + vector_to_str(initial_rotation_x, initial_rotation_y,
     initial_rotation_z, False, True, DIGITS_ANGLE));
+
+  // instead of using the global_rotate_* variables, initialize local_rotate_* variables for use in
+  // calculations instead so that altering them won't affect subsequent records
+  if (global_operation_mode = OPERATION_MODE_SET) then begin
+    // if the operation mode is "set", then the local_rotate_* variables are set to the rotation that
+    // will transform the current rotation to the desired rotation
+    rotation_difference(
+      initial_rotation_x, initial_rotation_y, initial_rotation_z,
+      global_rotate_x, global_rotate_y, global_rotate_z,
+      global_rotation_sequence,
+      local_rotate_x, local_rotate_y, local_rotate_z
+    );
+  end else begin
+    // if the operation mode is "rotate", then the local_rotate_* variables can just start out as
+    // copies of the global_rotate_* variables
+    local_rotate_x := global_rotate_x;
+    local_rotate_y := global_rotate_y;
+    local_rotate_z := global_rotate_z;
+  end;
+  debug_print('Process: applying actual rotation of: ' + vector_to_str(local_rotate_x, local_rotate_y,
+    local_rotate_z, False, False, DIGITS_FULL));
 
   // get rotated rotation no matter what, since it's also needed for position calculation even if
   // not being applied to the rotation
@@ -2472,6 +2488,12 @@ begin
       final_rotation_z, False, True, DIGITS_ANGLE));
   end;
 
+  // rounding or clamping may have caused the rotation to fall outside the desired range of angles,
+  // so normalize them
+  final_rotation_x := normalize_angle(final_rotation_x);
+  final_rotation_y := normalize_angle(final_rotation_y);
+  final_rotation_z := normalize_angle(final_rotation_z);
+
   // apply previously-computed rotation to the record
   if (global_apply_to_rotation) then begin
     AddMessage(dry_run_text + 'Initial rotation: ' + vector_to_str(initial_rotation_x,
@@ -2492,7 +2514,7 @@ begin
     // reset additional_final_text since it's also used for rotation
     additional_final_text := '';
 
-    // the following lines having to do with the default_final_rotation_* and comparing the value
+    // the following lines (having to do with the default_final_rotation_* and comparing the value)
     // don't need to be done unless the rotation is being applied to the position, so this chunk of
     // code is placed behind the global_apply_to_position check
 

@@ -2,7 +2,7 @@ Junk In Your (Ship's) Trunk
 ===========================
 by rux616
 
-Version: 2.18.0
+Version: 2.19.0
 
 Table Of Contents
 -----------------
@@ -30,17 +30,17 @@ Overview
 
 Summary
 -------
-(Cargo holds, fuel tanks, shields, weapons. You want variety? We got variety. Adds new flips and decorative versions of many different modules.)
+(Cargo holds, fuel tanks, grav drives, shields, weapons. You want variety? We got variety. Adds new flips and decorative versions of many different ship modules.)
 
 NOTE: Now requires [Ship Builder Categories](https://www.nexusmods.com/starfield/mods/7310) - you will get a CTD without it installed and above this mod in your load order!
 
-Up? Yes! Down? Also yes! Left? Still yes! Right? I'll give you three guesses, and the first two don't count! You want variety? We got variety. The JIYT Consortium is proud to offer 455 additional cargo, 444 shield, and 309 fuel tank flips/orientations/variants over and above the defaults. Want that module to stick on the back, but it only sticks to the side right now? Come on in.
+You want variety? We got variety! Up? Yes! Down? Also yes! Left? Still yes! Right? You get three guesses, and the first two don't count! The JIYT Consortium is proud to offer an additional 455 cargo, 444 shield, 309 fuel tank, and 920 grav drive flips/orientations/variants over and above the defaults. Want that module to stick on the back, but it only sticks to the side right now? Come on in.
 
 But wait, there's more! As a bonus, you also get additional decorative versions of all of them! Plus weapons! That's right! All the looks with only a fraction of the cost or weight. And none of the functionality, but who cares about that when your ship looks this good, am I right? You can find these marvelous new modules in the various "Decorative [...]" categories in the Ship Builder.
 
-There are even some additional snap points added so you can do interesting things like putting certain "vertical" modules next to something else, though only for Cargo Holds at the moment; more modules will be converted in the future. (The JIYT Consortium is not responsible for any cursed creations you make with this feature.)
+There are even some additional snap points added so you can do interesting things like putting certain "vertical" modules next to something else, though only for cargo holds and grav drives at the moment; more modules will be converted in the future. (The JIYT Consortium is not responsible for any cursed creations you make with this feature.)
 
-Translation services powered by Google Translate and xTranslator; the JIYT Consortium apologizes in advance if your mother was accidentally insulted. If that is the case (or you see other errors), please provide feedback and it will be fixed as soon as possible.
+Translations are provided for the following languages: German (de), Spanish (es), French (fr), Italian (it), Japanese (ja), Polish (pl), Brazilian Portuguese (ptbr), and Simplified Chinese (zhhans). As these are powered by Google Translate (plus xTranslator) they may not be entirely accurate and the JIYT Consortium apologizes in advance if your mother was accidentally insulted. If that is the case (or you see other errors), please provide feedback and it will be fixed as soon as possible.
 
 For a complete listing of all modules provided, please see the "[List of Modules](#list-of-modules)" section at the bottom of this document.
 
@@ -54,22 +54,21 @@ I know that some people use mods that increase the capacity of cargo modules by 
 
 Compatibility
 -------------
-- [All ship parts unlevelled at all vendors (ESM)](https://www.nexusmods.com/starfield/mods/6060) by SKK50: **[Patch required]** Depending on whether JIYT or this mod is set to higher priority, either some parts simply won't show up or will still have level or vendor requirements. Use the included compatibility patch. (checked 2023-11-30; version 002)
-- [Avontech Shipyards](https://www.nexusmods.com/starfield/mods/8057) by kaosnyrb: Fully compatible. (checked 2024-01-16; version 1.2.0)
-- [Better Ship Part Flips](https://www.nexusmods.com/starfield/mods/5953) by Freschu: Fully compatible. (checked 2024-01-16; version 0.5.0)
-- [Better Ship Part Snaps](https://www.nexusmods.com/starfield/mods/5698) by Freschu: Fully compatible, but the flips added by JIYT won't have any particularly enhanced snaps (checked 2023-11-07; version 0.3.0)
-- [DerreTech](https://www.nexusmods.com/starfield/mods/5686) by DerekM17x: Fully compatible. (checked 2024-01-16; version 0)
-- [Ship Colorize](https://www.nexusmods.com/starfield/mods/7003) by DerekM17x: **[Patch required]** Changes made by Ship Colorize to the Dogstar StorMax 40/60 Cargo Holds won't show up or the flips will be weird, depending on which mod wins the conflict. Use the included compatibility patch. (checked 2023-11-30; version 1.0.6)
-- [Ship Module Snap Expansion](https://www.nexusmods.com/starfield/mods/6029) by Gilibran: Fully compatible with all-in-one plugin; other plugins not checked - use at your own risk. (checked 2024-01-16; version 1.0.1)
-- [Starfield Extended - Shields Rebalanced](https://www.nexusmods.com/starfield/mods/6238) by Gambit77: **[Patch required]** Shields will either be missing flips or not have higher health, depending on which mod wins the conflict. Use the included compatibility patch. (checked 2023-11-29; version 1.0)
-- [TN's Ship Modifications All in One](https://www.nexusmods.com/starfield/mods/6376) by TheOGTennessee: **[Patch required]** Decoratives will conflict, and also some cargo hold capacity will be different, depending on which mod wins the conflicts. Use the compatibility patch available on the TN's Ship Modifications All in One mod page. (checked 2024-01-16; version v2.0.2)
-- [Ultimate Shipyards Unlocked](https://www.nexusmods.com/starfield/mods/4723) by JustAnOrdinaryGuy: **[Patch required]** Incompatibilities with the All In One plugin, and the "No Level Requirements" and "Quest Rewards" modules from the modular version. Use the included compatibility patch/patches. (checked 2024-01-16; version 1.4)
+- [All ship parts unlevelled at all vendors (ESM)](https://www.nexusmods.com/starfield/mods/6060) by SKK50: **[Patch required]** Depending on whether JIYT or this mod is set to higher priority, either some parts simply won't show up or will still have level or vendor requirements. Use the included compatibility patch. (checked 2024-04-16; version 002)
+- [Avontech Shipyards](https://www.nexusmods.com/starfield/mods/8057) by kaosnyrb: Fully compatible. (checked 2024-04-16; version 1.2.0)
+- [Better Ship Part Flips](https://www.nexusmods.com/starfield/mods/5953) by Freschu: Fully compatible. (checked 2024-04-16; version 0.5.0)
+- [Better Ship Part Snaps](https://www.nexusmods.com/starfield/mods/5698) by Freschu: If using the Ship Colorize compatibility patch, there is an additional patch (included) that should be used to restore feature parity with Better Ship Part Snaps. Note the flips added by JIYT won't usually have any particularly enhanced snaps. (checked 2024-04-16; version 0.3.0)
+- [DerreTech](https://www.nexusmods.com/starfield/mods/5686) by DerekM17x: Fully compatible. (checked 2024-04-16; version 1.7.7b)
+- [Ship Colorize](https://www.nexusmods.com/starfield/mods/7003) by DerekM17x: **[Patch required]** Changes made by Ship Colorize to the Dogstar StorMax 40/60 Cargo Holds won't show up or the flips will be weird, depending on which mod wins the conflict. Additionally, the Reladyne Class C J-5x grav drives and the the Ballistic 600T fuel tank won't have their modified color changes available. Use the included compatibility patch. (checked 2024-04-16; version 1.0.8)
+- [Ship Module Snap Expansion](https://www.nexusmods.com/starfield/mods/6029) by Gilibran: Fully compatible with all-in-one plugin; other plugins not checked - use at your own risk. (checked 2024-04-16; version 1.0.1)
+- [Starfield Extended - Shields Rebalanced](https://www.nexusmods.com/starfield/mods/6238) by Gambit77: **[Patch required]** Shields will either be missing flips or not have higher health, depending on which mod wins the conflict. Use the included compatibility patch. (checked 2024-04-16; version 1.0)
+- [TN's Ship Modifications All in One](https://www.nexusmods.com/starfield/mods/6376) by TheOGTennessee: **[Patch required]** Decoratives will conflict, and also some cargo hold capacity will be different, depending on which mod wins the conflicts. Use the compatibility patch available on the TN's Ship Modifications All in One mod page. (checked 2024-04-16; version v2.0.2)
+- [Ultimate Shipyards Unlocked](https://www.nexusmods.com/starfield/mods/4723) by JustAnOrdinaryGuy: **[Patch required]** Incompatibilities with the All In One plugin, and the "No Level Requirements" and "Quest Rewards" modules from the modular version. Use the included compatibility patch/patches. (checked 2024-04-16; version 1.4)
 
 ([TOC](#table-of-contents))
 
 Known Issues
 ------------
-- Modules are clean and have no lights. The vanilla ship modules have a number of things like lights and decals (scorch marks, dirt streaks, etc.) applied to them. Due to the method by which they are applied, I can't reasonably add them until we get access to the CK.
 - Module icons (for the added orientations) in the Ship Builder are missing. This is another thing that is probably going to have to wait until we get access to the CK to get fixed.
 - Some modules (shields, for example) don't really visually attach to certain other modules in certain orientations well. Bethesda did a really good job designing a modular ship system with one major exception: the visual attachment points. There is one style of attachment points for fore/aft, a different style for port/starboard, and yet another style for top/bottom. Because none of them match, some module variants/orientations just don't look right when attaching to others. I'm not redesigning or redoing all the 3D models for every ship part in the game (yet, at least. lol), so if some modules don't match quite in the way you want them to and it bothers you that much, you're going to either need to not use that particular variant/orientation combination, or find a different combination that _does_ work.
 - Protectorate Caravel V101, V102, V103, and V104 Cargo Holds have some snap points slightly misaligned in vertical orientations (and a couple others). The snap points are not actually misaligned, the model is, and will thus need to wait until the CK is released to get fixed.
@@ -125,8 +124,8 @@ Make sure your `StarfieldCustom.ini` file in the "Documents\My Games\Starfield" 
 
 License
 =======
-- All code files are copyright 2023 Dan Cassidy, and are licensed under the [GPL v3.0 or later](https://www.gnu.org/licenses/gpl-3.0.en.html).
-- All non-code files are copyright 2023 Dan Cassidy, and are licensed under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
+- All code files are copyright 2023, 2024 Dan Cassidy, and are licensed under the [GPL v3.0 or later](https://www.gnu.org/licenses/gpl-3.0.en.html).
+- All non-code files are copyright 2023, 2024 Dan Cassidy, and are licensed under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
 
 ([TOC](#table-of-contents))
 
@@ -140,12 +139,13 @@ Nexus Mods: For mod hosting and for the Vortex Mod Manager
 Avi: Help writing the summary to make it a bit less dry, and for helping to test this mod
 Lively: For helping to test this mod
 TheOGTennessee: For the idea to include 3x and 10x cargo capacity modifiers
-Freschu: For developing a really handy xEdit script that makes my life easier
+Freschu: For developing a really handy xEdit script that makes my life easier, and helping me with the rotate_cell_contents xedit script
 
 This mod's repo contains the following programs, each having their own copyrights and licenses:
 
 - [7-Zip 23.01 (2023-06-20) Console Executable by Igor Pavlov](https://www.7-zip.org/)
 - [BSArch v0.9c (part of xEdit 4.1.4u) by zilav, ElminsterAU, and Sheson](https://github.com/TES5Edit/TES5Edit)
+- [SpriggitCLI v0.18 by Noggog](https://github.com/Mutagen-Modding/Spriggit)
 
 ([TOC](#table-of-contents))
 
@@ -225,6 +225,47 @@ List of Modules
 - Nautilus Titan 350 Fuel Tank (v2.14.0)
 - Nautilus Titan 450 Fuel Tank (v2.14.0)
 - Nautilus Titan 550 Fuel Tank (v2.14.0)
+**Grav Drives:**
+- DeepCore Helios 100 Grav Drive (v2.19.0)
+- DeepCore Helios 200 Grav Drive (v2.19.0)
+- DeepCore Helios 300 Grav Drive (v2.19.0)
+- DeepCore Helios 400 Grav Drive (v2.19.0)
+- DeepCore Aurora 11G Grav Drive (v2.19.0)
+- DeepCore Aurora 12G Grav Drive (v2.19.0)
+- DeepCore Aurora 13G Grav Drive (v2.19.0)
+- DeepCore Apollo GV100 Grav Drive (v2.19.0)
+- DeepCore Apollo GV200 Grav Drive (v2.19.0)
+- DeepCore Apollo GV300 Grav Drive (v2.19.0)
+- Nova Galactic NG150 Grav Drive (v2.19.0)
+- Nova Galactic NG160 Grav Drive (v2.19.0)
+- Nova Galactic NG170 Grav Drive (v2.19.0)
+- Nova Galactic NG200 Grav Drive (v2.19.0)
+- Nova Galactic NG210 Grav Drive (v2.19.0)
+- Nova Galactic NG220 Grav Drive (v2.19.0)
+- Nova Galactic NG300 Grav Drive (v2.19.0)
+- Nova Galactic NG320 Grav Drive (v2.19.0)
+- Nova Galactic NG340 Grav Drive (v2.19.0)
+- Reladyne R-1000 Alpha Grav Drive (v2.19.0)
+- Reladyne R-2000 Alpha Grav Drive (v2.19.0)
+- Reladyne R-3000 Alpha Grav Drive (v2.19.0)
+- Reladyne R-4000 Alpha Grav Drive (v2.19.0)
+- Reladyne RD-1000 Beta Grav Drive (v2.19.0)
+- Reladyne RD-2000 Beta Grav Drive (v2.19.0)
+- Reladyne RD-3000 Beta Grav Drive (v2.19.0)
+- Reladyne J-51 Gamma Grav Drive (v2.19.0)
+- Reladyne J-52 Gamma Grav Drive (v2.19.0)
+- Reladyne J-53 Gamma Grav Drive (v2.19.0)
+- Slayton Aerospace SGD 1100 Grav Drive (v2.19.0)
+- Slayton Aerospace SGD 1200 Grav Drive (v2.19.0)
+- Slayton Aerospace SGD 1300 Grav Drive (v2.19.0)
+- Slayton Aerospace SGD 1400 Grav Drive (v2.19.0)
+- Slayton Aerospace SGD 2100 Grav Drive (v2.19.0)
+- Slayton Aerospace SGD 2200 Grav Drive (v2.19.0)
+- Slayton Aerospace SGD 2300 Grav Drive (v2.19.0)
+- Slayton Aerospace SGD 3100 Grav Drive (v2.19.0)
+- Slayton Aerospace SGD 3200 Grav Drive (v2.19.0)
+- Slayton Aerospace SGD 3300 Grav Drive (v2.19.0)
+- Vanguard Recon Grav Drive (v2.19.0)
 **Shields:**
 - Dogstar Defender 11T Shield Generator (v2.12.0)
 - Dogstar Defender 22T Shield Generator (v2.12.0)
@@ -315,6 +356,20 @@ List of Modules
 - Decorative: Dogstar Atlas H30 (v2.14.0)
 - Decorative: Dogstar Atlas H40 (v2.14.0)
 - Decorative: Nautilus Titan 350/450/550 (v2.14.0)
+**Decorative Grav Drives:**
+- Decorative: DeepCore Helios (v2.19.0)
+- Decorative: DeepCore Aurora (v2.19.0)
+- Decorative: DeepCore Apollo (v2.19.0)
+- Decorative: Nova NG1xx (v2.19.0)
+- Decorative: Nova NG2xx (v2.19.0)
+- Decorative: Nova NG3xx (v2.19.0)
+- Decorative: Reladyne Alpha (v2.19.0)
+- Decorative: Reladyne Beta (v2.19.0)
+- Decorative: Reladyne Gamma (v2.19.0)
+- Decorative: Slayton SGD 1xxx (v2.19.0)
+- Decorative: Slayton SGD 2xxx (v2.19.0)
+- Decorative: Slayton SGD 3xxx (v2.19.0)
+- Decorative: Vanguard Recon (v2.19.0)
 **Decorative Shields:**
 - Decorative: Dogstar Defender (v2.13.0)
 - Decorative: Dogstar Guardian (v2.13.0)

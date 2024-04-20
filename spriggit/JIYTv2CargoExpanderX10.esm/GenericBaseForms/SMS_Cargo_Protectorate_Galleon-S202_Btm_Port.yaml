@@ -1,0 +1,50 @@
+FormKey: 270477:Starfield.esm
+EditorID: SMS_Cargo_Protectorate_Galleon-S202_Btm_Port
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 0002D4:Starfield.esm
+    Value: 5
+  - ActorValue: 0002DC:Starfield.esm
+    Value: 9500
+  - ActorValue: 00ACDB:Starfield.esm
+    Value: 200
+  - ActorValue: 27BACE:Starfield.esm
+    Value: 10
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: 223F21:Starfield.esm
+- MutagenObjectType: DestructibleObjectComponent
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 1462CC:Starfield.esm
+  - 27BABF:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: Frachtraum Galleon S202
+    - Language: English
+      String: Galleon S202 Cargo Hold
+    - Language: Spanish
+      String: Bodega Galleon S202
+    - Language: French
+      String: Soute Galleon S202
+    - Language: Italian
+      String: Stiva Galleon S202
+    - Language: Japanese
+      String: ガレオンS202貨物倉
+    - Language: Polish
+      String: Ładownia Galleon S202
+    - Language: Portuguese_Brazil
+      String: Compartimento de Carga Galleon S202
+    - Language: ChineseSimplified
+      String: 大帆船S202货舱
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component
+- Spaceship_InstanceData

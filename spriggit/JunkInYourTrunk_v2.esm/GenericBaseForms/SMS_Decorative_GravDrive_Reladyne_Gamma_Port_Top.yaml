@@ -1,0 +1,46 @@
+FormKey: 00410E:JunkInYourTrunk_v2.esm
+EditorID: SMS_Decorative_GravDrive_Reladyne_Gamma_Port_Top
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 00ACDB:Starfield.esm
+    Value: 5
+  - ActorValue: 27BACE:Starfield.esm
+    Value: 30
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: 00410F:JunkInYourTrunk_v2.esm
+- MutagenObjectType: DestructibleObjectComponent
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 1462CF:Starfield.esm
+  - 27BABE:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: 'Dekorativ: Reladyne Gamma'
+    - Language: English
+      String: 'Decorative: Reladyne Gamma'
+    - Language: Spanish
+      String: 'Decorativo: Reladyne Gamma'
+    - Language: French
+      String: 'Décoratif : Reladyne Gamma'
+    - Language: Italian
+      String: 'Decorativo: Reladyne Gamma'
+    - Language: Japanese
+      String: '装飾: リラダイン・ガンマ'
+    - Language: Polish
+      String: 'Dekoracyjny: Reladyne Gamma'
+    - Language: Portuguese_Brazil
+      String: 'Decorativo: Reladyne Gamma'
+    - Language: ChineseSimplified
+      String: 装饰：Reladyne Gamma
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component
+- Spaceship_InstanceData

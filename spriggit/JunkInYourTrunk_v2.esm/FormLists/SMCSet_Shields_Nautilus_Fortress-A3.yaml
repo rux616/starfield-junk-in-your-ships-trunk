@@ -1,0 +1,30 @@
+FormKey: 00139F:JunkInYourTrunk_v2.esm
+EditorID: SMCSet_Shields_Nautilus_Fortress-A3
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Nautilus Fortress A3-Set
+  - Language: English
+    String: Nautilus Fortress A3 Set
+  - Language: Spanish
+    String: Juego Nautilus Fortress A3
+  - Language: French
+    String: Ensemble Nautilus Fortress A3
+  - Language: Italian
+    String: Set Nautilus Fortress A3
+  - Language: Japanese
+    String: ノーチラス要塞 A3 セット
+  - Language: Polish
+    String: Twierdza Nautilus Zestaw A3
+  - Language: Portuguese_Brazil
+    String: Conjunto Nautilus Fortress A3
+  - Language: ChineseSimplified
+    String: Nautilus Fortress A3 套装
+Items:
+- 0014F4:JunkInYourTrunk_v2.esm
+- 0014F5:JunkInYourTrunk_v2.esm
+- 0014F6:JunkInYourTrunk_v2.esm
+- 0014F7:JunkInYourTrunk_v2.esm
+- 0014F8:JunkInYourTrunk_v2.esm
+- 26F964:Starfield.esm

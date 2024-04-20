@@ -1,0 +1,48 @@
+FormKey: 00339A:JunkInYourTrunk_v2.esm
+EditorID: SMCSet_GravDrive_Reladyne_J-51-Gamma
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Reladyne J-51 Gamma-Set
+  - Language: English
+    String: Reladyne J-51 Gamma Set
+  - Language: Spanish
+    String: Juego Reladyne J-51 Gamma
+  - Language: French
+    String: Ensemble gamma Reladyne J-51
+  - Language: Italian
+    String: Set Gamma Relaydyne J-51
+  - Language: Japanese
+    String: Reladyne J-51 ガンマセット
+  - Language: Polish
+    String: Zestaw Reladyne J-51 Gamma
+  - Language: Portuguese_Brazil
+    String: Conjunto Gama Reladyne J-51
+  - Language: ChineseSimplified
+    String: Reladyne J-51 伽玛套装
+Items:
+- 00339B:JunkInYourTrunk_v2.esm
+- 00339C:JunkInYourTrunk_v2.esm
+- 00339D:JunkInYourTrunk_v2.esm
+- 00339E:JunkInYourTrunk_v2.esm
+- 00339F:JunkInYourTrunk_v2.esm
+- 0033A0:JunkInYourTrunk_v2.esm
+- 0033A1:JunkInYourTrunk_v2.esm
+- 0033A2:JunkInYourTrunk_v2.esm
+- 0033A3:JunkInYourTrunk_v2.esm
+- 0033A4:JunkInYourTrunk_v2.esm
+- 0033A5:JunkInYourTrunk_v2.esm
+- 0033A6:JunkInYourTrunk_v2.esm
+- 0033A7:JunkInYourTrunk_v2.esm
+- 0033A8:JunkInYourTrunk_v2.esm
+- 0033A9:JunkInYourTrunk_v2.esm
+- 0033AA:JunkInYourTrunk_v2.esm
+- 0033AB:JunkInYourTrunk_v2.esm
+- 0033AC:JunkInYourTrunk_v2.esm
+- 0033AD:JunkInYourTrunk_v2.esm
+- 0033AE:JunkInYourTrunk_v2.esm
+- 26AE51:Starfield.esm
+- 0033B0:JunkInYourTrunk_v2.esm
+- 0033B1:JunkInYourTrunk_v2.esm
+- 0033B2:JunkInYourTrunk_v2.esm

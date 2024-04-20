@@ -53,8 +53,8 @@ function Get-StringHash([string] $content) {
 # stop the script if an uncaught error happens
 $ErrorActionPreference = "Stop"
 
-# source version file
-. "./.version.ps1"
+# source version class
+. "./support/scripts/version-class.ps1"
 
 # update build number
 $version.IncrementBuild()
@@ -62,7 +62,7 @@ $version.IncrementBuild()
 "version with build: " + $version.ToString($true)
 
 # backup options
-[bool] $make_backups = $false
+[bool] $make_backups = $true
 [string] $backup_suffix = ".$((Get-Date).ToUniversalTime().ToString("yyyyMMddTHHmmss\Z")).backup"
 
 
@@ -105,13 +105,13 @@ $text_files | ForEach-Object {
     "Version Updater: Examining '$($_.file)'"
     $updated = 0
     $encoding = if ($_.encoding) { $_.encoding } else { "UTF8NoBOM" }
-    if ($make_backups) { Copy-Item -LiteralPath $file "$file$backup_suffix" }
     $_.search_and_replace | ForEach-Object {
         $content = Get-Content -LiteralPath $file -Encoding $encoding -Raw
         $original_hash = Get-StringHash $content
         $content = $content -replace $_.search, $_.replace
         $new_hash = Get-StringHash $content
         if ($new_hash -ne $original_hash) {
+            if ($make_backups) { Copy-Item -LiteralPath $file "$file$backup_suffix" }
             $content | Set-Content -LiteralPath $file -Encoding $encoding -NoNewline
             $updated += 1
         }
@@ -126,12 +126,15 @@ $text_files | ForEach-Object {
     # main plugin
     "./data/JunkInYourTrunk_v" + $version.VersionMajor + ".esm"
     # optional plugins
-    "./data/JIYTv" + $version.VersionMajor + "CargoExpanderX10.esm"
     "./data/JIYTv" + $version.VersionMajor + "CargoExpanderX3.esm"
+    "./data/JIYTv" + $version.VersionMajor + "CargoExpanderX10.esm"
     "./data/JIYTv" + $version.VersionMajor + "NoDecoratives.esm"
     # compatibility patches
-    "./data/JIYTv" + $version.VersionMajor + "-SKKShipPartsNoLevelAllVendors-Patch.esm"
     "./data/JIYTv" + $version.VersionMajor + "-ShipColorize-Patch.esm"
+    "./data/JIYTv" + $version.VersionMajor + "-ShipColorize-BetterShipPartSnaps-Patch.esm"
+    "./data/JIYTv" + $version.VersionMajor + "-ShipColorize-CargoExpanderX3-Patch.esm"
+    "./data/JIYTv" + $version.VersionMajor + "-ShipColorize-CargoExpanderX10-Patch.esm"
+    "./data/JIYTv" + $version.VersionMajor + "-SKKShipPartsNoLevelAllVendors-Patch.esm"
     "./data/JIYTv" + $version.VersionMajor + "-StarfieldExtendedShieldsRebalanced-Patch.esm"
     "./data/JIYTv" + $version.VersionMajor + "-USU-Patch.esm"
     "./data/JIYTv" + $version.VersionMajor + "-USUNoLevelRequirements-Patch.esm"

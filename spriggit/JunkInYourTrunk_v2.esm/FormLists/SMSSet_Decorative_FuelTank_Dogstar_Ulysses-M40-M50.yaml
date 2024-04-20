@@ -1,0 +1,48 @@
+FormKey: 001DDA:JunkInYourTrunk_v2.esm
+EditorID: SMSSet_Decorative_FuelTank_Dogstar_Ulysses-M40-M50
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Dekoratives Dogstar Ulysses M40/M50-Set
+  - Language: English
+    String: Decorative Dogstar Ulysses M40/M50 Set
+  - Language: Spanish
+    String: Decorativo Dogstar Ulysses M40/M50 Set
+  - Language: French
+    String: Ensemble décoratif Dogstar Ulysses M40/M50
+  - Language: Italian
+    String: Set decorativo Dogstar Ulysses M40/M50
+  - Language: Japanese
+    String: 装飾用ドッグスター ユリシーズ M40/M50 セット
+  - Language: Polish
+    String: Dekoracyjny zestaw Dogstar Ulysses M40/M50
+  - Language: Portuguese_Brazil
+    String: Conjunto Decorativo Dogstar Ulysses M40/M50
+  - Language: ChineseSimplified
+    String: 装饰性 Dogstar Ulysses M40/M50 套装
+Items:
+- 001DA9:JunkInYourTrunk_v2.esm
+- 001DAA:JunkInYourTrunk_v2.esm
+- 001DAB:JunkInYourTrunk_v2.esm
+- 001DAC:JunkInYourTrunk_v2.esm
+- 001DAD:JunkInYourTrunk_v2.esm
+- 001DAE:JunkInYourTrunk_v2.esm
+- 001DAF:JunkInYourTrunk_v2.esm
+- 001DB0:JunkInYourTrunk_v2.esm
+- 001DB1:JunkInYourTrunk_v2.esm
+- 001DB2:JunkInYourTrunk_v2.esm
+- 001DB3:JunkInYourTrunk_v2.esm
+- 001DB4:JunkInYourTrunk_v2.esm
+- 001DB5:JunkInYourTrunk_v2.esm
+- 001DB6:JunkInYourTrunk_v2.esm
+- 001DB7:JunkInYourTrunk_v2.esm
+- 001DB8:JunkInYourTrunk_v2.esm
+- 001DB9:JunkInYourTrunk_v2.esm
+- 001DBA:JunkInYourTrunk_v2.esm
+- 001DBB:JunkInYourTrunk_v2.esm
+- 001DBC:JunkInYourTrunk_v2.esm
+- 001DBD:JunkInYourTrunk_v2.esm
+- 001DBE:JunkInYourTrunk_v2.esm
+- 001DBF:JunkInYourTrunk_v2.esm
+- 001DC0:JunkInYourTrunk_v2.esm

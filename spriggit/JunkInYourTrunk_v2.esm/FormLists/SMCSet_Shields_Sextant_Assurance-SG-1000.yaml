@@ -1,0 +1,30 @@
+FormKey: 0013A3:JunkInYourTrunk_v2.esm
+EditorID: SMCSet_Shields_Sextant_Assurance-SG-1000
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Sextant Assurance SG-1000 Set
+  - Language: English
+    String: Sextant Assurance SG-1000 Set
+  - Language: Spanish
+    String: Conjunto Sextant Assurance SG-1000
+  - Language: French
+    String: Sextant Assurance SG-1000 Set
+  - Language: Italian
+    String: Sestante Assurance SG-1000 Set
+  - Language: Japanese
+    String: 六分儀保証 SG-1000 セット
+  - Language: Polish
+    String: Zestaw Sextant Assurance SG-1000
+  - Language: Portuguese_Brazil
+    String: Sextant Assurance SG-1000 Set
+  - Language: ChineseSimplified
+    String: 六分仪保证 SG-1000 套装
+Items:
+- 00149E:JunkInYourTrunk_v2.esm
+- 00149F:JunkInYourTrunk_v2.esm
+- 0014A0:JunkInYourTrunk_v2.esm
+- 0014A1:JunkInYourTrunk_v2.esm
+- 0014A2:JunkInYourTrunk_v2.esm
+- 26F117:Starfield.esm

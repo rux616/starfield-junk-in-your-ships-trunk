@@ -1,0 +1,30 @@
+FormKey: 0013A2:JunkInYourTrunk_v2.esm
+EditorID: SMCSet_Shields_Protectorate_Odin-3050-C
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Protectorate Odin 3050-C-Set
+  - Language: English
+    String: Protectorate Odin 3050-C Set
+  - Language: Spanish
+    String: Set Protectorado Odin 3050-C
+  - Language: French
+    String: Ensemble Protectorate Odin 3050-C
+  - Language: Italian
+    String: Set Protettore Odin 3050-C
+  - Language: Japanese
+    String: 保護国オーディン 3050-C セット
+  - Language: Polish
+    String: Zestaw Protektoratu Odin 3050-C
+  - Language: Portuguese_Brazil
+    String: Conjunto Protetorado Odin 3050-C
+  - Language: ChineseSimplified
+    String: 保护国奥丁 3050-C 套装
+Items:
+- 0014FE:JunkInYourTrunk_v2.esm
+- 0014FF:JunkInYourTrunk_v2.esm
+- 001500:JunkInYourTrunk_v2.esm
+- 001501:JunkInYourTrunk_v2.esm
+- 001502:JunkInYourTrunk_v2.esm
+- 26F12D:Starfield.esm

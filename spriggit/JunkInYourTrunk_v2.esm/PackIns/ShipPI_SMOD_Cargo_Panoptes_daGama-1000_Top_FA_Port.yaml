@@ -1,0 +1,10 @@
+FormKey: 000C9D:JunkInYourTrunk_v2.esm
+EditorID: ShipPI_SMOD_Cargo_Panoptes_daGama-1000_Top_FA_Port
+ODTY: 0
+Transforms:
+  Ship: 050FBE:Starfield.esm
+Filter: '\Ships\Modules\Exterior\Cargo\Panoptes\'
+Cell: 000C7D:JunkInYourTrunk_v2.esm
+Version: 0
+FNAM: 0x0E000000
+MaterialSwaps: []

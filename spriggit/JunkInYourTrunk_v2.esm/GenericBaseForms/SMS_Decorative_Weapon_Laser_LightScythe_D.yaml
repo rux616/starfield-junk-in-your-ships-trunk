@@ -1,0 +1,45 @@
+FormKey: 001E55:JunkInYourTrunk_v2.esm
+EditorID: SMS_Decorative_Weapon_Laser_LightScythe_D
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 00ACDB:Starfield.esm
+    Value: 1
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: 202610:Starfield.esm
+- MutagenObjectType: DestructibleObjectComponent
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 0B8537:Starfield.esm
+  - 1462C8:Starfield.esm
+  - 27BAC5:Starfield.esm
+  - 1219CA:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: 'Dekorativ: Light Scythe LSR-D'
+    - Language: English
+      String: 'Decorative: Light Scythe LSR-D'
+    - Language: Spanish
+      String: 'Decorativo: Guadaña ligera LSR-D'
+    - Language: French
+      String: 'Décoratif : Light Scythe LSR-D'
+    - Language: Italian
+      String: 'Decorativo: falce leggera LSR- D'
+    - Language: Japanese
+      String: '装飾: ライトサイス LSR-D'
+    - Language: Polish
+      String: 'Dekoracyjny: Light Scythe LSR-D'
+    - Language: Portuguese_Brazil
+      String: 'Decorativo: Light Scythe LSR-D'
+    - Language: ChineseSimplified
+      String: '装饰：光镰LSR-D '
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component

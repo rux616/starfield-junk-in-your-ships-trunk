@@ -1,0 +1,28 @@
+FormKey: 001E80:JunkInYourTrunk_v2.esm
+EditorID: SMSSet_Decorative_Weapon_Ballistic_Ballistic_B_Turret
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Dekoratives ballistisches BLS-B-Turm-Set
+  - Language: English
+    String: Decorative Ballistic BLS-B Turret Set
+  - Language: Spanish
+    String: Conjunto de torreta decorativa balística BLS-B
+  - Language: French
+    String: Ensemble de tourelle balistique décoratif BLS-B
+  - Language: Italian
+    String: Set torretta balistica decorativa BLS-B
+  - Language: Japanese
+    String: 装飾弾道 BLS-B 砲塔セット
+  - Language: Polish
+    String: Zestaw dekoracyjnych wieżyczek balistycznych BLS-B
+  - Language: Portuguese_Brazil
+    String: Conjunto Decorativo Balístico BLS-B Torre
+  - Language: ChineseSimplified
+    String: 装饰弹道 BLS-B 炮塔套装
+Items:
+- 001E11:JunkInYourTrunk_v2.esm
+- 001E12:JunkInYourTrunk_v2.esm
+- 001E13:JunkInYourTrunk_v2.esm
+- 001E14:JunkInYourTrunk_v2.esm

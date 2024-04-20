@@ -2,3 +2,9 @@
 meta.ini
 # exclude log files
 *.log
+# exclude GTEMP.pas
+.vscode/GTEMP.pas
+# exclude LibreOffice lock files
+*.~lock.*
+# exclude backup files
+*.backup

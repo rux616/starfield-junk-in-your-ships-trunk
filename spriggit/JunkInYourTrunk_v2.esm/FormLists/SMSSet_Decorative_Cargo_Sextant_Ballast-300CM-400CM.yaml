@@ -1,0 +1,36 @@
+FormKey: 0016D0:JunkInYourTrunk_v2.esm
+EditorID: SMSSet_Decorative_Cargo_Sextant_Ballast-300CM-400CM
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Dekoratives Sextant-Ballast 300CM/400CM-Set
+  - Language: English
+    String: Decorative Sextant Ballast 300CM/400CM Set
+  - Language: Spanish
+    String: Conjunto de Lastre Sextante Decorativo 300CM/400CM
+  - Language: French
+    String: Ensemble de ballast sextant décoratif 300 CM/400 CM
+  - Language: Italian
+    String: Set decorativo zavorra sestante 300CM/400CM
+  - Language: Japanese
+    String: 装飾六分儀バラスト 300CM/400CM セット
+  - Language: Polish
+    String: Dekoracyjny zestaw balastowy sekstantowy 300CM/400CM
+  - Language: Portuguese_Brazil
+    String: Conjunto de lastro sextante decorativo 300CM/400CM
+  - Language: ChineseSimplified
+    String: 装饰六分仪镇流器300CM/400CM套装
+Items:
+- 001678:JunkInYourTrunk_v2.esm
+- 001679:JunkInYourTrunk_v2.esm
+- 00167A:JunkInYourTrunk_v2.esm
+- 00167B:JunkInYourTrunk_v2.esm
+- 00167C:JunkInYourTrunk_v2.esm
+- 00167D:JunkInYourTrunk_v2.esm
+- 00167E:JunkInYourTrunk_v2.esm
+- 00167F:JunkInYourTrunk_v2.esm
+- 001680:JunkInYourTrunk_v2.esm
+- 001681:JunkInYourTrunk_v2.esm
+- 001682:JunkInYourTrunk_v2.esm
+- 0016BF:JunkInYourTrunk_v2.esm

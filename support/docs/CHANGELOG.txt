@@ -6,6 +6,7 @@ Table Of Contents
 - Junk In Your (Ship's) Trunk
     - Table Of Contents
 - Changelog
+    - v2.19.0
     - v2.18.0
     - v2.17.0
     - v2.16.0
@@ -32,6 +33,31 @@ Table Of Contents
 
 Changelog
 =========
+
+v2.19.0
+-------
+- Converted to a new method of creating flips that includes lights and decals
+- Created xEdit script to allow rotating REFR records in plugins (rotate_cell_contents.pas)
+- Added 23 DeepCore Helios 100/200/300/400 grav drive orientations
+- Added 23 DeepCore Aurora 11G/12G/13G grav drive orientations
+- Added 23 DeepCore Apollo GV100/GV200/GV300 grav drive orientations
+- Added 23 Nova Galactic NG150/NG160/NG170 grav drive orientations
+- Added 23 Nova Galactic NG200/NG210/NG220 grav drive orientations
+- Added 23 Nova Galactic NG300/NG320/NG340 grav drive orientations
+- Added 23 Reladyne R-1000/R-2000/R-3000/R-4000 Alpha grav drive orientations
+- Added 23 Reladyne RD-1000/RD-2000/RD-3000 Beta grav drive orientations
+- Added 23 Reladyne J-50/J-51/J-52 Gamma grav drive orientations
+- Added 23 Slayton Aerospace SGD 1100/SGD 1200/SGD 1300/SGD 1400 grav drive orientations
+- Added 23 Slayton Aerospace SGD 2100/SGD 2200/SGD 2300 grav drive orientations
+- Added 23 Slayton Aerospace SGD 3100/SGD 3200/SGD 3300 grav drive orientations
+- Added 23 Vanguard Recon grav drive orientations
+- Added "Decorative" versions of all grav drives
+- "Vertical" orientations of grav drives have enhanced snap points
+- Updated NoDecoratives options to include grav drives
+- Updated "All ship parts unlevelled at all vendors (ESM)" patch
+- Updated "Ship Colorize" patch
+- Updated "Ultimate Shipyards Unlocked" patches
+- Added supplemental "Ship Colorize" patches to make the patch compatible with the "Better Ship Part Snaps" mod, the Cargo Expander X3 option, and the Cargo Expander X10 option
 
 v2.18.0
 -------

@@ -1,0 +1,27 @@
+FormKey: 0016CD:JunkInYourTrunk_v2.esm
+EditorID: SMSSet_Decorative_Cargo_Protectorate_Galleon-S204
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Dekoratives Protectorate-Galeone-S204-Set
+  - Language: English
+    String: Decorative Protectorate Galleon S204 Set
+  - Language: Spanish
+    String: Conjunto decorativo Protectorate Galleon S204
+  - Language: French
+    String: Ensemble décoratif Protectorat Galleon S204
+  - Language: Italian
+    String: Set decorativo galeone del protettorato S204
+  - Language: Japanese
+    String: 装飾保護領ガレオン S204 セット
+  - Language: Polish
+    String: Zestaw dekoracyjnego galeonu S204 dla protektoratu
+  - Language: Portuguese_Brazil
+    String: Conjunto Protetor Decorativo Galleon S204
+  - Language: ChineseSimplified
+    String: 装饰保护国帆船 S204 套装
+Items:
+- 001661:JunkInYourTrunk_v2.esm
+- 001662:JunkInYourTrunk_v2.esm
+- 001663:JunkInYourTrunk_v2.esm

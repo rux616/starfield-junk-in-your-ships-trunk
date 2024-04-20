@@ -1,0 +1,43 @@
+FormKey: 001570:JunkInYourTrunk_v2.esm
+EditorID: SMS_Decorative_Shields_Vanguard_Bulwark_UC01_Top
+ODTY: 0
+Components:
+- MutagenObjectType: AttachParentArrayComponent
+- MutagenObjectType: PropertySheetComponent
+  Properties:
+  - ActorValue: 00ACDB:Starfield.esm
+    Value: 3
+- MutagenObjectType: FormLinkDataComponent
+  Links:
+  - Keyword: 00662F:Starfield.esm
+    LinkedForm: 1AE939:Starfield.esm
+- MutagenObjectType: DestructibleObjectComponent
+- MutagenObjectType: KeywordFormComponent
+  Keywords:
+  - 1670BE:Starfield.esm
+  - 27BABF:Starfield.esm
+- MutagenObjectType: FullNameComponent
+  Name:
+    TargetLanguage: English
+    Values:
+    - Language: German
+      String: 'Dekorativ: Vanguard Bulwark'
+    - Language: English
+      String: 'Decorative: Vanguard Bulwark'
+    - Language: Spanish
+      String: 'Decorativo: Vanguard Bulwark'
+    - Language: French
+      String: 'Décorative : Vanguard Bulwark'
+    - Language: Italian
+      String: "Decorativo: Baluardo dell'avanguardia"
+    - Language: Japanese
+      String: '装飾: ヴァンガード ブルワーク'
+    - Language: Polish
+      String: 'Dekoracyjny: Przednia Strażnica'
+    - Language: Portuguese_Brazil
+      String: 'Decorativo: Vanguard Bulwark'
+    - Language: ChineseSimplified
+      String: 装饰：先锋堡垒
+Template: 03058E:Starfield.esm
+STRVs:
+- BGSMod_Template_Component

@@ -1,0 +1,36 @@
+FormKey: 171209:Starfield.esm
+EditorID: SMSSet_FuelTank_Ballistic_200G
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Ballistischer 200G-Satz
+  - Language: English
+    String: Ballistic 200G Set
+  - Language: Spanish
+    String: Ballistic 200G Set
+  - Language: French
+    String: Ensemble balistique 200G
+  - Language: Italian
+    String: Set balistico 200G
+  - Language: Japanese
+    String: バリスティック 200G セット
+  - Language: Polish
+    String: Zestaw balistyczny 200G
+  - Language: Portuguese_Brazil
+    String: Balístico 200G Conjunto
+  - Language: ChineseSimplified
+    String: 弹道 200G 套装
+Items:
+- 2704A3:Starfield.esm
+- 171205:Starfield.esm
+- 00178D:JunkInYourTrunk_v2.esm
+- 00178E:JunkInYourTrunk_v2.esm
+- 00178F:JunkInYourTrunk_v2.esm
+- 001790:JunkInYourTrunk_v2.esm
+- 001791:JunkInYourTrunk_v2.esm
+- 001792:JunkInYourTrunk_v2.esm
+- 001793:JunkInYourTrunk_v2.esm
+- 001794:JunkInYourTrunk_v2.esm
+- 001797:JunkInYourTrunk_v2.esm
+- 001798:JunkInYourTrunk_v2.esm

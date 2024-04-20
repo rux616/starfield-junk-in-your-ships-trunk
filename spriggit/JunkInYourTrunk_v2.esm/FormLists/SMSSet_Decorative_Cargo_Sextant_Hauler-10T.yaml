@@ -1,0 +1,48 @@
+FormKey: 0016D1:JunkInYourTrunk_v2.esm
+EditorID: SMSSet_Decorative_Cargo_Sextant_Hauler-10T
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Dekoratives Sextant 10T Hauler Set
+  - Language: English
+    String: Decorative Sextant 10T Hauler Set
+  - Language: Spanish
+    String: Juego de transporte de sextante 10T decorativo
+  - Language: French
+    String: Ensemble décoratif Sextant 10T Hauler
+  - Language: Italian
+    String: Set sestante decorativo 10T Hauler
+  - Language: Japanese
+    String: 装飾六分儀 10T 運搬車セット
+  - Language: Polish
+    String: Dekoracyjny sekstans Zestaw wozidła 10T
+  - Language: Portuguese_Brazil
+    String: Conjunto Decorativo Sextante 10T Hauler
+  - Language: ChineseSimplified
+    String: 装饰六分仪 10T 牵引器套装
+Items:
+- 001683:JunkInYourTrunk_v2.esm
+- 001684:JunkInYourTrunk_v2.esm
+- 001685:JunkInYourTrunk_v2.esm
+- 001686:JunkInYourTrunk_v2.esm
+- 001687:JunkInYourTrunk_v2.esm
+- 001688:JunkInYourTrunk_v2.esm
+- 001689:JunkInYourTrunk_v2.esm
+- 00168A:JunkInYourTrunk_v2.esm
+- 00168B:JunkInYourTrunk_v2.esm
+- 00168C:JunkInYourTrunk_v2.esm
+- 00168D:JunkInYourTrunk_v2.esm
+- 00168E:JunkInYourTrunk_v2.esm
+- 00168F:JunkInYourTrunk_v2.esm
+- 001690:JunkInYourTrunk_v2.esm
+- 001691:JunkInYourTrunk_v2.esm
+- 001692:JunkInYourTrunk_v2.esm
+- 001693:JunkInYourTrunk_v2.esm
+- 001694:JunkInYourTrunk_v2.esm
+- 001695:JunkInYourTrunk_v2.esm
+- 001696:JunkInYourTrunk_v2.esm
+- 001697:JunkInYourTrunk_v2.esm
+- 001698:JunkInYourTrunk_v2.esm
+- 001699:JunkInYourTrunk_v2.esm
+- 00169A:JunkInYourTrunk_v2.esm

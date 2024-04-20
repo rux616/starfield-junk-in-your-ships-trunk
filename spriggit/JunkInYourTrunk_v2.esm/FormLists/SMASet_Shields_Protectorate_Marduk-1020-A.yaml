@@ -1,0 +1,30 @@
+FormKey: 001233:JunkInYourTrunk_v2.esm
+EditorID: SMASet_Shields_Protectorate_Marduk-1020-A
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Protectorate Marduk 1020-A-Set
+  - Language: English
+    String: Protectorate Marduk 1020-A Set
+  - Language: Spanish
+    String: Conjunto Protectorate Marduk 1020-A
+  - Language: French
+    String: Ensemble Protectorate Marduk 1020-A
+  - Language: Italian
+    String: Set protettorato Marduk 1020-A
+  - Language: Japanese
+    String: 保護用マルドゥック 1020-A セット
+  - Language: Polish
+    String: Zestaw Protektorat Marduk 1020-A
+  - Language: Portuguese_Brazil
+    String: Conjunto Protetorado Marduk 1020-A
+  - Language: ChineseSimplified
+    String: 保护国马杜克1020-A套装
+Items:
+- 00122E:JunkInYourTrunk_v2.esm
+- 00122F:JunkInYourTrunk_v2.esm
+- 001230:JunkInYourTrunk_v2.esm
+- 001231:JunkInYourTrunk_v2.esm
+- 001232:JunkInYourTrunk_v2.esm
+- 26F136:Starfield.esm

@@ -1,0 +1,11 @@
+MutagenObjectType: PlacedObject
+FormKey: 000839:JIYTv2-ShipColorize-Patch.esm
+Base: 1F560E:Starfield.esm
+ProjectedDecal:
+  WidthScale: 1
+  HeightScale: 1
+  UnknownFloat: 0.35
+  UnknownInt: 2880154369
+ConstrainedDecal: 4, 2, 0.5
+Position: 0.22800408, 3.7499993, -0.029746799
+Rotation: -1.5707966, -2.891253E-08, 6.2831855

@@ -1,0 +1,50 @@
+FormKey: 26ADD6:Starfield.esm
+EditorID: co_SMA_GravDrive_Slayton_SGD_1300
+FormVersion: 558
+Description:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Mit dem Graviton-Loop-Array (oder Grav-Antrieb), kann dein Schiff in andere Sternsysteme springen. Verbesserungen erhöhen die Sprungreichweite.
+  - Language: English
+    String: A Graviton Loop Array, or Grav Drive, allows your ship to jump to other star systems. Upgrade to increase your jump range.
+  - Language: Spanish
+    String: El conjunto de bucles gravitacionales, o motor gravitacional, permite que la nave salte a otros sistemas estelares. Mejóralo para aumentar su capacidad de salto.
+  - Language: French
+    String: Le centrifugeur à gravitons, ou astromoteur, permet à votre vaisseau de sauter vers d'autres systèmes. Améliorez-le pour augmenter votre portée de saut.
+  - Language: Italian
+    String: Il sistema a loop di gravitoni, o gravimotore, consente alla tua nave di saltare verso altri sistemi. Aggiornalo per aumentare la portata del salto.
+  - Language: Japanese
+    String: グラヴィトン・ループ・アレイ、またはグラヴ・ドライブによって他の星系へのジャンプが可能となる。アップグレードすればジャンプの範囲が拡大する
+  - Language: Polish
+    String: Macierz pętli grawitonowej albo inaczej napęd grawitonowy pozwala wykonywać statkowi skoki między układami. Ulepsz, aby zwiększyć zasięg skoku.
+  - Language: Portuguese_Brazil
+    String: A Matriz Cíclica de Grávitons, ou Motor Grav, permite que você chegue a outros sistemas estelares. Faça uma melhoria para aumentar o alcance de dobra.
+  - Language: ChineseSimplified
+    String: 重力循环阵列，即重力推动器能让你的飞船跃迁至其他星系，进行升级即可增加跃迁距离。
+WorkbenchKeyword: 29C480:Starfield.esm
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x000000
+  Unknown2: 17630
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    FirstParameter: 1453AA:Starfield.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Unknown1: 0x000000
+  Unknown2: 17630
+  Data:
+    MutagenObjectType: GetLevelConditionData
+    RunOnType: Reference
+    Reference: 000014:Starfield.esm
+  ComparisonValue: 1
+CreatedObject: 002A2C:JunkInYourTrunk_v2.esm
+AmountProduced: 1
+MenuSortOrder: 5.9219
+LearnMethod: DefaultOrConditions
+Value: 6600
+Categories:
+- 29C474:Starfield.esm
+RECF: 0

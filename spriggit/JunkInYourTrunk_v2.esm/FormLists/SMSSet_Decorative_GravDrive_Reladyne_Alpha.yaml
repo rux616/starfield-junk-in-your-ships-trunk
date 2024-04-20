@@ -1,0 +1,48 @@
+FormKey: 003966:JunkInYourTrunk_v2.esm
+EditorID: SMSSet_Decorative_GravDrive_Reladyne_Alpha
+Name:
+  TargetLanguage: English
+  Values:
+  - Language: German
+    String: Dekoratives Reladyne Alpha-Set
+  - Language: English
+    String: Decorative Reladyne Alpha Set
+  - Language: Spanish
+    String: Conjunto decorativo Relaxyne Alpha
+  - Language: French
+    String: Ensemble décoratif Reladyne Alpha
+  - Language: Italian
+    String: Set decorativo Relayyne Alpha
+  - Language: Japanese
+    String: 装飾リラダイン アルファ セット
+  - Language: Polish
+    String: Dekoracyjny zestaw Reladyne Alpha
+  - Language: Portuguese_Brazil
+    String: Conjunto decorativo Reladyne Alpha
+  - Language: ChineseSimplified
+    String: 装饰 Reladyne Alpha 套装
+Items:
+- 003967:JunkInYourTrunk_v2.esm
+- 00396E:JunkInYourTrunk_v2.esm
+- 003975:JunkInYourTrunk_v2.esm
+- 00397C:JunkInYourTrunk_v2.esm
+- 003983:JunkInYourTrunk_v2.esm
+- 00398A:JunkInYourTrunk_v2.esm
+- 003991:JunkInYourTrunk_v2.esm
+- 003998:JunkInYourTrunk_v2.esm
+- 00399F:JunkInYourTrunk_v2.esm
+- 0039A6:JunkInYourTrunk_v2.esm
+- 0039AD:JunkInYourTrunk_v2.esm
+- 0039B4:JunkInYourTrunk_v2.esm
+- 0039BB:JunkInYourTrunk_v2.esm
+- 0039C2:JunkInYourTrunk_v2.esm
+- 0039C9:JunkInYourTrunk_v2.esm
+- 0039D0:JunkInYourTrunk_v2.esm
+- 0039D7:JunkInYourTrunk_v2.esm
+- 0039DE:JunkInYourTrunk_v2.esm
+- 0039E5:JunkInYourTrunk_v2.esm
+- 0039EC:JunkInYourTrunk_v2.esm
+- 0039F3:JunkInYourTrunk_v2.esm
+- 003A28:JunkInYourTrunk_v2.esm
+- 003A2F:JunkInYourTrunk_v2.esm
+- 003A36:JunkInYourTrunk_v2.esm
