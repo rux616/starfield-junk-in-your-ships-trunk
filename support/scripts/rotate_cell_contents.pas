@@ -147,12 +147,12 @@ const
   GLOBAL_APPLY_TO_POSITION_DEFAULT = True;
   GLOBAL_APPLY_TO_ROTATION_DEFAULT = True;
 
-  GLOBAL_CLAMP_USE_DEFAULT = False;
+  GLOBAL_CLAMP_USE_DEFAULT = True;
   GLOBAL_CLAMP_MODE_DEFAULT = CLAMP_MODE_90;
   GLOBAL_POSITION_PRECISION_DEFAULT = -6;  // precision to nearest 0.000001
   GLOBAL_ROTATION_PRECISION_DEFAULT = -4;  // precision to nearest 0.0001
 
-  GLOBAL_DRY_RUN_DEFAULT = True;
+  GLOBAL_DRY_RUN_DEFAULT = False;
   GLOBAL_SAVE_TO_SAME_FILE_DEFAULT = True;
   GLOBAL_USE_SAME_SETTINGS_FOR_ALL_DEFAULT = True;
 
@@ -2425,6 +2425,7 @@ begin
   // show initial messaging, including the full name of the record being processed and the rotation
   // that will be applied
   AddMessage(FullPath(current_record));
+  AddMessage(ShortName(current_record));
   AddMessage(dry_run_text + operation_mode_text + qv_to_str(0, global_rotate_x, global_rotate_y,
     global_rotate_z, False, False, False, True, ' = ', '', DIGITS_ANGLE) + ' using rotation sequence '
     + rotation_sequence_to_str(global_rotation_sequence));
