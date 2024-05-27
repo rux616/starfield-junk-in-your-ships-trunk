@@ -1,85 +1,62 @@
 {
-	"version": "2.0.0",
-    "options": {
-        "shell": {
-            "executable": "pwsh.exe",
-            "args": [
-                "-ExecutionPolicy",
-                "Bypass",
-                "-Command",
-            ]
-        },
-        "cwd": "${workspaceFolder}",
+  "version": "2.0.0",
+  "options": {
+    "shell": {
+      "executable": "pwsh.exe",
+      "args": ["-ExecutionPolicy", "Bypass", "-Command"]
+    }
+  },
+  "tasks": [
+    {
+      "label": "Create Archives",
+      "type": "shell",
+      "command": "./support/common/scripts/build-archives.ps1",
+      "args": [
+        "-ModName",
+        "Junk In Your Trunk",
+        "-PluginName",
+        "JunkInYourTrunk_v2",
+        "-Starfield"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "dependsOrder": "sequence",
+      "dependsOn": [
+        "Update Versions",
+        "Serialize plugins",
+        "Render Markdown to Nexus BBCode",
+        "Render Markdown to Plaintext"
+      ]
     },
-	"tasks": [
-        {
-            "label": "Create Archives",
-            "type": "shell",
-            "command": "./support/scripts/build-archives.ps1",
-            "args": [
-                // mod name
-                "Junk In Your Trunk",
-                // plugin name
-                "JunkInYourTrunk_v2",
-            ],
-			"group": {
-				"kind": "build",
-				"isDefault": true
-			},
-            "dependsOrder": "sequence",
-            "dependsOn": [
-                "Update Versions",
-                "Serialize plugins",
-                "Render Markdown to Nexus BBCode",
-                "Render Markdown to Plaintext",
-            ],
-        },
-        {
-            "label": "Render Markdown to Nexus BBCode",
-            "type": "shell",
-            "command": "./support/scripts/markdown-to-nexusbbcode.ps1",
-            "args": [
-                "./support/docs/README.md",
-            ],
-        },
-        {
-            "label": "Render Markdown to Plaintext",
-            "type": "shell",
-            "command": "./support/scripts/markdown-to-plaintext.ps1",
-            "args": [
-                "./support/docs/README.md",
-                "./support/docs/CHANGELOG.md",
-            ],
-        },
-        {
-            "label": "Update Versions",
-            "type": "shell",
-            "command": "./support/scripts/version-updater.ps1",
-        },
-        {
-            "label": "Serialize plugins",
-            "type": "shell",
-            "command": "Get-Item .\\data\\*.es* | Where-Object -Property Name -match '\\.es[lmp]$' | ForEach-Object { .\\support\\bin\\SpriggitCLI\\Spriggit.CLI.exe serialize --InputPath \".\\data\\$($_.Name)\" --OutputPath \".\\spriggit\\$($_.Name)\" --GameRelease Starfield --PackageName Spriggit.Yaml }",
-        },
-        {
-            "label": "Create xTranslator Batch Processor Script",
-            "type": "shell",
-            "command": "./support/scripts/build-translator-batch-processor-script.ps1",
-            "args": [
-                "JIYTv2-ShipColorize-BetterShipPartSnaps-Patch.esm",
-                "JIYTv2-ShipColorize-CargoExpanderX3-Patch.esm",
-                "JIYTv2-ShipColorize-CargoExpanderX10-Patch.esm",
-                "JIYTv2-ShipColorize-Patch.esm",
-                "JIYTv2-SKKShipPartsNoLevelAllVendors-Patch.esm",
-                "JIYTv2-StarfieldExtendedShieldsRebalanced-Patch.esm",
-                "JIYTv2-USU-Patch.esm",
-                "JIYTv2-USUNoLevelRequirements-Patch.esm",
-                "JIYTv2-USUQuestRewards-Patch.esm",
-                "JIYTv2CargoExpanderX10.esm",
-                "JIYTv2CargoExpanderX3.esm",
-                "JIYTv2NoDecoratives.esm",
-                "JunkInYourTrunk_v2.esm",
-            ]
-        },
-	]
+    {
+      "label": "Update Versions",
+      "type": "shell",
+      "command": "./support/common/scripts/version-updater.ps1"
+    },
+    {
+      "label": "Serialize plugins",
+      "type": "shell",
+      "command": "./support/common/scripts/serialize-plugins.ps1",
+      "args": ["-Starfield", "-YAML"]
+    },
+    {
+      "label": "Render Markdown to Nexus BBCode",
+      "type": "shell",
+      "command": "./support/common/scripts/markdown-to-nexusbbcode.ps1",
+      "args": ["./support/docs/README.md"]
+    },
+    {
+      "label": "Render Markdown to Plaintext",
+      "type": "shell",
+      "command": "./support/common/scripts/markdown-to-plaintext.ps1",
+      "args": ["./support/docs/README.md", "./support/docs/CHANGELOG.md"]
+    },
+    {
+      "label": "Create xTranslator Batch Processor Script",
+      "type": "shell",
+      "command": "./support/common/scripts/build-translator-batch-processor-script.ps1"
+    }
+  ]
 }
