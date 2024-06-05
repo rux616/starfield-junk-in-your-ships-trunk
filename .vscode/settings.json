@@ -20,6 +20,7 @@
     "EDID",
     "Elminster",
     "Enderal",
+    "fireundubh",
     "FLST",
     "fomod",
     "Freschu",
@@ -82,6 +83,5 @@
     "XEDIT",
     "zhhans",
     "zilav"
-  ],
-  "cmake.configureOnOpen": false
+  ]
 }
