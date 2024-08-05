@@ -28,7 +28,7 @@ var
 	panelMain: TPanel;
 	btnAddPrefix, btnAddSuffix, btnReplace: TButton;
 begin
-	tOff := 25;
+	tOff := 50;
 	lOff := 25;
 	vPad := 10;
 	hPad := 10;
@@ -36,8 +36,8 @@ begin
 	frm := TForm.Create(nil);
 	try
 		frm.Caption := 'Modify Strings';
-		frm.Width := 270;
-		frm.Height := 225;
+		frm.Width := 250;
+		frm.Height := 220;
 		frm.Position := poScreenCenter;
 		frm.KeyPreview := True;
 
@@ -48,6 +48,7 @@ begin
 		panelMain.Top := frm.Top;
 		panelMain.Left := frm.Left;
 		panelMain.Anchors := [akRight, akBottom];
+		panelMain.AlignWithMargins := true;
 
 		cmbContainer := TComboBox.Create(panelMain);
 		cmbContainer.Parent := panelMain;
