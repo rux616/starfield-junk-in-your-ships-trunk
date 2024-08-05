@@ -15,8 +15,12 @@ begin
 	processCount := 0;
 	strMessage := 'String processing canceled.';
 	ShowBrowser;
-	Result := 0;
-	Exit
+	if not Assigned(strAction) then begin
+		Result := 1;
+	end else begin
+		Result := 0;
+	end;
+	exit;
 end;
 
 //=================== Browser
@@ -110,7 +114,7 @@ begin
 	strAction := 'AddPrefix';
 	if not InputQuery('Add Prefix', 'String to add as prefix: ', strAdd) then begin
 		AddMessage(strMessage);
-		Exit
+		exit;
 	end;
 end;
 
@@ -119,16 +123,16 @@ begin
 	strAction := 'AddSuffix';
 	if not InputQuery('Add Suffix', 'String to add as suffix: ', strAdd) then begin
 		AddMessage(strMessage);
-		Exit
+		exit;
 	end;
 end;
 
 procedure evtButtonReplace(Sender: TObject);
 begin
 	strAction := 'Replace';
-	if not InputQuery('Replace', 'Search for:', StrSearch) and InputQuery('Replace', 'Replace with:', strAdd) then begin
+	if (not InputQuery('Replace', 'Search for:', StrSearch)) or (not InputQuery('Replace', 'Replace with:', strAdd)) then begin
 		AddMessage(strMessage);
-		Exit
+		exit;
 	end;
 end;
 
