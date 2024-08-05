@@ -9,7 +9,14 @@ var
 	processCount: integer;
 	strElement, strAction, strAdd, strSearch, strMessage: string;
 	cmbContainer: TComboBox;
-	
+
+const
+	ELEMENT_NAME_EDID = 'EDID - Editor ID';
+	ELEMENT_NAME_FULL = 'FULL - Name';
+	ELEMENT_NAME_DESC = 'DESC - Description';
+	ELEMENT_NAME_DATA = 'DATA - Weight';
+	ELEMENT_NAME_ONAM = 'ONAM - Short Name';
+
 function Initialize: integer;
 begin
 	processCount := 0;
@@ -63,11 +70,11 @@ begin
 		cmbContainer.Anchors := [akTop, akRight];
 		cmbContainer.OnChange := cmbContainerOnChange;
 		// Add editor fields you want to alter with the script here
-		cmbContainer.Items.Add('EDID - Editor ID');
-		cmbContainer.Items.Add('FULL - Name');
-		cmbContainer.Items.Add('DESC - Description');
-		cmbContainer.Items.Add('DATA - Weight');
-		cmbContainer.Items.Add('ONAM - Short Name');
+		cmbContainer.Items.Add(ELEMENT_NAME_EDID);
+		cmbContainer.Items.Add(ELEMENT_NAME_FULL);
+		cmbContainer.Items.Add(ELEMENT_NAME_DESC);
+		cmbContainer.Items.Add(ELEMENT_NAME_DATA);
+		cmbContainer.Items.Add(ELEMENT_NAME_ONAM);
 		cmbContainer.ItemIndex := 0;
 
 		btnAddPrefix := TButton.Create(panelMain);
@@ -145,10 +152,22 @@ end;
 
 function Process(e: IInterface): integer;
 var
-	elementName: IInterface;
+	components, component, elementName: IInterface;
 	strPresent, strResult: string;
+	i: integer;
 begin
-	elementName := ElementByName(e, strElement);
+	if (Signature(e) = 'GBFM') and (strElement = ELEMENT_NAME_FULL) then begin
+		// do gbfm things here
+		components := ElementByPath(e, 'Base Form Components');
+		for i := 0 to Pred(ElementCount(components)) do begin
+			component := ElementByIndex(components, i);
+			elementName := ElementByPath(component, 'Component Data - Fullname\' + strElement);
+			// AddMessage('debug: gbfm full: ' + Name(component) + ' \ ' + Name(component_data));
+			if Assigned(elementName) then break;
+		end;
+	end else begin
+		elementName := ElementByName(e, strElement);
+	end;
 	strPresent := GetEditValue(elementName);
 	Inc(processCount);
 	AddMessage('Processing in ' + FullPath(e));
