@@ -107,8 +107,6 @@
         - [X] nautilus
             - [X] bastille s80/s81/s82/s83/s84
 - [ ] add
-    - [ ] reactors
-    - [ ] reactor decoratives
     - [X] grav drives
         - [X] deep core
             - [X] helios 100/200/300/400
@@ -176,3 +174,174 @@
     - [ ] dockers?
 - [X] grav drive testing
 - [X] update ship colorize patch with new PKIN method
+- [X] add reactors
+    - [X] primary
+        - [X] amun dunn
+            - [X] stellarator
+                - [X] snap points
+                - [X] 330t
+                - [X] 340t
+                    - [X] not suffixed
+                - [X] 350t
+                    - [X] not suffixed
+                - [X] 360t
+                    - [X] not suffixed
+                - [X] 370t
+                    - [X] not suffixed
+                - [X] 380t
+                    - [X] check this out, it starts out with not Top Aft
+                        - "GBFM/Component[2]/Component Data - Form Links/ITMC - Count" did not match the number of Linked Forms
+                    - [X] not suffixed
+            - [X] z-machine
+                - [X] snap points
+                - [X] 1000
+                - [X] 2000
+                    - [X] Top Aft is not suffixed
+                        - "GBFM/Component[5]/Component Data - Fullname/FULL - Name" was not suffixed
+                - [X] 2020
+                - [X] 3000
+                - [X] 4000
+            - [X] theta pinch
+                - [X] snap points
+                - [X] a9
+                - [X] b9
+                - [X] c9
+                - [X] d9
+        - [X] deep core
+            - [X] spheromak
+                - [X] snap points
+                - [X] dc201
+                - [X] dc202
+            - [X] fast ignition
+                - [X] snap points
+                - [X] dc301
+                - [X] dc302
+                - [X] dc303
+            - [X] fusor
+                - [X] snap points
+                - [X] dc401
+                - [X] dc402
+                - [X] dc403
+        - [X] dogstar
+            - [X] toroidal
+                - [X] snap points
+                - [X] 114mm
+                - [X] 124mm
+                - [X] 134mm
+                - [X] 144mm
+                - [X] 154mm
+                - [X] 164mm
+            - [X] mag inertial
+                - [X] snap points
+                - [X] 101ds
+                - [X] 102ds
+                - [X] 103ds
+                - [X] 104ds
+            - [X] sheared flow
+                - [X] snap points
+                - [X] sf10
+                - [X] sf20
+                - [X] sf30
+                - [X] sf40
+        - [X] xiang
+            - [X] tokamak
+                - [X] snap points
+                - [X] x-050
+                - [X] x-100
+                - [X] x-120s
+                - [X] x-150
+                - [X] x-200
+                - [X] x-250
+                - [X] x-300
+                    - [X] bad keywords on GBFM?
+                        - "GBFM/Component[2]/Component Data - Form Links/ITMC - Count" did not match the number of Linked Forms
+            - [X] ion beam
+                - [X] snap points
+                - [X] h-1010
+                - [X] h-1020
+                - [X] h-1030
+            - [X] pinch
+                - [X] snap points
+                - [X] 5z
+                - [X] 6z
+                - [X] 7z
+                - [X] 8a
+                - [X] 8z
+    - [X] decoratives
+        - [X] amun dunn
+            - [X] stellarator
+                - [X] 330t
+                - [X] 340t
+                - [X] 350t
+                - [X] 360t
+                - [X] 370t
+                - [X] 380t
+            - [X] z-machine
+                - [X] 1000
+                - [X] 2000
+                - [X] 2020
+                - [X] 3000
+                - [X] 4000
+            - [X] theta pinch
+                - [X] a9
+                - [X] b9
+                - [X] c9
+                - [X] d9
+        - [X] deep core
+            - [X] spheromak
+                - [X] dc201
+                - [X] dc202
+            - [X] fast ignition
+                - [X] dc301
+                - [X] dc302
+                - [X] dc303
+            - [X] fusor
+                - [X] dc401
+                - [X] dc402
+                - [X] dc403
+        - [X] dogstar
+            - [X] toroidal
+                - [X] 114mm
+                - [X] 124mm
+                - [X] 134mm
+                - [X] 144mm
+                - [X] 154mm
+                - [X] 164mm
+            - [X] mag inertial
+                - [X] 101ds
+                - [X] 102ds
+                - [X] 103ds
+                - [X] 104ds
+            - [X] sheared flow
+                - [X] sf10
+                - [X] sf20
+                - [X] sf30
+                - [X] sf40
+        - [X] xiang
+            - [X] tokamak
+                - [X] x-050
+                - [X] x-100
+                - [X] x-120s
+                - [X] x-150
+                - [X] x-200
+                - [X] x-250
+                - [X] x-300
+            - [X] ion beam
+                - [X] h-1010
+                - [X] h-1020
+                - [X] h-1030
+            - [X] pinch
+                - [X] 5z
+                - [X] 6z
+                - [X] 7z
+                - [X] 8a
+                - [X] 8z
+    - [X] update no decoratives option
+    - [X] update ship colorize patch
+    - [X] update ship parts no level all vendors patch
+    - [X] update usu all in one patch
+    - [X] update usu no level requirements patch
+    - [X] update readme
+    - [X] update changelog
+- [X] remove localization
+- [X] remove BlueprintShips-Starfield.esm as master on all files

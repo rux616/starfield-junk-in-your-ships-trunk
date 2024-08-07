@@ -1,0 +1,34 @@
+FormKey: 270461:Starfield.esm
+EditorID: co_SMS_Cargo_Protectorate_Galleon-S204
+Description:
+  TargetLanguage: English
+  Value: Spaceship Cargo Modules increase your ship's inventory space.
+WorkbenchKeyword: 29C480:Starfield.esm
+Conditions:
+- MutagenObjectType: ConditionFloat
+  Unknown1: 0x000000
+  Unknown2: 17620
+  Data:
+    MutagenObjectType: HasKeywordConditionData
+    FirstParameter: 143C9E:Starfield.esm
+  ComparisonValue: 1
+- MutagenObjectType: ConditionFloat
+  CompareOperator: GreaterThanOrEqualTo
+  Unknown1: 0x000000
+  Unknown2: 17620
+  Data:
+    MutagenObjectType: GetLevelConditionData
+    RunOnType: Reference
+    Reference: 000014:Starfield.esm
+  ComparisonValue: 32
+RequiredPerks:
+- Perk: 2C59DC:Starfield.esm
+  Rank: 3
+CreatedObject: 000E93:JunkInYourTrunk_v2.esm
+AmountProduced: 1
+MenuSortOrder: 8.90425
+LearnMethod: DefaultOrConditions
+Value: 11000
+Categories:
+- 2C155D:Starfield.esm
+RECF: 0

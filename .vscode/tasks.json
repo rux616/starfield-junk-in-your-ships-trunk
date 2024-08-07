@@ -8,16 +8,10 @@
   },
   "tasks": [
     {
-      "label": "Create Archives",
+      "label": "Build",
       "type": "shell",
-      "command": "./support/common/scripts/build-archives.ps1",
-      "args": [
-        "-ModName",
-        "Junk In Your Trunk",
-        "-PluginName",
-        "JunkInYourTrunk_v2",
-        "-Starfield"
-      ],
+      "command": "Write-Host",
+      "args": ["-Foreground", "Green", "-Background", "Black", "Build complete!"],
       "group": {
         "kind": "build",
         "isDefault": true
@@ -25,21 +19,23 @@
       "dependsOrder": "sequence",
       "dependsOn": [
         "Update Versions",
-        "Serialize plugins",
+        "Sanitize FOMOD XML Files",
         "Render Markdown to Nexus BBCode",
-        "Render Markdown to Plaintext"
+        "Render Markdown to Plaintext",
+        "Serialize Plugins",
+        "Create Archives"
       ]
     },
     {
       "label": "Update Versions",
       "type": "shell",
-      "command": "./support/common/scripts/version-updater.ps1"
+      "command": "./support/common/scripts/version-updater.ps1",
+      "args": ["-SkipBackup"]
     },
     {
-      "label": "Serialize plugins",
+      "label": "Sanitize FOMOD XML Files",
       "type": "shell",
-      "command": "./support/common/scripts/serialize-plugins.ps1",
-      "args": ["-Starfield", "-YAML"]
+      "command": "./support/common/scripts/sanitize-fomod-xml.ps1"
     },
     {
       "label": "Render Markdown to Nexus BBCode",
@@ -52,6 +48,18 @@
       "type": "shell",
       "command": "./support/common/scripts/markdown-to-plaintext.ps1",
       "args": ["./support/docs/README.md", "./support/docs/CHANGELOG.md"]
+    },
+    {
+      "label": "Serialize Plugins",
+      "type": "shell",
+      "command": "./support/common/scripts/serialize-plugins.ps1",
+      "args": ["-Starfield", "-YAML"]
+    },
+    {
+      "label": "Create Archives",
+      "type": "shell",
+      "command": "./support/common/scripts/build-archives.ps1",
+      "args": ["-ModName", "Junk In Your Trunk", "-PluginName", "JunkInYourTrunk_v2", "-Starfield"]
     },
     {
       "label": "Create xTranslator Batch Processor Script",

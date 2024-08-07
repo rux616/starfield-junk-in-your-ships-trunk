@@ -7,3 +7,4 @@
 *.pdb filter=lfs diff=lfs merge=lfs -text
 support/packaging/*.jpg filter=lfs diff=lfs merge=lfs -text
 support/packaging/*.png filter=lfs diff=lfs merge=lfs -text
+data/fomod/*.xml text working-tree-encoding=UTF-16LE-BOM eol=crlf

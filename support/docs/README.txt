@@ -2,7 +2,7 @@ Junk In Your (Ship's) Trunk
 ===========================
 by rux616
 
-Version: 2.19.0
+Version: 2.20.0
 
 Table Of Contents
 -----------------
@@ -39,8 +39,6 @@ You want variety? We got variety! Up? Yes! Down? Also yes! Left? Still yes! Righ
 But wait, there's more! As a bonus, you also get additional decorative versions of all of them! Plus weapons! That's right! All the looks with only a fraction of the cost or weight. And none of the functionality, but who cares about that when your ship looks this good, am I right? You can find these marvelous new modules in the various "Decorative [...]" categories in the Ship Builder.
 
 There are even some additional snap points added so you can do interesting things like putting certain "vertical" modules next to something else, though only for cargo holds and grav drives at the moment; more modules will be converted in the future. (The JIYT Consortium is not responsible for any cursed creations you make with this feature.)
-
-Translations are provided for the following languages: German (de), Spanish (es), French (fr), Italian (it), Japanese (ja), Polish (pl), Brazilian Portuguese (ptbr), and Simplified Chinese (zhhans). As these are powered by Google Translate (plus xTranslator) they may not be entirely accurate and the JIYT Consortium apologizes in advance if your mother was accidentally insulted. If that is the case (or you see other errors), please provide feedback and it will be fixed as soon as possible.
 
 For a complete listing of all modules provided, please see the "List of Modules" section at the bottom of this document.
 
@@ -95,7 +93,7 @@ Download and install both the archive for this mod and for any required mods wit
 
 Manual (NOT RECOMMENDED)
 ------------------------
-Extract the archive to your Starfield installation's "Data" folder (typically something like "C:\Games\SteamLibrary\steamapps\common\Starfield\data"). Add the plugin file names to your plugins.txt file if they aren't already there, making sure the ones you want enabled are preceded with `*`. Make sure that the plugins from the required mods are ABOVE the plugins from this mod and are also preceded with `*`, or you will get a CTD.
+Extract the archive to your Starfield installation's "Data" folder (typically something like "C:\Games\SteamLibrary\steamapps\common\Starfield\data"). Add the plugin file names to your plugins.txt file if they aren't already there, making sure the ones you want enabled are preceded by an asterisk ("`*`"). Make sure that the plugins from the required mods are ABOVE the plugins from this mod and are also enabled, or you will get a CTD.
 
 Archive Invalidation
 --------------------
@@ -122,12 +120,14 @@ Avi: Help writing the summary to make it a bit less dry, and for helping to test
 Lively: For helping to test this mod
 TheOGTennessee: For the idea to include 3x and 10x cargo capacity modifiers
 Freschu: For developing a really handy xEdit script that makes my life easier, and helping me with the rotate_cell_contents xedit script
+fireundubh: For adding the trig functions to xEdit that were necessary to make my rotate_cell_contents script possible
 
 This mod's repo contains the following programs, each having their own copyrights and licenses:
 
 - 7-Zip 23.01 (2023-06-20) Console Executable by Igor Pavlov (https://www.7-zip.org/)
 - BSArch v0.9c (part of xEdit 4.1.4u) by zilav, ElminsterAU, and Sheson (https://github.com/TES5Edit/TES5Edit)
 - SpriggitCLI v0.18 by Noggog (https://github.com/Mutagen-Modding/Spriggit)
+
 
 Contact
 =======
@@ -244,6 +244,59 @@ Grav Drives:
 - Slayton Aerospace SGD 3200 Grav Drive (v2.19.0)
 - Slayton Aerospace SGD 3300 Grav Drive (v2.19.0)
 - Vanguard Recon Grav Drive (v2.19.0)
+Reactors:
+- Amun Dunn 330T Stellarator Reactor (v2.20.0)
+- Amun Dunn 340T Stellarator Reactor (v2.20.0)
+- Amun Dunn 350T Stellarator Reactor (v2.20.0)
+- Amun Dunn 360T Stellarator Reactor (v2.20.0)
+- Amun Dunn 370T Stellarator Reactor (v2.20.0)
+- Amun Dunn 380T Stellarator Reactor (v2.20.0)
+- Amun Dunn Theta Pinch A9 Reactor (v2.20.0)
+- Amun Dunn Theta Pinch B9 Reactor (v2.20.0)
+- Amun Dunn Theta Pinch C9 Reactor (v2.20.0)
+- Amun Dunn Theta Pinch D9 Reactor (v2.20.0)
+- Amun Dunn Z-Machine 1000 Reactor (v2.20.0)
+- Amun Dunn Z-Machine 2000 Reactor (v2.20.0)
+- Amun Dunn Z-Machine 2020 Reactor (v2.20.0)
+- Amun Dunn Z-Machine 3000 Reactor (v2.20.0)
+- Amun Dunn Z-Machine 4000 Reactor (v2.20.0)
+- Deep Core DC301 Fast Ignition Reactor (v2.20.0)
+- Deep Core DC302 Fast Ignition Reactor (v2.20.0)
+- Deep Core DC303 Fast Ignition Reactor (v2.20.0)
+- Deep Core Fusor DC401 Reactor (v2.20.0)
+- Deep Core Fusor DC402 Reactor (v2.20.0)
+- Deep Core Fusor DC403 Reactor (v2.20.0)
+- Deep Core Spheromak DC201 Reactor (v2.20.0)
+- Deep Core Spheromak DC202 Reactor (v2.20.0)
+- Dogstar 101DS Mag Inertial Reactor (v2.20.0)
+- Dogstar 102DS Mag Inertial Reactor (v2.20.0)
+- Dogstar 103DS Mag Inertial Reactor (v2.20.0)
+- Dogstar 104DS Mag Inertial Reactor (v2.20.0)
+- Dogstar 114MM Toroidal Reactor (v2.20.0)
+- Dogstar 124MM Toroidal Reactor (v2.20.0)
+- Dogstar 134MM Toroidal Reactor (v2.20.0)
+- Dogstar 144MM Toroidal Reactor (v2.20.0)
+- Dogstar 154MM Toroidal Reactor (v2.20.0)
+- Dogstar 164MM Toroidal Reactor (v2.20.0)
+- Dogstar SF10 Sheared Flow Reactor (v2.20.0)
+- Dogstar SF20 Sheared Flow Reactor (v2.20.0)
+- Dogstar SF30 Sheared Flow Reactor (v2.20.0)
+- Dogstar SF40 Sheared Flow Reactor (v2.20.0)
+- Xiang Ion Beam H-1010 Reactor (v2.20.0)
+- Xiang Ion Beam H-1020 Reactor (v2.20.0)
+- Xiang Ion Beam H-1030 Reactor (v2.20.0)
+- Xiang Pinch 5Z Reactor (v2.20.0)
+- Xiang Pinch 6Z Reactor (v2.20.0)
+- Xiang Pinch 7Z Reactor (v2.20.0)
+- Xiang Pinch 8A Reactor (v2.20.0)
+- Xiang Pinch 8Z Reactor (v2.20.0)
+- Xiang Tokamak X-050 Reactor (v2.20.0)
+- Xiang Tokamak X-100 Reactor (v2.20.0)
+- Xiang Tokamak X-120S Reactor (v2.20.0)
+- Xiang Tokamak X-150 Reactor (v2.20.0)
+- Xiang Tokamak X-200 Reactor (v2.20.0)
+- Xiang Tokamak X-250 Reactor (v2.20.0)
+- Xiang Tokamak X-300 Reactor (v2.20.0)
 Shields:
 - Dogstar Defender 11T Shield Generator (v2.12.0)
 - Dogstar Defender 22T Shield Generator (v2.12.0)
@@ -348,6 +401,19 @@ Decorative Grav Drives:
 - Decorative: Slayton SGD 2xxx (v2.19.0)
 - Decorative: Slayton SGD 3xxx (v2.19.0)
 - Decorative: Vanguard Recon (v2.19.0)
+Decorative Reactors:
+- Decorative: 101DS Mag Inertial Reactor (v2.20.0)
+- Decorative: 114MM Toroidal Reactor (v2.20.0)
+- Decorative: 330T Stellarator Reactor (v2.20.0)
+- Decorative: DC301 Fast Ignition Reactor (v2.20.0)
+- Decorative: Fusor DC401 Reactor (v2.20.0)
+- Decorative: Ion Beam H-1010 Reactor (v2.20.0)
+- Decorative: Pinch 5Z Reactor (v2.20.0)
+- Decorative: SF10 Sheared Flow Reactor (v2.20.0)
+- Decorative: Spheromak DC201 Reactor (v2.20.0)
+- Decorative: Theta Pinch A9 Reactor (v2.20.0)
+- Decorative: Tokamak X-050 Reactor (v2.20.0)
+- Decorative: Z-Machine 1000 Reactor (v2.20.0)
 Decorative Shields:
 - Decorative: Dogstar Defender (v2.13.0)
 - Decorative: Dogstar Guardian (v2.13.0)

@@ -10,6 +10,7 @@ Const
   CELL_PERSISTENT_CHILDREN = 8;
   CELL_TEMPORARY_CHILDREN = 9;
   START_SIGNATURES = 'COBJ,FLST,GBFM,CELL,REFR,PKIN';
+  ALLOWED_NON_LINK_SIGNATURES = 'COBJ,FLST,GBFM,PKIN,CELL';
   DEFAULT_SKIP_EDIDS = 'PrefabPackinPivotDummy,OutpostGroupPackinDummy,LP_,PostEffectVolume';
   EXCLUDE_FILES_MASTERS = 'Starfield.esm,Starfield.exe,BlueprintShips-Starfield.esm,OldMars.esm,Constellation.esm';
   DEFAULT_EDID_SUFFIX = '-Base';
@@ -144,7 +145,7 @@ var
 begin
     ref_name_element := ElementBySignature(refr, 'NAME');
     record_source := LinksTo(ref_name_element);
-    record_copy := ProcessElement(record_source);
+    record_copy := ProcessElement(record_source, True);
     if Assigned(record_copy) then
       SetEditValue(ref_name_element, Name(record_copy));
 end;
@@ -168,7 +169,7 @@ begin
       AddMessage('    skipping, PKIN as REFR');
       continue;
     end;
-    ProcessElement(new_cell_subrecord);
+    ProcessElement(new_cell_subrecord, True);
   end;
 end;
 
@@ -224,7 +225,7 @@ begin
   AddMessage('    copy as new: ' + Name(pkin_copy));
   UpdateEditorID(pkin_copy);
   subrecord_source := LinksTo(ElementByPath(pkin_copy, 'CNAM'));
-  subrecord_copy := ProcessElement(subrecord_source);
+  subrecord_copy := ProcessElement(subrecord_source, True);
   if Assigned(subrecord_copy) then
     SetEditValue(ElementByPath(pkin_copy, 'CNAM'), Name(subrecord_copy));
   Result := pkin_copy;
@@ -246,7 +247,7 @@ begin
   for i := 0 to Pred(ElementCount(form_links)) do begin
     form_link_item := ElementByIndex(form_links, i);
     subrecord_source := LinksTo(ElementBySignature(form_link_item, 'FLFM'));
-    subrecord_copy := ProcessElement(subrecord_source);
+    subrecord_copy := ProcessElement(subrecord_source, True);
     if Assigned(subrecord_copy) then
       SetElementEditValues(form_link_item, 'FLFM', Name(subrecord_copy));
   end;
@@ -264,7 +265,7 @@ begin
   gbfm_copy := wbCopyElementToFile(gbfm_source, global_target_file, True, True);
   UpdateEditorID(gbfm_copy);
   AddMessage('    copy as new: ' + Name(gbfm_copy));
-  component_list := ElementByPath(gbfm_copy, 'Components');
+  component_list := ElementByPath(gbfm_copy, 'Base Form Components');
   for i := 0 to Pred(ElementCount(component_list)) do begin
     component := ElementByIndex(component_list, i);
     ProcessGBFMComponentLinkedForms(component);
@@ -310,7 +311,7 @@ begin
   for i := 0 to Pred(ElementCount(form_id_list)) do begin
     list_element := ElementByIndex(form_id_list, i);
     subrecord_source := LinksTo(list_element);
-    subrecord_copy := ProcessElement(subrecord_source);
+    subrecord_copy := ProcessElement(subrecord_source, True);
     if Assigned(subrecord_copy) then
       SetEditValue(list_element, Name(subrecord_copy));
   end;
@@ -337,7 +338,7 @@ begin
 
   subrecord_source := LinksTo(ElementBySignature(cobj_source, 'CNAM'));
   if Assigned(subrecord_source) then begin
-    subrecord_copy := ProcessElement(subrecord_source);
+    subrecord_copy := ProcessElement(subrecord_source, True);
     if Assigned(subrecord_copy) then
       SetElementEditValues(cobj_new, 'CNAM', Name(subrecord_copy));
   end;
@@ -346,7 +347,7 @@ begin
 end;
 
 
-function ProcessElement(element: IInterface): IInterface;
+function ProcessElement(element: IInterface; from_link: boolean): IInterface;
 var
   element_signature: string;
   element_edid: string;
@@ -358,6 +359,13 @@ begin
   if IsPrefixed(global_skip_edids, element_edid) then
   begin
     AddMessage('    skipping editor id: ' + global_skip_edids);
+    Exit;
+  end;
+
+  if (Pos(Signature(element), ALLOWED_NON_LINK_SIGNATURES) = 0) and (not from_link) then
+  begin
+    AddMessage('Unlinked calls to ProcessElement only process: ' + ALLOWED_NON_LINK_SIGNATURES + '; got ' + Signature(element));
+    Result := 1;
     Exit;
   end;
 
@@ -685,7 +693,7 @@ begin
       Exit;
   end
 
-  ProcessElement(element);
+  ProcessElement(element, False);
 
   Result := 0;
 end;
