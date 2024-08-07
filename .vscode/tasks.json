@@ -10,8 +10,8 @@
     {
       "label": "Build",
       "type": "shell",
-      "command": "echo",
-      "args": ["Build complete!"],
+      "command": "Write-Host",
+      "args": ["-Foreground", "Green", "-Background", "Black", "Build complete!"],
       "group": {
         "kind": "build",
         "isDefault": true
@@ -29,7 +29,8 @@
     {
       "label": "Update Versions",
       "type": "shell",
-      "command": "./support/common/scripts/version-updater.ps1"
+      "command": "./support/common/scripts/version-updater.ps1",
+      "args": ["-SkipBackup"]
     },
     {
       "label": "Sanitize FOMOD XML Files",
@@ -49,7 +50,7 @@
       "args": ["./support/docs/README.md", "./support/docs/CHANGELOG.md"]
     },
     {
-      "label": "Serialize plugins",
+      "label": "Serialize Plugins",
       "type": "shell",
       "command": "./support/common/scripts/serialize-plugins.ps1",
       "args": ["-Starfield", "-YAML"]
