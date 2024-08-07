@@ -1,33 +1,19 @@
 SpriggitSource:
   PackageName: Spriggit.Yaml.Starfield
-  Version: 0.18.0
+  Version: 0.25.0
 ModKey: JIYTv2-ShipColorize-BetterShipPartSnaps-Patch.esm
 GameRelease: Starfield
 ModHeader:
   Flags:
   - Master
-  - Localized
-  Stats:
-    NumRecords: 46
-    NextFormID: 2048
   Author: rux616
   Description: >-
     Compatibility patch between the "Ship Colorize" compatibility patch of the "Junk In Your (Ship's) Trunk" mod by rux616 (JIYTv2-ShipColorize-Patch.esm) and the "Better Ship Part Snaps" mod by Freschu (BetterShipPartSnaps.esm).
 
 
-    Version: 2.19.0
+    Version: 2.20.0
   MasterReferences:
   - Master: Starfield.esm
-  - Master: BlueprintShips-Starfield.esm
   - Master: JunkInYourTrunk_v2.esm
   - Master: JIYTv2-ShipColorize-Patch.esm
   - Master: BetterShipPartSnaps.esm
-  OverriddenForms:
-  - 000886:JIYTv2-ShipColorize-Patch.esm
-  - 00088C:JIYTv2-ShipColorize-Patch.esm
-  - 000892:JIYTv2-ShipColorize-Patch.esm
-  - 000898:JIYTv2-ShipColorize-Patch.esm
-  - 00089E:JIYTv2-ShipColorize-Patch.esm
-  - 0008A4:JIYTv2-ShipColorize-Patch.esm
-  - 0008AA:JIYTv2-ShipColorize-Patch.esm
-  - 0008B0:JIYTv2-ShipColorize-Patch.esm

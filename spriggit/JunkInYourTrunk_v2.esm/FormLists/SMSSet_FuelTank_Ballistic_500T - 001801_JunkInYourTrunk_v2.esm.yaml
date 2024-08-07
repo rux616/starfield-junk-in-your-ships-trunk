@@ -1,0 +1,9 @@
+FormKey: 001801:JunkInYourTrunk_v2.esm
+EditorID: SMSSet_FuelTank_Ballistic_500T
+Name:
+  TargetLanguage: English
+  Value: Ballistic 500T Set
+Items:
+- 0017FF:JunkInYourTrunk_v2.esm
+- 001800:JunkInYourTrunk_v2.esm
+- 2704A0:Starfield.esm

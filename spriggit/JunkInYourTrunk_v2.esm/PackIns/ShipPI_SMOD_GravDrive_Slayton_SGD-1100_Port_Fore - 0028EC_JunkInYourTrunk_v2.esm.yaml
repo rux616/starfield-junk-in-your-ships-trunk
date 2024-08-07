@@ -1,0 +1,15 @@
+FormKey: 0028EC:JunkInYourTrunk_v2.esm
+MajorRecordFlagsRaw: 512
+EditorID: ShipPI_SMOD_GravDrive_Slayton_SGD-1100_Port_Fore
+StarfieldMajorRecordFlags:
+- 0x200
+ODTY: 0
+Transforms:
+  Ship: 39EC83:Starfield.esm
+Filter: '\Ships\Modules\Exterior\Grav\Slayton\'
+Cell: 0028ED:JunkInYourTrunk_v2.esm
+Version: 0
+FNAM: 0x0E000000
+MaterialSwaps: []
+MajorFlags:
+- Prefab

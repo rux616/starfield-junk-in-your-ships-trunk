@@ -1,0 +1,14 @@
+FormKey: 001EB9:JunkInYourTrunk_v2.esm
+EditorID: co_SMS_Decorative_Weapon_Missile_Vanguard_A
+Description:
+  TargetLanguage: English
+  Value: Decorative ship modules allow you to add modules that mimic the look of other types of modules but without the functionality or restrictions that come with them.
+WorkbenchKeyword: 29C480:Starfield.esm
+CreatedObject: 001E0A:JunkInYourTrunk_v2.esm
+AmountProduced: 1
+MenuSortOrder: 14
+LearnMethod: DefaultOrConditions
+Value: 1000
+Categories:
+- Null
+RECF: 0

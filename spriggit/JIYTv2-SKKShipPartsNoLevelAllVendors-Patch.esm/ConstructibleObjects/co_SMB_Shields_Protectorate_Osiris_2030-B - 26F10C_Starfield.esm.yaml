@@ -1,0 +1,17 @@
+FormKey: 26F10C:Starfield.esm
+EditorID: co_SMB_Shields_Protectorate_Osiris_2030-B
+Description:
+  TargetLanguage: English
+  Value: Spaceship Shield Modules help protect your ship from incoming damage.
+WorkbenchKeyword: 29C480:Starfield.esm
+RequiredPerks:
+- Perk: 2C59DC:Starfield.esm
+  Rank: 3
+CreatedObject: 001397:JunkInYourTrunk_v2.esm
+AmountProduced: 1
+MenuSortOrder: 33
+LearnMethod: DefaultOrConditions
+Value: 22900
+Categories:
+- 29C476:Starfield.esm
+RECF: 0
