@@ -1,7 +1,7 @@
 <fomod>
 	<Name>Junk In Your (Ship's) Trunk</Name>
 	<Author>rux616</Author>
-	<Version>2.19.0</Version>
+	<Version>2.20.0</Version>
 	<Website>https://www.nexusmods.com/starfield/mods/5954</Website>
 	<Description>(Cargo holds, fuel tanks, grav drives, shields, weapons. You want variety? We got variety. Adds new flips and decorative versions of many different ship modules.)
 
@@ -11,9 +11,7 @@ You want variety? We got variety! Up? Yes! Down? Also yes! Left? Still yes! Righ
 
 But wait, there's more! As a bonus, you also get additional decorative versions of all of them! Plus weapons! That's right! All the looks with only a fraction of the cost or weight. And none of the functionality, but who cares about that when your ship looks this good, am I right? You can find these marvelous new modules in the various "Decorative [...]" categories in the Ship Builder.
 
-There are even some additional snap points added so you can do interesting things like putting certain "vertical" modules next to something else, though only for cargo holds and grav drives at the moment; more modules will be converted in the future. (The JIYT Consortium is not responsible for any cursed creations you make with this feature.)
-
-Translations are provided for the following languages: German (de), Spanish (es), French (fr), Italian (it), Japanese (ja), Polish (pl), Brazilian Portuguese (ptbr), and Simplified Chinese (zhhans). As these are powered by Google Translate (plus xTranslator) they may not be entirely accurate and the JIYT Consortium apologizes in advance if your mother was accidentally insulted. If that is the case (or you see other errors), please provide feedback and it will be fixed as soon as possible.</Description>
+There are even some additional snap points added so you can do interesting things like putting certain "vertical" modules next to something else, though only for cargo holds and grav drives at the moment; more modules will be converted in the future. (The JIYT Consortium is not responsible for any cursed creations you make with this feature.)</Description>
 	<Groups>
 		<element>Ships</element>
 	</Groups>

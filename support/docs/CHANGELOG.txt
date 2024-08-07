@@ -6,6 +6,7 @@ Table Of Contents
 - Junk In Your (Ship's) Trunk
     - Table Of Contents
 - Changelog
+    - v2.20.0
     - v2.19.0
     - v2.18.0
     - v2.17.0
@@ -33,6 +34,26 @@ Table Of Contents
 
 Changelog
 =========
+
+v2.20.0
+-------
+- Added 23 Amun Dunn 330T/340T/350T/360T/370T/380T Stellarator reactor orientations
+- Added 23 Amun Dunn Z-Machine 1000/2000/2020/3000/4000 reactor orientations
+- Added 23 Amun Dunn Theta Pinch A9/B9/C9/D9 reactor orientations
+- Added 23 DeepCore Spheromak DC201/DC202 reactor orientations
+- Added 23 DeepCore DC301/DC302/DC303 Fast Ignition reactor orientations
+- Added 23 DeepCore Fusor DC401/DC402/DC403 reactor orientations
+- Added 23 Dogstar 114MM/124MM/134MM/144MM/154MM/164MM Toroidal reactor orientations
+- Added 23 Dogstar 101DS/102DS/103DS/104DS Mag Inertial reactor orientations
+- Added 23 Dogstar SF10/SF20/SF30/SF40 Sheared Flow reactor orientations
+- Added 23 Xiang Tokamak X-050/X-100/X-120S/X-150/X-200/X-250/X-300 reactor orientations
+- Added 23 Xiang Ion Beam H-1010/H-1020/H-1030 reactor orientations
+- Added 23 Xiang Pinch 5Z/6Z/7Z/8A/8Z reactor orientations
+- Added decorative versions of all reactors
+- Reactors have enhanced snap points
+- Added common build/packaging script submodule
+- Removed localization from all files as it's not supported in the Creation Kit
+- Removed BlueprintShips-Starfield.esm as a master file for all plugins
 
 v2.19.0
 -------
