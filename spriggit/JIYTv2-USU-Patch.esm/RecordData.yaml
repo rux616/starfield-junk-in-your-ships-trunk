@@ -6,6 +6,7 @@ GameRelease: Starfield
 ModHeader:
   Flags:
   - Master
+  FormVersion: 559
   Author: rux616
   Description: >-
     Compatibility patch between "Junk In Your (Ship's) Trunk" mod by rux616 (JunkInYourTrunk_v2.esm) and the "All In One" plugin from the "Ultimate Shipyards Unlocked" [All In One] mod by JustAnOrdinaryGuy (USU.esm).
@@ -14,5 +15,9 @@ ModHeader:
     Version: 2.20.0
   MasterReferences:
   - Master: Starfield.esm
-  - Master: JunkInYourTrunk_v2.esm
+  - Master: ShipBuilderCategories.esm
   - Master: USU.esm
+  - Master: JunkInYourTrunk_v2.esm
+  - Master: BlueprintShips-Starfield.esm
+  BNAM: 0x4D61696E00
+  INCC: 0

@@ -6,6 +6,7 @@ GameRelease: Starfield
 ModHeader:
   Flags:
   - Master
+  FormVersion: 559
   Author: rux616
   Description: >-
     Hides all decorative ship modules from Junk In Your Trunk.
@@ -14,4 +15,7 @@ ModHeader:
     Version: 2.20.0
   MasterReferences:
   - Master: Starfield.esm
+  - Master: ShipBuilderCategories.esm
   - Master: JunkInYourTrunk_v2.esm
+  BNAM: 0x4D61696E00
+  INCC: 0

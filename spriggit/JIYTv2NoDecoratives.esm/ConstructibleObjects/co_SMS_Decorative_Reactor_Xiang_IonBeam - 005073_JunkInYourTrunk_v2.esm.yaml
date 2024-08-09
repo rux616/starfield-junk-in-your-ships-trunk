@@ -1,6 +1,6 @@
 FormKey: 005073:JunkInYourTrunk_v2.esm
 EditorID: co_SMS_Decorative_Reactor_Xiang_IonBeam
-FormVersion: 558
+FormVersion: 559
 Description:
   TargetLanguage: English
   Value: Decorative ship modules allow you to add modules that mimic the look of other types of modules but without the functionality or restrictions that come with them.
@@ -11,5 +11,5 @@ MenuSortOrder: 11
 LearnMethod: DefaultOrConditions
 Value: 1000
 Categories:
-- Null
+- 000806:JIYTv2NoDecoratives.esm
 RECF: 0

@@ -1,5 +1,6 @@
 FormKey: 26F10B:Starfield.esm
 EditorID: co_SMB_Shields_Protectorate_Osiris_2040-B
+FormVersion: 559
 Description:
   TargetLanguage: English
   Value: Spaceship Shield Modules help protect your ship from incoming damage.
@@ -7,7 +8,6 @@ WorkbenchKeyword: 29C480:Starfield.esm
 Conditions:
 - MutagenObjectType: ConditionFloat
   Unknown1: 0x000000
-  Unknown2: 17620
   Data:
     MutagenObjectType: HasKeywordConditionData
     FirstParameter: 143C9F:Starfield.esm
@@ -15,7 +15,6 @@ Conditions:
 - MutagenObjectType: ConditionFloat
   CompareOperator: GreaterThanOrEqualTo
   Unknown1: 0x000000
-  Unknown2: 17620
   Data:
     MutagenObjectType: GetLevelConditionData
     RunOnType: Reference
