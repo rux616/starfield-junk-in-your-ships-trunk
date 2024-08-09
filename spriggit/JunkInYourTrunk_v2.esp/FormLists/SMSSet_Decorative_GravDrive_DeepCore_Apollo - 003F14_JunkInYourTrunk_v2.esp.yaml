@@ -1,5 +1,6 @@
 FormKey: 003F14:JunkInYourTrunk_v2.esp
 EditorID: SMSSet_Decorative_GravDrive_DeepCore_Apollo
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative DeepCore Apollo Set
@@ -28,3 +29,4 @@ Items:
 - 003FC3:JunkInYourTrunk_v2.esp
 - 003FCA:JunkInYourTrunk_v2.esp
 - 003FD1:JunkInYourTrunk_v2.esp
+ANAM: Null

@@ -1,6 +1,6 @@
 FormKey: 00505D:JunkInYourTrunk_v2.esp
 EditorID: SMS_Decorative_Reactor_Xiang_Pinch_Top_Fore
-FormVersion: 558
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

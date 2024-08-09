@@ -1,8 +1,11 @@
 FormKey: 0013C7:JunkInYourTrunk_v2.esp
 MajorRecordFlagsRaw: 512
 EditorID: ShipPI_SMOD_Shield_Sextant_Assurance-SG-1000_Aft
+FormVersion: 559
 StarfieldMajorRecordFlags:
 - 0x200
+ObjectBounds:
+  Second: 0, 2.25, 0
 ODTY: 0
 Transforms:
   Ship: 050FBE:Starfield.esm

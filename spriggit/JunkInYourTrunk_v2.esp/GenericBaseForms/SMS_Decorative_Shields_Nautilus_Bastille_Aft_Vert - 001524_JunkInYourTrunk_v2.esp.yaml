@@ -1,5 +1,6 @@
 FormKey: 001524:JunkInYourTrunk_v2.esp
 EditorID: SMS_Decorative_Shields_Nautilus_Bastille_Aft_Vert
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

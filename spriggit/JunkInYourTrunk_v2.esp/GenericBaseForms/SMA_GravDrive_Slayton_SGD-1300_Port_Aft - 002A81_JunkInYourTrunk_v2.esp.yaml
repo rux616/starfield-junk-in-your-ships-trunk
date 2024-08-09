@@ -1,5 +1,6 @@
 FormKey: 002A81:JunkInYourTrunk_v2.esp
 EditorID: SMA_GravDrive_Slayton_SGD-1300_Port_Aft
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

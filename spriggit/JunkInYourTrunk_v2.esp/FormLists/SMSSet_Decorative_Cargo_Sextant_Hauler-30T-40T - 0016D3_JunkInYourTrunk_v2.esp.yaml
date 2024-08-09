@@ -1,5 +1,6 @@
 FormKey: 0016D3:JunkInYourTrunk_v2.esp
 EditorID: SMSSet_Decorative_Cargo_Sextant_Hauler-30T-40T
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Sextant Hauler 30T/40T Set
@@ -28,3 +29,4 @@ Items:
 - 0016BC:JunkInYourTrunk_v2.esp
 - 0016BD:JunkInYourTrunk_v2.esp
 - 0016BE:JunkInYourTrunk_v2.esp
+ANAM: Null

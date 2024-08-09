@@ -1,9 +1,6 @@
 FormKey: 0020B4:JunkInYourTrunk_v2.esp
 EditorID: ShipPI_SMOD_Cargo_Protectorate_Galleon-S203-Base_BtmPort
-FormVersion: 558
-ObjectBounds:
-  First: -4, -4, -1.7509766
-  Second: 4, 4, 1.75
+FormVersion: 559
 ODTY: 0
 Transforms:
   Ship: 203E7A:Starfield.esm

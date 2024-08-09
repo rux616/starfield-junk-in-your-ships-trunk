@@ -1,5 +1,6 @@
 FormKey: 001DD4:JunkInYourTrunk_v2.esp
 EditorID: SMSSet_Decorative_FuelTank_Dogstar_Atlas-H10
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Dogstar Atlas H10 Set
@@ -16,3 +17,4 @@ Items:
 - 001D52:JunkInYourTrunk_v2.esp
 - 001D53:JunkInYourTrunk_v2.esp
 - 001D54:JunkInYourTrunk_v2.esp
+ANAM: Null

@@ -1,5 +1,6 @@
 FormKey: 004FF2:JunkInYourTrunk_v2.esp
 EditorID: SMS_Decorative_Reactor_Xiang_IonBeam_Fore_Stbd
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

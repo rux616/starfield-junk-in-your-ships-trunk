@@ -1,5 +1,6 @@
 FormKey: 0014AA:JunkInYourTrunk_v2.esp
 EditorID: SMC_Shields_Nautilus_Fortress-A1_Fore
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

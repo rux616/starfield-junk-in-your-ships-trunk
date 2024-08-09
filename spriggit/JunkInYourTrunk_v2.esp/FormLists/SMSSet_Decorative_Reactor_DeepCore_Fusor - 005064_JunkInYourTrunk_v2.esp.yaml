@@ -1,5 +1,6 @@
 FormKey: 005064:JunkInYourTrunk_v2.esp
 EditorID: SMSSet_Decorative_Reactor_DeepCore_Fusor
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Deep Core Fusor Set
@@ -28,3 +29,4 @@ Items:
 - 00502D:JunkInYourTrunk_v2.esp
 - 00502E:JunkInYourTrunk_v2.esp
 - 00502F:JunkInYourTrunk_v2.esp
+ANAM: Null

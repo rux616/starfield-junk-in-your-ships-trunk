@@ -1,5 +1,6 @@
 FormKey: 001E77:JunkInYourTrunk_v2.esp
 EditorID: SMSSet_Decorative_Weapon_Laser_LightScythe_D_Turret
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Light Scythe LSR-D Turret Set
@@ -8,3 +9,4 @@ Items:
 - 001E57:JunkInYourTrunk_v2.esp
 - 001E58:JunkInYourTrunk_v2.esp
 - 001E59:JunkInYourTrunk_v2.esp
+ANAM: Null

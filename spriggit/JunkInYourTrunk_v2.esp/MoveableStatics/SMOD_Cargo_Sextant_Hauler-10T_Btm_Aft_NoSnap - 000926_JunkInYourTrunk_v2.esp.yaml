@@ -1,5 +1,6 @@
 FormKey: 000926:JunkInYourTrunk_v2.esp
 EditorID: SMOD_Cargo_Sextant_Hauler-10T_Btm_Aft_NoSnap
+FormVersion: 559
 ODTY: 0
 Model:
   File: Ships\Modules\Cargo\SMOD\SMOD_Cargo_Sextant_10T-Hauler.nif

@@ -1,5 +1,6 @@
 FormKey: 000CA5:JunkInYourTrunk_v2.esp
 EditorID: SMS_CargoShielded_Panoptes_daGama-1000_Top_FA_Port
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

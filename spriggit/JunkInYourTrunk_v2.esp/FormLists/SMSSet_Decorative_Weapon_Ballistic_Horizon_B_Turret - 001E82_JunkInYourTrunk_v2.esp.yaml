@@ -1,5 +1,6 @@
 FormKey: 001E82:JunkInYourTrunk_v2.esp
 EditorID: SMSSet_Decorative_Weapon_Ballistic_Horizon_B_Turret
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Horizon BLS-B Turret Set
@@ -8,3 +9,4 @@ Items:
 - 001E17:JunkInYourTrunk_v2.esp
 - 001E18:JunkInYourTrunk_v2.esp
 - 001E19:JunkInYourTrunk_v2.esp
+ANAM: Null

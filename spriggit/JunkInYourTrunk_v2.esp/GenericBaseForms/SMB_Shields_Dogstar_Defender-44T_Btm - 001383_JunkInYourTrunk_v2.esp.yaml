@@ -1,5 +1,6 @@
 FormKey: 001383:JunkInYourTrunk_v2.esp
 EditorID: SMB_Shields_Dogstar_Defender-44T_Btm
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

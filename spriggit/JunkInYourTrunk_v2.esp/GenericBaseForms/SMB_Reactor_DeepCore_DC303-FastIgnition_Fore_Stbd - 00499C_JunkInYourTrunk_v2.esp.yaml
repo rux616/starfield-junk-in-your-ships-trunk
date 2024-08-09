@@ -1,5 +1,6 @@
 FormKey: 00499C:JunkInYourTrunk_v2.esp
 EditorID: SMB_Reactor_DeepCore_DC303-FastIgnition_Fore_Stbd
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

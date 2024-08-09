@@ -1,5 +1,6 @@
 FormKey: 00156C:JunkInYourTrunk_v2.esp
 EditorID: SMS_Decorative_Shields_Vanguard_Bulwark_UC01_Btm
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

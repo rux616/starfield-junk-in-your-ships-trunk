@@ -1,5 +1,6 @@
 FormKey: 2258D9:Starfield.esm
 EditorID: SMSSet_Cargo_Panoptes_daGama-1010
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Panoptes da Gama 1010 Set
@@ -28,3 +29,4 @@ Items:
 - 000D10:JunkInYourTrunk_v2.esp
 - 000D11:JunkInYourTrunk_v2.esp
 - 000D12:JunkInYourTrunk_v2.esp
+ANAM: Null

@@ -1,5 +1,6 @@
 FormKey: 005068:JunkInYourTrunk_v2.esp
 EditorID: SMSSet_Decorative_Reactor_Dogstar_Toroidal
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Dogstar Toroidal Set
@@ -28,3 +29,4 @@ Items:
 - 004F85:JunkInYourTrunk_v2.esp
 - 004F86:JunkInYourTrunk_v2.esp
 - 004F87:JunkInYourTrunk_v2.esp
+ANAM: Null

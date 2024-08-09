@@ -1,5 +1,6 @@
 FormKey: 004778:JunkInYourTrunk_v2.esp
 EditorID: SMA_Reactor_Xiang_Tokamak-X-150_Btm_Aft
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

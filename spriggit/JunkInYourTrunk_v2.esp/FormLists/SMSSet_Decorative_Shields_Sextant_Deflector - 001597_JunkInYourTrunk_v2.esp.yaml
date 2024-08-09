@@ -1,5 +1,6 @@
 FormKey: 001597:JunkInYourTrunk_v2.esp
 EditorID: SMSSet_Decorative_Shields_Sextant_Deflector
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Sextant Deflector Set
@@ -28,3 +29,4 @@ Items:
 - 001550:JunkInYourTrunk_v2.esp
 - 001551:JunkInYourTrunk_v2.esp
 - 001552:JunkInYourTrunk_v2.esp
+ANAM: Null

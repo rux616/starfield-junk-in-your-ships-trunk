@@ -1,5 +1,6 @@
 FormKey: 001399:JunkInYourTrunk_v2.esp
 EditorID: SMBSet_Shields_Sextant_Warden-SG-100
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Sextant Warden SG-100 Set
@@ -10,3 +11,4 @@ Items:
 - 0014B5:JunkInYourTrunk_v2.esp
 - 0014B6:JunkInYourTrunk_v2.esp
 - 26F121:Starfield.esm
+ANAM: Null

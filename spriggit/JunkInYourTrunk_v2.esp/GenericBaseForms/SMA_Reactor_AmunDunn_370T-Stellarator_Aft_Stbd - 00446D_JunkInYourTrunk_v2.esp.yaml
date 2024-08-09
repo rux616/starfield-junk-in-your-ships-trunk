@@ -1,5 +1,6 @@
 FormKey: 00446D:JunkInYourTrunk_v2.esp
 EditorID: SMA_Reactor_AmunDunn_370T-Stellarator_Aft_Stbd
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

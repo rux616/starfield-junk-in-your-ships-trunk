@@ -1,5 +1,6 @@
 FormKey: 003BD7:JunkInYourTrunk_v2.esp
 EditorID: SMSSet_Decorative_GravDrive_DeepCore_Aurora
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative DeepCore Aurora Set
@@ -28,3 +29,4 @@ Items:
 - 003C83:JunkInYourTrunk_v2.esp
 - 003C8A:JunkInYourTrunk_v2.esp
 - 003C91:JunkInYourTrunk_v2.esp
+ANAM: Null

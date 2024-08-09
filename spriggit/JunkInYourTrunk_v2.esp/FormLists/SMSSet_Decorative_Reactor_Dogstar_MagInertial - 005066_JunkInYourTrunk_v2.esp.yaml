@@ -1,5 +1,6 @@
 FormKey: 005066:JunkInYourTrunk_v2.esp
 EditorID: SMSSet_Decorative_Reactor_Dogstar_MagInertial
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Dogstar Mag Inertial Set
@@ -28,3 +29,4 @@ Items:
 - 004FE5:JunkInYourTrunk_v2.esp
 - 004FE6:JunkInYourTrunk_v2.esp
 - 004FE7:JunkInYourTrunk_v2.esp
+ANAM: Null

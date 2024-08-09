@@ -1,5 +1,6 @@
 FormKey: 000F17:JunkInYourTrunk_v2.esp
 EditorID: SMOD_Cargo_Dogstar_StorMax-Base_Port_Zntl_NoSnap
+FormVersion: 559
 ODTY: 0
 Model:
   File: Ships\Modules\Cargo\SMOD\SMOD_Cargo_Dogstar_StorMax-40_Port.nif

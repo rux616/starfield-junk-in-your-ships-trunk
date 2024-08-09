@@ -1,5 +1,6 @@
 FormKey: 16E07E:Starfield.esm
 EditorID: SMSSet_Cargo_Sextant_Hauler-40T
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Sextant Hauler 40T Set
@@ -28,3 +29,4 @@ Items:
 - 000AFD:JunkInYourTrunk_v2.esp
 - 000AFE:JunkInYourTrunk_v2.esp
 - 000AFF:JunkInYourTrunk_v2.esp
+ANAM: Null

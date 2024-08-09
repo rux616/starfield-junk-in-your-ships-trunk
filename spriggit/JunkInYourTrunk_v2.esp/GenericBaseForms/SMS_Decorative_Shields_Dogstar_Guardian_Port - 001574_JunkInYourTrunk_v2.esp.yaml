@@ -1,5 +1,6 @@
 FormKey: 001574:JunkInYourTrunk_v2.esp
 EditorID: SMS_Decorative_Shields_Dogstar_Guardian_Port
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

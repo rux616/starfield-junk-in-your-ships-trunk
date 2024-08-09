@@ -1,5 +1,6 @@
 FormKey: 001C49:JunkInYourTrunk_v2.esp
 EditorID: SMS_FuelTank_Dogstar_Atlas-H40_Top_FA
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

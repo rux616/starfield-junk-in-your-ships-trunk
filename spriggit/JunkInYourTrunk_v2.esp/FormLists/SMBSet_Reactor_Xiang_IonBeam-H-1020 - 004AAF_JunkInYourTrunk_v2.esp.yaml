@@ -1,5 +1,6 @@
 FormKey: 004AAF:JunkInYourTrunk_v2.esp
 EditorID: SMBSet_Reactor_Xiang_IonBeam-H-1020
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Xiang Ion Beam H-1020 Set
@@ -28,3 +29,4 @@ Items:
 - 004B66:JunkInYourTrunk_v2.esp
 - 004B67:JunkInYourTrunk_v2.esp
 - 004B68:JunkInYourTrunk_v2.esp
+ANAM: Null

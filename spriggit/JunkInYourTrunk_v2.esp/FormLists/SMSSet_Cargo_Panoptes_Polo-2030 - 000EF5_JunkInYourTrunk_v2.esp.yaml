@@ -1,5 +1,6 @@
 FormKey: 000EF5:JunkInYourTrunk_v2.esp
 EditorID: SMSSet_Cargo_Panoptes_Polo-2030
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Panoptes Polo 2030 Set
@@ -16,3 +17,4 @@ Items:
 - 000F14:JunkInYourTrunk_v2.esp
 - 000F15:JunkInYourTrunk_v2.esp
 - 000F16:JunkInYourTrunk_v2.esp
+ANAM: Null

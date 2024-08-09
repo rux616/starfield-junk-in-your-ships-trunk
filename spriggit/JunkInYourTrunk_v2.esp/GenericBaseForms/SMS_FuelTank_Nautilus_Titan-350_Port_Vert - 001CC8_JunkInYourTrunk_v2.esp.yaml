@@ -1,5 +1,6 @@
 FormKey: 001CC8:JunkInYourTrunk_v2.esp
 EditorID: SMS_FuelTank_Nautilus_Titan-350_Port_Vert
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

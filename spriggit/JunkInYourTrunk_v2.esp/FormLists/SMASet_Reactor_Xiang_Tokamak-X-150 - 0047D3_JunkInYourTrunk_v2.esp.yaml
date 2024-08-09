@@ -1,5 +1,6 @@
 FormKey: 0047D3:JunkInYourTrunk_v2.esp
 EditorID: SMASet_Reactor_Xiang_Tokamak-X-150
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Xiang Tokamak X-150 Set
@@ -28,3 +29,4 @@ Items:
 - 004788:JunkInYourTrunk_v2.esp
 - 004789:JunkInYourTrunk_v2.esp
 - 00478A:JunkInYourTrunk_v2.esp
+ANAM: Null

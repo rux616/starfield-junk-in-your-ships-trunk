@@ -1,5 +1,6 @@
 FormKey: 004CAC:JunkInYourTrunk_v2.esp
 EditorID: SMC_Reactor_DeepCore_Fusor-DC401_Btm_Port
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

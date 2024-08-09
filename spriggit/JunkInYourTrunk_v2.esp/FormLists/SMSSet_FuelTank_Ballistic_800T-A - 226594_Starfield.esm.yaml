@@ -1,5 +1,6 @@
 FormKey: 226594:Starfield.esm
 EditorID: SMSSet_FuelTank_Ballistic_800T-A
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Ballistic 800T-A Set
@@ -16,3 +17,4 @@ Items:
 - 001922:JunkInYourTrunk_v2.esp
 - 001923:JunkInYourTrunk_v2.esp
 - 001924:JunkInYourTrunk_v2.esp
+ANAM: Null

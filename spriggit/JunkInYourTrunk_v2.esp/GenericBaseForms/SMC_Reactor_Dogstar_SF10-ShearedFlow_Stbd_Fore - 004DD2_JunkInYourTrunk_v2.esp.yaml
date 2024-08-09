@@ -1,5 +1,6 @@
 FormKey: 004DD2:JunkInYourTrunk_v2.esp
 EditorID: SMC_Reactor_Dogstar_SF10-ShearedFlow_Stbd_Fore
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

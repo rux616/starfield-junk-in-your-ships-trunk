@@ -1,5 +1,6 @@
 FormKey: 005067:JunkInYourTrunk_v2.esp
 EditorID: SMSSet_Decorative_Reactor_Dogstar_ShearedFlow
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Dogstar Sheared Flow Set
@@ -28,3 +29,4 @@ Items:
 - 005045:JunkInYourTrunk_v2.esp
 - 005046:JunkInYourTrunk_v2.esp
 - 005047:JunkInYourTrunk_v2.esp
+ANAM: Null

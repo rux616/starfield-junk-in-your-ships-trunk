@@ -1,5 +1,6 @@
 FormKey: 001560:JunkInYourTrunk_v2.esp
 EditorID: SMS_Decorative_Shields_Protectorate_Osiris_Btm
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

@@ -1,5 +1,6 @@
 FormKey: 0015F8:JunkInYourTrunk_v2.esp
 EditorID: SMS_Decorative_Cargo_Protectorate_Caravel-V101_Btm_Zntl
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

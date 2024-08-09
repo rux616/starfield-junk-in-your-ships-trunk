@@ -1,5 +1,6 @@
 FormKey: 0037CA:JunkInYourTrunk_v2.esp
 EditorID: SMSSet_Decorative_GravDrive_DeepCore_Helios
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative DeepCore Helios Set
@@ -28,3 +29,4 @@ Items:
 - 003880:JunkInYourTrunk_v2.esp
 - 003888:JunkInYourTrunk_v2.esp
 - 003890:JunkInYourTrunk_v2.esp
+ANAM: Null

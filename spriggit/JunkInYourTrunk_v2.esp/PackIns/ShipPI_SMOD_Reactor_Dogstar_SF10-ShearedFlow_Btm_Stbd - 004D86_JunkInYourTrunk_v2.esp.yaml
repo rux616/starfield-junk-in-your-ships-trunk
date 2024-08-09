@@ -1,8 +1,12 @@
 FormKey: 004D86:JunkInYourTrunk_v2.esp
 MajorRecordFlagsRaw: 512
 EditorID: ShipPI_SMOD_Reactor_Dogstar_SF10-ShearedFlow_Btm_Stbd
+FormVersion: 559
 StarfieldMajorRecordFlags:
 - 0x200
+ObjectBounds:
+  First: -3.9999025, -3.9999013, -3.205079
+  Second: 3.546973, 4.000097, 3.0253916
 ODTY: 0
 Transforms:
   Ship: 15E824:Starfield.esm

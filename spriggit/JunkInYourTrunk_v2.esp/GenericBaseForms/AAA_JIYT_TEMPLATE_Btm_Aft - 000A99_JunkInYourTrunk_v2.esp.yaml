@@ -1,5 +1,6 @@
 FormKey: 000A99:JunkInYourTrunk_v2.esp
 EditorID: AAA_JIYT_TEMPLATE_Btm_Aft
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

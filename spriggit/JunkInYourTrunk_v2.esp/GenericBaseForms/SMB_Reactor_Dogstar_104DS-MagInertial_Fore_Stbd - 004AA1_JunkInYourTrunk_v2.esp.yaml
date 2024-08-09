@@ -1,5 +1,6 @@
 FormKey: 004AA1:JunkInYourTrunk_v2.esp
 EditorID: SMB_Reactor_Dogstar_104DS-MagInertial_Fore_Stbd
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

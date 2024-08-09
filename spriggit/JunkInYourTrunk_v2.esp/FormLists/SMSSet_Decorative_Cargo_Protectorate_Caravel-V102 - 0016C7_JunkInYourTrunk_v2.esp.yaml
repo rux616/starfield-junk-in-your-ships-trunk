@@ -1,5 +1,6 @@
 FormKey: 0016C7:JunkInYourTrunk_v2.esp
 EditorID: SMSSet_Decorative_Cargo_Protectorate_Caravel-V102
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Protectorate Caravel V102 Set
@@ -16,3 +17,4 @@ Items:
 - 00160A:JunkInYourTrunk_v2.esp
 - 00160B:JunkInYourTrunk_v2.esp
 - 00160C:JunkInYourTrunk_v2.esp
+ANAM: Null

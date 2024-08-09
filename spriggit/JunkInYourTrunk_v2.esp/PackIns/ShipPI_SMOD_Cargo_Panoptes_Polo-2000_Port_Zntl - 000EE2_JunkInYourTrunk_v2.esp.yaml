@@ -1,8 +1,12 @@
 FormKey: 000EE2:JunkInYourTrunk_v2.esp
 MajorRecordFlagsRaw: 512
 EditorID: ShipPI_SMOD_Cargo_Panoptes_Polo-2000_Port_Zntl
+FormVersion: 559
 StarfieldMajorRecordFlags:
 - 0x200
+ObjectBounds:
+  First: 0, -3.998047, -4.0078125
+  Second: 4.0009756, 4.0000005, 4.0039062
 ODTY: 0
 Transforms:
   Ship: 050FBE:Starfield.esm

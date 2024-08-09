@@ -1,8 +1,12 @@
 FormKey: 003F6A:JunkInYourTrunk_v2.esp
 MajorRecordFlagsRaw: 512
 EditorID: ShipPI_SMOD_Decorative_GravDrive_DeepCore_Apollo_Port_Aft
+FormVersion: 559
 StarfieldMajorRecordFlags:
 - 0x200
+ObjectBounds:
+  First: -3.1816404, -4, -4
+  Second: 3.1816404, 4, 4
 ODTY: 0
 Transforms:
   Ship: 39EC83:Starfield.esm

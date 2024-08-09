@@ -1,5 +1,6 @@
 FormKey: 004F7A:JunkInYourTrunk_v2.esp
 EditorID: SMS_Decorative_Reactor_Dogstar_Toroidal_Fore_Stbd
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

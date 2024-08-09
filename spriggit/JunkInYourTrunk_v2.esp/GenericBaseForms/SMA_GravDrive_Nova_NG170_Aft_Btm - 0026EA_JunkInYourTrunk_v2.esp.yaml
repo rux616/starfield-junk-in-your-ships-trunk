@@ -1,5 +1,6 @@
 FormKey: 0026EA:JunkInYourTrunk_v2.esp
 EditorID: SMA_GravDrive_Nova_NG170_Aft_Btm
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

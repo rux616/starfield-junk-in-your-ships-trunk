@@ -1,5 +1,6 @@
 FormKey: 000F0C:JunkInYourTrunk_v2.esp
 EditorID: SMS_Cargo_Panoptes_Polo-2030_Aft
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

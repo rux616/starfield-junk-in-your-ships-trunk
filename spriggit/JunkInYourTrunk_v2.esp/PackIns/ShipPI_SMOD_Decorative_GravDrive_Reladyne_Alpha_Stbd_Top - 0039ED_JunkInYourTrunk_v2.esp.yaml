@@ -1,8 +1,12 @@
 FormKey: 0039ED:JunkInYourTrunk_v2.esp
 MajorRecordFlagsRaw: 512
 EditorID: ShipPI_SMOD_Decorative_GravDrive_Reladyne_Alpha_Stbd_Top
+FormVersion: 559
 StarfieldMajorRecordFlags:
 - 0x200
+ObjectBounds:
+  First: -1.7617185, -4.0312495, -4.1015635
+  Second: 1.7617185, 4.0312495, 4.1015635
 ODTY: 0
 Transforms:
   Ship: 39EC83:Starfield.esm

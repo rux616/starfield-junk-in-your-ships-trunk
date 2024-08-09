@@ -1,5 +1,6 @@
 FormKey: 0048D9:JunkInYourTrunk_v2.esp
 EditorID: SMBSet_Reactor_AmunDunn_Z-Machine-4000
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Amun Dunn Z-Machine 4000 Set
@@ -28,3 +29,4 @@ Items:
 - 0048D2:JunkInYourTrunk_v2.esp
 - 0048D3:JunkInYourTrunk_v2.esp
 - 0048D4:JunkInYourTrunk_v2.esp
+ANAM: Null

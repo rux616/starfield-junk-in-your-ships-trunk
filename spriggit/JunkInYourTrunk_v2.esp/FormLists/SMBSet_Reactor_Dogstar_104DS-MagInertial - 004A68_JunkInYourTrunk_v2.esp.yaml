@@ -1,5 +1,6 @@
 FormKey: 004A68:JunkInYourTrunk_v2.esp
 EditorID: SMBSet_Reactor_Dogstar_104DS-MagInertial
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Dogstar 104DS Mag Inertial Set
@@ -28,3 +29,4 @@ Items:
 - 004AAB:JunkInYourTrunk_v2.esp
 - 004AAC:JunkInYourTrunk_v2.esp
 - 004AAD:JunkInYourTrunk_v2.esp
+ANAM: Null

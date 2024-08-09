@@ -1,8 +1,12 @@
 FormKey: 00351D:JunkInYourTrunk_v2.esp
 MajorRecordFlagsRaw: 512
 EditorID: ShipPI_SMOD_GravDrive_Nova_NG300_Fore_Port
+FormVersion: 559
 StarfieldMajorRecordFlags:
 - 0x200
+ObjectBounds:
+  First: -4, -3.4999998, -3.9160156
+  Second: 4, 3.4999998, 3.9160156
 ODTY: 0
 Transforms:
   Ship: 39EC83:Starfield.esm

@@ -1,5 +1,6 @@
 FormKey: 0011C6:JunkInYourTrunk_v2.esp
 EditorID: SMA_Shields_Nautilus_Bastille-S81_Btm_Vert
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

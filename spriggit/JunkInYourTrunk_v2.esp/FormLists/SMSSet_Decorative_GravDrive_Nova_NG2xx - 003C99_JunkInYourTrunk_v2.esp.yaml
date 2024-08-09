@@ -1,5 +1,6 @@
 FormKey: 003C99:JunkInYourTrunk_v2.esp
 EditorID: SMSSet_Decorative_GravDrive_Nova_NG2xx
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Nova NG2xx Set
@@ -28,3 +29,4 @@ Items:
 - 003D4D:JunkInYourTrunk_v2.esp
 - 003D54:JunkInYourTrunk_v2.esp
 - 003D5B:JunkInYourTrunk_v2.esp
+ANAM: Null

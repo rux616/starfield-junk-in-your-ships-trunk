@@ -1,5 +1,6 @@
 FormKey: 002FA7:JunkInYourTrunk_v2.esp
 EditorID: SMB_GravDrive_Nova_NG210_Port_Fore
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

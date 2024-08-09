@@ -1,5 +1,6 @@
 FormKey: 00329B:JunkInYourTrunk_v2.esp
 EditorID: SMCSet_GravDrive_Slayton_SGD-3200
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Slayton SGD 3200 Set
@@ -28,3 +29,4 @@ Items:
 - 0032B0:JunkInYourTrunk_v2.esp
 - 0032B1:JunkInYourTrunk_v2.esp
 - 0032B2:JunkInYourTrunk_v2.esp
+ANAM: Null

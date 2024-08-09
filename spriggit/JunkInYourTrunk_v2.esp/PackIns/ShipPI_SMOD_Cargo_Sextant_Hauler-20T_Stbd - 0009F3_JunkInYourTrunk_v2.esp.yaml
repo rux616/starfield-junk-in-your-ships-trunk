@@ -1,8 +1,11 @@
 FormKey: 0009F3:JunkInYourTrunk_v2.esp
 MajorRecordFlagsRaw: 512
 EditorID: ShipPI_SMOD_Cargo_Sextant_Hauler-20T_Stbd
+FormVersion: 559
 StarfieldMajorRecordFlags:
 - 0x200
+ObjectBounds:
+  First: -2.25, 0, 0
 ODTY: 0
 Transforms:
   Ship: 050FBE:Starfield.esm

@@ -1,5 +1,6 @@
 FormKey: 0014E3:JunkInYourTrunk_v2.esp
 EditorID: SMC_Shields_Dogstar_Guardian-102D_Aft
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

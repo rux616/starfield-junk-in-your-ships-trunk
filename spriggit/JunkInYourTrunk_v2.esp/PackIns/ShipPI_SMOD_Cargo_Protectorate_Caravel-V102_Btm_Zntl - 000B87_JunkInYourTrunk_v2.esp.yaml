@@ -1,5 +1,8 @@
 FormKey: 000B87:JunkInYourTrunk_v2.esp
 EditorID: ShipPI_SMOD_Cargo_Protectorate_Caravel-V102_Btm_Zntl
+FormVersion: 559
+ObjectBounds:
+  First: 0, 0, -2.25
 ODTY: 0
 Transforms:
   Ship: 050FBE:Starfield.esm

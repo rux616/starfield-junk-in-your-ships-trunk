@@ -1,5 +1,6 @@
 FormKey: 00158D:JunkInYourTrunk_v2.esp
 EditorID: SMSSet_Decorative_Shields_Nautilus_Tower
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Nautilus Tower Set
@@ -10,3 +11,4 @@ Items:
 - 00155C:JunkInYourTrunk_v2.esp
 - 00155D:JunkInYourTrunk_v2.esp
 - 00155E:JunkInYourTrunk_v2.esp
+ANAM: Null

@@ -1,6 +1,7 @@
 FormKey: 000BD9:JunkInYourTrunk_v2.esp
 MajorRecordFlagsRaw: 512
 EditorID: ShipPI_SMOD_Cargo_Protectorate_Caravel-V103_Fore
+FormVersion: 559
 StarfieldMajorRecordFlags:
 - 0x200
 ODTY: 0

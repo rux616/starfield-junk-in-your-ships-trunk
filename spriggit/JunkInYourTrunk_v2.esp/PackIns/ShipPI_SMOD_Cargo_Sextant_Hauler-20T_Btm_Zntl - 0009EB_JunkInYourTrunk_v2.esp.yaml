@@ -1,5 +1,6 @@
 FormKey: 0009EB:JunkInYourTrunk_v2.esp
 EditorID: ShipPI_SMOD_Cargo_Sextant_Hauler-20T_Btm_Zntl
+FormVersion: 559
 ODTY: 0
 Transforms:
   Ship: 050FBE:Starfield.esm

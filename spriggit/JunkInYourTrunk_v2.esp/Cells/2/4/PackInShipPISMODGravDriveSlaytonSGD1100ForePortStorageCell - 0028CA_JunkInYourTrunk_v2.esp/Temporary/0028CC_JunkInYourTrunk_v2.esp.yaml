@@ -1,5 +1,6 @@
 MutagenObjectType: PlacedObject
 FormKey: 0028CC:JunkInYourTrunk_v2.esp
+FormVersion: 559
 Components:
 - MutagenObjectType: KeywordFormComponent
   Keywords:

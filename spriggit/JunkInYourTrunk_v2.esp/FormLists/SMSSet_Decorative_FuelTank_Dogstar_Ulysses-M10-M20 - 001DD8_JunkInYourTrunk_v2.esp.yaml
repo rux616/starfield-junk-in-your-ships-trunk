@@ -1,5 +1,6 @@
 FormKey: 001DD8:JunkInYourTrunk_v2.esp
 EditorID: SMSSet_Decorative_FuelTank_Dogstar_Ulysses-M10-M20
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Dogstar Ulysses M10/M20 Set
@@ -28,3 +29,4 @@ Items:
 - 001D8E:JunkInYourTrunk_v2.esp
 - 001D8F:JunkInYourTrunk_v2.esp
 - 001D90:JunkInYourTrunk_v2.esp
+ANAM: Null

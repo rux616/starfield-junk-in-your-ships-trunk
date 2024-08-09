@@ -1,5 +1,6 @@
 FormKey: 003B27:JunkInYourTrunk_v2.esp
 EditorID: SMS_Decorative_GravDrive_Vanguard_Recon_Btm_Aft
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

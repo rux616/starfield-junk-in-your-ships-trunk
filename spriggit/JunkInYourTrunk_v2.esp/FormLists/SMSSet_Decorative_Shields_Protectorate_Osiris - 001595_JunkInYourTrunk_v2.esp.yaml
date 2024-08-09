@@ -1,5 +1,6 @@
 FormKey: 001595:JunkInYourTrunk_v2.esp
 EditorID: SMSSet_Decorative_Shields_Protectorate_Osiris
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Protectorate Osiris Set
@@ -10,3 +11,4 @@ Items:
 - 001562:JunkInYourTrunk_v2.esp
 - 001563:JunkInYourTrunk_v2.esp
 - 001564:JunkInYourTrunk_v2.esp
+ANAM: Null

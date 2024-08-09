@@ -1,8 +1,12 @@
 FormKey: 0024CE:JunkInYourTrunk_v2.esp
 MajorRecordFlagsRaw: 512
 EditorID: ShipPI_SMOD_GravDrive_DeepCore_Helios-100_Port_Btm
+FormVersion: 559
 StarfieldMajorRecordFlags:
 - 0x200
+ObjectBounds:
+  First: -1.7499998, -3.9999998, -4.0083666
+  Second: 1.7499998, 3.9999998, 4
 ODTY: 0
 Transforms:
   Ship: 39EC83:Starfield.esm

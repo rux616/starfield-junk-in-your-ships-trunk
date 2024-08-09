@@ -1,8 +1,12 @@
 FormKey: 000DD5:JunkInYourTrunk_v2.esp
 MajorRecordFlagsRaw: 512
 EditorID: ShipPI_SMOD_Cargo_Protectorate_Galleon-S202_Fore_Btm
+FormVersion: 559
 StarfieldMajorRecordFlags:
 - 0x200
+ObjectBounds:
+  First: 0, -2.25, 0
+  Second: 0, 0, 4
 ODTY: 0
 Transforms:
   Ship: 050FBE:Starfield.esm

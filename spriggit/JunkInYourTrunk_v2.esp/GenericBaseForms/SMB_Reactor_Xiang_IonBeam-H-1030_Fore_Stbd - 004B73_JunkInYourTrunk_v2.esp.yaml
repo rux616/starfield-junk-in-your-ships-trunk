@@ -1,5 +1,6 @@
 FormKey: 004B73:JunkInYourTrunk_v2.esp
 EditorID: SMB_Reactor_Xiang_IonBeam-H-1030_Fore_Stbd
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

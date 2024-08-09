@@ -1,5 +1,6 @@
 FormKey: 0018A8:JunkInYourTrunk_v2.esp
 EditorID: SMSSet_FuelTank_Ballistic_600T
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Ballistic 600T Set
@@ -28,3 +29,4 @@ Items:
 - 0018A5:JunkInYourTrunk_v2.esp
 - 0018A6:JunkInYourTrunk_v2.esp
 - 0018A7:JunkInYourTrunk_v2.esp
+ANAM: Null

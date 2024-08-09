@@ -1,5 +1,6 @@
 FormKey: 0034D3:JunkInYourTrunk_v2.esp
 EditorID: SMC_GravDrive_DeepCore_Apollo-GV300_Stbd_Aft
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

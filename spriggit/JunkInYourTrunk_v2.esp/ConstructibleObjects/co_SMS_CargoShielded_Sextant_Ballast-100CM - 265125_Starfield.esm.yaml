@@ -1,5 +1,6 @@
 FormKey: 265125:Starfield.esm
 EditorID: co_SMS_CargoShielded_Sextant_Ballast-100CM
+FormVersion: 559
 Description:
   TargetLanguage: English
   Value: Spaceship Cargo Modules increase your ship's inventory space. Shielded Cargo will hide contraband from the authorities.
@@ -7,7 +8,6 @@ WorkbenchKeyword: 29C480:Starfield.esm
 Conditions:
 - MutagenObjectType: ConditionFloat
   Unknown1: 0x000000
-  Unknown2: 17620
   Data:
     MutagenObjectType: HasKeywordConditionData
     FirstParameter: 143CA0:Starfield.esm
@@ -15,7 +15,6 @@ Conditions:
 - MutagenObjectType: ConditionFloat
   CompareOperator: GreaterThanOrEqualTo
   Unknown1: 0x000000
-  Unknown2: 17620
   Data:
     MutagenObjectType: GetLevelConditionData
     RunOnType: Reference

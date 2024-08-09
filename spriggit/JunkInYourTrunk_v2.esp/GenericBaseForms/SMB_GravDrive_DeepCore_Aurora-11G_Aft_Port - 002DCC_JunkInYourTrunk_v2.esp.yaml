@@ -1,5 +1,6 @@
 FormKey: 002DCC:JunkInYourTrunk_v2.esp
 EditorID: SMB_GravDrive_DeepCore_Aurora-11G_Aft_Port
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

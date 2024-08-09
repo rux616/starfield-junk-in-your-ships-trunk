@@ -1,5 +1,6 @@
 FormKey: 16556A:Starfield.esm
 EditorID: SMASet_Shields_Dogstar_Protector-30S
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Dogstar Protector 30S Set
@@ -16,3 +17,4 @@ Items:
 - 001139:JunkInYourTrunk_v2.esp
 - 00113A:JunkInYourTrunk_v2.esp
 - 00113B:JunkInYourTrunk_v2.esp
+ANAM: Null

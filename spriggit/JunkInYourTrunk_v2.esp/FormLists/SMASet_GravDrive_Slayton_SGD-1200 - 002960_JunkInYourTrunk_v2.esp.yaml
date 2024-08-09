@@ -1,5 +1,6 @@
 FormKey: 002960:JunkInYourTrunk_v2.esp
 EditorID: SMASet_GravDrive_Slayton_SGD-1200
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Slayton SGD 1200 Set
@@ -28,3 +29,4 @@ Items:
 - 002A16:JunkInYourTrunk_v2.esp
 - 002A1D:JunkInYourTrunk_v2.esp
 - 002A24:JunkInYourTrunk_v2.esp
+ANAM: Null

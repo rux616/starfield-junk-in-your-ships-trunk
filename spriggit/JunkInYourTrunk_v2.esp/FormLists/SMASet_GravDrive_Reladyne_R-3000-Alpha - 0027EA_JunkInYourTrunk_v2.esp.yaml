@@ -1,5 +1,6 @@
 FormKey: 0027EA:JunkInYourTrunk_v2.esp
 EditorID: SMASet_GravDrive_Reladyne_R-3000-Alpha
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Reladyne R-3000 Alpha Set
@@ -28,3 +29,4 @@ Items:
 - 002800:JunkInYourTrunk_v2.esp
 - 002801:JunkInYourTrunk_v2.esp
 - 002802:JunkInYourTrunk_v2.esp
+ANAM: Null

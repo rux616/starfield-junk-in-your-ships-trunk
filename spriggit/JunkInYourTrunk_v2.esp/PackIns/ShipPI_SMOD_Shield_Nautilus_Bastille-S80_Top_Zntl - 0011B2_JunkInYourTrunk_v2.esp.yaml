@@ -1,5 +1,8 @@
 FormKey: 0011B2:JunkInYourTrunk_v2.esp
 EditorID: ShipPI_SMOD_Shield_Nautilus_Bastille-S80_Top_Zntl
+FormVersion: 559
+ObjectBounds:
+  Second: 0, 0, 2.25
 ODTY: 0
 Transforms:
   Ship: 050FA1:Starfield.esm

@@ -1,5 +1,6 @@
 FormKey: 001D6A:JunkInYourTrunk_v2.esp
 EditorID: SMS_Decorative_FuelTank_Dogstar_Atlas-H30_Stbd_Zntl
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

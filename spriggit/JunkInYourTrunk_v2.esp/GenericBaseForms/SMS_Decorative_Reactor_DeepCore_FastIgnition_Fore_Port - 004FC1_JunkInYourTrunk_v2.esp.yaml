@@ -1,5 +1,6 @@
 FormKey: 004FC1:JunkInYourTrunk_v2.esp
 EditorID: SMS_Decorative_Reactor_DeepCore_FastIgnition_Fore_Port
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

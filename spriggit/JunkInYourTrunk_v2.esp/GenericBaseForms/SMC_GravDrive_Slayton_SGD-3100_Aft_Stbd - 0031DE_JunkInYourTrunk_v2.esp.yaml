@@ -1,5 +1,6 @@
 FormKey: 0031DE:JunkInYourTrunk_v2.esp
 EditorID: SMC_GravDrive_Slayton_SGD-3100_Aft_Stbd
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

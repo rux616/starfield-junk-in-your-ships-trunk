@@ -1,5 +1,6 @@
 FormKey: 004DFB:JunkInYourTrunk_v2.esp
 EditorID: SMC_Reactor_Dogstar_SF20-ShearedFlow_Btm_Port
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

@@ -1,5 +1,6 @@
 FormKey: 001225:JunkInYourTrunk_v2.esp
 EditorID: SMA_Shields_Protectorate_Marduk-1040-A_Btm
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

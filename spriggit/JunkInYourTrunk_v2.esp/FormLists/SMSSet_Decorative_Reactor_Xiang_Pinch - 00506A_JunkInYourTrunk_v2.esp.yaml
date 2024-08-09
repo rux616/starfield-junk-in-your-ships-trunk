@@ -1,5 +1,6 @@
 FormKey: 00506A:JunkInYourTrunk_v2.esp
 EditorID: SMSSet_Decorative_Reactor_Xiang_Pinch
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Xiang Pinch Set
@@ -28,3 +29,4 @@ Items:
 - 00505D:JunkInYourTrunk_v2.esp
 - 00505E:JunkInYourTrunk_v2.esp
 - 00505F:JunkInYourTrunk_v2.esp
+ANAM: Null

@@ -1,5 +1,6 @@
 FormKey: 001053:JunkInYourTrunk_v2.esp
 EditorID: SMS_Cargo_Dogstar_StorMax-60_Fore_Vert
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

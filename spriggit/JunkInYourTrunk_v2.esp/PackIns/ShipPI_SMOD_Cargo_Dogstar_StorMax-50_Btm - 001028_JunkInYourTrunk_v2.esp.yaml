@@ -1,5 +1,9 @@
 FormKey: 001028:JunkInYourTrunk_v2.esp
 EditorID: ShipPI_SMOD_Cargo_Dogstar_StorMax-50_Btm
+FormVersion: 559
+ObjectBounds:
+  First: -1.5908194, -3.9882812, -6.002018
+  Second: 1.5908194, 3.9882812, 1.5859373
 ODTY: 0
 Transforms:
   Ship: 050FBE:Starfield.esm

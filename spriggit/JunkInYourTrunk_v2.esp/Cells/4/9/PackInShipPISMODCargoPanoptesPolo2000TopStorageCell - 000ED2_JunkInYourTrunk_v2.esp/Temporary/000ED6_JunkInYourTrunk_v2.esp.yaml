@@ -1,4 +1,5 @@
 MutagenObjectType: PlacedObject
 FormKey: 000ED6:JunkInYourTrunk_v2.esp
+FormVersion: 559
 Base: 001FAB:JunkInYourTrunk_v2.esp
 Rotation: 0, 3.1415925, 0

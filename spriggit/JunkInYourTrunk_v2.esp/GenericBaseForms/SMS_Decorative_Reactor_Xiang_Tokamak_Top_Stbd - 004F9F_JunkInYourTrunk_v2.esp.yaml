@@ -1,5 +1,6 @@
 FormKey: 004F9F:JunkInYourTrunk_v2.esp
 EditorID: SMS_Decorative_Reactor_Xiang_Tokamak_Top_Stbd
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

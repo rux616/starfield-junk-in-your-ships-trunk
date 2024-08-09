@@ -1,5 +1,6 @@
 FormKey: 001395:JunkInYourTrunk_v2.esp
 EditorID: SMBSet_Shields_Vanguard_Bulwark
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Vanguard Bulwark Set
@@ -10,3 +11,4 @@ Items:
 - 0014BA:JunkInYourTrunk_v2.esp
 - 0014BB:JunkInYourTrunk_v2.esp
 - 004246:Starfield.esm
+ANAM: Null

@@ -1,5 +1,6 @@
 FormKey: 0049C3:JunkInYourTrunk_v2.esp
 EditorID: SMBSet_Reactor_DeepCore_DC303-FastIgnition
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: DeepCore DC303 Fast Ignition Set
@@ -28,3 +29,4 @@ Items:
 - 0049A6:JunkInYourTrunk_v2.esp
 - 0049A7:JunkInYourTrunk_v2.esp
 - 0049A8:JunkInYourTrunk_v2.esp
+ANAM: Null

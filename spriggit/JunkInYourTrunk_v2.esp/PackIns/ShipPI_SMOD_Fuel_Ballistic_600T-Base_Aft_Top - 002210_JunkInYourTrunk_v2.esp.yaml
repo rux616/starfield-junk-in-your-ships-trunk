@@ -1,12 +1,9 @@
 FormKey: 002210:JunkInYourTrunk_v2.esp
 MajorRecordFlagsRaw: 512
 EditorID: ShipPI_SMOD_Fuel_Ballistic_600T-Base_Aft_Top
-FormVersion: 558
+FormVersion: 559
 StarfieldMajorRecordFlags:
 - 0x200
-ObjectBounds:
-  First: -3.9980469, -4, -3.5097656
-  Second: 3.9980469, 4, 3.5097656
 ODTY: 0
 Transforms:
   Ship: 203E7A:Starfield.esm

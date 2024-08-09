@@ -1,7 +1,7 @@
 FormKey: 000AEB:JunkInYourTrunk_v2.esp
 EditorID: AAA_JIYT_TEMPLATE_SMSSet
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: TEMPLATE Set
-Items:
-- Null
+ANAM: Null

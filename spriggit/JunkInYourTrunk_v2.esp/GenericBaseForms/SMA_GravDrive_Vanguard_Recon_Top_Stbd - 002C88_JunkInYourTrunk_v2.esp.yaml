@@ -1,5 +1,6 @@
 FormKey: 002C88:JunkInYourTrunk_v2.esp
 EditorID: SMA_GravDrive_Vanguard_Recon_Top_Stbd
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

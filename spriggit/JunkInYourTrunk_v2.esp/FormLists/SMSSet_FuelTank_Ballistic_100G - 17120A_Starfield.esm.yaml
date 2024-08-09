@@ -1,5 +1,6 @@
 FormKey: 17120A:Starfield.esm
 EditorID: SMSSet_FuelTank_Ballistic_100G
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Ballistic 100G Set
@@ -16,3 +17,4 @@ Items:
 - 00178C:JunkInYourTrunk_v2.esp
 - 001795:JunkInYourTrunk_v2.esp
 - 001796:JunkInYourTrunk_v2.esp
+ANAM: Null

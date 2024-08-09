@@ -1,5 +1,6 @@
 FormKey: 003333:JunkInYourTrunk_v2.esp
 EditorID: SMC_GravDrive_Reladyne_J-50-Gamma_Port_Btm
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

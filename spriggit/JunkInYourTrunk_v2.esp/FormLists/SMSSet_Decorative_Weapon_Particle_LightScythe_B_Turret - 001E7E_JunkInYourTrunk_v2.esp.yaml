@@ -1,5 +1,6 @@
 FormKey: 001E7E:JunkInYourTrunk_v2.esp
 EditorID: SMSSet_Decorative_Weapon_Particle_LightScythe_B_Turret
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Light Scythe PRT-B Turret Set
@@ -8,3 +9,4 @@ Items:
 - 001E3E:JunkInYourTrunk_v2.esp
 - 001E3F:JunkInYourTrunk_v2.esp
 - 001E40:JunkInYourTrunk_v2.esp
+ANAM: Null

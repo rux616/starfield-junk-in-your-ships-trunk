@@ -1,5 +1,6 @@
 FormKey: 001A0C:JunkInYourTrunk_v2.esp
 EditorID: SMSSet_FuelTank_Dogstar_Ulysses-M10
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Dogstar Ulysses M10 Set
@@ -28,3 +29,4 @@ Items:
 - 05AECB:Starfield.esm
 - 001A0A:JunkInYourTrunk_v2.esp
 - 001A0B:JunkInYourTrunk_v2.esp
+ANAM: Null

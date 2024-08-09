@@ -1,8 +1,12 @@
 FormKey: 00121D:JunkInYourTrunk_v2.esp
 MajorRecordFlagsRaw: 512
 EditorID: ShipPI_SMOD_Shield_Protectorate_Marduk-1010-A_Stbd
+FormVersion: 559
 StarfieldMajorRecordFlags:
 - 0x200
+ObjectBounds:
+  First: -3.9511714, -1.554256, -1.5704037
+  Second: 0, 1.5444419, 1.5655031
 ODTY: 0
 Transforms:
   Ship: 050FA4:Starfield.esm

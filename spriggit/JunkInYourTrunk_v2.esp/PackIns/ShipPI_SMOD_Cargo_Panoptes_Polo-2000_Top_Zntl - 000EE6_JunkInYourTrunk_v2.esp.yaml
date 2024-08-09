@@ -1,5 +1,9 @@
 FormKey: 000EE6:JunkInYourTrunk_v2.esp
 EditorID: ShipPI_SMOD_Cargo_Panoptes_Polo-2000_Top_Zntl
+FormVersion: 559
+ObjectBounds:
+  First: -4.0000014, -4.007812, -1.7509749
+  Second: 3.9980478, 4.0039062, 1.7509749
 ODTY: 0
 Transforms:
   Ship: 050FBE:Starfield.esm

@@ -1,5 +1,6 @@
 FormKey: 16E090:Starfield.esm
 EditorID: SMASet_Shields_Nautilus_Bastille-S82
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Nautilus Bastille S82 Set
@@ -22,3 +23,4 @@ Items:
 - 0011FB:JunkInYourTrunk_v2.esp
 - 0011FC:JunkInYourTrunk_v2.esp
 - 0011FD:JunkInYourTrunk_v2.esp
+ANAM: Null

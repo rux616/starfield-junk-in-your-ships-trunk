@@ -1,5 +1,6 @@
 FormKey: 001C05:JunkInYourTrunk_v2.esp
 EditorID: PackInShipPISMODFuelDogstarAtlasH30TopFAStorageCell
+FormVersion: 559
 Flags:
 - IsInteriorCell
 Lighting:
@@ -25,3 +26,6 @@ LightingTemplate: Null
 WaterHeight: 3.4028235E+38
 XILS: 1
 ImageSpace: 06AD68:Starfield.esm
+Timestamp: 12553
+TemporaryTimestamp: 12553
+TemporaryUnknownGroupData: 1

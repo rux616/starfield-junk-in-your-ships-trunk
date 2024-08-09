@@ -1,5 +1,6 @@
 FormKey: 0008B1:JunkInYourTrunk_v2.esp
 EditorID: SMSSet_Cargo_Sextant_Ballast-100CM
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Sextant Ballast 100CM Set
@@ -12,3 +13,4 @@ Items:
 - 0008F1:JunkInYourTrunk_v2.esp
 - 0008EF:JunkInYourTrunk_v2.esp
 - 0008F2:JunkInYourTrunk_v2.esp
+ANAM: Null

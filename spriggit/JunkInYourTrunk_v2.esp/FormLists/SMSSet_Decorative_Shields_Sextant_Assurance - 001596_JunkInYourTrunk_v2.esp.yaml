@@ -1,5 +1,6 @@
 FormKey: 001596:JunkInYourTrunk_v2.esp
 EditorID: SMSSet_Decorative_Shields_Sextant_Assurance
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Sextant Assurance Set
@@ -10,3 +11,4 @@ Items:
 - 001586:JunkInYourTrunk_v2.esp
 - 001587:JunkInYourTrunk_v2.esp
 - 001588:JunkInYourTrunk_v2.esp
+ANAM: Null

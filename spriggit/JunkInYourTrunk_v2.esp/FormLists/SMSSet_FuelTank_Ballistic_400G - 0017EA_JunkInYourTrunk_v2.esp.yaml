@@ -1,5 +1,6 @@
 FormKey: 0017EA:JunkInYourTrunk_v2.esp
 EditorID: SMSSet_FuelTank_Ballistic_400G
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Ballistic 400G Set
@@ -16,3 +17,4 @@ Items:
 - 0017E7:JunkInYourTrunk_v2.esp
 - 0017E8:JunkInYourTrunk_v2.esp
 - 0017E9:JunkInYourTrunk_v2.esp
+ANAM: Null

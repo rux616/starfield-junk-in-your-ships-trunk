@@ -1,5 +1,6 @@
 FormKey: 005010:JunkInYourTrunk_v2.esp
 EditorID: SMS_Decorative_Reactor_AmunDunn_ThetaPinch_Stbd_Aft
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

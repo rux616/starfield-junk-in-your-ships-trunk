@@ -1,5 +1,6 @@
 FormKey: 001E03:JunkInYourTrunk_v2.esp
 EditorID: SMS_Decorative_Weapon_Laser_LightScythe_B
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

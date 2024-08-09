@@ -1,5 +1,6 @@
 FormKey: 001593:JunkInYourTrunk_v2.esp
 EditorID: SMSSet_Decorative_Shields_Protectorate_Marduk
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Protectorate Marduk Set
@@ -10,3 +11,4 @@ Items:
 - 001538:JunkInYourTrunk_v2.esp
 - 001539:JunkInYourTrunk_v2.esp
 - 00153A:JunkInYourTrunk_v2.esp
+ANAM: Null

@@ -1,8 +1,11 @@
 FormKey: 0011A8:JunkInYourTrunk_v2.esp
 MajorRecordFlagsRaw: 512
 EditorID: ShipPI_SMOD_Shield_Nautilus_Bastille-S80_Btm_Vert
+FormVersion: 559
 StarfieldMajorRecordFlags:
 - 0x200
+ObjectBounds:
+  First: 0, 0, -2.25
 ODTY: 0
 Transforms:
   Ship: 050FA1:Starfield.esm

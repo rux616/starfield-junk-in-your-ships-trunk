@@ -1,5 +1,6 @@
 FormKey: 0014D5:JunkInYourTrunk_v2.esp
 EditorID: SMB_Shields_Sextant_Warden-SG-200_Btm
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

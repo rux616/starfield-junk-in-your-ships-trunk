@@ -1,5 +1,6 @@
 FormKey: 000DE7:JunkInYourTrunk_v2.esp
 EditorID: SMS_Cargo_Protectorate_Galleon-S202_Btm_Aft
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

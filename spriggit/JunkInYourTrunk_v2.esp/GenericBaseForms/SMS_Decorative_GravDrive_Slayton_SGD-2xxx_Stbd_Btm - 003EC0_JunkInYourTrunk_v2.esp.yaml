@@ -1,5 +1,6 @@
 FormKey: 003EC0:JunkInYourTrunk_v2.esp
 EditorID: SMS_Decorative_GravDrive_Slayton_SGD-2xxx_Stbd_Btm
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

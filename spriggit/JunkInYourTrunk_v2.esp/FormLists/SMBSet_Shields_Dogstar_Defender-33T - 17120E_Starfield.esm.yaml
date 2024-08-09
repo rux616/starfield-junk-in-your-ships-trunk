@@ -1,5 +1,6 @@
 FormKey: 17120E:Starfield.esm
 EditorID: SMBSet_Shields_Dogstar_Defender-33T
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Dogstar Defender 33T Set
@@ -10,3 +11,4 @@ Items:
 - 001387:JunkInYourTrunk_v2.esp
 - 001388:JunkInYourTrunk_v2.esp
 - 001389:JunkInYourTrunk_v2.esp
+ANAM: Null

@@ -1,5 +1,6 @@
 FormKey: 005063:JunkInYourTrunk_v2.esp
 EditorID: SMSSet_Decorative_Reactor_DeepCore_FastIgnition
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Deep Core Fast Ignition Set
@@ -28,3 +29,4 @@ Items:
 - 004FCD:JunkInYourTrunk_v2.esp
 - 004FCE:JunkInYourTrunk_v2.esp
 - 004FCF:JunkInYourTrunk_v2.esp
+ANAM: Null

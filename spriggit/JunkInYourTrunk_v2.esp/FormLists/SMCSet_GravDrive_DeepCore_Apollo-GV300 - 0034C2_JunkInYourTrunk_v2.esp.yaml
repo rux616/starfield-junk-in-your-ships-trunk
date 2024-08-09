@@ -1,5 +1,6 @@
 FormKey: 0034C2:JunkInYourTrunk_v2.esp
 EditorID: SMCSet_GravDrive_DeepCore_Apollo-GV300
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: DeepCore Apollo GV300 Set
@@ -28,3 +29,4 @@ Items:
 - 0034D8:JunkInYourTrunk_v2.esp
 - 0034D9:JunkInYourTrunk_v2.esp
 - 0034DA:JunkInYourTrunk_v2.esp
+ANAM: Null

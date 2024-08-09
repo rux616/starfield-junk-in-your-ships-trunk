@@ -1,5 +1,6 @@
 FormKey: 001599:JunkInYourTrunk_v2.esp
 EditorID: SMSSet_Decorative_Shields_Vanguard_Bulwark
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Vangard Bulwark Set
@@ -10,3 +11,4 @@ Items:
 - 00156E:JunkInYourTrunk_v2.esp
 - 00156F:JunkInYourTrunk_v2.esp
 - 001570:JunkInYourTrunk_v2.esp
+ANAM: Null
