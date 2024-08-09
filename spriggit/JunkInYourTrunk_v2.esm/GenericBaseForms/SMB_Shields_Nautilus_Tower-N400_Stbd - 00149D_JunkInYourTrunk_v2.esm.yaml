@@ -1,5 +1,6 @@
 FormKey: 00149D:JunkInYourTrunk_v2.esm
 EditorID: SMB_Shields_Nautilus_Tower-N400_Stbd
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

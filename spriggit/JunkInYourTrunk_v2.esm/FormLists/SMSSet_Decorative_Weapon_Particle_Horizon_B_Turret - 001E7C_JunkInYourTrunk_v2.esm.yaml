@@ -1,5 +1,6 @@
 FormKey: 001E7C:JunkInYourTrunk_v2.esm
 EditorID: SMSSet_Decorative_Weapon_Particle_Horizon_B_Turret
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Horizon PRT-B Turret Set
@@ -8,3 +9,4 @@ Items:
 - 001E39:JunkInYourTrunk_v2.esm
 - 001E3A:JunkInYourTrunk_v2.esm
 - 001E3B:JunkInYourTrunk_v2.esm
+ANAM: Null

@@ -1,5 +1,6 @@
 FormKey: 001CBA:JunkInYourTrunk_v2.esm
 EditorID: SMS_FuelTank_Nautilus_Titan-350_Fore_Vert
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

@@ -1,5 +1,6 @@
 FormKey: 0049A9:JunkInYourTrunk_v2.esm
 EditorID: SMBSet_Reactor_DeepCore_DC301-FastIgnition
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: DeepCore DC301 Fast Ignition Set
@@ -28,3 +29,4 @@ Items:
 - 004966:JunkInYourTrunk_v2.esm
 - 00496D:JunkInYourTrunk_v2.esm
 - 004974:JunkInYourTrunk_v2.esm
+ANAM: Null

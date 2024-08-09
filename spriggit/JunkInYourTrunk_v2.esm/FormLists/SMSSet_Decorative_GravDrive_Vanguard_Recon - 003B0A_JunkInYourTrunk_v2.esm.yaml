@@ -1,5 +1,6 @@
 FormKey: 003B0A:JunkInYourTrunk_v2.esm
 EditorID: SMSSet_Decorative_GravDrive_Vanguard_Recon
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Vanguard Recon Set
@@ -28,3 +29,4 @@ Items:
 - 003BBE:JunkInYourTrunk_v2.esm
 - 003BC6:JunkInYourTrunk_v2.esm
 - 003BCE:JunkInYourTrunk_v2.esm
+ANAM: Null

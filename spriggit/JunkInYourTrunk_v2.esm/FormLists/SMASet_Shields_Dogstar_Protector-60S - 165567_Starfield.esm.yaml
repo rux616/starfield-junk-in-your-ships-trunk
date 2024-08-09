@@ -1,5 +1,6 @@
 FormKey: 165567:Starfield.esm
 EditorID: SMASet_Shields_Dogstar_Protector-60S
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Dogstar Protector 60S Set
@@ -16,3 +17,4 @@ Items:
 - 001154:JunkInYourTrunk_v2.esm
 - 001155:JunkInYourTrunk_v2.esm
 - 001156:JunkInYourTrunk_v2.esm
+ANAM: Null

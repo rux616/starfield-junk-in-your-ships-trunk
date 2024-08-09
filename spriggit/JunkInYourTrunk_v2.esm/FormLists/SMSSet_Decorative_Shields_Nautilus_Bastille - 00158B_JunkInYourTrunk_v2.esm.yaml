@@ -1,5 +1,6 @@
 FormKey: 00158B:JunkInYourTrunk_v2.esm
 EditorID: SMSSet_Decorative_Shields_Nautilus_Bastille
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Nautilus Bastille Set
@@ -22,3 +23,4 @@ Items:
 - 001532:JunkInYourTrunk_v2.esm
 - 001533:JunkInYourTrunk_v2.esm
 - 001534:JunkInYourTrunk_v2.esm
+ANAM: Null

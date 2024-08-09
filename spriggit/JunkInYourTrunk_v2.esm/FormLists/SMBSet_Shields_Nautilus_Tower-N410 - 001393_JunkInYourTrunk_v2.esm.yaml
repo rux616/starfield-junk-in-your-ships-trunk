@@ -1,5 +1,6 @@
 FormKey: 001393:JunkInYourTrunk_v2.esm
 EditorID: SMBSet_Shields_Nautilus_Tower-N410
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Nautilus Tower N410 Set
@@ -10,3 +11,4 @@ Items:
 - 0014C3:JunkInYourTrunk_v2.esm
 - 0014C4:JunkInYourTrunk_v2.esm
 - 26F969:Starfield.esm
+ANAM: Null

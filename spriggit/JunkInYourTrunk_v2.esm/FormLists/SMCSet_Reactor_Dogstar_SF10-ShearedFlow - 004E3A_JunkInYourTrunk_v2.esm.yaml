@@ -1,5 +1,6 @@
 FormKey: 004E3A:JunkInYourTrunk_v2.esm
 EditorID: SMCSet_Reactor_Dogstar_SF10-ShearedFlow
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Dogstar SF10 Sheared Flow Set
@@ -28,3 +29,4 @@ Items:
 - 004DE0:JunkInYourTrunk_v2.esm
 - 004DE7:JunkInYourTrunk_v2.esm
 - 004DEE:JunkInYourTrunk_v2.esm
+ANAM: Null

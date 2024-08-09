@@ -1,5 +1,6 @@
 FormKey: 00503D:JunkInYourTrunk_v2.esm
 EditorID: SMS_Decorative_Reactor_Dogstar_ShearedFlow_Port_Btm
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

@@ -1,5 +1,9 @@
 FormKey: 001913:JunkInYourTrunk_v2.esm
 EditorID: ShipPI_SMOD_Fuel_Ballistic_800T-A_Btm_FA
+FormVersion: 559
+ObjectBounds:
+  First: -3.9003906, -7.5, -7.9023438
+  Second: 3.9003901, 7.5, 0.0002443731
 ODTY: 0
 Transforms:
   Ship: 050FBE:Starfield.esm

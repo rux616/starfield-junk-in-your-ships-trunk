@@ -1,5 +1,6 @@
 FormKey: 0013A1:JunkInYourTrunk_v2.esm
 EditorID: SMCSet_Shields_Protectorate_Odin-3040-C
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Protectorate Odin 3040-C Set
@@ -10,3 +11,4 @@ Items:
 - 0014FC:JunkInYourTrunk_v2.esm
 - 0014FD:JunkInYourTrunk_v2.esm
 - 26F12E:Starfield.esm
+ANAM: Null

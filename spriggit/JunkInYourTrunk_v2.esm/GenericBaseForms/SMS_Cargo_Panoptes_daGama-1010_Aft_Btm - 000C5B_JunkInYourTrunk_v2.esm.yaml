@@ -1,5 +1,6 @@
 FormKey: 000C5B:JunkInYourTrunk_v2.esm
 EditorID: SMS_Cargo_Panoptes_daGama-1010_Aft_Btm
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

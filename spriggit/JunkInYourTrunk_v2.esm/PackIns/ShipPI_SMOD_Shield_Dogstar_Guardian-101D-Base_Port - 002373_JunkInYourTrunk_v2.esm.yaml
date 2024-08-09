@@ -1,12 +1,9 @@
 FormKey: 002373:JunkInYourTrunk_v2.esm
 MajorRecordFlagsRaw: 512
 EditorID: ShipPI_SMOD_Shield_Dogstar_Guardian-101D-Base_Port
-FormVersion: 558
+FormVersion: 559
 StarfieldMajorRecordFlags:
 - 0x200
-ObjectBounds:
-  First: 0.44140625, -1.5917969, -1.5917969
-  Second: 4.0039062, 1.5917969, 1.5917969
 ODTY: 0
 Transforms:
   Ship: 050F92:Starfield.esm

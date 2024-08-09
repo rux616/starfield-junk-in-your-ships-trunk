@@ -1,5 +1,6 @@
 FormKey: 004F3E:JunkInYourTrunk_v2.esm
 EditorID: SMCSet_Reactor_Xiang_Pinch-8A
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Xiang Pinch 8A Set
@@ -28,3 +29,4 @@ Items:
 - 004F21:JunkInYourTrunk_v2.esm
 - 004F22:JunkInYourTrunk_v2.esm
 - 004F23:JunkInYourTrunk_v2.esm
+ANAM: Null

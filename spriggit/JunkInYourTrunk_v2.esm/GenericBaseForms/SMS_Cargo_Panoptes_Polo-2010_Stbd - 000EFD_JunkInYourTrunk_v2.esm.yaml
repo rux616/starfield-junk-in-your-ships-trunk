@@ -1,5 +1,6 @@
 FormKey: 000EFD:JunkInYourTrunk_v2.esm
 EditorID: SMS_Cargo_Panoptes_Polo-2010_Stbd
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

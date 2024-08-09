@@ -1,5 +1,6 @@
 FormKey: 2FB142:Starfield.esm
 EditorID: SMSSet_Cargo_Protectorate_Galleon-S203
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Protectorate Galleon S203 Set
@@ -28,3 +29,4 @@ Items:
 - 000E81:JunkInYourTrunk_v2.esm
 - 000E82:JunkInYourTrunk_v2.esm
 - 000E83:JunkInYourTrunk_v2.esm
+ANAM: Null

@@ -1,5 +1,6 @@
 FormKey: 001653:JunkInYourTrunk_v2.esm
 EditorID: SMS_Decorative_Cargo_Protectorate_Galleon-S203_Fore_Stbd
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

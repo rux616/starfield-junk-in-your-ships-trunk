@@ -1,5 +1,6 @@
 FormKey: 001A2C:JunkInYourTrunk_v2.esm
 EditorID: SMS_FuelTank_Dogstar_Ulysses-M20_Port_Top
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

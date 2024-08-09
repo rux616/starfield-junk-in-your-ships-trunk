@@ -1,5 +1,6 @@
 FormKey: 004C13:JunkInYourTrunk_v2.esm
 EditorID: SMC_Reactor_AmunDunn_ThetaPinch-A9_Top_Port
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

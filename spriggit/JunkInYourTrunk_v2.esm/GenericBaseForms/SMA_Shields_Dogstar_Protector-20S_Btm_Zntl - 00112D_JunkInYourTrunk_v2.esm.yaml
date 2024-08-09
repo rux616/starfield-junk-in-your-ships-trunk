@@ -1,5 +1,6 @@
 FormKey: 00112D:JunkInYourTrunk_v2.esm
 EditorID: SMA_Shields_Dogstar_Protector-20S_Btm_Zntl
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

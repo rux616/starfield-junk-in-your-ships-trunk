@@ -1,5 +1,6 @@
 FormKey: 171217:Starfield.esm
 EditorID: SMSSet_FuelTank_Dogstar_Atlas-H30
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Dogstar Atlas H30 Set
@@ -16,3 +17,4 @@ Items:
 - 001BFC:JunkInYourTrunk_v2.esm
 - 001C03:JunkInYourTrunk_v2.esm
 - 001C0A:JunkInYourTrunk_v2.esm
+ANAM: Null

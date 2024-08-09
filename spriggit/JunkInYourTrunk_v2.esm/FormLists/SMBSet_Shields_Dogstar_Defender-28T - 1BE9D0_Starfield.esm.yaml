@@ -1,5 +1,6 @@
 FormKey: 1BE9D0:Starfield.esm
 EditorID: SMBSet_Shields_Dogstar_Defender-28T
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Dogstar Defender 28T Set
@@ -10,3 +11,4 @@ Items:
 - 00138B:JunkInYourTrunk_v2.esm
 - 00138C:JunkInYourTrunk_v2.esm
 - 00138D:JunkInYourTrunk_v2.esm
+ANAM: Null

@@ -1,8 +1,12 @@
 FormKey: 001CC9:JunkInYourTrunk_v2.esm
 MajorRecordFlagsRaw: 512
 EditorID: ShipPI_SMOD_Fuel_Nautilus_Titan-350_Port_Vert
+FormVersion: 559
 StarfieldMajorRecordFlags:
 - 0x200
+ObjectBounds:
+  First: -4, -1.7011721, -3.8105469
+  Second: 0.00024414062, 1.7011721, 3.8105469
 ODTY: 0
 Transforms:
   Ship: 050FBE:Starfield.esm

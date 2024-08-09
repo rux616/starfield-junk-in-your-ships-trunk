@@ -1,5 +1,6 @@
 FormKey: 004450:JunkInYourTrunk_v2.esm
 EditorID: SMASet_Reactor_AmunDunn_360T-Stellarator
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Amun Dunn 360T Stellarator Set
@@ -28,3 +29,4 @@ Items:
 - 004466:JunkInYourTrunk_v2.esm
 - 004467:JunkInYourTrunk_v2.esm
 - 004468:JunkInYourTrunk_v2.esm
+ANAM: Null

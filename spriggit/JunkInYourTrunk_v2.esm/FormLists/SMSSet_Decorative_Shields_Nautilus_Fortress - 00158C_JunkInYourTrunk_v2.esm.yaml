@@ -1,5 +1,6 @@
 FormKey: 00158C:JunkInYourTrunk_v2.esm
 EditorID: SMSSet_Decorative_Shields_Nautilus_Fortress
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Nautilus Fortress Set
@@ -10,3 +11,4 @@ Items:
 - 00157A:JunkInYourTrunk_v2.esm
 - 00157B:JunkInYourTrunk_v2.esm
 - 00157C:JunkInYourTrunk_v2.esm
+ANAM: Null

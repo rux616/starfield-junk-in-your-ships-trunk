@@ -1,5 +1,6 @@
 FormKey: 0008B2:JunkInYourTrunk_v2.esm
 EditorID: SMSSet_CargoShielded_Sextant_Ballast-100CM
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Sextant Ballast 100CM Shielded Set
@@ -12,3 +13,4 @@ Items:
 - 0008F7:JunkInYourTrunk_v2.esm
 - 0008F8:JunkInYourTrunk_v2.esm
 - 0008F9:JunkInYourTrunk_v2.esm
+ANAM: Null

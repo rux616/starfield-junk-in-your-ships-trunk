@@ -1,5 +1,6 @@
 FormKey: 0008F8:JunkInYourTrunk_v2.esm
 EditorID: SMS_CargoShielded_Sextant_Ballast-100CM_Stbd_Btm
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

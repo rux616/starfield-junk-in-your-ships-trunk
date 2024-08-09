@@ -1,5 +1,6 @@
 FormKey: 0016A4:JunkInYourTrunk_v2.esm
 EditorID: SMS_Decorative_Cargo_Sextant_Hauler-20T_Stbd_Zntl
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

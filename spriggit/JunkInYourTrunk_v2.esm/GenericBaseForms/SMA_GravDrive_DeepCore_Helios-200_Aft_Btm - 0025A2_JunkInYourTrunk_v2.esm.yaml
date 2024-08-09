@@ -1,5 +1,6 @@
 FormKey: 0025A2:JunkInYourTrunk_v2.esm
 EditorID: SMA_GravDrive_DeepCore_Helios-200_Aft_Btm
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

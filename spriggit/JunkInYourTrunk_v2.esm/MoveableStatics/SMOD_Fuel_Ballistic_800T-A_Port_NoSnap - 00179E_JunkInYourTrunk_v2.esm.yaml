@@ -1,5 +1,6 @@
 FormKey: 00179E:JunkInYourTrunk_v2.esm
 EditorID: SMOD_Fuel_Ballistic_800T-A_Port_NoSnap
+FormVersion: 559
 ObjectBounds:
   First: -7.9023438, -7.5, -3.9003906
   Second: 0.00024414062, 7.5, 3.9003906

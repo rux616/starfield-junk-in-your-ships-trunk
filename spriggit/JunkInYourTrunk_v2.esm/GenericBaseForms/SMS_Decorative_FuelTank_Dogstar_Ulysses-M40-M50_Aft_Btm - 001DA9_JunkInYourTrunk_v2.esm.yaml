@@ -1,5 +1,6 @@
 FormKey: 001DA9:JunkInYourTrunk_v2.esm
 EditorID: SMS_Decorative_FuelTank_Dogstar_Ulysses-M40-M50_Aft_Btm
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

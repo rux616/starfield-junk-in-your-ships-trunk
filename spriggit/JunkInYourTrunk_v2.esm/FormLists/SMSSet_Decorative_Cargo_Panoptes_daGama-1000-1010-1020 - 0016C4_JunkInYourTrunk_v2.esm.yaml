@@ -1,5 +1,6 @@
 FormKey: 0016C4:JunkInYourTrunk_v2.esm
 EditorID: SMSSet_Decorative_Cargo_Panoptes_daGama-1000-1010-1020
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Panoptes da Gama 1000/1010/1020 Set
@@ -28,3 +29,4 @@ Items:
 - 0015E6:JunkInYourTrunk_v2.esm
 - 0015E7:JunkInYourTrunk_v2.esm
 - 0015E8:JunkInYourTrunk_v2.esm
+ANAM: Null

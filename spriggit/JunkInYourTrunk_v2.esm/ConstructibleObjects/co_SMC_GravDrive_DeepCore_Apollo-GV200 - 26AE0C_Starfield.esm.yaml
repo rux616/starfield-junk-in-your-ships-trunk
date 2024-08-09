@@ -1,6 +1,6 @@
 FormKey: 26AE0C:Starfield.esm
 EditorID: co_SMC_GravDrive_DeepCore_Apollo-GV200
-FormVersion: 558
+FormVersion: 559
 Description:
   TargetLanguage: English
   Value: A Graviton Loop Array, or Grav Drive, allows your ship to jump to other star systems. Upgrade to increase your jump range.
@@ -8,7 +8,6 @@ WorkbenchKeyword: 29C480:Starfield.esm
 Conditions:
 - MutagenObjectType: ConditionFloat
   Unknown1: 0x000000
-  Unknown2: 17630
   Data:
     MutagenObjectType: HasKeywordConditionData
     FirstParameter: 14539E:Starfield.esm
@@ -16,7 +15,6 @@ Conditions:
 - MutagenObjectType: ConditionFloat
   CompareOperator: GreaterThanOrEqualTo
   Unknown1: 0x000000
-  Unknown2: 17630
   Data:
     MutagenObjectType: GetLevelConditionData
     RunOnType: Reference

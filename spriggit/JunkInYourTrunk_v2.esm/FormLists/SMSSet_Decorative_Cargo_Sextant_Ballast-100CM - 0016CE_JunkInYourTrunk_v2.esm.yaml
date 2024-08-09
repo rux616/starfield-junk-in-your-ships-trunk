@@ -1,5 +1,6 @@
 FormKey: 0016CE:JunkInYourTrunk_v2.esm
 EditorID: SMSSet_Decorative_Cargo_Sextant_Ballast-100CM
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Sextant Ballast 100CM Set
@@ -12,3 +13,4 @@ Items:
 - 001669:JunkInYourTrunk_v2.esm
 - 00166A:JunkInYourTrunk_v2.esm
 - 00166B:JunkInYourTrunk_v2.esm
+ANAM: Null

@@ -1,9 +1,6 @@
 FormKey: 0021E6:JunkInYourTrunk_v2.esm
 EditorID: ShipPI_SMOD_Fuel_Ballistic_300G-Base_Port
-FormVersion: 558
-ObjectBounds:
-  First: -3.9121094, -3.5058594, -1.7236328
-  Second: 0.00061035156, 3.5039062, 1.7236328
+FormVersion: 559
 ODTY: 0
 Transforms:
   Ship: 1B5D34:Starfield.esm

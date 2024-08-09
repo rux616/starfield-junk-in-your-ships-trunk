@@ -1,5 +1,6 @@
 FormKey: 0048E1:JunkInYourTrunk_v2.esm
 EditorID: SMB_Reactor_DeepCore_DC301-FastIgnition_Aft_Port
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

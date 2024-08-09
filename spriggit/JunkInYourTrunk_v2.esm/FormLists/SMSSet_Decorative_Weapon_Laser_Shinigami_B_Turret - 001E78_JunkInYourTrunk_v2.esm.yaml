@@ -1,5 +1,6 @@
 FormKey: 001E78:JunkInYourTrunk_v2.esm
 EditorID: SMSSet_Decorative_Weapon_Laser_Shinigami_B_Turret
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Shinigami LSR-B Turret Set
@@ -8,3 +9,4 @@ Items:
 - 001E2B:JunkInYourTrunk_v2.esm
 - 001E2C:JunkInYourTrunk_v2.esm
 - 001E2D:JunkInYourTrunk_v2.esm
+ANAM: Null

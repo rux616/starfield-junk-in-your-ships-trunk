@@ -1,5 +1,6 @@
 FormKey: 005065:JunkInYourTrunk_v2.esm
 EditorID: SMSSet_Decorative_Reactor_DeepCore_Spheromak
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Deep Core Spheromak Set
@@ -28,3 +29,4 @@ Items:
 - 004F6D:JunkInYourTrunk_v2.esm
 - 004F6E:JunkInYourTrunk_v2.esm
 - 004F6F:JunkInYourTrunk_v2.esm
+ANAM: Null

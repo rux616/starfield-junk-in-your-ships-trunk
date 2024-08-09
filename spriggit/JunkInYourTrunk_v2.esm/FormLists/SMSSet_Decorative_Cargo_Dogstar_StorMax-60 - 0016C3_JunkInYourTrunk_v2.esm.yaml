@@ -1,5 +1,6 @@
 FormKey: 0016C3:JunkInYourTrunk_v2.esm
 EditorID: SMSSet_Decorative_Cargo_Dogstar_StorMax-60
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Dogstar StorMax 60 Set
@@ -16,3 +17,4 @@ Items:
 - 0015CE:JunkInYourTrunk_v2.esm
 - 0015CF:JunkInYourTrunk_v2.esm
 - 0015D0:JunkInYourTrunk_v2.esm
+ANAM: Null

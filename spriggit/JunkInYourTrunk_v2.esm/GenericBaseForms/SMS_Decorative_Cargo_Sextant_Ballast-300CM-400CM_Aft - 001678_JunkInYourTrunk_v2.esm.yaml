@@ -1,5 +1,6 @@
 FormKey: 001678:JunkInYourTrunk_v2.esm
 EditorID: SMS_Decorative_Cargo_Sextant_Ballast-300CM-400CM_Aft
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

@@ -1,5 +1,6 @@
 FormKey: 001DD2:JunkInYourTrunk_v2.esm
 EditorID: SMSSet_Decorative_FuelTank_Ballistic_800T-A
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Ballistic 800T-A Set
@@ -16,3 +17,4 @@ Items:
 - 001D40:JunkInYourTrunk_v2.esm
 - 001D41:JunkInYourTrunk_v2.esm
 - 001D42:JunkInYourTrunk_v2.esm
+ANAM: Null

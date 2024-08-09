@@ -1,5 +1,6 @@
 FormKey: 003966:JunkInYourTrunk_v2.esm
 EditorID: SMSSet_Decorative_GravDrive_Reladyne_Alpha
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Reladyne Alpha Set
@@ -28,3 +29,4 @@ Items:
 - 003A28:JunkInYourTrunk_v2.esm
 - 003A2F:JunkInYourTrunk_v2.esm
 - 003A36:JunkInYourTrunk_v2.esm
+ANAM: Null

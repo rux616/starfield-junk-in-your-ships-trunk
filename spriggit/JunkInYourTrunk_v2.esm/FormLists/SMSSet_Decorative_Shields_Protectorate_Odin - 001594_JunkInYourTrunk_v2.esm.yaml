@@ -1,5 +1,6 @@
 FormKey: 001594:JunkInYourTrunk_v2.esm
 EditorID: SMSSet_Decorative_Shields_Protectorate_Odin
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Protectorate Odin Set
@@ -10,3 +11,4 @@ Items:
 - 001580:JunkInYourTrunk_v2.esm
 - 001581:JunkInYourTrunk_v2.esm
 - 001582:JunkInYourTrunk_v2.esm
+ANAM: Null

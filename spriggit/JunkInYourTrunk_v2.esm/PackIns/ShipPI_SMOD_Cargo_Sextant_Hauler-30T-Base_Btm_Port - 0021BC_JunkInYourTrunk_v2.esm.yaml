@@ -1,9 +1,6 @@
 FormKey: 0021BC:JunkInYourTrunk_v2.esm
 EditorID: ShipPI_SMOD_Cargo_Sextant_Hauler-30T-Base_Btm_Port
-FormVersion: 558
-ObjectBounds:
-  First: -8.273437, -4, -1.75
-  Second: 0.00024536133, 4, 1.7744141
+FormVersion: 559
 ODTY: 0
 Transforms:
   Ship: 050FC1:Starfield.esm

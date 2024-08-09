@@ -1,5 +1,6 @@
 FormKey: 004F0F:JunkInYourTrunk_v2.esm
 EditorID: SMC_Reactor_Xiang_Pinch-8A_Aft_Stbd
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

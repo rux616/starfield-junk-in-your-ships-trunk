@@ -1,5 +1,6 @@
 FormKey: 001508:JunkInYourTrunk_v2.esm
 EditorID: SMC_Shields_Sextant_Assurance-SG-2000_Aft
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

@@ -1,8 +1,12 @@
 FormKey: 001960:JunkInYourTrunk_v2.esm
 MajorRecordFlagsRaw: 512
 EditorID: ShipPI_SMOD_Fuel_Ballistic_800T-B_ForeAft_Zntl
+FormVersion: 559
 StarfieldMajorRecordFlags:
 - 0x200
+ObjectBounds:
+  First: -7.5, -3.9999995, -3.9003906
+  Second: 7.5, 3.9999995, 3.9003906
 ODTY: 0
 Transforms:
   Ship: 050FBE:Starfield.esm

@@ -1,5 +1,6 @@
 FormKey: 004891:JunkInYourTrunk_v2.esm
 EditorID: SMB_Reactor_AmunDunn_Z-Machine-2000_Aft_Stbd
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

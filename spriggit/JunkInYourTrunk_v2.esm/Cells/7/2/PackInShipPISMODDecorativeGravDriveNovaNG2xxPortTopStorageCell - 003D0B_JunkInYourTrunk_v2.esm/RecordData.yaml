@@ -1,5 +1,6 @@
 FormKey: 003D0B:JunkInYourTrunk_v2.esm
 EditorID: PackInShipPISMODDecorativeGravDriveNovaNG2xxPortTopStorageCell
+FormVersion: 559
 Flags:
 - IsInteriorCell
 Lighting:
@@ -26,3 +27,6 @@ WaterHeight: 3.4028235E+38
 XILS: 1
 ImageSpace: 06AD68:Starfield.esm
 EnvironmentMap: Data\Textures\Cubemaps\LGT_CubeMap_ShipEditor_001.dds
+Timestamp: 12553
+TemporaryTimestamp: 12553
+TemporaryUnknownGroupData: 1

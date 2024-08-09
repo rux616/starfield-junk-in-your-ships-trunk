@@ -1,5 +1,6 @@
 FormKey: 001748:JunkInYourTrunk_v2.esm
 EditorID: SMOD_Fuel_Ballistic-100G_Port_NoSnap
+FormVersion: 559
 ODTY: 0
 Model:
   File: Ships\Modules\Fuel\SMOD\SMOD_Fuel_Ballistic_100G_Port.nif

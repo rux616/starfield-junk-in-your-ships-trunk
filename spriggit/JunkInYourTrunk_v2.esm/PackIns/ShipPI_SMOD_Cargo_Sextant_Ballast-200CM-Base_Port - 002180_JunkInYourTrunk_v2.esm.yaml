@@ -1,12 +1,9 @@
 FormKey: 002180:JunkInYourTrunk_v2.esm
 MajorRecordFlagsRaw: 512
 EditorID: ShipPI_SMOD_Cargo_Sextant_Ballast-200CM-Base_Port
-FormVersion: 558
+FormVersion: 559
 StarfieldMajorRecordFlags:
 - 0x200
-ObjectBounds:
-  First: 1.5791016, -3.2246094, -1.2880859
-  Second: 4, 3.2226562, 1.2880859
 ODTY: 0
 Transforms:
   Ship: 050FCE:Starfield.esm

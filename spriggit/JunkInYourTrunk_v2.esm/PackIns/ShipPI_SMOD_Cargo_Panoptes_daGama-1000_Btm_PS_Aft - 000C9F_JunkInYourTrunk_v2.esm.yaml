@@ -1,5 +1,8 @@
 FormKey: 000C9F:JunkInYourTrunk_v2.esm
 EditorID: ShipPI_SMOD_Cargo_Panoptes_daGama-1000_Btm_PS_Aft
+FormVersion: 559
+ObjectBounds:
+  Second: 0, 0, 1.75
 ODTY: 0
 Transforms:
   Ship: 050FBE:Starfield.esm

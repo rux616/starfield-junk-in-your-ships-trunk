@@ -1,5 +1,6 @@
 FormKey: 0032D7:JunkInYourTrunk_v2.esm
 EditorID: SMCSet_GravDrive_Reladyne_J-50-Gamma
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Reladyne J-50 Gamma Set
@@ -28,3 +29,4 @@ Items:
 - 003384:JunkInYourTrunk_v2.esm
 - 00338B:JunkInYourTrunk_v2.esm
 - 003392:JunkInYourTrunk_v2.esm
+ANAM: Null

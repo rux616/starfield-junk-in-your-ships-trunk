@@ -1,5 +1,6 @@
 FormKey: 004C7D:JunkInYourTrunk_v2.esm
 EditorID: SMCSet_Reactor_AmunDunn_ThetaPinch-A9
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Amun Dunn Theta Pinch A9 Set
@@ -28,3 +29,4 @@ Items:
 - 004C0C:JunkInYourTrunk_v2.esm
 - 004C13:JunkInYourTrunk_v2.esm
 - 004C1A:JunkInYourTrunk_v2.esm
+ANAM: Null

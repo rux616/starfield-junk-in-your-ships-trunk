@@ -1,5 +1,6 @@
 FormKey: 0044A2:JunkInYourTrunk_v2.esm
 EditorID: SMASet_Reactor_DeepCore_Spheromak-DC201
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: DeepCore Spheromak DC201 Set
@@ -28,3 +29,4 @@ Items:
 - 004546:JunkInYourTrunk_v2.esm
 - 00454D:JunkInYourTrunk_v2.esm
 - 004554:JunkInYourTrunk_v2.esm
+ANAM: Null

@@ -1,5 +1,6 @@
 FormKey: 00153B:JunkInYourTrunk_v2.esm
 EditorID: SMS_Decorative_Shields_Sextant_Deflector_Aft_Btm
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

@@ -1,6 +1,6 @@
 FormKey: 26FD10:Starfield.esm
 EditorID: SMB_Reactor_Dogstar_101DS-MagInertial_Top_Aft
-FormVersion: 558
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

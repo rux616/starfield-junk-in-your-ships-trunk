@@ -1,5 +1,6 @@
 FormKey: 17120D:Starfield.esm
 EditorID: SMBSet_Shields_Dogstar_Defender-44T
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Dogstar Defender 44T Set
@@ -10,3 +11,4 @@ Items:
 - 001383:JunkInYourTrunk_v2.esm
 - 001384:JunkInYourTrunk_v2.esm
 - 001385:JunkInYourTrunk_v2.esm
+ANAM: Null

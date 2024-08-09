@@ -1,8 +1,11 @@
 FormKey: 0013D0:JunkInYourTrunk_v2.esm
 MajorRecordFlagsRaw: 512
 EditorID: ShipPI_SMOD_Shield_Protectorate_Odin-3030-C_Stbd
+FormVersion: 559
 StarfieldMajorRecordFlags:
 - 0x200
+ObjectBounds:
+  First: -2.25, 0, 0
 ODTY: 0
 Transforms:
   Ship: 050FA4:Starfield.esm

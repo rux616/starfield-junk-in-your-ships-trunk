@@ -1,5 +1,6 @@
 FormKey: 16AE45:Starfield.esm
 EditorID: SMSSet_CargoShielded_Panoptes_daGama-1000
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Panoptes da Gama 1000 Shielded Set
@@ -28,3 +29,4 @@ Items:
 - 000CA6:JunkInYourTrunk_v2.esm
 - 000CA9:JunkInYourTrunk_v2.esm
 - 000CAA:JunkInYourTrunk_v2.esm
+ANAM: Null

@@ -1,5 +1,6 @@
 FormKey: 001598:JunkInYourTrunk_v2.esm
 EditorID: SMSSet_Decorative_Shields_Sextant_Warden
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Sextant Warden Set
@@ -10,3 +11,4 @@ Items:
 - 001568:JunkInYourTrunk_v2.esm
 - 001569:JunkInYourTrunk_v2.esm
 - 00156A:JunkInYourTrunk_v2.esm
+ANAM: Null

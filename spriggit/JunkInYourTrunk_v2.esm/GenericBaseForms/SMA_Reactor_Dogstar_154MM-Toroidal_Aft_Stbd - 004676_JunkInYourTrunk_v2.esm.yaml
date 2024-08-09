@@ -1,5 +1,6 @@
 FormKey: 004676:JunkInYourTrunk_v2.esm
 EditorID: SMA_Reactor_Dogstar_154MM-Toroidal_Aft_Stbd
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent
