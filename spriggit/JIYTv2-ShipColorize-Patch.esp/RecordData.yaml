@@ -10,7 +10,7 @@ ModHeader:
     Compatibility patch between the "Junk In Your (Ship's) Trunk" mod by rux616 (JunkInYourTrunk_v2.esm) and the "Ship Colorize" mod by DerekM17x (ShipColorize.esm).
 
 
-    Version: 2.20.0
+    Version: 2.21.0
   MasterReferences:
   - Master: Starfield.esm
   - Master: ShipBuilderCategories.esm

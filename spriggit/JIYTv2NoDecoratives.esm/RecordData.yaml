@@ -12,7 +12,7 @@ ModHeader:
     Hides all decorative ship modules from Junk In Your Trunk.
 
 
-    Version: 2.20.0
+    Version: 2.21.0
   MasterReferences:
   - Master: Starfield.esm
   - Master: ShipBuilderCategories.esm
