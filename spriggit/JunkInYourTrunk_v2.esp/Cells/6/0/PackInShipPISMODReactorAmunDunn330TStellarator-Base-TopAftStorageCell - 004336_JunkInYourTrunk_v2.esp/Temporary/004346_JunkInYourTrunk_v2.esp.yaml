@@ -7,7 +7,7 @@ ProjectedDecal:
   UnknownFloat: 1
   UnknownInt: 2880154369
 ProjectedDecalReferences:
-- 015334:Starfield.esm
+- 004338:JunkInYourTrunk_v2.esp
 ConstrainedDecal: 2, 2, 1.4402286
 Position: -1.5215732, -2.0248477, -0.97690976
 Rotation: 0.93478715, 0.037441306, 1.5707964

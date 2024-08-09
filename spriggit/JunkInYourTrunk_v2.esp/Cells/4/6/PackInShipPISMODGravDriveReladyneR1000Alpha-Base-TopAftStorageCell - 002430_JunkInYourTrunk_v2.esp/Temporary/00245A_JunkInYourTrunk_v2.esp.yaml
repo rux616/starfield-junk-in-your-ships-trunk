@@ -8,10 +8,10 @@ ProjectedDecal:
   UnknownFloat: 0.2
   UnknownInt: 2880154369
 ProjectedDecalReferences:
-- 05AE80:Starfield.esm
-- 0F23DD:Starfield.esm
-- 0F23DC:Starfield.esm
-- 0F23DB:Starfield.esm
+- 002431:JunkInYourTrunk_v2.esp
+- 002435:JunkInYourTrunk_v2.esp
+- 002437:JunkInYourTrunk_v2.esp
+- 002433:JunkInYourTrunk_v2.esp
 ConstrainedDecal: 4.980001, 5.4900045, 0.8178171
 Position: 0.10178709, -0.8154962, -0.16334721
 Rotation: 1.5707964, -0, 4.712389
