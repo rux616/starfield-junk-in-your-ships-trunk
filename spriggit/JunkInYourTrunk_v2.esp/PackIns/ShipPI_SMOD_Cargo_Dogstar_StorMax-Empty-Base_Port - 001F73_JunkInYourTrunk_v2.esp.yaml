@@ -1,0 +1,19 @@
+FormKey: 001F73:JunkInYourTrunk_v2.esp
+MajorRecordFlagsRaw: 512
+EditorID: ShipPI_SMOD_Cargo_Dogstar_StorMax-Empty-Base_Port
+FormVersion: 558
+StarfieldMajorRecordFlags:
+- 0x200
+ObjectBounds:
+  First: -3.752018, -4, -1.7509766
+  Second: 4.0078125, 4, 1.7509766
+ODTY: 0
+Transforms:
+  Ship: 050FBE:Starfield.esm
+Filter: '\Ships\Modules\Exterior\Cargo\Dogstar\'
+Cell: 001F74:JunkInYourTrunk_v2.esp
+Version: 0
+FNAM: 0x0E000000
+MaterialSwaps: []
+MajorFlags:
+- Prefab

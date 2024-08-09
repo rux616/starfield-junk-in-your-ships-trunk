@@ -1,0 +1,9 @@
+FormKey: 000E93:JunkInYourTrunk_v2.esp
+EditorID: SMSSet_Cargo_Protectorate_Galleon-S204
+Name:
+  TargetLanguage: English
+  Value: Protectorate Galleon S204 Set
+Items:
+- 000E91:JunkInYourTrunk_v2.esp
+- 000E92:JunkInYourTrunk_v2.esp
+- 270475:Starfield.esm

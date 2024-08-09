@@ -1,0 +1,15 @@
+FormKey: 004E54:JunkInYourTrunk_v2.esp
+MajorRecordFlagsRaw: 512
+EditorID: ShipPI_SMOD_Reactor_Xiang_Pinch-5Z_Aft_Top
+StarfieldMajorRecordFlags:
+- 0x200
+ODTY: 0
+Transforms:
+  Ship: 15E824:Starfield.esm
+Filter: '\Ships\Modules\Exterior\Reactors\Xiang\'
+Cell: 004E55:JunkInYourTrunk_v2.esp
+Version: 0
+FNAM: 0x0E000000
+MaterialSwaps: []
+MajorFlags:
+- Prefab

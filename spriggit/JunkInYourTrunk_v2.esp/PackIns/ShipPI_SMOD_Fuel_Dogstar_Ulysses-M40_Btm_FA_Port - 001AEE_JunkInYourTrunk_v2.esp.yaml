@@ -1,0 +1,10 @@
+FormKey: 001AEE:JunkInYourTrunk_v2.esp
+EditorID: ShipPI_SMOD_Fuel_Dogstar_Ulysses-M40_Btm_FA_Port
+ODTY: 0
+Transforms:
+  Ship: 050FBE:Starfield.esm
+Filter: '\Ships\Modules\Exterior\Fuel\Dogstar\'
+Cell: 001AEF:JunkInYourTrunk_v2.esp
+Version: 0
+FNAM: 0x0E000000
+MaterialSwaps: []

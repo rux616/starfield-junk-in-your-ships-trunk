@@ -1,0 +1,12 @@
+FormKey: 00285F:JunkInYourTrunk_v2.esp
+EditorID: SMOD_Snap_Generic_035xCTRy070x_PortStbd
+ODTY: 0
+SnapTemplate: 002853:JunkInYourTrunk_v2.esp
+Model:
+  File: effects\fxemptynode.nif
+  FLLD: 0x01000000
+  XFLG: 0x02
+Keywords:
+- 1BB401:Starfield.esm
+- 207960:Starfield.esm
+DATA: 4

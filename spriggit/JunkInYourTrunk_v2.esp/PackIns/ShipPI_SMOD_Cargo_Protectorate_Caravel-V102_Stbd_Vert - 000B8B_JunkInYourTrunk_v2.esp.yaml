@@ -1,0 +1,15 @@
+FormKey: 000B8B:JunkInYourTrunk_v2.esp
+MajorRecordFlagsRaw: 512
+EditorID: ShipPI_SMOD_Cargo_Protectorate_Caravel-V102_Stbd_Vert
+StarfieldMajorRecordFlags:
+- 0x200
+ODTY: 0
+Transforms:
+  Ship: 050FBE:Starfield.esm
+Filter: '\Ships\Modules\Exterior\Cargo\Protectorate\'
+Cell: 000B75:JunkInYourTrunk_v2.esp
+Version: 0
+FNAM: 0x0E000000
+MaterialSwaps: []
+MajorFlags:
+- Prefab

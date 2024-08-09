@@ -1,0 +1,12 @@
+FormKey: 001234:JunkInYourTrunk_v2.esp
+EditorID: SMASet_Shields_Protectorate_Marduk-1030-A
+Name:
+  TargetLanguage: English
+  Value: Protectorate Marduk 1030-A Set
+Items:
+- 001229:JunkInYourTrunk_v2.esp
+- 00122A:JunkInYourTrunk_v2.esp
+- 00122B:JunkInYourTrunk_v2.esp
+- 00122C:JunkInYourTrunk_v2.esp
+- 00122D:JunkInYourTrunk_v2.esp
+- 26F135:Starfield.esm

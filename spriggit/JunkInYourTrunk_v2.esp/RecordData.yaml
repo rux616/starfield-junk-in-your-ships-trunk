@@ -1,0 +1,15 @@
+SpriggitSource:
+  PackageName: Spriggit.Yaml.Starfield
+  Version: 0.25.0
+ModKey: JunkInYourTrunk_v2.esp
+GameRelease: Starfield
+ModHeader:
+  Author: rux616
+  Description: >-
+    Adds new flips and decorative versions of many different modules.
+
+
+    Version: 2.20.0
+  MasterReferences:
+  - Master: Starfield.esm
+  - Master: ShipBuilderCategories.esm

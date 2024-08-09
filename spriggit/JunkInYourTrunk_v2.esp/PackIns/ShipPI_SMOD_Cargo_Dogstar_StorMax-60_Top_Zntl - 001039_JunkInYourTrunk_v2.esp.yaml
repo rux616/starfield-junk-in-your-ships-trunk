@@ -1,0 +1,10 @@
+FormKey: 001039:JunkInYourTrunk_v2.esp
+EditorID: ShipPI_SMOD_Cargo_Dogstar_StorMax-60_Top_Zntl
+ODTY: 0
+Transforms:
+  Ship: 050FBE:Starfield.esm
+Filter: '\Ships\Modules\Exterior\Cargo\Dogstar\'
+Cell: 001016:JunkInYourTrunk_v2.esp
+Version: 0
+FNAM: 0x0E000000
+MaterialSwaps: []

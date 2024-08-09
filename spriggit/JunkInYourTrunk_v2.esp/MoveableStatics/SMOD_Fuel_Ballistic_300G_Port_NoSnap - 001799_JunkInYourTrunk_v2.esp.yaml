@@ -1,0 +1,14 @@
+FormKey: 001799:JunkInYourTrunk_v2.esp
+EditorID: SMOD_Fuel_Ballistic_300G_Port_NoSnap
+ODTY: 0
+Model:
+  File: Ships\Modules\Fuel\SMOD\SMOD_Fuel_Ballistic_300G_Port.nif
+  MaterialSwaps:
+  - 1615F6:Starfield.esm
+  - 2F259A:Starfield.esm
+  FLLD: 0x01000000
+  XFLG: 0x02
+Keywords:
+- 1BB401:Starfield.esm
+- 207960:Starfield.esm
+DATA: 4

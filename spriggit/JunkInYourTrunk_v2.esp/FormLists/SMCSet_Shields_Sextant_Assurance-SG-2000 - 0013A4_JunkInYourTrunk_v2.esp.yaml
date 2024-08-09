@@ -1,0 +1,12 @@
+FormKey: 0013A4:JunkInYourTrunk_v2.esp
+EditorID: SMCSet_Shields_Sextant_Assurance-SG-2000
+Name:
+  TargetLanguage: English
+  Value: Sextant Assurance SG-2000 Set
+Items:
+- 001508:JunkInYourTrunk_v2.esp
+- 001509:JunkInYourTrunk_v2.esp
+- 00150A:JunkInYourTrunk_v2.esp
+- 00150B:JunkInYourTrunk_v2.esp
+- 00150C:JunkInYourTrunk_v2.esp
+- 26F116:Starfield.esm
