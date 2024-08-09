@@ -8,3 +8,5 @@ meta.ini
 *.~lock.*
 # exclude backup files
 *.backup
+# exclude BA2 archives
+*.ba2
