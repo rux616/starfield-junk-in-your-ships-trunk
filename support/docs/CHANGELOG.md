@@ -6,6 +6,7 @@ Table Of Contents
 - [Junk In Your (Ship's) Trunk](#junk-in-your-ships-trunk)
     - [Table Of Contents](#table-of-contents)
 - [Changelog](#changelog)
+    - [v2.21.0](#v2210)
     - [v2.20.0](#v2200)
     - [v2.19.0](#v2190)
     - [v2.18.0](#v2180)
@@ -34,6 +35,17 @@ Table Of Contents
 
 Changelog
 =========
+
+v2.21.0
+-------
+- Removed some old template records
+- Changed some Pack-Ins and Cell Editor IDs to remove naming collisions
+- Fixed two Fuel Tank flips that were using the wrong Pack-Ins
+- Fixed all Projected Decals that were using projected decal references
+- Added "SBC_NoDecoratives" keyword to No Decoratives patch so the recipe filter keyword would no longer be NULL
+- Made ESP files and ran them through the CK for sanity checks
+
+([TOC](#table-of-contents))
 
 v2.20.0
 -------
