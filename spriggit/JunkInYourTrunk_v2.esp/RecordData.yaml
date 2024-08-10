@@ -10,7 +10,7 @@ ModHeader:
     Adds new flips and decorative versions of many different modules.
 
 
-    Version: 2.21.0
+    Version: 2.21.1
   MasterReferences:
   - Master: Starfield.esm
   - Master: ShipBuilderCategories.esm
