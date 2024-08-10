@@ -6,6 +6,7 @@ Table Of Contents
 - [Junk In Your (Ship's) Trunk](#junk-in-your-ships-trunk)
     - [Table Of Contents](#table-of-contents)
 - [Changelog](#changelog)
+    - [v2.21.1](#v2211)
     - [v2.21.0](#v2210)
     - [v2.20.0](#v2200)
     - [v2.19.0](#v2190)
@@ -35,6 +36,13 @@ Table Of Contents
 
 Changelog
 =========
+
+v2.21.1
+-------
+- Excluded *.esp files from the build archive
+- Remove git-lfs from repo and re-add all files
+
+([TOC](#table-of-contents))
 
 v2.21.0
 -------
