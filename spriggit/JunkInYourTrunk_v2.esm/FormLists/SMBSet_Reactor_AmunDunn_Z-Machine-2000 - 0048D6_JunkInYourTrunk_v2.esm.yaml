@@ -1,5 +1,6 @@
 FormKey: 0048D6:JunkInYourTrunk_v2.esm
 EditorID: SMBSet_Reactor_AmunDunn_Z-Machine-2000
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Amun Dunn Z-Machine 2000 Set
@@ -28,3 +29,4 @@ Items:
 - 0048A3:JunkInYourTrunk_v2.esm
 - 0048A4:JunkInYourTrunk_v2.esm
 - 0048A5:JunkInYourTrunk_v2.esm
+ANAM: Null

@@ -1,5 +1,6 @@
 FormKey: 00139E:JunkInYourTrunk_v2.esm
 EditorID: SMCSet_Shields_Nautilus_Fortress-A2
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Nautilus Fortress A2 Set
@@ -10,3 +11,4 @@ Items:
 - 0014F2:JunkInYourTrunk_v2.esm
 - 0014F3:JunkInYourTrunk_v2.esm
 - 26F965:Starfield.esm
+ANAM: Null

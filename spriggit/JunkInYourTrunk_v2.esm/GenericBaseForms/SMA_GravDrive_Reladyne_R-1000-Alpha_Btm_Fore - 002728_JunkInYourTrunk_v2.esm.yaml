@@ -1,5 +1,6 @@
 FormKey: 002728:JunkInYourTrunk_v2.esm
 EditorID: SMA_GravDrive_Reladyne_R-1000-Alpha_Btm_Fore
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

@@ -1,5 +1,6 @@
 FormKey: 229C6B:Starfield.esm
 EditorID: co_SMS_FuelTank_Ballistics_900T
+FormVersion: 559
 Description:
   TargetLanguage: English
   Value: Spaceship Fuel Tanks store Helium-3, which is used by the Grav Drive to perform a jump. Upgraded Fuel Tanks allow you to plot longer courses, to travel farther without stopping.
@@ -8,7 +9,6 @@ Conditions:
 - MutagenObjectType: ConditionFloat
   CompareOperator: GreaterThanOrEqualTo
   Unknown1: 0x000000
-  Unknown2: 17620
   Data:
     MutagenObjectType: GetLevelConditionData
     RunOnType: Reference

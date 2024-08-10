@@ -1,0 +1,18 @@
+FormKey: 000DFE:JunkInYourTrunk_v2.esp
+MajorRecordFlagsRaw: 512
+EditorID: ShipPI_SMOD_Cargo_Protectorate_Galleon-S203_Fore_Btm
+FormVersion: 559
+StarfieldMajorRecordFlags:
+- 0x200
+ObjectBounds:
+  First: 0, -4.5, 0
+ODTY: 0
+Transforms:
+  Ship: 050FBE:Starfield.esm
+Filter: '\Ships\Modules\Exterior\Cargo\Protectorate\'
+Cell: 000E2A:JunkInYourTrunk_v2.esp
+Version: 0
+FNAM: 0x0E000000
+MaterialSwaps: []
+MajorFlags:
+- Prefab

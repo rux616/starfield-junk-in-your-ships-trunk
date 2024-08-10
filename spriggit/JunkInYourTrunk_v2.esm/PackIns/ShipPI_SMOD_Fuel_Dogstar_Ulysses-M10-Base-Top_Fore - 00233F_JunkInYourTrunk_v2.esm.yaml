@@ -1,7 +1,7 @@
 FormKey: 00233F:JunkInYourTrunk_v2.esm
 MajorRecordFlagsRaw: 512
 EditorID: ShipPI_SMOD_Fuel_Dogstar_Ulysses-M10-Base-Top_Fore
-FormVersion: 558
+FormVersion: 559
 StarfieldMajorRecordFlags:
 - 0x200
 ObjectBounds:

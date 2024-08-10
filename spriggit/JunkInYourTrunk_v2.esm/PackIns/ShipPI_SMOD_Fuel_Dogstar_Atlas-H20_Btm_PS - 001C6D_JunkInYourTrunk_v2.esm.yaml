@@ -1,5 +1,9 @@
 FormKey: 001C6D:JunkInYourTrunk_v2.esm
 EditorID: ShipPI_SMOD_Fuel_Dogstar_Atlas-H20_Btm_PS
+FormVersion: 559
+ObjectBounds:
+  First: -2.5859373, -1.3730471, -4.0839844
+  Second: 2.5859375, 1.373047, 1.7499998
 ODTY: 0
 Transforms:
   Ship: 050FBE:Starfield.esm

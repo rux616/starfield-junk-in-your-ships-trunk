@@ -1,5 +1,6 @@
 FormKey: 001E7B:JunkInYourTrunk_v2.esm
 EditorID: SMSSet_Decorative_Weapon_Particle_Ballistic_C_Turret
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Ballistic PRT-C Turret Set
@@ -8,3 +9,4 @@ Items:
 - 001E67:JunkInYourTrunk_v2.esm
 - 001E68:JunkInYourTrunk_v2.esm
 - 001E69:JunkInYourTrunk_v2.esm
+ANAM: Null

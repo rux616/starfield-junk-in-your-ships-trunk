@@ -6,12 +6,15 @@ GameRelease: Starfield
 ModHeader:
   Flags:
   - Master
+  FormVersion: 559
   Author: rux616
   Description: >-
     Adds new flips and decorative versions of many different modules.
 
 
-    Version: 2.20.0
+    Version: 2.21.0
   MasterReferences:
   - Master: Starfield.esm
   - Master: ShipBuilderCategories.esm
+  BNAM: 0x4D61696E00
+  INCC: 1519

@@ -1,0 +1,12 @@
+FormKey: 001E7D:JunkInYourTrunk_v2.esp
+EditorID: SMSSet_Decorative_Weapon_Particle_Horizon_C_Turret
+FormVersion: 559
+Name:
+  TargetLanguage: English
+  Value: Decorative Horizon PRT-C Turret Set
+Items:
+- 001E6B:JunkInYourTrunk_v2.esp
+- 001E6C:JunkInYourTrunk_v2.esp
+- 001E6D:JunkInYourTrunk_v2.esp
+- 001E6E:JunkInYourTrunk_v2.esp
+ANAM: Null

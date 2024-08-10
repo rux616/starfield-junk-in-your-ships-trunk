@@ -1,5 +1,6 @@
 FormKey: 005062:JunkInYourTrunk_v2.esm
 EditorID: SMSSet_Decorative_Reactor_AmunDunn_Z-Machine
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Amun Dunn Z-Machine Set
@@ -28,3 +29,4 @@ Items:
 - 004FB5:JunkInYourTrunk_v2.esm
 - 004FB6:JunkInYourTrunk_v2.esm
 - 004FB7:JunkInYourTrunk_v2.esm
+ANAM: Null

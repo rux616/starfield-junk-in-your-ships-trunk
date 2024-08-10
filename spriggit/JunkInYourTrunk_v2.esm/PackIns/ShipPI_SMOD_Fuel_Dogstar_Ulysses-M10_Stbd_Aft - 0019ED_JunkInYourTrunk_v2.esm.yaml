@@ -1,8 +1,12 @@
 FormKey: 0019ED:JunkInYourTrunk_v2.esm
 MajorRecordFlagsRaw: 512
 EditorID: ShipPI_SMOD_Fuel_Dogstar_Ulysses-M10_Stbd_Aft
+FormVersion: 559
 StarfieldMajorRecordFlags:
 - 0x200
+ObjectBounds:
+  First: -2.25, -4.1381063, -3.5857804
+  Second: 2.25, 4.1343565, 3.5782802
 ODTY: 0
 Transforms:
   Ship: 050FBE:Starfield.esm

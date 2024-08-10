@@ -1,9 +1,10 @@
 FormKey: 002F8D:JunkInYourTrunk_v2.esm
 EditorID: SMOD_Snap_Generic_035xCTRy080z_TopEPortStbdFlushBtmE
+FormVersion: 559
 ODTY: 0
 SnapTemplate: 002F89:JunkInYourTrunk_v2.esm
 Model:
-  File: effects\fxemptynode.nif
+  File: Effects\fxemptynode.nif
   FLLD: 0x01000000
   XFLG: 0x02
 Keywords:

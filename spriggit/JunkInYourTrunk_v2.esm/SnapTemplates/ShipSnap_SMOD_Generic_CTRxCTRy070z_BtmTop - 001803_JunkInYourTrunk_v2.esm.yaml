@@ -1,5 +1,6 @@
 FormKey: 001803:JunkInYourTrunk_v2.esm
 EditorID: ShipSnap_SMOD_Generic_CTRxCTRy070z_BtmTop
+FormVersion: 559
 Nodes:
 - Node: 04AB77:Starfield.esm
   Offset: 0, 0, 3.5

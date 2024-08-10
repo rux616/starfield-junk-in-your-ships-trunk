@@ -1,5 +1,6 @@
 FormKey: 001398:JunkInYourTrunk_v2.esm
 EditorID: SMBSet_Shields_Protectorate_Osiris-2040-B
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Protectorate Osiris 2040-B Set
@@ -10,3 +11,4 @@ Items:
 - 0014D2:JunkInYourTrunk_v2.esm
 - 0014D3:JunkInYourTrunk_v2.esm
 - 26F131:Starfield.esm
+ANAM: Null

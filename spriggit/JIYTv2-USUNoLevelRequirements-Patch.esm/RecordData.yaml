@@ -6,13 +6,17 @@ GameRelease: Starfield
 ModHeader:
   Flags:
   - Master
+  FormVersion: 559
   Author: rux616
   Description: >-
     Compatibility patch between the "Junk In Your (Ship's) Trunk" mod by rux616 (JunkInYourTrunk_v2.esm) and the "No Level Requirements" plugin from the "Ultimate Shipyards Unlocked" [Modular] mod by JustAnOrdinaryGuy (USU - No Level Requirements.esm).
 
 
-    Version: 2.20.0
+    Version: 2.21.0
   MasterReferences:
   - Master: Starfield.esm
-  - Master: JunkInYourTrunk_v2.esm
+  - Master: ShipBuilderCategories.esm
   - Master: USU - No Level Requirements.esm
+  - Master: JunkInYourTrunk_v2.esm
+  BNAM: 0x4D61696E00
+  INCC: 0

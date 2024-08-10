@@ -1,5 +1,6 @@
 FormKey: 0014CE:JunkInYourTrunk_v2.esm
 EditorID: SMB_Shields_Protectorate_Osiris-2030-B_Stbd
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

@@ -1,8 +1,12 @@
 FormKey: 004E77:JunkInYourTrunk_v2.esm
 MajorRecordFlagsRaw: 512
 EditorID: ShipPI_SMOD_Reactor_Xiang_Pinch-5Z_Fore_Btm
+FormVersion: 559
 StarfieldMajorRecordFlags:
 - 0x200
+ObjectBounds:
+  First: -3.999999, -3.423828, -3.4531262
+  Second: 3.9999993, 3.423828, 4.000001
 ODTY: 0
 Transforms:
   Ship: 15E824:Starfield.esm

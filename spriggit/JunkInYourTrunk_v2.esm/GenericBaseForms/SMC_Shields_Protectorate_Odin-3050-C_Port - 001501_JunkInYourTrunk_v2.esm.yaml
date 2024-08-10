@@ -1,5 +1,6 @@
 FormKey: 001501:JunkInYourTrunk_v2.esm
 EditorID: SMC_Shields_Protectorate_Odin-3050-C_Port
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

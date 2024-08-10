@@ -1,5 +1,6 @@
 FormKey: 00353F:JunkInYourTrunk_v2.esm
 EditorID: SMC_GravDrive_Nova_NG300_Port_Fore
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

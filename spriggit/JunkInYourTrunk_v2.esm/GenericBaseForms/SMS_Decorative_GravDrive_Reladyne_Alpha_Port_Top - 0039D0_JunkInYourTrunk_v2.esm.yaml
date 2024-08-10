@@ -1,5 +1,6 @@
 FormKey: 0039D0:JunkInYourTrunk_v2.esm
 EditorID: SMS_Decorative_GravDrive_Reladyne_Alpha_Port_Top
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

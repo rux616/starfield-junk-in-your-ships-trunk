@@ -1,5 +1,6 @@
 FormKey: 0035B9:JunkInYourTrunk_v2.esm
 EditorID: SMCSet_GravDrive_Nova_NG340
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Nova NG300 Set
@@ -28,3 +29,4 @@ Items:
 - 0035CF:JunkInYourTrunk_v2.esm
 - 0035D0:JunkInYourTrunk_v2.esm
 - 0035D1:JunkInYourTrunk_v2.esm
+ANAM: Null

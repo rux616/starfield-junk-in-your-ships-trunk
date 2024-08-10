@@ -1,5 +1,6 @@
 FormKey: 16AE4F:Starfield.esm
 EditorID: SMSSet_Cargo_Sextant_Ballast-200CM
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Sextant Ballast 200CM Set
@@ -16,3 +17,4 @@ Items:
 - 00086B:JunkInYourTrunk_v2.esm
 - 000850:JunkInYourTrunk_v2.esm
 - 000851:JunkInYourTrunk_v2.esm
+ANAM: Null

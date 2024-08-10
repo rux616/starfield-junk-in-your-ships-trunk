@@ -1,5 +1,6 @@
 FormKey: 001589:JunkInYourTrunk_v2.esm
 EditorID: SMSSet_Decorative_Shields_Dogstar_Defender
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Dogstar Defender Set
@@ -10,3 +11,4 @@ Items:
 - 001556:JunkInYourTrunk_v2.esm
 - 001557:JunkInYourTrunk_v2.esm
 - 001558:JunkInYourTrunk_v2.esm
+ANAM: Null

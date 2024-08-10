@@ -1,8 +1,12 @@
 FormKey: 002E44:JunkInYourTrunk_v2.esm
 MajorRecordFlagsRaw: 512
 EditorID: ShipPI_SMOD_GravDrive_DeepCore_Aurora-11G_Stbd_Fore
+FormVersion: 559
 StarfieldMajorRecordFlags:
 - 0x200
+ObjectBounds:
+  First: -1.7500002, -4.000001, -3.999999
+  Second: 1.7500002, 4.000001, 3.999999
 ODTY: 0
 Transforms:
   Ship: 39EC83:Starfield.esm

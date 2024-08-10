@@ -1,0 +1,14 @@
+FormKey: 00139F:JunkInYourTrunk_v2.esp
+EditorID: SMCSet_Shields_Nautilus_Fortress-A3
+FormVersion: 559
+Name:
+  TargetLanguage: English
+  Value: Nautilus Fortress A3 Set
+Items:
+- 0014F4:JunkInYourTrunk_v2.esp
+- 0014F5:JunkInYourTrunk_v2.esp
+- 0014F6:JunkInYourTrunk_v2.esp
+- 0014F7:JunkInYourTrunk_v2.esp
+- 0014F8:JunkInYourTrunk_v2.esp
+- 26F964:Starfield.esm
+ANAM: Null

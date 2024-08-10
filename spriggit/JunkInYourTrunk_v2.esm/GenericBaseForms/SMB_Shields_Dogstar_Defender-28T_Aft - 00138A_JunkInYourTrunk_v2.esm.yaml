@@ -1,5 +1,6 @@
 FormKey: 00138A:JunkInYourTrunk_v2.esm
 EditorID: SMB_Shields_Dogstar_Defender-28T_Aft
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

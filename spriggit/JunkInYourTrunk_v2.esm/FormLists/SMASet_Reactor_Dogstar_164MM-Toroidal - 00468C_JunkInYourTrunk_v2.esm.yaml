@@ -1,5 +1,6 @@
 FormKey: 00468C:JunkInYourTrunk_v2.esm
 EditorID: SMASet_Reactor_Dogstar_164MM-Toroidal
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Dogstar 164MM Toroidal Set
@@ -28,3 +29,4 @@ Items:
 - 0046A2:JunkInYourTrunk_v2.esm
 - 0046A3:JunkInYourTrunk_v2.esm
 - 0046A4:JunkInYourTrunk_v2.esm
+ANAM: Null

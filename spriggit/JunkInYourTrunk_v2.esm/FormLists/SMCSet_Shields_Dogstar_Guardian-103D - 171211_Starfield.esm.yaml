@@ -1,5 +1,6 @@
 FormKey: 171211:Starfield.esm
 EditorID: SMCSet_Shields_Dogstar_Guardian-103D
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Dogstar Guardian 103D Set
@@ -10,3 +11,4 @@ Items:
 - 0014E8:JunkInYourTrunk_v2.esm
 - 0014E9:JunkInYourTrunk_v2.esm
 - 0014EA:JunkInYourTrunk_v2.esm
+ANAM: Null

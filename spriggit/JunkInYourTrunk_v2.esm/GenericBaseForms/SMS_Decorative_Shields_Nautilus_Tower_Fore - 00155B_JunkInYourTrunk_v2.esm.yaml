@@ -1,5 +1,6 @@
 FormKey: 00155B:JunkInYourTrunk_v2.esm
 EditorID: SMS_Decorative_Shields_Nautilus_Tower_Fore
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

@@ -1,8 +1,12 @@
 FormKey: 001BFD:JunkInYourTrunk_v2.esm
 MajorRecordFlagsRaw: 512
 EditorID: ShipPI_SMOD_Fuel_Dogstar_Atlas-H30_Stbd_Vert
+FormVersion: 559
 StarfieldMajorRecordFlags:
 - 0x200
+ObjectBounds:
+  First: -4.0000005, -1.3730457, -3.8476562
+  Second: 0, 1.3730469, 3.8476562
 ODTY: 0
 Transforms:
   Ship: 050FBE:Starfield.esm

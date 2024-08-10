@@ -1,7 +1,7 @@
 FormKey: 00429D:JunkInYourTrunk_v2.esm
 MajorRecordFlagsRaw: 512
 EditorID: ShipPI_SMOD_Reactor_Deep_Spheromak-DC201-Base_Top_Aft
-FormVersion: 558
+FormVersion: 559
 StarfieldMajorRecordFlags:
 - 0x200
 ObjectBounds:

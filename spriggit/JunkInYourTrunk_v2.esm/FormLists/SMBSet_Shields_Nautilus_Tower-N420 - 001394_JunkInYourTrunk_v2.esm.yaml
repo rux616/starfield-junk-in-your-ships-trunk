@@ -1,5 +1,6 @@
 FormKey: 001394:JunkInYourTrunk_v2.esm
 EditorID: SMBSet_Shields_Nautilus_Tower-N420
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Nautilus Tower N420 Set
@@ -10,3 +11,4 @@ Items:
 - 0014C8:JunkInYourTrunk_v2.esm
 - 0014C9:JunkInYourTrunk_v2.esm
 - 26F968:Starfield.esm
+ANAM: Null

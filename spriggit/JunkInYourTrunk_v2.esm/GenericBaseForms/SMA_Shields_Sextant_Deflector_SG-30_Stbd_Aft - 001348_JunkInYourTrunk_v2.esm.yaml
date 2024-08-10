@@ -1,5 +1,6 @@
 FormKey: 001348:JunkInYourTrunk_v2.esm
 EditorID: SMA_Shields_Sextant_Deflector_SG-30_Stbd_Aft
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

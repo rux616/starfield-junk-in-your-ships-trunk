@@ -1,6 +1,7 @@
 FormKey: 00091D:JunkInYourTrunk_v2.esm
 MajorRecordFlagsRaw: 512
 EditorID: ShipPI_SMOD_Cargo_Sextant_Hauler-10T_Btm_Stbd
+FormVersion: 559
 StarfieldMajorRecordFlags:
 - 0x200
 ODTY: 0

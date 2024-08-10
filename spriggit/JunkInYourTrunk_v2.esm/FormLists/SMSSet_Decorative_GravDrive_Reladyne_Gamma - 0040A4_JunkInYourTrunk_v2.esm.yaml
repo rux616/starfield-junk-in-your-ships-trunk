@@ -1,5 +1,6 @@
 FormKey: 0040A4:JunkInYourTrunk_v2.esm
 EditorID: SMSSet_Decorative_GravDrive_Reladyne_Gamma
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Reladyne Gamma Set
@@ -28,3 +29,4 @@ Items:
 - 004168:JunkInYourTrunk_v2.esm
 - 00416F:JunkInYourTrunk_v2.esm
 - 004176:JunkInYourTrunk_v2.esm
+ANAM: Null

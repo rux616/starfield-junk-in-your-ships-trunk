@@ -1,0 +1,14 @@
+FormKey: 00139C:JunkInYourTrunk_v2.esp
+EditorID: SMBSet_Shields_Sextant_Warden-SG-400
+FormVersion: 559
+Name:
+  TargetLanguage: English
+  Value: Sextant Warden SG-400 Set
+Items:
+- 0014DE:JunkInYourTrunk_v2.esp
+- 0014DF:JunkInYourTrunk_v2.esp
+- 0014E0:JunkInYourTrunk_v2.esp
+- 0014E1:JunkInYourTrunk_v2.esp
+- 0014E2:JunkInYourTrunk_v2.esp
+- 26F118:Starfield.esm
+ANAM: Null

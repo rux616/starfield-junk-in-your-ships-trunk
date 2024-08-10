@@ -2,7 +2,7 @@ Junk In Your (Ship's) Trunk
 ===========================
 by rux616
 
-Version: 2.20.0
+Version: 2.21.0
 
 Table Of Contents
 -----------------
@@ -30,7 +30,7 @@ Overview
 
 Summary
 -------
-(Cargo holds, fuel tanks, grav drives, shields, weapons. You want variety? We got variety. Adds new flips and decorative versions of many different ship modules.)
+(Cargo holds, fuel tanks, grav drives, reactors, shields, weapons. You want variety? We got variety. Adds new flips and decorative versions of many different ship modules.)
 
 NOTE: Now requires [Ship Builder Categories](https://www.nexusmods.com/starfield/mods/7310) - you will get a CTD without it installed and above this mod in your load order!
 

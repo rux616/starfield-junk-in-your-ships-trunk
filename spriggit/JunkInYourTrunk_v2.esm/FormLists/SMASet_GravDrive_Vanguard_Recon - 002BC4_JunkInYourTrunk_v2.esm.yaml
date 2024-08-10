@@ -1,5 +1,6 @@
 FormKey: 002BC4:JunkInYourTrunk_v2.esm
 EditorID: SMASet_GravDrive_Vanguard_Recon
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Vanguard Recon Set
@@ -28,3 +29,4 @@ Items:
 - 002C78:JunkInYourTrunk_v2.esm
 - 002C80:JunkInYourTrunk_v2.esm
 - 002C88:JunkInYourTrunk_v2.esm
+ANAM: Null

@@ -1,5 +1,6 @@
 FormKey: 004FD8:JunkInYourTrunk_v2.esm
 EditorID: SMS_Decorative_Reactor_Dogstar_MagInertial_Fore_Btm
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

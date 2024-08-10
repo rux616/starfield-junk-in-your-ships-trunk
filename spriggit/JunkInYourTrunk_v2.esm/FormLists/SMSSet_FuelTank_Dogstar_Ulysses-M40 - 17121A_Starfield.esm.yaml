@@ -1,5 +1,6 @@
 FormKey: 17121A:Starfield.esm
 EditorID: SMSSet_FuelTank_Dogstar_Ulysses-M40
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Dogstar Ulysses M40 Set
@@ -28,3 +29,4 @@ Items:
 - 001B56:JunkInYourTrunk_v2.esm
 - 001B5D:JunkInYourTrunk_v2.esm
 - 001B64:JunkInYourTrunk_v2.esm
+ANAM: Null

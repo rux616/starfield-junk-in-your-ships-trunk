@@ -1,5 +1,6 @@
 FormKey: 1BE9D3:Starfield.esm
 EditorID: SMSSet_CargoShielded_Sextant_Hauler-10ST
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Sextant Hauler 10ST Shielded Set
@@ -28,3 +29,4 @@ Items:
 - 0009A8:JunkInYourTrunk_v2.esm
 - 0009A9:JunkInYourTrunk_v2.esm
 - 0009AA:JunkInYourTrunk_v2.esm
+ANAM: Null

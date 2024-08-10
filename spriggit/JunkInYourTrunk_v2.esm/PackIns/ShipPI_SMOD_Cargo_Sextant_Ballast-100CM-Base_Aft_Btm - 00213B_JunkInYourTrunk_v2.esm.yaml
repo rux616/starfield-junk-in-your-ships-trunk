@@ -1,12 +1,9 @@
 FormKey: 00213B:JunkInYourTrunk_v2.esm
 MajorRecordFlagsRaw: 512
 EditorID: ShipPI_SMOD_Cargo_Sextant_Ballast-100CM-Base_Aft_Btm
-FormVersion: 558
+FormVersion: 559
 StarfieldMajorRecordFlags:
 - 0x200
-ObjectBounds:
-  First: -3.4804688, -0.8442383, -1.5458984
-  Second: 3.4804688, 4.0351562, 1.7685547
 ODTY: 0
 ObjectPlacementDefaults:
   Unknown5: 1E-45

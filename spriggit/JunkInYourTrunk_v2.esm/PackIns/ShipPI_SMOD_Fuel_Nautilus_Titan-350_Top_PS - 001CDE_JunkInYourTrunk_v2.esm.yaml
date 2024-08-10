@@ -1,5 +1,9 @@
 FormKey: 001CDE:JunkInYourTrunk_v2.esm
 EditorID: ShipPI_SMOD_Fuel_Nautilus_Titan-350_Top_PS
+FormVersion: 559
+ObjectBounds:
+  First: -3.810547, -1.7011719, -0.0002440149
+  Second: 3.8105469, 1.7011716, 3.8105466
 ODTY: 0
 Transforms:
   Ship: 050FBE:Starfield.esm

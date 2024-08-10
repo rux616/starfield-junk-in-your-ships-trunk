@@ -1,5 +1,6 @@
 FormKey: 00100A:JunkInYourTrunk_v2.esm
 EditorID: PackInShipPISMODCargoDogstarStorMax60StbdVertStorageCell
+FormVersion: 559
 Flags:
 - IsInteriorCell
 Lighting:
@@ -25,3 +26,6 @@ LightingTemplate: Null
 WaterHeight: 3.4028235E+38
 XILS: 1
 ImageSpace: 06AD68:Starfield.esm
+Timestamp: 12554
+TemporaryTimestamp: 12554
+TemporaryUnknownGroupData: 1

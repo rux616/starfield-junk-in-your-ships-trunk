@@ -1,5 +1,6 @@
 FormKey: 16E089:Starfield.esm
 EditorID: SMASet_Shields_Sextant_Deflector_SG-60
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Sextant Deflector SG-60 Set
@@ -28,3 +29,4 @@ Items:
 - 0012F4:JunkInYourTrunk_v2.esm
 - 0012F5:JunkInYourTrunk_v2.esm
 - 0012F6:JunkInYourTrunk_v2.esm
+ANAM: Null

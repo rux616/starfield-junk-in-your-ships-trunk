@@ -1,5 +1,6 @@
 FormKey: 00308E:JunkInYourTrunk_v2.esm
 EditorID: SMBSet_GravDrive_Reladyne_RD-2000-Beta
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Reladyne RD-2000 Beta Set
@@ -28,3 +29,4 @@ Items:
 - 0030A4:JunkInYourTrunk_v2.esm
 - 0030A5:JunkInYourTrunk_v2.esm
 - 0030A6:JunkInYourTrunk_v2.esm
+ANAM: Null

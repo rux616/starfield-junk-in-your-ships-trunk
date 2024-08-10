@@ -1,5 +1,6 @@
 FormKey: 0017DF:JunkInYourTrunk_v2.esm
 EditorID: SMS_FuelTank_Ballistic_400G_Port
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

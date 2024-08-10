@@ -1,5 +1,6 @@
 FormKey: 004F57:JunkInYourTrunk_v2.esm
 EditorID: SMS_Decorative_Reactor_AmunDunn_Stellarator_Top_Stbd
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

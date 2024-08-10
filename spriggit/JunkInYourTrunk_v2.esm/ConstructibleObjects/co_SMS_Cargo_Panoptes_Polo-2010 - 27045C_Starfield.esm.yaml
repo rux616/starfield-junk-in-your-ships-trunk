@@ -1,5 +1,6 @@
 FormKey: 27045C:Starfield.esm
 EditorID: co_SMS_Cargo_Panoptes_Polo-2010
+FormVersion: 559
 Description:
   TargetLanguage: English
   Value: Spaceship Cargo Modules increase your ship's inventory space.
@@ -7,7 +8,6 @@ WorkbenchKeyword: 29C480:Starfield.esm
 Conditions:
 - MutagenObjectType: ConditionFloat
   Unknown1: 0x000000
-  Unknown2: 17620
   Data:
     MutagenObjectType: HasKeywordConditionData
     FirstParameter: 1453A0:Starfield.esm
@@ -15,7 +15,6 @@ Conditions:
 - MutagenObjectType: ConditionFloat
   CompareOperator: GreaterThanOrEqualTo
   Unknown1: 0x000000
-  Unknown2: 17620
   Data:
     MutagenObjectType: GetLevelConditionData
     RunOnType: Reference

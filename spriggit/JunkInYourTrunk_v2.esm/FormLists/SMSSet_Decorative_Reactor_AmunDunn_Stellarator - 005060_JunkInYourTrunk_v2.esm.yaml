@@ -1,5 +1,6 @@
 FormKey: 005060:JunkInYourTrunk_v2.esm
 EditorID: SMSSet_Decorative_Reactor_AmunDunn_Stellarator
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Amun Dunn Stellarator Set
@@ -28,3 +29,4 @@ Items:
 - 004F55:JunkInYourTrunk_v2.esm
 - 004F56:JunkInYourTrunk_v2.esm
 - 004F57:JunkInYourTrunk_v2.esm
+ANAM: Null

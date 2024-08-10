@@ -1,5 +1,6 @@
 FormKey: 001337:JunkInYourTrunk_v2.esm
 EditorID: SMA_Shields_Sextant_Deflector_SG-35_Top_Port
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

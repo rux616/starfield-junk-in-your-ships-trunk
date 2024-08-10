@@ -1,5 +1,6 @@
 FormKey: 002FCC:JunkInYourTrunk_v2.esm
 EditorID: SMBSet_GravDrive_Reladyne_RD-1000-Beta
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Reladyne RD-1000 Beta Set
@@ -28,3 +29,4 @@ Items:
 - 003078:JunkInYourTrunk_v2.esm
 - 00307F:JunkInYourTrunk_v2.esm
 - 003086:JunkInYourTrunk_v2.esm
+ANAM: Null

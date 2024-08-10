@@ -1,5 +1,6 @@
 FormKey: 001E80:JunkInYourTrunk_v2.esm
 EditorID: SMSSet_Decorative_Weapon_Ballistic_Ballistic_B_Turret
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Ballistic BLS-B Turret Set
@@ -8,3 +9,4 @@ Items:
 - 001E12:JunkInYourTrunk_v2.esm
 - 001E13:JunkInYourTrunk_v2.esm
 - 001E14:JunkInYourTrunk_v2.esm
+ANAM: Null

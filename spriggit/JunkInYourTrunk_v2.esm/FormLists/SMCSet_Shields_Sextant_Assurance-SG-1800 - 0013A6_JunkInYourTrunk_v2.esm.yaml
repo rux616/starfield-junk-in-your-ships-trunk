@@ -1,5 +1,6 @@
 FormKey: 0013A6:JunkInYourTrunk_v2.esm
 EditorID: SMCSet_Shields_Sextant_Assurance-SG-1800
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Sextant Assurance SG-1800 Set
@@ -10,3 +11,4 @@ Items:
 - 001506:JunkInYourTrunk_v2.esm
 - 001507:JunkInYourTrunk_v2.esm
 - 1BE9DF:Starfield.esm
+ANAM: Null

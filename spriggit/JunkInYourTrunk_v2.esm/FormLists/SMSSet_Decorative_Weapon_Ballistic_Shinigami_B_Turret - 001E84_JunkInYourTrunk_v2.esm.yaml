@@ -1,5 +1,6 @@
 FormKey: 001E84:JunkInYourTrunk_v2.esm
 EditorID: SMSSet_Decorative_Weapon_Ballistic_Shinigami_B_Turret
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Shinigami BLS-B Turret Set
@@ -8,3 +9,4 @@ Items:
 - 001E1C:JunkInYourTrunk_v2.esm
 - 001E1D:JunkInYourTrunk_v2.esm
 - 001E1E:JunkInYourTrunk_v2.esm
+ANAM: Null

@@ -1,5 +1,6 @@
 FormKey: 005024:JunkInYourTrunk_v2.esm
 EditorID: SMS_Decorative_Reactor_DeepCore_Fusor_Port_Aft
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

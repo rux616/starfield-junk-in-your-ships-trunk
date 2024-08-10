@@ -1,6 +1,7 @@
 FormKey: 00080D:JunkInYourTrunk_v2.esm
 MajorRecordFlagsRaw: 512
 EditorID: ShipPI_SMOD_Cargo_Sextant_Ballast-200CM_Fore
+FormVersion: 559
 StarfieldMajorRecordFlags:
 - 0x200
 ODTY: 0

@@ -1,0 +1,20 @@
+FormKey: 001DCD:JunkInYourTrunk_v2.esp
+EditorID: SMSSet_Decorative_FuelTank_Ballistic_100G-200G
+FormVersion: 559
+Name:
+  TargetLanguage: English
+  Value: Decorative Ballistic 100G/200G Set
+Items:
+- 001CF8:JunkInYourTrunk_v2.esp
+- 001CF9:JunkInYourTrunk_v2.esp
+- 001CFA:JunkInYourTrunk_v2.esp
+- 001CFB:JunkInYourTrunk_v2.esp
+- 001CFC:JunkInYourTrunk_v2.esp
+- 001CFD:JunkInYourTrunk_v2.esp
+- 001CFE:JunkInYourTrunk_v2.esp
+- 001CFF:JunkInYourTrunk_v2.esp
+- 001D00:JunkInYourTrunk_v2.esp
+- 001D01:JunkInYourTrunk_v2.esp
+- 001D02:JunkInYourTrunk_v2.esp
+- 001D03:JunkInYourTrunk_v2.esp
+ANAM: Null

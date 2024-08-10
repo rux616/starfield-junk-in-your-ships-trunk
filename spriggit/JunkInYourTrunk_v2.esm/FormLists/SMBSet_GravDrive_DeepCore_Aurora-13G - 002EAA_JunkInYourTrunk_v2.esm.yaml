@@ -1,5 +1,6 @@
 FormKey: 002EAA:JunkInYourTrunk_v2.esm
 EditorID: SMBSet_GravDrive_DeepCore_Aurora-13G
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: DeepCore Aurora 13G Set
@@ -28,3 +29,4 @@ Items:
 - 002EC0:JunkInYourTrunk_v2.esm
 - 002EC1:JunkInYourTrunk_v2.esm
 - 002EC2:JunkInYourTrunk_v2.esm
+ANAM: Null

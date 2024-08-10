@@ -1,5 +1,8 @@
 FormKey: 001736:JunkInYourTrunk_v2.esm
 EditorID: ShipPI_SMOD_Cargo_Dogstar_StorMax-Empty_Top
+FormVersion: 559
+ObjectBounds:
+  Second: 0, 0, 2.25
 ODTY: 0
 Transforms:
   Ship: 050FBE:Starfield.esm

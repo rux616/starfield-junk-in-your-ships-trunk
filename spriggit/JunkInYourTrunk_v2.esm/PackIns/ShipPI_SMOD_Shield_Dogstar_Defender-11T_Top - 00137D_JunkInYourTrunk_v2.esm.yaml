@@ -1,8 +1,8 @@
 FormKey: 00137D:JunkInYourTrunk_v2.esm
 EditorID: ShipPI_SMOD_Shield_Dogstar_Defender-11T_Top
+FormVersion: 559
 ObjectBounds:
-  First: -1.21875, -1.2177734, -1.7490234
-  Second: 1.21875, 1.2177734, 0.5449219
+  Second: 0, 0, 2.25
 ODTY: 0
 Transforms:
   Ship: 050FA1:Starfield.esm

@@ -1,5 +1,9 @@
 FormKey: 001AA9:JunkInYourTrunk_v2.esm
 EditorID: ShipPI_SMOD_Fuel_Dogstar_Ulysses-M30_Btm_FA_Port
+FormVersion: 559
+ObjectBounds:
+  First: -1.472656, -4, -1.8215333
+  Second: 1.75, 4, 1.75
 ODTY: 0
 Transforms:
   Ship: 050FBE:Starfield.esm

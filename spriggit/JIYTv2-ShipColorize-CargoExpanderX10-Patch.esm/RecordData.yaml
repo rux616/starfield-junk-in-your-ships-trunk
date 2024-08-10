@@ -6,13 +6,19 @@ GameRelease: Starfield
 ModHeader:
   Flags:
   - Master
+  FormVersion: 559
   Author: rux616
   Description: >-
     Compatibility patch between the "Cargo Expander X10" option of the "Junk In Your (Ship's) Trunk" mod by rux616 (JIYTv2CargoExpanderX10.esm) and the "Ship Colorize" compatibility patch of the "Junk In Your (Ship's) Trunk" mod by rux616 (JIYTv2-ShipColorize-Patch.esm).
 
 
-    Version: 2.20.0
+    Version: 2.21.0
   MasterReferences:
   - Master: Starfield.esm
+  - Master: ShipBuilderCategories.esm
+  - Master: ShipColorize.esm
+  - Master: JunkInYourTrunk_v2.esm
   - Master: JIYTv2CargoExpanderX10.esm
   - Master: JIYTv2-ShipColorize-Patch.esm
+  BNAM: 0x4D61696E00
+  INCC: 0

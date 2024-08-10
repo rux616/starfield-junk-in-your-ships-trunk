@@ -1,0 +1,32 @@
+FormKey: 0018DC:JunkInYourTrunk_v2.esp
+EditorID: SMSSet_FuelTank_Ballistic_900T
+FormVersion: 559
+Name:
+  TargetLanguage: English
+  Value: Ballistic 900T Set
+Items:
+- 0018C5:JunkInYourTrunk_v2.esp
+- 0018C6:JunkInYourTrunk_v2.esp
+- 0018C7:JunkInYourTrunk_v2.esp
+- 229C6A:Starfield.esm
+- 0018C8:JunkInYourTrunk_v2.esp
+- 0018C9:JunkInYourTrunk_v2.esp
+- 0018CA:JunkInYourTrunk_v2.esp
+- 0018CB:JunkInYourTrunk_v2.esp
+- 0018CC:JunkInYourTrunk_v2.esp
+- 0018CD:JunkInYourTrunk_v2.esp
+- 0018CE:JunkInYourTrunk_v2.esp
+- 0018CF:JunkInYourTrunk_v2.esp
+- 0018D0:JunkInYourTrunk_v2.esp
+- 0018D1:JunkInYourTrunk_v2.esp
+- 0018D2:JunkInYourTrunk_v2.esp
+- 0018D3:JunkInYourTrunk_v2.esp
+- 0018D4:JunkInYourTrunk_v2.esp
+- 0018D5:JunkInYourTrunk_v2.esp
+- 0018D6:JunkInYourTrunk_v2.esp
+- 0018D7:JunkInYourTrunk_v2.esp
+- 0018D8:JunkInYourTrunk_v2.esp
+- 0018D9:JunkInYourTrunk_v2.esp
+- 0018DA:JunkInYourTrunk_v2.esp
+- 0018DB:JunkInYourTrunk_v2.esp
+ANAM: Null

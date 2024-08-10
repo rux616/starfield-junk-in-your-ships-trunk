@@ -1,5 +1,6 @@
 FormKey: 165570:Starfield.esm
 EditorID: SMSSet_Cargo_Dogstar_StorMax-40
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Dogstar StorMax 40 Set
@@ -16,3 +17,4 @@ Items:
 - 001041:JunkInYourTrunk_v2.esm
 - 001042:JunkInYourTrunk_v2.esm
 - 001043:JunkInYourTrunk_v2.esm
+ANAM: Null

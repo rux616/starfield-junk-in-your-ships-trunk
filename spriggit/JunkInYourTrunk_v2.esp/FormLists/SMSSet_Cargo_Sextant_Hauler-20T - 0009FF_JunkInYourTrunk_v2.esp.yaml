@@ -1,0 +1,20 @@
+FormKey: 0009FF:JunkInYourTrunk_v2.esp
+EditorID: SMSSet_Cargo_Sextant_Hauler-20T
+FormVersion: 559
+Name:
+  TargetLanguage: English
+  Value: Sextant Hauler 20T Set
+Items:
+- 27047A:Starfield.esm
+- 0009F7:JunkInYourTrunk_v2.esp
+- 0009FB:JunkInYourTrunk_v2.esp
+- 0009F4:JunkInYourTrunk_v2.esp
+- 0009F8:JunkInYourTrunk_v2.esp
+- 0009FC:JunkInYourTrunk_v2.esp
+- 0009F9:JunkInYourTrunk_v2.esp
+- 0009FD:JunkInYourTrunk_v2.esp
+- 0009FA:JunkInYourTrunk_v2.esp
+- 0009FE:JunkInYourTrunk_v2.esp
+- 0009F5:JunkInYourTrunk_v2.esp
+- 0009F6:JunkInYourTrunk_v2.esp
+ANAM: Null

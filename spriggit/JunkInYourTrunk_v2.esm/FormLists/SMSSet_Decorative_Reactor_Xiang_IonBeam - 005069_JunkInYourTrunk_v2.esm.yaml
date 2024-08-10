@@ -1,5 +1,6 @@
 FormKey: 005069:JunkInYourTrunk_v2.esm
 EditorID: SMSSet_Decorative_Reactor_Xiang_IonBeam
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Decorative Xiang Ion Beam Set
@@ -28,3 +29,4 @@ Items:
 - 004FFD:JunkInYourTrunk_v2.esm
 - 004FFE:JunkInYourTrunk_v2.esm
 - 004FFF:JunkInYourTrunk_v2.esm
+ANAM: Null

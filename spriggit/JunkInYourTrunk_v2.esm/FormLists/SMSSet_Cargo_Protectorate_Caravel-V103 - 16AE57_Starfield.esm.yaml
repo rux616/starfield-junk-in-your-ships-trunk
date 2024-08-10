@@ -1,5 +1,6 @@
 FormKey: 16AE57:Starfield.esm
 EditorID: SMSSet_Cargo_Protectorate_Caravel-V103
+FormVersion: 559
 Name:
   TargetLanguage: English
   Value: Protectorate Caravel V103 Set
@@ -16,3 +17,4 @@ Items:
 - 000BE6:JunkInYourTrunk_v2.esm
 - 000BE7:JunkInYourTrunk_v2.esm
 - 000BE8:JunkInYourTrunk_v2.esm
+ANAM: Null

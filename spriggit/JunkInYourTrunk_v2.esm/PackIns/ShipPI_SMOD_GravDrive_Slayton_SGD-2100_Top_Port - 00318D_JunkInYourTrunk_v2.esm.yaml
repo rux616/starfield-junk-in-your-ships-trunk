@@ -1,8 +1,12 @@
 FormKey: 00318D:JunkInYourTrunk_v2.esm
 MajorRecordFlagsRaw: 512
 EditorID: ShipPI_SMOD_GravDrive_Slayton_SGD-2100_Top_Port
+FormVersion: 559
 StarfieldMajorRecordFlags:
 - 0x200
+ObjectBounds:
+  First: -4, -3.9999998, -1.75
+  Second: 4, 3.9999998, 1.75
 ODTY: 0
 Transforms:
   Ship: 39EC83:Starfield.esm

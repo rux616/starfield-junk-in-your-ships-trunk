@@ -1,5 +1,6 @@
 FormKey: 001E42:JunkInYourTrunk_v2.esm
 EditorID: SMS_Decorative_Weapon_Ballistic_Ballistic_C_Turret_Aft
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

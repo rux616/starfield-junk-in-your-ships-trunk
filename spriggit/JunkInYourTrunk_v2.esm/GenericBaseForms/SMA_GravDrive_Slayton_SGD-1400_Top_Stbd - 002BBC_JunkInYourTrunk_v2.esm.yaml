@@ -1,5 +1,6 @@
 FormKey: 002BBC:JunkInYourTrunk_v2.esm
 EditorID: SMA_GravDrive_Slayton_SGD-1400_Top_Stbd
+FormVersion: 559
 ODTY: 0
 Components:
 - MutagenObjectType: AttachParentArrayComponent

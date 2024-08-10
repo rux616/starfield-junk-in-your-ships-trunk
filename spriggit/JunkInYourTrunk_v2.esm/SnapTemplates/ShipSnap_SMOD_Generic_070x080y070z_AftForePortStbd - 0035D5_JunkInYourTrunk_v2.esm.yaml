@@ -1,15 +1,28 @@
 FormKey: 0035D5:JunkInYourTrunk_v2.esm
 EditorID: ShipSnap_SMOD_Generic_070x080y070z_AftForePortStbd
+FormVersion: 559
 Nodes:
 - Node: 04AB6F:Starfield.esm
   Offset: 0, 4, 1.75
-- NodeID: 1
-  Node: 04AB6F:Starfield.esm
-  Offset: 0, 4, -1.75
+- NodeID: 7
+  Node: 04AB74:Starfield.esm
+  Offset: 3.5, 0, -1.75
+  Rotation: 0, 0, 90
+- NodeID: 5
+  Node: 04AB73:Starfield.esm
+  Offset: -3.5, 0, -1.75
+  Rotation: 0, 0, -90
 - NodeID: 2
   Node: 04AB70:Starfield.esm
   Offset: 0, -4, 1.75
   Rotation: 0, 0, 180
+- NodeID: 6
+  Node: 04AB74:Starfield.esm
+  Offset: 3.5, 0, 1.75
+  Rotation: 0, 0, 90
+- NodeID: 1
+  Node: 04AB6F:Starfield.esm
+  Offset: 0, 4, -1.75
 - NodeID: 3
   Node: 04AB70:Starfield.esm
   Offset: 0, -4, -1.75
@@ -18,17 +31,5 @@ Nodes:
   Node: 04AB73:Starfield.esm
   Offset: -3.5, 0, 1.75
   Rotation: 0, 0, -90
-- NodeID: 5
-  Node: 04AB73:Starfield.esm
-  Offset: -3.5, 0, -1.75
-  Rotation: 0, 0, -90
-- NodeID: 6
-  Node: 04AB74:Starfield.esm
-  Offset: 3.5, 0, 1.75
-  Rotation: 0, 0, 90
-- NodeID: 7
-  Node: 04AB74:Starfield.esm
-  Offset: 3.5, 0, -1.75
-  Rotation: 0, 0, 90
 NextNodeID: 8
 STPT: 0

@@ -1,0 +1,11 @@
+FormKey: 0016CD:JunkInYourTrunk_v2.esp
+EditorID: SMSSet_Decorative_Cargo_Protectorate_Galleon-S204
+FormVersion: 559
+Name:
+  TargetLanguage: English
+  Value: Decorative Protectorate Galleon S204 Set
+Items:
+- 001661:JunkInYourTrunk_v2.esp
+- 001662:JunkInYourTrunk_v2.esp
+- 001663:JunkInYourTrunk_v2.esp
+ANAM: Null
