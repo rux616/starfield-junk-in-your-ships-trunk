@@ -12,7 +12,7 @@ ModHeader:
     Expands all cargo hold capacity to 3x the original value.
 
 
-    Version: 2.21.0
+    Version: 2.21.1
   MasterReferences:
   - Master: Starfield.esm
   - Master: ShipBuilderCategories.esm

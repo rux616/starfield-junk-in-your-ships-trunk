@@ -12,7 +12,7 @@ ModHeader:
     Compatibility patch between "Junk In Your (Ship's) Trunk" mod by rux616 (JunkInYourTrunk_v2.esm) and the "All In One" plugin from the "Ultimate Shipyards Unlocked" [All In One] mod by JustAnOrdinaryGuy (USU.esm).
 
 
-    Version: 2.21.0
+    Version: 2.21.1
   MasterReferences:
   - Master: Starfield.esm
   - Master: ShipBuilderCategories.esm
